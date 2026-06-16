@@ -569,3 +569,5 @@ GitHub共享仓库自动同步已部署（2026-06-16）：
 - 排除: config.yaml(含密钥), .hub缓存, node_modules, buyer-development/, joinf-crm-edm/, .db/.pdf/.exe等二进制
 - 仓库: Marfart/hermes-shared（已改为private），~24MB数据
 - Kali铁律: hermes文件夹任何更新必须自动同步+聊天记录.md写per-file说明
+§
+SOM335价格修正：官方报价文件价格为$49（Sample），但实际为￥400人民币，按6.5汇率换算=$62。其他SOM型号也可能有类似偏差，报价前必须向公司确认最新SOM价格。已修正文件：1.报价文件/2026/202605 BLIIOT IIoT Gateways &BL116&BL118 Price List_Updated.xls。BL118B-SOM335-X4-Y02-Y31合计：Sample=$166，<100pcs=$154。

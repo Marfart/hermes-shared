@@ -687,37 +687,8 @@ User docs: https://hermes-agent.nousresearch.com/docs/user-guide/features/curato
 
 ### Kanban (multi-agent work queue)
 
-Durable SQLite board for multi-profile / multi-worker collaboration. [...existing kanban content...]
-
-### State Backup & Sync (Hermes State Persistence)
-
-Cross-directory real-time sync of Hermes state to a cloud-synced backup directory (Google Drive, Dropbox, etc.) using a watchdog-based live sync daemon.
-
-**Architecture:**
-```
-%LOCALAPPDATA%/hermes/     ──实时同步(毫秒级)──▶   Desktop/Working/Hermes/
-    ↑ watchdog 监听文件系统                           ↑ Google Drive 自动备份云端
-```
-
-**What gets synced:** `config.yaml`, `.env`, `auth.json`, `skills/` (full), `scripts/` (full), `memories/` (full), `cron/`, `weixin/`, `plugins/`, `SOUL.md`
-
-**What's excluded:** `logs/`, `state.db` (session DB), `cache/`, `sessions/`, `hermes-agent/` source code, `venv/`, `node_modules/`
-
-**Components:**
-1. **Live Sync Daemon** (`scripts/hermes_live_sync.py`) — Python `watchdog`-based real-time file watcher with 500ms debounce and MD5 content dedup
-2. **Startup Autostart** — `.cmd` in Windows Startup folder; checks PID file first to avoid duplicates
-3. **Crash Recovery Cron** (every 5min, no_agent=True) — checks daemon PID via tasklist; restarts if dead
-4. **GitHub Shared Repo Sync** (`scripts/github_shared_sync.py`, every 5min) — syncs sanitized config/skills/scripts to a cross-machine GitHub repo
-
-**Key Windows pitfalls:**
-- `os.kill(pid, 0)` crashes on git-bash Python → use `tasklist` instead
-- Chinese locale output is GBK-encoded → `.decode("gbk", errors="replace")`
-- PID files survive reboot → startup script handles orphan PIDs
-- `pip install watchdog` needed (not bundled)
-
-**Full detail:** `references/state-backup/github-push-protection-pitfalls.md` (GitHub push protection and recovery).
-Users drive it via `hermes kanban <verb>`; dispatcher-spawned workers
-see a focused `kanban_*` toolset gated by `HERMES_KANBAN_TASK`, and
+Durable SQLite board for multi-profile / multi-worker collaboration. Users drive it via `hermes kanban <verb>`; dispatcher-spawned workers
+see a focused `kanban_*` toolset
 orchestrator profiles can opt into the broader `kanban` toolset. Normal
 sessions still have zero `kanban_*` schema footprint unless configured.
 
@@ -741,6 +712,34 @@ sessions still have zero `kanban_*` schema footprint unless configured.
   within a board for workspace-path + memory-key isolation.
 
 User docs: https://hermes-agent.nousresearch.com/docs/user-guide/features/kanban
+
+### State Backup & Sync (Hermes State Persistence)
+
+Cross-directory real-time sync of Hermes state to a cloud-synced backup directory (Google Drive, Dropbox, etc.) using a watchdog-based live sync daemon.
+
+**Architecture:**
+```
+%LOCALAPPDATA%/hermes/     →   Desktop/Working/Hermes/
+  (watchdog live sync)            (Google Drive cloud backup)
+```
+
+**What gets synced:** `config.yaml`, `.env`, `auth.json`, `skills/` (full), `scripts/` (full), `memories/` (full), `cron/`, `weixin/`, `plugins/`, `SOUL.md`
+
+**What's excluded:** `logs/`, `state.db` (session DB), `cache/`, `sessions/`, `hermes-agent/` source code, `venv/`, `node_modules/`
+
+**Components:**
+1. **Live Sync Daemon** (`scripts/hermes_live_sync.py`) — Python `watchdog`-based real-time file watcher with 500ms debounce and MD5 content dedup
+2. **Startup Autostart** — `.cmd` in Windows Startup folder; checks PID file first to avoid duplicates
+3. **Crash Recovery Cron** (every 5min, no_agent=True) — checks daemon PID via tasklist; restarts if dead
+4. **GitHub Shared Repo Sync** (`scripts/github_shared_sync.py`, every 5min) — syncs sanitized config/skills/scripts to cross-machine GitHub repo
+
+**Key Windows pitfalls:**
+- `os.kill(pid, 0)` crashes on git-bash Python → use `tasklist` instead
+- Chinese locale output is GBK-encoded → `.decode("gbk", errors="replace")`
+- PID files survive reboot → startup script handles orphan PIDs
+- `pip install watchdog` needed (not bundled)
+
+**Full detail:** `references/state-backup/github-push-protection-pitfalls.md` (GitHub push protection and recovery).
 
 ---
 

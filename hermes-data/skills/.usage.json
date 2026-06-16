@@ -263,14 +263,14 @@
     "archived_at": null,
     "created_at": "2026-06-11T03:20:46.764464+00:00",
     "created_by": null,
-    "last_patched_at": null,
-    "last_used_at": "2026-06-16T11:17:44.426791+00:00",
-    "last_viewed_at": "2026-06-16T11:17:44.383777+00:00",
-    "patch_count": 0,
+    "last_patched_at": "2026-06-16T12:12:18.160538+00:00",
+    "last_used_at": "2026-06-16T12:11:58.966754+00:00",
+    "last_viewed_at": "2026-06-16T12:11:58.943364+00:00",
+    "patch_count": 1,
     "pinned": false,
     "state": "active",
-    "use_count": 2,
-    "view_count": 2
+    "use_count": 3,
+    "view_count": 3
   },
   "bliiot-ioy-series": {
     "archived_at": null,
@@ -818,32 +818,6 @@
     "use_count": 26,
     "view_count": 22
   },
-  "hermes-config-diagnostics": {
-    "archived_at": null,
-    "created_at": "2026-06-11T09:47:24.652464+00:00",
-    "created_by": "agent",
-    "last_patched_at": "2026-06-15T03:08:31.447079+00:00",
-    "last_used_at": "2026-06-16T11:58:45.594583+00:00",
-    "last_viewed_at": "2026-06-16T11:58:45.575089+00:00",
-    "patch_count": 5,
-    "pinned": false,
-    "state": "active",
-    "use_count": 4,
-    "view_count": 4
-  },
-  "hermes-state-backup": {
-    "archived_at": null,
-    "created_at": "2026-06-02T15:00:25.400041+00:00",
-    "created_by": "agent",
-    "last_patched_at": "2026-06-16T03:40:15.713202+00:00",
-    "last_used_at": "2026-06-16T11:58:48.635764+00:00",
-    "last_viewed_at": "2026-06-16T11:58:48.618270+00:00",
-    "patch_count": 9,
-    "pinned": false,
-    "state": "active",
-    "use_count": 7,
-    "view_count": 7
-  },
   "himalaya": {
     "archived_at": null,
     "created_at": "2026-06-02T09:55:04.110617+00:00",
@@ -1260,19 +1234,6 @@
     "use_count": 0,
     "view_count": 0
   },
-  "polymarket": {
-    "archived_at": null,
-    "created_at": "2026-06-02T09:55:05.773270+00:00",
-    "created_by": null,
-    "last_patched_at": null,
-    "last_used_at": null,
-    "last_viewed_at": null,
-    "patch_count": 0,
-    "pinned": false,
-    "state": "active",
-    "use_count": 0,
-    "view_count": 0
-  },
   "popular-web-designs": {
     "archived_at": null,
     "created_at": "2026-06-02T09:55:05.862568+00:00",
@@ -1636,19 +1597,6 @@
     "state": "active",
     "use_count": 3,
     "view_count": 3
-  },
-  "touchdesigner-mcp": {
-    "archived_at": null,
-    "created_at": "2026-06-02T09:55:06.850694+00:00",
-    "created_by": null,
-    "last_patched_at": null,
-    "last_used_at": null,
-    "last_viewed_at": null,
-    "patch_count": 0,
-    "pinned": false,
-    "state": "active",
-    "use_count": 0,
-    "view_count": 0
   },
   "web-scraping": {
     "archived_at": null,
