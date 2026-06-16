@@ -267,12 +267,14 @@ Different product lines may coexist in the same physical Excel file but use diff
 | Product Line | Correct Price Source | Example Models |
 |-------------|-------------------|----------------|
 | **BL120** IIoT Gateways | `2026xx IIoT Gateways &BL116&BL118 Price List.xls` (Sheet: IIoT Gateways) | BL120, BL120L, BL121W |
+| **BL103** OPC UA/BACnet Gateway | `2026xx IIoT Gateways &BL116&BL118 Price List.xls` (Sheet: IIoT Gateways) | BL103, BL103W, BL103P, BL103PW |
 | **BL116** Edge Gateway | Same file (Sheet: BL116) | BL116, BA series??? |
 | **BL118** Node-RED Gateway | Same file (Sheet: BL118) | BL118, SOM modules |
 | **BA series** BACnet Gateways | `BL10x塑胶外壳USD报价单20240628.xls` | BA110, BA110P, BA110W |
 | **BL10x** Plastic Housing | `BL10x塑胶外壳USD报价单20240628.xls` | BA110 series |
 | **ARMxy** Embedded Computers | `202511 ARMxy Series BL3xx Price List.xls` | BL310~BL460 |
 | **RTU & Router** | `2026xx BLIIOT RTU&Router Price List.xls` | R40, BL70~BL108 |
+| **Mxxx Ethernet I/O** | `2026xx BLIIOT RTU&Router Price List.xls` (same file, rows 190+) | M120E, M130E, M140E, M150E, **M160E**, M200E~M240E |
 | **IOy** Edge IO Modules | `2026xx BLIIOT IOy Series Edge IO Module Price List.xls` | BL190~BL193, BA190, BA190Pro, Y01~Y96 |
 
 ⚠️ **BA series (BACnet) products** appear in the IIoT Gateways file physically but their CORRECT pricing comes from the BL10x塑胶外壳报价单. Always identify the correct product line before selecting a price source.
@@ -336,9 +338,50 @@ CREATE TABLE prices (
 );
 ```
 
+## Samples = N/A vs No Samples Column
+
+Two different situations that require different handling:
+
+| Situation | Example | Action |
+|:----------|:--------|:-------|
+| File has NO Samples column | ARMxy, IOy, Switch | Use lowest tier price (e.g. <100pcs) |
+| File HAS Samples column but value is N/A | **M160E** (RTU & Router file, Col 4 = "N/A") | Use lowest tier price (e.g. <50Pcs) |
+| File HAS Samples column with numeric value | BL120 (Gateways file, Col 3 = $49) | Use Samples price for qty < 10 |
+
+The M160E case: RTU & Router file has a Samples column (Col 4), but M160E's value is literally the string "N/A" — not zero, not empty, not missing. This means the product does not have a sample price; fall back to the lowest tier (`<50Pcs` = $157 for M160E). **Do NOT treat "N/A" as a zero-price or skip the row.**
+
+```python
+# Correct handling
+samples_val = str(sheet.cell_value(row_idx, 4)).strip()
+if samples_val.upper() == 'N/A' or samples_val == '0.0' or samples_val == '':
+    # No sample price → fall back to lowest tier
+    sample_price = None
+    lowest_tier_price = round(float(sheet.cell_value(row_idx, 5)))  # <50Pcs
+else:
+    sample_price = round(float(samples_val))
+```
+
+## BL103 in IIoT Gateways File
+
+BL103 (OPC UA/BACnet gateway) appears in TWO price list files with different structures:
+
+| Source File | Row | Description | Sample Price |
+|:------------|:----|:------------|:------------:|
+| `202605 IIoT Gateways &BL116&BL118 Price List.xls` | ~206 | Uplink: OPC UA → Downlink: PLC/Modbus/BACnet | $57 |
+| `BLIIoT Price List 20240527.xls` | 604 | 4G BACnet gateway (4G versions have separate sub-rows) | Varies by version |
+
+The 202605 Gateways file has BL103 in a simplified format (like BL120PM), while the 20240527 old file has it with regional 4G sub-rows. **Use the 202605 file as the authoritative source** unless specifically asked for historical pricing.
+
+BL103 sub-models in 202605 Gateways file:
+- BL103 (base): $57
+- BL103W (WiFi): $64
+- BL103P (PoE): $83
+- BL103PW (PoE+WiFi): $91
+
 ## Common Pitfalls
 
 - ❌ **YAML `\\U` escape in Windows paths** — always use single quotes `'C:/Users/...'` or forward slashes `C:/Users/...`. Double-quoted `"C:\\Users\\..."` crashes because YAML interprets `\\U` as a unicode escape sequence.
+- ❌ **Treating "N/A" Samples as a valid price** — RTU & Router file M160E and other Mxxx models have Samples=N/A. This means NO sample price. Fall back to <50Pcs tier, do NOT use N/A as zero.
 - ❌ Deleting prices then only re-importing from ONE file → must re-import ALL files
 - ❌ Not committing between file sections → crash loses all prior work
 - ❌ Filtering X0~X9 by `len(model) < 3` → these are valid 2-char model names
@@ -410,6 +453,7 @@ Key S130 prices (Sample tier):
 - `references/ioy-series-pricing.md` — IOy series (BL190~BL193, BA190, Y01~Y96) host and Y-board pricing tables
 - `references/armxy-4g-module-pricing.md` — ARMxy 4G/5G/WiFi optional module pricing table, 4G Band-to-country mapping, ARMxy naming conventions
 - `references/bliiot-complete-product-portfolio.md` — Full product portfolio from 103 datasheets: processors, NPU specs, protocols, application domains, customer profiles. Read before any client outreach, quotation, or product-matching task.
+- `references/bl103-pricing.md` — BL103 (OPC UA/BACnet gateway) pricing from both 202605 Gateways file and 20240527 old file, including regional 4G sub-rows and BL103E/BL103pro/BL103UA variants
 
 ## Datasheet Reading Protocol (BLIIoT Product Knowledge)
 

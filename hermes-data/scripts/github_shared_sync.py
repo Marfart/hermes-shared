@@ -98,12 +98,14 @@ def sync_directory(src: Path, dst: Path) -> tuple[int, int, int]:
         return 0, 0, 0
 
     # 复制新/修改的文件
-    for item in src.rglob("*"):
-        if not item.is_file():
-            continue
-        if should_skip(item, src_root=src):
-            skipped += 1
-            continue
+    for root, dirs, files in os.walk(str(src)):
+        # 就地删除排除目录，阻止os.walk递归进入
+        dirs[:] = [d for d in dirs if d not in EXCLUDE_DIRS]
+        for fname in files:
+            item = Path(root) / fname
+            if fname in EXCLUDE_FILES or item.suffix.lower() in EXCLUDE_EXT:
+                skipped += 1
+                continue
 
         rel = item.relative_to(src)
         target = dst / rel
