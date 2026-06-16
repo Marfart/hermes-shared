@@ -1,0 +1,3133 @@
+[
+  {
+    "url": "https://data.joinf.com/api/keywordHistory/add",
+    "status": 200,
+    "json": {
+      "code": 0,
+      "msg": "成功",
+      "data": true,
+      "request": null,
+      "uid": null,
+      "totalRecords": null
+    }
+  },
+  {
+    "url": "https://data.joinf.com/api/keywordHistory/latelyKeyword?types=1",
+    "status": 200,
+    "json": {
+      "code": 0,
+      "msg": "成功",
+      "data": [
+        {
+          "id": 5538081,
+          "keyword": "HVAC",
+          "count": 1,
+          "companyId": 502662,
+          "userId": 786718,
+          "updateTime": "2026-06-02 11:53:36",
+          "types": 1,
+          "isDel": 1
+        },
+        {
+          "id": 5535513,
+          "keyword": "IIoT Integration",
+          "count": 1,
+          "companyId": 502662,
+          "userId": 786718,
+          "updateTime": "2026-06-01 16:04:32",
+          "types": 1,
+          "isDel": 1
+        },
+        {
+          "id": 5211926,
+          "keyword": "digtal water treatment",
+          "count": 14,
+          "companyId": 502662,
+          "userId": 786718,
+          "updateTime": "2026-01-16 16:16:06",
+          "types": 1,
+          "isDel": 1
+        },
+        {
+          "id": 5213906,
+          "keyword": "vflowtech",
+          "count": 1,
+          "companyId": 502662,
+          "userId": 786718,
+          "updateTime": "2026-01-08 08:51:03",
+          "types": 1,
+          "isDel": 1
+        },
+        {
+          "id": 5209797,
+          "keyword": "IT OT",
+          "count": 2,
+          "companyId": 502662,
+          "userId": 786718,
+          "updateTime": "2026-01-06 18:56:47",
+          "types": 1,
+          "isDel": 1
+        }
+      ],
+      "request": null,
+      "uid": null,
+      "totalRecords": null
+    }
+  },
+  {
+    "url": "https://data.joinf.com/api/keywordHistory/latelyKeyword?types=1",
+    "status": 200,
+    "json": {
+      "code": 0,
+      "msg": "成功",
+      "data": [
+        {
+          "id": 5538081,
+          "keyword": "HVAC",
+          "count": 1,
+          "companyId": 502662,
+          "userId": 786718,
+          "updateTime": "2026-06-02 11:53:36",
+          "types": 1,
+          "isDel": 1
+        },
+        {
+          "id": 5535513,
+          "keyword": "IIoT Integration",
+          "count": 1,
+          "companyId": 502662,
+          "userId": 786718,
+          "updateTime": "2026-06-01 16:04:32",
+          "types": 1,
+          "isDel": 1
+        },
+        {
+          "id": 5211926,
+          "keyword": "digtal water treatment",
+          "count": 14,
+          "companyId": 502662,
+          "userId": 786718,
+          "updateTime": "2026-01-16 16:16:06",
+          "types": 1,
+          "isDel": 1
+        },
+        {
+          "id": 5213906,
+          "keyword": "vflowtech",
+          "count": 1,
+          "companyId": 502662,
+          "userId": 786718,
+          "updateTime": "2026-01-08 08:51:03",
+          "types": 1,
+          "isDel": 1
+        },
+        {
+          "id": 5209797,
+          "keyword": "IT OT",
+          "count": 2,
+          "companyId": 502662,
+          "userId": 786718,
+          "updateTime": "2026-01-06 18:56:47",
+          "types": 1,
+          "isDel": 1
+        }
+      ],
+      "request": null,
+      "uid": null,
+      "totalRecords": null
+    }
+  },
+  {
+    "url": "https://data.joinf.com/api/userConfig/info?configKey=batch_follow",
+    "status": 200,
+    "json": {
+      "code": 0,
+      "msg": "成功",
+      "data": 0,
+      "request": null,
+      "uid": null,
+      "totalRecords": null
+    }
+  },
+  {
+    "url": "https://data.joinf.com/api/bs/searchBusiness",
+    "status": 200,
+    "json": {
+      "code": 0,
+      "msg": "成功",
+      "data": {
+        "businessListResponses": [
+          {
+            "customer": {
+              "exist": false,
+              "customerId": null,
+              "noViewPermission": false
+            },
+            "id": "4b8e50e4-e8e4-4e9e-8314-24b63d408dba",
+            "duns": null,
+            "companyName": "Heinen & Hopman Binnenvaart - Rotterdam",
+            "country": "荷兰",
+            "countryEn": "NETHERLANDS",
+            "code": "NL",
+            "emailCount": 275,
+            "emailCollectionCount": null,
+            "noShow": false,
+            "noSend": false,
+            "hasWebsite": true,
+            "hasEmail": true,
+            "fullOverview": "Heating, Ventilation, Air Conditioning and Refrigeration systems for the offshore industry, the navy, yachting, and merchant shipping industry. heinen &hopman eng. Starting out as subcontractor for mainly central heating installations, the company rapidly grew to become an expert in the field of designing, engineering and installing heating, ventilation, air-conditioning and cooling (HVAC) systems on both land and sea. The company has provided numerous vessels with excellent HVAC&R systems for the navy, the merchant shipping industry, the offshore industry and the yachting industry. Heinen & Hopman is renowned for customized HVAC systems that provide solutions for any of the clients'​ challenges. Heinen & Hopman provides innovative HVAC solutions worldwide for navy ships, yachts and superyachts, the merchant sector and the offshore industry. World leader in marine HVAC systems since 1965. Innovativeness and bespoke HVAC solutions are key in satisfying our clients in the marine and offshore industry. Heinen & Hopman | Marine & Offshore HVAC.",
+            "mainBusiness": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore HVAC,HVAC Spare Parts,Low-noise HVAC Systems,Military HVAC,Cruise HVAC,HVAC,Navy HVAC Systems,Yacht HVAC,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery HVAC,Marine HVAC,Energy Saving HVAC Systems,Ship HVAC Systems,HVAC systems,HVAC Filtration,Refrigeration,HVAC Cleaning,Air Conditioning,HVAC service,Superyacht HVAC",
+            "follow": false,
+            "followCount": 0,
+            "website": "heinenhopman.com",
+            "highlightFieldEntity": {
+              "companyName": null,
+              "full_Overview": null,
+              "main_Business": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Spare Parts,Low-noise <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Military <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Cruise <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Navy <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Yacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Marine <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Energy Saving <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Ship <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Filtration,Refrigeration,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Cleaning,Air Conditioning,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> service,Superyacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>",
+              "keyMainBusiness": null,
+              "website": null,
+              "keyword": null,
+              "sicCodeDescription": null,
+              "sicCode8Description": null,
+              "email": null,
+              "sicName": null,
+              "sicName8": null,
+              "procureInfo": "",
+              "websiteKeyword": null,
+              "websiteDescription": null,
+              "websiteTitle": "Marine & Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span> - Heinen & Hopman"
+            },
+            "labelInfoList": [],
+            "websiteStatus": 1,
+            "emailIncTime": "2025-12-15 11:00:44",
+            "emailIncCount": null,
+            "newEmail": false,
+            "contactTotal": 393,
+            "keyword": "Air conditioner parts,HVAC contractor,offshore hvac india,Air ducts,Axial fans",
+            "star": 5,
+            "aiEmailCount": 8,
+            "grade": 1,
+            "see": false,
+            "companyNameNoSuffix": "HEINEN AND HOPMAN BINNENVAART - ROTTERDAM",
+            "snsList": [
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/Shipps-Heating-Air-Conditioning-Inc-368377819850057"
+              },
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/heinenandhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/pages/heinen-hopman/270341566440304"
+              },
+              {
+                "bvdId": null,
+                "type": 2,
+                "url": null,
+                "snsUrl": "https://www.twitter.com/heinenhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 2,
+                "url": null,
+                "snsUrl": "https://www.twitter.com/home"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-&-hopman-engineering-bv"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-hopman-italia"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinenhopmanuae"
+              }
+            ],
+            "cantonFairNum": 0,
+            "fairList": null,
+            "etlMark": 1,
+            "industryList": [
+              {
+                "code": "7338",
+                "cnName": "秘书与法院报告服务",
+                "enName": "Document Preparation Services"
+              },
+              {
+                "code": "3731",
+                "cnName": "造船与修船",
+                "enName": "Ship Building and Repairing"
+              },
+              {
+                "code": "3585",
+                "cnName": "冷暖空调设备 工商用冷冻设备",
+                "enName": "Other Motor Vehicle Parts Mfg."
+              },
+              {
+                "code": "6211",
+                "cnName": "证券经纪人,经销商,公债发行公司",
+                "enName": "Investment Banking and Securities Dealing"
+              },
+              {
+                "code": "1711",
+                "cnName": "铅管铺设,冷暖空调",
+                "enName": "Plumbing, Heating, and Air Conditioning Contractors"
+              },
+              {
+                "code": "3519",
+                "cnName": "内燃引擎",
+                "enName": "Other Engine Equipment Mfg."
+              },
+              {
+                "code4": "3519",
+                "code": "35190000",
+                "cnName": "其他内燃机",
+                "enName": "INTERNAL COMBUSTION ENGINES, NEC",
+                "code8": "35190000"
+              },
+              {
+                "code4": "7338",
+                "code": "73380201",
+                "cnName": "法庭报告服务",
+                "enName": "COURT REPORTING SERVICE",
+                "code8": "73380201"
+              },
+              {
+                "code4": "3585",
+                "code": "35850000",
+                "cnName": "制冷加温装置",
+                "enName": "REFRIGERATION AND HEATING EQUIPMENT",
+                "code8": "35850000"
+              },
+              {
+                "code4": "6211",
+                "code": "62110204",
+                "cnName": "投资公司，一般经纪公司",
+                "enName": "INVESTMENT FIRM, GENERAL BROKERAGE",
+                "code8": "62110204"
+              },
+              {
+                "code4": "3731",
+                "code": "37310000",
+                "cnName": "造船修理",
+                "enName": "SHIPBUILDING AND REPAIRING",
+                "code8": "37310000"
+              },
+              {
+                "code4": "1711",
+                "code": "17110000",
+                "cnName": "管道、供暖、空调",
+                "enName": "PLUMBING, HEATING, AIR-CONDITIONING",
+                "code8": "17110000"
+              }
+            ],
+            "websiteLogo": "https://business.cdn.site.joinf.com/company_logo/img/5f42b9852e5a9244652091a4f0031112.ico",
+            "exhibitionDetailResponse": null
+          },
+          {
+            "customer": {
+              "exist": false,
+              "customerId": null,
+              "noViewPermission": false
+            },
+            "id": "8d355ad745cc44e8b042703a9042ccbf",
+            "duns": null,
+            "companyName": "Heinen & Hopman Rus, Llc",
+            "country": "俄罗斯联邦",
+            "countryEn": "RUSSIA",
+            "code": "RU",
+            "emailCount": 283,
+            "emailCollectionCount": null,
+            "noShow": false,
+            "noSend": false,
+            "hasWebsite": true,
+            "hasEmail": true,
+            "fullOverview": "Heinen & Hopman Air Conditioning L. L. C. (formerly known as Carea Air Conditioning Services LLC. (CASP)), established in Dubai since 1988, offers complete and tailor-made HVAC systems for marine, offshore, oil & gas, renewables, yachts, navy & industrial. Our team of highly qualified industry professionals are able to handle any size of projects from small to large scale and follow the best practices in project management, such as PMBOK, offering world class HVAC products and solutions not only in the Middle East (Bahrain, Kuwait, Oman, Saudi-Arabia, and UAE) but worldwide. Company also have a dedicated team for maintenance, repair, overhaul and upgrade of HVAC &R systems onboard any type of client assets supported by inhouse compressor overhauling facility . Company provides one stop solution for clients HVAC &R needs starting from FEED all the way up to after sales and warranty.",
+            "mainBusiness": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore HVAC,HVAC Spare Parts,Low-noise HVAC Systems,Military HVAC,Cruise HVAC,HVAC,Navy HVAC Systems,Yacht HVAC,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery HVAC,Marine HVAC,Energy Saving HVAC Systems,Ship HVAC Systems,HVAC systems,HVAC Filtration,Refrigeration,HVAC Cleaning,Air Conditioning,HVAC service,Superyacht HVAC",
+            "follow": false,
+            "followCount": 0,
+            "website": "heinenhopman.com",
+            "highlightFieldEntity": {
+              "companyName": null,
+              "full_Overview": null,
+              "main_Business": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Spare Parts,Low-noise <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Military <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Cruise <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Navy <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Yacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Marine <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Energy Saving <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Ship <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Filtration,Refrigeration,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Cleaning,Air Conditioning,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> service,Superyacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>",
+              "keyMainBusiness": null,
+              "website": null,
+              "keyword": null,
+              "sicCodeDescription": null,
+              "sicCode8Description": null,
+              "email": null,
+              "sicName": null,
+              "sicName8": null,
+              "procureInfo": "",
+              "websiteKeyword": null,
+              "websiteDescription": null,
+              "websiteTitle": "Marine & Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span> - Heinen & Hopman"
+            },
+            "labelInfoList": [],
+            "websiteStatus": 1,
+            "emailIncTime": "2026-04-07 17:45:13",
+            "emailIncCount": null,
+            "newEmail": false,
+            "contactTotal": 331,
+            "keyword": "Offshore HVAC,HVAC contractor,marine HVAC",
+            "star": 5,
+            "aiEmailCount": 12,
+            "grade": 1,
+            "see": false,
+            "companyNameNoSuffix": "HEINEN AND HOPMAN RUS",
+            "snsList": [
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/heinenandhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/pages/heinen-hopman/270341566440304"
+              },
+              {
+                "bvdId": null,
+                "type": 2,
+                "url": null,
+                "snsUrl": "https://www.twitter.com/heinenhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-&-hopman-engineering-bv"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-hopman-italia"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinenhopmanuae"
+              },
+              {
+                "bvdId": null,
+                "type": 7,
+                "url": null,
+                "snsUrl": "https://www.instagram.com/heinenandhopman"
+              }
+            ],
+            "cantonFairNum": 0,
+            "fairList": null,
+            "etlMark": -1,
+            "industryList": [
+              {
+                "code": "7338",
+                "cnName": "秘书与法院报告服务",
+                "enName": "Document Preparation Services"
+              },
+              {
+                "code": "3731",
+                "cnName": "造船与修船",
+                "enName": "Ship Building and Repairing"
+              },
+              {
+                "code": "3585",
+                "cnName": "冷暖空调设备 工商用冷冻设备",
+                "enName": "Other Motor Vehicle Parts Mfg."
+              },
+              {
+                "code": "6211",
+                "cnName": "证券经纪人,经销商,公债发行公司",
+                "enName": "Investment Banking and Securities Dealing"
+              },
+              {
+                "code": "1711",
+                "cnName": "铅管铺设,冷暖空调",
+                "enName": "Plumbing, Heating, and Air Conditioning Contractors"
+              },
+              {
+                "code": "3519",
+                "cnName": "内燃引擎",
+                "enName": "Other Engine Equipment Mfg."
+              },
+              {
+                "code4": "3519",
+                "code": "35190000",
+                "cnName": "其他内燃机",
+                "enName": "INTERNAL COMBUSTION ENGINES, NEC",
+                "code8": "35190000"
+              },
+              {
+                "code4": "7338",
+                "code": "73380201",
+                "cnName": "法庭报告服务",
+                "enName": "COURT REPORTING SERVICE",
+                "code8": "73380201"
+              },
+              {
+                "code4": "3585",
+                "code": "35850000",
+                "cnName": "制冷加温装置",
+                "enName": "REFRIGERATION AND HEATING EQUIPMENT",
+                "code8": "35850000"
+              },
+              {
+                "code4": "6211",
+                "code": "62110204",
+                "cnName": "投资公司，一般经纪公司",
+                "enName": "INVESTMENT FIRM, GENERAL BROKERAGE",
+                "code8": "62110204"
+              },
+              {
+                "code4": "3731",
+                "code": "37310000",
+                "cnName": "造船修理",
+                "enName": "SHIPBUILDING AND REPAIRING",
+                "code8": "37310000"
+              },
+              {
+                "code4": "1711",
+                "code": "17110000",
+                "cnName": "管道、供暖、空调",
+                "enName": "PLUMBING, HEATING, AIR-CONDITIONING",
+                "code8": "17110000"
+              }
+            ],
+            "websiteLogo": "https://business.cdn.site.joinf.com/company_logo/img/5f42b9852e5a9244652091a4f0031112.ico",
+            "exhibitionDetailResponse": null
+          },
+          {
+            "customer": {
+              "exist": false,
+              "customerId": null,
+              "noViewPermission": false
+            },
+            "id": "a3c18ef26f974eb892d459c0ecd7bb9b",
+            "duns": null,
+            "companyName": "Heinenhopman Myhendislik A.S.",
+            "country": "土耳其",
+            "countryEn": "TURKEY",
+            "code": "TR",
+            "emailCount": 291,
+            "emailCollectionCount": null,
+            "noShow": false,
+            "noSend": false,
+            "hasWebsite": true,
+            "hasEmail": true,
+            "fullOverview": "Heinen & Hopman Air Conditioning L. L. C. (formerly known as Carea Air Conditioning Services LLC. (CASP)), established in Dubai since 1988, offers complete and tailor-made HVAC systems for marine, offshore, oil & gas, renewables, yachts, navy & industrial. Our team of highly qualified industry professionals are able to handle any size of projects from small to large scale and follow the best practices in project management, such as PMBOK, offering world class HVAC products and solutions not only in the Middle East (Bahrain, Kuwait, Oman, Saudi-Arabia, and UAE) but worldwide. Company also have a dedicated team for maintenance, repair, overhaul and upgrade of HVAC &R systems onboard any type of client assets supported by inhouse compressor overhauling facility . Company provides one stop solution for clients HVAC &R needs starting from FEED all the way up to after sales and warranty.",
+            "mainBusiness": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore HVAC,HVAC Spare Parts,Low-noise HVAC Systems,Military HVAC,Cruise HVAC,HVAC,Navy HVAC Systems,Yacht HVAC,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery HVAC,Marine HVAC,Energy Saving HVAC Systems,Ship HVAC Systems,HVAC systems,HVAC Filtration,Refrigeration,HVAC Cleaning,Air Conditioning,HVAC service,Superyacht HVAC",
+            "follow": false,
+            "followCount": 0,
+            "website": "heinenhopman.com",
+            "highlightFieldEntity": {
+              "companyName": null,
+              "full_Overview": null,
+              "main_Business": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Spare Parts,Low-noise <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Military <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Cruise <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Navy <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Yacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Marine <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Energy Saving <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Ship <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Filtration,Refrigeration,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Cleaning,Air Conditioning,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> service,Superyacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>",
+              "keyMainBusiness": null,
+              "website": null,
+              "keyword": null,
+              "sicCodeDescription": null,
+              "sicCode8Description": null,
+              "email": null,
+              "sicName": null,
+              "sicName8": null,
+              "procureInfo": "",
+              "websiteKeyword": null,
+              "websiteDescription": null,
+              "websiteTitle": "Marine & Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span> - Heinen & Hopman"
+            },
+            "labelInfoList": [],
+            "websiteStatus": 1,
+            "emailIncTime": "2026-04-07 17:45:27",
+            "emailIncCount": null,
+            "newEmail": false,
+            "contactTotal": 316,
+            "keyword": "HVAC contractor,Heating contractor,Air conditioning contractor",
+            "star": 5,
+            "aiEmailCount": 20,
+            "grade": 1,
+            "see": false,
+            "companyNameNoSuffix": "HEINENHOPMAN MYHENDISLIK A.S",
+            "snsList": [
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/heinenandhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/pages/heinen-hopman/270341566440304"
+              },
+              {
+                "bvdId": null,
+                "type": 2,
+                "url": null,
+                "snsUrl": "https://www.twitter.com/heinenhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-&-hopman-engineering-bv"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-hopman-italia"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinenhopmanuae"
+              }
+            ],
+            "cantonFairNum": 0,
+            "fairList": null,
+            "etlMark": -1,
+            "industryList": [
+              {
+                "code": "7338",
+                "cnName": "秘书与法院报告服务",
+                "enName": "Document Preparation Services"
+              },
+              {
+                "code": "3731",
+                "cnName": "造船与修船",
+                "enName": "Ship Building and Repairing"
+              },
+              {
+                "code": "3585",
+                "cnName": "冷暖空调设备 工商用冷冻设备",
+                "enName": "Other Motor Vehicle Parts Mfg."
+              },
+              {
+                "code": "6211",
+                "cnName": "证券经纪人,经销商,公债发行公司",
+                "enName": "Investment Banking and Securities Dealing"
+              },
+              {
+                "code": "1711",
+                "cnName": "铅管铺设,冷暖空调",
+                "enName": "Plumbing, Heating, and Air Conditioning Contractors"
+              },
+              {
+                "code": "3519",
+                "cnName": "内燃引擎",
+                "enName": "Other Engine Equipment Mfg."
+              },
+              {
+                "code4": "3519",
+                "code": "35190000",
+                "cnName": "其他内燃机",
+                "enName": "INTERNAL COMBUSTION ENGINES, NEC",
+                "code8": "35190000"
+              },
+              {
+                "code4": "7338",
+                "code": "73380201",
+                "cnName": "法庭报告服务",
+                "enName": "COURT REPORTING SERVICE",
+                "code8": "73380201"
+              },
+              {
+                "code4": "3585",
+                "code": "35850000",
+                "cnName": "制冷加温装置",
+                "enName": "REFRIGERATION AND HEATING EQUIPMENT",
+                "code8": "35850000"
+              },
+              {
+                "code4": "6211",
+                "code": "62110204",
+                "cnName": "投资公司，一般经纪公司",
+                "enName": "INVESTMENT FIRM, GENERAL BROKERAGE",
+                "code8": "62110204"
+              },
+              {
+                "code4": "3731",
+                "code": "37310000",
+                "cnName": "造船修理",
+                "enName": "SHIPBUILDING AND REPAIRING",
+                "code8": "37310000"
+              },
+              {
+                "code4": "1711",
+                "code": "17110000",
+                "cnName": "管道、供暖、空调",
+                "enName": "PLUMBING, HEATING, AIR-CONDITIONING",
+                "code8": "17110000"
+              }
+            ],
+            "websiteLogo": "https://business.cdn.site.joinf.com/company_logo/img/5f42b9852e5a9244652091a4f0031112.ico",
+            "exhibitionDetailResponse": null
+          },
+          {
+            "customer": {
+              "exist": false,
+              "customerId": null,
+              "noViewPermission": false
+            },
+            "id": "07d4907e3c284a2d8d31390a3bcd0629",
+            "duns": null,
+            "companyName": "Heinen & Hopman France Eurl - Antibes",
+            "country": "法国",
+            "countryEn": "FRANCE",
+            "code": "FR",
+            "emailCount": 278,
+            "emailCollectionCount": null,
+            "noShow": false,
+            "noSend": false,
+            "hasWebsite": true,
+            "hasEmail": true,
+            "fullOverview": "Heinen & Hopman Italia is a company specialized in the design and construction of HVAC systems for the maritime industry. It was founded in 2009 as a branch of Heinen & Hopman Engineering, the company has reached the highest levels and know-how in the design and construction of HVAC systems for every type of vessel. Recognized and appreciated for the very high level of turn-key services, Heinen & Hopman Italia has created numerous HVAC systems for military vessels, merchant vessels and superyachts.",
+            "mainBusiness": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore HVAC,HVAC Spare Parts,Low-noise HVAC Systems,Military HVAC,Cruise HVAC,HVAC,Navy HVAC Systems,Yacht HVAC,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery HVAC,Marine HVAC,Energy Saving HVAC Systems,Ship HVAC Systems,HVAC systems,HVAC Filtration,Refrigeration,HVAC Cleaning,Air Conditioning,HVAC service,Superyacht HVAC",
+            "follow": false,
+            "followCount": 0,
+            "website": "heinenhopman.com",
+            "highlightFieldEntity": {
+              "companyName": null,
+              "full_Overview": null,
+              "main_Business": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Spare Parts,Low-noise <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Military <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Cruise <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Navy <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Yacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Marine <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Energy Saving <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Ship <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Filtration,Refrigeration,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Cleaning,Air Conditioning,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> service,Superyacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>",
+              "keyMainBusiness": null,
+              "website": null,
+              "keyword": null,
+              "sicCodeDescription": null,
+              "sicCode8Description": null,
+              "email": null,
+              "sicName": null,
+              "sicName8": null,
+              "procureInfo": "",
+              "websiteKeyword": null,
+              "websiteDescription": null,
+              "websiteTitle": "Marine & Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span> - Heinen & Hopman"
+            },
+            "labelInfoList": [],
+            "websiteStatus": 1,
+            "emailIncTime": "2025-12-18 15:41:13",
+            "emailIncCount": null,
+            "newEmail": false,
+            "contactTotal": 289,
+            "keyword": "Offshore HVAC,marine HVAC,Air conditioning contractor",
+            "star": 5,
+            "aiEmailCount": 0,
+            "grade": 1,
+            "see": false,
+            "companyNameNoSuffix": "HEINEN AND HOPMAN FRANCE EURL - ANTIBES",
+            "snsList": [
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/Shipps-Heating-Air-Conditioning-Inc-368377819850057"
+              },
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/heinenandhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/pages/heinen-hopman/270341566440304"
+              },
+              {
+                "bvdId": null,
+                "type": 2,
+                "url": null,
+                "snsUrl": "https://www.twitter.com/heinenhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-&-hopman-engineering-bv"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-hopman-italia"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinenhopmanuae"
+              }
+            ],
+            "cantonFairNum": 0,
+            "fairList": null,
+            "etlMark": 6,
+            "industryList": [
+              {
+                "code": "7338",
+                "cnName": "秘书与法院报告服务",
+                "enName": "Document Preparation Services"
+              },
+              {
+                "code": "3731",
+                "cnName": "造船与修船",
+                "enName": "Ship Building and Repairing"
+              },
+              {
+                "code": "3585",
+                "cnName": "冷暖空调设备 工商用冷冻设备",
+                "enName": "Other Motor Vehicle Parts Mfg."
+              },
+              {
+                "code": "6211",
+                "cnName": "证券经纪人,经销商,公债发行公司",
+                "enName": "Investment Banking and Securities Dealing"
+              },
+              {
+                "code": "1711",
+                "cnName": "铅管铺设,冷暖空调",
+                "enName": "Plumbing, Heating, and Air Conditioning Contractors"
+              },
+              {
+                "code": "3519",
+                "cnName": "内燃引擎",
+                "enName": "Other Engine Equipment Mfg."
+              },
+              {
+                "code4": "3519",
+                "code": "35190000",
+                "cnName": "其他内燃机",
+                "enName": "INTERNAL COMBUSTION ENGINES, NEC",
+                "code8": "35190000"
+              },
+              {
+                "code4": "7338",
+                "code": "73380201",
+                "cnName": "法庭报告服务",
+                "enName": "COURT REPORTING SERVICE",
+                "code8": "73380201"
+              },
+              {
+                "code4": "3585",
+                "code": "35850000",
+                "cnName": "制冷加温装置",
+                "enName": "REFRIGERATION AND HEATING EQUIPMENT",
+                "code8": "35850000"
+              },
+              {
+                "code4": "6211",
+                "code": "62110204",
+                "cnName": "投资公司，一般经纪公司",
+                "enName": "INVESTMENT FIRM, GENERAL BROKERAGE",
+                "code8": "62110204"
+              },
+              {
+                "code4": "3731",
+                "code": "37310000",
+                "cnName": "造船修理",
+                "enName": "SHIPBUILDING AND REPAIRING",
+                "code8": "37310000"
+              },
+              {
+                "code4": "1711",
+                "code": "17110000",
+                "cnName": "管道、供暖、空调",
+                "enName": "PLUMBING, HEATING, AIR-CONDITIONING",
+                "code8": "17110000"
+              }
+            ],
+            "websiteLogo": "https://business.cdn.site.joinf.com/company_logo/img/5f42b9852e5a9244652091a4f0031112.ico",
+            "exhibitionDetailResponse": null
+          },
+          {
+            "customer": {
+              "exist": false,
+              "customerId": null,
+              "noViewPermission": false
+            },
+            "id": "7a6ffece5c4342c6b68808400266f0a7",
+            "duns": null,
+            "companyName": "Heinen & Hopman Engineering India Pvt. Ltd.",
+            "country": "印度",
+            "countryEn": "INDIA",
+            "code": "IN",
+            "emailCount": 325,
+            "emailCollectionCount": null,
+            "noShow": false,
+            "noSend": false,
+            "hasWebsite": true,
+            "hasEmail": true,
+            "fullOverview": "Heinen & Hopman India is a HVAC company which supplies high quality offshore and marine HVAC systems for all types of vessels in India. Heating, Ventilation, Air Conditioning and Refrigeration systems for the offshore industry, the navy, yachting, and merchant shipping industry. Heinen & Hopman | Marine & Offshore HVAC.",
+            "mainBusiness": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore HVAC,HVAC Spare Parts,Low-noise HVAC Systems,Military HVAC,Cruise HVAC,HVAC,Navy HVAC Systems,Yacht HVAC,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery HVAC,Marine HVAC,Energy Saving HVAC Systems,Ship HVAC Systems,HVAC systems,HVAC Filtration,Refrigeration,HVAC Cleaning,Air Conditioning,HVAC service,Superyacht HVAC",
+            "follow": false,
+            "followCount": 0,
+            "website": "heinenhopman.com",
+            "highlightFieldEntity": {
+              "companyName": null,
+              "full_Overview": null,
+              "main_Business": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Spare Parts,Low-noise <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Military <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Cruise <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Navy <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Yacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Marine <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Energy Saving <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Ship <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Filtration,Refrigeration,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Cleaning,Air Conditioning,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> service,Superyacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>",
+              "keyMainBusiness": null,
+              "website": null,
+              "keyword": null,
+              "sicCodeDescription": null,
+              "sicCode8Description": null,
+              "email": null,
+              "sicName": null,
+              "sicName8": null,
+              "procureInfo": "",
+              "websiteKeyword": null,
+              "websiteDescription": null,
+              "websiteTitle": "Marine & Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span> - Heinen & Hopman"
+            },
+            "labelInfoList": [],
+            "websiteStatus": 1,
+            "emailIncTime": "2026-03-23 10:32:05",
+            "emailIncCount": null,
+            "newEmail": false,
+            "contactTotal": 403,
+            "keyword": "HVAC contractor,offshore hvac india,marine hvac india,Civil engineering company,marine HVAC",
+            "star": 5,
+            "aiEmailCount": 0,
+            "grade": 1,
+            "see": false,
+            "companyNameNoSuffix": "HEINEN AND HOPMAN ENGINEERING INDIA",
+            "snsList": [
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/Shipps-Heating-Air-Conditioning-Inc-368377819850057"
+              },
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/heinenandhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/pages/heinen-hopman/270341566440304"
+              },
+              {
+                "bvdId": null,
+                "type": 2,
+                "url": null,
+                "snsUrl": "https://www.twitter.com/heinenhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-&-hopman-engineering-bv"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-hopman-italia"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinenhopmanuae"
+              }
+            ],
+            "cantonFairNum": 0,
+            "fairList": null,
+            "etlMark": 6,
+            "industryList": [
+              {
+                "code": "7338",
+                "cnName": "秘书与法院报告服务",
+                "enName": "Document Preparation Services"
+              },
+              {
+                "code": "3731",
+                "cnName": "造船与修船",
+                "enName": "Ship Building and Repairing"
+              },
+              {
+                "code": "3585",
+                "cnName": "冷暖空调设备 工商用冷冻设备",
+                "enName": "Other Motor Vehicle Parts Mfg."
+              },
+              {
+                "code": "6211",
+                "cnName": "证券经纪人,经销商,公债发行公司",
+                "enName": "Investment Banking and Securities Dealing"
+              },
+              {
+                "code": "1711",
+                "cnName": "铅管铺设,冷暖空调",
+                "enName": "Plumbing, Heating, and Air Conditioning Contractors"
+              },
+              {
+                "code": "3519",
+                "cnName": "内燃引擎",
+                "enName": "Other Engine Equipment Mfg."
+              },
+              {
+                "code4": "3519",
+                "code": "35190000",
+                "cnName": "其他内燃机",
+                "enName": "INTERNAL COMBUSTION ENGINES, NEC",
+                "code8": "35190000"
+              },
+              {
+                "code4": "7338",
+                "code": "73380201",
+                "cnName": "法庭报告服务",
+                "enName": "COURT REPORTING SERVICE",
+                "code8": "73380201"
+              },
+              {
+                "code4": "3585",
+                "code": "35850000",
+                "cnName": "制冷加温装置",
+                "enName": "REFRIGERATION AND HEATING EQUIPMENT",
+                "code8": "35850000"
+              },
+              {
+                "code4": "6211",
+                "code": "62110204",
+                "cnName": "投资公司，一般经纪公司",
+                "enName": "INVESTMENT FIRM, GENERAL BROKERAGE",
+                "code8": "62110204"
+              },
+              {
+                "code4": "3731",
+                "code": "37310000",
+                "cnName": "造船修理",
+                "enName": "SHIPBUILDING AND REPAIRING",
+                "code8": "37310000"
+              },
+              {
+                "code4": "1711",
+                "code": "17110000",
+                "cnName": "管道、供暖、空调",
+                "enName": "PLUMBING, HEATING, AIR-CONDITIONING",
+                "code8": "17110000"
+              }
+            ],
+            "websiteLogo": "https://business.cdn.site.joinf.com/company_logo/img/5f42b9852e5a9244652091a4f0031112.ico",
+            "exhibitionDetailResponse": null
+          },
+          {
+            "customer": {
+              "exist": false,
+              "customerId": null,
+              "noViewPermission": false
+            },
+            "id": "c68142c0c4c54b5aa7c3ad099c8975c9",
+            "duns": null,
+            "companyName": "Heinen & Hopman",
+            "country": "荷兰",
+            "countryEn": "NETHERLANDS",
+            "code": "NL",
+            "emailCount": 278,
+            "emailCollectionCount": null,
+            "noShow": false,
+            "noSend": false,
+            "hasWebsite": true,
+            "hasEmail": true,
+            "fullOverview": "Heinen & Hopman Engineering was founded in 1965 as a family business in the heart of Holland, Spakenburg. Starting out as subcontractor for mainly central heating installations, the company rapidly grew to become an expert in the field of designing, engineering and installing heating, ventilation, air conditioning (HVAC) and refrigeration systems on both land and sea.   The company has provided over 10,000 vessels with excellent HVAC&R systems. Heinen & Hopman is renowned for customized HVAC systems that provide solutions for any of our clients' challenges.  We have an expertise in the following markets:  ☑️ Cruise & Ferry ☑️ (Super)yachts ☑️ Fisheries ☑️ Navy ☑️ Offshore ☑️ Specialized vessels ☑️ Merchant vessels  Do you want to get in touch with our sales team Contact us via sales@heinenhopman.com",
+            "mainBusiness": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore HVAC,HVAC Spare Parts,Low-noise HVAC Systems,Military HVAC,Cruise HVAC,HVAC,Navy HVAC Systems,Yacht HVAC,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery HVAC,Marine HVAC,Energy Saving HVAC Systems,Ship HVAC Systems,HVAC systems,HVAC Filtration,Refrigeration,HVAC Cleaning,Air Conditioning,HVAC service,Superyacht HVAC",
+            "follow": false,
+            "followCount": 0,
+            "website": "heinenhopman.com",
+            "highlightFieldEntity": {
+              "companyName": null,
+              "full_Overview": null,
+              "main_Business": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Spare Parts,Low-noise <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Military <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Cruise <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Navy <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Yacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Marine <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Energy Saving <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Ship <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Filtration,Refrigeration,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Cleaning,Air Conditioning,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> service,Superyacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>",
+              "keyMainBusiness": null,
+              "website": null,
+              "keyword": null,
+              "sicCodeDescription": null,
+              "sicCode8Description": null,
+              "email": null,
+              "sicName": null,
+              "sicName8": null,
+              "procureInfo": "",
+              "websiteKeyword": null,
+              "websiteDescription": null,
+              "websiteTitle": "Marine & Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span> - Heinen & Hopman"
+            },
+            "labelInfoList": [],
+            "websiteStatus": 1,
+            "emailIncTime": "2025-12-25 15:33:49",
+            "emailIncCount": null,
+            "newEmail": false,
+            "contactTotal": 363,
+            "keyword": "operations,maritime,mechanical or industrial engineering,industrial automation,finance",
+            "star": 5,
+            "aiEmailCount": 0,
+            "grade": 1,
+            "see": false,
+            "companyNameNoSuffix": "HEINEN AND HOPMAN",
+            "snsList": [
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/heinenandhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 2,
+                "url": null,
+                "snsUrl": "https://www.twitter.com/heinenhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-&-hopman-engineering-bv"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-hopman-italia"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinenhopmanuae"
+              }
+            ],
+            "cantonFairNum": 0,
+            "fairList": null,
+            "etlMark": 8,
+            "industryList": [
+              {
+                "code": "7338",
+                "cnName": "秘书与法院报告服务",
+                "enName": "Document Preparation Services"
+              },
+              {
+                "code": "3731",
+                "cnName": "造船与修船",
+                "enName": "Ship Building and Repairing"
+              },
+              {
+                "code": "3585",
+                "cnName": "冷暖空调设备 工商用冷冻设备",
+                "enName": "Other Motor Vehicle Parts Mfg."
+              },
+              {
+                "code": "6211",
+                "cnName": "证券经纪人,经销商,公债发行公司",
+                "enName": "Investment Banking and Securities Dealing"
+              },
+              {
+                "code": "1711",
+                "cnName": "铅管铺设,冷暖空调",
+                "enName": "Plumbing, Heating, and Air Conditioning Contractors"
+              },
+              {
+                "code": "3519",
+                "cnName": "内燃引擎",
+                "enName": "Other Engine Equipment Mfg."
+              },
+              {
+                "code4": "3519",
+                "code": "35190000",
+                "cnName": "其他内燃机",
+                "enName": "INTERNAL COMBUSTION ENGINES, NEC",
+                "code8": "35190000"
+              },
+              {
+                "code4": "7338",
+                "code": "73380201",
+                "cnName": "法庭报告服务",
+                "enName": "COURT REPORTING SERVICE",
+                "code8": "73380201"
+              },
+              {
+                "code4": "3585",
+                "code": "35850000",
+                "cnName": "制冷加温装置",
+                "enName": "REFRIGERATION AND HEATING EQUIPMENT",
+                "code8": "35850000"
+              },
+              {
+                "code4": "6211",
+                "code": "62110204",
+                "cnName": "投资公司，一般经纪公司",
+                "enName": "INVESTMENT FIRM, GENERAL BROKERAGE",
+                "code8": "62110204"
+              },
+              {
+                "code4": "3731",
+                "code": "37310000",
+                "cnName": "造船修理",
+                "enName": "SHIPBUILDING AND REPAIRING",
+                "code8": "37310000"
+              },
+              {
+                "code4": "1711",
+                "code": "17110000",
+                "cnName": "管道、供暖、空调",
+                "enName": "PLUMBING, HEATING, AIR-CONDITIONING",
+                "code8": "17110000"
+              }
+            ],
+            "websiteLogo": "https://business.cdn.site.joinf.com/company_logo/img/5f42b9852e5a9244652091a4f0031112.ico",
+            "exhibitionDetailResponse": null
+          },
+          {
+            "customer": {
+              "exist": false,
+              "customerId": null,
+              "noViewPermission": false
+            },
+            "id": "c3f9d50fc66b4bfd9b26da53d32be6d6",
+            "duns": null,
+            "companyName": "Heinen & Hopman France Eurl - La Ciotat",
+            "country": "法国",
+            "countryEn": "FRANCE",
+            "code": "FR",
+            "emailCount": 288,
+            "emailCollectionCount": null,
+            "noShow": false,
+            "noSend": false,
+            "hasWebsite": true,
+            "hasEmail": true,
+            "fullOverview": "Heinen & Hopman Engineering was founded in 1965 as a family business in the heart of Holland, Spakenburg. Starting out as subcontractor for mainly central heating installations, the company rapidly grew to become an expert in the field of designing, engineering and installing heating, ventilation, air conditioning (HVAC) and refrigeration systems on both land and sea.   The company has provided over 10,000 vessels with excellent HVAC&R systems. Heinen & Hopman is renowned for customized HVAC systems that provide solutions for any of our clients' challenges.  We have an expertise in the following markets:  ☑️ Cruise & Ferry ☑️ (Super)yachts ☑️ Fisheries ☑️ Navy ☑️ Offshore ☑️ Specialized vessels ☑️ Merchant vessels  Do you want to get in touch with our sales team Contact us via sales@heinenhopman.com",
+            "mainBusiness": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore HVAC,HVAC Spare Parts,Low-noise HVAC Systems,Military HVAC,Cruise HVAC,HVAC,Navy HVAC Systems,Yacht HVAC,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery HVAC,Marine HVAC,Energy Saving HVAC Systems,Ship HVAC Systems,HVAC systems,HVAC Filtration,Refrigeration,HVAC Cleaning,Air Conditioning,HVAC service,Superyacht HVAC",
+            "follow": false,
+            "followCount": 0,
+            "website": "heinenhopman.com",
+            "highlightFieldEntity": {
+              "companyName": null,
+              "full_Overview": null,
+              "main_Business": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Spare Parts,Low-noise <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Military <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Cruise <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Navy <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Yacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Marine <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Energy Saving <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Ship <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Filtration,Refrigeration,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Cleaning,Air Conditioning,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> service,Superyacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>",
+              "keyMainBusiness": null,
+              "website": null,
+              "keyword": null,
+              "sicCodeDescription": null,
+              "sicCode8Description": null,
+              "email": null,
+              "sicName": null,
+              "sicName8": null,
+              "procureInfo": "",
+              "websiteKeyword": null,
+              "websiteDescription": null,
+              "websiteTitle": "Marine & Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span> - Heinen & Hopman"
+            },
+            "labelInfoList": [],
+            "websiteStatus": 1,
+            "emailIncTime": "2026-03-13 11:58:53",
+            "emailIncCount": null,
+            "newEmail": false,
+            "contactTotal": 314,
+            "keyword": "Offshore HVAC,HVAC contractor,marine HVAC",
+            "star": 5,
+            "aiEmailCount": 0,
+            "grade": 1,
+            "see": false,
+            "companyNameNoSuffix": "HEINEN AND HOPMAN FRANCE EURL - LA CIOTAT",
+            "snsList": [
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/Shipps-Heating-Air-Conditioning-Inc-368377819850057"
+              },
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/heinenandhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/pages/heinen-hopman/270341566440304"
+              },
+              {
+                "bvdId": null,
+                "type": 2,
+                "url": null,
+                "snsUrl": "https://www.twitter.com/heinenhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-&-hopman-engineering-bv"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-hopman-italia"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinenhopmanuae"
+              }
+            ],
+            "cantonFairNum": 0,
+            "fairList": null,
+            "etlMark": 6,
+            "industryList": [
+              {
+                "code": "7338",
+                "cnName": "秘书与法院报告服务",
+                "enName": "Document Preparation Services"
+              },
+              {
+                "code": "3731",
+                "cnName": "造船与修船",
+                "enName": "Ship Building and Repairing"
+              },
+              {
+                "code": "3585",
+                "cnName": "冷暖空调设备 工商用冷冻设备",
+                "enName": "Other Motor Vehicle Parts Mfg."
+              },
+              {
+                "code": "6211",
+                "cnName": "证券经纪人,经销商,公债发行公司",
+                "enName": "Investment Banking and Securities Dealing"
+              },
+              {
+                "code": "1711",
+                "cnName": "铅管铺设,冷暖空调",
+                "enName": "Plumbing, Heating, and Air Conditioning Contractors"
+              },
+              {
+                "code": "3519",
+                "cnName": "内燃引擎",
+                "enName": "Other Engine Equipment Mfg."
+              },
+              {
+                "code4": "3519",
+                "code": "35190000",
+                "cnName": "其他内燃机",
+                "enName": "INTERNAL COMBUSTION ENGINES, NEC",
+                "code8": "35190000"
+              },
+              {
+                "code4": "7338",
+                "code": "73380201",
+                "cnName": "法庭报告服务",
+                "enName": "COURT REPORTING SERVICE",
+                "code8": "73380201"
+              },
+              {
+                "code4": "3585",
+                "code": "35850000",
+                "cnName": "制冷加温装置",
+                "enName": "REFRIGERATION AND HEATING EQUIPMENT",
+                "code8": "35850000"
+              },
+              {
+                "code4": "6211",
+                "code": "62110204",
+                "cnName": "投资公司，一般经纪公司",
+                "enName": "INVESTMENT FIRM, GENERAL BROKERAGE",
+                "code8": "62110204"
+              },
+              {
+                "code4": "3731",
+                "code": "37310000",
+                "cnName": "造船修理",
+                "enName": "SHIPBUILDING AND REPAIRING",
+                "code8": "37310000"
+              },
+              {
+                "code4": "1711",
+                "code": "17110000",
+                "cnName": "管道、供暖、空调",
+                "enName": "PLUMBING, HEATING, AIR-CONDITIONING",
+                "code8": "17110000"
+              }
+            ],
+            "websiteLogo": "https://business.cdn.site.joinf.com/company_logo/img/5f42b9852e5a9244652091a4f0031112.ico",
+            "exhibitionDetailResponse": null
+          },
+          {
+            "customer": {
+              "exist": false,
+              "customerId": null,
+              "noViewPermission": false
+            },
+            "id": "e484b0f4502f4f7f88a69ffe5a5cfb6a",
+            "duns": null,
+            "companyName": "Heinen & Hopman Iberica S.L. (Mallorca Office",
+            "country": "西班牙",
+            "countryEn": "SPAIN",
+            "code": "ES",
+            "emailCount": 292,
+            "emailCollectionCount": null,
+            "noShow": false,
+            "noSend": false,
+            "hasWebsite": true,
+            "hasEmail": true,
+            "fullOverview": "Heinen & Hopman Engineering was founded in 1965 as a family business in the heart of Holland, Spakenburg. Starting out as subcontractor for mainly central heating installations, the company rapidly grew to become an expert in the field of designing, engineering and installing heating, ventilation, air conditioning (HVAC) and refrigeration systems on both land and sea.\n \nThe company has provided over 10,000 vessels with excellent HVAC&R systems. Heinen & Hopman is renowned for customized HVAC systems that provide solutions for any of our clients' challenges.\n\nWe have an expertise in the following markets:\n\n☑️ Cruise & Ferry\n☑️ (Super)yachts\n☑️ Fisheries\n☑️ Navy\n☑️ Offshore\n☑️ Specialized vessels\n☑️ Merchant vessels\n\nDo you want to get in touch with our sales team Contact us via sales@heinenhopman.com",
+            "mainBusiness": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore HVAC,HVAC Spare Parts,Low-noise HVAC Systems,Military HVAC,Cruise HVAC,HVAC,Navy HVAC Systems,Yacht HVAC,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery HVAC,Marine HVAC,Energy Saving HVAC Systems,Ship HVAC Systems,HVAC systems,HVAC Filtration,Refrigeration,HVAC Cleaning,Air Conditioning,HVAC service,Superyacht HVAC",
+            "follow": false,
+            "followCount": 0,
+            "website": "heinenhopman.com",
+            "highlightFieldEntity": {
+              "companyName": null,
+              "full_Overview": null,
+              "main_Business": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Spare Parts,Low-noise <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Military <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Cruise <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Navy <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Yacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Marine <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Energy Saving <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Ship <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Filtration,Refrigeration,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Cleaning,Air Conditioning,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> service,Superyacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>",
+              "keyMainBusiness": null,
+              "website": null,
+              "keyword": null,
+              "sicCodeDescription": null,
+              "sicCode8Description": null,
+              "email": null,
+              "sicName": null,
+              "sicName8": null,
+              "procureInfo": "",
+              "websiteKeyword": null,
+              "websiteDescription": null,
+              "websiteTitle": "Marine & Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span> - Heinen & Hopman"
+            },
+            "labelInfoList": [],
+            "websiteStatus": 1,
+            "emailIncTime": "2026-05-06 13:53:18",
+            "emailIncCount": null,
+            "newEmail": false,
+            "contactTotal": 323,
+            "keyword": "Offshore HVAC,HVAC contractor,marine HVAC",
+            "star": 5,
+            "aiEmailCount": 196,
+            "grade": 1,
+            "see": false,
+            "companyNameNoSuffix": "HEINEN AND HOPMAN IBERICA",
+            "snsList": [
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/heinenandhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/pages/heinen-hopman/270341566440304"
+              },
+              {
+                "bvdId": null,
+                "type": 2,
+                "url": null,
+                "snsUrl": "https://www.twitter.com/heinenhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-&-hopman-engineering-bv"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-hopman-italia"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinenhopmanuae"
+              }
+            ],
+            "cantonFairNum": 0,
+            "fairList": null,
+            "etlMark": -1,
+            "industryList": [
+              {
+                "code": "7338",
+                "cnName": "秘书与法院报告服务",
+                "enName": "Document Preparation Services"
+              },
+              {
+                "code": "3731",
+                "cnName": "造船与修船",
+                "enName": "Ship Building and Repairing"
+              },
+              {
+                "code": "3585",
+                "cnName": "冷暖空调设备 工商用冷冻设备",
+                "enName": "Other Motor Vehicle Parts Mfg."
+              },
+              {
+                "code": "6211",
+                "cnName": "证券经纪人,经销商,公债发行公司",
+                "enName": "Investment Banking and Securities Dealing"
+              },
+              {
+                "code": "1711",
+                "cnName": "铅管铺设,冷暖空调",
+                "enName": "Plumbing, Heating, and Air Conditioning Contractors"
+              },
+              {
+                "code": "3519",
+                "cnName": "内燃引擎",
+                "enName": "Other Engine Equipment Mfg."
+              },
+              {
+                "code4": "3519",
+                "code": "35190000",
+                "cnName": "其他内燃机",
+                "enName": "INTERNAL COMBUSTION ENGINES, NEC",
+                "code8": "35190000"
+              },
+              {
+                "code4": "7338",
+                "code": "73380201",
+                "cnName": "法庭报告服务",
+                "enName": "COURT REPORTING SERVICE",
+                "code8": "73380201"
+              },
+              {
+                "code4": "3585",
+                "code": "35850000",
+                "cnName": "制冷加温装置",
+                "enName": "REFRIGERATION AND HEATING EQUIPMENT",
+                "code8": "35850000"
+              },
+              {
+                "code4": "6211",
+                "code": "62110204",
+                "cnName": "投资公司，一般经纪公司",
+                "enName": "INVESTMENT FIRM, GENERAL BROKERAGE",
+                "code8": "62110204"
+              },
+              {
+                "code4": "3731",
+                "code": "37310000",
+                "cnName": "造船修理",
+                "enName": "SHIPBUILDING AND REPAIRING",
+                "code8": "37310000"
+              },
+              {
+                "code4": "1711",
+                "code": "17110000",
+                "cnName": "管道、供暖、空调",
+                "enName": "PLUMBING, HEATING, AIR-CONDITIONING",
+                "code8": "17110000"
+              }
+            ],
+            "websiteLogo": "https://business.cdn.site.joinf.com/company_logo/img/5f42b9852e5a9244652091a4f0031112.ico",
+            "exhibitionDetailResponse": null
+          },
+          {
+            "customer": {
+              "exist": false,
+              "customerId": null,
+              "noViewPermission": false
+            },
+            "id": "7082d4c220e0419e9462e711729750e3",
+            "duns": null,
+            "companyName": "Thesmarthvac",
+            "country": "印度",
+            "countryEn": "INDIA",
+            "code": "IN",
+            "emailCount": 1,
+            "emailCollectionCount": null,
+            "noShow": false,
+            "noSend": false,
+            "hasWebsite": true,
+            "hasEmail": true,
+            "fullOverview": "TheSmartHVAC combines superior HVAC equipment with superior design to deliver efficient HVAC solutions to clients across India. TheSmartHVAC is a leading HVAC company in India providing heating, ventilation, and air conditioning solutions to malls, hotels, offices, airports, hospitals, showrooms, restaurants, warehouses, cold storages across various Indian cities such as Delhi, Noida, Gurgaon, Faridabad, Ghaziabad, Chennai, Hyderabad, Bengaluru, Jaipur, Chandigarh, Ahmedabad, Pune, Mumbai, Kolkata.",
+            "mainBusiness": "HVAC company in Gurgaon,hvac system,VRV system,HVAC company in Pune,HVAC company in Hyderabad,HVAC company in Mumbai,VRF system,hvac,HVAC company in Delhi NCR,HVAC company in Chennai,HVAC company in Kolkata,water cooled chiller,central air conditioning system,exhaust,ductable AC,central AC,HVAC company in Noida,duct,centralized ac,chiller,central air conditioner,ventilation,HVAC company in Bangalore,HVAC company in Ahmedabad,HVAC company in Kochi,Central AC for Home,HVAC company in Delhi,AHU,air cooled chiller,air handling unit",
+            "follow": false,
+            "followCount": 0,
+            "website": "thesmarthvac.com",
+            "highlightFieldEntity": {
+              "companyName": null,
+              "full_Overview": null,
+              "main_Business": "<span style=\"color:rgb(255, 106, 0);\">HVAC</span> company in Gurgaon,<span style=\"color:rgb(255, 106, 0);\">hvac</span> system,VRV system,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> company in Pune,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> company in Hyderabad,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> company in Mumbai,VRF system,<span style=\"color:rgb(255, 106, 0);\">hvac</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> company in Delhi NCR,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> company in Chennai,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> company in Kolkata,water cooled chiller,central air conditioning system,exhaust,ductable AC,central AC,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> company in Noida,duct,centralized ac,chiller,central air conditioner,ventilation,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> company in Bangalore,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> company in Ahmedabad,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> company in Kochi,Central AC for Home,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> company in Delhi,AHU,air cooled chiller,air handling unit",
+              "keyMainBusiness": null,
+              "website": null,
+              "keyword": null,
+              "sicCodeDescription": null,
+              "sicCode8Description": null,
+              "email": null,
+              "sicName": null,
+              "sicName8": null,
+              "procureInfo": "",
+              "websiteKeyword": "TheSmartHVAC combines superior <span style=\"color:rgb(255, 106, 0);\">HVAC</span> equipment with superior design to deliver efficient <span style=\"color:rgb(255, 106, 0);\">HVAC</span>",
+              "websiteDescription": "top <span style=\"color:rgb(255, 106, 0);\">HVAC</span> companies in India,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> contractors in India,central air conditioner,central air",
+              "websiteTitle": null
+            },
+            "labelInfoList": [],
+            "websiteStatus": 1,
+            "emailIncTime": "2026-01-30 15:57:55",
+            "emailIncCount": null,
+            "newEmail": false,
+            "contactTotal": 1,
+            "keyword": "HVAC System,top HVAC companies in India,HVAC contractors in Bangalore,HVAC companies in Chennai,HVAC company in Mumbai",
+            "star": 4.5,
+            "aiEmailCount": 0,
+            "grade": 0.924,
+            "see": false,
+            "companyNameNoSuffix": "THESMARTHVAC",
+            "snsList": [
+              {
+                "bvdId": null,
+                "type": 8,
+                "url": null,
+                "snsUrl": "https://www.youtube.com/channel/ucnaiwhe7hhnbpu00b-e5nsq"
+              }
+            ],
+            "cantonFairNum": 0,
+            "fairList": null,
+            "etlMark": 12,
+            "industryList": [],
+            "websiteLogo": "https://business.cdn.site.joinf.com/company_logo/img/71965b57fdd476c1a0c3bf230159eaa5.ico",
+            "exhibitionDetailResponse": null
+          },
+          {
+            "customer": {
+              "exist": false,
+              "customerId": null,
+              "noViewPermission": false
+            },
+            "id": "2f585fc3720542d08c72daeb01c4c48f",
+            "duns": null,
+            "companyName": "Heinen & Hopman Iberica S.L.",
+            "country": "西班牙",
+            "countryEn": "SPAIN",
+            "code": "ES",
+            "emailCount": 90,
+            "emailCollectionCount": null,
+            "noShow": false,
+            "noSend": false,
+            "hasWebsite": true,
+            "hasEmail": true,
+            "fullOverview": "Heinen & Hopman Engineering was founded in 1965 as a family business in the heart of Holland, Spakenburg. Starting out as subcontractor for mainly central heating installations, the company rapidly grew to become an expert in the field of designing, engineering and installing heating, ventilation, air conditioning (HVAC) and refrigeration systems on both land and sea.\n \nThe company has provided over 10,000 vessels with excellent HVAC&R systems. Heinen & Hopman is renowned for customized HVAC systems that provide solutions for any of our clients' challenges.\n\nWe have an expertise in the following markets:\n\n☑️ Cruise & Ferry\n☑️ (Super)yachts\n☑️ Fisheries\n☑️ Navy\n☑️ Offshore\n☑️ Specialized vessels\n☑️ Merchant vessels\n\nDo you want to get in touch with our sales team Contact us via sales@heinenhopman.com",
+            "mainBusiness": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore HVAC,HVAC Spare Parts,Low-noise HVAC Systems,Military HVAC,Cruise HVAC,HVAC,Navy HVAC Systems,Yacht HVAC,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery HVAC,Marine HVAC,Energy Saving HVAC Systems,Ship HVAC Systems,HVAC systems,HVAC Filtration,Refrigeration,HVAC Cleaning,Air Conditioning,HVAC service,Superyacht HVAC",
+            "follow": false,
+            "followCount": 0,
+            "website": "heinenhopman.com",
+            "highlightFieldEntity": {
+              "companyName": null,
+              "full_Overview": null,
+              "main_Business": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Spare Parts,Low-noise <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Military <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Cruise <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Navy <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Yacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Marine <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Energy Saving <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Ship <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Filtration,Refrigeration,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Cleaning,Air Conditioning,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> service,Superyacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>",
+              "keyMainBusiness": null,
+              "website": null,
+              "keyword": null,
+              "sicCodeDescription": null,
+              "sicCode8Description": null,
+              "email": null,
+              "sicName": null,
+              "sicName8": null,
+              "procureInfo": "",
+              "websiteKeyword": null,
+              "websiteDescription": null,
+              "websiteTitle": "Marine & Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span> - Heinen & Hopman"
+            },
+            "labelInfoList": [],
+            "websiteStatus": 1,
+            "emailIncTime": "2022-07-26 14:46:20",
+            "emailIncCount": null,
+            "newEmail": false,
+            "contactTotal": 90,
+            "keyword": "Offshore HVAC,HVAC contractor,marine HVAC",
+            "star": 5,
+            "aiEmailCount": 0,
+            "grade": 1,
+            "see": false,
+            "companyNameNoSuffix": "HEINEN AND HOPMAN IBERICA",
+            "snsList": [
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/heinenandhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/pages/heinen-hopman/270341566440304"
+              },
+              {
+                "bvdId": null,
+                "type": 2,
+                "url": null,
+                "snsUrl": "https://www.twitter.com/heinenhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-&-hopman-engineering-bv"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-hopman-italia"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinenhopmanuae"
+              }
+            ],
+            "cantonFairNum": 0,
+            "fairList": null,
+            "etlMark": -1,
+            "industryList": [
+              {
+                "code": "7338",
+                "cnName": "秘书与法院报告服务",
+                "enName": "Document Preparation Services"
+              },
+              {
+                "code": "3731",
+                "cnName": "造船与修船",
+                "enName": "Ship Building and Repairing"
+              },
+              {
+                "code": "3585",
+                "cnName": "冷暖空调设备 工商用冷冻设备",
+                "enName": "Other Motor Vehicle Parts Mfg."
+              },
+              {
+                "code": "6211",
+                "cnName": "证券经纪人,经销商,公债发行公司",
+                "enName": "Investment Banking and Securities Dealing"
+              },
+              {
+                "code": "1711",
+                "cnName": "铅管铺设,冷暖空调",
+                "enName": "Plumbing, Heating, and Air Conditioning Contractors"
+              },
+              {
+                "code": "3519",
+                "cnName": "内燃引擎",
+                "enName": "Other Engine Equipment Mfg."
+              },
+              {
+                "code4": "3519",
+                "code": "35190000",
+                "cnName": "其他内燃机",
+                "enName": "INTERNAL COMBUSTION ENGINES, NEC",
+                "code8": "35190000"
+              },
+              {
+                "code4": "7338",
+                "code": "73380201",
+                "cnName": "法庭报告服务",
+                "enName": "COURT REPORTING SERVICE",
+                "code8": "73380201"
+              },
+              {
+                "code4": "3585",
+                "code": "35850000",
+                "cnName": "制冷加温装置",
+                "enName": "REFRIGERATION AND HEATING EQUIPMENT",
+                "code8": "35850000"
+              },
+              {
+                "code4": "6211",
+                "code": "62110204",
+                "cnName": "投资公司，一般经纪公司",
+                "enName": "INVESTMENT FIRM, GENERAL BROKERAGE",
+                "code8": "62110204"
+              },
+              {
+                "code4": "3731",
+                "code": "37310000",
+                "cnName": "造船修理",
+                "enName": "SHIPBUILDING AND REPAIRING",
+                "code8": "37310000"
+              },
+              {
+                "code4": "1711",
+                "code": "17110000",
+                "cnName": "管道、供暖、空调",
+                "enName": "PLUMBING, HEATING, AIR-CONDITIONING",
+                "code8": "17110000"
+              }
+            ],
+            "websiteLogo": "https://business.cdn.site.joinf.com/company_logo/img/5f42b9852e5a9244652091a4f0031112.ico",
+            "exhibitionDetailResponse": null
+          },
+          {
+            "customer": {
+              "exist": false,
+              "customerId": null,
+              "noViewPermission": false
+            },
+            "id": "8aaf6d1bad0457429871513c2a4ec3a3",
+            "duns": null,
+            "companyName": "Air Maintenance Heating & Cooling",
+            "country": "美国",
+            "countryEn": "UNITED STATES",
+            "code": "US",
+            "emailCount": 8,
+            "emailCollectionCount": null,
+            "noShow": false,
+            "noSend": false,
+            "hasWebsite": true,
+            "hasEmail": true,
+            "fullOverview": "At Air Maintenance Heating & Cooling, we specialize in providing top-tier HVAC services to the Tucson community. Our commitment to excellence is evident in every repair, installation, and maintenance service we offer. With a team of certified professionals, we ensure your living or working space is not just comfortable, but also safe and energy-efficient. Our services are tailored to meet the unique needs of the desert climate, guaranteeing year-round indoor air quality and comfort. Choose us for reliable, swift, and expert HVAC solutions that stand the test of time.",
+            "mainBusiness": "HVAC System Upgrades,Ductwork Installation & Repair,Energy-Efficient HVAC Systems,Climate Control Solutions,Indoor Air Quality Solutions,HVAC Maintenance,Smart Thermostat Integration,Commercial HVAC Solutions,Ac Repair,HVAC Services,Hvac,Residential HVAC Services,Ventilation Systems,Preventive HVAC Maintenance,Air Conditioning Services,Emergency HVAC Services,Air Filtration Systems,HVAC Installation,Refrigeration Services,Eco-Friendly HVAC Options,Heating Services,HVAC Repair,Custom HVAC Design",
+            "follow": false,
+            "followCount": 0,
+            "website": "airmaintenancehvac.com",
+            "highlightFieldEntity": {
+              "companyName": null,
+              "full_Overview": null,
+              "main_Business": "<span style=\"color:rgb(255, 106, 0);\">HVAC</span> System Upgrades,Ductwork Installation & Repair,Energy-Efficient <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Climate Control Solutions,Indoor Air Quality Solutions,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Maintenance,Smart Thermostat Integration,Commercial <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Solutions,Ac Repair,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Services,<span style=\"color:rgb(255, 106, 0);\">Hvac</span>,Residential <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Services,Ventilation Systems,Preventive <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Maintenance,Air Conditioning Services,Emergency <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Services,Air Filtration Systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Installation,Refrigeration Services,Eco-Friendly <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Options,Heating Services,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Repair,Custom <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Design",
+              "keyMainBusiness": null,
+              "website": null,
+              "keyword": null,
+              "sicCodeDescription": null,
+              "sicCode8Description": null,
+              "email": null,
+              "sicName": null,
+              "sicName8": null,
+              "procureInfo": "",
+              "websiteKeyword": "Expert <span style=\"color:rgb(255, 106, 0);\">HVAC</span> and AC repair in Tucson & Sahuarita. Contact Air Maintenance for fast, professional service and peak system performance.",
+              "websiteDescription": null,
+              "websiteTitle": "<span style=\"color:rgb(255, 106, 0);\">HVAC</span> AC Repair Tucson and Sahuarita | Air Maintenance Experts"
+            },
+            "labelInfoList": [],
+            "websiteStatus": 1,
+            "emailIncTime": "2025-12-15 11:02:46",
+            "emailIncCount": null,
+            "newEmail": false,
+            "contactTotal": 8,
+            "keyword": "HVAC contractor,Air conditioning repair service,Air conditioning contractor",
+            "star": 5,
+            "aiEmailCount": 0,
+            "grade": 0.951,
+            "see": false,
+            "companyNameNoSuffix": "AIR MAINTENANCE HEATING AND COOLING",
+            "snsList": [
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/air-maintenance-heating-and-cooling-llc"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/air-maintenance-heating-cooling"
+              }
+            ],
+            "cantonFairNum": 0,
+            "fairList": null,
+            "etlMark": 1,
+            "industryList": [
+              {
+                "code": "1711",
+                "cnName": "铅管铺设,冷暖空调",
+                "enName": "Plumbing, Heating, and Air Conditioning Contractors"
+              },
+              {
+                "code4": "1711",
+                "code": "17110405",
+                "cnName": "暖通空调承包商",
+                "enName": "WARM AIR HEATING AND AIR CONDITIONING CONTRACTOR",
+                "code8": "17110405"
+              }
+            ],
+            "websiteLogo": null,
+            "exhibitionDetailResponse": null
+          },
+          {
+            "customer": {
+              "exist": false,
+              "customerId": null,
+              "noViewPermission": false
+            },
+            "id": "mcec_4e7a82ecf06298d041c2ba1ba747cf6f",
+            "duns": null,
+            "companyName": "Protec Cooling Towers Inc",
+            "country": "美国",
+            "countryEn": "UNITED STATES",
+            "code": "US",
+            "emailCount": 136,
+            "emailCollectionCount": null,
+            "noShow": false,
+            "noSend": false,
+            "hasWebsite": true,
+            "hasEmail": true,
+            "fullOverview": "fabricated plate work (boiler shops). Protec provides commercial HVAC solutions for buildings throughout Florida, Latin America, and the Caribbean. We support our equipment during design, installation, and operation. Protec - HVAC Equipment Sales | Florida | Latin America and the Caribbean.",
+            "mainBusiness": "Engineered HVAC Equipment,Mechanical Engineering,HVAC Engineers,HVAC Manufacturers Representative,HVAC Service,HVAC Sales,HVAC Parts,HVAC Construction,HVAC projects,HVAC Repair,HVAC Solutions",
+            "follow": false,
+            "followCount": 0,
+            "website": "protecinc.com",
+            "highlightFieldEntity": {
+              "companyName": null,
+              "full_Overview": null,
+              "main_Business": "Engineered <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Equipment,Mechanical Engineering,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Engineers,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Manufacturers Representative,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Service,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Sales,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Parts,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Construction,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> projects,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Repair,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Solutions",
+              "keyMainBusiness": null,
+              "website": null,
+              "keyword": null,
+              "sicCodeDescription": null,
+              "sicCode8Description": null,
+              "email": null,
+              "sicName": null,
+              "sicName8": null,
+              "procureInfo": "",
+              "websiteKeyword": "Protec provides commercial <span style=\"color:rgb(255, 106, 0);\">HVAC</span> solutions for buildings throughout Florida, Latin America",
+              "websiteDescription": null,
+              "websiteTitle": "Protec - <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Equipment Sales | Florida | Latin America and the Caribbean"
+            },
+            "labelInfoList": [],
+            "websiteStatus": 1,
+            "emailIncTime": "2026-04-10 13:30:38",
+            "emailIncCount": null,
+            "newEmail": false,
+            "contactTotal": 177,
+            "keyword": "Air conditioning system supplier,computer speakers,HVAC filters,Security,Plumbing & Hvac Contrs",
+            "star": 5,
+            "aiEmailCount": 24,
+            "grade": 0.989,
+            "see": false,
+            "companyNameNoSuffix": "PROTEC COOLING TOWERS",
+            "snsList": [
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/protecinc"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/protec-inc"
+              },
+              {
+                "bvdId": null,
+                "type": 7,
+                "url": null,
+                "snsUrl": "https://www.instagram.com/protec_inc"
+              }
+            ],
+            "cantonFairNum": 0,
+            "fairList": null,
+            "etlMark": 0,
+            "industryList": [
+              {
+                "code": "5072",
+                "cnName": "五金",
+                "enName": "Hardware Merchant Wholesalers"
+              },
+              {
+                "code": "5099",
+                "cnName": "耐久商品批发业",
+                "enName": "Other Misc. Durable Goods Merchant Wholesalers"
+              },
+              {
+                "code": "5063",
+                "cnName": "电气设备,配线用品及建材",
+                "enName": "Other Building Material Dealers"
+              },
+              {
+                "code": "5075",
+                "cnName": "暖空气加热与空调设备用品",
+                "enName": "Warm Air Heating and Air-Conditioning Equipment and Supplies Merchant Wholesalers"
+              },
+              {
+                "code": "3429",
+                "cnName": "五金",
+                "enName": "Hardware Mfg."
+              },
+              {
+                "code4": "5075",
+                "code": "50750000",
+                "cnName": "暖风供暖与空调",
+                "enName": "WARM AIR HEATING AND AIR CONDITIONING",
+                "code8": "50750000"
+              },
+              {
+                "code4": "3429",
+                "code": "34290000",
+                "cnName": "其他手工工具",
+                "enName": "HARDWARE, NEC",
+                "code8": "34290000"
+              },
+              {
+                "code4": "5063",
+                "code": "50630500",
+                "cnName": "电报警信号设备",
+                "enName": "ELECTRIC ALARMS AND SIGNALING EQUIPMENT",
+                "code8": "50630500"
+              },
+              {
+                "code4": "5099",
+                "code": "50990000",
+                "cnName": "耐用品",
+                "enName": "DURABLE GOODS, NEC",
+                "code8": "50990000"
+              },
+              {
+                "code4": "5072",
+                "code": "50720000",
+                "cnName": "五金器具 计算机硬件 武器装备",
+                "enName": "HARDWARE",
+                "code8": "50720000"
+              }
+            ],
+            "websiteLogo": "https://business.cdn.site.joinf.com/company_logo/img/9d6f56fa556a83ebcf092bc6e4eda1a9.ico",
+            "exhibitionDetailResponse": null
+          },
+          {
+            "customer": {
+              "exist": false,
+              "customerId": null,
+              "noViewPermission": false
+            },
+            "id": "75a0aed3cb1446548f6e6372197b88bc",
+            "duns": null,
+            "companyName": "Air Maintenance Heating & Co",
+            "country": "美国",
+            "countryEn": "UNITED STATES",
+            "code": "US",
+            "emailCount": 7,
+            "emailCollectionCount": null,
+            "noShow": false,
+            "noSend": false,
+            "hasWebsite": true,
+            "hasEmail": true,
+            "fullOverview": "At Air Maintenance Heating & Cooling, we specialize in providing top-tier HVAC services to the Tucson community. Our commitment to excellence is evident in every repair, installation, and maintenance service we offer. With a team of certified professionals, we ensure your living or working space is not just comfortable, but also safe and energy-efficient. Our services are tailored to meet the unique needs of the desert climate, guaranteeing year-round indoor air quality and comfort. Choose us for reliable, swift, and expert HVAC solutions that stand the test of time.",
+            "mainBusiness": "HVAC System Upgrades,Ductwork Installation & Repair,Energy-Efficient HVAC Systems,Climate Control Solutions,Indoor Air Quality Solutions,HVAC Maintenance,Smart Thermostat Integration,Commercial HVAC Solutions,Ac Repair,HVAC Services,Hvac,Residential HVAC Services,Ventilation Systems,Preventive HVAC Maintenance,Air Conditioning Services,Emergency HVAC Services,Air Filtration Systems,HVAC Installation,Refrigeration Services,Eco-Friendly HVAC Options,Heating Services,HVAC Repair,Custom HVAC Design",
+            "follow": false,
+            "followCount": 0,
+            "website": "airmaintenancehvac.com",
+            "highlightFieldEntity": {
+              "companyName": null,
+              "full_Overview": null,
+              "main_Business": "<span style=\"color:rgb(255, 106, 0);\">HVAC</span> System Upgrades,Ductwork Installation & Repair,Energy-Efficient <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Climate Control Solutions,Indoor Air Quality Solutions,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Maintenance,Smart Thermostat Integration,Commercial <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Solutions,Ac Repair,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Services,<span style=\"color:rgb(255, 106, 0);\">Hvac</span>,Residential <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Services,Ventilation Systems,Preventive <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Maintenance,Air Conditioning Services,Emergency <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Services,Air Filtration Systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Installation,Refrigeration Services,Eco-Friendly <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Options,Heating Services,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Repair,Custom <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Design",
+              "keyMainBusiness": null,
+              "website": null,
+              "keyword": null,
+              "sicCodeDescription": null,
+              "sicCode8Description": null,
+              "email": null,
+              "sicName": null,
+              "sicName8": null,
+              "procureInfo": "",
+              "websiteKeyword": "Expert <span style=\"color:rgb(255, 106, 0);\">HVAC</span> and AC repair in Tucson & Sahuarita. Contact Air Maintenance for fast, professional service and peak system performance.",
+              "websiteDescription": null,
+              "websiteTitle": "<span style=\"color:rgb(255, 106, 0);\">HVAC</span> AC Repair Tucson and Sahuarita | Air Maintenance Experts"
+            },
+            "labelInfoList": [],
+            "websiteStatus": 1,
+            "emailIncTime": "2026-04-17 16:43:00",
+            "emailIncCount": null,
+            "newEmail": false,
+            "contactTotal": 7,
+            "keyword": "HVAC contractor,Air conditioning repair service",
+            "star": 5,
+            "aiEmailCount": 0,
+            "grade": 0.946,
+            "see": false,
+            "companyNameNoSuffix": "AIR MAINTENANCE HEATING",
+            "snsList": [
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/airmaintenancehvac"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/air-maintenance-heating-and-cooling-llc"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/air-maintenance-heating-cooling"
+              }
+            ],
+            "cantonFairNum": 0,
+            "fairList": null,
+            "etlMark": -1,
+            "industryList": [
+              {
+                "code": "1711",
+                "cnName": "铅管铺设,冷暖空调",
+                "enName": "Plumbing, Heating, and Air Conditioning Contractors"
+              },
+              {
+                "code4": "1711",
+                "code": "17110405",
+                "cnName": "暖通空调承包商",
+                "enName": "WARM AIR HEATING AND AIR CONDITIONING CONTRACTOR",
+                "code8": "17110405"
+              }
+            ],
+            "websiteLogo": null,
+            "exhibitionDetailResponse": null
+          },
+          {
+            "customer": {
+              "exist": false,
+              "customerId": null,
+              "noViewPermission": false
+            },
+            "id": "84b9c215c7f255a9869c2661f3c292d5",
+            "duns": null,
+            "companyName": "проектно-производственная компания \"Heinen & Hopman Engineering\" - калининград",
+            "country": "俄罗斯联邦",
+            "countryEn": "RUSSIA",
+            "code": "RU",
+            "emailCount": 287,
+            "emailCollectionCount": null,
+            "noShow": false,
+            "noSend": false,
+            "hasWebsite": true,
+            "hasEmail": true,
+            "fullOverview": "heinenhopman.ru. Heating, Ventilation, Air Conditioning and Refrigeration systems for the offshore industry, the navy, yachting, and merchant shipping industry. Heinen & Hopman | Marine & Offshore HVAC.",
+            "mainBusiness": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore HVAC,HVAC Spare Parts,Low-noise HVAC Systems,Military HVAC,Cruise HVAC,HVAC,Navy HVAC Systems,Yacht HVAC,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery HVAC,Marine HVAC,Energy Saving HVAC Systems,Ship HVAC Systems,HVAC systems,HVAC Filtration,Refrigeration,HVAC Cleaning,Air Conditioning,HVAC service,Superyacht HVAC",
+            "follow": false,
+            "followCount": 0,
+            "website": "heinenhopman.com",
+            "highlightFieldEntity": {
+              "companyName": null,
+              "full_Overview": null,
+              "main_Business": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Spare Parts,Low-noise <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Military <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Cruise <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Navy <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Yacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Marine <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Energy Saving <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Ship <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Filtration,Refrigeration,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Cleaning,Air Conditioning,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> service,Superyacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>",
+              "keyMainBusiness": null,
+              "website": null,
+              "keyword": null,
+              "sicCodeDescription": null,
+              "sicCode8Description": null,
+              "email": null,
+              "sicName": null,
+              "sicName8": null,
+              "procureInfo": "",
+              "websiteKeyword": null,
+              "websiteDescription": null,
+              "websiteTitle": "Marine & Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span> - Heinen & Hopman"
+            },
+            "labelInfoList": [],
+            "websiteStatus": 1,
+            "emailIncTime": "2026-04-08 11:35:44",
+            "emailIncCount": null,
+            "newEmail": false,
+            "contactTotal": 326,
+            "keyword": "Offshore HVAC,HVAC for ships and offshore structures,marine HVAC",
+            "star": 5,
+            "aiEmailCount": 10,
+            "grade": 1,
+            "see": false,
+            "companyNameNoSuffix": "ПРОЕКТНО-ПРОИЗВОДСТВЕННАЯ КОМПАНИЯ \"HEINEN AND HOPMAN ENGINEERING\" - КАЛИНИНГРАД",
+            "snsList": [
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/Shipps-Heating-Air-Conditioning-Inc-368377819850057"
+              },
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/heinenandhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/pages/heinen-hopman/270341566440304"
+              },
+              {
+                "bvdId": null,
+                "type": 2,
+                "url": null,
+                "snsUrl": "https://www.twitter.com/heinenhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-&-hopman-engineering-bv"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-hopman-italia"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinenhopmanuae"
+              }
+            ],
+            "cantonFairNum": 0,
+            "fairList": null,
+            "etlMark": 1,
+            "industryList": [
+              {
+                "code": "7338",
+                "cnName": "秘书与法院报告服务",
+                "enName": "Document Preparation Services"
+              },
+              {
+                "code": "3731",
+                "cnName": "造船与修船",
+                "enName": "Ship Building and Repairing"
+              },
+              {
+                "code": "3585",
+                "cnName": "冷暖空调设备 工商用冷冻设备",
+                "enName": "Other Motor Vehicle Parts Mfg."
+              },
+              {
+                "code": "6211",
+                "cnName": "证券经纪人,经销商,公债发行公司",
+                "enName": "Investment Banking and Securities Dealing"
+              },
+              {
+                "code": "1711",
+                "cnName": "铅管铺设,冷暖空调",
+                "enName": "Plumbing, Heating, and Air Conditioning Contractors"
+              },
+              {
+                "code": "3519",
+                "cnName": "内燃引擎",
+                "enName": "Other Engine Equipment Mfg."
+              },
+              {
+                "code4": "3519",
+                "code": "35190000",
+                "cnName": "其他内燃机",
+                "enName": "INTERNAL COMBUSTION ENGINES, NEC",
+                "code8": "35190000"
+              },
+              {
+                "code4": "7338",
+                "code": "73380201",
+                "cnName": "法庭报告服务",
+                "enName": "COURT REPORTING SERVICE",
+                "code8": "73380201"
+              },
+              {
+                "code4": "3585",
+                "code": "35850000",
+                "cnName": "制冷加温装置",
+                "enName": "REFRIGERATION AND HEATING EQUIPMENT",
+                "code8": "35850000"
+              },
+              {
+                "code4": "6211",
+                "code": "62110204",
+                "cnName": "投资公司，一般经纪公司",
+                "enName": "INVESTMENT FIRM, GENERAL BROKERAGE",
+                "code8": "62110204"
+              },
+              {
+                "code4": "3731",
+                "code": "37310000",
+                "cnName": "造船修理",
+                "enName": "SHIPBUILDING AND REPAIRING",
+                "code8": "37310000"
+              },
+              {
+                "code4": "1711",
+                "code": "17110000",
+                "cnName": "管道、供暖、空调",
+                "enName": "PLUMBING, HEATING, AIR-CONDITIONING",
+                "code8": "17110000"
+              }
+            ],
+            "websiteLogo": "https://business.cdn.site.joinf.com/company_logo/img/5f42b9852e5a9244652091a4f0031112.ico",
+            "exhibitionDetailResponse": null
+          },
+          {
+            "customer": {
+              "exist": false,
+              "customerId": null,
+              "noViewPermission": false
+            },
+            "id": "202cbf31-c0da-427b-826e-ee5f015fdb95",
+            "duns": null,
+            "companyName": "Protec Group",
+            "country": "马来西亚",
+            "countryEn": "MALAYSIA",
+            "code": "MY",
+            "emailCount": 128,
+            "emailCollectionCount": null,
+            "noShow": false,
+            "noSend": false,
+            "hasWebsite": true,
+            "hasEmail": true,
+            "fullOverview": "Protec Group is a company at Japan,Fax is 60378457995 (+81-60378457995),Address is Shah Alam Protec Group, A Basic Manufacturer Of Ignition Wire Sets Based In Malaysia. We Specialise In Making Ignition Wire Sets Which Is Now Exported To Over 36 Countries Worldwide. With More Than 450 Component Parts Moulded In House, We Are Capable Of Filling Upto 90 Percent Of Applications Required. Our Active Applications Exceeds 1200 Part Numbers. We Manufacture 3 Range Of Wire Set In Our Program, Ie. Regular, Standard, Premium. We Use Wires Made In Usa.Regular Wires: For Cost Sensitive Markets; Available In 7mm Black Epdm WiresStandard: For Market Requiring Quality Wires At Competitive Prices; Available In 7 And 8mm Coloured Wires; Wires Conforms To Iso3808 And Iso6586 Standards. Premium: For Quality Sensitive Markets; 8-10mm Coloured WiresWe Are Currently Certified To Iso/ts16949:2002. Our Standard And Premium Range Of Wires Are Made To Meet International Iso3808 And Iso6856 Standards. We Currently Supply To Both Oem And Aftermarket. Protec provides commercial HVAC solutions for buildings throughout Florida, Latin America, and the Caribbean. We support our equipment during design, installation, and operation. Protec - HVAC Equipment Sales | Florida | Latin America and the Caribbean.",
+            "mainBusiness": "Engineered HVAC Equipment,Mechanical Engineering,HVAC Engineers,HVAC Manufacturers Representative,HVAC Service,HVAC Sales,HVAC Parts,HVAC Construction,HVAC projects,HVAC Repair,HVAC Solutions",
+            "follow": false,
+            "followCount": 0,
+            "website": "protecinc.com",
+            "highlightFieldEntity": {
+              "companyName": null,
+              "full_Overview": null,
+              "main_Business": "Engineered <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Equipment,Mechanical Engineering,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Engineers,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Manufacturers Representative,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Service,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Sales,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Parts,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Construction,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> projects,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Repair,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Solutions",
+              "keyMainBusiness": null,
+              "website": null,
+              "keyword": null,
+              "sicCodeDescription": null,
+              "sicCode8Description": null,
+              "email": null,
+              "sicName": null,
+              "sicName8": null,
+              "procureInfo": "",
+              "websiteKeyword": "Protec provides commercial <span style=\"color:rgb(255, 106, 0);\">HVAC</span> solutions for buildings throughout Florida, Latin America",
+              "websiteDescription": null,
+              "websiteTitle": "Protec - <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Equipment Sales | Florida | Latin America and the Caribbean"
+            },
+            "labelInfoList": [],
+            "websiteStatus": 1,
+            "emailIncTime": "2026-04-26 06:59:41",
+            "emailIncCount": null,
+            "newEmail": false,
+            "contactTotal": 144,
+            "keyword": "Engineered HVAC Equipment,Mechanical Engineering,HVAC Engineers,HVAC Manufacturers Representative,HVAC Service",
+            "star": 5,
+            "aiEmailCount": 110,
+            "grade": 0.989,
+            "see": false,
+            "companyNameNoSuffix": "PROTEC",
+            "snsList": [
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/protecinc"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/protec-inc"
+              },
+              {
+                "bvdId": null,
+                "type": 7,
+                "url": null,
+                "snsUrl": "https://www.instagram.com/protec_inc"
+              }
+            ],
+            "cantonFairNum": 0,
+            "fairList": null,
+            "etlMark": 1,
+            "industryList": [
+              {
+                "code": "5072",
+                "cnName": "五金",
+                "enName": "Hardware Merchant Wholesalers"
+              },
+              {
+                "code": "5099",
+                "cnName": "耐久商品批发业",
+                "enName": "Other Misc. Durable Goods Merchant Wholesalers"
+              },
+              {
+                "code": "5063",
+                "cnName": "电气设备,配线用品及建材",
+                "enName": "Other Building Material Dealers"
+              },
+              {
+                "code": "5075",
+                "cnName": "暖空气加热与空调设备用品",
+                "enName": "Warm Air Heating and Air-Conditioning Equipment and Supplies Merchant Wholesalers"
+              },
+              {
+                "code": "3429",
+                "cnName": "五金",
+                "enName": "Hardware Mfg."
+              },
+              {
+                "code4": "5075",
+                "code": "50750000",
+                "cnName": "暖风供暖与空调",
+                "enName": "WARM AIR HEATING AND AIR CONDITIONING",
+                "code8": "50750000"
+              },
+              {
+                "code4": "3429",
+                "code": "34290000",
+                "cnName": "其他手工工具",
+                "enName": "HARDWARE, NEC",
+                "code8": "34290000"
+              },
+              {
+                "code4": "5063",
+                "code": "50630500",
+                "cnName": "电报警信号设备",
+                "enName": "ELECTRIC ALARMS AND SIGNALING EQUIPMENT",
+                "code8": "50630500"
+              },
+              {
+                "code4": "5099",
+                "code": "50990000",
+                "cnName": "耐用品",
+                "enName": "DURABLE GOODS, NEC",
+                "code8": "50990000"
+              },
+              {
+                "code4": "5072",
+                "code": "50720000",
+                "cnName": "五金器具 计算机硬件 武器装备",
+                "enName": "HARDWARE",
+                "code8": "50720000"
+              }
+            ],
+            "websiteLogo": "https://business.cdn.site.joinf.com/company_logo/img/9d6f56fa556a83ebcf092bc6e4eda1a9.ico",
+            "exhibitionDetailResponse": null
+          },
+          {
+            "customer": {
+              "exist": false,
+              "customerId": null,
+              "noViewPermission": false
+            },
+            "id": "79da465186c2462d97de154a5b050ad2",
+            "duns": null,
+            "companyName": "Protec Inc.",
+            "country": "美国",
+            "countryEn": "UNITED STATES",
+            "code": "US",
+            "emailCount": 129,
+            "emailCollectionCount": null,
+            "noShow": false,
+            "noSend": false,
+            "hasWebsite": true,
+            "hasEmail": true,
+            "fullOverview": "Protec provides commercial HVAC solutions for buildings throughout Florida, Latin America, and the Caribbean. We support our equipment during design, installation, and operation. Protec - HVAC Equipment Sales | Florida | Latin America and the Caribbean.",
+            "mainBusiness": "Engineered HVAC Equipment,Mechanical Engineering,HVAC Engineers,HVAC Manufacturers Representative,HVAC Service,HVAC Sales,HVAC Parts,HVAC Construction,HVAC projects,HVAC Repair,HVAC Solutions",
+            "follow": false,
+            "followCount": 0,
+            "website": "protecinc.com",
+            "highlightFieldEntity": {
+              "companyName": null,
+              "full_Overview": null,
+              "main_Business": "Engineered <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Equipment,Mechanical Engineering,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Engineers,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Manufacturers Representative,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Service,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Sales,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Parts,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Construction,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> projects,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Repair,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Solutions",
+              "keyMainBusiness": null,
+              "website": null,
+              "keyword": null,
+              "sicCodeDescription": null,
+              "sicCode8Description": null,
+              "email": null,
+              "sicName": null,
+              "sicName8": null,
+              "procureInfo": "",
+              "websiteKeyword": "Protec provides commercial <span style=\"color:rgb(255, 106, 0);\">HVAC</span> solutions for buildings throughout Florida, Latin America",
+              "websiteDescription": null,
+              "websiteTitle": "Protec - <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Equipment Sales | Florida | Latin America and the Caribbean"
+            },
+            "labelInfoList": [],
+            "websiteStatus": 1,
+            "emailIncTime": "2026-04-13 16:22:47",
+            "emailIncCount": null,
+            "newEmail": false,
+            "contactTotal": 129,
+            "keyword": "Other Household Goods Repair & Maintenance,Commercial Machinery Repair & Maintenance",
+            "star": 5,
+            "aiEmailCount": 0,
+            "grade": 0.978,
+            "see": false,
+            "companyNameNoSuffix": "PROTEC",
+            "snsList": [
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/protec-inc"
+              }
+            ],
+            "cantonFairNum": 0,
+            "fairList": null,
+            "etlMark": 7,
+            "industryList": [
+              {
+                "code": "5072",
+                "cnName": "五金",
+                "enName": "Hardware Merchant Wholesalers"
+              },
+              {
+                "code": "5099",
+                "cnName": "耐久商品批发业",
+                "enName": "Other Misc. Durable Goods Merchant Wholesalers"
+              },
+              {
+                "code": "5063",
+                "cnName": "电气设备,配线用品及建材",
+                "enName": "Other Building Material Dealers"
+              },
+              {
+                "code": "5075",
+                "cnName": "暖空气加热与空调设备用品",
+                "enName": "Warm Air Heating and Air-Conditioning Equipment and Supplies Merchant Wholesalers"
+              },
+              {
+                "code": "3429",
+                "cnName": "五金",
+                "enName": "Hardware Mfg."
+              },
+              {
+                "code4": "5075",
+                "code": "50750000",
+                "cnName": "暖风供暖与空调",
+                "enName": "WARM AIR HEATING AND AIR CONDITIONING",
+                "code8": "50750000"
+              },
+              {
+                "code4": "3429",
+                "code": "34290000",
+                "cnName": "其他手工工具",
+                "enName": "HARDWARE, NEC",
+                "code8": "34290000"
+              },
+              {
+                "code4": "5063",
+                "code": "50630500",
+                "cnName": "电报警信号设备",
+                "enName": "ELECTRIC ALARMS AND SIGNALING EQUIPMENT",
+                "code8": "50630500"
+              },
+              {
+                "code4": "5099",
+                "code": "50990000",
+                "cnName": "耐用品",
+                "enName": "DURABLE GOODS, NEC",
+                "code8": "50990000"
+              },
+              {
+                "code4": "5072",
+                "code": "50720000",
+                "cnName": "五金器具 计算机硬件 武器装备",
+                "enName": "HARDWARE",
+                "code8": "50720000"
+              }
+            ],
+            "websiteLogo": "https://business.cdn.site.joinf.com/company_logo/img/9d6f56fa556a83ebcf092bc6e4eda1a9.ico",
+            "exhibitionDetailResponse": null
+          },
+          {
+            "customer": {
+              "exist": false,
+              "customerId": null,
+              "noViewPermission": false
+            },
+            "id": "c76d928833fb5275b1db6cfbdcfa1daf",
+            "duns": null,
+            "companyName": "Protec, Inc",
+            "country": "美国",
+            "countryEn": "UNITED STATES",
+            "code": "US",
+            "emailCount": 12,
+            "emailCollectionCount": null,
+            "noShow": false,
+            "noSend": false,
+            "hasWebsite": true,
+            "hasEmail": true,
+            "fullOverview": "Protec provides commercial HVAC solutions for buildings throughout Florida, Latin America, and the Caribbean. We support our equipment during design, installation, and operation. Protec - HVAC Equipment Sales | Florida | Latin America and the Caribbean.",
+            "mainBusiness": "Engineered HVAC Equipment,Mechanical Engineering,HVAC Engineers,HVAC Manufacturers Representative,HVAC Service,HVAC Sales,HVAC Parts,HVAC Construction,HVAC projects,HVAC Repair,HVAC Solutions",
+            "follow": false,
+            "followCount": 0,
+            "website": "protecinc.com",
+            "highlightFieldEntity": {
+              "companyName": null,
+              "full_Overview": null,
+              "main_Business": "Engineered <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Equipment,Mechanical Engineering,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Engineers,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Manufacturers Representative,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Service,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Sales,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Parts,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Construction,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> projects,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Repair,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Solutions",
+              "keyMainBusiness": null,
+              "website": null,
+              "keyword": null,
+              "sicCodeDescription": null,
+              "sicCode8Description": null,
+              "email": null,
+              "sicName": null,
+              "sicName8": null,
+              "procureInfo": "",
+              "websiteKeyword": null,
+              "websiteDescription": "Protec provides commercial <span style=\"color:rgb(255, 106, 0);\">HVAC</span> solutions for buildings throughout Florida, Latin America",
+              "websiteTitle": "Protec - <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Equipment Sales | Florida | Latin America and the Caribbean"
+            },
+            "labelInfoList": [],
+            "websiteStatus": 1,
+            "emailIncTime": "2022-06-29 14:09:41",
+            "emailIncCount": null,
+            "newEmail": false,
+            "contactTotal": 12,
+            "keyword": "Engineered HVAC Equipment,Mechanical Engineering,HVAC Engineers,HVAC Manufacturers Representative,HVAC Service",
+            "star": 5,
+            "aiEmailCount": 0,
+            "grade": 0.989,
+            "see": false,
+            "companyNameNoSuffix": "PROTEC",
+            "snsList": [
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/protecinc"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/protec-inc"
+              },
+              {
+                "bvdId": null,
+                "type": 7,
+                "url": null,
+                "snsUrl": "https://www.instagram.com/protec_inc"
+              }
+            ],
+            "cantonFairNum": 0,
+            "fairList": null,
+            "etlMark": 1,
+            "industryList": [
+              {
+                "code": "5072",
+                "cnName": "五金",
+                "enName": "Hardware Merchant Wholesalers"
+              },
+              {
+                "code": "5099",
+                "cnName": "耐久商品批发业",
+                "enName": "Other Misc. Durable Goods Merchant Wholesalers"
+              },
+              {
+                "code": "5063",
+                "cnName": "电气设备,配线用品及建材",
+                "enName": "Other Building Material Dealers"
+              },
+              {
+                "code": "5075",
+                "cnName": "暖空气加热与空调设备用品",
+                "enName": "Warm Air Heating and Air-Conditioning Equipment and Supplies Merchant Wholesalers"
+              },
+              {
+                "code": "3429",
+                "cnName": "五金",
+                "enName": "Hardware Mfg."
+              },
+              {
+                "code4": "5075",
+                "code": "50750000",
+                "cnName": "暖风供暖与空调",
+                "enName": "WARM AIR HEATING AND AIR CONDITIONING",
+                "code8": "50750000"
+              },
+              {
+                "code4": "3429",
+                "code": "34290000",
+                "cnName": "其他手工工具",
+                "enName": "HARDWARE, NEC",
+                "code8": "34290000"
+              },
+              {
+                "code4": "5063",
+                "code": "50630500",
+                "cnName": "电报警信号设备",
+                "enName": "ELECTRIC ALARMS AND SIGNALING EQUIPMENT",
+                "code8": "50630500"
+              },
+              {
+                "code4": "5099",
+                "code": "50990000",
+                "cnName": "耐用品",
+                "enName": "DURABLE GOODS, NEC",
+                "code8": "50990000"
+              },
+              {
+                "code4": "5072",
+                "code": "50720000",
+                "cnName": "五金器具 计算机硬件 武器装备",
+                "enName": "HARDWARE",
+                "code8": "50720000"
+              }
+            ],
+            "websiteLogo": "https://business.cdn.site.joinf.com/company_logo/img/9d6f56fa556a83ebcf092bc6e4eda1a9.ico",
+            "exhibitionDetailResponse": null
+          },
+          {
+            "customer": {
+              "exist": false,
+              "customerId": null,
+              "noViewPermission": false
+            },
+            "id": "CA259675409L",
+            "duns": null,
+            "companyName": "Protec",
+            "country": "加拿大",
+            "countryEn": "CANADA",
+            "code": "CA",
+            "emailCount": 126,
+            "emailCollectionCount": null,
+            "noShow": false,
+            "noSend": false,
+            "hasWebsite": true,
+            "hasEmail": true,
+            "fullOverview": "The company is a full service firm which is engaged in the provision of metal coating, engraving, and allied services in Canada. It conducts its business from its registered head office which is located in Montreal, Quebec Province, Canada.The company involves in the following activities: enameling, lacquering, and varnishing metals and metal products; hot dip galvanizing metals and metal products; engraving, chasing, or etching metals and metal products; powder coating metals and metal products; and providing other metal surfacing services for the trade. It also performs these processes on other materials, such as plastics, in addition to metals. The company has active operation mainly in the domestic market. Protec provides commercial HVAC solutions for buildings throughout Florida, Latin America, and the Caribbean. We support our equipment during design, installation, and operation. Protec - HVAC Equipment Sales | Florida | Latin America and the Caribbean.",
+            "mainBusiness": "Engineered HVAC Equipment,Mechanical Engineering,HVAC Engineers,HVAC Manufacturers Representative,HVAC Service,HVAC Sales,HVAC Parts,HVAC Construction,HVAC projects,HVAC Repair,HVAC Solutions",
+            "follow": false,
+            "followCount": 0,
+            "website": "protecinc.com",
+            "highlightFieldEntity": {
+              "companyName": null,
+              "full_Overview": null,
+              "main_Business": "Engineered <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Equipment,Mechanical Engineering,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Engineers,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Manufacturers Representative,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Service,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Sales,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Parts,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Construction,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> projects,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Repair,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Solutions",
+              "keyMainBusiness": null,
+              "website": null,
+              "keyword": null,
+              "sicCodeDescription": null,
+              "sicCode8Description": null,
+              "email": null,
+              "sicName": null,
+              "sicName8": null,
+              "procureInfo": "",
+              "websiteKeyword": "Protec provides commercial <span style=\"color:rgb(255, 106, 0);\">HVAC</span> solutions for buildings throughout Florida, Latin America",
+              "websiteDescription": null,
+              "websiteTitle": "Protec - <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Equipment Sales | Florida | Latin America and the Caribbean"
+            },
+            "labelInfoList": [],
+            "websiteStatus": 1,
+            "emailIncTime": "2026-04-26 12:22:15",
+            "emailIncCount": null,
+            "newEmail": false,
+            "contactTotal": 141,
+            "keyword": "HVAC filters,Cylindrical roller bearings,Diffusers,Needle roller bearings",
+            "star": 5,
+            "aiEmailCount": 111,
+            "grade": 0.989,
+            "see": false,
+            "companyNameNoSuffix": "PROTEC",
+            "snsList": [
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/protecinc"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/protec-inc"
+              },
+              {
+                "bvdId": null,
+                "type": 7,
+                "url": null,
+                "snsUrl": "https://www.instagram.com/protec_inc"
+              }
+            ],
+            "cantonFairNum": 0,
+            "fairList": null,
+            "etlMark": 0,
+            "industryList": [
+              {
+                "code": "5072",
+                "cnName": "五金",
+                "enName": "Hardware Merchant Wholesalers"
+              },
+              {
+                "code": "5099",
+                "cnName": "耐久商品批发业",
+                "enName": "Other Misc. Durable Goods Merchant Wholesalers"
+              },
+              {
+                "code": "5063",
+                "cnName": "电气设备,配线用品及建材",
+                "enName": "Other Building Material Dealers"
+              },
+              {
+                "code": "5075",
+                "cnName": "暖空气加热与空调设备用品",
+                "enName": "Warm Air Heating and Air-Conditioning Equipment and Supplies Merchant Wholesalers"
+              },
+              {
+                "code": "3429",
+                "cnName": "五金",
+                "enName": "Hardware Mfg."
+              },
+              {
+                "code4": "5075",
+                "code": "50750000",
+                "cnName": "暖风供暖与空调",
+                "enName": "WARM AIR HEATING AND AIR CONDITIONING",
+                "code8": "50750000"
+              },
+              {
+                "code4": "3429",
+                "code": "34290000",
+                "cnName": "其他手工工具",
+                "enName": "HARDWARE, NEC",
+                "code8": "34290000"
+              },
+              {
+                "code4": "5063",
+                "code": "50630500",
+                "cnName": "电报警信号设备",
+                "enName": "ELECTRIC ALARMS AND SIGNALING EQUIPMENT",
+                "code8": "50630500"
+              },
+              {
+                "code4": "5099",
+                "code": "50990000",
+                "cnName": "耐用品",
+                "enName": "DURABLE GOODS, NEC",
+                "code8": "50990000"
+              },
+              {
+                "code4": "5072",
+                "code": "50720000",
+                "cnName": "五金器具 计算机硬件 武器装备",
+                "enName": "HARDWARE",
+                "code8": "50720000"
+              }
+            ],
+            "websiteLogo": "https://business.cdn.site.joinf.com/company_logo/img/9d6f56fa556a83ebcf092bc6e4eda1a9.ico",
+            "exhibitionDetailResponse": null
+          },
+          {
+            "customer": {
+              "exist": false,
+              "customerId": null,
+              "noViewPermission": false
+            },
+            "id": "262ff971fce1523d910900a4703e1001",
+            "duns": null,
+            "companyName": "Heinen & Hopman Usa",
+            "country": "美国",
+            "countryEn": "UNITED STATES",
+            "code": "US",
+            "emailCount": 292,
+            "emailCollectionCount": null,
+            "noShow": false,
+            "noSend": false,
+            "hasWebsite": true,
+            "hasEmail": true,
+            "fullOverview": "Heinen & Hopman USA is located in Broward County of Florida state. On the street of River Reach Drive and street number is 1350. To communicate or ask something with the place, the Phone number is (954) 763-7715. You can get more information from their website. The coordinates that you can use in navigation applications to get to find Heinen & Hopman USA quickly are 26.1089529 ,-80.158569. Heating, Ventilation, Air Conditioning and Refrigeration systems for the offshore industry, the navy, yachting, and merchant shipping industry. Heinen & Hopman | Marine & Offshore HVAC.",
+            "mainBusiness": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore HVAC,HVAC Spare Parts,Low-noise HVAC Systems,Military HVAC,Cruise HVAC,HVAC,Navy HVAC Systems,Yacht HVAC,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery HVAC,Marine HVAC,Energy Saving HVAC Systems,Ship HVAC Systems,HVAC systems,HVAC Filtration,Refrigeration,HVAC Cleaning,Air Conditioning,HVAC service,Superyacht HVAC",
+            "follow": false,
+            "followCount": 0,
+            "website": "heinenhopman.com",
+            "highlightFieldEntity": {
+              "companyName": null,
+              "full_Overview": null,
+              "main_Business": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Spare Parts,Low-noise <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Military <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Cruise <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,<span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Navy <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Yacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Turbocor Chillers,UV-C Filtration,Heating,Marine Chillers,Energy Recovery <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Marine <span style=\"color:rgb(255, 106, 0);\">HVAC</span>,Energy Saving <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,Ship <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> systems,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Filtration,Refrigeration,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Cleaning,Air Conditioning,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> service,Superyacht <span style=\"color:rgb(255, 106, 0);\">HVAC</span>",
+              "keyMainBusiness": null,
+              "website": null,
+              "keyword": null,
+              "sicCodeDescription": null,
+              "sicCode8Description": null,
+              "email": null,
+              "sicName": null,
+              "sicName8": null,
+              "procureInfo": "",
+              "websiteKeyword": null,
+              "websiteDescription": null,
+              "websiteTitle": "Marine & Offshore <span style=\"color:rgb(255, 106, 0);\">HVAC</span> - Heinen & Hopman"
+            },
+            "labelInfoList": [],
+            "websiteStatus": 1,
+            "emailIncTime": "2026-04-17 16:43:30",
+            "emailIncCount": null,
+            "newEmail": false,
+            "contactTotal": 322,
+            "keyword": "Offshore HVAC,marine HVAC",
+            "star": 5,
+            "aiEmailCount": 0,
+            "grade": 1,
+            "see": false,
+            "companyNameNoSuffix": "HEINEN AND HOPMAN USA",
+            "snsList": [
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/Shipps-Heating-Air-Conditioning-Inc-368377819850057"
+              },
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/heinenandhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/pages/heinen-hopman/270341566440304"
+              },
+              {
+                "bvdId": null,
+                "type": 2,
+                "url": null,
+                "snsUrl": "https://www.twitter.com/heinenhopman"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-&-hopman-engineering-bv"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinen-hopman-italia"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/heinenhopmanuae"
+              }
+            ],
+            "cantonFairNum": 0,
+            "fairList": null,
+            "etlMark": 1,
+            "industryList": [
+              {
+                "code": "7338",
+                "cnName": "秘书与法院报告服务",
+                "enName": "Document Preparation Services"
+              },
+              {
+                "code": "3731",
+                "cnName": "造船与修船",
+                "enName": "Ship Building and Repairing"
+              },
+              {
+                "code": "3585",
+                "cnName": "冷暖空调设备 工商用冷冻设备",
+                "enName": "Other Motor Vehicle Parts Mfg."
+              },
+              {
+                "code": "6211",
+                "cnName": "证券经纪人,经销商,公债发行公司",
+                "enName": "Investment Banking and Securities Dealing"
+              },
+              {
+                "code": "1711",
+                "cnName": "铅管铺设,冷暖空调",
+                "enName": "Plumbing, Heating, and Air Conditioning Contractors"
+              },
+              {
+                "code": "3519",
+                "cnName": "内燃引擎",
+                "enName": "Other Engine Equipment Mfg."
+              },
+              {
+                "code4": "3519",
+                "code": "35190000",
+                "cnName": "其他内燃机",
+                "enName": "INTERNAL COMBUSTION ENGINES, NEC",
+                "code8": "35190000"
+              },
+              {
+                "code4": "7338",
+                "code": "73380201",
+                "cnName": "法庭报告服务",
+                "enName": "COURT REPORTING SERVICE",
+                "code8": "73380201"
+              },
+              {
+                "code4": "3585",
+                "code": "35850000",
+                "cnName": "制冷加温装置",
+                "enName": "REFRIGERATION AND HEATING EQUIPMENT",
+                "code8": "35850000"
+              },
+              {
+                "code4": "6211",
+                "code": "62110204",
+                "cnName": "投资公司，一般经纪公司",
+                "enName": "INVESTMENT FIRM, GENERAL BROKERAGE",
+                "code8": "62110204"
+              },
+              {
+                "code4": "3731",
+                "code": "37310000",
+                "cnName": "造船修理",
+                "enName": "SHIPBUILDING AND REPAIRING",
+                "code8": "37310000"
+              },
+              {
+                "code4": "1711",
+                "code": "17110000",
+                "cnName": "管道、供暖、空调",
+                "enName": "PLUMBING, HEATING, AIR-CONDITIONING",
+                "code8": "17110000"
+              }
+            ],
+            "websiteLogo": "https://business.cdn.site.joinf.com/company_logo/img/5f42b9852e5a9244652091a4f0031112.ico",
+            "exhibitionDetailResponse": null
+          },
+          {
+            "customer": {
+              "exist": false,
+              "customerId": null,
+              "noViewPermission": false
+            },
+            "id": "290388fb2f28438da8642122c7456d8e",
+            "duns": null,
+            "companyName": "Hvac Greatness By Pete Ramsey",
+            "country": null,
+            "countryEn": null,
+            "code": null,
+            "emailCount": 0,
+            "emailCollectionCount": null,
+            "noShow": false,
+            "noSend": false,
+            "hasWebsite": true,
+            "hasEmail": true,
+            "fullOverview": "Most HVAC Business Owners are overwhelmed with stress to the point where many are at risk of burnout. We have a system that gets them organized, fills their schedules and maximizes their sales so the owner is free to focus on other things.",
+            "mainBusiness": "HVAC Leadership Training,HVAC Social Media,HVAC Branding,HVAC Consulting,HVAC MArketing Training and Coaching,HVAC Maintenance Agreements Training,HAVC Sales Training,HVAC Processes and Systems Training,HVAC Business Coaching,HVAC Service Sales Training,HVAC Online Training",
+            "follow": false,
+            "followCount": 0,
+            "website": "hvacgreatness.com",
+            "highlightFieldEntity": {
+              "companyName": null,
+              "full_Overview": null,
+              "main_Business": "<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Leadership Training,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Social Media,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Branding,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Consulting,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> MArketing Training and Coaching,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Maintenance Agreements Training,HAVC Sales Training,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Processes and Systems Training,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Business Coaching,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Service Sales Training,<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Online Training",
+              "keyMainBusiness": null,
+              "website": null,
+              "keyword": null,
+              "sicCodeDescription": null,
+              "sicCode8Description": null,
+              "email": null,
+              "sicName": null,
+              "sicName8": null,
+              "procureInfo": "",
+              "websiteKeyword": "<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Greatness® | 117 followers on LinkedIn. Helping <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Business Owners eliminate Stress, Burnout",
+              "websiteDescription": null,
+              "websiteTitle": "<span style=\"color:rgb(255, 106, 0);\">HVAC</span> Greatness – Welcome to <span style=\"color:rgb(255, 106, 0);\">HVAC</span> Greatness"
+            },
+            "labelInfoList": [],
+            "websiteStatus": 1,
+            "emailIncTime": "",
+            "emailIncCount": null,
+            "newEmail": false,
+            "contactTotal": 1,
+            "keyword": "Business Consultant",
+            "star": 5,
+            "aiEmailCount": 0,
+            "grade": 0.951,
+            "see": false,
+            "companyNameNoSuffix": "HVAC GREATNESS BY PETE RAMSEY",
+            "snsList": [
+              {
+                "bvdId": null,
+                "type": 1,
+                "url": null,
+                "snsUrl": "https://www.facebook.com/hvacgreatness"
+              },
+              {
+                "bvdId": null,
+                "type": 3,
+                "url": null,
+                "snsUrl": "https://www.linkedin.com/company/hvac-greatness"
+              },
+              {
+                "bvdId": null,
+                "type": 7,
+                "url": null,
+                "snsUrl": "https://www.instagram.com/hvacgreatness"
+              },
+              {
+                "bvdId": null,
+                "type": 8,
+                "url": null,
+                "snsUrl": "https://www.youtube.com/user/peteramseyconsulting"
+              }
+            ],
+            "cantonFairNum": 0,
+            "fairList": null,
+            "etlMark": 3,
+            "industryList": [],
+            "websiteLogo": "https://business.cdn.site.joinf.com/company_logo/img/de364dc13f6ed4ff7947dc767b56cfd1.ico",
+            "exhibitionDetailResponse": null
+          }
+        ],
+        "totalEmailCount": 1595096,
+        "max": 232755,
+        "seeMore": 0
+      },
+      "request": null,
+      "uid": null,
+      "totalRecords": null
+    }
+  },
+  {
+    "url": "https://data.joinf.com/api/bs/associativeQueryByKey?keywords=HVAC&multiKeywords=&searchType=1&loginUserId=786718",
+    "status": 200,
+    "json": {
+      "code": 0,
+      "msg": "成功",
+      "data": [
+        "HVAC company in Gurgaon",
+        "hvac system",
+        "HVAC company in Pune",
+        "HVAC company in Hyderabad",
+        "HVAC company in Mumbai",
+        "hvac",
+        "HVAC company in Delhi NCR",
+        "HVAC company in Chennai"
+      ],
+      "request": null,
+      "uid": null,
+      "totalRecords": null
+    }
+  },
+  {
+    "url": "https://data.joinf.com/api/bs/searchBuryPoint",
+    "status": 200,
+    "json": {
+      "code": 0,
+      "msg": "成功",
+      "data": null,
+      "request": null,
+      "uid": null,
+      "totalRecords": null
+    }
+  }
+]

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>ai.hermes.feishu-group-poller</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/kalimarfart/.hermes/hermes-agent/venv/bin/python3</string>
+        <string>/Users/kalimarfart/.hermes/scripts/feishu-group-poller.py</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/Users/kalimarfart/.hermes/logs/feishu-poller-stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/kalimarfart/.hermes/logs/feishu-poller-stderr.log</string>
+</dict>
+</plist>

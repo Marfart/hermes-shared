@@ -1,0 +1,131 @@
+# 看门狗 v8 安装指南
+## 适用于另一只小马（Hermes Agent 实例）
+
+---
+
+## 1. 文件清单
+
+| 文件 | 用途 |
+|------|------|
+| `smart_watchdog_v8.py` | **主看门狗脚本** — 六层诊断 + 自动修复 + Gateway 重启 |
+| `guard_monitor.py` | **电脑小卫士 v2** — 布防/撤防监控 |
+| `smart_watchdog_v7.py` | 旧版参考（中间件链还未引入，代码简单些） |
+
+---
+
+## 2. 安装步骤
+
+### 2.1 把脚本放到目标机
+
+```
+目标位置: %LOCALAPPDATA%\hermes\scripts\
+即:        C:\Users\<用户名>\AppData\Local\hermes\scripts\
+```
+
+把 `smart_watchdog_v8.py` 和 `guard_monitor.py` 复制进去。
+
+### 2.2 创建看门狗 cron 任务
+
+在另一只小马的 Hermes CLI 或 Telegram 里执行：
+
+```
+cronjob action=create name="🔍 智能看门狗 v8" schedule="every 2m" no_agent=true script=smart_watchdog_v8.py deliver=origin
+```
+
+**重要参数说明：**
+- `no_agent=true` — 零 token 消耗模式
+- `schedule="every 2m"` — 每 2 分钟自动跑一次
+- `deliver=origin` — 发送到当前会话（也可以改 `deliver=all` 全平台群发）
+- 脚本路径相对于 `%LOCALAPPDATA%\hermes\scripts\`
+
+### 2.3 创建电脑小卫士 cron 任务（可选）
+
+```
+cronjob action=create name="电脑小卫士" schedule="every 2m" no_agent=true script=guard_monitor.py deliver=origin
+```
+
+---
+
+## 3. 看门狗 v8 能干什么
+
+### 三个核心功能：
+
+**① 六层网络诊断（Layer1~Layer6）：**
+- Layer1 NIC — 网卡连接状态
+- Layer2 GATEWAY — ping 网关
+- Layer3 DNS — nslookup 解析
+- Layer4 PROXY — 代理检测（跳过，非必需）
+- Layer5 TARGET — HTTP 请求百度首页
+- Layer6 SSL — HTTPS 证书握手验证
+
+**② 自动修复（AutoRepair）：**
+- 网卡异常 → Winsock + TCP/IP 重置
+- 网关不可达 → DHCP 续租
+- DNS 异常 → 清 DNS 缓存 + 注册 DNS
+- SSL 异常 → 升级 certifi + 刷新 DNS
+
+**③ Gateway 守护：**
+- 检测 Gateway 进程是否活着（PID + 心跳双重验证）
+- 检测 Telegram/微信连接状态
+- Gateway 僵死时自动重启 + 等待恢复（90s 超时）
+
+### 运行逻辑：
+- 一切正常时 **静默不报**（不烦你）
+- 有异常时才发送诊断报告 + 修复结果
+- 修复成功不重复报，同问题 10 分钟限频
+
+---
+
+## 4. 核心原理 & 坑
+
+### Windows cron 中文乱码问题（已修复）
+- **根因：** cron 在 no_agent 模式下用 **cp936(GBK)** 读取 stdout，而 Python 默认输出 UTF-8
+- **修复：** 脚本第 18 行设置 `sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='gbk')`
+- **特别注意：** emoji（✅❌🔧等）GBK 不支持，需替换为中文文字（[完成][失败][修复]等）
+- 不要用 `sys.stdout.reconfigure(encoding='utf-8')`——那样 cron 读到还是乱码
+
+### 依赖检查
+- 脚本使用 `subprocess` 调系统命令，不需要额外 pip 包
+- SQLite 是 Python 标准库
+- 需要命令行有：`netsh`、`ping`、`nslookup`、`curl`、`tasklist`、`ipconfig`、`pip`
+- 大部分 Win10/11 自带，curl 可能需手动装
+
+### 状态文件
+- 诊断记录和事件日志保存在 SQLite: `%LOCALAPPDATA%\hermes\scripts\.watchdog_v8.db`
+- Gateway 状态读取: `%LOCALAPPDATA%\hermes\gateway_state.json`
+
+---
+
+## 5. 常用操作
+
+```
+# 查看所有 cron 任务
+cronjob action=list
+
+# 暂停看门狗
+cronjob action=pause job_id=af5f3c06d347
+
+# 恢复看门狗
+cronjob action=resume job_id=af5f3c06d347
+
+# 手动跑一次
+cronjob action=run job_id=af5f3c06d347
+
+# 完全删除
+cronjob action=remove job_id=af5f3c06d347
+```
+
+> job_id 以实际 list 出来的为准，每台机器不一样。
+
+---
+
+## 6. 和电脑小卫士的区别
+
+| 功能 | 看门狗 v8 | 电脑小卫士 (guard_monitor) |
+|------|-----------|---------------------------|
+| 触发方式 | 每 2 分钟 | 每 2 分钟 |
+| 检测范围 | 网络 + Gateway | 系统安全事件 |
+| 核心检测 | 6层网络诊断+自动修复 | 重启/新登录/屏幕解锁/USB/RDP/远程软件/唤醒 |
+| 自动修复 | 有（Winsock/DNS/SSL/Gateway重启） | 无（纯监控） |
+| 布撤防 | 无 | 通过 "我走了"/"我来了" 控制 |
+| 编码修复 | GBK | 也需要 GBK（如果也乱码的话） |

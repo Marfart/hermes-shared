@@ -1,0 +1,191 @@
+{
+  "ranAt": "2026-06-02T04:06:28.931Z",
+  "rawCapturePath": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\buyer-development\\joinf_business_search_results_2026-06-02_raw.json",
+  "rawJsonPath": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\buyer-development\\joinf_business_search_results_2026-06-02.json",
+  "enrichedJsonPath": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\buyer-development\\joinf_business_search_enriched_2026-06-02.json",
+  "enrichedCsvPath": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\buyer-development\\joinf_business_search_enriched_2026-06-02.csv",
+  "queueJsonPath": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\buyer-development\\joinf_whatsapp_priority_queue_2026-06-02.json",
+  "queueCsvPath": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\buyer-development\\joinf_whatsapp_priority_queue_2026-06-02.csv",
+  "followupJsonPath": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\buyer-development\\joinf_customer_followup_document_2026-06-02.json",
+  "followupCsvPath": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\buyer-development\\joinf_customer_followup_document_2026-06-02.csv",
+  "messagesJsonPath": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\buyer-development\\joinf_whatsapp_messages_2026-06-02.json",
+  "counts": {
+    "queue": 4,
+    "followup": 4,
+    "messages": 4
+  },
+  "samples": {
+    "queue": [
+      {
+        "queue_id": 1,
+        "name": "Excel Automation Solutions",
+        "country": "INDIA",
+        "domain": "excelautomationsolutions.com",
+        "whatsapp_number": "+918870007000",
+        "whatsapp_url": "https://wa.me/918870007000",
+        "primary_email": "venkatesh@excelautomationsolutions.com",
+        "primary_linkedin": "https://www.linkedin.com/company/excel-automation-solutions",
+        "fit_score": 9.9,
+        "inferred_need_1": "PLC/SCADA connectivity and industrial protocol conversion",
+        "inferred_need_2": "system integration and industrial device networking",
+        "recommended_product_1": "BA building automation gateways",
+        "recommended_product_2": "industrial gateways and routers",
+        "source_description": "We offer real-time hands-on practical training with major brands of PLC SCADA DCS that are widely used globally."
+      },
+      {
+        "queue_id": 2,
+        "name": "Neel Smartec Co",
+        "country": "",
+        "domain": "neelsmartec.com",
+        "whatsapp_number": "+919538047356",
+        "whatsapp_url": "https://wa.me/919538047356",
+        "primary_email": "ram@neelsmartec.com",
+        "primary_linkedin": "https://www.linkedin.com/company/neelsmartec",
+        "fit_score": 9.9,
+        "inferred_need_1": "energy monitoring and utility equipment communication",
+        "inferred_need_2": "IIoT edge integration and remote monitoring",
+        "recommended_product_1": "industrial gateways and routers",
+        "recommended_product_2": "ARM edge controllers",
+        "source_description": "Independent PLM and IIoT consulting for manufacturers — strategy, roadmap, and Industry 5.0 adoption. Vendor-agnostic. Award-winning author. India &amp; internationally."
+      },
+      {
+        "queue_id": 3,
+        "name": "Ecava Sdn. Bhd.",
+        "country": "FRANCE",
+        "domain": "ecava.com",
+        "whatsapp_number": "+60380804838",
+        "whatsapp_url": "https://wa.me/60380804838",
+        "primary_email": "",
+        "primary_linkedin": "https://www.linkedin.com/company/10654576",
+        "fit_score": 9.9,
+        "inferred_need_1": "PLC/SCADA connectivity and industrial protocol conversion",
+        "inferred_need_2": "system integration and industrial device networking",
+        "recommended_product_1": "BA building automation gateways",
+        "recommended_product_2": "industrial gateways and routers",
+        "source_description": "Ecava - Pure web-based SCADA solutions for industrial automation. HTML5 monitoring and control across all devices, no plugins required."
+      },
+      {
+        "queue_id": 4,
+        "name": "Tlm Telemetria E Sensoriamento",
+        "country": "BRAZIL",
+        "domain": "tlm.net.br",
+        "whatsapp_number": "+5541991129953",
+        "whatsapp_url": "https://wa.me/5541991129953",
+        "primary_email": "contato@tlm.net.br",
+        "primary_linkedin": "https://www.linkedin.com/company/tlm-telemetria-e-sensoriamento",
+        "fit_score": 9.9,
+        "inferred_need_1": "system integration and industrial device networking",
+        "inferred_need_2": "energy monitoring and utility equipment communication",
+        "recommended_product_1": "industrial gateways and routers",
+        "recommended_product_2": "ARM edge controllers",
+        "source_description": "Mais de 40 anos de experiência na elaboração e condução de projetos de integração de tecnologia, com tendências de tecnologia e suas aplicações"
+      }
+    ],
+    "followup": [
+      {
+        "company_name": "Excel Automation Solutions",
+        "contact_name": "",
+        "country": "INDIA",
+        "linkedin_website": "https://www.linkedin.com/company/excel-automation-solutions",
+        "email": "venkatesh@excelautomationsolutions.com",
+        "phone": "",
+        "whatsapp": "+918870007000",
+        "website": "https://excelautomationsolutions.com",
+        "industry": "SCADA / PLC / Industrial Control",
+        "What_they_do": "We offer real-time hands-on practical training with major brands of PLC SCADA DCS that are widely used globally.",
+        "Why_they_need_BLIIOT": "They may need industrial gateways for PLC/SCADA connectivity and protocol conversion."
+      },
+      {
+        "company_name": "Neel Smartec Co",
+        "contact_name": "",
+        "country": "",
+        "linkedin_website": "https://www.linkedin.com/company/neelsmartec",
+        "email": "ram@neelsmartec.com",
+        "phone": "",
+        "whatsapp": "+919538047356",
+        "website": "https://neelsmartec.com",
+        "industry": "System Integration",
+        "What_they_do": "Independent PLM and IIoT consulting for manufacturers — strategy, roadmap, and Industry 5.0 adoption. Vendor-agnostic. Award-winning author. India &amp; internationally.",
+        "Why_they_need_BLIIOT": "They may need edge connectivity products to collect field data and connect devices to cloud or software platforms. They may need remote monitoring hardware for distributed equipment, utilities, or telemetry projects."
+      },
+      {
+        "company_name": "Ecava Sdn. Bhd.",
+        "contact_name": "",
+        "country": "FRANCE",
+        "linkedin_website": "https://www.linkedin.com/company/10654576",
+        "email": "",
+        "phone": "",
+        "whatsapp": "+60380804838",
+        "website": "https://ecava.com",
+        "industry": "SCADA / PLC / Industrial Control",
+        "What_they_do": "Ecava - Pure web-based SCADA solutions for industrial automation. HTML5 monitoring and control across all devices, no plugins required.",
+        "Why_they_need_BLIIOT": "They may need industrial gateways for PLC/SCADA connectivity and protocol conversion."
+      }
+    ],
+    "messages": [
+      {
+        "queue_id": 1,
+        "name": "Excel Automation Solutions",
+        "country": "INDIA",
+        "domain": "excelautomationsolutions.com",
+        "whatsapp_number": "+918870007000",
+        "whatsapp_url": "https://wa.me/918870007000",
+        "primary_email": "venkatesh@excelautomationsolutions.com",
+        "primary_linkedin": "https://www.linkedin.com/company/excel-automation-solutions",
+        "fit_score": 9.9,
+        "inferred_need_1": "PLC/SCADA connectivity and industrial protocol conversion",
+        "inferred_need_2": "system integration and industrial device networking",
+        "recommended_product_1": "BA building automation gateways",
+        "recommended_product_2": "industrial gateways and routers",
+        "source_description": "We offer real-time hands-on practical training with major brands of PLC SCADA DCS that are widely used globally.",
+        "style_id": "scada_plc",
+        "variant_id": "scada_plc-v1-3-1-2-2-3-2",
+        "variant_parts": {
+          "intro": 1,
+          "observation": 3,
+          "offer": 1,
+          "value": 2,
+          "cta": 2,
+          "link": 3,
+          "close": 2
+        },
+        "message": "Hope you are having a wonderful day. Hello, this is Kali from BLIIOT. Our company focuses on industrial IoT connectivity products, especially gateways, edge controllers, and field data acquisition devices used in automation systems. It looks like your projects involve PLC/SCADA connectivity and industrial protocol conversion / system integration and industrial device networking. Our BA building automation gateways together with industrial gateways and routers are often used in PLC, SCADA, and industrial communication projects. They are suitable for projects that need protocol conversion, remote access, and reliable field data collection. If you have a current requirement, I would be glad to suggest matching models for your application. If helpful, you can first review our website here: https://bliiot.com/ Let me know if you would like a quick catalog."
+      },
+      {
+        "queue_id": 2,
+        "name": "Neel Smartec Co",
+        "country": "",
+        "domain": "neelsmartec.com",
+        "whatsapp_number": "+919538047356",
+        "whatsapp_url": "https://wa.me/919538047356",
+        "primary_email": "ram@neelsmartec.com",
+        "primary_linkedin": "https://www.linkedin.com/company/neelsmartec",
+        "fit_score": 9.9,
+        "inferred_need_1": "energy monitoring and utility equipment communication",
+        "inferred_need_2": "IIoT edge integration and remote monitoring",
+        "recommended_product_1": "industrial gateways and routers",
+        "recommended_product_2": "ARM edge controllers",
+        "source_description": "Independent PLM and IIoT consulting for manufacturers — strategy, roadmap, and Industry 5.0 adoption. Vendor-agnostic. Award-winning author. India &amp; internationally.",
+        "style_id": "energy_monitoring",
+        "variant_id": "energy_monitoring-v2-1-0-3-1-4-0",
+        "variant_parts": {
+          "intro": 2,
+          "observation": 1,
+          "offer": 0,
+          "value": 3,
+          "cta": 1,
+          "link": 4,
+          "close": 0
+        },
+        "message": "Hope you are enjoying a good day. Hi, Kali here from BLIIOT. We are an industrial IoT hardware supplier with products for gateways, routers, and remote acquisition in monitoring and utility scenarios. It seems your projects are related to energy monitoring and utility equipment communication / IIoT edge integration and remote monitoring. For these applications, we usually recommend industrial gateways and routers together with ARM edge controllers for energy monitoring, remote utility access, and industrial data transmission. They are designed for practical deployment in utility monitoring, industrial telemetry, and remote access scenarios. If you are evaluating a remote monitoring project, I can recommend suitable products and share pricing information. For a quick overview of our company and products, here is our website: https://bliiot.com/ Would you like me to send a quick catalog?"
+      }
+    ]
+  },
+  "logs": {
+    "fetch": "{\n  \"rawPath\": \"C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\memories\\\\buyer-development\\\\joinf_business_search_results_2026-06-02_raw.json\",\n  \"normalizedPath\": \"C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\memories\\\\buyer-development\\\\joinf_business_search_results_2026-06-02.json\",\n  \"keywordCount\": 5,\n  \"rawLeadCount\": 100,\n  \"uniqueLeadCount\": 63,\n  \"sample\": [\n    {\n      \"name\": \"Gryne Antwort Ltd\",\n      \"domain\": \"gruneantwort.com\",\n      \"country\": \"HUNGARY\",\n      \"source_keyword\": \"Building Automation\",\n      \"emailCount\": 3,\n      \"contactTotal\": 4\n    },\n    {\n      \"name\": \"The Mulkern Company\",\n      \"domain\": \"themulkerncompany.com\",\n      \"country\": \"\",\n      \"source_keyword\": \"Building Automation\",\n      \"emailCount\": 1,\n      \"contactTotal\": 1\n    },\n    {\n      \"name\": \"Apagroup\",\n      \"domain\": \"apagroup.pl\",\n      \"country\": \"POLAND\",\n      \"source_keyword\": \"Building Automation\",\n      \"emailCount\": 14,\n      \"contactTotal\": 21\n    },\n    {\n      \"name\": \"Kieback & Peter Gmbh & Co. Kg Techn. Byro\",\n      \"domain\": \"kieback-peter.com\",\n      \"country\": \"GERMANY\",\n      \"source_keyword\": \"Building Automation\",\n      \"emailCount\": 223,\n      \"contactTotal\": 495\n    },\n    {\n      \"name\": \"Enocean Gmbh (Smart Building Expo)\",\n      \"domain\": \"enocean.com\",\n      \"country\": \"GERMANY\",\n      \"source_keyword\": \"Building Automation\",\n      \"emailCount\": 50,\n      \"contactTotal\": 103\n    }\n  ]\n}",
+    "enrich": "{\n  \"count\": 63,\n  \"whatsappLeadCount\": 5,\n  \"jsonPath\": \"C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\memories\\\\buyer-development\\\\joinf_business_search_enriched_2026-06-02.json\",\n  \"csvPath\": \"C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\memories\\\\buyer-development\\\\joinf_business_search_enriched_2026-06-02.csv\",\n  \"topLeads\": [\n    {\n      \"name\": \"Excel Automation Solutions\",\n      \"domain\": \"excelautomationsolutions.com\",\n      \"whatsappNumbers\": [\n        \"+918870007000\"\n      ],\n      \"officialEmails\": [\n        \"venkatesh@excelautomationsolutions.com\"\n      ],\n      \"fitScore\": 9.9,\n      \"sourceKeyword\": \"SCADA\"\n    },\n    {\n      \"name\": \"Neel Smartec Co\",\n      \"domain\": \"neelsmartec.com\",\n      \"whatsappNumbers\": [\n        \"+919538047356\"\n      ],\n      \"officialEmails\": [\n        \"ram@neelsmartec.com\",\n        \"contact@neelsmartec.com\",\n        \"you@company.com\",\n        \"partnerships@neelsmartec.com\"\n      ],\n      \"fitScore\": 9.9,\n      \"sourceKeyword\": \"IIoT\"\n    },\n    {\n      \"name\": \"Armax Automation Pvt. Ltd\",\n      \"domain\": \"armaxindia.com\",\n      \"whatsappNumbers\": [],\n      \"officialEmails\": [\n        \"info@armaxindia.com\"\n      ],\n      \"fitScore\": 9.9,\n      \"sourceKeyword\": \"SCADA\"\n    },\n    {\n      \"name\": \"Ecava Sdn. Bhd.\",\n      \"domain\": \"ecava.com\",\n      \"whatsappNumbers\": [\n        \"+60380804838\"\n      ],\n      \"officialEmails\": [],\n      \"fitScore\": 9.9,\n      \"sourceKeyword\": \"SCADA\"\n    },\n    {\n      \"name\": \"Tlm Telemetria E Sensoriamento\",\n      \"domain\": \"tlm.net.br\",\n      \"whatsappNumbers\": [\n        \"+5541991129953\"\n      ],\n      \"officialEmails\": [\n        \"contato@tlm.net.br\"\n      ],\n      \"fitScore\": 9.9,\n      \"sourceKeyword\": \"IIoT\"\n    },\n    {\n      \"name\": \"Apagroup\",\n      \"domain\": \"apagroup.pl\",\n      \"whatsappNumbers\": [],\n      \"officialEmails\": [\n        \"info@apagroup.pl\",\n        \"biuro@apagroup.pl\"\n      ],\n      \"fitScore\": 9.9,\n      \"sourceKeyword\": \"Building Automation\"\n    },\n    {\n      \"name\": \"Kieback & Peter Gmbh & Co. Kg Techn. Byro\",\n      \"domain\": \"kieback-peter.com\",\n      \"whatsappNumbers\": [],\n      \"officialEmails\": [],\n      \"fitScore\": 9.9,\n      \"sourceKeyword\": \"Building Automation\"\n    },\n    {\n      \"name\": \"Enocean Gmbh (Smart Building Expo)\",\n      \"domain\": \"enocean.com\",\n      \"whatsappNumbers\": [],\n      \"officialEmails\": [],\n      \"fitScore\": 9.9,\n      \"sourceKeyword\": \"Building Automation\"\n    },\n    {\n      \"name\": \"Eelectron S.P.A. (Smart Building Expo)\",\n      \"domain\": \"eelectron.com\",\n      \"whatsappNumbers\": [],\n      \"officialEmails\": [],\n      \"fitScore\": 9.9,\n      \"sourceKeyword\": \"Building Automation\"\n    },\n    {\n      \"name\": \"B.E.G. Italia Srl (Smart Building Expo)\",\n      \"domain\": \"beg-luxomat.com\",\n      \"whatsappNumbers\": [],\n      \"officialEmails\": [\n        \"info@beguk.co.uk\",\n        \"vertrieb@beg.de\",\n        \"support@beg.de\"\n      ],\n      \"fitScore\": 9.9,\n      \"sourceKeyword\": \"Building Automation\"\n    }\n  ]\n}",
+    "queue": "{\n  \"count\": 4,\n  \"jsonPath\": \"C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\memories\\\\buyer-development\\\\joinf_whatsapp_priority_queue_2026-06-02.json\",\n  \"csvPath\": \"C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\memories\\\\buyer-development\\\\joinf_whatsapp_priority_queue_2026-06-02.csv\",\n  \"topLead\": {\n    \"queue_id\": 1,\n    \"name\": \"Excel Automation Solutions\",\n    \"country\": \"INDIA\",\n    \"domain\": \"excelautomationsolutions.com\",\n    \"whatsapp_number\": \"+918870007000\",\n    \"whatsapp_url\": \"https://wa.me/918870007000\",\n    \"primary_email\": \"venkatesh@excelautomationsolutions.com\",\n    \"primary_linkedin\": \"https://www.linkedin.com/company/excel-automation-solutions\",\n    \"fit_score\": 9.9,\n    \"inferred_need_1\": \"PLC/SCADA connectivity and industrial protocol conversion\",\n    \"inferred_need_2\": \"system integration and industrial device networking\",\n    \"recommended_product_1\": \"BA building automation gateways\",\n    \"recommended_product_2\": \"industrial gateways and routers\",\n    \"source_description\": \"We offer real-time hands-on practical training with major brands of PLC SCADA DCS that are widely used globally.\"\n  }\n}",
+    "followup": "{\n  \"count\": 4,\n  \"jsonPath\": \"C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\memories\\\\buyer-development\\\\joinf_customer_followup_document_2026-06-02.json\",\n  \"csvPath\": \"C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\memories\\\\buyer-development\\\\joinf_customer_followup_document_2026-06-02.csv\",\n  \"sample\": {\n    \"company_name\": \"Excel Automation Solutions\",\n    \"contact_name\": \"\",\n    \"country\": \"INDIA\",\n    \"linkedin_website\": \"https://www.linkedin.com/company/excel-automation-solutions\",\n    \"email\": \"venkatesh@excelautomationsolutions.com\",\n    \"phone\": \"\",\n    \"whatsapp\": \"+918870007000\",\n    \"website\": \"https://excelautomationsolutions.com\",\n    \"industry\": \"SCADA / PLC / Industrial Control\",\n    \"What_they_do\": \"We offer real-time hands-on practical training with major brands of PLC SCADA DCS that are widely used globally.\",\n    \"Why_they_need_BLIIOT\": \"They may need industrial gateways for PLC/SCADA connectivity and protocol conversion.\"\n  }\n}",
+    "render": "{\n  \"count\": 4,\n  \"outPath\": \"C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\memories\\\\buyer-development\\\\joinf_whatsapp_messages_2026-06-02.json\",\n  \"sample\": {\n    \"queue_id\": 1,\n    \"name\": \"Excel Automation Solutions\",\n    \"country\": \"INDIA\",\n    \"domain\": \"excelautomationsolutions.com\",\n    \"whatsapp_number\": \"+918870007000\",\n    \"whatsapp_url\": \"https://wa.me/918870007000\",\n    \"primary_email\": \"venkatesh@excelautomationsolutions.com\",\n    \"primary_linkedin\": \"https://www.linkedin.com/company/excel-automation-solutions\",\n    \"fit_score\": 9.9,\n    \"inferred_need_1\": \"PLC/SCADA connectivity and industrial protocol conversion\",\n    \"inferred_need_2\": \"system integration and industrial device networking\",\n    \"recommended_product_1\": \"BA building automation gateways\",\n    \"recommended_product_2\": \"industrial gateways and routers\",\n    \"source_description\": \"We offer real-time hands-on practical training with major brands of PLC SCADA DCS that are widely used globally.\",\n    \"style_id\": \"scada_plc\",\n    \"variant_id\": \"scada_plc-v1-3-1-2-2-3-2\",\n    \"variant_parts\": {\n      \"intro\": 1,\n      \"observation\": 3,\n      \"offer\": 1,\n      \"value\": 2,\n      \"cta\": 2,\n      \"link\": 3,\n      \"close\": 2\n    },\n    \"message\": \"Hope you are having a wonderful day. Hello, this is Kali from BLIIOT. Our company focuses on industrial IoT connectivity products, especially gateways, edge controllers, and field data acquisition devices used in automation systems. It looks like your projects involve PLC/SCADA connectivity and industrial protocol conversion / system integration and industrial device networking. Our BA building automation gateways together with industrial gateways and routers are often used in PLC, SCADA, and industrial communication projects. They are suitable for projects that need protocol conversion, remote access, and reliable field data collection. If you have a current requirement, I would be glad to suggest matching models for your application. If helpful, you can first review our website here: https://bliiot.com/ Let me know if you would like a quick catalog.\"\n  }\n}"
+  }
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "queue_id": "joinf-customer-public-1",
+    "name": "Manan Patel",
+    "whatsapp_number": "+918511781612",
+    "style_id": "joinf_customer_public_fixed_v1",
+    "variant_id": "fixed_v1",
+    "mode": "send",
+    "status": "error",
+    "error": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\"发送\"], button[aria-label=\"Send\"]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "queue_id": "joinf-customer-public-2",
+    "name": "Raf Verhelst",
+    "whatsapp_number": "+32479447507",
+    "style_id": "joinf_customer_public_fixed_v1",
+    "variant_id": "fixed_v1",
+    "mode": "send",
+    "status": "error",
+    "error": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\"发送\"], button[aria-label=\"Send\"]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "queue_id": "joinf-customer-public-3",
+    "name": "Paul TORRICO",
+    "whatsapp_number": "+33641129330",
+    "style_id": "joinf_customer_public_fixed_v1",
+    "variant_id": "fixed_v1",
+    "mode": "send",
+    "status": "error",
+    "error": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\"发送\"], button[aria-label=\"Send\"]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "queue_id": "joinf-customer-public-4",
+    "name": "Oscar Britez Barua",
+    "whatsapp_number": "+5519992437789",
+    "style_id": "joinf_customer_public_fixed_v1",
+    "variant_id": "fixed_v1",
+    "mode": "send",
+    "status": "error",
+    "error": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\"发送\"], button[aria-label=\"Send\"]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "queue_id": "joinf-customer-public-5",
+    "name": "Cashcrow",
+    "whatsapp_number": "+918606452189",
+    "style_id": "joinf_customer_public_fixed_v1",
+    "variant_id": "fixed_v1",
+    "mode": "send",
+    "status": "error",
+    "error": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\"发送\"], button[aria-label=\"Send\"]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "queue_id": "joinf-customer-public-6",
+    "name": "Stradovex",
+    "whatsapp_number": "+447848178130",
+    "style_id": "joinf_customer_public_fixed_v1",
+    "variant_id": "fixed_v1",
+    "mode": "send",
+    "status": "sent",
+    "opened_url": "https://web.whatsapp.com/send?phone=447848178130&text=Wish%20you%20a%20wonderful%20day!%0A%0AThis%20is%20Kali%20from%20BLIIOT.%20It's%20a%20pleasure%20to%20contact%20you.%0A%0AAre%20you%20still%20interested%20in%20our%20products%3F%0A%0ADo%20you%20have%20any%20recent%20or%20upcoming%20projects%20that%20may%20require%20our%20solutions%3F%0A%0AHere%20is%20our%20official%20website%20for%20your%20reference%3A%20https%3A%2F%2Fcn.bliiot.com%2F%0A%0APlease%20feel%20free%20to%20contact%20me%20anytime%20if%20you%20have%20any%20needs%2C%20and%20I%20will%20provide%20you%20with%20a%20detailed%20reply%20promptly.%0A%0AThank%20you!"
+  },
+  {
+    "queue_id": "joinf-customer-public-7",
+    "name": "Johnson Controls Arabia",
+    "whatsapp_number": "+966569864710",
+    "style_id": "joinf_customer_public_fixed_v1",
+    "variant_id": "fixed_v1",
+    "mode": "send",
+    "status": "sent",
+    "opened_url": "https://web.whatsapp.com/send?phone=966569864710&text=Wish%20you%20a%20wonderful%20day!%0A%0AThis%20is%20Kali%20from%20BLIIOT.%20It's%20a%20pleasure%20to%20contact%20you.%0A%0AAre%20you%20still%20interested%20in%20our%20products%3F%0A%0ADo%20you%20have%20any%20recent%20or%20upcoming%20projects%20that%20may%20require%20our%20solutions%3F%0A%0AHere%20is%20our%20official%20website%20for%20your%20reference%3A%20https%3A%2F%2Fcn.bliiot.com%2F%0A%0APlease%20feel%20free%20to%20contact%20me%20anytime%20if%20you%20have%20any%20needs%2C%20and%20I%20will%20provide%20you%20with%20a%20detailed%20reply%20promptly.%0A%0AThank%20you!"
+  },
+  {
+    "queue_id": "joinf-customer-public-8",
+    "name": "Song Thanh Cong Trading and Service Co., Ltd （STC Vietnam）",
+    "whatsapp_number": "+84918364352",
+    "style_id": "joinf_customer_public_fixed_v1",
+    "variant_id": "fixed_v1",
+    "mode": "send",
+    "status": "sent",
+    "opened_url": "https://web.whatsapp.com/send?phone=84918364352&text=Wish%20you%20a%20wonderful%20day!%0A%0AThis%20is%20Kali%20from%20BLIIOT.%20It's%20a%20pleasure%20to%20contact%20you.%0A%0AAre%20you%20still%20interested%20in%20our%20products%3F%0A%0ADo%20you%20have%20any%20recent%20or%20upcoming%20projects%20that%20may%20require%20our%20solutions%3F%0A%0AHere%20is%20our%20official%20website%20for%20your%20reference%3A%20https%3A%2F%2Fcn.bliiot.com%2F%0A%0APlease%20feel%20free%20to%20contact%20me%20anytime%20if%20you%20have%20any%20needs%2C%20and%20I%20will%20provide%20you%20with%20a%20detailed%20reply%20promptly.%0A%0AThank%20you!"
+  },
+  {
+    "queue_id": "joinf-customer-public-9",
+    "name": "Forsyth Advisors",
+    "whatsapp_number": "+13142656398",
+    "style_id": "joinf_customer_public_fixed_v1",
+    "variant_id": "fixed_v1",
+    "mode": "send",
+    "status": "error",
+    "error": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\"发送\"], button[aria-label=\"Send\"]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "queue_id": "joinf-customer-public-10",
+    "name": "Versilia Supply Service",
+    "whatsapp_number": "+393347131030",
+    "style_id": "joinf_customer_public_fixed_v1",
+    "variant_id": "fixed_v1",
+    "mode": "send",
+    "status": "sent",
+    "opened_url": "https://web.whatsapp.com/send?phone=393347131030&text=Wish%20you%20a%20wonderful%20day!%0A%0AThis%20is%20Kali%20from%20BLIIOT.%20It's%20a%20pleasure%20to%20contact%20you.%0A%0AAre%20you%20still%20interested%20in%20our%20products%3F%0A%0ADo%20you%20have%20any%20recent%20or%20upcoming%20projects%20that%20may%20require%20our%20solutions%3F%0A%0AHere%20is%20our%20official%20website%20for%20your%20reference%3A%20https%3A%2F%2Fcn.bliiot.com%2F%0A%0APlease%20feel%20free%20to%20contact%20me%20anytime%20if%20you%20have%20any%20needs%2C%20and%20I%20will%20provide%20you%20with%20a%20detailed%20reply%20promptly.%0A%0AThank%20you!"
+  }
+]

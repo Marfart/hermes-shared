@@ -1,0 +1,61 @@
+[
+  {
+    "queue_id": 1,
+    "name": "Agora Automation (Pty)Ltd",
+    "whatsapp_number": "+27823637667",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v1-3-1-2-2-3-2",
+    "mode": "send",
+    "status": "skipped_already_sent",
+    "previous_send": {
+      "phone": "27823637667",
+      "first_sent_at": "2026-06-02-02-07-17",
+      "last_sent_at": "2026-06-02-02-08-57",
+      "names": [
+        "Agora Automation (Pty)Ltd"
+      ],
+      "variants": [
+        "scada_plc-v1-3-1-2-2-3-2"
+      ],
+      "files": [
+        "whatsapp_bulk_send_results_2026-06-02-02-07-17.json",
+        "whatsapp_bulk_send_results_2026-06-02-02-08-57.json"
+      ],
+      "send_count": 2
+    }
+  },
+  {
+    "queue_id": 2,
+    "name": "INTEG System Integrators",
+    "whatsapp_number": "+27218500320",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v2-1-0-3-1-4-0",
+    "mode": "send",
+    "status": "skipped_already_sent",
+    "previous_send": {
+      "phone": "27218500320",
+      "first_sent_at": "2026-06-02-02-10-12",
+      "last_sent_at": "2026-06-02-02-10-12",
+      "names": [
+        "INTEG System Integrators"
+      ],
+      "variants": [
+        "scada_plc-v2-1-0-3-1-4-0"
+      ],
+      "files": [
+        "whatsapp_bulk_send_results_2026-06-02-02-10-12.json"
+      ],
+      "send_count": 1
+    }
+  },
+  {
+    "queue_id": 3,
+    "name": "SyncSystems Automation",
+    "whatsapp_number": "+27100260101",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v3-3-3-0-0-0-3",
+    "mode": "send",
+    "status": "error",
+    "error": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\"发送\"], button[aria-label=\"Send\"]').first() to be visible\u001b[22m\n"
+  }
+]

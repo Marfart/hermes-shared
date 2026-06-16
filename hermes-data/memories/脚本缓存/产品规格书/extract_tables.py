@@ -1,0 +1,1 @@
+Extract product data for skill creation

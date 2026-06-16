@@ -1,0 +1,1 @@
+Build comprehensive product skills from extracted data

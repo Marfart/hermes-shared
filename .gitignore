@@ -1,0 +1,45 @@
+# 敏感文件 - 绝对不上传
+.env
+auth.json
+*.key
+*.pem
+*.token
+
+# 缓存和数据库
+__pycache__/
+*.pyc
+*.db
+*.sqlite
+*.sqlite3
+state.db
+cache/
+*.lock
+
+# 大文件和二进制包
+*.zip
+*.exe
+*.msi
+*.7z
+*.tar.gz
+*.rar
+*.pdf
+
+# Skills Hub 缓存（38MB）
+.hub/
+
+# 日志
+logs/
+*.log
+
+# OS 临时文件
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# 图片缓存（日报base64图片）
+news_b64_*.json
+
+# WhatsApp/浏览器状态截图
+*.png
+*.jpg
+*.jpeg

@@ -1,0 +1,85 @@
+{
+  "generated_on": "2026-06-02",
+  "mode": "google_maps_to_whatsapp_pipeline",
+  "input_files": {
+    "seed_path": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\buyer-development\\google_maps_seed_leads_2026-06-02.json",
+    "aux_enriched_path": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\buyer-development\\iiot_search_enriched_2026-06-02.json"
+  },
+  "outputs": {
+    "enriched_json": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\buyer-development\\google_maps_enriched_2026-06-02.json",
+    "enriched_csv": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\buyer-development\\google_maps_enriched_2026-06-02.csv",
+    "queue_json": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\buyer-development\\google_maps_whatsapp_priority_queue_2026-06-02.json",
+    "queue_csv": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\buyer-development\\google_maps_whatsapp_priority_queue_2026-06-02.csv",
+    "followup_json": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\buyer-development\\google_maps_customer_followup_document_2026-06-02.json",
+    "followup_csv": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\buyer-development\\google_maps_customer_followup_document_2026-06-02.csv",
+    "messages_json": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\buyer-development\\google_maps_whatsapp_messages_2026-06-02.json"
+  },
+  "counts": {
+    "enriched": 30,
+    "whatsapp_queue": 28,
+    "followup": 28,
+    "messages": 28
+  },
+  "top_whatsapp_lead": {
+    "queue_id": 1,
+    "name": "Agora Automation (Pty)Ltd",
+    "country": "South Africa",
+    "domain": "agora-automation.co.za",
+    "whatsapp_number": "+27823637667",
+    "whatsapp_url": "https://wa.me/27823637667",
+    "primary_email": "mike@agora-automation.co.za",
+    "primary_linkedin": "https://www.linkedin.com/company/agora-automation/",
+    "fit_score": 100,
+    "inferred_need_1": "PLC connectivity and industrial protocol conversion",
+    "inferred_need_2": "automation gateway and edge integration",
+    "recommended_product_1": "BLIIOT gateways/routers (R40, BA/BE/BL gateway series)",
+    "recommended_product_2": "ARMxy edge computers/controllers",
+    "source_description": "Industrial automation system integrator based in N4 Gateway Industrial Park, Pretoria. Specializes in PLC programming, SCADA systems, and industrial control solutions for manufacturing and process industries across South Africa."
+  },
+  "sample_message": {
+    "queue_id": 1,
+    "name": "Agora Automation (Pty)Ltd",
+    "country": "South Africa",
+    "domain": "agora-automation.co.za",
+    "whatsapp_number": "+27823637667",
+    "whatsapp_url": "https://wa.me/27823637667",
+    "primary_email": "mike@agora-automation.co.za",
+    "primary_linkedin": "https://www.linkedin.com/company/agora-automation/",
+    "fit_score": 100,
+    "inferred_need_1": "PLC connectivity and industrial protocol conversion",
+    "inferred_need_2": "automation gateway and edge integration",
+    "recommended_product_1": "BLIIOT gateways/routers (R40, BA/BE/BL gateway series)",
+    "recommended_product_2": "ARMxy edge computers/controllers",
+    "source_description": "Industrial automation system integrator based in N4 Gateway Industrial Park, Pretoria. Specializes in PLC programming, SCADA systems, and industrial control solutions for manufacturing and process industries across South Africa.",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v1-3-1-2-2-3-2",
+    "variant_parts": {
+      "intro": 1,
+      "observation": 3,
+      "offer": 1,
+      "value": 2,
+      "cta": 2,
+      "link": 3,
+      "close": 2
+    },
+    "message": "Hope you are having a wonderful day. Hello, this is Kali from BLIIOT. Our company focuses on industrial IoT connectivity products, especially gateways, edge controllers, and field data acquisition devices used in automation systems. It looks like your projects involve PLC connectivity and industrial protocol conversion / automation gateway and edge integration. Our industrial gateways and routers together with ARM edge controllers are often used in PLC, SCADA, and industrial communication projects. They are suitable for projects that need protocol conversion, remote access, and reliable field data collection. If you have a current requirement, I would be glad to suggest matching models for your application. If helpful, you can first review our website here: https://bliiot.com/ Let me know if you would like a quick catalog."
+  },
+  "logs": {
+    "enrich": {
+      "stdout": "{\n  \"count\": 30,\n  \"jsonPath\": \"C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\memories\\\\buyer-development\\\\google_maps_enriched_2026-06-02.json\",\n  \"csvPath\": \"C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\memories\\\\buyer-development\\\\google_maps_enriched_2026-06-02.csv\",\n  \"sample\": {\n    \"source\": \"google_maps\",\n    \"name\": \"Agora Automation (Pty)Ltd\",\n    \"country\": \"South Africa\",\n    \"region\": \"South Africa\",\n    \"rating\": 5,\n    \"leadType\": \"Automation Company\",\n    \"searchKeyword\": \"industrial automation South Africa\",\n    \"phone\": \"+27823637667\",\n    \"domain\": \"agora-automation.co.za\",\n    \"officialEmails\": [\n      \"mike@agora-automation.co.za\"\n    ],\n    \"linkedinUrls\": [\n      \"https://www.linkedin.com/company/agora-automation/\"\n    ],\n    \"whatsappNumbers\": [\n      \"+27823637667\"\n    ],\n    \"whatsappUrls\": [\n      \"https://wa.me/27823637667\"\n    ],\n    \"fitScore\": 100,\n    \"inferredNeeds\": [\n      \"PLC connectivity and industrial protocol conversion\",\n      \"automation gateway and edge integration\",\n      \"IIoT platform connectivity and field data access\"\n    ],\n    \"recommendedProducts\": [\n      \"BLIIOT gateways/routers (R40, BA/BE/BL gateway series)\",\n      \"ARMxy edge computers/controllers\",\n      \"Remote IO / RTU / data acquisition modules\"\n    ],\n    \"desc\": \"Industrial automation system integrator based in N4 Gateway Industrial Park, Pretoria. Specializes in PLC programming, SCADA systems, and industrial control solutions for manufacturing and process industries across South Africa.\",\n    \"mapsNotes\": \"Automation Company from South Africa Google Maps search.\",\n    \"website\": \"https://agora-automation.co.za\",\n    \"hasWhatsApp\": true\n  }\n}",
+      "stderr": ""
+    },
+    "queue": {
+      "stdout": "{\n  \"count\": 28,\n  \"jsonPath\": \"C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\memories\\\\buyer-development\\\\google_maps_whatsapp_priority_queue_2026-06-02.json\",\n  \"csvPath\": \"C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\memories\\\\buyer-development\\\\google_maps_whatsapp_priority_queue_2026-06-02.csv\",\n  \"topLead\": {\n    \"queue_id\": 1,\n    \"name\": \"Agora Automation (Pty)Ltd\",\n    \"country\": \"South Africa\",\n    \"domain\": \"agora-automation.co.za\",\n    \"whatsapp_number\": \"+27823637667\",\n    \"whatsapp_url\": \"https://wa.me/27823637667\",\n    \"primary_email\": \"mike@agora-automation.co.za\",\n    \"primary_linkedin\": \"https://www.linkedin.com/company/agora-automation/\",\n    \"fit_score\": 100,\n    \"inferred_need_1\": \"PLC connectivity and industrial protocol conversion\",\n    \"inferred_need_2\": \"automation gateway and edge integration\",\n    \"recommended_product_1\": \"BLIIOT gateways/routers (R40, BA/BE/BL gateway series)\",\n    \"recommended_product_2\": \"ARMxy edge computers/controllers\",\n    \"source_description\": \"Industrial automation system integrator based in N4 Gateway Industrial Park, Pretoria. Specializes in PLC programming, SCADA systems, and industrial control solutions for manufacturing and process industries across South Africa.\"\n  }\n}",
+      "stderr": ""
+    },
+    "followup": {
+      "stdout": "{\n  \"count\": 28,\n  \"jsonPath\": \"C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\memories\\\\buyer-development\\\\google_maps_customer_followup_document_2026-06-02.json\",\n  \"csvPath\": \"C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\memories\\\\buyer-development\\\\google_maps_customer_followup_document_2026-06-02.csv\",\n  \"sample\": {\n    \"company_name\": \"Agora Automation (Pty)Ltd\",\n    \"contact_name\": \"\",\n    \"country\": \"South Africa\",\n    \"linkedin_website\": \"https://www.linkedin.com/company/agora-automation/\",\n    \"email\": \"mike@agora-automation.co.za\",\n    \"phone\": \"+27823637667\",\n    \"whatsapp\": \"+27823637667\",\n    \"website\": \"https://agora-automation.co.za\",\n    \"industry\": \"SCADA / PLC / Industrial Control\",\n    \"What_they_do\": \"Industrial automation system integrator based in N4 Gateway Industrial Park, Pretoria. Specializes in PLC programming, SCADA systems, and industrial control solutions for manufacturing and process industries across South Africa.\",\n    \"Why_they_need_BLIIOT\": \"They may need industrial gateways for PLC/SCADA connectivity and protocol conversion. They may need edge connectivity products to collect field data and connect devices to cloud or software platforms.\"\n  }\n}",
+      "stderr": ""
+    },
+    "render": {
+      "stdout": "{\n  \"count\": 28,\n  \"outPath\": \"C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\memories\\\\buyer-development\\\\google_maps_whatsapp_messages_2026-06-02.json\",\n  \"sample\": {\n    \"queue_id\": 1,\n    \"name\": \"Agora Automation (Pty)Ltd\",\n    \"country\": \"South Africa\",\n    \"domain\": \"agora-automation.co.za\",\n    \"whatsapp_number\": \"+27823637667\",\n    \"whatsapp_url\": \"https://wa.me/27823637667\",\n    \"primary_email\": \"mike@agora-automation.co.za\",\n    \"primary_linkedin\": \"https://www.linkedin.com/company/agora-automation/\",\n    \"fit_score\": 100,\n    \"inferred_need_1\": \"PLC connectivity and industrial protocol conversion\",\n    \"inferred_need_2\": \"automation gateway and edge integration\",\n    \"recommended_product_1\": \"BLIIOT gateways/routers (R40, BA/BE/BL gateway series)\",\n    \"recommended_product_2\": \"ARMxy edge computers/controllers\",\n    \"source_description\": \"Industrial automation system integrator based in N4 Gateway Industrial Park, Pretoria. Specializes in PLC programming, SCADA systems, and industrial control solutions for manufacturing and process industries across South Africa.\",\n    \"style_id\": \"scada_plc\",\n    \"variant_id\": \"scada_plc-v1-3-1-2-2-3-2\",\n    \"variant_parts\": {\n      \"intro\": 1,\n      \"observation\": 3,\n      \"offer\": 1,\n      \"value\": 2,\n      \"cta\": 2,\n      \"link\": 3,\n      \"close\": 2\n    },\n    \"message\": \"Hope you are having a wonderful day. Hello, this is Kali from BLIIOT. Our company focuses on industrial IoT connectivity products, especially gateways, edge controllers, and field data acquisition devices used in automation systems. It looks like your projects involve PLC connectivity and industrial protocol conversion / automation gateway and edge integration. Our industrial gateways and routers together with ARM edge controllers are often used in PLC, SCADA, and industrial communication projects. They are suitable for projects that need protocol conversion, remote access, and reliable field data collection. If you have a current requirement, I would be glad to suggest matching models for your application. If helpful, you can first review our website here: https://bliiot.com/ Let me know if you would like a quick catalog.\"\n  }\n}",
+      "stderr": ""
+    }
+  }
+}

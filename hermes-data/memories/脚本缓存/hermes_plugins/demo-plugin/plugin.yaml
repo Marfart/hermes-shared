@@ -1,0 +1,10 @@
+name: system-monitor
+version: "1.0.0"
+description: "System monitoring tools — CPU, RAM, disk, processes, uptime info"
+requires_env: []
+provides_tools:
+  - sys_info
+  - sys_disk_usage
+  - sys_uptime
+provides_hooks:
+  - pre_tool_call

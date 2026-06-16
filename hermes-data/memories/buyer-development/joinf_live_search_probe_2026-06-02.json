@@ -1,0 +1,98 @@
+[
+  {
+    "keyword": "Building Automation",
+    "status": 200,
+    "total": 21562,
+    "rows": 20,
+    "sample": [
+      {
+        "companyName": "Gryne Antwort Ltd",
+        "website": "gruneantwort.com",
+        "emailCount": 3,
+        "contactTotal": 4,
+        "star": 5,
+        "mainBusiness": "Building Monitoring,Mandatory electrical sub-metering,Building automation integration,Energy Management,Building automat"
+      },
+      {
+        "companyName": "The Mulkern Company",
+        "website": "themulkerncompany.com",
+        "emailCount": 1,
+        "contactTotal": 1,
+        "star": 4.5,
+        "mainBusiness": "IoT Systems,EMS Energy Management Systems,Controls Business Consulting,Building Automation Systems Programs and Graphics"
+      },
+      {
+        "companyName": "Apagroup",
+        "website": "apagroup.pl",
+        "emailCount": 14,
+        "contactTotal": 21,
+        "star": 5,
+        "mainBusiness": "Training,Audit and consulting in industrial and building automation,robotization,automation,Management of building autom"
+      }
+    ]
+  },
+  {
+    "keyword": "SCADA",
+    "status": 200,
+    "total": 21203,
+    "rows": 20,
+    "sample": [
+      {
+        "companyName": "Scada International",
+        "website": "scada-international.com",
+        "emailCount": 166,
+        "contactTotal": 167,
+        "star": 5,
+        "mainBusiness": "Energy Power Control,SCADA renewable energy,SCADA application solutions,SCADA wind installation,Hybrid control,SCADA win"
+      },
+      {
+        "companyName": "Scada International",
+        "website": "scada-international.com",
+        "emailCount": 169,
+        "contactTotal": 205,
+        "star": 5,
+        "mainBusiness": "Energy Power Control,SCADA renewable energy,SCADA application solutions,SCADA wind installation,Hybrid control,SCADA win"
+      },
+      {
+        "companyName": "Scada International",
+        "website": "scada-international.com",
+        "emailCount": 30,
+        "contactTotal": 57,
+        "star": 5,
+        "mainBusiness": "Energy Power Control,SCADA renewable energy,SCADA application solutions,SCADA wind installation,Hybrid control,SCADA win"
+      }
+    ]
+  },
+  {
+    "keyword": "HVAC",
+    "status": 200,
+    "total": 232755,
+    "rows": 20,
+    "sample": [
+      {
+        "companyName": "Heinen & Hopman Binnenvaart - Rotterdam",
+        "website": "heinenhopman.com",
+        "emailCount": 275,
+        "contactTotal": 393,
+        "star": 5,
+        "mainBusiness": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore HVAC,HVAC Spare Parts,Low-noise HVAC Systems,Military HVAC"
+      },
+      {
+        "companyName": "Heinen & Hopman Rus, Llc",
+        "website": "heinenhopman.com",
+        "emailCount": 283,
+        "contactTotal": 331,
+        "star": 5,
+        "mainBusiness": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore HVAC,HVAC Spare Parts,Low-noise HVAC Systems,Military HVAC"
+      },
+      {
+        "companyName": "Heinenhopman Myhendislik A.S.",
+        "website": "heinenhopman.com",
+        "emailCount": 291,
+        "contactTotal": 316,
+        "star": 5,
+        "mainBusiness": "Ventilation,Air Conditioning Service,Cooling Systems,Offshore HVAC,HVAC Spare Parts,Low-noise HVAC Systems,Military HVAC"
+      }
+    ]
+  }
+]

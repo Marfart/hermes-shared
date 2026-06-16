@@ -1,0 +1,315 @@
+{
+  "google_ai": [
+    "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/",
+    "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026/",
+    "https://blog.google/products-and-platforms/products/search/thrifting-tips/",
+    "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/"
+  ],
+  "venturebeat": [
+    "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+    "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+    "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+    "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free"
+  ],
+  "techcrunch": [
+    "https://techcrunch.com/2026/06/10/waymo-says-it-built-a-better-benchmark-for-comparing-robotaxis-to-humans/",
+    "https://techcrunch.com/2026/06/10/meta-signs-first-ai-data-center-deal-in-india-with-reliance/",
+    "https://techcrunch.com/2026/06/09/top-lucid-motors-executive-departs-amid-new-ceos-leadership-shakeup/",
+    "https://techcrunch.com/2026/06/09/how-justin-ernest-invested-nearly-500m-into-hot-startups-without-a-traditional-vc-fund/"
+  ],
+  "nvidia": [
+    "https://blogs.nvidia.com/blog/nvidia-and-doosan-group-physical-ai/",
+    "https://blogs.nvidia.com/blog/uk-sovereign-ai-advancements/",
+    "https://blogs.nvidia.com/blog/nvidia-and-lg-group-ai-factory/",
+    "https://blogs.nvidia.com/blog/nvidia-confidential-computing-apple-private-cloud-compute/"
+  ],
+  "huggingface": [
+    "https://huggingface.co/blog/mishig/spaces-agents-md",
+    "https://huggingface.co/blog/ServiceNow-AI/code-switching",
+    "https://huggingface.co/blog/github-ci-hf-jobs",
+    "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code"
+  ],
+  "w3c": [
+    "https://www.w3.org/news/2026/upcoming-w3c-gs1-workshop-on-e-commerce-for-humans-and-ai-agents/",
+    "https://www.w3.org/news/2026/w3c-initiates-leadership-transition/",
+    "https://www.w3.org/news/2026/proposed-advancement-of-pointer-events-level-3-to-w3c-recommendation/",
+    "https://www.w3.org/news/2026/w3c-invites-implementations-of-html-ruby-markup-extensions/"
+  ],
+  "arxiv_ai": [
+    "https://arxiv.org/abs/2606.10062",
+    "https://arxiv.org/abs/2606.10086",
+    "https://arxiv.org/abs/2606.10094",
+    "https://arxiv.org/abs/2606.10044"
+  ],
+  "arxiv_lg": [],
+  "arxiv_cl": [
+    "https://arxiv.org/abs/2606.09900",
+    "https://arxiv.org/abs/2606.09856",
+    "https://arxiv.org/abs/2606.09854",
+    "https://arxiv.org/abs/2606.09830"
+  ],
+  "arxiv_cv": [
+    "https://arxiv.org/abs/2606.09967",
+    "https://arxiv.org/abs/2606.09882",
+    "https://arxiv.org/abs/2606.10019",
+    "https://arxiv.org/abs/2606.09871"
+  ],
+  "arxiv_cr": [
+    "https://arxiv.org/abs/2606.09908",
+    "https://arxiv.org/abs/2606.09909",
+    "https://arxiv.org/abs/2606.09870",
+    "https://arxiv.org/abs/2606.09935"
+  ],
+  "arxiv_qp": [
+    "https://arxiv.org/abs/2606.09947",
+    "https://arxiv.org/abs/2606.09971",
+    "https://arxiv.org/abs/2606.09939",
+    "https://arxiv.org/abs/2606.09988"
+  ],
+  "arxiv_astro": [
+    "https://arxiv.org/abs/2606.09970",
+    "https://arxiv.org/abs/2606.09938",
+    "https://arxiv.org/abs/2606.09933",
+    "https://arxiv.org/abs/2606.09914"
+  ],
+  "arxiv_qfin": [
+    "https://arxiv.org/abs/2606.10070",
+    "https://arxiv.org/abs/2606.10191",
+    "https://arxiv.org/abs/2606.09918",
+    "https://arxiv.org/abs/2606.10245"
+  ],
+  "arxiv_sml": [
+    "https://arxiv.org/abs/2606.10361",
+    "https://arxiv.org/abs/2606.10119",
+    "https://arxiv.org/abs/2606.10295",
+    "https://arxiv.org/abs/2606.10187"
+  ],
+  "arxiv_econ": [
+    "https://arxiv.org/abs/2606.10070",
+    "https://arxiv.org/abs/2606.10127",
+    "https://arxiv.org/abs/2606.10438",
+    "https://arxiv.org/abs/2606.09918"
+  ],
+  "nature": [],
+  "nature_climate": [],
+  "pnas": [],
+  "cell": [],
+  "lancet": [],
+  "nejm": [],
+  "fed": [
+    "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260528a.htm",
+    "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260602a.htm",
+    "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260609a.htm",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260526a.htm"
+  ],
+  "fed_speech": [
+    "https://www.federalreserve.gov/newsevents/speech/powell20260531a.htm",
+    "https://www.federalreserve.gov/newsevents/speech/barr20260606a.htm",
+    "https://www.federalreserve.gov/newsevents/speech/bowman20260529a.htm",
+    "https://www.federalreserve.gov/newsevents/speech/jefferson20260527a.htm"
+  ],
+  "fed_research": [
+    "https://www.federalreserve.gov/econres/feds/the-role-of-inflation-perceptions-in-consumer-inflation-expectations-evidence-from-the-euro-area.htm",
+    "https://www.federalreserve.gov/econres/feds/slow-learning.htm",
+    "https://www.federalreserve.gov/econres/feds/settlement-speed-and-financial-stability.htm",
+    "https://www.federalreserve.gov/econres/feds/household-consumption-does-not-respond-directly-to-interest-rates.htm"
+  ],
+  "ecb": [
+    "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260603_1~2801335beb.en.html",
+    "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260604~f5d373b29f.en.html",
+    "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260603~5b8e67f237.en.html",
+    "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260608~6766ec7154.en.html"
+  ],
+  "imf": [],
+  "ipcc": [
+    "https://www.ipcc.ch/2026/06/01/ipcc-fao-co-sponsored-expert-meeting-food-agriculture/",
+    "https://www.ipcc.ch/2026/06/09/ipcc-chair-jim-skea-18th-research-dialogue/",
+    "https://www.ipcc.ch/2026/05/20/ipcc-news-comment-scenarios/",
+    "https://www.ipcc.ch/2026/06/05/ipcc-at-sb64-unfccc/"
+  ],
+  "unocha": [
+    "https://www.unocha.org/news/ocha-urges-security-council-sustain-aid-delivery-and-funding-afghanistan",
+    "https://www.unocha.org/news/acting-deputy-relief-chief-urges-security-council-not-let-civilian-suffering-ukraine-become",
+    "https://www.unocha.org/news/todays-top-news-afghanistan-lebanon-occupied-palestinian-territory-democratic-republic-congo",
+    "https://www.unocha.org/news/todays-top-news-lebanon-occupied-palestinian-territory-democratic-republic-congo-ukraine"
+  ],
+  "eu": [
+    "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1306",
+    "https://ec.europa.eu/commission/presscorner/detail/en/fs_26_1322",
+    "https://ec.europa.eu/commission/presscorner/detail/en/qanda_26_1316",
+    "https://ec.europa.eu/commission/presscorner/detail/en/statement_26_1327",
+    "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1315",
+    "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1324",
+    "https://ec.europa.eu/commission/presscorner/detail/en/fs_26_1323"
+  ],
+  "cisa": [
+    "https://www.cisa.gov/news-events/news/cisa-announces-winners-2026-presidents-cup-cybersecurity-competition",
+    "https://www.cisa.gov/news-events/news/cisa-urges-stronger-security-automatic-tank-gauge-systems",
+    "https://www.cisa.gov/news-events/news/cisa-announces-revised-town-hall-schedule-engage-stakeholders-cyber-incident-reporting-critical",
+    "https://www.cisa.gov/news-events/news/cisa-enhances-known-exploited-vulnerabilities-catalog-include-new-nomination-form"
+  ],
+  "fedreg": [],
+  "nasa": [
+    "https://www.nasa.gov/news-release/la-nasa-avanza-hacia-la-mision-artemis-iii-en-2027-y-anuncia-a-su-tripulacion/",
+    "https://science.nasa.gov/earth/earth-observatory/tyndalls-trail-of-bergs/",
+    "https://www.nasa.gov/directorates/armd/aetc/fdrf-characteristics/",
+    "https://www.nasa.gov/image-article/artemis-iii-crew-announced/"
+  ],
+  "space": [
+    "https://www.space.com/space-exploration/artemis/nasa-reveals-artemis-3-astronaut-crew",
+    "https://www.space.com/astronomy/black-holes/these-record-breaking-black-hole-winds-could-create-a-category-79-hurricane-on-earth",
+    "https://www.space.com/technology/thruster-breakthrough-new-2-in-1-propulsion-system-is-about-to-get-an-in-space-test",
+    "https://www.space.com/astronomy/black-holes/strange-spacetime-crystals-could-give-birth-to-tiny-black-holes",
+    "https://www.space.com/astronomy/galaxies/what-causes-galaxies-to-stop-growing"
+  ],
+  "spacenews": [
+    "https://spacenews.com/after-the-launch-why-europes-space-ambitions-depend-on-what-comes-next/",
+    "https://spacenews.com/nasa-names-crew-for-artemis-3-mission-to-test-lunar-landers/",
+    "https://spacenews.com/blacksky-to-accelerate-broad-area-collection-work-under-nro-contract-modification/",
+    "https://spacenews.com/new-glenn-forced-an-explosive-rewrite-for-nasas-plans-to-build-a-moon-base/",
+    "https://spacenews.com/iceye-raises-1-billion-euros-to-expand-sar-satellite-systems/"
+  ],
+  "noaa": [
+    "https://www.noaa.gov/stories/tracking-whale-sharks-ext",
+    "https://www.noaa.gov/stories/science-goes-deep-how-noaa-research-is-studying-our-global-ocean-ext",
+    "https://www.noaa.gov/news-release/noaa-strengthens-commitment-to-aquaculture-through-new-cooperative-institute",
+    "https://www.noaa.gov/stories/national-fishing-boating-week-ext"
+  ],
+  "who": [
+    "https://www.who.int/news/item/29-05-2026-who-urges-governments-to-protect-young-people-from-addiction-to-tobacco-and-nicotine-products",
+    "https://www.who.int/news/item/28-05-2026-experts-convened-by-who-advise-on-candidate-treatments-and-vaccines-for-ebola-disease-caused-by-bundibugyo-virus",
+    "https://www.who.int/news/item/31-05-2026-joint-statement-by-the-government-of-the-democratic-republic-of-the-congo-and-who-concerning-the-outbreak-of-ebola-disease-caused-by-the-bundibugyo-virus",
+    "https://www.who.int/news/item/05-06-2026-africa-cdc-and-who-launch-joint-continental-ebola-response-plan"
+  ],
+  "mit_ai": [
+    "https://www.technologyreview.com/2026/06/09/1137830/learning-to-lead-in-a-hybrid-human-ai-enterprise/",
+    "https://www.technologyreview.com/2026/06/05/1138437/the-meta-hack-shows-theres-more-to-ai-security-than-mythos/",
+    "https://www.technologyreview.com/2026/06/09/1138582/five-things-you-need-to-know-about-ai/",
+    "https://www.technologyreview.com/2026/06/04/1138391/courts-coping-ai-lawsuits/"
+  ],
+  "mit_all": [
+    "https://www.technologyreview.com/2026/06/09/1138545/david-sinclair-plans-to-test-whole-body-rejuvenation-drugs-in-the-xprize-competition/",
+    "https://www.technologyreview.com/2026/06/09/1138604/the-download-anti-aging-drugs-ai-five-things-to-know/",
+    "https://www.technologyreview.com/2026/06/09/1137830/learning-to-lead-in-a-hybrid-human-ai-enterprise/",
+    "https://www.technologyreview.com/2026/06/10/1138670/enhanced-games-doping-steroids-hormones-supplements-longevity/"
+  ],
+  "sciencedaily": [
+    "https://www.sciencedaily.com/releases/2026/06/260609025534.htm",
+    "https://www.sciencedaily.com/releases/2026/06/260609025509.htm",
+    "https://www.sciencedaily.com/releases/2026/06/260610003044.htm",
+    "https://www.sciencedaily.com/releases/2026/06/260610003042.htm"
+  ],
+  "quanta": [
+    "https://www.quantamagazine.org/how-terry-tao-became-an-evangelist-for-ai-in-math-20260608/",
+    "https://www.quantamagazine.org/are-memories-transferable-or-edible-20260605/",
+    "https://www.quantamagazine.org/more-conversations-complex-questions-and-bold-ideas-in-season-five-of-the-joy-of-why-20260604/",
+    "https://www.quantamagazine.org/entanglement-builds-space-time-now-magic-gives-it-gravity-20260603/"
+  ],
+  "newsci": [
+    "https://www.newscientist.com/article/2528456-the-last-ditch-plan-to-save-coral-reefs-from-utter-destruction/?utm_campaign=RSS%7CNSNS&utm_source=NSNS&utm_medium=RSS&utm_content=home",
+    "https://www.newscientist.com/article/2529338-a-waymo-nearly-hit-me-but-im-still-optimistic-about-driverless-cars/?utm_campaign=RSS%7CNSNS&utm_source=NSNS&utm_medium=RSS&utm_content=home",
+    "https://www.newscientist.com/article/2529635-frozen-squirrel-scat-preserves-ancient-dna-from-hundreds-of-species/?utm_campaign=RSS%7CNSNS&utm_source=NSNS&utm_medium=RSS&utm_content=home",
+    "https://www.newscientist.com/article/2529145-a-cosmic-case-of-mistaken-identity-that-can-only-be-solved-right-now/?utm_campaign=RSS%7CNSNS&utm_source=NSNS&utm_medium=RSS&utm_content=home",
+    "https://www.newscientist.com/article/2529183-why-we-should-all-take-quantum-physics-extremely-personally/?utm_campaign=RSS%7CNSNS&utm_source=NSNS&utm_medium=RSS&utm_content=home"
+  ],
+  "ieee": [
+    "https://spectrum.ieee.org/strategic-job-hopping",
+    "https://spectrum.ieee.org/agilink-contact-intelligence-robot-manipulation",
+    "https://spectrum.ieee.org/ieee-celebrates-honors-ceremony-2026",
+    "https://spectrum.ieee.org/fortune-500-companies-vs-startups"
+  ],
+  "aeon": [
+    "https://aeon.co/essays/why-did-measuring-earths-true-shape-matter-for-science",
+    "https://aeon.co/essays/why-being-autistic-can-be-a-lot-of-fun",
+    "https://aeon.co/videos/how-an-ancient-curiosity-evolved-to-power-the-modern-world",
+    "https://aeon.co/videos/one-day-in-1943-smog-descended-on-los-angeles-it-never-really-left",
+    "https://aeon.co/essays/why-mozarts-operas-are-tests-of-moral-character"
+  ],
+  "tnw": [
+    "https://thenextweb.com/news/rotomate-pre-seed-funding-industrial-ai",
+    "https://thenextweb.com/news/uncovr-7m-seed-surgical-ai-index-ventures",
+    "https://thenextweb.com/news/2-trillion-ai-infrastructure-problem-shashidhar-bhat",
+    "https://thenextweb.com/news/einride-nasdaq-spac-driverless-trucking-valuation-drop",
+    "https://thenextweb.com/news/01health-raises-11-2m-to-turn-its-dental-ai-platform-into-infrastructure-for-specialist-care",
+    "https://thenextweb.com/news/bizlink-interplex-850m-nvidia-data-center-acquisition",
+    "https://thenextweb.com/news/ethical-proxy-sourcing-challenges-how-to-stay-on-the-right-side",
+    "https://thenextweb.com/news/amazon-uk-investment-1bn-northamptonshire-jobs"
+  ],
+  "hackernews": [
+    "https://news.ycombinator.com/item?id=48473166",
+    "https://github.com/react/react/pull/36173",
+    "https://www.ddmckinnon.com/2026/06/09/vibe-coding-my-way-to-a-healthy-family-introducing-gamow-labs/",
+    "https://media.mercedes-benz.com/en/article/bebac2af-acdc-465a-9538-adb0bf3d8ccf"
+  ],
+  "cloudflare": [
+    "https://blog.cloudflare.com/voidzero-joins-cloudflare/",
+    "https://blog.cloudflare.com/realtime-threat-intel-waf-rules/",
+    "https://blog.cloudflare.com/ai-gateway-spend-limits/",
+    "https://blog.cloudflare.com/frontier-model-defense/"
+  ],
+  "ted": [
+    "https://blog.ted.com/ted2026-all-of-us-in-photos/",
+    "https://blog.ted.com/reconnecting-to-humanity-the-interstitials-of-ted2026/",
+    "https://blog.ted.com/the-loop-at-ted2026-in-photos/",
+    "https://blog.ted.com/join-us-live-may-14-on-youtube-for-playted-an-event-to-celebrate-the-power-of-play/"
+  ],
+  "eurogamer": [
+    "https://www.eurogamer.net/xbox-ceo-new-console-business-models-in-2026",
+    "https://www.eurogamer.net/fumito-ueda-gen-atlas-game-name-explanation",
+    "https://www.eurogamer.net/fire-emblem-fortunes-weave-spain-regions",
+    "https://www.eurogamer.net/first-hd-2d-final-fantasy-resonance-brave-exvius-mobile-game",
+    "https://www.eurogamer.net/nintendo-switch-sports-resort-switch-2-announced",
+    "https://www.eurogamer.net/star-fox-switch-2-demo",
+    "https://www.eurogamer.net/xbox-matthew-ball-on-component-shortages-project-helix",
+    "https://www.eurogamer.net/crash-bandicoot-universal-interactive"
+  ],
+  "ann": [
+    "https://www.animenewsnetwork.com/news/2026-06-10/from-old-country-bumpkin-to-master-swordsman-season-2-ad-unveils-blue-encount-ending-song-july-9-/.238371",
+    "https://www.animenewsnetwork.com/news/2026-06-10/pokemon-pokopia-game-offers-expansion-pass-dlc-free-update-in-august/.238350",
+    "https://www.animenewsnetwork.com/news/2026-06-10/shigure-tokita-to-end-no-gyaru-in-this-class-manga-in-next-chapter/.238298",
+    "https://www.animenewsnetwork.com/news/2026-06-10/star-fox-switch-2-game-remake-launches-playable-demo/.238347",
+    "https://www.animenewsnetwork.com/news/2026-06-10/elegy-for-the-henchmen-fist-of-the-north-star-anime-2nd-part-reveals-new-trailer-theme-songs-july-6-/.238368"
+  ],
+  "freejazz": [
+    "http://www.freejazzblog.org/2026/06/marion-brown-live-in-europe-1968.html",
+    "http://www.freejazzblog.org/2026/06/gabby-fluke-mogul-gut-live-at-roulette.html",
+    "http://www.freejazzblog.org/2026/06/james-blood-ulmer-1940-2026.html",
+    "http://www.freejazzblog.org/2026/06/moers-lets-down-its-hair-moers-festival.html"
+  ],
+  "stereogum": [
+    "https://stereogum.com/2501852/shearwater-slugs-in-the-marigolds-feat-doug-wieselman/music/",
+    "https://stereogum.com/2501855/devastated-conor-oberst-addresses-bright-eyes-forest-hills-show-evacuation/news/",
+    "https://stereogum.com/2501845/superfan-picture-of-return/music/",
+    "https://stereogum.com/2501861/jack-white-emphasizes-no-announcement-release-strategy-by-not-announcing-new-album-frozen-charlotte/news/"
+  ],
+  "bloomberg": [
+    "https://www.bloomberg.com/news/articles/2026-06-09/stock-market-today-dow-s-p-live-updates",
+    "https://www.bloomberg.com/news/newsletters/2026-06-10/bitcoin-finds-a-bounce-not-a-bottom",
+    "https://www.bloomberg.com/news/articles/2026-06-10/xinjiang-chief-touts-trade-diplomacy-as-hormuz-disruption-bites",
+    "https://www.bloomberg.com/news/articles/2026-06-10/slowing-economy-gives-turkey-cover-to-hold-interest-rates-again",
+    "https://www.bloomberg.com/news/articles/2026-06-10/carlyle-seeks-banks-for-india-ipo-of-healthcare-rcm-provider",
+    "https://www.bloomberg.com/news/articles/2026-06-10/governments-are-selling-bonds-at-record-pace-as-spending-soars",
+    "https://www.bloomberg.com/news/articles/2026-06-09/jpmorgan-led-group-plan-sale-of-qualtrics-hung-debt-at-year-end",
+    "https://www.bloomberg.com/news/articles/2026-06-10/china-taps-commercial-oil-stockpiles-to-help-weather-gulf-shock",
+    "https://www.bloomberg.com/news/videos/2026-06-10/the-pulse-6-10-2026-video",
+    "https://www.bloomberg.com/news/videos/2026-06-10/wedding-inflation-has-brides-paying-witches-for-perfect-days"
+  ],
+  "marketwatch": [
+    "https://www.marketwatch.com/story/oracles-stock-has-surged-on-ai-hype-now-it-has-to-deliver-the-earnings-to-match-3b56592b?mod=mw_rss_topstories",
+    "https://www.marketwatch.com/story/my-plumber-charged-160-to-fix-a-problem-in-my-bathroom-but-appears-to-have-created-another-one-do-i-pay-again-f64903ae?mod=mw_rss_topstories",
+    "https://www.marketwatch.com/story/the-spacex-ipo-could-lead-to-8-of-americas-current-account-deficit-being-refinanced-in-single-day-a013a428?mod=mw_rss_topstories",
+    "https://www.marketwatch.com/story/buyer-swoops-in-for-actress-dakota-johnsons-6-million-midcentury-modern-gem-in-l-a-382c82ec?mod=mw_rss_topstories",
+    "https://www.marketwatch.com/story/heres-why-shares-in-softbank-no-longer-japans-most-valuable-have-fallen-by-a-fifth-in-the-last-week-e38d5812?mod=mw_rss_topstories",
+    "https://www.marketwatch.com/story/my-elderly-mother-and-i-own-a-home-together-will-medicaid-force-its-sale-fdfbad4a?mod=mw_rss_topstories",
+    "https://www.marketwatch.com/story/im-60-retired-with-3-million-my-fiancee-55-has-1-million-but-plans-to-work-for-the-next-10-years-are-we-compatible-2ee04cf9?mod=mw_rss_topstories",
+    "https://www.marketwatch.com/story/here-are-all-the-red-flags-in-the-spacex-ipo-7c55b31e?mod=mw_rss_topstories",
+    "https://www.marketwatch.com/story/we-pay-100-per-month-my-husband-is-in-his-mid-60s-and-has-a-500-000-life-insurance-policy-is-it-time-to-cancel-it-4cc49ffe?mod=mw_rss_topstories",
+    "https://www.marketwatch.com/story/why-exploding-retail-euphoria-and-leveraged-etfs-have-scared-one-stock-market-bull-into-turning-cautious-bdd2d4f2?mod=mw_rss_topstories"
+  ],
+  "ars": [
+    "https://arstechnica.com/security/2026/06/locked-in-heated-rivalry-with-researcher-microsoft-fixes-0-day-they-disclosed/",
+    "https://arstechnica.com/science/2026/06/study-how-to-take-the-urban-pulse-of-a-city/",
+    "https://arstechnica.com/science/2026/06/__trashed-19/",
+    "https://arstechnica.com/tech-policy/2026/06/netflix-trying-to-poison-regulators-about-wbd-merger-paramount-lawyer-claims/"
+  ]
+}

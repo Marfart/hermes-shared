@@ -1,0 +1,9 @@
+{
+  "last_report_path": "C:\\Users\\Admin\\AppData\\Local\\hermes\\logs\\curator\\20260609-102009",
+  "last_run_at": "2026-06-09T10:20:09.482068+00:00",
+  "last_run_duration_seconds": 284.72592,
+  "last_run_summary": "auto: no changes; llm: Curator pass complete. Here's the full report:\n\n---\n\n## 3 Consolidation Merges + 8 Pruning Archives\n\n### Patches applied to umbrella skills:\n\n**camera-reconnaissance** ← absorbed `ip-camera-reconnaissance`\n- Added Complete Scan Flow section…\narchived 11 skill(s):\n  • codex → claude-code\n  • ip-camera-reconnaissance → camera-reconnaissance\n  • sketch → claude-design\n  • blogwatcher — pruned (stale)\n  • dogfood — pruned (stale)\n  • gif-search — pruned (stale)\n  • jupyter-live-kernel — pruned (stale)\n  • maps — pruned (stale)\n  • openhue — pruned (stale)\n  • teams-meeting-pipeline — pruned (stale)\n  … and 1 more\nfull report: hermes curator status\nkeep an umbrella stable: hermes curator pin camera-reconnaissance",
+  "last_run_summary_shown_at": null,
+  "paused": false,
+  "run_count": 2
+}

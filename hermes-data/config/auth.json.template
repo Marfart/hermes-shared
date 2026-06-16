@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "providers": {
+    "spotify": {
+      "client_id": "315861094ce444f6acb6cddc32bd8a87",
+      "redirect_uri": "http://127.0.0.1:43827/spotify/callback",
+      "accounts_base_url": "https://accounts.spotify.com",
+      "api_base_url": "https://api.spotify.com/v1",
+      "scope": "user-modify-playback-state user-read-playback-state user-read-currently-playing user-read-recently-played playlist-read-private playlist-read-collaborative playlist-modify-public playlist-modify-private user-library-read user-library-modify",
+      "granted_scope": "playlist-read-private playlist-read-collaborative user-modify-playback-state user-library-read user-library-modify playlist-modify-private playlist-modify-public user-read-playback-state user-read-currently-playing user-read-recently-played",
+      "token_type": "***",
+      "access_token": "***",
+      "refresh_token": "***",
+      "obtained_at": "2026-05-27T09:04:13.411539+00:00",
+      "expires_at": "2026-05-27T10:04:13.411539+00:00",
+      "expires_in": 3600,
+      "auth_type": "***"
+    },
+    "openai-codex": {
+      "tokens": "***",
+      "last_refresh": "2026-06-07T10:11:43.247879Z",
+      "auth_mode": "***"
+    }
+  },
+  "active_provider": null,
+  "updated_at": "2026-06-12T22:25:01.950834+00:00",
+  "credential_pool": "***"
+}

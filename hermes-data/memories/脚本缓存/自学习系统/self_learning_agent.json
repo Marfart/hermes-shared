@@ -1,0 +1,18 @@
+{
+  "version": 4,
+  "total_rounds": 5,
+  "last_pillar": 1,
+  "last_topic_per_pillar": {
+    "赛博脚本小子": 1,
+    "机器人制造师": 1,
+    "黑客": 1
+  },
+  "learned_projects": [
+    "HariSekhon/DevOps-Bash-tools",
+    "tock/tock",
+    "rapid7/metasploit-framework",
+    "dfinke/PSAI",
+    "micropython/micropython"
+  ],
+  "current_status": "last_run: 2026-06-07, topic: 嵌入式系统设计-树莓派ESP32, project: micropython/micropython"
+}

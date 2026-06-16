@@ -1,0 +1,13 @@
+{
+  "last_healthy": 1780457914.7632687,
+  "last_error": 0.0,
+  "last_alert": 0.0,
+  "last_restart": 1780457914.7632687,
+  "restart_count_hour": 1,
+  "restart_hour_bucket": 494571,
+  "consecutive_failures": 0,
+  "errors_today": [
+    "SSL cert expired - auto fixed on 06-03"
+  ],
+  "auto_fixed_count": 1
+}

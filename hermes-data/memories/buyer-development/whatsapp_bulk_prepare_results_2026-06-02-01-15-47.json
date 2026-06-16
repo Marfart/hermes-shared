@@ -1,0 +1,10 @@
+[
+  {
+    "queue_id": 1,
+    "name": "Iris Automation Pvt. Ltd.",
+    "whatsapp_number": "+919825455945",
+    "mode": "prepare",
+    "status": "error",
+    "error": "locator.waitFor: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('footer [contenteditable=\"true\"], div[contenteditable=\"true\"][role=\"textbox\"]').last() to be visible\u001b[22m\n"
+  }
+]

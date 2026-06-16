@@ -1,0 +1,42 @@
+[
+  {
+    "queue_id": 1,
+    "name": "Excel Automation Solutions",
+    "whatsapp_number": "+918870007000",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v1-3-1-2-2-3-2",
+    "mode": "prepare",
+    "status": "error",
+    "error": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\"发送\"], button[aria-label=\"Send\"]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "queue_id": 2,
+    "name": "Neel Smartec Co",
+    "whatsapp_number": "+919538047356",
+    "style_id": "energy_monitoring",
+    "variant_id": "energy_monitoring-v2-1-0-3-1-4-0",
+    "mode": "prepare",
+    "status": "error",
+    "error": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\"发送\"], button[aria-label=\"Send\"]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "queue_id": 3,
+    "name": "Ecava Sdn. Bhd.",
+    "whatsapp_number": "+60380804838",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v3-3-3-0-0-0-3",
+    "mode": "prepare",
+    "status": "prepared",
+    "opened_url": "https://web.whatsapp.com/send?phone=60380804838&text=Hope%20your%20day%20is%20going%20well.%20Hello%2C%20Kali%20from%20BLIIOT%20here.%20BLIIOT%20is%20a%20supplier%20of%20industrial%20IoT%20hardware%2C%20focusing%20on%20industrial%20gateways%2C%20edge%20controllers%2C%20and%20remote%20data%20acquisition%20devices%20for%20automation%20projects.%20It%20looks%20like%20your%20projects%20involve%20PLC%2FSCADA%20connectivity%20and%20industrial%20protocol%20conversion%20%2F%20system%20integration%20and%20industrial%20device%20networking.%20Our%20relevant%20product%20line%20includes%20BA%20building%20automation%20gateways%20together%20with%20industrial%20gateways%20and%20routers%20for%20industrial%20communication%2C%20field%20data%20access%2C%20and%20SCADA-side%20integration.%20They%20can%20help%20shorten%20integration%20time%20and%20improve%20remote%20visibility%20in%20industrial%20projects.%20If%20you%20have%20a%20PLC%20or%20SCADA%20related%20project%2C%20I%20would%20be%20glad%20to%20suggest%20suitable%20models%20and%20share%20pricing.%20You%20can%20also%20have%20a%20quick%20look%20at%20our%20website%20here%3A%20https%3A%2F%2Fbliiot.com%2F%20If%20you%20want%2C%20I%20can%20send%20a%20concise%20catalog%20for%20your%20reference."
+  },
+  {
+    "queue_id": 4,
+    "name": "Tlm Telemetria E Sensoriamento",
+    "whatsapp_number": "+5541991129953",
+    "style_id": "energy_monitoring",
+    "variant_id": "energy_monitoring-v4-1-2-1-3-1-1",
+    "mode": "prepare",
+    "status": "prepared",
+    "opened_url": "https://web.whatsapp.com/send?phone=5541991129953&text=Wishing%20you%20a%20pleasant%20day.%20Hi%2C%20I%20am%20Kali%20from%20BLIIOT.%20Our%20company%20mainly%20provides%20industrial%20gateways%2C%20cellular%20routers%2C%20RTU-type%20products%2C%20and%20edge%20controllers%20for%20monitoring%20and%20utility%20projects.%20It%20seems%20your%20projects%20are%20related%20to%20system%20integration%20and%20industrial%20device%20networking%20%2F%20energy%20monitoring%20and%20utility%20equipment%20communication.%20We%20offer%20industrial%20gateways%20and%20routers%20together%20with%20ARM%20edge%20controllers%20for%20remote%20monitoring%2C%20device%20networking%2C%20and%20utility-side%20data%20collection.%20They%20can%20help%20improve%20remote%20visibility%20and%20reduce%20integration%20effort%20in%20monitoring%20projects.%20If%20this%20fits%20your%20current%20needs%2C%20I%20would%20be%20glad%20to%20suggest%20suitable%20devices%20for%20your%20review.%20Our%20website%20is%20here%20if%20you'd%20like%20to%20browse%20first%3A%20https%3A%2F%2Fbliiot.com%2F%20If%20you%20are%20interested%2C%20I%20can%20send%20a%20quick%20catalog."
+  }
+]

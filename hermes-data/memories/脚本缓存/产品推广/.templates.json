@@ -1,0 +1,62 @@
+{
+  "advansys_best_fit": {
+    "target_email": "information@advansys.co.za",
+    "target_company": "Advansys",
+    "subject": "Edge Computing & IIoT Gateways for Advansys SCADA Projects",
+    "body_text": "Dear Advansys Team,\n\nI came across Advansys while researching leading SCADA and industrial automation integrators in South Africa. Your expertise in PLC systems, MES, and batch solutions is impressive — especially your work across Food & Beverage, Mining, and Utilities.\n\nI'm writing because I believe BLIIOT's product line could complement Advansys's existing offerings, particularly as your clients look to bridge their legacy SCADA systems with modern IIoT platforms.\n\nWe specialize in three areas directly relevant to your integration projects:\n\n1. Industrial IoT Gateways (BL116/BL118)\n   - Multi-protocol conversion: Modbus RTU/TCP ↔ PROFINET ↔ EtherNet/IP ↔ MQTT\n   - Direct cloud connectivity (AWS/Azure/private) without middleware\n   - PLC-agnostic data acquisition for mixed-brand environments\n\n2. ARMxy Edge Controllers\n   - Linux-based edge computing platform (Python, Node-RED)\n   - Local data processing before cloud upload — reduces bandwidth costs\n   - Can replace traditional PLCs in IIoT-centric architectures\n\n3. R40 Series Industrial Routers\n   - 4G/5G cellular connectivity for remote sites\n   - VPN-secured communication back to central SCADA\n   - Dual-WAN failover for mission-critical links\n\nI'd love to send over our full product catalog and arrange a short call to discuss how we could support upcoming Advansys projects — especially any where clients are asking for remote monitoring, cloud connectivity, or edge processing capabilities.\n\nWould that be of interest?\n\nBest regards,\nBLIIOT (Shenzhen Bliiot Technology Co., Ltd)\nwww.bliiot.com | bl42@bliiot.com",
+    "product_focus": [
+      "Industrial Gateways",
+      "ARMxy Edge Controllers",
+      "R40 Routers"
+    ],
+    "priority": "HIGH"
+  },
+  "integ_system_integrators": {
+    "target_email": "info@integ.co.za",
+    "target_company": "INTEG System Integrators",
+    "subject": "Expanding INTEG's IIoT Capability with BLIIOT Edge Solutions",
+    "body_text": "Dear INTEG Team,\n\nCongratulations on your 2025 Best Partner Award — your team's work in control systems engineering across Food & Beverage, Pharma, and Water sectors clearly sets a high standard.\n\nI'm reaching out because INTEG's core services (PLC systems, SCADA, HMI, MES, batching) align closely with the IIoT infrastructure gap many system integrators are helping clients address today. BLIIOT manufactures industrial connectivity hardware that slots directly into that gap.\n\nThree products that may be particularly relevant:\n\n1. ARMxy Edge Controllers\n   - ARM-based edge computing with Linux + Node-RED\n   - Ideal for pre-processing data before it reaches your SCADA layer\n   - Programmable via Python for custom logic — extends what traditional PLCs can do\n\n2. Industrial IoT Gateways (BL116/BA116 series)\n   - Protocol conversion: Modbus ↔ PROFINET ↔ EtherNet/IP ↔ MQTT\n   - Direct cloud push — no middleware server needed\n   - Compact DIN-rail form factor for control panel integration\n\n3. Remote IO (IOy Series)\n   - Modular DI/DO/AI/AO configurations\n   - Modbus RTU/TCP communication back to PLC or SCADA\n   - Cost-effective field I/O expansion for distributed sites\n\nWe're already supporting system integrators in Europe, the Middle East, and across Africa with these solutions. I'd like to share our technical datasheets and see if there's a current INTEG project where our devices could add value.\n\nHappy to send documentation or arrange a brief technical call.\n\nBest regards,\nBLIIOT (Shenzhen Bliiot Technology Co., Ltd)\nwww.bliiot.com | bl42@bliiot.com",
+    "product_focus": [
+      "ARMxy Edge Controllers",
+      "Industrial Gateways",
+      "Remote IO"
+    ],
+    "priority": "HIGH"
+  },
+  "sam_systems": {
+    "target_email": "info@sam.co.za",
+    "target_company": "SAM (Systems Automation & Management)",
+    "subject": "IIoT Connectivity Solutions for SAM's 40-Year Automation Legacy",
+    "body_text": "Dear SAM Team,\n\n40 years of serving the South African automation industry is a remarkable milestone — from PLC and SCADA integration to industrial IT and BMS, SAM's breadth of expertise is impressive.\n\nAs your clients increasingly ask for remote monitoring, cloud connectivity, and edge computing capabilities alongside their existing SCADA investments, BLIIOT's product range could provide the hardware layer to make those transitions smooth and cost-effective.\n\nKey products for SAM's integration projects:\n\n1. R40 Series Industrial Routers\n   - 4G/5G cellular with hardware VPN\n   - Dual-WAN failover for critical remote sites\n   - Industrial temperature rating for harsh environments\n\n2. Industrial IoT Gateways (BL116/BE116)\n   - Multi-protocol engine: Modbus, PROFINET, EtherNet/IP all in one device\n   - Pre-integrated with major cloud platforms (AWS IoT, Azure IoT, Alibaba Cloud)\n   - BLIoTLink software for remote PLC access and data mapping\n\n3. ARMxy Edge Controllers\n   - Linux edge computer with Node-RED, Python, OPC-UA support\n   - Local data logging with SD card backup\n   - Acts as IoT bridge between legacy fieldbus and modern IT systems\n\nSAM's experience with Fieldbus systems and data acquisition makes you an ideal partner for deploying these solutions across your client base.\n\nI'd be happy to share our full product portfolio and discuss how BLIIOT can support SAM's ongoing projects.\n\nBest regards,\nBLIIOT (Shenzhen Bliiot Technology Co., Ltd)\nwww.bliiot.com | bl42@bliiot.com",
+    "product_focus": [
+      "R40 Routers",
+      "Industrial Gateways",
+      "ARMxy Edge Controllers"
+    ],
+    "priority": "HIGH"
+  },
+  "amsi_wonderware": {
+    "target_email": "info@amsi.co.za",
+    "target_company": "AM Systems Integration",
+    "subject": "Adding IIoT Hardware Layer to AMSI's Wonderware SCADA Solutions",
+    "body_text": "Dear Michael and the AMSI Team,\n\nI've been following AMSI's work as a Wonderware-registered system integrator — your turnkey approach from project design through programming and installation is exactly the kind of full-service capability we look to partner with.\n\nBLIIOT manufactures industrial IoT hardware that works alongside Wonderware SCADA platforms to extend data acquisition capabilities at the field level.\n\nProducts that integrate naturally with your SCADA projects:\n\n1. Remote IO Modules (IOy Series)\n   - Flexible DI/DO/AI/AO configurations\n   - Modbus RTU/TCP direct to Wonderware via OPC or Modbus driver\n   - DIN-rail mount, industrial temperature range\n   - Cost-effective field I/O expansion without replacing existing PLCs\n\n2. Industrial IoT Gateways (BL116 series)\n   - Protocol conversion: bring legacy Modbus RTU devices onto your TCP network\n   - Built-in data logging and Edge computing\n   - Cloud push for remote monitoring dashboards\n\n3. ARMxy Edge Controllers\n   - Local data preprocessing before SCADA ingestion\n   - Custom Python scripts for data transformation\n   - Acts as IoT bridge — ideal for Industry 4.0 upgrades\n\nMany of our integrator partners use BLIIOT devices to add an IIoT layer without disrupting their existing SCADA architecture. I'd love to send over technical documentation and samples.\n\nWould you be open to a brief conversation?\n\nBest regards,\nBLIIOT (Shenzhen Bliiot Technology Co., Ltd)\nwww.bliiot.com | bl42@bliiot.com",
+    "product_focus": [
+      "Remote IO",
+      "Industrial Gateways",
+      "ARMxy Edge Controllers"
+    ],
+    "priority": "HIGH"
+  },
+  "gil_nigeria": {
+    "target_email": "info@gilautomation.com",
+    "target_company": "Gil Automations Ltd",
+    "subject": "Strengthening Gil Automation's IIoT Portfolio in Nigeria & West Africa",
+    "body_text": "Dear Gil Automation Team,\n\nAs a Siemens Value-Added Reseller and Valmet partner with 195 staff across West Africa, Gil Automation's position in the Nigerian industrial market is unique. Your coverage of Oil & Gas, Power, and general industry makes you an ideal partner for industrial IoT expansion in the region.\n\nBLIIOT designs and manufactures industrial IoT hardware that would complement Gil's existing Siemens and instrumentation portfolio:\n\n1. Industrial IoT Gateways (BL116/BL118)\n   - Multi-protocol: Siemens S7, Modbus, PROFINET, EtherNet/IP\n   - Direct cloud connectivity — no middleware\n   - Built to industrial standards for harsh field environments\n\n2. ARMxy Edge Controllers\n   - Linux-based edge computing, programmable via Python/Node-RED\n   - Local data processing and protocol conversion\n   - Remote device management via web dashboard\n\n3. R40 Series Routers\n   - 4G/5G with hardware VPN for remote oil & gas sites\n   - Dual SIM failover for critical uptime\n   - Wide input voltage for solar/battery powered installations\n\nFor the West African market specifically, our devices support:\n- Remote pipeline monitoring (R40 + solar power)\n- Generator/fleet telemetry via BL116 gateway\n- SCADA RTU replacement with ARMxy edge controllers\n\nWe're looking for strong integration partners in Nigeria and would be delighted to explore how BLIIOT products fit Gil's sales and project pipeline.\n\nWould you be interested in receiving our product catalog and discussing a partnership?\n\nBest regards,\nBLIIOT (Shenzhen Bliiot Technology Co., Ltd)\nwww.bliiot.com | bl42@bliiot.com",
+    "product_focus": [
+      "Industrial Gateways",
+      "ARMxy Edge Controllers",
+      "R40 Routers"
+    ],
+    "priority": "HIGH"
+  }
+}

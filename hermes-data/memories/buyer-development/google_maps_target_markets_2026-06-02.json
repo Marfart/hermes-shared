@@ -1,0 +1,43 @@
+{
+  "plan_name": "google_maps_whatsapp_pipeline",
+  "created_on": "2026-06-02",
+  "selection_rule": "AI can choose target markets dynamically, but the default starting focus is Africa industrial automation and system integration.",
+  "target_markets": [
+    {
+      "country": "South Africa",
+      "priority": 1,
+      "why": "Industrial center in Africa, strong PLC/SCADA/DCS demand, English-friendly communication."
+    },
+    {
+      "country": "Nigeria",
+      "priority": 2,
+      "why": "Large market with growing industrial automation and IIoT demand."
+    },
+    {
+      "country": "Kenya",
+      "priority": 3,
+      "why": "East Africa industrial and infrastructure hub with monitoring and SmartGrid opportunities."
+    },
+    {
+      "country": "Zimbabwe",
+      "priority": 4,
+      "why": "Relevant because of existing SmartGrid relationships and easier regional referencing."
+    }
+  ],
+  "default_queries": [
+    "industrial automation South Africa",
+    "system integrator Johannesburg",
+    "PLC SCADA Cape Town",
+    "automation company Lagos Nigeria",
+    "industrial control Kenya",
+    "industrial automation Pretoria",
+    "automation distributor Johannesburg",
+    "building automation Nigeria"
+  ],
+  "screening_rules": [
+    "Prefer rating 4.0 and above, especially 4.8 to 5.0.",
+    "Prefer leads with public phone numbers because they can feed the WhatsApp workflow.",
+    "Keep companies related to industrial automation, system integration, PLC, SCADA, IIoT, monitoring, energy, BMS, or industrial control.",
+    "Exclude pure retail, unrelated trading, or low-relevance businesses."
+  ]
+}

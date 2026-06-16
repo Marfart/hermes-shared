@@ -1,0 +1,216 @@
+[
+  {
+    "queue_id": 22,
+    "name": "Automatización Norte",
+    "whatsapp_number": "+541161154659",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v2-1-0-3-1-4-0",
+    "mode": "send",
+    "status": "skipped_already_sent",
+    "previous_send": {
+      "phone": "541161154659",
+      "first_sent_at": "2026-06-02T07:48:58.978Z",
+      "last_sent_at": "2026-06-02-07-49-02",
+      "names": [
+        "Automatización Norte"
+      ],
+      "variants": [
+        "scada_plc-v2-1-0-3-1-4-0"
+      ],
+      "files": [
+        "whatsapp_bulk_send_results_2026-06-02-07-49-02.json"
+      ],
+      "send_count": 2
+    }
+  },
+  {
+    "queue_id": 23,
+    "name": "KDK-Argentina",
+    "whatsapp_number": "+5491135054401",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v3-3-3-0-0-0-3",
+    "mode": "send",
+    "status": "sent",
+    "opened_url": "https://web.whatsapp.com/send?phone=5491135054401&text=Hope%20your%20day%20is%20going%20well.%0A%0AHello%2C%20Kali%20from%20BLIIOT%20here.%20BLIIOT%20is%20a%20supplier%20of%20industrial%20IoT%20hardware%2C%20focusing%20on%20industrial%20gateways%2C%20edge%20controllers%2C%20and%20remote%20data%20acquisition%20devices%20for%20automation%20projects.%0A%0AIt%20looks%20like%20your%20projects%20involve%20PLC%2FSCADA%20connectivity%20and%20protocol%20conversion.%20Our%20relevant%20product%20line%20includes%20ARM%20edge%20controllers%20together%20with%20industrial%20gateways%20and%20routers%20for%20industrial%20communication%2C%20field%20data%20access%2C%20and%20SCADA-side%20integration.%0A%0AIf%20you%20have%20a%20PLC%20or%20SCADA%20project%2C%20I%20can%20suggest%20suitable%20models%20and%20pricing.%20You%20can%20have%20a%20quick%20look%20here%3A%20https%3A%2F%2Fbliiot.com%2F%0A%0AI%20can%20also%20send%20a%20short%20catalog%20for%20reference."
+  },
+  {
+    "queue_id": 27,
+    "name": "Control y Automatización",
+    "whatsapp_number": "+573165388531",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v2-3-3-0-0-4-0",
+    "mode": "send",
+    "status": "sent",
+    "opened_url": "https://web.whatsapp.com/send?phone=573165388531&text=Hope%20you%20are%20enjoying%20a%20good%20day.%0A%0AHi%2C%20Kali%20here%20from%20BLIIOT.%20BLIIOT%20is%20a%20supplier%20of%20industrial%20IoT%20hardware%2C%20focusing%20on%20industrial%20gateways%2C%20edge%20controllers%2C%20and%20remote%20data%20acquisition%20devices%20for%20automation%20projects.%0A%0AIt%20looks%20like%20your%20projects%20involve%20PLC%2FSCADA%20connectivity%20and%20protocol%20conversion.%20Our%20relevant%20product%20line%20includes%20ARM%20edge%20controllers%20together%20with%20industrial%20gateways%20and%20routers%20for%20industrial%20communication%2C%20field%20data%20access%2C%20and%20SCADA-side%20integration.%0A%0AIf%20you%20have%20a%20PLC%20or%20SCADA%20project%2C%20I%20can%20suggest%20suitable%20models%20and%20pricing.%20For%20a%20quick%20overview%2C%20here%20is%20our%20website%3A%20https%3A%2F%2Fbliiot.com%2F%0A%0AIf%20you%20are%20interested%2C%20I%20can%20send%20a%20short%20catalog."
+  },
+  {
+    "queue_id": 29,
+    "name": "Automatik Control",
+    "whatsapp_number": "+573173525622",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v4-3-1-2-2-1-1",
+    "mode": "send",
+    "status": "error",
+    "error": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\"发送\"], button[aria-label=\"Send\"]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "queue_id": 30,
+    "name": "CONTROL4 BOGOTA",
+    "whatsapp_number": "+5715336827",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v0-1-0-3-1-2-4",
+    "mode": "send",
+    "status": "error",
+    "error": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\"发送\"], button[aria-label=\"Send\"]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "queue_id": 31,
+    "name": "Multicontrol Ltda - Omron Colombia - Panamá",
+    "whatsapp_number": "+573153457101",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v1-3-3-0-0-3-2",
+    "mode": "send",
+    "status": "sent",
+    "opened_url": "https://web.whatsapp.com/send?phone=573153457101&text=Hope%20you%20are%20having%20a%20wonderful%20day.%0A%0AHello%2C%20this%20is%20Kali%20from%20BLIIOT.%20BLIIOT%20is%20a%20supplier%20of%20industrial%20IoT%20hardware%2C%20focusing%20on%20industrial%20gateways%2C%20edge%20controllers%2C%20and%20remote%20data%20acquisition%20devices%20for%20automation%20projects.%0A%0AIt%20looks%20like%20your%20projects%20involve%20PLC%2FSCADA%20connectivity%20and%20protocol%20conversion.%20Our%20relevant%20product%20line%20includes%20ARM%20edge%20controllers%20together%20with%20industrial%20gateways%20and%20routers%20for%20industrial%20communication%2C%20field%20data%20access%2C%20and%20SCADA-side%20integration.%0A%0AIf%20you%20have%20a%20PLC%20or%20SCADA%20project%2C%20I%20can%20suggest%20suitable%20models%20and%20pricing.%20If%20helpful%2C%20here%20is%20our%20website%3A%20https%3A%2F%2Fbliiot.com%2F%0A%0ALet%20me%20know%20if%20you%20would%20like%20a%20short%20catalog."
+  },
+  {
+    "queue_id": 32,
+    "name": "One Automatización - Control4",
+    "whatsapp_number": "+573123281386",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v2-1-2-1-3-4-0",
+    "mode": "send",
+    "status": "sent",
+    "opened_url": "https://web.whatsapp.com/send?phone=573123281386&text=Hope%20you%20are%20enjoying%20a%20good%20day.%0A%0AHi%2C%20Kali%20here%20from%20BLIIOT.%20BLIIOT%20mainly%20provides%20industrial%20gateways%2C%20ARM%20edge%20controllers%2C%20and%20remote%20I%2FO%20products%20for%20PLC%2C%20SCADA%2C%20and%20industrial%20communication%20applications.%0A%0AFrom%20your%20profile%2C%20your%20team%20seems%20focused%20on%20PLC%2FSCADA%20connectivity%20and%20protocol%20conversion.%20We%20have%20ARM%20edge%20controllers%20together%20with%20industrial%20gateways%20and%20routers%20that%20fit%20applications%20involving%20PLC%20data%20collection%20and%20SCADA%20integration.%0A%0AIf%20this%20is%20relevant%20to%20your%20work%2C%20I%20can%20send%20a%20few%20suitable%20options.%20For%20a%20quick%20overview%2C%20here%20is%20our%20website%3A%20https%3A%2F%2Fbliiot.com%2F%0A%0AIf%20you%20are%20interested%2C%20I%20can%20send%20a%20short%20catalog."
+  },
+  {
+    "queue_id": 33,
+    "name": "Control de Acceso",
+    "whatsapp_number": "+573152150669",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v3-3-1-2-2-0-3",
+    "mode": "send",
+    "status": "sent",
+    "opened_url": "https://web.whatsapp.com/send?phone=573152150669&text=Hope%20your%20day%20is%20going%20well.%0A%0AHello%2C%20Kali%20from%20BLIIOT%20here.%20Our%20company%20focuses%20on%20industrial%20IoT%20connectivity%20products%2C%20especially%20gateways%2C%20edge%20controllers%2C%20and%20field%20data%20acquisition%20devices%20used%20in%20automation%20systems.%0A%0AIt%20looks%20like%20your%20projects%20involve%20PLC%2FSCADA%20connectivity%20and%20protocol%20conversion.%20Our%20ARM%20edge%20controllers%20together%20with%20industrial%20gateways%20and%20routers%20are%20often%20used%20in%20PLC%2C%20SCADA%2C%20and%20industrial%20communication%20projects.%0A%0AIf%20you%20have%20a%20current%20requirement%2C%20I%20can%20suggest%20matching%20models.%20You%20can%20have%20a%20quick%20look%20here%3A%20https%3A%2F%2Fbliiot.com%2F%0A%0AI%20can%20also%20send%20a%20short%20catalog%20for%20reference."
+  },
+  {
+    "queue_id": 2,
+    "name": "ZYCON AUTOMAÇÃO INDUSTRIAL",
+    "whatsapp_number": "+551131032100",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v2-1-0-3-1-4-0",
+    "mode": "send",
+    "status": "error",
+    "error": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\"发送\"], button[aria-label=\"Send\"]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "queue_id": 9,
+    "name": "Ingeniería en Automatización y Control S.A de C.V",
+    "whatsapp_number": "+5584939063",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v4-3-1-2-2-1-1",
+    "mode": "send",
+    "status": "error",
+    "error": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\"发送\"], button[aria-label=\"Send\"]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "queue_id": 12,
+    "name": "Mitsubishi Electric Automation, Inc",
+    "whatsapp_number": "+525530677500",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v2-1-2-1-3-4-0",
+    "mode": "send",
+    "status": "error",
+    "error": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\"发送\"], button[aria-label=\"Send\"]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "queue_id": 13,
+    "name": "JM Industrial Technology",
+    "whatsapp_number": "+525571600129",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v3-3-1-2-2-0-3",
+    "mode": "send",
+    "status": "error",
+    "error": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\"发送\"], button[aria-label=\"Send\"]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "queue_id": 16,
+    "name": "INGIA SRL",
+    "whatsapp_number": "+541177003188",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v1-1-2-1-3-3-2",
+    "mode": "send",
+    "status": "sent",
+    "opened_url": "https://web.whatsapp.com/send?phone=541177003188&text=Hope%20you%20are%20having%20a%20wonderful%20day.%0A%0AHello%2C%20this%20is%20Kali%20from%20BLIIOT.%20BLIIOT%20mainly%20provides%20industrial%20gateways%2C%20ARM%20edge%20controllers%2C%20and%20remote%20I%2FO%20products%20for%20PLC%2C%20SCADA%2C%20and%20industrial%20communication%20applications.%0A%0AFrom%20your%20profile%2C%20your%20team%20seems%20focused%20on%20PLC%2FSCADA%20connectivity%20and%20protocol%20conversion.%20We%20have%20ARM%20edge%20controllers%20together%20with%20industrial%20gateways%20and%20routers%20that%20fit%20applications%20involving%20PLC%20data%20collection%20and%20SCADA%20integration.%0A%0AIf%20this%20is%20relevant%20to%20your%20work%2C%20I%20can%20send%20a%20few%20suitable%20options.%20If%20helpful%2C%20here%20is%20our%20website%3A%20https%3A%2F%2Fbliiot.com%2F%0A%0ALet%20me%20know%20if%20you%20would%20like%20a%20short%20catalog."
+  },
+  {
+    "queue_id": 19,
+    "name": "Automación Argentina S.A.",
+    "whatsapp_number": "+5449186763",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v4-3-3-0-0-1-1",
+    "mode": "send",
+    "status": "error",
+    "error": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\"发送\"], button[aria-label=\"Send\"]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "queue_id": 21,
+    "name": "A-TECH \"Automatización Industrial\"",
+    "whatsapp_number": "+541177131756",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v1-3-1-2-2-3-2",
+    "mode": "send",
+    "status": "sent",
+    "opened_url": "https://web.whatsapp.com/send?phone=541177131756&text=Hope%20you%20are%20having%20a%20wonderful%20day.%0A%0AHello%2C%20this%20is%20Kali%20from%20BLIIOT.%20Our%20company%20focuses%20on%20industrial%20IoT%20connectivity%20products%2C%20especially%20gateways%2C%20edge%20controllers%2C%20and%20field%20data%20acquisition%20devices%20used%20in%20automation%20systems.%0A%0AIt%20looks%20like%20your%20projects%20involve%20PLC%2FSCADA%20connectivity%20and%20protocol%20conversion.%20Our%20ARM%20edge%20controllers%20together%20with%20industrial%20gateways%20and%20routers%20are%20often%20used%20in%20PLC%2C%20SCADA%2C%20and%20industrial%20communication%20projects.%0A%0AIf%20you%20have%20a%20current%20requirement%2C%20I%20can%20suggest%20matching%20models.%20If%20helpful%2C%20here%20is%20our%20website%3A%20https%3A%2F%2Fbliiot.com%2F%0A%0ALet%20me%20know%20if%20you%20would%20like%20a%20short%20catalog."
+  },
+  {
+    "queue_id": 24,
+    "name": "MTA Automatizacion",
+    "whatsapp_number": "+5491149453666",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v4-1-2-1-3-1-1",
+    "mode": "send",
+    "status": "error",
+    "error": "page.goto: net::ERR_ABORTED at https://web.whatsapp.com/send?phone=5491149453666&text=Wishing%20you%20a%20pleasant%20day.%0A%0AHi%2C%20I%20am%20Kali%20from%20BLIIOT.%20BLIIOT%20mainly%20provides%20industrial%20gateways%2C%20ARM%20edge%20controllers%2C%20and%20remote%20I%2FO%20products%20for%20PLC%2C%20SCADA%2C%20and%20industrial%20communication%20applications.%0A%0AFrom%20your%20profile%2C%20your%20team%20seems%20focused%20on%20PLC%2FSCADA%20connectivity%20and%20protocol%20conversion.%20We%20have%20ARM%20edge%20controllers%20together%20with%20industrial%20gateways%20and%20routers%20that%20fit%20applications%20involving%20PLC%20data%20collection%20and%20SCADA%20integration.%0A%0AIf%20this%20is%20relevant%20to%20your%20work%2C%20I%20can%20send%20a%20few%20suitable%20options.%20Our%20website%20is%20here%3A%20https%3A%2F%2Fbliiot.com%2F%0A%0AIf%20useful%2C%20I%20can%20send%20a%20short%20catalog.\nCall log:\n\u001b[2m  - navigating to \"https://web.whatsapp.com/send?phone=5491149453666&text=Wishing%20you%20a%20pleasant%20day.%0A%0AHi%2C%20I%20am%20Kali%20from%20BLIIOT.%20BLIIOT%20mainly%20provides%20industrial%20gateways%2C%20ARM%20edge%20controllers%2C%20and%20remote%20I%2FO%20products%20for%20PLC%2C%20SCADA%2C%20and%20industrial%20communication%20applications.%0A%0AFrom%20your%20profile%2C%20your%20team%20seems%20focused%20on%20PLC%2FSCADA%20connectivity%20and%20protocol%20conversion.%20We%20have%20ARM%20edge%20controllers%20together%20with%20industrial%20gateways%20and%20routers%20that%20fit%20applications%20involving%20PLC%20data%20collection%20and%20SCADA%20integration.%0A%0AIf%20this%20is%20relevant%20to%20your%20work%2C%20I%20can%20send%20a%20few%20suitable%20options.%20Our%20website%20is%20here%3A%20https%3A%2F%2Fbliiot.com%2F%0A%0AIf%20useful%2C%20I%20can%20send%20a%20short%20catalog.\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "queue_id": 25,
+    "name": "Technosystems Chile Ltda.",
+    "whatsapp_number": "+56223288900",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v0-3-1-2-2-2-4",
+    "mode": "send",
+    "status": "error",
+    "error": "page.goto: net::ERR_ABORTED at https://web.whatsapp.com/send?phone=56223288900&text=Hope%20you%20are%20having%20a%20great%20day.%0A%0AHi%2C%20this%20is%20Kali%20from%20BLIIOT.%20Our%20company%20focuses%20on%20industrial%20IoT%20connectivity%20products%2C%20especially%20gateways%2C%20edge%20controllers%2C%20and%20field%20data%20acquisition%20devices%20used%20in%20automation%20systems.%0A%0AIt%20looks%20like%20your%20projects%20involve%20PLC%2FSCADA%20connectivity%20and%20protocol%20conversion.%20Our%20ARM%20edge%20controllers%20together%20with%20industrial%20gateways%20and%20routers%20are%20often%20used%20in%20PLC%2C%20SCADA%2C%20and%20industrial%20communication%20projects.%0A%0AIf%20you%20have%20a%20current%20requirement%2C%20I%20can%20suggest%20matching%20models.%20You%20may%20also%20check%20our%20website%20here%3A%20https%3A%2F%2Fbliiot.com%2F%0A%0AIf%20that%20sounds%20useful%2C%20I%20can%20send%20a%20short%20catalog.\nCall log:\n\u001b[2m  - navigating to \"https://web.whatsapp.com/send?phone=56223288900&text=Hope%20you%20are%20having%20a%20great%20day.%0A%0AHi%2C%20this%20is%20Kali%20from%20BLIIOT.%20Our%20company%20focuses%20on%20industrial%20IoT%20connectivity%20products%2C%20especially%20gateways%2C%20edge%20controllers%2C%20and%20field%20data%20acquisition%20devices%20used%20in%20automation%20systems.%0A%0AIt%20looks%20like%20your%20projects%20involve%20PLC%2FSCADA%20connectivity%20and%20protocol%20conversion.%20Our%20ARM%20edge%20controllers%20together%20with%20industrial%20gateways%20and%20routers%20are%20often%20used%20in%20PLC%2C%20SCADA%2C%20and%20industrial%20communication%20projects.%0A%0AIf%20you%20have%20a%20current%20requirement%2C%20I%20can%20suggest%20matching%20models.%20You%20may%20also%20check%20our%20website%20here%3A%20https%3A%2F%2Fbliiot.com%2F%0A%0AIf%20that%20sounds%20useful%2C%20I%20can%20send%20a%20short%20catalog.\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "queue_id": 26,
+    "name": "IBM Chile",
+    "whatsapp_number": "+56222006000",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v1-1-0-3-1-3-2",
+    "mode": "send",
+    "status": "error",
+    "error": "page.goto: net::ERR_ABORTED at https://web.whatsapp.com/send?phone=56222006000&text=Hope%20you%20are%20having%20a%20wonderful%20day.%0A%0AHello%2C%20this%20is%20Kali%20from%20BLIIOT.%20BLIIOT%20is%20a%20manufacturer%20of%20industrial%20communication%20and%20IIoT%20hardware%2C%20with%20product%20lines%20for%20gateways%2C%20edge%20controllers%2C%20and%20remote%20monitoring%20devices.%0A%0AFrom%20your%20profile%2C%20your%20team%20seems%20focused%20on%20PLC%2FSCADA%20connectivity%20and%20protocol%20conversion.%20For%20this%20type%20of%20work%2C%20we%20usually%20recommend%20ARM%20edge%20controllers%20together%20with%20industrial%20gateways%20and%20routers%20for%20PLC%2FSCADA%20connectivity%2C%20protocol%20conversion%2C%20and%20remote%20monitoring.%0A%0AIf%20you%20are%20evaluating%20an%20industrial%20communication%20project%2C%20I%20can%20recommend%20suitable%20models.%20If%20helpful%2C%20here%20is%20our%20website%3A%20https%3A%2F%2Fbliiot.com%2F%0A%0ALet%20me%20know%20if%20you%20would%20like%20a%20short%20catalog.\nCall log:\n\u001b[2m  - navigating to \"https://web.whatsapp.com/send?phone=56222006000&text=Hope%20you%20are%20having%20a%20wonderful%20day.%0A%0AHello%2C%20this%20is%20Kali%20from%20BLIIOT.%20BLIIOT%20is%20a%20manufacturer%20of%20industrial%20communication%20and%20IIoT%20hardware%2C%20with%20product%20lines%20for%20gateways%2C%20edge%20controllers%2C%20and%20remote%20monitoring%20devices.%0A%0AFrom%20your%20profile%2C%20your%20team%20seems%20focused%20on%20PLC%2FSCADA%20connectivity%20and%20protocol%20conversion.%20For%20this%20type%20of%20work%2C%20we%20usually%20recommend%20ARM%20edge%20controllers%20together%20with%20industrial%20gateways%20and%20routers%20for%20PLC%2FSCADA%20connectivity%2C%20protocol%20conversion%2C%20and%20remote%20monitoring.%0A%0AIf%20you%20are%20evaluating%20an%20industrial%20communication%20project%2C%20I%20can%20recommend%20suitable%20models.%20If%20helpful%2C%20here%20is%20our%20website%3A%20https%3A%2F%2Fbliiot.com%2F%0A%0ALet%20me%20know%20if%20you%20would%20like%20a%20short%20catalog.\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "queue_id": 28,
+    "name": "AUTOMATIZACION Y CONTROL INGENIERIA SAS",
+    "whatsapp_number": "+576015171023",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v3-1-2-1-3-0-3",
+    "mode": "send",
+    "status": "error",
+    "error": "page.goto: net::ERR_ABORTED at https://web.whatsapp.com/send?phone=576015171023&text=Hope%20your%20day%20is%20going%20well.%0A%0AHello%2C%20Kali%20from%20BLIIOT%20here.%20BLIIOT%20mainly%20provides%20industrial%20gateways%2C%20ARM%20edge%20controllers%2C%20and%20remote%20I%2FO%20products%20for%20PLC%2C%20SCADA%2C%20and%20industrial%20communication%20applications.%0A%0AFrom%20your%20profile%2C%20your%20team%20seems%20focused%20on%20PLC%2FSCADA%20connectivity%20and%20protocol%20conversion.%20We%20have%20ARM%20edge%20controllers%20together%20with%20industrial%20gateways%20and%20routers%20that%20fit%20applications%20involving%20PLC%20data%20collection%20and%20SCADA%20integration.%0A%0AIf%20this%20is%20relevant%20to%20your%20work%2C%20I%20can%20send%20a%20few%20suitable%20options.%20You%20can%20have%20a%20quick%20look%20here%3A%20https%3A%2F%2Fbliiot.com%2F%0A%0AI%20can%20also%20send%20a%20short%20catalog%20for%20reference.\nCall log:\n\u001b[2m  - navigating to \"https://web.whatsapp.com/send?phone=576015171023&text=Hope%20your%20day%20is%20going%20well.%0A%0AHello%2C%20Kali%20from%20BLIIOT%20here.%20BLIIOT%20mainly%20provides%20industrial%20gateways%2C%20ARM%20edge%20controllers%2C%20and%20remote%20I%2FO%20products%20for%20PLC%2C%20SCADA%2C%20and%20industrial%20communication%20applications.%0A%0AFrom%20your%20profile%2C%20your%20team%20seems%20focused%20on%20PLC%2FSCADA%20connectivity%20and%20protocol%20conversion.%20We%20have%20ARM%20edge%20controllers%20together%20with%20industrial%20gateways%20and%20routers%20that%20fit%20applications%20involving%20PLC%20data%20collection%20and%20SCADA%20integration.%0A%0AIf%20this%20is%20relevant%20to%20your%20work%2C%20I%20can%20send%20a%20few%20suitable%20options.%20You%20can%20have%20a%20quick%20look%20here%3A%20https%3A%2F%2Fbliiot.com%2F%0A%0AI%20can%20also%20send%20a%20short%20catalog%20for%20reference.\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "queue_id": 34,
+    "name": "Advance Controles Colombia SAS.",
+    "whatsapp_number": "+576017049900",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v4-1-0-3-1-1-1",
+    "mode": "send",
+    "status": "error",
+    "error": "page.goto: net::ERR_ABORTED at https://web.whatsapp.com/send?phone=576017049900&text=Wishing%20you%20a%20pleasant%20day.%0A%0AHi%2C%20I%20am%20Kali%20from%20BLIIOT.%20BLIIOT%20is%20a%20manufacturer%20of%20industrial%20communication%20and%20IIoT%20hardware%2C%20with%20product%20lines%20for%20gateways%2C%20edge%20controllers%2C%20and%20remote%20monitoring%20devices.%0A%0AFrom%20your%20profile%2C%20your%20team%20seems%20focused%20on%20PLC%2FSCADA%20connectivity%20and%20protocol%20conversion.%20For%20this%20type%20of%20work%2C%20we%20usually%20recommend%20ARM%20edge%20controllers%20together%20with%20industrial%20gateways%20and%20routers%20for%20PLC%2FSCADA%20connectivity%2C%20protocol%20conversion%2C%20and%20remote%20monitoring.%0A%0AIf%20you%20are%20evaluating%20an%20industrial%20communication%20project%2C%20I%20can%20recommend%20suitable%20models.%20Our%20website%20is%20here%3A%20https%3A%2F%2Fbliiot.com%2F%0A%0AIf%20useful%2C%20I%20can%20send%20a%20short%20catalog.\nCall log:\n\u001b[2m  - navigating to \"https://web.whatsapp.com/send?phone=576017049900&text=Wishing%20you%20a%20pleasant%20day.%0A%0AHi%2C%20I%20am%20Kali%20from%20BLIIOT.%20BLIIOT%20is%20a%20manufacturer%20of%20industrial%20communication%20and%20IIoT%20hardware%2C%20with%20product%20lines%20for%20gateways%2C%20edge%20controllers%2C%20and%20remote%20monitoring%20devices.%0A%0AFrom%20your%20profile%2C%20your%20team%20seems%20focused%20on%20PLC%2FSCADA%20connectivity%20and%20protocol%20conversion.%20For%20this%20type%20of%20work%2C%20we%20usually%20recommend%20ARM%20edge%20controllers%20together%20with%20industrial%20gateways%20and%20routers%20for%20PLC%2FSCADA%20connectivity%2C%20protocol%20conversion%2C%20and%20remote%20monitoring.%0A%0AIf%20you%20are%20evaluating%20an%20industrial%20communication%20project%2C%20I%20can%20recommend%20suitable%20models.%20Our%20website%20is%20here%3A%20https%3A%2F%2Fbliiot.com%2F%0A%0AIf%20useful%2C%20I%20can%20send%20a%20short%20catalog.\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  }
+]

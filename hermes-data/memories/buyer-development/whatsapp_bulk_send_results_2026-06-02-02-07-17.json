@@ -1,0 +1,102 @@
+[
+  {
+    "queue_id": 1,
+    "name": "Agora Automation (Pty)Ltd",
+    "whatsapp_number": "+27823637667",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v1-3-1-2-2-3-2",
+    "mode": "send",
+    "status": "sent",
+    "opened_url": "https://web.whatsapp.com/send?phone=27823637667&text=Hello%2C%20this%20is%20Kali%20from%20BLIIOT.%20It%20looks%20like%20your%20projects%20involve%20PLC%20connectivity%20and%20industrial%20protocol%20conversion%20%2F%20automation%20gateway%20and%20edge%20integration.%20Our%20BLIIOT%20gateways%2Frouters%20(R40%2C%20BA%2FBE%2FBL%20gateway%20series)%20%2B%20ARMxy%20edge%20computers%2Fcontrollers%20are%20often%20used%20in%20PLC%2C%20SCADA%2C%20and%20industrial%20communication%20projects.%20They%20are%20suitable%20for%20projects%20that%20need%20protocol%20conversion%2C%20remote%20access%2C%20and%20reliable%20field%20data%20collection.%20If%20you%20have%20a%20current%20requirement%2C%20I%20would%20be%20glad%20to%20suggest%20matching%20models%20for%20your%20application.%20If%20helpful%2C%20you%20can%20first%20review%20our%20website%20here%3A%20https%3A%2F%2Fbliiot.com%2F%20Let%20me%20know%20if%20you%20would%20like%20a%20quick%20catalog."
+  },
+  {
+    "queue_id": 2,
+    "name": "INTEG System Integrators",
+    "whatsapp_number": "+27218500320",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v2-1-0-3-1-4-0",
+    "mode": "send",
+    "status": "error",
+    "error": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\"发送\"], button[aria-label=\"Send\"]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "queue_id": 3,
+    "name": "SyncSystems Automation",
+    "whatsapp_number": "+27100260101",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v3-3-3-0-0-0-3",
+    "mode": "send",
+    "status": "error",
+    "error": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\"发送\"], button[aria-label=\"Send\"]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "queue_id": 4,
+    "name": "Lambda Automation",
+    "whatsapp_number": "+27129402920",
+    "style_id": "system_integrator",
+    "variant_id": "system_integrator-v4-1-2-1-3-1-1",
+    "mode": "send",
+    "status": "error",
+    "error": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\"发送\"], button[aria-label=\"Send\"]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "queue_id": 5,
+    "name": "MH AUTOMATION",
+    "whatsapp_number": "+27115480600",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v0-3-1-2-2-2-4",
+    "mode": "send",
+    "status": "error",
+    "error": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\"发送\"], button[aria-label=\"Send\"]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "queue_id": 6,
+    "name": "Industrial Design Simulation & Automation Services Ltd",
+    "whatsapp_number": "+2348025774193",
+    "style_id": "system_integrator",
+    "variant_id": "system_integrator-v1-1-0-3-1-3-2",
+    "mode": "send",
+    "status": "sent",
+    "opened_url": "https://web.whatsapp.com/send?phone=2348025774193&text=Hello%2C%20this%20is%20Kali%20from%20BLIIOT.%20Your%20company%20seems%20active%20in%20integration-oriented%20work%20such%20as%20automation%20gateway%20and%20edge%20integration%20%2F%20IIoT%20platform%20connectivity%20and%20field%20data%20access.%20We%20offer%20BLIIOT%20gateways%2Frouters%20(R40%2C%20BA%2FBE%2FBL%20gateway%20series)%20%2B%20ARMxy%20edge%20computers%2Fcontrollers%20that%20can%20help%20with%20industrial%20connectivity%2C%20edge%20data%20collection%2C%20and%20remote%20monitoring.%20They%20work%20well%20for%20multi-site%20monitoring%2C%20data%20acquisition%2C%20and%20edge-side%20integration%20tasks.%20If%20your%20team%20is%20evaluating%20new%20automation%20or%20integration%20projects%2C%20I%20can%20recommend%20suitable%20products%20and%20send%20pricing%20information.%20If%20helpful%2C%20you%20can%20first%20review%20our%20website%20here%3A%20https%3A%2F%2Fbliiot.com%2F%20Let%20me%20know%20if%20you%20would%20like%20a%20quick%20catalog."
+  },
+  {
+    "queue_id": 7,
+    "name": "Integrated Systems Engineering Ltd",
+    "whatsapp_number": "+2349052463435",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v2-3-3-0-0-4-0",
+    "mode": "send",
+    "status": "error",
+    "error": "page.goto: net::ERR_ABORTED at https://web.whatsapp.com/send?phone=2349052463435&text=Hi%2C%20Kali%20here%20from%20BLIIOT.%20It%20looks%20like%20your%20projects%20involve%20PLC%20connectivity%20and%20industrial%20protocol%20conversion%20%2F%20automation%20gateway%20and%20edge%20integration.%20We%20supply%20BLIIOT%20gateways%2Frouters%20(R40%2C%20BA%2FBE%2FBL%20gateway%20series)%20%2B%20ARMxy%20edge%20computers%2Fcontrollers%20for%20industrial%20communication%2C%20field%20data%20access%2C%20and%20SCADA-side%20integration.%20They%20can%20help%20shorten%20integration%20time%20and%20improve%20remote%20visibility%20in%20industrial%20projects.%20If%20you%20have%20a%20PLC%20or%20SCADA%20related%20project%2C%20I%20can%20suggest%20suitable%20models%20and%20share%20pricing.%20For%20a%20quick%20overview%20of%20our%20company%20and%20products%2C%20here%20is%20our%20website%3A%20https%3A%2F%2Fbliiot.com%2F%20Would%20you%20like%20me%20to%20send%20a%20quick%20catalog%3F\nCall log:\n\u001b[2m  - navigating to \"https://web.whatsapp.com/send?phone=2349052463435&text=Hi%2C%20Kali%20here%20from%20BLIIOT.%20It%20looks%20like%20your%20projects%20involve%20PLC%20connectivity%20and%20industrial%20protocol%20conversion%20%2F%20automation%20gateway%20and%20edge%20integration.%20We%20supply%20BLIIOT%20gateways%2Frouters%20(R40%2C%20BA%2FBE%2FBL%20gateway%20series)%20%2B%20ARMxy%20edge%20computers%2Fcontrollers%20for%20industrial%20communication%2C%20field%20data%20access%2C%20and%20SCADA-side%20integration.%20They%20can%20help%20shorten%20integration%20time%20and%20improve%20remote%20visibility%20in%20industrial%20projects.%20If%20you%20have%20a%20PLC%20or%20SCADA%20related%20project%2C%20I%20can%20suggest%20suitable%20models%20and%20share%20pricing.%20For%20a%20quick%20overview%20of%20our%20company%20and%20products%2C%20here%20is%20our%20website%3A%20https%3A%2F%2Fbliiot.com%2F%20Would%20you%20like%20me%20to%20send%20a%20quick%20catalog%3F\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "queue_id": 8,
+    "name": "Asamaka Industries Ltd Nigeria",
+    "whatsapp_number": "+2348053286686",
+    "style_id": "system_integrator",
+    "variant_id": "system_integrator-v3-1-2-1-3-0-3",
+    "mode": "send",
+    "status": "error",
+    "error": "page.goto: net::ERR_ABORTED at https://web.whatsapp.com/send?phone=2348053286686&text=Hello%2C%20Kali%20from%20BLIIOT%20here.%20Your%20company%20seems%20active%20in%20integration-oriented%20work%20such%20as%20automation%20gateway%20and%20edge%20integration.%20BLIIOT%20supplies%20BLIIOT%20gateways%2Frouters%20(R40%2C%20BA%2FBE%2FBL%20gateway%20series)%20%2B%20ARMxy%20edge%20computers%2Fcontrollers%20for%20projects%20involving%20protocol%20conversion%2C%20device%20networking%2C%20and%20remote%20field%20access.%20They%20can%20help%20integrators%20reduce%20development%20time%20and%20build%20reliable%20industrial%20solutions%20faster.%20If%20useful%2C%20I%20can%20send%20product%20suggestions%20that%20match%20integrator-type%20applications.%20You%20can%20also%20have%20a%20quick%20look%20at%20our%20website%20here%3A%20https%3A%2F%2Fbliiot.com%2F%20If%20you%20want%2C%20I%20can%20send%20a%20concise%20catalog%20for%20your%20reference.\nCall log:\n\u001b[2m  - navigating to \"https://web.whatsapp.com/send?phone=2348053286686&text=Hello%2C%20Kali%20from%20BLIIOT%20here.%20Your%20company%20seems%20active%20in%20integration-oriented%20work%20such%20as%20automation%20gateway%20and%20edge%20integration.%20BLIIOT%20supplies%20BLIIOT%20gateways%2Frouters%20(R40%2C%20BA%2FBE%2FBL%20gateway%20series)%20%2B%20ARMxy%20edge%20computers%2Fcontrollers%20for%20projects%20involving%20protocol%20conversion%2C%20device%20networking%2C%20and%20remote%20field%20access.%20They%20can%20help%20integrators%20reduce%20development%20time%20and%20build%20reliable%20industrial%20solutions%20faster.%20If%20useful%2C%20I%20can%20send%20product%20suggestions%20that%20match%20integrator-type%20applications.%20You%20can%20also%20have%20a%20quick%20look%20at%20our%20website%20here%3A%20https%3A%2F%2Fbliiot.com%2F%20If%20you%20want%2C%20I%20can%20send%20a%20concise%20catalog%20for%20your%20reference.\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "queue_id": 9,
+    "name": "Fronthill Controls - Building & Energy Spec.",
+    "whatsapp_number": "+2347034239259",
+    "style_id": "energy_monitoring",
+    "variant_id": "energy_monitoring-v4-3-1-2-2-1-1",
+    "mode": "send",
+    "status": "error",
+    "error": "page.goto: net::ERR_ABORTED at https://web.whatsapp.com/send?phone=2347034239259&text=Hi%2C%20I%20am%20Kali%20from%20BLIIOT.%20Your%20business%20appears%20to%20align%20well%20with%20automation%20gateway%20and%20edge%20integration%20%2F%20energy%20monitoring%20and%20building%2Futility%20management.%20Our%20BLIIOT%20gateways%2Frouters%20(R40%2C%20BA%2FBE%2FBL%20gateway%20series)%20%2B%20ARMxy%20edge%20computers%2Fcontrollers%20are%20often%20used%20in%20power%2C%20utility%2C%20and%20monitoring%20projects%20that%20need%20reliable%20field%20connectivity.%20They%20are%20often%20selected%20for%20projects%20that%20need%20reliable%20data%20access%20from%20field%20equipment%20and%20remote%20sites.%20If%20relevant%2C%20I%20can%20send%20a%20few%20matching%20products%20for%20utility%20and%20monitoring%20applications.%20Our%20website%20is%20here%20if%20you%27d%20like%20to%20browse%20first%3A%20https%3A%2F%2Fbliiot.com%2F%20If%20you%20are%20interested%2C%20I%20can%20send%20a%20quick%20catalog.\nCall log:\n\u001b[2m  - navigating to \"https://web.whatsapp.com/send?phone=2347034239259&text=Hi%2C%20I%20am%20Kali%20from%20BLIIOT.%20Your%20business%20appears%20to%20align%20well%20with%20automation%20gateway%20and%20edge%20integration%20%2F%20energy%20monitoring%20and%20building%2Futility%20management.%20Our%20BLIIOT%20gateways%2Frouters%20(R40%2C%20BA%2FBE%2FBL%20gateway%20series)%20%2B%20ARMxy%20edge%20computers%2Fcontrollers%20are%20often%20used%20in%20power%2C%20utility%2C%20and%20monitoring%20projects%20that%20need%20reliable%20field%20connectivity.%20They%20are%20often%20selected%20for%20projects%20that%20need%20reliable%20data%20access%20from%20field%20equipment%20and%20remote%20sites.%20If%20relevant%2C%20I%20can%20send%20a%20few%20matching%20products%20for%20utility%20and%20monitoring%20applications.%20Our%20website%20is%20here%20if%20you%27d%20like%20to%20browse%20first%3A%20https%3A%2F%2Fbliiot.com%2F%20If%20you%20are%20interested%2C%20I%20can%20send%20a%20quick%20catalog.\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "queue_id": 10,
+    "name": "PCMP PTY LTD",
+    "whatsapp_number": "+27104499679",
+    "style_id": "scada_plc",
+    "variant_id": "scada_plc-v0-1-0-3-1-2-4",
+    "mode": "send",
+    "status": "error",
+    "error": "page.goto: net::ERR_ABORTED at https://web.whatsapp.com/send?phone=27104499679&text=Hi%2C%20this%20is%20Kali%20from%20BLIIOT.%20From%20your%20profile%2C%20your%20team%20seems%20focused%20on%20PLC%20connectivity%20and%20industrial%20protocol%20conversion%20%2F%20automation%20gateway%20and%20edge%20integration.%20We%20provide%20BLIIOT%20gateways%2Frouters%20(R40%2C%20BA%2FBE%2FBL%20gateway%20series)%20%2B%20ARMxy%20edge%20computers%2Fcontrollers%20for%20PLC%2FSCADA%20connectivity%2C%20protocol%20conversion%2C%20and%20remote%20monitoring.%20They%20are%20often%20selected%20by%20integrators%20who%20need%20practical%20industrial%20networking%20and%20monitoring%20hardware.%20If%20you%20are%20evaluating%20an%20industrial%20communication%20project%2C%20I%20can%20recommend%20matching%20products%20and%20pricing.%20You%20may%20also%20check%20our%20company%20website%20here%3A%20https%3A%2F%2Fbliiot.com%2F%20If%20that%20sounds%20useful%2C%20I%20can%20send%20a%20quick%20product%20catalog.\nCall log:\n\u001b[2m  - navigating to \"https://web.whatsapp.com/send?phone=27104499679&text=Hi%2C%20this%20is%20Kali%20from%20BLIIOT.%20From%20your%20profile%2C%20your%20team%20seems%20focused%20on%20PLC%20connectivity%20and%20industrial%20protocol%20conversion%20%2F%20automation%20gateway%20and%20edge%20integration.%20We%20provide%20BLIIOT%20gateways%2Frouters%20(R40%2C%20BA%2FBE%2FBL%20gateway%20series)%20%2B%20ARMxy%20edge%20computers%2Fcontrollers%20for%20PLC%2FSCADA%20connectivity%2C%20protocol%20conversion%2C%20and%20remote%20monitoring.%20They%20are%20often%20selected%20by%20integrators%20who%20need%20practical%20industrial%20networking%20and%20monitoring%20hardware.%20If%20you%20are%20evaluating%20an%20industrial%20communication%20project%2C%20I%20can%20recommend%20matching%20products%20and%20pricing.%20You%20may%20also%20check%20our%20company%20website%20here%3A%20https%3A%2F%2Fbliiot.com%2F%20If%20that%20sounds%20useful%2C%20I%20can%20send%20a%20quick%20product%20catalog.\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  }
+]

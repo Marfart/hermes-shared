@@ -1,0 +1,236 @@
+{
+  "version": 2,
+  "identity": "赛博脚本小子 🤖 机器人制造师 💀 黑客",
+  "created": "2026-06-06T11:00:00+08:00",
+  "last_run": "2026-06-06T22:30:40.353566",
+  "total_cycles": 21,
+  "pillars": {
+    "赛博脚本小子": {
+      "emoji": "💻",
+      "description": "自动化脚本、爬虫、Python深度、代码工匠、数据处理 — 造工具的人",
+      "current_topic": 21,
+      "total": 40,
+      "domains": [
+        {
+          "name": "脚本学习",
+          "emoji": "📜",
+          "count": 10,
+          "start": 0
+        },
+        {
+          "name": "Python运用学习",
+          "emoji": "🐍",
+          "count": 10,
+          "start": 10
+        },
+        {
+          "name": "爬虫学习",
+          "emoji": "🕷️",
+          "count": 10,
+          "start": 20
+        },
+        {
+          "name": "代码学习",
+          "emoji": "🔧",
+          "count": 10,
+          "start": 30
+        }
+      ],
+      "topics": [
+        "Bash高级脚本技巧（错误处理、并行执行、管道优化）",
+        "PowerShell自动化脚本（Windows系统管理、计划任务）",
+        "Python CLI脚本构建（click/argparse/typer库）",
+        "跨平台Shell脚本兼容性技巧（Windows+Linux双平台）",
+        "脚本安全（输入验证、沙箱执行、权限最小化）",
+        "定时任务脚本写作（cron/schtasks最佳实践）",
+        "日志系统脚本（旋转、分级、结构化日志）",
+        "自动化测试脚本（pytest/unittest CI集成）",
+        "Git钩子脚本（pre-commit/lint自动检查）",
+        "Docker/容器编排脚本（docker-compose Kubernetes）",
+        "Python元编程（Decorator/Metaclass/Descriptor/ContextManager）",
+        "异步Python（asyncio/Trio/Anyio事件循环深度）",
+        "CPython内部（字节码/GIL/垃圾回收/对象模型）",
+        "Python性能优化（Cython/Numba/PyPy/C扩展）",
+        "网络编程（asyncio Socket/Twisted/aiohttp框架）",
+        "数据处理Pandas/NumPy/Polars/SciPy高级技巧",
+        "Web框架对比（FastAPI/Django/Flask/Starlette）",
+        "Python安全编程（沙箱/反序列化/输入验证）",
+        "测试金字塔（Unit/Integration/E2E/Mock/Pytest插件）",
+        "包管理（Poetry/PDM/uv对比/Monorepo工程方案）",
+        "Scrapy框架深度（中间件/管道/分布式爬虫）",
+        "Playwright/Puppeteer高级反检测（指纹修改/代理轮换）",
+        "请求模拟与隐身技术（TLS指纹/Font反爬/验证码处理）",
+        "数据提取（CSS/XPath/正则/自然语言提取）",
+        "分布式爬虫架构（Scrapy-Redis/Celery/RabbitMQ）",
+        "动态渲染页面爬取（Selenium/CDP/API逆向）",
+        "反反爬虫（IP池/Cookie池/UA池/行为模拟）",
+        "大规模数据采集（速率控制/断点续爬/容错恢复）",
+        "APP数据抓取（Frida/Xposed/HTTP抓包逆向）",
+        "爬虫法律合规（Robots协议/数据合规/司法案例）",
+        "设计模式实战（23种GoF模式在Python/C++中的应用）",
+        "代码审查最佳实践（CR标准、自动化检查工具）",
+        "算法与数据结构（LeetCode高频题型、竞赛题解）",
+        "函数式编程深度（Monad/Functor/纯函数在JS/Python）",
+        "编译原理入门（词法分析/语法分析/LLVM IR）",
+        "并发编程（Goroutine/Async-Await/Actor模型对比）",
+        "API设计（RESTful/GraphQL/gRPC/WebSocket对比）",
+        "代码重构（坏味道识别、重构模式、工具辅助）",
+        "性能优化（Profiling/Caching/懒加载/内存优化）",
+        "软件架构（单体→微服务→事件驱动→Serverless）"
+      ]
+    },
+    "机器人制造师": {
+      "emoji": "🤖",
+      "description": "嵌入式ARM/RISCV、硬件接口、PLC工控、边缘计算、AI大脑 — 造机器的人",
+      "current_topic": 21,
+      "total": 32,
+      "domains": [
+        {
+          "name": "硬件学习",
+          "emoji": "🔌",
+          "count": 10,
+          "start": 0
+        },
+        {
+          "name": "大语言模型学习",
+          "emoji": "🧠",
+          "count": 12,
+          "start": 10
+        },
+        {
+          "name": "C语言和C++语言学习",
+          "emoji": "⚙️",
+          "count": 10,
+          "start": 22
+        }
+      ],
+      "topics": [
+        "嵌入式系统设计（ARM Cortex-M/RISC-V 架构）",
+        "树莓派/ESP32实战（GPIO、I2C、SPI、UART通信）",
+        "FPGA入门（Verilog/VHDL基础、数字逻辑设计）",
+        "PCB设计基础（KiCad/Altium Designer流程）",
+        "传感器技术（温度/压力/振动/流量传感器工业应用）",
+        "工业通信协议（Modbus/Profinet/EtherCAT/CAN Bus）",
+        "PLC编程（Ladder Logic/ST语言/IEC 61131-3）",
+        "射频技术基础（LoRa/ZigBee/NB-IoT无线通信）",
+        "边缘计算硬件（NVIDIA Jetson/Intel NUC/TPU推理）",
+        "硬件逆向工程（逻辑分析仪/JTAG/SWD调试接口）",
+        "Transformer架构精解（Attention/Positional Encoding/LayerNorm）",
+        "LLM训练三阶段（预训练/SFT/RLHF技术细节）",
+        "微调技术（LoRA/QLoRA/Adapter/P-Tuning对比）",
+        "推理优化（KV Cache/Flash Attention/量化/蒸馏）",
+        "Agent框架设计（ReAct/Plan-and-Execute/Multi-Agent）",
+        "RAG技术（Chunk策略/Embedding/重排序/混合搜索）",
+        "Prompt Engineering（Chain-of-Thought/Tree-of-Thought）",
+        "模型评估（Benchmark/红队测试/安全对齐评估）",
+        "LLM安全（提示注入/越狱/数据泄露/模型窃取）",
+        "多模态模型（LLaVA/CLIP/Whisper架构与应用）",
+        "开源模型对比（Llama/Qwen/DeepSeek/Gemma/Mistral）",
+        "LLM部署（vLLM/TGI/SGLang/Ollama性能对比）",
+        "C指针深度（函数指针/指针数组/复杂声明解析）",
+        "C++模板元编程（SFINAE/CRTP/Concepts/Variadic）",
+        "C++内存模型（RAII/智能指针/移动语义/完美转发）",
+        "C++20/23新特性（Coroutines/Modules/Ranges/Format）",
+        "STL源码剖析（Vector/Map/Shared_ptr实现）",
+        "CMake/C++构建系统（Modern CMake/Conan/vcpkg）",
+        "嵌入式C（MISRA-C/内存受限优化/裸机编程）",
+        "C/C++安全（堆栈溢出防护/Fortify/ASAN/SEI CERT）",
+        "Linux C编程（系统调用封装/进程管理/信号处理）",
+        "C/C++项目实战（Nginx/Redis/LLVM源码阅读指南）"
+      ]
+    },
+    "黑客": {
+      "emoji": "💀",
+      "description": "渗透测试、Kali全工具、逆向工程、内核攻防、社工OSINT — 攻破系统的人",
+      "current_topic": 21,
+      "total": 43,
+      "domains": [
+        {
+          "name": "网络攻防学习",
+          "emoji": "🛡️",
+          "count": 10,
+          "start": 0
+        },
+        {
+          "name": "社工知识学习",
+          "emoji": "🎭",
+          "count": 8,
+          "start": 10
+        },
+        {
+          "name": "底层代码学习",
+          "emoji": "🔬",
+          "count": 10,
+          "start": 18
+        },
+        {
+          "name": "Linux底层源码学习",
+          "emoji": "🐧",
+          "count": 10,
+          "start": 28
+        },
+        {
+          "name": "Kali Linux工具学习",
+          "emoji": "🗡️",
+          "count": 15,
+          "start": 38
+        }
+      ],
+      "topics": [
+        "渗透测试方法论（PTES/OWASP测试框架）",
+        "Metasploit框架深度使用（模块开发、后渗透）",
+        "Web漏洞挖掘（SQL注入/XSS/SSRF/CSRF高级利用）",
+        "内网横向移动技术（Kerberoasting/Pass-the-Hash）",
+        "红队C2框架研究（Cobalt Strike/Sliver/Havoc对比）",
+        "逆向工程基础（x86/x64汇编、IDA Pro/Ghidra）",
+        "WiFi安全攻击（WPA3破解、Evil Twin、Karma攻击）",
+        "零日漏洞挖掘（Fuzzing技术、补丁对比分析）",
+        "EDR绕过技术（AMSI bypass、ETW patching、Syscall）",
+        "云安全（AWS/Azure渗透测试、容器逃逸、K8s攻防）",
+        "OSINT开源情报（Maltego/Shodan/Google Dorking）",
+        "社交平台信息采集（LinkedIn/Facebook/推特自动化）",
+        "钓鱼攻击进阶（鱼叉式/水坑攻击/2FA绕过）",
+        "身份伪造与社会工程学方法论",
+        "电话社工（Vishing/IVR绕过/语音AI伪造）",
+        "物理社工（Tailgating/Badge克隆/锁具开锁基础）",
+        "数字足迹清理与反侦查（OPSEC/Tor/Tails）",
+        "社工防御（员工培训/多因素认证/零信任架构）",
+        "x86/x64汇编指令集（寄存器/寻址模式/指令编码）",
+        "ARM64汇编基础（AArch64指令集、苹果Silicon）",
+        "系统调用机制（syscall/sysenter/Windows API钩子）",
+        "内存管理深度（页表/虚拟内存/堆栈布局/SLAB）",
+        "PE/ELF文件格式解析（节头表/导入导出表/重定位）",
+        "反编译与反混淆（Ollvm混淆/控制流平坦化还原）",
+        "Windows内核编程（驱动开发/IRP/内核钩子）",
+        "Linux内核模块（LKM开发/系统调用劫持/Netfilter）",
+        "Bootkit开发（UEFI引导/固件感染/启动链攻击）",
+        "虚拟化底层（VT-x/AMD-V/虚拟机自省技术）",
+        "Linux内核架构（进程调度/内存管理/VFS/网络栈）",
+        "进程调度（CFS/EEVDF调度器/实时调度策略）",
+        "内存管理子系统（SLUB分配器/CMA/KSM/OOM Killer）",
+        "虚拟文件系统（VFS层/inode/dentry/ext4/Btrfs）",
+        "网络栈（Netfilter/TC/eBPF/XDP/网络协议实现）",
+        "设备驱动模型（字符设备/平台设备/设备树/PCIe）",
+        "eBPF深度（BPF程序类型/AiderMap/BPFTrace/安全）",
+        "容器底层（Cgroup/Namespace/OverlayFS/Seccomp）",
+        "内核调试（Kdump/KGDB/Ftrace/Perf/SystemTap）",
+        "Kali Linux内核定制（内核模块编译/Grsecurity）",
+        "信息收集工具集（Nmap/Zenmap/Masscan/Dnsrecon）",
+        "漏洞扫描（Nessus/OpenVAS/Nikto/WPScan/Gobuster）",
+        "Web应用测试（Burp Suite专业版/Owasp ZAP/SQLMap）",
+        "无线攻击（Aircrack-ng套件/Kismet/Reaver/Bettercap）",
+        "密码破解（Hashcat/John/Medusa/Hydra/Crunch规则）",
+        "利用工具（Metasploit/Searchsploit/Payload生成器）",
+        "后渗透（Mimikatz/Empire/PowerView/BloodHound）",
+        "漏洞开发（pwntools/Ropgadget/One-gadget/Exploit-db）",
+        "网络嗅探（Wireshark/Tcpdump/Tshark/Zeek）",
+        "取证工具（Autopsy/SleuthKit/Volatility/Bulkextractor）",
+        "社会工程工具（SET/BeeF/Gophish/Modlishka）",
+        "硬件黑客工具（Hak5/BusPirate/Logic Analyzer）",
+        "报告生成（Faraday/Dradis/CherryTree/Maltego）",
+        "移动渗透（Android SDK/APKTool/drozer/Frida）",
+        "云工具（Pacu/ScoutSuite/CloudSploit/AWS Inspector）"
+      ]
+    }
+  }
+}

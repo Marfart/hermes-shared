@@ -1,0 +1,5543 @@
+{
+  "input_row_count": 607,
+  "unique_customer_code_count": 393,
+  "rows": [
+    {
+      "code": "01120401822",
+      "customer_name": "Yomi Ajetunmobi",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Yomi Ajetunmobi",
+      "contacts": [
+        "Yomi Ajetunmobi<oluwayomi@yahoo.com>",
+        "Yomi Ajetunmobi<yomi.ajetunmobi@gmail.com>"
+      ],
+      "emails": [
+        "oluwayomi@yahoo.com",
+        "yomi.ajetunmobi@gmail.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "01120401888",
+      "customer_name": "Haldun ULGEN",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Haldun ULGEN",
+      "contacts": [
+        "Haldun ULGEN<haldun@teta.com.tr>"
+      ],
+      "emails": [
+        "haldun@teta.com.tr"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "01120401889",
+      "customer_name": "Checkpoint Security Technologies Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Checkpoint Security Technologies Ltd",
+      "contacts": [
+        "Harrison M Kiragu<s.checkpoint@yahoo.com>",
+        "Harrison M Kiragu<hawaltk@yahoo.com>"
+      ],
+      "emails": [
+        "s.checkpoint@yahoo.com",
+        "hawaltk@yahoo.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "01121007841",
+      "customer_name": "Kuwaiti Canadian Integrated Trad. Co.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Kuwaiti Canadian Integrated Trad. Co.",
+      "contacts": [
+        "Angel Yaziji<a.yaziji@kcit-kwt.net>",
+        "Fadi J. Elbechara<f.elbechara@kcit-kwt.net>",
+        "Krystel Espiritu<k.espiritu@kcit-kwt.net>",
+        "l.ocenar<l.ocenar@kcit-kwt.net>",
+        "Dini Daniel<d.daniel@kcit-kwt.net>"
+      ],
+      "emails": [
+        "a.yaziji@kcit-kwt.net",
+        "f.elbechara@kcit-kwt.net",
+        "k.espiritu@kcit-kwt.net",
+        "l.ocenar@kcit-kwt.net",
+        "d.daniel@kcit-kwt.net"
+      ],
+      "row_count": 5
+    },
+    {
+      "code": "01130611523",
+      "customer_name": "Taller Eléctrico Induni S.A.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Taller Eléctrico Induni S.A.",
+      "contacts": [
+        "Ms. Magdalena Arce<yarce@induni.co.cr>"
+      ],
+      "emails": [
+        "yarce@induni.co.cr"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "01130813673",
+      "customer_name": "MALINK Engineering & Automation PTY LTD",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "MALINK Engineering & Automation PTY LTD",
+      "contacts": [
+        "Mitko Ivanovski<malink@bigblue.net.au>"
+      ],
+      "emails": [
+        "malink@bigblue.net.au"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "01140222358",
+      "customer_name": "CEM Engineering Pte Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "CEM Engineering Pte Ltd",
+      "contacts": [
+        "Kuang Chao (KC)<kuangchao@cemengrg.com>",
+        "Kuang Chao<sales@cemengrg.com>"
+      ],
+      "emails": [
+        "kuangchao@cemengrg.com",
+        "sales@cemengrg.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "01160145357",
+      "customer_name": "TEMPERATURE CONTROLS",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "TEMPERATURE CONTROLS",
+      "contacts": [
+        "J.Rigby<J.Rigby@temperature.com.au>"
+      ],
+      "emails": [
+        "j.rigby@temperature.com.au"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "01170851225",
+      "customer_name": "AIAL Group Ltd.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Mithani Nurudin",
+      "contacts": [
+        "Mithani Nurudin<nurudin@aialgroup.com>",
+        "Samir Mithani<samir@aialgroup.com>"
+      ],
+      "emails": [
+        "nurudin@aialgroup.com",
+        "samir@aialgroup.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "01170951594",
+      "customer_name": "Dinindra Bandara",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Dinindra Bandara",
+      "contacts": [
+        "Dinindra Bandara<dinindra89@gmail.com>"
+      ],
+      "emails": [
+        "dinindra89@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02120301648",
+      "customer_name": "Actel Nigeria Limited",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Paul Ifepe",
+      "contacts": [
+        "Paul Ifepe<actelnigerialtd@gmail.com>"
+      ],
+      "emails": [
+        "actelnigerialtd@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02120705889",
+      "customer_name": "Crimnotion Limited",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Crimnotion Limited",
+      "contacts": [
+        "Mr Ibeun Ekundayo<dayour14@yahoo.com>",
+        "Mr Ibeun Ekundayo<dayoibeun@crimeng.com>"
+      ],
+      "emails": [
+        "dayour14@yahoo.com",
+        "dayoibeun@crimeng.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02121209155",
+      "customer_name": "Alarms Lebanon SARL",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Alarms Lebanon SARL",
+      "contacts": [
+        "Ahmed<alarms_lebanon@yahoo.com>"
+      ],
+      "emails": [
+        "alarms_lebanon@yahoo.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02130109484",
+      "customer_name": "Sky Productivity Pvt. Ltd.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Sky Productivity Pvt. Ltd.",
+      "contacts": [
+        "aakash<aakash@skyproductivity.com>",
+        "Aakash Modi<a.modi@skyproductivity.com>",
+        "ajay patel<ajay@skyproductivity.com>"
+      ],
+      "emails": [
+        "aakash@skyproductivity.com",
+        "a.modi@skyproductivity.com",
+        "ajay@skyproductivity.com"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "02130310222",
+      "customer_name": "Mega Teknindo",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Mega Teknindo",
+      "contacts": [
+        "Yuri Suwandi<megatek@cbn.net.id>"
+      ],
+      "emails": [
+        "megatek@cbn.net.id"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02130814437",
+      "customer_name": "MIRACA",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "MIRACA",
+      "contacts": [
+        "Carsten Kvist<miraca@miraca.dk>"
+      ],
+      "emails": [
+        "miraca@miraca.dk"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02130916016",
+      "customer_name": "AC&RF Engineering (Pvt.) Ltd.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "AC&RF Engineering (Pvt.) Ltd.",
+      "contacts": [
+        "AC&RF Engineering (Pvt.) Ltd.<md.acrf@gmail.com>",
+        "Winnie<sales1@tzwanrui.cn>"
+      ],
+      "emails": [
+        "md.acrf@gmail.com",
+        "sales1@tzwanrui.cn"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02131220796",
+      "customer_name": "Seguridad movil",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Seguridad movil",
+      "contacts": [
+        "Omar Augusto Berrio P.<omaraugustoberrio@gmail.com>",
+        "Omar Augusto Berrio P.<comercial@seguridadmovil.com.co>"
+      ],
+      "emails": [
+        "omaraugustoberrio@gmail.com",
+        "comercial@seguridadmovil.com.co"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02140121060",
+      "customer_name": "College of industrial technology",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "College of industrial technology",
+      "contacts": [
+        "Wael Gorma<wael_gorma@yahoo.com>"
+      ],
+      "emails": [
+        "wael_gorma@yahoo.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02140121488",
+      "customer_name": "Rafhitun ehf",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Rafhitun ehf",
+      "contacts": [
+        "Snorri Hafsteinsson<snorri@rafhitun.is>"
+      ],
+      "emails": [
+        "snorri@rafhitun.is"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02140324350",
+      "customer_name": "Trade Air Engineering Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Trade Air Engineering Ltd",
+      "contacts": [
+        "Davendra Sharma<daven@tradeair.com.fj>",
+        "Davendra Sharma<davendra.sharma@fnu.ac.fj>",
+        "Thushara Samaratunga<fijiaccounts@tradeair.com.fj>",
+        "air<enquiries@tradeair.net>"
+      ],
+      "emails": [
+        "daven@tradeair.com.fj",
+        "davendra.sharma@fnu.ac.fj",
+        "fijiaccounts@tradeair.com.fj",
+        "enquiries@tradeair.net"
+      ],
+      "row_count": 4
+    },
+    {
+      "code": "02140324375",
+      "customer_name": "DBC Access Pty Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "DBC Access Pty Ltd",
+      "contacts": [
+        "Darren Fine<bryanfine58@gmail.com>",
+        "Darren Fine<admin@dbcaccess.com.au>",
+        "Darren Fine<darren@dbcaccess.com.au>"
+      ],
+      "emails": [
+        "bryanfine58@gmail.com",
+        "admin@dbcaccess.com.au",
+        "darren@dbcaccess.com.au"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "02140425930",
+      "customer_name": "enrico barrago",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "enrico barrago",
+      "contacts": [
+        "enrico barrago<enrico@barrago.it>"
+      ],
+      "emails": [
+        "enrico@barrago.it"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02140528440",
+      "customer_name": "Roma",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Roma",
+      "contacts": [
+        "Roma<todos@roma.com.uy>",
+        "Roma<info@roma.com.uy>"
+      ],
+      "emails": [
+        "todos@roma.com.uy",
+        "info@roma.com.uy"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02140629978",
+      "customer_name": "Victor Ceinos Anderez",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Victor Ceinos Anderez",
+      "contacts": [
+        "Victor Ceinos Anderez<victorceinos@yahoo.es>"
+      ],
+      "emails": [
+        "victorceinos@yahoo.es"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02140630024",
+      "customer_name": "Automatismos ESMA S.L.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Automatismos ESMA S.L.",
+      "contacts": [
+        "Automatismos Esma<enrique.escribano@automatismos-esma.com>"
+      ],
+      "emails": [
+        "enrique.escribano@automatismos-esma.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02140630135",
+      "customer_name": "Tavrida Electric India Private Limited",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Tavrida Electric India Private Limited",
+      "contacts": [
+        "Avisek<sales@tavrida.in>",
+        "Avisek Bandyopadhyay<vab@tavrida.in>"
+      ],
+      "emails": [
+        "sales@tavrida.in",
+        "vab@tavrida.in"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02140832632",
+      "customer_name": "Generalidades Tecnológicas Limitada",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Generalidades Tecnológicas Limitada",
+      "contacts": [
+        "Jose Baos<jbaos@getec.cl>"
+      ],
+      "emails": [
+        "jbaos@getec.cl"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02140833009",
+      "customer_name": "AS Tavrida Electric Export",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "AS Tavrida Electric Export",
+      "contacts": [
+        "王国<vincent@weisenele.com>",
+        "Vincent Wang<wangguoyq@hotmail.com>"
+      ],
+      "emails": [
+        "vincent@weisenele.com",
+        "wangguoyq@hotmail.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02150136689",
+      "customer_name": "JSC “Litkarmetas”",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "JSC “Litkarmetas”",
+      "contacts": [
+        "Algirdas_Medišauskas<info@litkarm.lt>",
+        "Algirdas_Medišauskas<algmedis@gmail.com>"
+      ],
+      "emails": [
+        "info@litkarm.lt",
+        "algmedis@gmail.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02150336932",
+      "customer_name": "ELECTRO-NEUMÀTICA LLEIDA, S.A.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "ELECTRO-NEUMÀTICA LLEIDA, S.A.",
+      "contacts": [
+        "Hector Fort<hector@enlsa.com>"
+      ],
+      "emails": [
+        "hector@enlsa.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02150842974",
+      "customer_name": "Range Servant AB",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Range Servant AB",
+      "contacts": [
+        "Peter Melin<peter.melin@rangeservant.com>",
+        "anders.loof<anders.loof@rangeservant.com>"
+      ],
+      "emails": [
+        "peter.melin@rangeservant.com",
+        "anders.loof@rangeservant.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02150943485",
+      "customer_name": "AUTOMATISMOS ROMA S.A.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "AUTOMATISMOS ROMA S.A.",
+      "contacts": [
+        "JORGE HOWARD<romaimpo@roma.com.uy>"
+      ],
+      "emails": [
+        "romaimpo@roma.com.uy"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02151144548",
+      "customer_name": "KANESA TICARET LTD",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "KANESA TICARET LTD",
+      "contacts": [
+        "Salih KACAK<info@kanesagroup.com>"
+      ],
+      "emails": [
+        "info@kanesagroup.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02151245057",
+      "customer_name": "Medicool",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Medicool",
+      "contacts": [
+        "Mr. Morten Hattesen<morten@medicool.dk>"
+      ],
+      "emails": [
+        "morten@medicool.dk"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02160145286",
+      "customer_name": "MERECOM RELAX SRL",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "MERECOM RELAX SRL",
+      "contacts": [
+        "Daniela Nicoleta<1nicoleta.daniela24@yahoo.com>",
+        "MITRUT CRISTIAN<office@merecom.ro>"
+      ],
+      "emails": [
+        "1nicoleta.daniela24@yahoo.com",
+        "office@merecom.ro"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02160145295",
+      "customer_name": "jean-claude",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "jean-claude",
+      "contacts": [
+        "jean-claude<jean-claude@heitzler.com>"
+      ],
+      "emails": [
+        "jean-claude@heitzler.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02160647100",
+      "customer_name": "DV Sikring",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "DV Sikring",
+      "contacts": [
+        "Dennis Vinther<import@dv-sikring.dk>"
+      ],
+      "emails": [
+        "import@dv-sikring.dk"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02160647270",
+      "customer_name": "Integrated Technologies of CCFL, Inc.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Integrated Technologies of CCFL, Inc.",
+      "contacts": [
+        "Mr. Chris Duca<chrisduca@intechusa.org>",
+        "Chris Duca<chrisduca@me.com>"
+      ],
+      "emails": [
+        "chrisduca@intechusa.org",
+        "chrisduca@me.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02160847747",
+      "customer_name": "Saljet Gerbeti",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Saljet Gerbeti",
+      "contacts": [
+        "Saljet Gerbeti<saljet100@gmail.com>"
+      ],
+      "emails": [
+        "saljet100@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02170951388",
+      "customer_name": "Marko Schilawa",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Marko Schilawa",
+      "contacts": [
+        "Marko Schilawa<21012@gmx.net>"
+      ],
+      "emails": [
+        "21012@gmx.net"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02170951440",
+      "customer_name": "Elettromek di Germanò Antonino",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Elettromek di Germanò Antonino",
+      "contacts": [
+        "Morad Mostefaoui<morad.mostefaoui@gmail.com>",
+        "morad<info@pippohydro.com>"
+      ],
+      "emails": [
+        "morad.mostefaoui@gmail.com",
+        "info@pippohydro.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02170951497",
+      "customer_name": "KEA Enertech",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "KEA Enertech",
+      "contacts": [
+        "Mr. earnie jonsson<stisan2000@yahoo.se>"
+      ],
+      "emails": [
+        "stisan2000@yahoo.se"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02171051782",
+      "customer_name": "HH Bygland AS",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "HH Bygland AS",
+      "contacts": [
+        "Tor Borge Helle<tbh@kjoreutstyr.no>",
+        "Tor Borge Helle<imp@kjoreutstyr.no>"
+      ],
+      "emails": [
+        "tbh@kjoreutstyr.no",
+        "imp@kjoreutstyr.no"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02171051822",
+      "customer_name": "Adolf Nissen Elektrobau",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Adolf Nissen Elektrobau",
+      "contacts": [
+        "叶文耀<wyye@wtsh.cn>",
+        "i.A. Bjarne Hahn<bhahn@nissen-germany.com>"
+      ],
+      "emails": [
+        "wyye@wtsh.cn",
+        "bhahn@nissen-germany.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02171152147",
+      "customer_name": "Mikko Haapakoski",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Mikko Haapakoski",
+      "contacts": [
+        "Mikko Haapakoski<mikko@rau-service.com>"
+      ],
+      "emails": [
+        "mikko@rau-service.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02171152158",
+      "customer_name": "Radionet Monitoring Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Radionet Monitoring Ltd",
+      "contacts": [
+        "Mr. Vincent Gombert<admin@radionetmonitoring.co.nz>"
+      ],
+      "emails": [
+        "admin@radionetmonitoring.co.nz"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02171152200",
+      "customer_name": "Dutypoint Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Dutypoint Ltd",
+      "contacts": [
+        "Tim eagle<Tim.Eagle@Dutypoint.com>"
+      ],
+      "emails": [
+        "tim.eagle@dutypoint.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02171252217",
+      "customer_name": "李先生",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "李先生",
+      "contacts": [
+        "李先生<----2635569992@qq.com>"
+      ],
+      "emails": [
+        "----2635569992@qq.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02180152418",
+      "customer_name": "Mastech Company Limited",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Mastech Company Limited",
+      "contacts": [
+        "Sai<mastech.saiminhtet@gmail.com>",
+        "Ma Khin<makhinhtaysoe@gmail.com>",
+        "Nyan Lin Aung<mastech.nyanlinn@gmail.com>",
+        "Phoo<mastech.phoothetpaing@gmail.com>",
+        "Gilbert.<gilbert.lee@mastech.asia>",
+        "Aye Min Htwe<mastech.ayeminhtwe@gmail.com>"
+      ],
+      "emails": [
+        "mastech.saiminhtet@gmail.com",
+        "makhinhtaysoe@gmail.com",
+        "mastech.nyanlinn@gmail.com",
+        "mastech.phoothetpaing@gmail.com",
+        "gilbert.lee@mastech.asia",
+        "mastech.ayeminhtwe@gmail.com"
+      ],
+      "row_count": 6
+    },
+    {
+      "code": "02180152510",
+      "customer_name": "Master Logistics Pte Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Master Logistics Pte Ltd",
+      "contacts": [
+        "Kathleen Gladys<iwan.leksokumoro@gmail.com>"
+      ],
+      "emails": [
+        "iwan.leksokumoro@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02180152586",
+      "customer_name": "fedry dian indarko",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "fedry dian indarko",
+      "contacts": [
+        "fedry dian indarko<fedfray9@gmail.com>",
+        "fedry dian indarko<fedry.indarko@fspowercontrol.com>"
+      ],
+      "emails": [
+        "fedfray9@gmail.com",
+        "fedry.indarko@fspowercontrol.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02180152657",
+      "customer_name": "Marshall Electric",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Marshall Electric",
+      "contacts": [
+        "David M. Camp<dcamp@mei-tech.com>",
+        "Stephanie<smarshall@mei-tech.com>"
+      ],
+      "emails": [
+        "dcamp@mei-tech.com",
+        "smarshall@mei-tech.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02180352946",
+      "customer_name": "Southern peninsula electrical solutions",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Southern peninsula electrical solutions",
+      "contacts": [
+        "Mr. Ray Farnsworth<rayfarns@gmail.com>"
+      ],
+      "emails": [
+        "rayfarns@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02180353128",
+      "customer_name": "Trip-g.com LLC / CO",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Trip-g.com LLC / CO",
+      "contacts": [
+        "gregg campbell<greggc@hotmail.com>"
+      ],
+      "emails": [
+        "greggc@hotmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02180453384",
+      "customer_name": "Alva",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Alva",
+      "contacts": [
+        "Alva<--1640054879@qq.com>"
+      ],
+      "emails": [
+        "--1640054879@qq.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02180453467",
+      "customer_name": "Process automation control engineering",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Process automation control engineering",
+      "contacts": [
+        "Raja Pathumalai<pacscada@gmail.com>"
+      ],
+      "emails": [
+        "pacscada@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02180553750",
+      "customer_name": "冯喜",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "冯喜",
+      "contacts": [
+        "冯喜<---1742538616@qq.com>"
+      ],
+      "emails": [
+        "---1742538616@qq.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02180553806",
+      "customer_name": "王叶佳",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "王叶佳",
+      "contacts": [
+        "王叶佳<yejia_air@163.com>"
+      ],
+      "emails": [
+        "yejia_air@163.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02180553815",
+      "customer_name": "DIABY SOULEYMANE",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "DIABY SOULEYMANE",
+      "contacts": [
+        "G.Mger<souleymane.diaby@globalservicestechnologie.biz>"
+      ],
+      "emails": [
+        "souleymane.diaby@globalservicestechnologie.biz"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02180654018",
+      "customer_name": "Chin",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Chin",
+      "contacts": [
+        "Chin<kschin70@hotmail.com>"
+      ],
+      "emails": [
+        "kschin70@hotmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02180754247",
+      "customer_name": "Böhm GmbH & Co KG",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Böhm GmbH & Co KG",
+      "contacts": [
+        "Udo Böhm<ub@boehm-on.de>",
+        "Andreas Giertz<agiertz@boehm-gruppe.com>",
+        "Udo Böhm<ub@boehm-gruppe.com>"
+      ],
+      "emails": [
+        "ub@boehm-on.de",
+        "agiertz@boehm-gruppe.com",
+        "ub@boehm-gruppe.com"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "02180754315",
+      "customer_name": "Pegasus Technologies, Inc.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Pegasus Technologies, Inc.",
+      "contacts": [
+        "Jason Cecchettini<jason1@pegtech.com>"
+      ],
+      "emails": [
+        "jason1@pegtech.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02180754667",
+      "customer_name": "Batista Dominique",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Batista Dominique",
+      "contacts": [
+        "Mr. batista dominique<batistadomi@yahoo.fr>"
+      ],
+      "emails": [
+        "batistadomi@yahoo.fr"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02180754680",
+      "customer_name": "UNICOM Pty Limited",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "UNICOM Pty Limited",
+      "contacts": [
+        "Vicki Kastanaras<vicki@unicompl.com>"
+      ],
+      "emails": [
+        "vicki@unicompl.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02180855117",
+      "customer_name": "Berry",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Berry",
+      "contacts": [
+        "Yu Berry<berryyu@hku.hk>"
+      ],
+      "emails": [
+        "berryyu@hku.hk"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02180855122",
+      "customer_name": "Control Techniques",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Control Techniques",
+      "contacts": [
+        "Mike Nassoiy<Mike.Nassoiy@mail.nidec.com>",
+        "Kevin Manton<Kevin.Manton@mail.nidec.com>"
+      ],
+      "emails": [
+        "mike.nassoiy@mail.nidec.com",
+        "kevin.manton@mail.nidec.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02180855174",
+      "customer_name": "Biota, Inc.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Biota, Inc.",
+      "contacts": [
+        "Ricardo Sledzinski<estoyenlared@gmail.com>",
+        "Tatiana Bowling<biotaconsulting@gmail.com>"
+      ],
+      "emails": [
+        "estoyenlared@gmail.com",
+        "biotaconsulting@gmail.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02180955235",
+      "customer_name": "George dekermenjian",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "George dekermenjian",
+      "contacts": [
+        "George dekermenjian<dekermenjiangeorge@gmail.com>"
+      ],
+      "emails": [
+        "dekermenjiangeorge@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02180955310",
+      "customer_name": "Inaccess Networks SA",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Inaccess Networks SA",
+      "contacts": [
+        "Dimitris<decon@inaccess.com>",
+        "Dimitris Tzortzis<dtzortzis@inaccess.com>"
+      ],
+      "emails": [
+        "decon@inaccess.com",
+        "dtzortzis@inaccess.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02180955315",
+      "customer_name": "LEROUGE Stefan",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "LEROUGE Stefan",
+      "contacts": [
+        "LEROUGE Stefan<lerouge.stefan@hotmail.fr>"
+      ],
+      "emails": [
+        "lerouge.stefan@hotmail.fr"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02180955470",
+      "customer_name": "Fitflow Supply",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Fitflow Supply",
+      "contacts": [
+        "Francisco Perez<comex@fitflow.cl>"
+      ],
+      "emails": [
+        "comex@fitflow.cl"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02181055653",
+      "customer_name": "Fire & Evac Solutions",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Fire & Evac Solutions",
+      "contacts": [
+        "Ricardo De Ponte<service@fireandevacsolutions.com.au>"
+      ],
+      "emails": [
+        "service@fireandevacsolutions.com.au"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02181055761",
+      "customer_name": "Innovative Energy Pte Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Innovative Energy Pte Ltd",
+      "contacts": [
+        "Tze Siong Lee<tzesionglee@gmail.com>"
+      ],
+      "emails": [
+        "tzesionglee@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02181155930",
+      "customer_name": "Zhevlonenko Aleksey",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Zhevlonenko Aleksey",
+      "contacts": [
+        "Zhevlonenko Aleksey<89232450434@mail.ru>"
+      ],
+      "emails": [
+        "89232450434@mail.ru"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02181155972",
+      "customer_name": "Advanced Global Solution A.G.S. SPA",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Advanced Global Solution A.G.S. SPA",
+      "contacts": [
+        "Mr. alessandro pante<alessandro.pante@ags-it.com>",
+        "Mr. alessandro pante<serviziofornitori@ags-it.com>"
+      ],
+      "emails": [
+        "alessandro.pante@ags-it.com",
+        "serviziofornitori@ags-it.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02181155992",
+      "customer_name": "Hoxton Analytics Limited",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Hoxton Analytics Limited",
+      "contacts": [
+        "Pav Cheema<pav@hoxtonanalytics.com>"
+      ],
+      "emails": [
+        "pav@hoxtonanalytics.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02181156027",
+      "customer_name": "Svitzer UK",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Svitzer UK",
+      "contacts": [
+        "Darren Cushing<darren.cushing@svitzer.com>"
+      ],
+      "emails": [
+        "darren.cushing@svitzer.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02181156144",
+      "customer_name": "TCG combustion & control",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "TCG combustion & control",
+      "contacts": [
+        "jdhd los matebos<javier.duran@me.com>"
+      ],
+      "emails": [
+        "javier.duran@me.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02181156163",
+      "customer_name": "PREMIUM POINT, LDA",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "PREMIUM POINT, LDA",
+      "contacts": [
+        "Sonia Goncalves<sonia.goncalves@logisticapremium.com>"
+      ],
+      "emails": [
+        "sonia.goncalves@logisticapremium.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02181156224",
+      "customer_name": "Eyenet Systems Inc",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Eyenet Systems Inc",
+      "contacts": [
+        "Brian Ung<brian@eyenet.ca>",
+        "Simon Chwee<chwees@eyenet.ca>"
+      ],
+      "emails": [
+        "brian@eyenet.ca",
+        "chwees@eyenet.ca"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02181156245",
+      "customer_name": "Sitewatch Limited",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Sitewatch Limited",
+      "contacts": [
+        "Saquib Ibrahim<procure@sitewatch.org.uk>"
+      ],
+      "emails": [
+        "procure@sitewatch.org.uk"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02181256301",
+      "customer_name": "Nir Nobel",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Nir Nobel",
+      "contacts": [
+        "Nir Nobel<nirnobel@gmail.com>"
+      ],
+      "emails": [
+        "nirnobel@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02181256394",
+      "customer_name": "Navi_Mongolia",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Navi_Mongolia",
+      "contacts": [
+        "Navi_Mongolia<88922220@qq.com>"
+      ],
+      "emails": [
+        "88922220@qq.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02181256427",
+      "customer_name": "Advanced Air & Water Technologies j.d.o.o",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Advanced Air & Water Technologies j.d.o.o",
+      "contacts": [
+        "Prof. Dr. Laszlo Sipos<lsipos123@gmail.com>",
+        "Prof. Dr. Laszlo Sipos<laszlo.sipos@fkit.hr>"
+      ],
+      "emails": [
+        "lsipos123@gmail.com",
+        "laszlo.sipos@fkit.hr"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02190257421",
+      "customer_name": "Grosvenor Engineering Group",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Grosvenor Engineering Group",
+      "contacts": [
+        "Rodney O'Flynn<rof@gegroup.com.au>",
+        "Trevor Ludford<trl@gegroup.com.au>"
+      ],
+      "emails": [
+        "rof@gegroup.com.au",
+        "trl@gegroup.com.au"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02190357675",
+      "customer_name": "David gakure",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "David gakure",
+      "contacts": [
+        "David gakure<davigakure@gmail.com>"
+      ],
+      "emails": [
+        "davigakure@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190357718",
+      "customer_name": "Arie systems ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Arie systems ltd",
+      "contacts": [
+        "Mr. Arye Levy<a0506800201@gmail.com>"
+      ],
+      "emails": [
+        "a0506800201@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190357724",
+      "customer_name": "Ronan O'Connor",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Ronan O'Connor",
+      "contacts": [
+        "Ronan O'Connor<ronan@radioservices.ie>"
+      ],
+      "emails": [
+        "ronan@radioservices.ie"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190357772",
+      "customer_name": "AUMADA Energy & Technologies (M) Sdn Bhd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "AUMADA Energy & Technologies (M) Sdn Bhd",
+      "contacts": [
+        "Leong<leong@aumada.my>",
+        "Edric Ho<edric@aumada.com.my>",
+        "梁先生<---@wechat.com>"
+      ],
+      "emails": [
+        "leong@aumada.my",
+        "edric@aumada.com.my",
+        "---@wechat.com"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "02190357810",
+      "customer_name": "Vkingindustrial",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Vkingindustrial",
+      "contacts": [
+        "Simon Luu<simon.luu@vikingindustrial.com.au>",
+        "John Davies<john.davies@vikingindustrial.com.au>"
+      ],
+      "emails": [
+        "simon.luu@vikingindustrial.com.au",
+        "john.davies@vikingindustrial.com.au"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02190457948",
+      "customer_name": "John Wyatt Electrical PTY.Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "John Wyatt Electrical PTY.Ltd",
+      "contacts": [
+        "Phil Wyatt<phil@johnwyattelec.com.au>"
+      ],
+      "emails": [
+        "phil@johnwyattelec.com.au"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190457971",
+      "customer_name": "Ohmega Technik Enterprise",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Ohmega Technik Enterprise",
+      "contacts": [
+        "Herbert Wafula<ohmegatechnik19@gmail.com>"
+      ],
+      "emails": [
+        "ohmegatechnik19@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190457979",
+      "customer_name": "A & H Controls (Pte.Ltd.)",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "A & H Controls (Pte.Ltd.)",
+      "contacts": [
+        "Dhinesh<dhinesh@anh.com.sg>"
+      ],
+      "emails": [
+        "dhinesh@anh.com.sg"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190458020",
+      "customer_name": "Cacexport",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Cacexport",
+      "contacts": [
+        "Hamoudi mohamed<salecac@hotmail.fr>"
+      ],
+      "emails": [
+        "salecac@hotmail.fr"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190558299",
+      "customer_name": "VOF Biesheuvel-Blijdorp",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "VOF Biesheuvel-Blijdorp",
+      "contacts": [
+        "Rob Blijdorp<rblijdorp@hotmail.com>"
+      ],
+      "emails": [
+        "rblijdorp@hotmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190558301",
+      "customer_name": "Tenzor d.o.o.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Tenzor d.o.o.",
+      "contacts": [
+        "Darko Mikolič<nabava@tenzor.si>",
+        "Darko Mikolič<darko.mikolic@tenzor.si>"
+      ],
+      "emails": [
+        "nabava@tenzor.si",
+        "darko.mikolic@tenzor.si"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02190558322",
+      "customer_name": "Mid North Coast Maritime Museum",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Mid North Coast Maritime Museum",
+      "contacts": [
+        "Bob Ecclestone<becclest@pcug.org.au>"
+      ],
+      "emails": [
+        "becclest@pcug.org.au"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190558445",
+      "customer_name": "Cellamerica sa de cv",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Cellamerica sa de cv",
+      "contacts": [
+        "JORGE BARRERA<gerencia@cellamerica.com.mx>"
+      ],
+      "emails": [
+        "gerencia@cellamerica.com.mx"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190658477",
+      "customer_name": "FIXiT Quick Computers LLC",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "FIXiT Quick Computers LLC",
+      "contacts": [
+        "Joel Fox<fixitquickfox@gmail.com>"
+      ],
+      "emails": [
+        "fixitquickfox@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190658481",
+      "customer_name": "SYNTREX Global Technologies (Pvt) Ltd.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "SYNTREX Global Technologies (Pvt) Ltd.",
+      "contacts": [
+        "Granville Fernando<granvillefdo@yahoo.com>",
+        "Granville Fernando<granville@syntrex.biz>"
+      ],
+      "emails": [
+        "granvillefdo@yahoo.com",
+        "granville@syntrex.biz"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02190658517",
+      "customer_name": "B Switch (iBrown Property)",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "B Switch (iBrown Property)",
+      "contacts": [
+        "iBrown Property<ibrownproperty@gmail.com>",
+        "jeremy Brown<info@bswitch.com.au>"
+      ],
+      "emails": [
+        "ibrownproperty@gmail.com",
+        "info@bswitch.com.au"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02190658538",
+      "customer_name": "sarl Animilo-pro",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "sarl Animilo-pro",
+      "contacts": [
+        "Milo NAGTZAAM<info@animilo.fr>"
+      ],
+      "emails": [
+        "info@animilo.fr"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190658540",
+      "customer_name": "Integrated Gas Services",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Integrated Gas Services",
+      "contacts": [
+        "Yamen Akil<akilco54@hotmail.com>",
+        "Yamen Akil<yamen@sergas.com>"
+      ],
+      "emails": [
+        "akilco54@hotmail.com",
+        "yamen@sergas.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02190658541",
+      "customer_name": "Trikej Zambia Limited",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Trikej Zambia Limited",
+      "contacts": [
+        "kenny sililo<trikejzambia@outlook.com>"
+      ],
+      "emails": [
+        "trikejzambia@outlook.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190658551",
+      "customer_name": "Águas de Barcelos, SA",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Águas de Barcelos, SA",
+      "contacts": [
+        "Edson Capitani<edsoncapitani@gmail.com>"
+      ],
+      "emails": [
+        "edsoncapitani@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190658581",
+      "customer_name": "SOCH INGENIEROS s.a.s",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "SOCH INGENIEROS s.a.s",
+      "contacts": [
+        "Federico Santa Maria Velez<federicosantamaria@sochingenieros.com>"
+      ],
+      "emails": [
+        "federicosantamaria@sochingenieros.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190658588",
+      "customer_name": "INTENS Corporation s.r.o.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "INTENS Corporation s.r.o.",
+      "contacts": [
+        "Jakub Šimík<jakub.simik@gmail.com>"
+      ],
+      "emails": [
+        "jakub.simik@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190658612",
+      "customer_name": "AISLAMIENTOS CONSTRUCTIVOS SA DE CV",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "AISLAMIENTOS CONSTRUCTIVOS SA DE CV",
+      "contacts": [
+        "Carlos Aranda<caranda@grupoaislacon.com.mx>"
+      ],
+      "emails": [
+        "caranda@grupoaislacon.com.mx"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190658655",
+      "customer_name": "SIF Gruppen A/S",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "SIF Gruppen A/S",
+      "contacts": [
+        "Simon Månsson Due<smd@sif.dk>"
+      ],
+      "emails": [
+        "smd@sif.dk"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190658656",
+      "customer_name": "PELIAS Norsk Skadedyrkontroll",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "PELIAS Norsk Skadedyrkontroll",
+      "contacts": [
+        "Jan Midtbø Westergre<jw@pelias.no>"
+      ],
+      "emails": [
+        "jw@pelias.no"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190758745",
+      "customer_name": "BreizhMe",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "BreizhMe",
+      "contacts": [
+        "Fulup Le Foll<fulup.arfoll@gmail.com>"
+      ],
+      "emails": [
+        "fulup.arfoll@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190758844",
+      "customer_name": "Dudleys Electrical & Automated Systems Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Dudleys Electrical & Automated Systems Ltd",
+      "contacts": [
+        "Simeon Dudley<dudleyselectrical@xtra.co.nz>"
+      ],
+      "emails": [
+        "dudleyselectrical@xtra.co.nz"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190758854",
+      "customer_name": "MACTRONIX ENGINEERING SDN BHD",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "MACTRONIX ENGINEERING SDN BHD",
+      "contacts": [
+        "CB Seah<cbseah@mactronixsb.com>",
+        "Desmond Mactronix<desmond@mactronixsb.com>",
+        "Stephie<purchasing@mactronixsb.com>"
+      ],
+      "emails": [
+        "cbseah@mactronixsb.com",
+        "desmond@mactronixsb.com",
+        "purchasing@mactronixsb.com"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "02190758878",
+      "customer_name": "DOTS",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "DOTS",
+      "contacts": [
+        "Sarah Gozo Joven<sales@dotsqatar.com>",
+        "Imran Ahmed.<operations@dotsqatar.com>"
+      ],
+      "emails": [
+        "sales@dotsqatar.com",
+        "operations@dotsqatar.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02190758879",
+      "customer_name": "Issac Cohen",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Issac Cohen",
+      "contacts": [
+        "Issac Cohen<issacc@beeper.co.il>"
+      ],
+      "emails": [
+        "issacc@beeper.co.il"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190758972",
+      "customer_name": "Guraba Telecom Bangladesh Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Guraba Telecom Bangladesh Ltd",
+      "contacts": [
+        "Emran Hossain<gurabatel@gmail.com>",
+        "Al-Emran Hossain<al.emran.hossian@gurabatel.com>"
+      ],
+      "emails": [
+        "gurabatel@gmail.com",
+        "al.emran.hossian@gurabatel.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02190858999",
+      "customer_name": "Bir Robotic",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Bir Robotic",
+      "contacts": [
+        "Hadi ahravan<ahravan@hotmail.com>"
+      ],
+      "emails": [
+        "ahravan@hotmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190859014",
+      "customer_name": "Matang global ventures sdn bhd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Matang global ventures sdn bhd",
+      "contacts": [
+        "Mohd yusri bin abdul kadir<akukaudia2004@gmail.com>"
+      ],
+      "emails": [
+        "akukaudia2004@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190859015",
+      "customer_name": "Converfenix SA de CV",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Converfenix SA de CV",
+      "contacts": [
+        "Walter Zamora<wvzamora@gmail.com>",
+        "Walter Zamora<wvzamora@converfenix.com.sv>"
+      ],
+      "emails": [
+        "wvzamora@gmail.com",
+        "wvzamora@converfenix.com.sv"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02190859072",
+      "customer_name": "Flexi Systems (Singapore) Pte. Ltd.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Flexi Systems (Singapore) Pte. Ltd.",
+      "contacts": [
+        "Flexi Systems S PL<admin@flexisystems.com.sg>"
+      ],
+      "emails": [
+        "admin@flexisystems.com.sg"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190859084",
+      "customer_name": "MSD TELEMATICS PVT LTD",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "MSD TELEMATICS PVT LTD",
+      "contacts": [
+        "Ashmeet Singh<ashmeet@traqmatix.com>"
+      ],
+      "emails": [
+        "ashmeet@traqmatix.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190859151",
+      "customer_name": "Pt. Menn teknologi",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Pt. Menn teknologi",
+      "contacts": [
+        "edrick pramana<edrick.pramana@live.com>",
+        "edrick pramana<edrick.pramana.1@gmail.com>",
+        "Ms Cindy Kristiani<Acct.menntek@gmail.com>"
+      ],
+      "emails": [
+        "edrick.pramana@live.com",
+        "edrick.pramana.1@gmail.com",
+        "acct.menntek@gmail.com"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "02190859152",
+      "customer_name": "TechPower Developments Inc",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "TechPower Developments Inc",
+      "contacts": [
+        "Paul Bianchi<paul@techpowerdevelopmentsinc.com>"
+      ],
+      "emails": [
+        "paul@techpowerdevelopmentsinc.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190859204",
+      "customer_name": "Vinaref co., ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Vinaref co., ltd",
+      "contacts": [
+        "Ha Manh Quan<vinaref@gmail.com>"
+      ],
+      "emails": [
+        "vinaref@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190859333",
+      "customer_name": "JCTM COMERCIO E TECNOLOGIA LTDA",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "JCTM COMERCIO E TECNOLOGIA LTDA",
+      "contacts": [
+        "Clovis Souza<clovis@jctm-hidromet.com.br>",
+        "阿里巴巴账户邮箱<adm@jctm-hidromet.com.br>",
+        "Carla Monique<carlamonique@jctm-hidromet.com>",
+        "Clóvis da Rosa Souza<clovisrosa@jctm-hidromet.com>",
+        "Ludmila Chaves<ludmilachaves@jctm-hidromet.com>"
+      ],
+      "emails": [
+        "clovis@jctm-hidromet.com.br",
+        "adm@jctm-hidromet.com.br",
+        "carlamonique@jctm-hidromet.com",
+        "clovisrosa@jctm-hidromet.com",
+        "ludmilachaves@jctm-hidromet.com"
+      ],
+      "row_count": 5
+    },
+    {
+      "code": "02190959364",
+      "customer_name": "binomran for trading and telecommunication",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "binomran for trading and telecommunication",
+      "contacts": [
+        "Hany Metwally<hany.metwally@gmail.com>",
+        "Hany Metwally<hany.metwally@binomran.com>"
+      ],
+      "emails": [
+        "hany.metwally@gmail.com",
+        "hany.metwally@binomran.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02190959370",
+      "customer_name": "Smartco sprl & Eltel Middle East sarl",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Smartco sprl & Eltel Middle East sarl",
+      "contacts": [
+        "Chaker Haddad<chaker.haddad@gmail.com>"
+      ],
+      "emails": [
+        "chaker.haddad@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190959385",
+      "customer_name": "Catulus Co. Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Catulus Co. Ltd",
+      "contacts": [
+        "Cedric chaton<sav@catulusltd.com>"
+      ],
+      "emails": [
+        "sav@catulusltd.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190959399",
+      "customer_name": "Meosli IKT org. number 922752257",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Meosli IKT org. number 922752257",
+      "contacts": [
+        "Sture Meosli<sture.m@online.no>"
+      ],
+      "emails": [
+        "sture.m@online.no"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190959413",
+      "customer_name": "AC POWER",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "AC POWER",
+      "contacts": [
+        "Tsomo<Tsomo1012@yahoo.com>"
+      ],
+      "emails": [
+        "tsomo1012@yahoo.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190959462",
+      "customer_name": "PT. BUANA LANGGENG CIPTA",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "PT. BUANA LANGGENG CIPTA",
+      "contacts": [
+        "Bedi Jubaedi<bulaci35@gmail.com>",
+        "Bedi Jubaedi<jubaedi0505@gmail.com>"
+      ],
+      "emails": [
+        "bulaci35@gmail.com",
+        "jubaedi0505@gmail.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02190959496",
+      "customer_name": "Marco Filipe Alexandri Rigueira Tax ID in brazil : 059.946.886-65",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "EngeRig automation",
+      "contacts": [
+        "Marco Filipe Alexandri Rigueira<filiperigueira@gmail.com>"
+      ],
+      "emails": [
+        "filiperigueira@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02190959575",
+      "customer_name": "Elcor AS",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Elcor AS",
+      "contacts": [
+        "JONATHAN MOTTA<jonathan.motta@elcor.no>",
+        "Jeanette Aas<jeanette.aas@elcor.no>"
+      ],
+      "emails": [
+        "jonathan.motta@elcor.no",
+        "jeanette.aas@elcor.no"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02191059699",
+      "customer_name": "Helind LLC",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Helind LLC",
+      "contacts": [
+        "Orxan Quluzade<info@helind.com>",
+        "Orxan Quluzade<orxan5000@gmail.com>"
+      ],
+      "emails": [
+        "info@helind.com",
+        "orxan5000@gmail.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02191059781",
+      "customer_name": "Projector Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Projector Ltd",
+      "contacts": [
+        "Marshak Iryna<projector01@tut.by>"
+      ],
+      "emails": [
+        "projector01@tut.by"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02191059844",
+      "customer_name": "HarMaTek Oy",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "HarMaTek Oy",
+      "contacts": [
+        "Harri Mattila<harmatek@outlook.com>",
+        "Harri Mattila<harri.mattila@harmatek.fi>"
+      ],
+      "emails": [
+        "harmatek@outlook.com",
+        "harri.mattila@harmatek.fi"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02191059858",
+      "customer_name": "Centronic S.A.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Centronic S.A.",
+      "contacts": [
+        "Mazzen Ouneissi<info@centronic.com.py>",
+        "Mazzen Ouneissi<mazzen.o@gmail.com>"
+      ],
+      "emails": [
+        "info@centronic.com.py",
+        "mazzen.o@gmail.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02191059873",
+      "customer_name": "eWallet Africa",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "eWallet Africa",
+      "contacts": [
+        "Josephat Maneno Kyando<josephat.maneno@gmail.com>",
+        "Josephat Maneno Kyando<jkyando@ewallet.co.tz>"
+      ],
+      "emails": [
+        "josephat.maneno@gmail.com",
+        "jkyando@ewallet.co.tz"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02191059885",
+      "customer_name": "YP Enterprise Solution",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "YP Enterprise Solution",
+      "contacts": [
+        "Yanakorn Honsomsuk<ypenterprisenetwork@gmail.com>"
+      ],
+      "emails": [
+        "ypenterprisenetwork@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02191059917",
+      "customer_name": "Pakhwan sales and services",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Pakhwan sales and services",
+      "contacts": [
+        "Nitin saini<Bhaijaannitin@gmail.com>"
+      ],
+      "emails": [
+        "bhaijaannitin@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02191059939",
+      "customer_name": "Dorel Security",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Dorel Security",
+      "contacts": [
+        "Yoram<yoram116@gmail.com>"
+      ],
+      "emails": [
+        "yoram116@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02191159953",
+      "customer_name": "PAAS Poços Artesianos e Serviços Geológicos",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "PAAS Poços Artesianos e Serviços Geológicos",
+      "contacts": [
+        "Chert Bobsin<pocosartesianos@hotmail.com>",
+        "Nicholas Weber<n.weberr@gmail.com>"
+      ],
+      "emails": [
+        "pocosartesianos@hotmail.com",
+        "n.weberr@gmail.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02191159981",
+      "customer_name": "DataGruppen Vejle A/S",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "DataGruppen Vejle A/S",
+      "contacts": [
+        "Erik Jacobsen<ej@hejlskovbjerg.dk>"
+      ],
+      "emails": [
+        "ej@hejlskovbjerg.dk"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02191159989",
+      "customer_name": "Cascia",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Cascia",
+      "contacts": [
+        "Marcos Salinas<tatosalinas22@yahoo.com.ar>"
+      ],
+      "emails": [
+        "tatosalinas22@yahoo.com.ar"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02191160010",
+      "customer_name": "Industry Solutions",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Industry Solutions",
+      "contacts": [
+        "Michael Habisohn<Mikeh@IndustrySolutions.us>"
+      ],
+      "emails": [
+        "mikeh@industrysolutions.us"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02191160018",
+      "customer_name": "Dimo",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Dimo",
+      "contacts": [
+        "Dimo<db@lumiring.com>"
+      ],
+      "emails": [
+        "db@lumiring.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02191160221",
+      "customer_name": "上海曾先生",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "上海曾先生",
+      "contacts": [
+        "上海曾先生<xjsgb@126.com>"
+      ],
+      "emails": [
+        "xjsgb@126.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02191160228",
+      "customer_name": "Cerebellum Carnival LLC",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Cerebellum Carnival LLC",
+      "contacts": [
+        "William Carter<cerebellumcarnivalllc@gmail.com>"
+      ],
+      "emails": [
+        "cerebellumcarnivalllc@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02191260375",
+      "customer_name": "TECCAP",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "TECCAP",
+      "contacts": [
+        "Ivan Tapia<ivan.tapia@teccap.cl>"
+      ],
+      "emails": [
+        "ivan.tapia@teccap.cl"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02200160424",
+      "customer_name": "ACPD Services LTD",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "ACPD Services LTD",
+      "contacts": [
+        "Dmytro Taranets<dmytrotaranets@acpdservices.co.uk>"
+      ],
+      "emails": [
+        "dmytrotaranets@acpdservices.co.uk"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02200360553",
+      "customer_name": "Topic.TECH",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Vijayachandru",
+      "contacts": [
+        "chandru<chandru@top-tech.sa>"
+      ],
+      "emails": [
+        "chandru@top-tech.sa"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02200460672",
+      "customer_name": "Aung Thu",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Orica",
+      "contacts": [
+        "Aung Thu<aung.thu@orica.com>"
+      ],
+      "emails": [
+        "aung.thu@orica.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02200560734",
+      "customer_name": "Jose Miguel De la Vega",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Delco Chile Ltda.",
+      "contacts": [
+        "Jose Miguel DV<jdelavega@delcochile.cl>"
+      ],
+      "emails": [
+        "jdelavega@delcochile.cl"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02200560770",
+      "customer_name": "Tan See Teck",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Tan See Teck",
+      "contacts": [
+        "Tan See Teck<seeteck@gmail.com>"
+      ],
+      "emails": [
+        "seeteck@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02200560831",
+      "customer_name": "Vagn Sindersen",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Vagn Sindersen",
+      "contacts": [
+        "Vagn Sindersen<aotw.vagn@gmail.com>"
+      ],
+      "emails": [
+        "aotw.vagn@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02200560835",
+      "customer_name": "khalifa al amri",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "khalifa al amri",
+      "contacts": [
+        "khalifa al amri<Sasfaz@eim.ae>"
+      ],
+      "emails": [
+        "sasfaz@eim.ae"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02200660894",
+      "customer_name": "PT. Mesin Kafe dan Service",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "PT. Mesin Kafe dan Service",
+      "contacts": [
+        "Edward Samudro<Edward@MesinKafe.com>"
+      ],
+      "emails": [
+        "edward@mesinkafe.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02200660898",
+      "customer_name": "ControlTemp S.L.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "ControlTemp S.L.",
+      "contacts": [
+        "José Domingo<domingo@controltemp.es>"
+      ],
+      "emails": [
+        "domingo@controltemp.es"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02201061363",
+      "customer_name": "PT Mekanika Digital Pratama",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "PT Mekanika Digital Pratama",
+      "contacts": [
+        "Mr. ahmad irsan<Irsan@mekanikadigitalpratama.com>",
+        "M. Idham<cak.dham@gmail.com>"
+      ],
+      "emails": [
+        "irsan@mekanikadigitalpratama.com",
+        "cak.dham@gmail.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02210461963",
+      "customer_name": "Novatronic SPA Vat Number: 76.310.535-0",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Novatronic SPA Vat Number: 76.310.535-0",
+      "contacts": [
+        "Jose Luis Valenzuela<jose.valenzuela@wolke.cl>"
+      ],
+      "emails": [
+        "jose.valenzuela@wolke.cl"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02210562078",
+      "customer_name": "IT Craft Ltd.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "IT Craft Ltd.",
+      "contacts": [
+        "Md. Zakir Hossain Chowdhury<zakir@itcraftltd.com>"
+      ],
+      "emails": [
+        "zakir@itcraftltd.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02210562086",
+      "customer_name": "Mr Nils Herdick",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Mr Nils Herdick",
+      "contacts": [
+        "Mr Nils Herdick<nilsherdick@t-online.de>"
+      ],
+      "emails": [
+        "nilsherdick@t-online.de"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02210562143",
+      "customer_name": "SITA / JCMEX",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "SITA / JCMEX",
+      "contacts": [
+        "Lc Chen<lcchen@sita.com.my>"
+      ],
+      "emails": [
+        "lcchen@sita.com.my"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02210562194",
+      "customer_name": "Prime Road Power Public Company Limited",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Prime Road Power Public Company Limited",
+      "contacts": [
+        "Nichakul Narabonyawat<Nichakul.n@primeroadgroup.com>"
+      ],
+      "emails": [
+        "nichakul.n@primeroadgroup.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02220163130",
+      "customer_name": "Radion Engineering Co. Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Radion Engineering Co. Ltd",
+      "contacts": [
+        "Uri Talmor<uri@radion.co.il>"
+      ],
+      "emails": [
+        "uri@radion.co.il"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02220163151",
+      "customer_name": "Enermatic Colombia SAS",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Enermatic Colombia SAS",
+      "contacts": [
+        "Miguel Plazas<gerencia@enermatic.com.co>"
+      ],
+      "emails": [
+        "gerencia@enermatic.com.co"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02220263173",
+      "customer_name": "Microtrónica, Lda",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Microtrónica, Lda",
+      "contacts": [
+        "Renato Barbosa<geral@mictrotronica.pt>"
+      ],
+      "emails": [
+        "geral@mictrotronica.pt"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02220263195",
+      "customer_name": "Sineti Consulting",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Sineti Consulting",
+      "contacts": [
+        "Guillermo Utrilla<guillermo.utrilla@tcv.mx>"
+      ],
+      "emails": [
+        "guillermo.utrilla@tcv.mx"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02220263196",
+      "customer_name": "Verde Remediation Services Limited",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Verde Remediation Services Limited",
+      "contacts": [
+        "John Molloy<john@zyalin.com>"
+      ],
+      "emails": [
+        "john@zyalin.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02220263204",
+      "customer_name": "Voltvision Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Voltvision Ltd",
+      "contacts": [
+        "James Bonham<james@voltvision.live>"
+      ],
+      "emails": [
+        "james@voltvision.live"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02220363211",
+      "customer_name": "SCI-Hálózat Távközlési és Hálózatintegrációs zRt.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "SCI-Hálózat Távközlési és Hálózatintegrációs zRt.",
+      "contacts": [
+        "Tamás Mogyorósi<tmogyorosi@scinetwork.hu>"
+      ],
+      "emails": [
+        "tmogyorosi@scinetwork.hu"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02220363223",
+      "customer_name": "API Services VAT number: BE0518.881.308",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "IOT Factory",
+      "contacts": [
+        "Lionel Anciaux<lionel@iotfactory.eu>"
+      ],
+      "emails": [
+        "lionel@iotfactory.eu"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02220363242",
+      "customer_name": "Körting Hannover GmbH",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Körting Hannover GmbH",
+      "contacts": [
+        "Patrick Ahlers<ahlers@koerting.de>"
+      ],
+      "emails": [
+        "ahlers@koerting.de"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02220463252",
+      "customer_name": "Schildknecht AG",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Schildknecht AG",
+      "contacts": [
+        "Thomas Schildknecht<thomas.schildknecht@schildknecht.ag>"
+      ],
+      "emails": [
+        "thomas.schildknecht@schildknecht.ag"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02220563331",
+      "customer_name": "R&E Installaties",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "R&E Installaties",
+      "contacts": [
+        "Egbert Boer<rekoeltechniek@gmail.com>"
+      ],
+      "emails": [
+        "rekoeltechniek@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02220563333",
+      "customer_name": "Creative Technology Integration Joint Stock Company",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Creative Technology Integration Joint Stock Company",
+      "contacts": [
+        "Mr XuanHung Dao<hungdx@worldcti.vn>"
+      ],
+      "emails": [
+        "hungdx@worldcti.vn"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02220563352",
+      "customer_name": "PAT TECH",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "PAT TECH",
+      "contacts": [
+        "Nguyễn Quân<sale@pat-tech.com.vn>"
+      ],
+      "emails": [
+        "sale@pat-tech.com.vn"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02220563368",
+      "customer_name": "Sesol AB / MT3 Technology",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Sesol AB / MT3 Technology",
+      "contacts": [
+        "Sergio Lara<sergio@mt3.se>",
+        "Sergio Lara<Sergio.lara@sesol.se>"
+      ],
+      "emails": [
+        "sergio@mt3.se",
+        "sergio.lara@sesol.se"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "02220663434",
+      "customer_name": "AXXAIR",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "AXXAIR",
+      "contacts": [
+        "Bruno LENDRIEUX<blendrieux@axxair.com>"
+      ],
+      "emails": [
+        "blendrieux@axxair.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02220663440",
+      "customer_name": "H2O works",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "H2O works",
+      "contacts": [
+        "Ana Karen Bocanegra Camargo<abocanegra@h2oworks.mx>"
+      ],
+      "emails": [
+        "abocanegra@h2oworks.mx"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02220663441",
+      "customer_name": "Ofoghtahavol Hoshmand (OTH)",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Ofoghtahavol Hoshmand (OTH)",
+      "contacts": [
+        "Mehdy Roshanaei<mehdy_roshanaei@yahoo.com>"
+      ],
+      "emails": [
+        "mehdy_roshanaei@yahoo.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02220763479",
+      "customer_name": "Venox Group Limited",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Venox Group Limited",
+      "contacts": [
+        "Valerian Mwinfang Nofong Junior<valerian.nofong@venoxgroup.com>"
+      ],
+      "emails": [
+        "valerian.nofong@venoxgroup.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02220863517",
+      "customer_name": "PT Meica Indo Teknik",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "PT Meica Indo Teknik",
+      "contacts": [
+        "Kresna Setyo Pamungkas<kresna@meica.co.id>"
+      ],
+      "emails": [
+        "kresna@meica.co.id"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02221263721",
+      "customer_name": "HonestDig",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "HonestDig",
+      "contacts": [
+        "Meni Koppenhol<meni@honestdig.io>"
+      ],
+      "emails": [
+        "meni@honestdig.io"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02230163772",
+      "customer_name": "Firewall solutions Pte Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Firewall solutions Pte Ltd",
+      "contacts": [
+        "Keith Ng<wy_ng117@yahoo.com>"
+      ],
+      "emails": [
+        "wy_ng117@yahoo.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02230263840",
+      "customer_name": "Ataa Al Rumaila Company",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Ataa Al Rumaila Company",
+      "contacts": [
+        "mohammed<info@ataaalrumaila.com>"
+      ],
+      "emails": [
+        "info@ataaalrumaila.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02230363897",
+      "customer_name": "上海博取仪器有限公司",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "上海博取仪器有限公司",
+      "contacts": [
+        "刘丽娜<Jori_Liu@shboqu.net>"
+      ],
+      "emails": [
+        "jori_liu@shboqu.net"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02250965316",
+      "customer_name": "TAG Automations and Controls LTD",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Israel Oluwabiyi",
+      "contacts": [
+        "Israel Oluwabiyi<israeloluwabiyi@gmail.com>"
+      ],
+      "emails": [
+        "israeloluwabiyi@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "02251065331",
+      "customer_name": "Arturo Veras Olivos",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Arturo Veras Olivos",
+      "contacts": [
+        "Arturo Veras Olivos<arturoveras@gmail.com>"
+      ],
+      "emails": [
+        "arturoveras@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "03120300340",
+      "customer_name": "Mandal Co.,Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Mandal Co.,Ltd",
+      "contacts": [
+        "Mandakh Namsraijav<mndkh_n@yahoo.com>"
+      ],
+      "emails": [
+        "mndkh_n@yahoo.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "03120300492",
+      "customer_name": "Auto Entry Systems Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Auto Entry Systems Ltd",
+      "contacts": [
+        "Bojan Brajkovic<Bojan@AutoEntrySystems.com>",
+        "Padraig Canavan<pc@autoentrysystems.com>",
+        "Bruno<Bruno@AutoEntrySystems.com>",
+        "Mal<mal@AutoEntrySystems.com>",
+        "Padraig Canavan<Padraig@AutoEntrySystems.com>",
+        "Vjekoslav Ringel<vjekoslav@AutoEntrySystems.com>",
+        "Michael Munnelly<info@autoentrysystems.com>",
+        "V.J Ringel<vj@AutoEntrySystems.com>"
+      ],
+      "emails": [
+        "bojan@autoentrysystems.com",
+        "pc@autoentrysystems.com",
+        "bruno@autoentrysystems.com",
+        "mal@autoentrysystems.com",
+        "padraig@autoentrysystems.com",
+        "vjekoslav@autoentrysystems.com",
+        "info@autoentrysystems.com",
+        "vj@autoentrysystems.com"
+      ],
+      "row_count": 8
+    },
+    {
+      "code": "03120300746",
+      "customer_name": "MASY International W.L.L",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Nabeel Faraj",
+      "contacts": [
+        "Nabeel Faraj<nabeelf@masyinternational.com>"
+      ],
+      "emails": [
+        "nabeelf@masyinternational.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "03120402592",
+      "customer_name": "Norman Fick",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Norman Fick",
+      "contacts": [
+        "Norman Fick<nfick11@gmail.com>",
+        "Norman Fick<fickfam@intekom.co.za>"
+      ],
+      "emails": [
+        "nfick11@gmail.com",
+        "fickfam@intekom.co.za"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "03120604641",
+      "customer_name": "ARTIDE s.r.l.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "ARTIDE s.r.l.",
+      "contacts": [
+        "Daniele Arquati<daniele.arquati@artide.info>"
+      ],
+      "emails": [
+        "daniele.arquati@artide.info"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "03130310484",
+      "customer_name": "Exys Moçambique Lda",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Exys Moçambique Lda",
+      "contacts": [
+        "Zulficar Adamo<zulficar.adamo@exys.co.mz>",
+        "Zulficar Adamo<zadamo@gmail.com>"
+      ],
+      "emails": [
+        "zulficar.adamo@exys.co.mz",
+        "zadamo@gmail.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "03130711834",
+      "customer_name": "Microfal S.A.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Microfal S.A.",
+      "contacts": [
+        "Ignacio Nunez<ignacio@microfal.com>",
+        "Microfal S.A.<info@microfal.com>"
+      ],
+      "emails": [
+        "ignacio@microfal.com",
+        "info@microfal.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "03140222444",
+      "customer_name": "ECAD",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "ECAD",
+      "contacts": [
+        "Mr.Zak Hayward<zak@ecad.co.nz>",
+        "zak.h<zak.h@xtra.co.nz>"
+      ],
+      "emails": [
+        "zak@ecad.co.nz",
+        "zak.h@xtra.co.nz"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "03140324809",
+      "customer_name": "AMSA Company",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "AMSA Company",
+      "contacts": [
+        "Lorenzo Cifaldi<l.cifaldi@amsasrl.it>",
+        "Lorenzo<lorcif@gmail.com>"
+      ],
+      "emails": [
+        "l.cifaldi@amsasrl.it",
+        "lorcif@gmail.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "03140425358",
+      "customer_name": "HM Services",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "HM Services",
+      "contacts": [
+        "Martin Amicel<martin.amicel@gmail.com>",
+        "Martin Amicel<martin.amicel@hms35.fr>"
+      ],
+      "emails": [
+        "martin.amicel@gmail.com",
+        "martin.amicel@hms35.fr"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "03140425469",
+      "customer_name": "GTS - FILTREX",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "GTS - FILTREX",
+      "contacts": [
+        "Bruno DIE FOTIE T.<g.t.s.cam@gmail.com>"
+      ],
+      "emails": [
+        "g.t.s.cam@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "03140933672",
+      "customer_name": "Leitao Kevin",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Leitao Kevin",
+      "contacts": [
+        "Leitao Kevin<leitao.kevin@voltstage.fr>"
+      ],
+      "emails": [
+        "leitao.kevin@voltstage.fr"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "03140933948",
+      "customer_name": "ССКТБ-ТОМАСС",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "ССКТБ-ТОМАСС",
+      "contacts": [
+        "Mr. Konstantin Kozlov<production@ssktb.ru>"
+      ],
+      "emails": [
+        "production@ssktb.ru"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "03141034089",
+      "customer_name": "Urs Tinner",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Urs Tinner",
+      "contacts": [
+        "Urs Tinner<urs.tinner@yahoo.de>"
+      ],
+      "emails": [
+        "urs.tinner@yahoo.de"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "03160647189",
+      "customer_name": "Thangavelu selvakumar",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Thangavelu selvakumar",
+      "contacts": [
+        "Thangavelu selvakumar<vmavithmarketing@gmail.com>"
+      ],
+      "emails": [
+        "vmavithmarketing@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "03170450351",
+      "customer_name": "Global Fire Services Pvt. Ltd.-59919",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Global Fire Services Pvt. Ltd.",
+      "contacts": [
+        "Shahid Abdulla<projects@gfsmaldives.com>"
+      ],
+      "emails": [
+        "projects@gfsmaldives.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "03170450448",
+      "customer_name": "Al Hawajis For Electronic & Security systems",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Al Hawajis For Electronic & Security systems",
+      "contacts": [
+        "Mr. Ahesan Ashraf<ehsaanattari@gmail.com>"
+      ],
+      "emails": [
+        "ehsaanattari@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "03170550745",
+      "customer_name": "Canyon TV",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Canyon TV",
+      "contacts": [
+        "Charles J Cannaliato<charlie@montana.com>"
+      ],
+      "emails": [
+        "charlie@montana.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "03171051740",
+      "customer_name": "FIRE EATER",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "FIRE EATER",
+      "contacts": [
+        "LASSE BLOM<labl@fire-eater.dk>",
+        "Michael R Poulsen<mrp@fire-eater.dk>",
+        "LASSE BLOM<purchase@fire-eater.com>"
+      ],
+      "emails": [
+        "labl@fire-eater.dk",
+        "mrp@fire-eater.dk",
+        "purchase@fire-eater.com"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "03171152131",
+      "customer_name": "ot amica permata indonesia",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "ot amica permata indonesia",
+      "contacts": [
+        "Mr. Mamun Hossain<mamun.palermo@gmail.com>"
+      ],
+      "emails": [
+        "mamun.palermo@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "03171252381",
+      "customer_name": "Mr. Sagar Muniyandhi",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Mr. Sagar Muniyandhi",
+      "contacts": [
+        "Mr. Sagar Muniyandhi<sputnik2727@gmail.com>"
+      ],
+      "emails": [
+        "sputnik2727@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "03180152513",
+      "customer_name": "My Shopping web di Mario Alfredo Panaro",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "My Shopping web di Mario Alfredo Panaro",
+      "contacts": [
+        "Silvio Cinque<vendite@newspy.org>",
+        "Silvio Cinque<info@newspy.org>"
+      ],
+      "emails": [
+        "vendite@newspy.org",
+        "info@newspy.org"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "03180855192",
+      "customer_name": "RMS Industrial1",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "RMS Industrial1",
+      "contacts": [
+        "Michael Strz<sales@rmsindustrial.com.au>"
+      ],
+      "emails": [
+        "sales@rmsindustrial.com.au"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "03181055571",
+      "customer_name": "Access Control Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Access Control Ltd",
+      "contacts": [
+        "Mr. Mark Bailey<markbaileysecurity@gmail.com>"
+      ],
+      "emails": [
+        "markbaileysecurity@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "03181256466",
+      "customer_name": "The Motwane Mfg.Co.Pvt.Ltd.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "The Motwane Mfg.Co.Pvt.Ltd.",
+      "contacts": [
+        "Stalin Joseph<stalin@motware.com>",
+        "Avinash Dugal<dugal.avinash@motwane.com>"
+      ],
+      "emails": [
+        "stalin@motware.com",
+        "dugal.avinash@motwane.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "03190357812",
+      "customer_name": "Sergey Khegai",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Sergey Khegai",
+      "contacts": [
+        "Sergey Khegai<skhegai@gmail.com>"
+      ],
+      "emails": [
+        "skhegai@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "03190457855",
+      "customer_name": "Cavi Industrial SAC",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Cavi Industrial SAC",
+      "contacts": [
+        "Erick Jackson Uribe Viviano<erickviviano@gmail.com>"
+      ],
+      "emails": [
+        "erickviviano@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "03190859026",
+      "customer_name": "DEL PLATA INGENIERIA",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "DEL PLATA INGENIERIA",
+      "contacts": [
+        "DEL PLATA INGENIERIA<emendez@dpisa.com.ar>"
+      ],
+      "emails": [
+        "emendez@dpisa.com.ar"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "03190959657",
+      "customer_name": "Han Sein Thant Co., Ltd.   Bld",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "minthein hstengineering",
+      "contacts": [
+        "minthein hstengineering<minthein.hstengineering@gmail.com>",
+        "minthein hstengineering<hst.logistics@gmail.com>",
+        "minthein hstengineering<info@lerayline.com>"
+      ],
+      "emails": [
+        "minthein.hstengineering@gmail.com",
+        "hst.logistics@gmail.com",
+        "info@lerayline.com"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "03250365121",
+      "customer_name": "Laurel Acres Water Company",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "待复",
+      "contacts": [
+        "Brandon Orth<Brandon@laurelacreswaterco.com>"
+      ],
+      "emails": [
+        "brandon@laurelacreswaterco.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "04120300267",
+      "customer_name": "Einvar Pte Ltd (EVR)",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Einvar Pte Ltd (EVR)",
+      "contacts": [
+        "Pang Tee How<teehow72@gmail.com>",
+        "Pang Tee How<teehow@einvar.com>",
+        "Pang Tee How<johnooi99@gmail.com>"
+      ],
+      "emails": [
+        "teehow72@gmail.com",
+        "teehow@einvar.com",
+        "johnooi99@gmail.com"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "04120300802",
+      "customer_name": "Artglobalnet Co.,Ltd.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Nopa Tha",
+      "contacts": [
+        "Nopa Tha<waas_me@yahoo.com>"
+      ],
+      "emails": [
+        "waas_me@yahoo.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "04120402231",
+      "customer_name": "DIGIMAX CONTROL INC",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "DIGIMAX CONTROL INC",
+      "contacts": [
+        "Akml Nasr<akml@digimaxcontrol.com>",
+        "Akml Mohamed Nasr<akml@ectsoft.net>"
+      ],
+      "emails": [
+        "akml@digimaxcontrol.com",
+        "akml@ectsoft.net"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "04120906867",
+      "customer_name": "JTRON Telecom LLC",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "JTRON Telecom LLC",
+      "contacts": [
+        "Renold Josheph<info@led.ae>",
+        "Renold Josheph<jtronics@eim.ae>"
+      ],
+      "emails": [
+        "info@led.ae",
+        "jtronics@eim.ae"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "04131219977",
+      "customer_name": "Quality Charter Trading",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Quality Charter Trading",
+      "contacts": [
+        "Naif Said Abdullah AL Hosni<info@qctoman.com>",
+        "Said AL Hosni<nayef@qctoman.com>"
+      ],
+      "emails": [
+        "info@qctoman.com",
+        "nayef@qctoman.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "04151044010",
+      "customer_name": "Evgeny Zamriy",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Evgeny Zamriy",
+      "contacts": [
+        "Evgeny Zamriy<1407e@mail.ru>"
+      ],
+      "emails": [
+        "1407e@mail.ru"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "04160446503",
+      "customer_name": "Abobaker",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Abobaker",
+      "contacts": [
+        "Abobaker<a.b.ywxmtc@gmail.com>"
+      ],
+      "emails": [
+        "a.b.ywxmtc@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "04170249821",
+      "customer_name": "Mr. Gerard Phelan",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Mr. Gerard Phelan",
+      "contacts": [
+        "Mr. Gerard Phelan<g.phelan@thermalimage.ie>"
+      ],
+      "emails": [
+        "g.phelan@thermalimage.ie"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "04180854917",
+      "customer_name": "Brett Chaveriat",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Brett Chaveriat",
+      "contacts": [
+        "Brett Chaveriat<estiaat@yahoo.com>"
+      ],
+      "emails": [
+        "estiaat@yahoo.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "04181155985",
+      "customer_name": "Massgro",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Steven",
+      "contacts": [
+        "Steven<budi@massgro.com>"
+      ],
+      "emails": [
+        "budi@massgro.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "04181156093",
+      "customer_name": "NEXUS GeoEngenharia e Comércio Ltda.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "NEXUS GeoEngenharia e Comércio Ltda.",
+      "contacts": [
+        "José Maria Villac Pinheiro<Jmpinheiro@nexusbr.com>"
+      ],
+      "emails": [
+        "jmpinheiro@nexusbr.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "05121108819",
+      "customer_name": "Jónas Kristinsson",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Jónas Kristinsson",
+      "contacts": [
+        "Jónas Kristinsson<jonas@odr.is>",
+        "Jonas Kristinsson<jonas@ghannesson.is>"
+      ],
+      "emails": [
+        "jonas@odr.is",
+        "jonas@ghannesson.is"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "05121208990",
+      "customer_name": "SOLIDSYSTEMS",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "SOLIDSYSTEMS",
+      "contacts": [
+        "Morten Sørensen<morten@solidsystems.dk>",
+        "Mr. morten sOrensen<salg@solidsystems.dk>"
+      ],
+      "emails": [
+        "morten@solidsystems.dk",
+        "salg@solidsystems.dk"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "05131118481",
+      "customer_name": "MICROSISTEMAS",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "MICROSISTEMAS",
+      "contacts": [
+        "alberto prado mazagatos<alprado@telefonica.net>"
+      ],
+      "emails": [
+        "alprado@telefonica.net"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "05140426631",
+      "customer_name": "Moti Barkan",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Moti Barkan",
+      "contacts": [
+        "Moti Barkan<moti@barkan.org>"
+      ],
+      "emails": [
+        "moti@barkan.org"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "05140630228",
+      "customer_name": "Innova Nts",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Innova Nts",
+      "contacts": [
+        "Mr. Jesus Anton<jab@innova-nts.com>",
+        "Mr. Jesus Anton<tecnotraps@gmail.com>",
+        "Mr. Jesus Anton<soloparamuypijas@gmail.com>",
+        "Mr. Jesus Anton<jesus_anton@hotmail.com>",
+        "Mr. Jesus Anton<info@tecnofilia.es>"
+      ],
+      "emails": [
+        "jab@innova-nts.com",
+        "tecnotraps@gmail.com",
+        "soloparamuypijas@gmail.com",
+        "jesus_anton@hotmail.com",
+        "info@tecnofilia.es"
+      ],
+      "row_count": 5
+    },
+    {
+      "code": "05140731624",
+      "customer_name": "Comercial Automatice SPA",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Comercial Automatice SPA",
+      "contacts": [
+        "Elias Gho<ale@automatice.cl>",
+        "Elias Gho<elias@automatice.cl>",
+        "Elias Gho<elias@misjuguetes.cl>"
+      ],
+      "emails": [
+        "ale@automatice.cl",
+        "elias@automatice.cl",
+        "elias@misjuguetes.cl"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "05140933887",
+      "customer_name": "NYGRENS TEKNIK LIMSTAÄNGSVÄGEN",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "NYGRENS TEKNIK LIMSTAÄNGSVÄGEN",
+      "contacts": [
+        "Mr.Mikael Nygren<micke.nygren@hem.utfors.se>"
+      ],
+      "emails": [
+        "micke.nygren@hem.utfors.se"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "05141135547",
+      "customer_name": "teknisk eiendomssikring as",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "teknisk eiendomssikring as",
+      "contacts": [
+        "Mr. truls berg<truls@tekniskeiendomssikring.no>"
+      ],
+      "emails": [
+        "truls@tekniskeiendomssikring.no"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "05141236487",
+      "customer_name": "Importaciones Costaluz, S.L.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Importaciones Costaluz, S.L.",
+      "contacts": [
+        "Mr. Joaquin Gonzalez<joaquin@sample.es>"
+      ],
+      "emails": [
+        "joaquin@sample.es"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "05150742579",
+      "customer_name": "AUTOMA AUTOMATIC SYSTEMS",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "AUTOMA AUTOMATIC SYSTEMS",
+      "contacts": [
+        "Vivek Gopan<vivek@automa.in>",
+        "Vivek Gopan<info@automa.in>"
+      ],
+      "emails": [
+        "vivek@automa.in",
+        "info@automa.in"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "05160847968",
+      "customer_name": "Glenn darien",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Glenn darien",
+      "contacts": [
+        "Glenndarien<sales@spy-equipment.co.uk>"
+      ],
+      "emails": [
+        "sales@spy-equipment.co.uk"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "05161148957",
+      "customer_name": "Controltrack",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Carlos Salinas",
+      "contacts": [
+        "Carlos Salinas<csalinas@A08controltrack.com.mx>",
+        "Carlos Salinas<carlossalinas2004@gmail.com>",
+        "Carlos Salinas<csalinas@controltrack.net>",
+        "Carlos Salinas<csalinas@controltrack.com.mx>"
+      ],
+      "emails": [
+        "csalinas@a08controltrack.com.mx",
+        "carlossalinas2004@gmail.com",
+        "csalinas@controltrack.net",
+        "csalinas@controltrack.com.mx"
+      ],
+      "row_count": 4
+    },
+    {
+      "code": "05190257467",
+      "customer_name": "MedizinTechnik S.A.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "MedizinTechnik S.A.",
+      "contacts": [
+        "Juan Rolla<jrolla@medizin.cl>",
+        "Carl Fahrenkrog<carl@medizin.cl>",
+        "Andreas Ballek<aballek@medizin.cl>"
+      ],
+      "emails": [
+        "jrolla@medizin.cl",
+        "carl@medizin.cl",
+        "aballek@medizin.cl"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "06120402660",
+      "customer_name": "LOCKMASTER.CO.NZ LTD",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "LOCKMASTER.CO.NZ LTD",
+      "contacts": [
+        "Gate Master<gatemasternz@gmail.com>",
+        "Mike Kitson<enquiries@gatemaster.co.nz>"
+      ],
+      "emails": [
+        "gatemasternz@gmail.com",
+        "enquiries@gatemaster.co.nz"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "06120502692",
+      "customer_name": "Deluks Distribution DOOEL",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Deluks Distribution DOOEL",
+      "contacts": [
+        "Dragan<dragananevski@hotmail.com>"
+      ],
+      "emails": [
+        "dragananevski@hotmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "06130711668",
+      "customer_name": "Francis Joshua Samson",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Francis Joshua Samson",
+      "contacts": [
+        "Francis Joshua Samson<samson.francisjoshua@gmail.com>",
+        "dante omayao<dan.omayao@gmail.com>",
+        "serrano.ladiemay@gmail.com<serrano.ladiemay@gmail.com>"
+      ],
+      "emails": [
+        "samson.francisjoshua@gmail.com",
+        "dan.omayao@gmail.com",
+        "serrano.ladiemay@gmail.com"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "061403181337",
+      "customer_name": "IT Cooling Solutions",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "IT Cooling Solutions",
+      "contacts": [
+        "Dan Backhouse<dan@itcoolingsolutions.com.au>",
+        "Dan Backhouse<dan.backhouse@itcsystems.com.au>"
+      ],
+      "emails": [
+        "dan@itcoolingsolutions.com.au",
+        "dan.backhouse@itcsystems.com.au"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "06140730565",
+      "customer_name": "PT. SURYA HAWILA PERKASA",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "PT. SURYA HAWILA PERKASA",
+      "contacts": [
+        "Tn. Bayu widjaya<surya-hawila@cbn.net.id>"
+      ],
+      "emails": [
+        "surya-hawila@cbn.net.id"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "06140731356",
+      "customer_name": "kumbu bvumbwe",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "kumbu bvumbwe",
+      "contacts": [
+        "kumbu bvumbwe<chikumbwe@gmail.com>"
+      ],
+      "emails": [
+        "chikumbwe@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "06140832575",
+      "customer_name": "Hassan Naeem",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Hassan Naeem",
+      "contacts": [
+        "Stalwart Information<info@stalwartmaldives.com>",
+        "Hassan Naeem<hassan.naeem@stalwartmaldives.com>",
+        "Hassan Naeem<hassan.naeem@iocircuits.com>"
+      ],
+      "emails": [
+        "info@stalwartmaldives.com",
+        "hassan.naeem@stalwartmaldives.com",
+        "hassan.naeem@iocircuits.com"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "06150742319",
+      "customer_name": "Mr. Tuan Nguyen",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Mr. Tuan Nguyen",
+      "contacts": [
+        "Mr. Tuan Nguyen<quangtuan1412@gmail.com>"
+      ],
+      "emails": [
+        "quangtuan1412@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "06160346314",
+      "customer_name": "Hence Result Service",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Hence Result Service",
+      "contacts": [
+        "Mr. BOUOPDA ELIE<elie.bouopda@gmail.com>"
+      ],
+      "emails": [
+        "elie.bouopda@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "06160446471",
+      "customer_name": "Matej",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Matej",
+      "contacts": [
+        "Matej<matej2o@gmail.com>",
+        "Damir<elon@siol.net>"
+      ],
+      "emails": [
+        "matej2o@gmail.com",
+        "elon@siol.net"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "06160546803",
+      "customer_name": "C-LINK TELECOM NETWORK TECHNOLOGY JOINT STOCK COMPANY C-LINK TELECOM NETWORK TECHNOLOGY JOINT STOCK",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Cao Duy Linh",
+      "contacts": [
+        "Nguyễn Hồng Anh<honganh@c-link.vn>",
+        "Cao Duy Linh<duylinh@c-link.vn>"
+      ],
+      "emails": [
+        "honganh@c-link.vn",
+        "duylinh@c-link.vn"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "06160747427",
+      "customer_name": "DIMADIS A –TSAMATROPOULOS P. O.E.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "DIMADIS A –TSAMATROPOULOS P. O.E.",
+      "contacts": [
+        "Nick Tsamatropoulos<nikos.tsamatropoulos@gmail.com>"
+      ],
+      "emails": [
+        "nikos.tsamatropoulos@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "06180813",
+      "customer_name": "oladimejiomosanya@gmail.com",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "oladimejiomosanya@gmail.com",
+      "contacts": [
+        "oladimejiomosanya@gmail.com<oladimejiomosanya@gmail.com>"
+      ],
+      "emails": [
+        "oladimejiomosanya@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "06190758709",
+      "customer_name": "NEXT SARL",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "NEXT SARL",
+      "contacts": [
+        "Kom Sorel<komsorel@gmail.com>",
+        "Willy Ouandja<sorelkom@yahoo.fr>",
+        "Willy Ouandja<nows92@gmail.com>"
+      ],
+      "emails": [
+        "komsorel@gmail.com",
+        "sorelkom@yahoo.fr",
+        "nows92@gmail.com"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "06190758753",
+      "customer_name": "doppler",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "doppler",
+      "contacts": [
+        "Leonidas Maragkos<l.maragkos@doppler.gr>",
+        "Stavros<slsadmin@doppler.gr>",
+        "sgssupplies<sgsupplies@doppler.gr>",
+        "George mogas<g.mogas@doppler.gr>"
+      ],
+      "emails": [
+        "l.maragkos@doppler.gr",
+        "slsadmin@doppler.gr",
+        "sgsupplies@doppler.gr",
+        "g.mogas@doppler.gr"
+      ],
+      "row_count": 4
+    },
+    {
+      "code": "06210461937",
+      "customer_name": "Integrated Solutions for Power Generation",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Integrated Solutions for Power Generation",
+      "contacts": [
+        "Karel Bisset Hechavarria<karel.bisset@scepp.com.br>"
+      ],
+      "emails": [
+        "karel.bisset@scepp.com.br"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "06210562059",
+      "customer_name": "N-Able",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "N-Able",
+      "contacts": [
+        "Dinith Amarasingha<dinithm@n-able.biz>"
+      ],
+      "emails": [
+        "dinithm@n-able.biz"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "06210662342",
+      "customer_name": "IBR (International Business Resources) VAT 311220043700003",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "International Business Resources",
+      "contacts": [
+        "Mohammed Habeeb<habeeb@ibr.sa.com>"
+      ],
+      "emails": [
+        "habeeb@ibr.sa.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "06210862600",
+      "customer_name": "ALENET S.A.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "ALENET S.A.",
+      "contacts": [
+        "Agustín Derrégibus<aderregibus@nettra.tech>",
+        "Pablo Alonso<palonso@nettra.tech>"
+      ],
+      "emails": [
+        "aderregibus@nettra.tech",
+        "palonso@nettra.tech"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "06210862619",
+      "customer_name": "AXONE iO",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "AXONE iO",
+      "contacts": [
+        "Gilles NGUYEN<g.nguyen@axone-io.com>"
+      ],
+      "emails": [
+        "g.nguyen@axone-io.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "06211162985",
+      "customer_name": "ME MANUTENÇÃO ELÉTRICA LDA",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "ME MANUTENÇÃO ELÉTRICA LDA",
+      "contacts": [
+        "João Miranda<me.manueletric@gmail.com>"
+      ],
+      "emails": [
+        "me.manueletric@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "06211163013",
+      "customer_name": "JCRC（Joint Clinical Research Centre）",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "JCRC（Joint Clinical Research Centre）",
+      "contacts": [
+        "Ocitti S. Paul Labeja<pocitti@jcrc.org.ug>"
+      ],
+      "emails": [
+        "pocitti@jcrc.org.ug"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "06250765231",
+      "customer_name": "Pump Engineers Co., Ltd.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Pump Engineers Co., Ltd.",
+      "contacts": [
+        "PEC Logistics Dept<pec23.logistics@gmail.com>"
+      ],
+      "emails": [
+        "pec23.logistics@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07120907076",
+      "customer_name": "Sá Rosas Sa",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Sá Rosas Sa",
+      "contacts": [
+        "Mr. Bao<evmac1963@gmail.com>",
+        "Paulo Santos<info@novitasrosas.com>",
+        "Paulo Santos<hamdta@gmail.com>"
+      ],
+      "emails": [
+        "evmac1963@gmail.com",
+        "info@novitasrosas.com",
+        "hamdta@gmail.com"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "07121108676",
+      "customer_name": "Twite Instruments Twite Instruments Twite Instruments Twite Instruments Twite Instruments Twite Inst",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Twite Instruments",
+      "contacts": [
+        "Richard Twite<richardtwite@iinet.net.au>",
+        "Richard Twite<richard@twite.com.au>"
+      ],
+      "emails": [
+        "richardtwite@iinet.net.au",
+        "richard@twite.com.au"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "07130310223",
+      "customer_name": "Servicios de Tecnologia Aplicada SRL",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Servicios de Tecnologia Aplicada SRL",
+      "contacts": [
+        "Dario Tuseddu<dariotuseddu@after-wire.com.ar>",
+        "Juan Carlos Martins<juan.martins@after-wire.com.ar>"
+      ],
+      "emails": [
+        "dariotuseddu@after-wire.com.ar",
+        "juan.martins@after-wire.com.ar"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "07130410984",
+      "customer_name": "Harding Traffic Limited",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Harding Traffic Limited",
+      "contacts": [
+        "Daniel Teng<daniel.teng@rtl.co.nz>",
+        "paul brewin<paul.brewin@rtl.co.nz>",
+        "Virginia<virginia.bird@rtl.co.nz>"
+      ],
+      "emails": [
+        "daniel.teng@rtl.co.nz",
+        "paul.brewin@rtl.co.nz",
+        "virginia.bird@rtl.co.nz"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "07130611530",
+      "customer_name": "GUTIROGER",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "GUTIROGER",
+      "contacts": [
+        "Juan Jose Gutierrez<juanjosegg@gmail.com>"
+      ],
+      "emails": [
+        "juanjosegg@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07130611534",
+      "customer_name": "salman.khan",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "salman.khan",
+      "contacts": [
+        "Imran Ahmad Salfi<123abc@123.com>",
+        "salman khan<salman.khan@solvebits.com>"
+      ],
+      "emails": [
+        "123abc@123.com",
+        "salman.khan@solvebits.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "07130711607",
+      "customer_name": "义乌陈小姐",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "陈妍",
+      "contacts": [
+        "陈小姐<16960958@qq.com>"
+      ],
+      "emails": [
+        "16960958@qq.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07130711647",
+      "customer_name": "Sacfe Trade Co.Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Sacfe Trade Co.Ltd",
+      "contacts": [
+        "Mr.Abdul Nafi<abdul.nafi11@hotmail.fr>"
+      ],
+      "emails": [
+        "abdul.nafi11@hotmail.fr"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07130711650",
+      "customer_name": "Aicon Engineering",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Aicon engineering",
+      "contacts": [
+        "Jacob Tan<jacob.tan@aicon.com.sg>"
+      ],
+      "emails": [
+        "jacob.tan@aicon.com.sg"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07130711838",
+      "customer_name": "IPInstalaciones",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "IPInstalaciones",
+      "contacts": [
+        "Javier Larrosa<larrosa106@gmail.com>"
+      ],
+      "emails": [
+        "larrosa106@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07130712525",
+      "customer_name": "Nikos Pachoumis",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Nikos Pachoumis",
+      "contacts": [
+        "Nikos Pachoumis<nikos.pachoumis@gmail.com>"
+      ],
+      "emails": [
+        "nikos.pachoumis@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07130813866",
+      "customer_name": "ranj rana",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "ranj rana",
+      "contacts": [
+        "ranj rana<ranjit_rana@hotmail.co.uk>"
+      ],
+      "emails": [
+        "ranjit_rana@hotmail.co.uk"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07130915079",
+      "customer_name": "MED",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "MED",
+      "contacts": [
+        "Domenico Massaro<dmassaroo1@gmail.com>"
+      ],
+      "emails": [
+        "dmassaroo1@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07130915291",
+      "customer_name": "Irisana, S.A.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Irisana, S.A.",
+      "contacts": [
+        "Elena Armada<elena@irisana.com>"
+      ],
+      "emails": [
+        "elena@irisana.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07130915818",
+      "customer_name": "Ingenieurbuero Duwe",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Ingenieurbuero Duwe",
+      "contacts": [
+        "Marcus Duwe<marcus-duwe@gmx.de>"
+      ],
+      "emails": [
+        "marcus-duwe@gmx.de"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07130916433",
+      "customer_name": "Sauli srl",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Sauli srl",
+      "contacts": [
+        "Fabio Sauli<info@sauli.it>"
+      ],
+      "emails": [
+        "info@sauli.it"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07131016753",
+      "customer_name": "Newsham Electrical",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Newsham Electrical",
+      "contacts": [
+        "Mr. Glen Gamble<nicole@wonderwash.net.au>",
+        "Mr. Glen Gamble<newsham.electrical@gmail.com>"
+      ],
+      "emails": [
+        "nicole@wonderwash.net.au",
+        "newsham.electrical@gmail.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "07131017865",
+      "customer_name": "Port of Ploce Maintenance",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Port of Ploce Maintenance",
+      "contacts": [
+        "khalifa saleis<teo.dropulic@gmail.com>"
+      ],
+      "emails": [
+        "teo.dropulic@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07131118982",
+      "customer_name": "nanosegundos syi",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "nanosegundos syi",
+      "contacts": [
+        "FRANK M RIVERA C<frank@nanosegundos.net>"
+      ],
+      "emails": [
+        "frank@nanosegundos.net"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07131119018",
+      "customer_name": "Sarfaroz",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Sarfaroz",
+      "contacts": [
+        "Naim Dzhumaev<naim-d@sarfaroz.tj>",
+        "max@sarfaroz.tj<max@sarfaroz.tj>"
+      ],
+      "emails": [
+        "naim-d@sarfaroz.tj",
+        "max@sarfaroz.tj"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "07140222413",
+      "customer_name": "GET-it",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "GET-it",
+      "contacts": [
+        "Sonny Mihimana<member@paypal.com>",
+        "Sonny Mihimana<get-it@mail.pf>",
+        "Sonny Mihimana<get8it@gmail.com>",
+        "Sonny Mihimana<sonny@mail.pf>"
+      ],
+      "emails": [
+        "member@paypal.com",
+        "get-it@mail.pf",
+        "get8it@gmail.com",
+        "sonny@mail.pf"
+      ],
+      "row_count": 4
+    },
+    {
+      "code": "07140324848",
+      "customer_name": "EF electronics",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "EF electronics",
+      "contacts": [
+        "EF Electronics<homesecuritywa@gmail.com>"
+      ],
+      "emails": [
+        "homesecuritywa@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07140425375",
+      "customer_name": "Tanktel.Pty Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Tanktel.Pty Ltd",
+      "contacts": [
+        "Mr. Rob Crutcher<robc@callidan.com>",
+        "Mr. Rob Crutcher<rob@tanktel.com>"
+      ],
+      "emails": [
+        "robc@callidan.com",
+        "rob@tanktel.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "07140427720",
+      "customer_name": "kwibi muwala pappus",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "kwibi muwala pappus",
+      "contacts": [
+        "kwibi pappus<sumkwibi@gmail.com>",
+        "kwibi pappus<sumkwibi@yahoo.fr>"
+      ],
+      "emails": [
+        "sumkwibi@gmail.com",
+        "sumkwibi@yahoo.fr"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "07140934002",
+      "customer_name": "Vikingegaarden A/S",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Vikingegaarden A/S",
+      "contacts": [
+        "Jørgen R. Petersen<jrp@vikingegaarden.com>"
+      ],
+      "emails": [
+        "jrp@vikingegaarden.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07140934016",
+      "customer_name": "KART COMTECH LIMITED PARTNERSHIP",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "KART COMTECH LIMITED PARTNERSHIP",
+      "contacts": [
+        "Kanathip Intaprom<kanathip1969@gmail.com>"
+      ],
+      "emails": [
+        "kanathip1969@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07141135638",
+      "customer_name": "Telnet Communication Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Telnet Communication Ltd",
+      "contacts": [
+        "Saiful Khaled<sajib@telnet.com.bd>"
+      ],
+      "emails": [
+        "sajib@telnet.com.bd"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07141136423",
+      "customer_name": "MANN STANDARD MACHINERY CO.LTD",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "MANN STANDARD MACHINERY CO.LTD",
+      "contacts": [
+        "WIN MIN THANK<winminthankmsm@gmail.com>"
+      ],
+      "emails": [
+        "winminthankmsm@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07150136597",
+      "customer_name": "Furlong Refrigeration",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Furlong Refrigeration",
+      "contacts": [
+        "paul hamilton<hamiltonp@eircom.net>",
+        "Mr. Paul Hamilton<furlongph@gmail.com>"
+      ],
+      "emails": [
+        "hamiltonp@eircom.net",
+        "furlongph@gmail.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "07150136662",
+      "customer_name": "Ivan Petrovic",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Ivan Petrovic",
+      "contacts": [
+        "Ivan Petrovic<d.electro@yahoo.com>"
+      ],
+      "emails": [
+        "d.electro@yahoo.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07150136715",
+      "customer_name": "Coastal koi ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Coastal koi ltd",
+      "contacts": [
+        "Dave Tilbury<coastalkoi@gmail.com>",
+        "Dave Tilbury<dave@tilbury8.orangehome.co.uk>",
+        "Dave Tilbury<kndkoiproducts@hotmail.com>"
+      ],
+      "emails": [
+        "coastalkoi@gmail.com",
+        "dave@tilbury8.orangehome.co.uk",
+        "kndkoiproducts@hotmail.com"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "07150236765",
+      "customer_name": "Corey Conoolly Electrical",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Corey Conoolly Electrical",
+      "contacts": [
+        "Corey<cjcging@gmail.com>",
+        "Corey<coreyonnollyelectrical@yahoo.com.au>"
+      ],
+      "emails": [
+        "cjcging@gmail.com",
+        "coreyonnollyelectrical@yahoo.com.au"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "07150336970",
+      "customer_name": "The Kipsen Company.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "The Kipsen Company.",
+      "contacts": [
+        "Manny Hernandez<manny.hernandez@kipsen.com>"
+      ],
+      "emails": [
+        "manny.hernandez@kipsen.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07150437557",
+      "customer_name": "CONGO SURVEILLANCE SPRL",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "CONGO SURVEILLANCE SPRL",
+      "contacts": [
+        "Patrick KANKOLONGO LUKUSA<patlukusa@gmail.com>",
+        "Carlos CUENCA<carlos.cuenca@cybyservicios.com>",
+        "Ciel<overseas.13@kam-le.com>",
+        "Narcisse BOISSY<overseas.9@kam-le.hk>",
+        "Angel Grande Mata<angeljgrande@hotmail.com>",
+        "Jean Claude Bouladon<jcbouladon@gmail.com>"
+      ],
+      "emails": [
+        "patlukusa@gmail.com",
+        "carlos.cuenca@cybyservicios.com",
+        "overseas.13@kam-le.com",
+        "overseas.9@kam-le.hk",
+        "angeljgrande@hotmail.com",
+        "jcbouladon@gmail.com"
+      ],
+      "row_count": 6
+    },
+    {
+      "code": "07150538092",
+      "customer_name": "Patent Engineering Co .Pte Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Patent Engineering Co .Pte Ltd",
+      "contacts": [
+        "Edmund Tan<edtango@gmai.com>",
+        "Kris<kris@patent.com.sg>",
+        "Saw<saw@patent.com.sg>",
+        "Edmund Tan<edmund@patent.com.sg>"
+      ],
+      "emails": [
+        "edtango@gmai.com",
+        "kris@patent.com.sg",
+        "saw@patent.com.sg",
+        "edmund@patent.com.sg"
+      ],
+      "row_count": 4
+    },
+    {
+      "code": "07150538215",
+      "customer_name": "Rishi Stephen",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Rish Tech Alarms",
+      "contacts": [
+        "Rishi Stephen<rishitec@hotmail.com>"
+      ],
+      "emails": [
+        "rishitec@hotmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07150538429",
+      "customer_name": "Abraj Alandalus",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Abraj Alandalus",
+      "contacts": [
+        "ibrahim.alshandode<ibrahim.alshandode@moe.om>"
+      ],
+      "emails": [
+        "ibrahim.alshandode@moe.om"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07150639048",
+      "customer_name": "SMK Tamparuli",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "SMK Tamparuli",
+      "contacts": [
+        "Mr. Vinddy Gabriel<rumandawi7@yahoo.com>"
+      ],
+      "emails": [
+        "rumandawi7@yahoo.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07150640164",
+      "customer_name": "SEAFORD TRANSFORMERS PTY LTD",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "SEAFORD TRANSFORMERS PTY LTD",
+      "contacts": [
+        "Mark Kyle<glenn@australianpoolequipment.com.au>",
+        "Mr Glenn Parsons<glennjill@internode.on.net>",
+        "Mark Kyle<mark@seafordtransformers.com.au>",
+        "Mark Kyle<seatrans@internode.on.net>"
+      ],
+      "emails": [
+        "glenn@australianpoolequipment.com.au",
+        "glennjill@internode.on.net",
+        "mark@seafordtransformers.com.au",
+        "seatrans@internode.on.net"
+      ],
+      "row_count": 4
+    },
+    {
+      "code": "07150842846",
+      "customer_name": "Corporate Dynamics Limited",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Corporate Dynamics Limited",
+      "contacts": [
+        "Mr. Ashley Choo Tim<achootim@corporate-dynamics.net>"
+      ],
+      "emails": [
+        "achootim@corporate-dynamics.net"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07150843059",
+      "customer_name": "SBA TORRES EL SALVADOR SA DE CV",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "SBA TORRES EL SALVADOR SA DE CV",
+      "contacts": [
+        "Manrique Vasquez<jvasquez@sbasite.com>"
+      ],
+      "emails": [
+        "jvasquez@sbasite.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07151044236",
+      "customer_name": "MCK SPARK SA",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "MCK SPARK SA",
+      "contacts": [
+        "Mr. Dimitris Pantazidis<contact@mck.gr>",
+        "Mr. Dimitris Pantazidis<d.pantazidis@spark.mck.gr>"
+      ],
+      "emails": [
+        "contact@mck.gr",
+        "d.pantazidis@spark.mck.gr"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "07151144958",
+      "customer_name": "深圳市澳特普环保设备有限公司",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "深圳市澳特普环保设备有限公司",
+      "contacts": [
+        "薛工<1025600690@qq.com>"
+      ],
+      "emails": [
+        "1025600690@qq.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07160145276",
+      "customer_name": "euroalarm-Vertrieb",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "euroalarm-Vertrieb",
+      "contacts": [
+        "Klaus Lange<ichwider@sitting-inn.de>",
+        "Klaus Lange<sale@euroalarm.de>"
+      ],
+      "emails": [
+        "ichwider@sitting-inn.de",
+        "sale@euroalarm.de"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "07160847743",
+      "customer_name": "Mohanad s qutob",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Mohanad s qutob",
+      "contacts": [
+        "Mohanad s qutob<Qutob@eletrotech.ps>"
+      ],
+      "emails": [
+        "qutob@eletrotech.ps"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07160847925",
+      "customer_name": "Kornbordin Intertrade Co., Ltd. (Head Office)",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "SVR Supply Company Limited.",
+      "contacts": [
+        "Paisarn Peeraparp<paisarnpeer@gmail.com>",
+        "Kalaya Phonpai<punnathadk@kornbadin.net>",
+        "Chalermkwan<Chalermkwant@kornbadin.net>",
+        "Kalaya Phonpai<kalaya@kornbadin.net>",
+        "pornanunratana montree<montree.po@gmail.com>",
+        "Jungle Huang<jirayu@kornbadin.net>",
+        "Vitchunee Puwadolkit (KIK)<ikikza@gmail.com>",
+        "Mr. Jaral<jaral@kornbadin.net>",
+        "Nuttapon Teerasamanon<nuttapont@kornbadin.net>",
+        "Athibet Sangiemwong<management@kornbadin.net>"
+      ],
+      "emails": [
+        "paisarnpeer@gmail.com",
+        "punnathadk@kornbadin.net",
+        "chalermkwant@kornbadin.net",
+        "kalaya@kornbadin.net",
+        "montree.po@gmail.com",
+        "jirayu@kornbadin.net",
+        "ikikza@gmail.com",
+        "jaral@kornbadin.net",
+        "nuttapont@kornbadin.net",
+        "management@kornbadin.net"
+      ],
+      "row_count": 10
+    },
+    {
+      "code": "07161148654",
+      "customer_name": "TheXen electromechanical &electronic solutions",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "TheXen electromechanical &electronic solutions",
+      "contacts": [
+        "PANAYIOTIS THEMISTOKLEOUS<thexen.sensors@gmail.com>"
+      ],
+      "emails": [
+        "thexen.sensors@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07170149541",
+      "customer_name": "Kamtex Industries Pte Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Kamtex Industries Pte Ltd",
+      "contacts": [
+        "Mr. Thomas Ong<kamtex@kamtexindustries.com>"
+      ],
+      "emails": [
+        "kamtex@kamtexindustries.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07170249895",
+      "customer_name": "Phoenix",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Phoenix",
+      "contacts": [
+        "Chui Sze Lok<tomchui@ataldci.com.hk>",
+        "Sissi<sissiluo@ataldci.com.hk>"
+      ],
+      "emails": [
+        "tomchui@ataldci.com.hk",
+        "sissiluo@ataldci.com.hk"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "07170249931",
+      "customer_name": "Annaie Informations Private Limited",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Annaie Informations Private Limited",
+      "contacts": [
+        "Nithiya Kumar K<Ains_it@rediffmail.com>"
+      ],
+      "emails": [
+        "ains_it@rediffmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07170751031",
+      "customer_name": "Alisons Technology",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Alisons Technology",
+      "contacts": [
+        "Alisons Technology<Omair@alisonstech.com>"
+      ],
+      "emails": [
+        "omair@alisonstech.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07170751032",
+      "customer_name": "Howard Mckay",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Howard Mckay",
+      "contacts": [
+        "Howard Mckay<howard.mckay@bt.com>"
+      ],
+      "emails": [
+        "howard.mckay@bt.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07170851187",
+      "customer_name": "GreenYellow (Thailand)",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "GreenYellow (Thailand)",
+      "contacts": [
+        "Raphael<raphael.beton@greenyellow.co.th>",
+        "Stephane<contact@piximmo.fr>",
+        "Stephane<stephane.larcher@greenyellow.co.th>",
+        "Mounir KESSAVDJEE<mkessavdjee.exterieur@greenyellow.fr>",
+        "Emilien VATZ<emilien.vatz@greenyellow.co.th>",
+        "Guillaume Busschaert<------guillaume@cominthai.com>"
+      ],
+      "emails": [
+        "raphael.beton@greenyellow.co.th",
+        "contact@piximmo.fr",
+        "stephane.larcher@greenyellow.co.th",
+        "mkessavdjee.exterieur@greenyellow.fr",
+        "emilien.vatz@greenyellow.co.th",
+        "------guillaume@cominthai.com"
+      ],
+      "row_count": 6
+    },
+    {
+      "code": "07170851318",
+      "customer_name": "Eng Lee Logistics Pte Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Eng Lee Logistics Pte Ltd",
+      "contacts": [
+        "Robert LIm<led.good@gmail.com>",
+        "Robert LIm<grill.grill@gmail.com>"
+      ],
+      "emails": [
+        "led.good@gmail.com",
+        "grill.grill@gmail.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "07170951411",
+      "customer_name": "Gensec Pty. Ltd T/A Melbourne Alarms & Monitoring",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Gensec Pty. Ltd T/A Melbourne Alarms & Monitoring",
+      "contacts": [
+        "steve corless<info@melbournealarms.com>"
+      ],
+      "emails": [
+        "info@melbournealarms.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07170951439",
+      "customer_name": "N.E.A Engineering Ltd.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "N.E.A Engineering Ltd.",
+      "contacts": [
+        "Antonis Hadjiantonis<antonis@neaeng.com>"
+      ],
+      "emails": [
+        "antonis@neaeng.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07170951625",
+      "customer_name": "STAVROS NEOPHYTOU & SONS LTD",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "STAVROS NEOPHYTOU & SONS LTD",
+      "contacts": [
+        "Neophytou Neophytos<s.neophytou@cytanet.com.cy>"
+      ],
+      "emails": [
+        "s.neophytou@cytanet.com.cy"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07170951627",
+      "customer_name": "Techno Master Autosafe SRL",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Techno Master Autosafe SRL",
+      "contacts": [
+        "Re Unit<industrial@technomaster.ro>",
+        "Pandelea Constantin<contact@technomaster.ro>",
+        "Pandelea Constantin<office@technomaster.ro>"
+      ],
+      "emails": [
+        "industrial@technomaster.ro",
+        "contact@technomaster.ro",
+        "office@technomaster.ro"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "07170951660",
+      "customer_name": "ITEMS INNOVATION Co., Ltd.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "ITEMS INNOVATION Co., Ltd.",
+      "contacts": [
+        "Mr. Nukul Manasakbunjerd<nukul@allmeasure.co.th>",
+        "Mr. Nukul Manasakbunjerd<nukul@items.co.th>"
+      ],
+      "emails": [
+        "nukul@allmeasure.co.th",
+        "nukul@items.co.th"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "07171051734",
+      "customer_name": "Enviro Building Services",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Enviro Building Services",
+      "contacts": [
+        "Mrs. Jo Pritt<admin@enviroservices.com.au>",
+        "Mrs. Jo Pritt<aidan@enviroservices.com.au>",
+        "Mrs. Jo Pritt<accounts@enviroservices.com.au>"
+      ],
+      "emails": [
+        "admin@enviroservices.com.au",
+        "aidan@enviroservices.com.au",
+        "accounts@enviroservices.com.au"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "07171051901",
+      "customer_name": "MONITOR Ltd.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "MONITOR Ltd.",
+      "contacts": [
+        "Norbert Csíkfejes<monitorrs@centrum.sk>"
+      ],
+      "emails": [
+        "monitorrs@centrum.sk"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07171151960",
+      "customer_name": "Hanan Glikman",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Hanan Glikman",
+      "contacts": [
+        "Hanan Glikman<hanan@agrolan.co.il>"
+      ],
+      "emails": [
+        "hanan@agrolan.co.il"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07171152047",
+      "customer_name": "Young Tamizan Exports",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Young Tamizan Exports",
+      "contacts": [
+        "Young Tamizan Exports<vijayvenkadesan@outlook.com>"
+      ],
+      "emails": [
+        "vijayvenkadesan@outlook.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07171152165",
+      "customer_name": "On Generation Pty Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "On Generation Pty Ltd",
+      "contacts": [
+        "Chris Bartlett<chris@ongeneration.com.au>"
+      ],
+      "emails": [
+        "chris@ongeneration.com.au"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07171252241",
+      "customer_name": "TechnoSoft d.o.o.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "TechnoSoft d.o.o.",
+      "contacts": [
+        "Gregor Jenko<gregor.jenko@technosoft.si>"
+      ],
+      "emails": [
+        "gregor.jenko@technosoft.si"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07171252317",
+      "customer_name": "michael gerner",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "michael gerner",
+      "contacts": [
+        "michael gerner<m.gerner@automationsloesung.at>"
+      ],
+      "emails": [
+        "m.gerner@automationsloesung.at"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07171252318",
+      "customer_name": "CitiSafe Pte Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "CitiSafe Pte Ltd",
+      "contacts": [
+        "Larry Tan<service@citisafe.com.sg>",
+        "Jimmy Goh<admin@citisafe.com.sg>",
+        "Jimmy Goh<sales@citisafe.com.sg>",
+        "Lenin<lenin@citisafe.com.sg>"
+      ],
+      "emails": [
+        "service@citisafe.com.sg",
+        "admin@citisafe.com.sg",
+        "sales@citisafe.com.sg",
+        "lenin@citisafe.com.sg"
+      ],
+      "row_count": 4
+    },
+    {
+      "code": "07180152453",
+      "customer_name": "EnB Solution",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "EnB Solution",
+      "contacts": [
+        "Billy Kim<billy.kim@enb-solution.com>"
+      ],
+      "emails": [
+        "billy.kim@enb-solution.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07180152507",
+      "customer_name": "Bromar Nominees Pty Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Bromar Nominees Pty Ltd",
+      "contacts": [
+        "Mr. Trevor B<trevorbyrne@altonapc.com.au>"
+      ],
+      "emails": [
+        "trevorbyrne@altonapc.com.au"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07180152539",
+      "customer_name": "Cointech SA",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Cointech SA",
+      "contacts": [
+        "Ivan<ivan_qiu@yeah.net>",
+        "Mr. Fernando Rodriguez<purchase@cointech.com.ar>",
+        "Ivan<ivan@yslcd.com.tw>"
+      ],
+      "emails": [
+        "ivan_qiu@yeah.net",
+        "purchase@cointech.com.ar",
+        "ivan@yslcd.com.tw"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "07180152659",
+      "customer_name": "ANSI TECHNOLOGIES SDN BHD",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "ANSI TECHNOLOGIES SDN BHD",
+      "contacts": [
+        "Henry Por<henrypor@ansi-tech.com.my>",
+        "Alif Afnan<alif@ansi-tech.com.my>",
+        "Alif Afnan<najib@ansi-tech.com.my>"
+      ],
+      "emails": [
+        "henrypor@ansi-tech.com.my",
+        "alif@ansi-tech.com.my",
+        "najib@ansi-tech.com.my"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "07180152675",
+      "customer_name": "Highs Business Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Highs Business Ltd",
+      "contacts": [
+        "Nizamiev Ilshat<il-schat@yandex.ru>",
+        "Highs Business Ltd<highsltd@gmail.com>",
+        "Fail Maksumov<f.maksumov@ledel.ru>",
+        "Maria Dmitrieva<m.dmitrieva@ledel.ru>",
+        "Nizamiev Ilshat<i.nizamiev@ledel.ru>",
+        "Highs Business Ltd<marsello83@gmail.com>"
+      ],
+      "emails": [
+        "il-schat@yandex.ru",
+        "highsltd@gmail.com",
+        "f.maksumov@ledel.ru",
+        "m.dmitrieva@ledel.ru",
+        "i.nizamiev@ledel.ru",
+        "marsello83@gmail.com"
+      ],
+      "row_count": 6
+    },
+    {
+      "code": "07180252696",
+      "customer_name": "Vilmos Gombas",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Vilmos Gombas",
+      "contacts": [
+        "Vilmos Gombas<info@electroenergy.hu>"
+      ],
+      "emails": [
+        "info@electroenergy.hu"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07180252701",
+      "customer_name": "daniel Tan.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "daniel Tan.",
+      "contacts": [
+        "daniel Tan<daniel@fillipace.com>"
+      ],
+      "emails": [
+        "daniel@fillipace.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07180352969",
+      "customer_name": "Joerg Schaper",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Joerg Schaper",
+      "contacts": [
+        "Joerg Schaper<joerg.schaper@datadyne.de>"
+      ],
+      "emails": [
+        "joerg.schaper@datadyne.de"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07180352980",
+      "customer_name": "Busanjaya",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Busanjaya",
+      "contacts": [
+        "Busan<Busanwang@yahoo.co.id>"
+      ],
+      "emails": [
+        "busanwang@yahoo.co.id"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07180353011",
+      "customer_name": "Adaptek Automation Technology-Maha Mg",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Adaptek Automation Technology-Maha Mg",
+      "contacts": [
+        "Maha Mg<management@adaptekindia.com>"
+      ],
+      "emails": [
+        "management@adaptekindia.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07180353130",
+      "customer_name": "Paccioni Charles",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Paccioni Charles",
+      "contacts": [
+        "Paccioni Charles<charles.paccioni@sfr.fr>"
+      ],
+      "emails": [
+        "charles.paccioni@sfr.fr"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07180453286",
+      "customer_name": "TELEVISION PAR ABONNEMENT SA",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "TELEVISION PAR ABONNEMENT SA",
+      "contacts": [
+        "Marie Louise<marielouise.sagara@malivision.com>",
+        "Boubacar Boré<Boubacar.bore@malivision.com>"
+      ],
+      "emails": [
+        "marielouise.sagara@malivision.com",
+        "boubacar.bore@malivision.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "07180453331",
+      "customer_name": "Solution Manager",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Solution Manager",
+      "contacts": [
+        "Chris<chris@tav.technology>"
+      ],
+      "emails": [
+        "chris@tav.technology"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07180553598",
+      "customer_name": "SHANGHAI CHILE TRADING",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "SHANGHAI CHILE TRADING",
+      "contacts": [
+        "Alvaro S.<alvaro@shanghaichiletrading.com>",
+        "Marcos Solis Burgos<marcos@shanghaichiletrading.com>"
+      ],
+      "emails": [
+        "alvaro@shanghaichiletrading.com",
+        "marcos@shanghaichiletrading.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "07180553717",
+      "customer_name": "Varius Technology Pte Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Varius Technology Pte Ltd",
+      "contacts": [
+        "Karen Woon<karen.woon@variustech.com>",
+        "James Loo<james.loo@variustech.com>",
+        "Ng Tuck Seng<ntucksen@variustech.com>",
+        "Peter Sng<peter.sng@variustech.com>"
+      ],
+      "emails": [
+        "karen.woon@variustech.com",
+        "james.loo@variustech.com",
+        "ntucksen@variustech.com",
+        "peter.sng@variustech.com"
+      ],
+      "row_count": 4
+    },
+    {
+      "code": "07180553845",
+      "customer_name": "Filtration Group GmbH",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Filtration Group GmbH",
+      "contacts": [
+        "Thomas Gaugler<thomas.gaugler@filtrationgroup.com>"
+      ],
+      "emails": [
+        "thomas.gaugler@filtrationgroup.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07180855089",
+      "customer_name": "韩先生",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "韩先生",
+      "contacts": [
+        "韩先生<873207327@qq.com>"
+      ],
+      "emails": [
+        "873207327@qq.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07180955399",
+      "customer_name": "PKM Enterprise company PKM Enterprise company PKM Enterprise company",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "PKM Enterprise company",
+      "contacts": [
+        "JONY LING<pelangi@pelangiglobal.com>",
+        "Jony Ling<jnyling@gmail.com>"
+      ],
+      "emails": [
+        "pelangi@pelangiglobal.com",
+        "jnyling@gmail.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "07180955456",
+      "customer_name": "Labberu Group",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Labberu Group",
+      "contacts": [
+        "Sam<samsumir@labberu.com>",
+        "Sam<same.mr@gmail.com>"
+      ],
+      "emails": [
+        "samsumir@labberu.com",
+        "same.mr@gmail.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "07190257470",
+      "customer_name": "Mr. Chaiya Suriyapornpun",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Mr. Chaiya Suriyapornpun",
+      "contacts": [
+        "Mr. Chaiya Suriyapornpun<exp@wizardautocare.com>"
+      ],
+      "emails": [
+        "exp@wizardautocare.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07190357785",
+      "customer_name": "PT Electra Inti Perkasa",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "PT Electra Inti Perkasa",
+      "contacts": [
+        "Electra inti<info@electrainti.com>",
+        "Electra inti<electra.inti@gmail.com>"
+      ],
+      "emails": [
+        "info@electrainti.com",
+        "electra.inti@gmail.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "07190457896",
+      "customer_name": "Green solar energy",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Green solar energy",
+      "contacts": [
+        "Green solar energy<Batzorig.0024@gmail.com>"
+      ],
+      "emails": [
+        "batzorig.0024@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07190458095",
+      "customer_name": "Monitoring Station S.A.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Monitoring Station S.A.",
+      "contacts": [
+        "Julián Metelski<jmetelski@monssa.com.ar>"
+      ],
+      "emails": [
+        "jmetelski@monssa.com.ar"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07190859004",
+      "customer_name": "TORO ROJO FARMS",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "TORO ROJO FARMS",
+      "contacts": [
+        "HUMBERTO GUTIERREZ<Direccion@tororojo.mx>"
+      ],
+      "emails": [
+        "direccion@tororojo.mx"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07201061359",
+      "customer_name": "Patrick Teoh.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Patrick Teoh.",
+      "contacts": [
+        "Patrick Teoh.<patrick@md2.com.my>"
+      ],
+      "emails": [
+        "patrick@md2.com.my"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07201061380",
+      "customer_name": "Shane gover",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Shane gover",
+      "contacts": [
+        "Shane gover<shane.gover@plowtech.net>"
+      ],
+      "emails": [
+        "shane.gover@plowtech.net"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "07210361763",
+      "customer_name": "LOTODA Technology Solution Co.,Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "LOTODA Technology Solution Co.,Ltd",
+      "contacts": [
+        "Long Huynh<long.huynh@lotoda.vn>"
+      ],
+      "emails": [
+        "long.huynh@lotoda.vn"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "08120402036",
+      "customer_name": "Alba Ambiente SA",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Alba Ambiente SA",
+      "contacts": [
+        "Mr. Raul Barahona<rnbr@vtr.net>"
+      ],
+      "emails": [
+        "rnbr@vtr.net"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "08120502688",
+      "customer_name": "Buildex",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Buildex",
+      "contacts": [
+        "Saleh Omeir<someir@hotmail.com>"
+      ],
+      "emails": [
+        "someir@hotmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "08121108784",
+      "customer_name": "SCD Technology",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "SCD Technology",
+      "contacts": [
+        "Mr. Stefan Costin<contact@scdtech.ro>"
+      ],
+      "emails": [
+        "contact@scdtech.ro"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "08130511220",
+      "customer_name": "AUTOMATISMOS ROMA SA",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "AUTOMATISMOS ROMA SA",
+      "contacts": [
+        "JORGE HOWARD<jhoward@roma.com.uy>"
+      ],
+      "emails": [
+        "jhoward@roma.com.uy"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "08140222341",
+      "customer_name": "Rafbraedur",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Rafbraedur",
+      "contacts": [
+        "Svanur Thorhallsson<rafbraedur@simnet.is>",
+        "Svanur Thorhallsson<rafbraedur@alarm.is>"
+      ],
+      "emails": [
+        "rafbraedur@simnet.is",
+        "rafbraedur@alarm.is"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "08140732370",
+      "customer_name": "Michshur S.Z (1984) LTD",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Michshur S.Z (1984) LTD",
+      "contacts": [
+        "Rafi<rafi@michshur.com>",
+        "Rami Raz<info@manoraz.com>",
+        "galit<galit@michshur.com>",
+        "Yossi Marku<markoy@netvision.net.il>"
+      ],
+      "emails": [
+        "rafi@michshur.com",
+        "info@manoraz.com",
+        "galit@michshur.com",
+        "markoy@netvision.net.il"
+      ],
+      "row_count": 4
+    },
+    {
+      "code": "12140427165",
+      "customer_name": "Arbel Electronics Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Arbel Electronics Ltd",
+      "contacts": [
+        "Keith Elcomb<keith@arbelelectronics.co.uk>",
+        "Gary Howell<gary.howell@morganwalsh.co.uk>"
+      ],
+      "emails": [
+        "keith@arbelelectronics.co.uk",
+        "gary.howell@morganwalsh.co.uk"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "12140528874",
+      "customer_name": "Netlink (Pvt) Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Netlink (Pvt) Ltd",
+      "contacts": [
+        "Janak Mutucumarana<netlinkltd@sltnet.lk>",
+        "Janak Mutucumarana<janak.mutucumarana@netlink.lk>"
+      ],
+      "emails": [
+        "netlinkltd@sltnet.lk",
+        "janak.mutucumarana@netlink.lk"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "12140529350",
+      "customer_name": "Grupo Simup S.L.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Grupo Simup S.L.",
+      "contacts": [
+        "Fernando Barrero<ferbarreroelias@hotmail.com>",
+        "Juan_Pablo_Simón_Arando<jpsimon@inpark.es>",
+        "Luis_Barrero_Elías<lbarrero@inpark.es>",
+        "Fernando Barrero<fbarrero@inpark.es>",
+        "Gloria Isla Romanos<gisla@inpark.es>"
+      ],
+      "emails": [
+        "ferbarreroelias@hotmail.com",
+        "jpsimon@inpark.es",
+        "lbarrero@inpark.es",
+        "fbarrero@inpark.es",
+        "gisla@inpark.es"
+      ],
+      "row_count": 5
+    },
+    {
+      "code": "12140629663",
+      "customer_name": "EGER Giannopoulos Dimitris Co",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "EGER Giannopoulos Dimitris Co",
+      "contacts": [
+        "dimitris giannopoulos<info@eger.gr>"
+      ],
+      "emails": [
+        "info@eger.gr"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "12140933867",
+      "customer_name": "ETS Co., Ltd. Electronic and Telecommunication Solutions",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "ETS Co., Ltd. Electronic and Telecommunication Solutions",
+      "contacts": [
+        "Jean<info@ets.com.kh>",
+        "Jean<educatech@gmail.com>"
+      ],
+      "emails": [
+        "info@ets.com.kh",
+        "educatech@gmail.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "12140933870",
+      "customer_name": "Doc's Engineering Works",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Doc's Engineering Works",
+      "contacts": [
+        "Clynt Taylor<ctaylor@docseng.com>",
+        "Clynt Taylor<taylorcrr@hotmail.com>"
+      ],
+      "emails": [
+        "ctaylor@docseng.com",
+        "taylorcrr@hotmail.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "12141034320",
+      "customer_name": "Automatic Solutions Australia",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Paul Bindon",
+      "contacts": [
+        "Paul Bindon<paul@automaticsolutions.com.au>"
+      ],
+      "emails": [
+        "paul@automaticsolutions.com.au"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "12141034952",
+      "customer_name": "PUNE TECHTROL PVT LTD",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "PUNE TECHTROL PVT LTD",
+      "contacts": [
+        "N.P.Khatan<HO@PUNETECHTROL.COM>",
+        "Ajay Jamdar<rjw@punetechtrol.com>",
+        "Ajay Jamdar<aaj@punetechtrol.com>"
+      ],
+      "emails": [
+        "ho@punetechtrol.com",
+        "rjw@punetechtrol.com",
+        "aaj@punetechtrol.com"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "12141035029",
+      "customer_name": "CORPOS EQUIPOS Y SERVICIO SA DE CV",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "CORPOS EQUIPOS Y SERVICIO SA DE CV",
+      "contacts": [
+        "Mauro Posada<director@doitclean.com>",
+        "Mauro Posada<mauroposada@hotmail.com>",
+        "Mauro Posada<corposequipos@hotmail.com>"
+      ],
+      "emails": [
+        "director@doitclean.com",
+        "mauroposada@hotmail.com",
+        "corposequipos@hotmail.com"
+      ],
+      "row_count": 3
+    },
+    {
+      "code": "12150943212",
+      "customer_name": "Tris - Triscom Ltd",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Tris",
+      "contacts": [
+        "Tris<chief@triscom.co.uk>"
+      ],
+      "emails": [
+        "chief@triscom.co.uk"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "12151044337",
+      "customer_name": "Mr. Paul Stringer",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Mr. Paul Stringer",
+      "contacts": [
+        "Mr. Paul Stringer<sales@pumptec.co.uk>"
+      ],
+      "emails": [
+        "sales@pumptec.co.uk"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "12160145523",
+      "customer_name": "Albin Johansson",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Albin Johansson",
+      "contacts": [
+        "Albin Johansson<albindtct@gmail.com>"
+      ],
+      "emails": [
+        "albindtct@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "12160747445",
+      "customer_name": "Kaven Vaz",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Kaven Vaz",
+      "contacts": [
+        "Kaven Vaz<kaven0777@rediffmail.com>"
+      ],
+      "emails": [
+        "kaven0777@rediffmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "12161048352",
+      "customer_name": "R.Orland",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "R.Orland",
+      "contacts": [
+        "R.Orland<rolfo-@nortrace.com>"
+      ],
+      "emails": [
+        "rolfo-@nortrace.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "12161048355",
+      "customer_name": "Mr. Phichai Marayard",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Phichai",
+      "contacts": [
+        "Mr. Phichai Marayard<sales-@thebest-plus.com>"
+      ],
+      "emails": [
+        "sales-@thebest-plus.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "12170450472",
+      "customer_name": "Al Sadarah Eng. LLC.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Al Sadarah Eng. LLC.",
+      "contacts": [
+        "Dr. Taoufik Abdelhedi<drtaou@gmail.com>"
+      ],
+      "emails": [
+        "drtaou@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "12170650895",
+      "customer_name": "Charlie Cannaliato",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Charlie Cannaliato",
+      "contacts": [
+        "Charlie Cannaliato<cj59801@gmail.com>"
+      ],
+      "emails": [
+        "cj59801@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "12170851137",
+      "customer_name": "Wong",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Wong",
+      "contacts": [
+        "Wong<ali.wong@gtechhk.com.hk>"
+      ],
+      "emails": [
+        "ali.wong@gtechhk.com.hk"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "12181156066",
+      "customer_name": "Neo Technology",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Neo Technology",
+      "contacts": [
+        "Mr. Michael Graf<graf@neotec.com.na>"
+      ],
+      "emails": [
+        "graf@neotec.com.na"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "12181156205",
+      "customer_name": "Mahindra & Mahindra Ltd.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Mahindra & Mahindra Ltd.",
+      "contacts": [
+        "Mr. rajeev<rajeev_dhiman22@yahoo.co.in>",
+        "Rajeev Dhiman<dhiman.rajeev@mahindra.com>"
+      ],
+      "emails": [
+        "rajeev_dhiman22@yahoo.co.in",
+        "dhiman.rajeev@mahindra.com"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "12200560750",
+      "customer_name": "Kraiwat Chawong",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "Sirikhun Veterinary hospital",
+      "contacts": [
+        "Kraiwat Chawong<Kraiwatvm@gmail.com>"
+      ],
+      "emails": [
+        "kraiwatvm@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "24190458032",
+      "customer_name": "BluBoxx Communication Pvt Ltd.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "BluBoxx Communication Pvt. Ltd.",
+      "contacts": [
+        "Vishal V. Khatokar<VISHAL@BBCPL.IN>",
+        "akshaykirad<akshaykirad@bbcpl.in>"
+      ],
+      "emails": [
+        "vishal@bbcpl.in",
+        "akshaykirad@bbcpl.in"
+      ],
+      "row_count": 2
+    },
+    {
+      "code": "C00000892",
+      "customer_name": "Jessivy Energy Limited",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "待收",
+      "contacts": [
+        "Bob Ogu<info@alphaquestenergy.com>"
+      ],
+      "emails": [
+        "info@alphaquestenergy.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "C00001104",
+      "customer_name": "3D Automation Co., Ltd.",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "售后",
+      "contacts": [
+        "Jin li<lijin45@3dautomation.kr>"
+      ],
+      "emails": [
+        "lijin45@3dautomation.kr"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "C00001370",
+      "customer_name": "Courtney Date",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "",
+      "contacts": [
+        "Courtney Date<courtneydate@gmail.com>"
+      ],
+      "emails": [
+        "courtneydate@gmail.com"
+      ],
+      "row_count": 1
+    },
+    {
+      "code": "C00001582",
+      "customer_name": "Rynhardt duPlessis",
+      "salesman": "Kali Marfa(bliiot03)",
+      "short_name": "完成",
+      "contacts": [
+        "Rynhardt duPlessis<rynhardtwessel@gmail.com>"
+      ],
+      "emails": [
+        "rynhardtwessel@gmail.com"
+      ],
+      "row_count": 1
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "localhost": {
+    "host": "localhost",
+    "ports": {
+      "445": {
+        "port": 445,
+        "service": "SMB",
+        "state": "open",
+        "first_seen": "2026-06-07T17:55:53.550079",
+        "last_seen": "2026-06-07T17:55:53.550079",
+        "alert_sent": false
+      },
+      "135": {
+        "port": 135,
+        "service": "RPC",
+        "state": "open",
+        "first_seen": "2026-06-07T17:55:53.550079",
+        "last_seen": "2026-06-07T17:55:53.550079",
+        "alert_sent": false
+      },
+      "5000": {
+        "port": 5000,
+        "service": "",
+        "state": "open",
+        "first_seen": "2026-06-07T17:55:53.550079",
+        "last_seen": "2026-06-07T17:55:53.550079",
+        "alert_sent": false
+      },
+      "5001": {
+        "port": 5001,
+        "service": "",
+        "state": "open",
+        "first_seen": "2026-06-07T17:55:53.550079",
+        "last_seen": "2026-06-07T17:55:53.550079",
+        "alert_sent": false
+      }
+    },
+    "last_scan": "2026-06-07T17:55:53.550079",
+    "unreachable": false
+  }
+}
