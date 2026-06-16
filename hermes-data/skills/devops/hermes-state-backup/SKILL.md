@@ -63,6 +63,32 @@ Excludes: `*.env`, `*.key`, `*.pem`, `*.secret`, `__pycache__/`, `*.pyc`, `.DS_S
 
 **Never commit:** auth.json, config.yaml (contains tokens), .env, state.db, sessions/.
 
+### Push Protection Pitfalls
+
+GitHub push protection can block `git push` with 403 even when "secrets" are just doc examples (`ghp_...` patterns in skill files). See `references/github-push-protection-pitfalls.md` for the full diagnosis and fix sequence (clean history + private repo + PAT in URL).
+
+### Auto-Sync Cron (github_shared_sync.py)
+
+Every 5 minutes, `github_shared_sync.py` (cron job_id=`59f5254858ef`, no_agent=True) automatically:
+1. Scans hermes skills/scripts/memories/cron for file changes (mtime comparison)
+2. Copies new/modified files to `~/hermes-shared/hermes-data/`
+3. Sanitizes .env → `.env.template` (all values → `***REDACTED***`), auth.json → `auth.json.template`
+4. Removes files from target that no longer exist in source
+5. `git add -A && git commit && git push origin main`
+
+**Run manually:** `python %LOCALAPPDATA%/hermes/scripts/github_shared_sync.py --once`
+
+**Exclusions (critical for performance):**
+| What | Why |
+|------|-----|
+| `node_modules/` | 11,000+ files, kills scan speed |
+| `buyer-development/`, `joinf-crm-edm/` | Heavy JSON outputs, not needed in repo |
+| `.hub/` cache | 38MB index file |
+| `.db`, `.pdf`, `.exe`, `.png` | Binary/large files |
+| `config.yaml` | Contains real API keys — NEVER commit |
+
+**Key implementation detail:** Use `os.walk()` with `dirs[:]` pruning, NOT `Path.rglob()`. rglob traverses excluded directories before filtering — node_modules caused 11,489 files to be checked individually. os.walk with `dirs[:] = [d for d in dirs if d not in EXCLUDE_DIRS]` drops to ~26 actual file checks.
+
 ### Kali's Rule
 
 > 以后如果hermes文件夹里有更新，都需要同步上去，并在聊天文件里，写上每个文件的详细说明
