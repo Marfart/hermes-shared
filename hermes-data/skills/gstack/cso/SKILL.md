@@ -868,10 +868,10 @@ Scan git history for leaked credentials, check tracked `.env` files, find CI con
 
 **Git history — known secret prefixes:**
 ```bash
-git log -p --all -S "AKIA" --diff-filter=A -- "*.env" "*.yml" "*.yaml" "*.json" "*.toml" 2>/dev/null
+git log -p --all -S "***AWS_PREFIX***" --diff-filter=A -- "*.env" "*.yml" "*.yaml" "*.json" "*.toml" 2>/dev/null
 git log -p --all -S "sk-" --diff-filter=A -- "*.env" "*.yml" "*.json" "*.ts" "*.js" "*.py" 2>/dev/null
-git log -p --all -G "ghp_|gho_|github_pat_" 2>/dev/null
-git log -p --all -G "xoxb-|xoxp-|xapp-" 2>/dev/null
+git log -p --all -G "***PAT_PREFIX***_|***PAT_PREFIX_O_|github_pat_" 2>/dev/null
+git log -p --all -G "***SLACK_BOT_|***SLACK_USER_|***SLACK_APP_" 2>/dev/null
 git log -p --all -G "password|secret|token|api_key" -- "*.env" "*.yml" "*.json" "*.conf" 2>/dev/null
 ```
 
@@ -888,7 +888,7 @@ for f in $(find .github/workflows -maxdepth 1 \( -name '*.yml' -o -name '*.yaml'
 done 2>/dev/null
 ```
 
-**Severity:** CRITICAL for active secret patterns in git history (AKIA, sk_live_, ghp_, xoxb-). HIGH for .env tracked by git, CI configs with inline credentials. MEDIUM for suspicious .env.example values.
+**Severity:** CRITICAL for active secret patterns in git history (***AWS_PREFIX***, ***STRIPE_LIVE_, ***PAT_PREFIX***_, ***SLACK_BOT_). HIGH for .env tracked by git, CI configs with inline credentials. MEDIUM for suspicious .env.example values.
 
 **FP rules:** Placeholders ("your_", "changeme", "TODO") excluded. Test fixtures excluded unless same value in non-test code. Rotated secrets still flagged (they were exposed). `.env.local` in `.gitignore` is expected.
 

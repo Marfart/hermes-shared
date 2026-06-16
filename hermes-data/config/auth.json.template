@@ -2,8 +2,8 @@
   "version": 1,
   "providers": {
     "spotify": {
-      "client_id": "315861094ce444f6acb6cddc32bd8a87",
-      "redirect_uri": "http://127.0.0.1:43827/spotify/callback",
+      "client_id": "***REDACTED***",
+      "redirect_uri": "http://***REDACTED***/spotify/callback",
       "accounts_base_url": "https://accounts.spotify.com",
       "api_base_url": "https://api.spotify.com/v1",
       "scope": "user-modify-playback-state user-read-playback-state user-read-currently-playing user-read-recently-played playlist-read-private playlist-read-collaborative playlist-modify-public playlist-modify-private user-library-read user-library-modify",
