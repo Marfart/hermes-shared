@@ -30,7 +30,9 @@ SYNC_MAP = {
 }
 
 # 排除规则
-EXCLUDE_DIRS = {".hub", "__pycache__", "node_modules", ".git", "cache", "logs"}
+EXCLUDE_DIRS = {".hub", "__pycache__", "node_modules", ".git", "cache", "logs",
+                   "buyer-development", "joinf-crm-edm", "product-knowledge",
+                   "buyer-development-watcher"}
 EXCLUDE_EXT = {".pdf", ".zip", ".exe", ".msi", ".7z", ".tar.gz", ".rar",
                ".png", ".jpg", ".jpeg", ".gif", ".bmp", ".ico",
                ".db", ".sqlite", ".sqlite3", ".pyc", ".lock",
