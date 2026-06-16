@@ -3,26 +3,124 @@
   "providers": {
     "spotify": {
       "client_id": "***REDACTED***",
-      "redirect_uri": "http://***REDACTED***/spotify/callback",
-      "accounts_base_url": "https://accounts.spotify.com",
-      "api_base_url": "https://api.spotify.com/v1",
-      "scope": "user-modify-playback-state user-read-playback-state user-read-currently-playing user-read-recently-played playlist-read-private playlist-read-collaborative playlist-modify-public playlist-modify-private user-library-read user-library-modify",
-      "granted_scope": "playlist-read-private playlist-read-collaborative user-modify-playback-state user-library-read user-library-modify playlist-modify-private playlist-modify-public user-read-playback-state user-read-currently-playing user-read-recently-played",
-      "token_type": "***",
-      "access_token": "***",
-      "refresh_token": "***",
-      "obtained_at": "2026-05-27T09:04:13.411539+00:00",
-      "expires_at": "2026-05-27T10:04:13.411539+00:00",
+      "redirect_uri": "***REDACTED***",
+      "accounts_base_url": "***REDACTED***",
+      "api_base_url": "***REDACTED***",
+      "scope": "***REDACTED***",
+      "granted_scope": "***REDACTED***",
+      "token_type": "***REDACTED***",
+      "access_token": "***REDACTED***",
+      "refresh_token": "***REDACTED***",
+      "obtained_at": "***REDACTED***",
+      "expires_at": "***REDACTED***",
       "expires_in": 3600,
-      "auth_type": "***"
+      "auth_type": "***REDACTED***"
     },
     "openai-codex": {
-      "tokens": "***",
-      "last_refresh": "2026-06-07T10:11:43.247879Z",
-      "auth_mode": "***"
+      "tokens": {
+        "id_token": "***REDACTED***",
+        "access_token": "***REDACTED***",
+        "refresh_token": "***REDACTED***",
+        "account_id": "***REDACTED***"
+      },
+      "last_refresh": "***REDACTED***",
+      "auth_mode": "***REDACTED***"
     }
   },
   "active_provider": null,
-  "updated_at": "2026-06-12T22:25:01.950834+00:00",
-  "credential_pool": "***"
+  "updated_at": "***REDACTED***",
+  "credential_pool": {
+    "deepseek": [
+      {
+        "id": "***REDACTED***",
+        "label": "***REDACTED***",
+        "auth_type": "***REDACTED***",
+        "priority": 0,
+        "source": "***REDACTED***",
+        "last_status": "***REDACTED***",
+        "last_status_at": null,
+        "last_error_code": null,
+        "last_error_reason": null,
+        "last_error_message": null,
+        "last_error_reset_at": null,
+        "base_url": "***REDACTED***",
+        "request_count": 0,
+        "secret_fingerprint": "***REDACTED***"
+      }
+    ],
+    "openai-codex": [
+      {
+        "id": "***REDACTED***",
+        "label": "***REDACTED***",
+        "auth_type": "***REDACTED***",
+        "priority": 0,
+        "source": "***REDACTED***",
+        "access_token": "***REDACTED***",
+        "refresh_token": "***REDACTED***",
+        "last_status": null,
+        "last_status_at": null,
+        "last_error_code": null,
+        "last_error_reason": null,
+        "last_error_message": null,
+        "last_error_reset_at": null,
+        "base_url": "***REDACTED***",
+        "last_refresh": "***REDACTED***",
+        "request_count": 0
+      }
+    ],
+    "ollama-cloud": [
+      {
+        "id": "***REDACTED***",
+        "label": "***REDACTED***",
+        "auth_type": "***REDACTED***",
+        "priority": 0,
+        "source": "***REDACTED***",
+        "last_status": "***REDACTED***",
+        "last_status_at": null,
+        "last_error_code": null,
+        "last_error_reason": null,
+        "last_error_message": null,
+        "last_error_reset_at": null,
+        "base_url": "***REDACTED***",
+        "request_count": 0,
+        "secret_fingerprint": "***REDACTED***"
+      }
+    ],
+    "copilot": [
+      {
+        "id": "***REDACTED***",
+        "label": "***REDACTED***",
+        "auth_type": "***REDACTED***",
+        "priority": 0,
+        "source": "***REDACTED***",
+        "last_status": null,
+        "last_status_at": null,
+        "last_error_code": null,
+        "last_error_reason": null,
+        "last_error_message": null,
+        "last_error_reset_at": null,
+        "base_url": "***REDACTED***",
+        "request_count": 0,
+        "secret_fingerprint": "***REDACTED***"
+      }
+    ],
+    "openrouter": [
+      {
+        "id": "***REDACTED***",
+        "label": "***REDACTED***",
+        "auth_type": "***REDACTED***",
+        "priority": 0,
+        "source": "***REDACTED***",
+        "last_status": "***REDACTED***",
+        "last_status_at": null,
+        "last_error_code": null,
+        "last_error_reason": null,
+        "last_error_message": null,
+        "last_error_reset_at": null,
+        "base_url": "***REDACTED***",
+        "request_count": 0,
+        "secret_fingerprint": "***REDACTED***"
+      }
+    ]
+  }
 }
