@@ -93,6 +93,95 @@ python "memories/脚本缓存/客户挖掘/report_generator.py" \
 4. 诚实说明客户需要自己解决的部分
 5. 解释为什么推荐这款而不是其他
 
+## Data Source: Joinf CRM API (authenticated, full customer database)
+
+直接从富通天下CRM通过API提取完整客户数据。需要登录态（CDP浏览器或cookie认证）。
+
+### Authentication
+1. CDP浏览器导航到 `https://cloud.joinf.com`（登录页）
+2. 填入账号密码（bliiot03 / [在.env中]）
+3. 点击「安全登录」按钮（腾讯拼图验证码会自动通过，或需手动滑动）
+4. 登录成功后cookie保持会话
+
+### API Endpoint
+```
+GET https://trade.joinf.com/rapi/d/customers?num={page}&paging=true&size={pageSize}&sortColumn=&sortType=&isAsterisk=0
+```
+
+### Data Structure
+- `result.data.headLists[]` — 75个列定义（name, columnName, type, dataDictionary）
+- `result.data.values[]` — 每条客户是完整JSON对象（不是数组！）
+- `result.totalRecords` — 总记录数
+- `result.totalPage` — 总页数
+
+### Key Fields (per customer object)
+| Field | 说明 | Example |
+|-------|------|---------|
+| `name` | 客户名称 | "Zip Automations Limited" |
+| `contactName` | 联系人 | "Oladimeji Fatona" |
+| `contactEmail` | 邮箱 | "dimeji.f@zipautomations.com" |
+| `contactMobile` | 手机 | "+234 2348135933718" |
+| `displayRegion` | 国家/地区 | "尼日利亚 NIGERIA" |
+| `displayType` | 客户类型 | "潜在工业客户"/"成交工业客户"/"成交家用客户" |
+| `source` | 来源 | "阿里询盘"/"官网询价"/"谷歌开发"/"领英开发" |
+| `description` | 备注 | 客户跟进历史 |
+| `webSite` | 企业网站 | "https://zipautomations.com/" |
+| `address` | 联系地址 | 完整地址 |
+| `displaySalesman` | 业务员 | "Kali Marfa(bliiot03)" |
+| `code` | 客户代码 | "C00001932" |
+| `displayCreateTime` | 创建时间 | Unix毫秒时间戳 |
+| `industryType` | 行业类型 | "系统集成商"/"自动化解决方案" |
+| `orderCount` | 成交订单数 | null或数字 |
+| `orderAmountUsd` | 成交金额USD | null或数字 |
+| `businessType` | 业务类型 | "代采"/"编程服务"等 |
+| `grade` | 客户等级 | null或等级 |
+| `cooperationPeriod` | 合作年限 | null或年数 |
+| `linkedinAccount` | LinkedIn | URL |
+| `faceBookCmpMain` | Facebook主页 | URL |
+
+### Pagination
+- 每页最多50条（size=50稳定，size=200返回空data）
+- 例：1948条 / 50 = 需40页
+
+### Data Verification (Kali铁律)
+提取数据后**必须验证**：
+1. **数据归属** — 确认是"我的客户"还是"公海"（tab=0 vs tab=1）
+2. **今日新增数** — 用displayCreateTime过滤今天UTC+8时间戳，确认与CRM页面一致
+3. **业务员分布** — 检查displaySalesman字段，确认数据来源
+4. **客户类型分布** — 检查displayType分布是否合理
+
+### Full Export Script
+```javascript
+// 在已登录的CDP浏览器中执行（Playwright evaluate）
+async () => {
+  const allCustomers = [];
+  const pageSize = 50;
+  const totalPages = Math.ceil(1948 / pageSize);
+  for (let page = 1; page <= totalPages; page++) {
+    const resp = await fetch(`/rapi/d/customers?num=${page}&paging=true&size=${pageSize}&sortColumn=&sortType=&isAsterisk=0`, {credentials: 'include'});
+    const result = await resp.json();
+    allCustomers.push(...(result.data?.values || []));
+  }
+  // Extract key fields and save
+  const export_data = allCustomers.map(c => ({
+    name: c.name, contact: c.contactName, email: c.contactEmail,
+    phone: c.contactMobile, country: c.displayRegion, type: c.displayType,
+    source: c.source, website: c.webSite, remark: c.description,
+    salesman: c.displaySalesman, code: c.code, industry: c.industryType,
+    orderCount: c.orderCount, orderAmountUsd: c.orderAmountUsd
+  }));
+  return JSON.stringify({total: allCustomers.length, data: export_data});
+}
+```
+
+### Capabilities
+- ✅ 读：全部1948条客户完整数据（API已验证）
+- ⚠️ 写：编辑客户名称等字段——API路径未知（见下方Pitfalls）
+- ✅ 写：新建客户、发邮件、加备注（UI操作，非API）
+- ✅ 沟通：WhatsApp/邮件集成
+- ✅ 商机：商机/报价/订单模块
+- ❌ 客户数据更新API：PUT/POST到`/rapi/d/customers`返回200+"系统繁忙"，`/save`/`/update`/`/edit`路径全部404。需通过UI操作编辑（见Pitfalls和`references/joinf-crm-write-api-attempts.md`）
+
 ## Alternative Data Source: LinkedIn X-ray (no login)
 
 LinkedIn does not expose emails or phone numbers on public profiles. The correct pipeline is:
@@ -120,3 +209,6 @@ Crawl website /contact /about /contact-us pages
 - JoinF enriched data has richer descriptions -> better match rate (~37%)
 - For LOW match customers (score <2), the text is generic
 - LinkedIn X-ray CANNOT extract emails or WhatsApp without login - always pair with company website crawl
+- **客户名称修改只能通过UI操作** — API端点全部失败（PUT/POST `/rapi/d/customers`返回"系统繁忙"，`/save`/`/update`/`/edit`返回404）。需要在客户详情页点击名字旁的编辑图标才能修改
+- **客户数据中的姓名错误需人工核对** — 例：邮箱显示英文名(Abhinav)但客户名写了俄文名(Вадим)，这类跨语言录入错误需要你主动发现并修正
+- **CDP Playwright MCP偶尔断连** — 长时间页面操作后Playwright MCP可能断连，需要重连或重新导航

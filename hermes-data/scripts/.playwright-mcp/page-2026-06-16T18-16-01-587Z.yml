@@ -1,0 +1,283 @@
+- generic [active] [ref=e1]:
+  - img:
+    - generic:
+      - generic "暂无数据"
+      - generic "形状"
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e5]
+        - generic [ref=e6]:
+          - list:
+            - listitem [ref=e7] [cursor=pointer]:
+              - link "外贸管理" [ref=e8]:
+                - /url: https://trade.joinf.com
+            - listitem [ref=e9] [cursor=pointer]:
+              - link "全球买家" [ref=e10]:
+                - /url: https://data.joinf.com?open=firstPage
+            - listitem [ref=e11] [cursor=pointer]:
+              - link "数据营销" [ref=e12]:
+                - /url: https://edmsys.joinf.com
+            - listitem [ref=e13] [cursor=pointer]:
+              - link "私域独立站" [ref=e14]:
+                - /url: https://sitehd.joinf.com
+            - listitem [ref=e15] [cursor=pointer]:
+              - link "广告营销" [ref=e16]:
+                - /url: https://adwords.joinf.com
+            - listitem [ref=e17] [cursor=pointer]:
+              - link "社媒营销" [ref=e18]:
+                - /url: https://sns.joinf.com
+            - listitem [ref=e19] [cursor=pointer]:
+              - link "经营看板" [ref=e20]:
+                - /url: https://stats.joinf.com/dashboard/10/reports/1967865884662165505
+            - listitem [ref=e21] [cursor=pointer]:
+              - link "AI Agent" [ref=e22]:
+                - /url: https://ai.joinf.com
+        - generic [ref=e23]:
+          - paragraph [ref=e24]:
+            - generic "AI助手" [ref=e25] [cursor=pointer]:
+              - img [ref=e26]
+              - generic "助手" [ref=e27]
+            - generic "客服" [ref=e28] [cursor=pointer]:
+              - img [ref=e29]
+              - generic "客服" [ref=e30]
+            - link "帮助" [ref=e31] [cursor=pointer]:
+              - /url: https://help.joinf.com/
+              - img [ref=e32]
+              - generic "帮助" [ref=e33]
+          - paragraph
+        - generic "消息" [ref=e35] [cursor=pointer]:
+          - generic "消息" [ref=e37]
+        - generic "更多" [ref=e38]:
+          - generic [ref=e40] [cursor=pointer]:
+            - img [ref=e41]
+            - generic "更多" [ref=e42]
+        - generic [ref=e43]: "[object Object]"
+        - generic [ref=e44]:
+          - generic:
+            - img [ref=e45] [cursor=pointer]
+            - generic [ref=e46] [cursor=pointer]:
+              - paragraph [ref=e47]: 你好!
+              - paragraph [ref=e49]: Kali Marfa
+      - generic [ref=e175]:
+        - button "搜索" [ref=e177] [cursor=pointer]:
+          - img [ref=e178]
+          - text: 搜索
+        - generic [ref=e180]: "|"
+        - text: 高级
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - menubar [ref=e55]:
+          - menuitem "常用" [ref=e56] [cursor=pointer]:
+            - link "常用" [ref=e57]:
+              - /url: https://trade.joinf.com/tms/commonUse/index
+              - img [ref=e58]
+              - text: 常用
+          - menuitem "工作台" [ref=e60] [cursor=pointer]:
+            - link "工作台" [ref=e61]:
+              - /url: https://trade.joinf.com/tms/system/index
+              - img [ref=e62]
+              - text: 工作台
+          - menuitem "审批中心" [ref=e64] [cursor=pointer]:
+            - link "审批中心" [ref=e65]:
+              - /url: https://trade.joinf.com/tms/reviewCenter
+              - img [ref=e66]
+              - text: 审批中心
+          - menuitem "邮件" [ref=e68] [cursor=pointer]:
+            - link "邮件" [ref=e69]:
+              - /url: https://trade.joinf.com/tms/email/manageEmail
+              - img [ref=e70]
+              - text: 邮件
+              - img [ref=e72]
+          - menuitem "沟通" [ref=e74]:
+            - generic [ref=e75] [cursor=pointer]:
+              - link "沟通" [ref=e76]:
+                - /url: https://trade.joinf.com/tms/wa?tab=0
+                - generic [ref=e77]:
+                  - img [ref=e78]
+                  - text: 沟通
+              - img [ref=e81]
+          - menuitem "客户" [expanded] [ref=e84]:
+            - generic [ref=e85] [cursor=pointer]:
+              - link "客户" [ref=e86]:
+                - /url: https://trade.joinf.com/tms/customer/customers?tab=0
+                - generic [ref=e87]:
+                  - img [ref=e88]
+                  - text: 客户
+              - img [ref=e91]
+            - menu [ref=e181]:
+              - menuitem "客户" [ref=e182] [cursor=pointer]:
+                - link "客户" [ref=e183]:
+                  - /url: https://trade.joinf.com/tms/customer/customers?tab=0
+                  - text: 客户
+                  - img [ref=e184]
+              - menuitem "公海" [ref=e186] [cursor=pointer]:
+                - link "公海" [ref=e187]:
+                  - /url: https://trade.joinf.com/tms/customer/customers?tab=1
+                  - text: 公海
+                  - img [ref=e188]
+          - menuitem "协同" [ref=e94]:
+            - generic [ref=e95] [cursor=pointer]:
+              - link "协同" [ref=e96]:
+                - /url: https://trade.joinf.com/tms/customer/customers_follow?tab=0
+                - generic [ref=e97]:
+                  - img [ref=e98]
+                  - text: 协同
+              - img [ref=e101]
+          - menuitem "商机" [ref=e104]:
+            - generic [ref=e105] [cursor=pointer]:
+              - link "商机" [ref=e106]:
+                - /url: https://trade.joinf.com/tms/business/index?tab=1
+                - generic [ref=e107]:
+                  - img [ref=e108]
+                  - text: 商机
+              - img [ref=e111]
+          - menuitem "产品" [ref=e114] [cursor=pointer]:
+            - link "产品" [ref=e115]:
+              - /url: https://trade.joinf.com/bms/combine/list/16
+              - img [ref=e116]
+              - text: 产品
+          - menuitem "业务" [ref=e118]:
+            - generic [ref=e119] [cursor=pointer]:
+              - link "业务" [ref=e120]:
+                - /url: https://trade.joinf.com/bms/combine/list/17
+                - generic [ref=e121]:
+                  - img [ref=e122]
+                  - text: 业务
+              - img [ref=e125]
+          - menuitem "供应商" [ref=e128]:
+            - generic [ref=e129] [cursor=pointer]:
+              - link "供应商" [ref=e130]:
+                - /url: https://trade.joinf.com/tms/supplier/suppliers?tab=0
+                - generic [ref=e131]:
+                  - img [ref=e132]
+                  - text: 供应商
+              - img [ref=e135]
+          - menuitem "云盘" [ref=e138]:
+            - generic [ref=e139] [cursor=pointer]:
+              - link "云盘" [ref=e140]:
+                - /url: https://trade.joinf.com/tms/cloudDish/manage_cloud_dish?tab=0
+                - generic [ref=e141]:
+                  - img [ref=e142]
+                  - text: 云盘
+              - img [ref=e145]
+        - img [ref=e151]
+      - generic [ref=e157]:
+        - generic [ref=e159]:
+          - generic:
+            - generic [ref=e191]:
+              - generic [ref=e193] [cursor=pointer]: 客户
+              - generic [ref=e3331] [cursor=pointer]:
+                - generic [ref=e3332]: Вадим
+                - generic [ref=e3333]: 
+              - img [ref=e196] [cursor=pointer]
+            - generic [ref=e3339]:
+              - banner [ref=e3340]:
+                - generic [ref=e3341]:
+                  - text: В
+                  - img [ref=e3343] [cursor=pointer]
+                - generic [ref=e3345]:
+                  - generic [ref=e3346]:
+                    - generic [ref=e3348]: "******"
+                    - generic [ref=e3349]: "|"
+                    - img [ref=e3351] [cursor=pointer]
+                    - img [ref=e3354] [cursor=pointer]
+                  - generic [ref=e3356]:
+                    - paragraph [ref=e3357]:
+                      - img [ref=e3358]
+                      - generic [ref=e3360]: C00001931
+                      - img [ref=e3363] [cursor=pointer]
+                    - generic [ref=e3365]: "|"
+                    - paragraph [ref=e3366]:
+                      - img [ref=e3367]
+                      - generic [ref=e3370]: "--"
+                    - generic [ref=e3371]: "|"
+                    - paragraph [ref=e3372]:
+                      - img [ref=e3373]
+                      - generic [ref=e3376]: "--"
+                  - generic [ref=e3377]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - list
+                    - generic [ref=e3378]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - list
+                      - generic [ref=e3379]:
+                        - generic [ref=e3380]:
+                          - text:  
+                          - img [ref=e3383] [cursor=pointer]
+                        - text: 
+                - generic [ref=e3385]: 最近联系 --
+                - generic [ref=e3386]:
+                  - button "AI背调" [ref=e3387] [cursor=pointer]
+                  - generic [ref=e3388]:
+                    - img [ref=e3391] [cursor=pointer]
+                    - img [ref=e3395] [cursor=pointer]
+                    - img [ref=e3399] [cursor=pointer]
+                  - generic [ref=e3402]:
+                    - generic [ref=e3404] [cursor=pointer]: 
+                    - generic [ref=e3406] [cursor=pointer]: 
+                  - generic [ref=e3407]:
+                    - button [ref=e3408] [cursor=pointer]:
+                      - img [ref=e3410]
+                    - text:  
+                  - generic [ref=e3415]:
+                    - generic [ref=e3416]:
+                      - text:  
+                      - generic [ref=e3420] [cursor=pointer]:
+                        - generic [ref=e3422]:
+                          - img [ref=e3425]
+                          - img [ref=e3430]
+                        - button "Choose File" [ref=e3432]
+                      - generic [ref=e3436] [cursor=pointer]:
+                        - generic [ref=e3438]:
+                          - img [ref=e3441]
+                          - img [ref=e3446]
+                        - button "Choose File" [ref=e3448]
+                      - generic [ref=e3452] [cursor=pointer]:
+                        - generic [ref=e3454]:
+                          - img [ref=e3457]
+                          - img [ref=e3462]
+                        - button "Choose File" [ref=e3464]
+                    - list [ref=e3465]:
+                      - listitem [ref=e3466] [cursor=pointer]:
+                        - button [ref=e3467]
+                      - listitem [ref=e3468] [cursor=pointer]:
+                        - button [ref=e3469]
+                      - listitem [ref=e3470] [cursor=pointer]:
+                        - button [ref=e3471]
+              - generic [ref=e3472]:
+                - definition [ref=e3476]:
+                  - generic [ref=e3479]:
+                    - generic [ref=e3480]:
+                      - generic [ref=e3481]: 联系人(1)
+                      - generic [ref=e3482]:
+                        - textbox "名称、邮箱" [ref=e3483]
+                        - generic [ref=e3485]: 
+                    - generic [ref=e3486]:
+                      - generic [ref=e3487] [cursor=pointer]: 批量操作
+                      - img [ref=e3489] [cursor=pointer]
+                    - group "checkbox-group":
+                      - generic [ref=e3493]:
+                        - heading "В Вадим" [level=6] [ref=e3494]:
+                          - generic [ref=e3495]:
+                            - text: В
+                            - img [ref=e3497]
+                          - generic [ref=e3500]:
+                            - generic [ref=e3501]: Вадим
+                            - img [ref=e3504] [cursor=pointer]
+                        - generic [ref=e3506]:
+                          - img [ref=e3509] [cursor=pointer]
+                          - generic [ref=e3513]:
+                            - generic [ref=e3514] [cursor=pointer]: Abhinav.global22@gmail.com
+                            - img [ref=e3516] [cursor=pointer]
+                        - generic [ref=e3518]:
+                          - img [ref=e3521] [cursor=pointer]
+                          - generic [ref=e3523]: "--"
+                        - img [ref=e3525] [cursor=pointer]
+                - generic:  
+        - generic:       

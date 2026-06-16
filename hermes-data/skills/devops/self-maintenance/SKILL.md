@@ -221,6 +221,56 @@ After gathering information, apply improvements:
   - After upgrade, verify: `cua-driver --version && cua-driver doctor`
 - **Auto Curator:** v0.15.0+ has an autonomous background Curator that grades, prunes, and consolidates the skill library. Periodically check if it ran (session log / cron output). It is built-in — no install needed.
 
+### Phase 7d: Model Health & Fallback Monitoring
+
+The LLM model is the single intellectual capability provider. Model unavailability = agent is brainless. A fallback system is essential.
+
+**Current model configuration (2026-06-17):**
+
+| Role | Provider | Model | When to use |
+|------|----------|-------|-------------|
+| **Primary** | `openrouter` | `owl-alpha` | Default |
+| **Fallback** | `ollama-cloud` | `glm-5.1` | Primary timeout/rate-limited |
+
+**⚠️ `hermes config` has NO `get` subcommand.** Only `show/edit/set/path/env-path/check/migrate`. To read the current model, parse config.yaml directly:
+```bash
+python -c "
+import yaml, os
+from pathlib import Path
+p = Path(os.environ['LOCALAPPDATA'], 'hermes', 'config.yaml')
+cfg = yaml.safe_load(p.read_text())
+m = cfg.get('model', {})
+print(f\"{m.get('provider','?')}/{m.get('model','?')}\")
+"
+```
+
+**Manual model switch:**
+```bash
+hermes config set model.provider <provider>
+hermes config set model.model <model>
+# Changes take effect on next message — no gateway restart needed
+```
+
+**Automated fallback script:** `%LOCALAPPDATA%/hermes/scripts/model_fallback_monitor.py`
+- Tests primary model health every 120s with a light request (max_tokens=5)
+- On 2 consecutive failures (timeout/429/connection error) → auto-switches to fallback
+- After primary recovers + 300s cooldown → auto-switches back
+- State persisted to `model_fallback_state.json`
+- Cron: `schedule: every 2m, no_agent: True, script: model_fallback_monitor.py, deliver: local`
+
+**Feishu has no separate model config** — it shares the main session's model. Feishu group's 小马 bot is a separate Hermes instance; model changes on that machine must be done independently.
+
+**When to check:**
+- After any cron-driven model-switch event
+- When user reports slow or missing replies
+- During Phase 7 proactive improvements
+
+**Pitfalls:**
+- OpenRouter 429 = rate limit (quota exhausted), triggers fallback
+- ollama-cloud timeout = local endpoint unresponsive, triggers fallback
+- `hermes config set` is instant — no restart required, next message uses new model
+- Fallback script must be silent on healthy runs (no_agent=True stdout = user message)
+
 ### Phase 7a: Gateway Process Health — Multi-Layer Watchdog Architecture (CRITICAL)
 
 The Gateway process (`hermes gateway run`) is the single point of failure for message delivery, cron scheduling, and platform connectivity. A **multi-layer** watchdog architecture is essential because cron-based watchdogs share fate with the gateway:
@@ -601,6 +651,7 @@ After completing a self-maintenance cycle, verify:
 
 Load these when you need deeper detail:
 
+- **`references/model-fallback-management.md`** — Model switch commands, current config (openrouter/owl-alpha primary, ollama-cloud/glm-5.1 fallback), fallback script logic, Feishu model sharing, and common scenarios. Load this when the user asks to change models, when a model times out, or when setting up the fallback monitor cron.
 - **`references/gateway-fallback-watchdog.md`** — Full reference implementation of the Windows Task Scheduler fallback watchdog for gateway process health. Covers the multi-layer watchdog architecture (Layer 1: OS-level schtasks, Layer 2: Hermes cron, Layer 3: internal retry), PID liveness checking via tasklist, GBK locale decoding for Chinese Windows, and the clean restart procedure. Load this when diagnosing "why didn't the watchdog restart the gateway" or setting up any platform-level process monitoring that must outlive the gateway process.
 - **`references/subagent-news-fabrication.md`** — Full transcript of a subagent news fabrication incident with detection method and prevention patterns. Load this when setting up a new self-maintenance cron job or whenever you're delegating research to subagents.
 - **`references/cron-finance-briefing-errors.md`** — Record of the daily finance briefing cron errors (Codex TTFB timeout + Weixin rate limiting). Load this when troubleshooting or reconfiguring the finance briefing cron.
