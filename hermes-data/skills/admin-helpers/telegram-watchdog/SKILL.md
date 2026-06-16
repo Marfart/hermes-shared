@@ -421,7 +421,36 @@ else:
 | 2 | **SSL证书验证间歇失败** | `SSLCertVerificationError: self-signed certificate in certificate chain` | L2 certifi升级 | 1-2次/天 |
 | 3 | **Cron突发限流** | `iLink sendmessage rate limited: ret=-2` | T0 静默等待 | Cron时段 |
 
-### 根因4 (最常见)：代理临时失活 — "端口活着但不通"
+### 根因4 (最常见)：Vortex mode=direct 配置陷阱
+
+**最危险的代理故障不是"代理挂了"，而是"代理配置静默切换到直连"。**
+
+**根因：** Vortex (Clash) 的 `~/.config/com.vortex.helper/config.yaml` 中 `mode: direct` 会**静默禁用所有代理路由规则**，所有流量直连不走代理。被GFW封锁的域名（api.openai.com、api.telegram.org等）全部连接超时。
+
+**症状：** 所有HTTPS API调用报 `Connection error` / `Retrying in Xs` / `Max retries exhausted`，但代理端口 7897 仍然 LISTENING（`netstat` 显示正常），ping 8.8.8.8 也通。**端口活着≠代理可用**。
+
+**诊断方法：**
+1. `grep "^mode:" ~/.config/com.vortex.helper/config.yaml` — 如果是 `direct` 就是根因
+2. 对比测试：`curl -x http://127.0.0.1:7897 https://api.openai.com/v1/models` vs `curl --noproxy "*" https://api.openai.com/v1/models`
+3. 代理返回超时/连接拒绝 + 直连也超时 = GFW封锁（代理没在转发）
+
+**修复：**
+```bash
+# 1. 改配置
+sed -i 's/^mode: direct/mode: rule/' ~/.config/com.vortex.helper/config.yaml
+
+# 2. 重启Vortex（ShellExecuteW runas提权杀进程，Vortex会自动重启）
+# 或者用Vortex API重载（如果external-controller端口可达）：
+curl -X PUT http://127.0.0.1:39797/configs -H "Content-Type: application/json" -d '{"path": ""}'
+
+# 3. 验证
+curl -s -o /dev/null -w "%{http_code}" -x http://127.0.0.1:7897 https://api.openai.com/v1/models
+# 期望: 401(可达) 或 200，不是 000(超时)
+```
+
+**跨机器诊断：** 当另一个bot（如小马）报告 `Retrying in Xs` + `API failed after 3 retries — Connection error` 时，先检查本机Vortex的 `mode:` 设置。两台机器共享同一网络环境，根因大概率相同。
+
+### 根因5 (常见)：代理临时失活 — "端口活着但不通"
 - **发现方法:** 16:19:32 微信和 Telegram **同一秒掉**，日志均为 SSL connect errors。`curl http://127.0.0.1:7897` 返回 **400**（代理端口侦听），但 `curl -x http://127.0.0.1:7897 https://www.baidu.com` 失败。代理进程（Vortex/com.vortex.helper PID 7724）没死但**不转发 HTTPS 流量**。
 - **特征:** 端口开放（netstat 可见 LISTENING），非阻塞，但透过代理的请求全部超时。机器处于背景模式（Session 0/空闲）时更容易触发——可能是代理的 GC 或路由切换。
 - **修复:** 看门狗 PROXY 层不能只检查端口是否打开，必须做**端到端代理转发检测**：`curl -s -o NUL -w "%{http_code}" -x http://127.0.0.1:7897 https://www.baidu.com`
@@ -574,7 +603,7 @@ Telegram bot 之间无法直接收到对方消息（安全策略），所以用 
 
 ### 相关参考
 - `references/weixin-disconnect-root-causes.md` — 断联根因清单 + 诊断步骤
-- `references/vortex-proxy-disconnect-pattern.md` — 2026-06-04 代理断流事件完整分析
+- `references/vortex-proxy-disconnect-pattern.md` — 2026-06-04 代理断流事件完整分析 + mode=direct配置陷阱诊断流程
 - `references/windows-process-pitfalls.md` — Windows 兼容性陷阱
 - `references/watchdog-v8-architecture-patterns.md` — httpx/APScheduler/FastAPI 模式在 v8 中的实现
 - `references/telegram-group-setup.md` — Telegram 群聊配置：Group Privacy 关闭 + 踢出重新拉入 + chat_id 获取

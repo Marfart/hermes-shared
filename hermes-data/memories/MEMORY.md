@@ -571,3 +571,7 @@ GitHub共享仓库自动同步已部署（2026-06-16）：
 - Kali铁律: hermes文件夹任何更新必须自动同步+聊天记录.md写per-file说明
 §
 SOM335价格修正：官方报价文件价格为$49（Sample），但实际为￥400人民币，按6.5汇率换算=$62。其他SOM型号也可能有类似偏差，报价前必须向公司确认最新SOM价格。已修正文件：1.报价文件/2026/202605 BLIIOT IIoT Gateways &BL116&BL118 Price List_Updated.xls。BL118B-SOM335-X4-Y02-Y31合计：Sample=$166，<100pcs=$154。
+§
+WhatsApp Business Cloud API webhook路线：Kali感兴趣用官方API接收WhatsApp客户消息（不是CDP爬虫）。需要：Meta Business账户+企业认证+专门商业号码+公网Webhook端点。客户主动发的服务对话免费，营销/实用消息按条收费。可搭Cloudflare Tunnel+Flask接收Webhook转发到飞书/TG。注意：这是商业号码不能和个人WhatsApp共用，且只能收新消息不能回溯历史。
+§
+Vortex proxy mode=direct 是小马(macOS)端API连接失败的最常见原因（2026-06-16实例）。症状：⏳ Retrying + ❌ Connection error。修复：改mode:direct→mode:rule + 重启Vortex。已通过GitHub共享仓库+Bot Relay+飞书群三渠道远程帮小马修复。

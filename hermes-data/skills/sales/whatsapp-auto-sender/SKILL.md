@@ -264,6 +264,11 @@ python whatsapp_bot.py help       # 帮助
 
 - ⚠️ WhatsApp Web 要求 **真实浏览器窗口**（headless 模式不可用）
 - ⚠️ 长时间闲置后 WhatsApp Web 自动 logout → 需重新扫 QR
+- ⚠️ **QR码提取方法（新版WhatsApp Web 2026-06验证）** — 新版WhatsApp Web的QR码是SVG而非canvas/img。提取方法：
+  1. **Playwright MCP 元素截图（最简单）**：`page.locator('[data-ref]').screenshot({path: 'qr.png'})` — 直接截QR码区域
+  2. **SVG→Canvas→PNG**：`document.querySelector('[data-ref] svg')` → XMLSerializer序列化 → Blob URL → Image加载 → Canvas绘制（可放大4-6x） → `canvas.toDataURL('image/png')`
+  3. **注意**：`img[alt*="QR"]` 选择器在新版可能无效，QR码不在`<img>`标签里，而是内嵌SVG。`document.querySelector('canvas')` 在QR码首次渲染后可能被回收（hasCanvas从true变false）
+  4. **Playwright连接方式**：用CDP连接已有Chrome（`browser_navigate`到web.whatsapp.com），或者直接用`mcp_playwright_browser_navigate` + `browser_snapshot`查看页面状态
 - ⚠️ 号码必须是国际格式（带 + 号前缀 + 国家码）
 - ⚠️ 号码不在 WhatsApp 上 → 脚本 `TimeoutException` 检测不到联系人 → 自动标记为 `not_found` 并跳过
 - ⚠️ 已经发过的号码默认被 `whatsapp_sent_registry.json` 挡住 → 不要怀疑是脚本 bug；要重发加 `--allow-resend`
