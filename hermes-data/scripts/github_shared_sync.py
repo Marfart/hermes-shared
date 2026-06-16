@@ -71,16 +71,22 @@ def run_git(*args, cwd: Path = SHARED_REPO, timeout: int = 30) -> tuple[int, str
         return -2, str(e)
 
 
-def should_skip(path: Path) -> bool:
+def should_skip(path: Path, src_root: Path = None) -> bool:
     """判断文件是否应跳过"""
     name = path.name
     if name in EXCLUDE_FILES:
         return True
     if path.suffix.lower() in EXCLUDE_EXT:
         return True
+    # 检查路径中任意部分是否匹配排除目录
     for part in path.parts:
         if part in EXCLUDE_DIRS:
             return True
+    # 也检查相对于源目录的路径
+    if src_root and path.is_relative_to(src_root):
+        for part in path.relative_to(src_root).parts:
+            if part in EXCLUDE_DIRS:
+                return True
     return False
 
 
@@ -95,7 +101,7 @@ def sync_directory(src: Path, dst: Path) -> tuple[int, int, int]:
     for item in src.rglob("*"):
         if not item.is_file():
             continue
-        if should_skip(item):
+        if should_skip(item, src_root=src):
             skipped += 1
             continue
 

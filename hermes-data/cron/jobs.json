@@ -106,15 +106,15 @@
       "schedule_display": "every 2m",
       "repeat": {
         "times": null,
-        "completed": 6341
+        "completed": 6342
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-29T09:19:50.549500+08:00",
-      "next_run_at": "2026-06-16T11:35:18.678962+08:00",
-      "last_run_at": "2026-06-16T11:33:18.678962+08:00",
+      "next_run_at": "2026-06-16T11:38:18.971705+08:00",
+      "last_run_at": "2026-06-16T11:36:18.971705+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -439,15 +439,15 @@
       "schedule_display": "*/2 * * * *",
       "repeat": {
         "times": null,
-        "completed": 905
+        "completed": 906
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-13T19:05:53.539204+08:00",
-      "next_run_at": "2026-06-16T11:36:00+08:00",
-      "last_run_at": "2026-06-16T11:34:20.786485+08:00",
+      "next_run_at": "2026-06-16T11:38:00+08:00",
+      "last_run_at": "2026-06-16T11:36:20.586954+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -530,15 +530,15 @@
       "schedule_display": "*/1 * * * *",
       "repeat": {
         "times": null,
-        "completed": 1103
+        "completed": 1104
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-15T16:46:49.518525+08:00",
-      "next_run_at": "2026-06-16T11:36:00+08:00",
-      "last_run_at": "2026-06-16T11:35:18.617175+08:00",
+      "next_run_at": "2026-06-16T11:37:00+08:00",
+      "last_run_at": "2026-06-16T11:36:18.680363+08:00",
       "last_status": "error",
       "last_error": "Script not found: C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\feishu_poll_daemon.py --once",
       "last_delivery_error": null,
@@ -575,15 +575,15 @@
       "schedule_display": "every 2m",
       "repeat": {
         "times": null,
-        "completed": 252
+        "completed": 253
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-15T22:53:28.139087+08:00",
-      "next_run_at": "2026-06-16T11:37:18.574844+08:00",
-      "last_run_at": "2026-06-16T11:32:35.646134+08:00",
+      "next_run_at": "2026-06-16T11:37:36.131609+08:00",
+      "last_run_at": "2026-06-16T11:35:36.131609+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -642,5 +642,5 @@
       "profile": null
     }
   ],
-  "updated_at": "2026-06-16T11:35:20.494547+08:00"
+  "updated_at": "2026-06-16T11:36:20.587985+08:00"
 }
