@@ -64,8 +64,7 @@ Y24 (Relay) and Y31 (4-20mA), Y56 (Resistance), Y57 (Voltage) have `/` (no price
 File: `BL10x塑胶外壳USD报价单20240628.xls`
 Same layout as IIoT Gateways: Col 2=Model, 3=Sample, 4=50pcs, 5=100pcs, 6=500pcs
 
-⚠️ BA series (BACnet gateways) Physically appear in IIoT Gateways xls sheets but their
-CORRECT price source is this BL10x file. Always verify product line before selecting source.
+⚠️ BA series (BACnet gateways) physically appear in IIoT Gateways xls sheets AND in this BL10x file. For BA110/BA111/BA112/BA113/BA115 series, **use the 202605 IIoT Gateways file** (latest prices). This BL10x file (20240628) has older prices and should only be used for models that exist ONLY here (BA100, BA101, BA102, etc.).
 
 ## IIoT Gateways File Format
 
@@ -199,6 +198,28 @@ conn.commit()  # ← commit per file section
 ## BA Series Source Clarification
 
 ⚠️ BA series (BACnet gateways: BA110, BA110P, BA110W, BA108, BA108P, etc.) physically appear in the **Building HVAC section** of the IIoT Gateways file (Row 254+). Their prices from the **202605 IIoT Gateways file are CORRECT** (e.g. BA110P Sample=$92). Do NOT substitute BL10x file prices for BA series — the 202605 IIoT Gateways file is the authoritative latest price list.
+
+### ⚠️ BA Series Price Source — CRITICAL PITFALL
+
+The BL10x section below says "CORRECT price source is this BL10x file" — this is **WRONG for BA110/BA111/BA112/BA113/BA115 series**. Those models exist in BOTH files, but the **202605 IIoT Gateways file has the latest prices**. The BL10x file (20240628) has older prices (e.g. BA110P=$80 vs $92 in 202605). Only use BL10x for models that exist ONLY in that file (e.g. BA100, BA101, BA102 series).
+
+### BA115 Full Model Price Table (50pcs tier, 202605 file, verified from raw Excel)
+
+When user asks for BA115 pricing, the full model list in the IIoT Gateways sheet (rows 322-343) is:
+BA115, BA115L 4G L-CE, BA115L 4G L-E, BA115L 4G L-AU, BA115L 4G L-A, BA115L 4G CAT-1,
+BA115LG 4G L-CE, BA115LG 4G L-E, BA115LG 4G L-AU, BA115LG 4G L-A,
+BA115W, BA115P, BA115PL 4G L-CE, BA115PL 4G L-E, BA115PL 4G L-AU, BA115PL 4G L-A, BA115PL 4G CAT-1,
+BA115PLG 4G L-CE, BA115PLG 4G L-E, BA115PLG 4G L-AU, BA115PLG 4G L-A,
+BA115PW
+
+Key prices at 50pcs tier (rounded): BA115=$63, BA115L L-E=$102, BA115LG L-E=$104, BA115W=$71, BA115P=$92, BA115PL L-E=$131, BA115PLG L-E=$133, BA115PW=$100.
+
+### ⚠️ Quotation Calculation Rules (User Corrections)
+
+1. **Shipping is PER-MODEL, not divided** — if user says "运费$55", each model gets $55 added, NOT $55÷N split across models.
+2. **Shipping ALSO gets multiplied by the surcharge** — if the unit price is ×1.03, shipping $55 becomes $55×1.03=$56.65. Do NOT add raw shipping on top of already-surcharged goods.
+3. **Format: separate sections for with/without shipping** — user wants "不含运费" and "含运费" as two separate blocks, not mixed on the same line.
+4. **Keep it simple: model name + price only** — when user says "只要型号和价格", don't add extra columns, explanations, or calculation breakdowns.
 
 The BL10x file (`BL10x塑胶外壳USD报价单20240628.xls`) has the same BA series models at older/outdated prices ($80 vs $92 for BA110P Sample). Only use it when specifically asked for historical pricing.
 
@@ -382,7 +403,7 @@ BL103 sub-models in 202605 Gateways file:
 
 - ❌ **YAML `\\U` escape in Windows paths** — always use single quotes `'C:/Users/...'` or forward slashes `C:/Users/...`. Double-quoted `"C:\\Users\\..."` crashes because YAML interprets `\\U` as a unicode escape sequence.
 - ❌ **Treating "N/A" Samples as a valid price** — RTU & Router file M160E and other Mxxx models have Samples=N/A. This means NO sample price. Fall back to <50Pcs tier, do NOT use N/A as zero.
-- ❌ Deleting prices then only re-importing from ONE file → must re-import ALL files
+- ❌ deleting prices then only re-importing from ONE file → must re-import ALL files
 - ❌ Not committing between file sections → crash loses all prior work
 - ❌ Filtering X0~X9 by `len(model) < 3` → these are valid 2-char model names
 - ❌ Reading Y-board prices from Col 7/8 (that's the RIGHT-side board) — use Col 2/3 for left, Col 7/8 for right
@@ -390,6 +411,11 @@ BL103 sub-models in 202605 Gateways file:
 - ❌ Not rounding prices to integers → xlrd returns 92.38893712 instead of 92
 - ❌ Script crashes mid-import → commit per section so partial progress is preserved
 - ❌ Presenting composite/combined quotes → user wants each component listed separately with a total row
+- ❌ **Dividing shipping across models** — when user says "运费$55" or "运费$65", each model gets the FULL shipping amount, not shipping÷N.
+- ❌ **Not multiplying shipping by surcharge** — if prices are ×1.03, shipping is ALSO ×1.03. Total = (unit_price × qty × 1.03) + (shipping × 1.03).
+- ❌ **Mixing with-shipping and without-shipping on same line** — user wants two SEPARATE sections: "不含运费" block and "含运费" block.
+- ❌ **Adding extra columns when user says "只要型号和价格"** — just model name and final price, no breakdown columns.
+- ❌ **Y03 does not exist** — Y-board models are: Y01, Y02, Y11, Y12, Y13, Y21, Y22, Y24, Y31, Y33, Y34, Y36, Y37, Y41, Y43, Y46, Y51, Y52, Y53, Y54, Y56, Y57, Y58, Y63, Y95, Y96. If user asks for Y03, flag it immediately.
 
 ## ARMxy Modular Pricing (Host + SOM + X Board + Optional Module)
 

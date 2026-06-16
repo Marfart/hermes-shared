@@ -309,14 +309,53 @@ When tools above don't have what's needed, generate ASCII art directly using the
 - Max height: 15 lines for banners, 25 for scenes
 - Monospace only: output must render correctly in fixed-width fonts
 
+## Tool 10: ASCII Video Production (Video/Audio → Colored ASCII MP4/GIF)
+
+For animated ASCII output — converting video or audio into colored ASCII character video — use the dedicated ASCII Video pipeline. This extends the static image-to-ASCII approach above into frame-sequential animation with sound.
+
+**When to use:** user asks for ASCII video, terminal-style animation, retro text visualization, audio-reactive ASCII art, Matrix-style effects, or any animated ASCII output.
+
+**Workflow:** Single Python script per project using NumPy + Pillow + ffmpeg.
+
+**Modes:** Video-to-ASCII (recreate source footage), Audio-reactive (generative visuals driven by audio features), Generative (procedural ASCII animation without input), Lyrics/text (timed text with visual effects).
+
+**Pipeline:** `INPUT → ANALYZE → SCENE_FUNCTIONS → TONEMAP → SHADE → ENCODE`
+
+**Key commands (quick start):**
+```bash
+# From the ascii-video pipeline reference
+python ascii_video.py video.mp4               # default ASCII output
+python ascii_video.py audio.mp3 --audio-mode   # audio-reactive visualizer
+python ascii_video.py --help                   # full options
+```
+
+**Architecture highlights:**
+- Character density ramps (light→dark): block elements, geometric, katakana/greek
+- Multi-density grid rendering with `_render_vf()` bitmap cache
+- Adaptive tonemap (percentile-based brightness normalization) — critical for ASCII-on-black readability
+- ShaderChain pipeline with 38 shader effects (CRT, glitch, bloom, feedback)
+- Per-scene config: different character palette, background effect, color strategy per section
+
+**References (migrated from ascii-video):**
+Load these for detail:
+- `ascii-video/architecture.md` — Grid system, font selection, character palettes, color system
+- `ascii-video/composition.md` — Blend modes, adaptive tonemap, masking, FeedbackBuffer
+- `ascii-video/effects.md` — Background generators, particle systems, coordinate transforms
+- `ascii-video/inputs.md` — Video/audio/image/text input handling and analysis
+- `ascii-video/optimization.md` — Hardware detection, quality profiles, parallel rendering
+- `ascii-video/scenes.md` — Scene protocol, beat-synced cutting, design patterns
+- `ascii-video/shaders.md` — ShaderChain, 38 shader effects, transitions
+- `ascii-video/troubleshooting.md` — NumPy traps, brightness diagnostics, ffmpeg issues
+
 ## Decision Flow
 
-1. **Text as a banner** → pyfiglet if installed, otherwise asciified API via curl
-2. **Wrap a message in fun character art** → cowsay
-3. **Add decorative border/frame** → boxes (can combine with pyfiglet/asciified)
-4. **Art of a specific thing** (cat, rocket, dragon) → ascii.co.uk via curl + parsing
-5. **Convert an image to ASCII** → ascii-image-converter or jp2a
-6. **QR code** → qrenco.de via curl
-7. **Weather/moon art** → wttr.in via curl
-8. **Something custom/creative** → LLM generation with Unicode palette
-9. **Any tool not installed** → install it, or fall back to next option
+1. **Text as a banner (static)** → Tool 1 (pyfiglet) or Tool 2 (asciified API via curl)
+2. **Wrap a message in fun character art** → Tool 3 (cowsay)
+3. **Add decorative border/frame** → Tool 4 (boxes) — can combine with Tool 1/2
+4. **Art of a specific thing** (cat, rocket, dragon) → Tool 7 (ascii.co.uk via curl + parsing)
+5. **Convert an image to ASCII** (static) → Tool 6 (ascii-image-converter or jp2a)
+6. **Animated ASCII / audio-reactive** → Tool 10 (ASCII Video pipeline)
+7. **QR code** → Tool 8 (qrenco.de via curl)
+8. **Weather/moon art** → Tool 8 (wttr.in via curl)
+9. **Something custom/creative** → Tool 9 (LLM generation with Unicode palette)
+10. **Any tool not installed** → install it, or fall back to next option

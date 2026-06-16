@@ -1,0 +1,689 @@
+{
+  "jobs": [
+    {
+      "id": "d9cdda215253",
+      "name": "\u6bcf\u65e5\u81ea\u66f4\u65b0",
+      "prompt": "\u68c0\u67e5Hermes Agent\u65b0\u7248\u672c",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "self_update_checker.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 12 * * *",
+        "display": "0 12 * * *"
+      },
+      "schedule_display": "0 12 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 17
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-27T09:32:53.780748+08:00",
+      "next_run_at": "2026-06-17T12:00:00+08:00",
+      "last_run_at": "2026-06-16T12:00:50.180847+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "telegram",
+      "origin": {
+        "platform": "weixin",
+        "chat_id": "o9cq8070r0xMj4UVxbbaTsB-MBlk@im.wechat",
+        "chat_name": null,
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "01837ee19638",
+      "name": "\u6bcf\u65e5\u8d22\u7ecf\u7b80\u62a5+\u57fa\u91d1\u63a8\u8350+\u8d22\u7ecf\u95ee\u7b54",
+      "prompt": "\u751f\u6210\u6bcf\u65e5\u8d22\u7ecf\u65e5\u62a5PDF\u5b58\u684c\u9762",
+      "skills": [],
+      "skill": null,
+      "model": "deepseek-v4-flash",
+      "provider": "ollama-cloud",
+      "base_url": null,
+      "script": "financial_daily.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 8 * * 1-5",
+        "display": "30 8 * * 1-5"
+      },
+      "schedule_display": "30 8 * * 1-5",
+      "repeat": {
+        "times": null,
+        "completed": 14
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-28T12:26:06.717897+08:00",
+      "next_run_at": "2026-06-17T08:30:00+08:00",
+      "last_run_at": "2026-06-16T08:30:52.008791+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "telegram",
+      "origin": {
+        "platform": "weixin",
+        "chat_id": "o9cq8070r0xMj4UVxbbaTsB-MBlk@im.wechat",
+        "chat_name": null,
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "6882df9f6b5c",
+      "name": "\u7535\u8111\u5c0f\u536b\u58eb",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "guard_monitor.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 2,
+        "display": "every 2m"
+      },
+      "schedule_display": "every 2m",
+      "repeat": {
+        "times": null,
+        "completed": 6510
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-29T09:19:50.549500+08:00",
+      "next_run_at": "2026-06-16T19:57:15.188042+08:00",
+      "last_run_at": "2026-06-16T19:55:15.188042+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "telegram",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "ce10fb0eacee",
+      "name": "buyer-development \u6587\u4ef6\u770b\u95e8\u72d7",
+      "prompt": "Buyer development file watcher \u2014 silent watchdog that reports changes.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "buyer-development-watcher/watch_files.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 5,
+        "display": "every 5m"
+      },
+      "schedule_display": "every 5m",
+      "repeat": {
+        "times": null,
+        "completed": 2893
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-02T09:50:40.645932+08:00",
+      "next_run_at": "2026-06-16T20:00:15.218443+08:00",
+      "last_run_at": "2026-06-16T19:55:15.218443+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "telegram",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "0d232901ed33",
+      "name": "\u5b9e\u65f6\u540c\u6b65\u5b88\u62a4\u68c0\u67e5",
+      "prompt": "\u68c0\u67e5 hermes_live_sync \u5b88\u62a4\u8fdb\u7a0b\u662f\u5426\u6d3b\u7740\uff0c\u4e0d\u5728\u5c31\u91cd\u542f",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "check_live_sync_alive.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 5,
+        "display": "every 5m"
+      },
+      "schedule_display": "every 5m",
+      "repeat": {
+        "times": null,
+        "completed": 2763
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-02T22:55:22.564303+08:00",
+      "next_run_at": "2026-06-16T20:00:15.508816+08:00",
+      "last_run_at": "2026-06-16T19:55:15.508816+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "weixin",
+        "chat_id": "o9cq8070r0xMj4UVxbbaTsB-MBlk@im.wechat",
+        "chat_name": null,
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal"
+      ],
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "366f34e9bf5e",
+      "name": "Wiki \u5b9a\u671f Lint \u7ef4\u62a4",
+      "prompt": "Wiki Lint\u68c0\u67e5",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "wiki_lint.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 6 * * 1",
+        "display": "0 6 * * 1"
+      },
+      "schedule_display": "0 6 * * 1",
+      "repeat": {
+        "times": null,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-02T23:19:19.250122+08:00",
+      "next_run_at": "2026-06-22T06:00:00+08:00",
+      "last_run_at": "2026-06-08T06:00:15.411665+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "telegram",
+      "origin": {
+        "platform": "weixin",
+        "chat_id": "o9cq8070r0xMj4UVxbbaTsB-MBlk@im.wechat",
+        "chat_name": null,
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "af5f3c06d347",
+      "name": "\ud83d\udd0d \u667a\u80fd\u770b\u95e8\u72d7 v10",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "smart_watchdog_v10.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 2,
+        "display": "every 2m"
+      },
+      "schedule_display": "every 2m",
+      "repeat": {
+        "times": null,
+        "completed": 5285
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-03T11:38:26.059951+08:00",
+      "next_run_at": "2026-06-16T19:57:14.718306+08:00",
+      "last_run_at": "2026-06-16T19:52:15.971161+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "b78688dcb23f",
+      "name": "\u8fdb\u7a0b\u7a7a\u95f2\u6740\u624b (idle-killer)",
+      "prompt": "\u8fd0\u884c\u8fdb\u7a0b\u7a7a\u95f2\u6740\u624b\u811a\u672c\uff0c\u6740\u63892\u5c0f\u65f6\u5185\u65e0\u4efb\u4f55\u6d3b\u52a8\u7684\u8fdb\u7a0b",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "idle_killer.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 5,
+        "display": "every 5m"
+      },
+      "schedule_display": "every 5m",
+      "repeat": {
+        "times": null,
+        "completed": 2566
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-03T18:04:12.550017+08:00",
+      "next_run_at": "2026-06-16T19:55:25.149225+08:00",
+      "last_run_at": "2026-06-16T19:50:25.149225+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "1927098909e2",
+      "name": "\ud83c\udf05 \u5c0f\u9a6c\u65e5\u62a5\uff08\u65e9\uff09",
+      "prompt": "\u73b0\u57286:25\u4e86\uff01\u52a0\u8f7d xiaoma-daily-briefing \u6280\u80fd\uff0c\u6309\u4ee5\u4e0b\u65f6\u95f4\u8282\u594f\u6267\u884c\uff1a\n\n1. 6:25-6:30 \u2014 \u5feb\u901f\u626b\u63cf\u5168\u90e87\u4e2a\u4fe1\u606f\u6e90\uff0c\u6536\u96c6\u7d20\u6750\n2. 6:30-6:55 \u2014 \u505a\u7b14\u8bb0\u3001\u6df1\u5165\u601d\u8003\u3001\u8de8\u9886\u57df\u8fde\u63a5\u3001\u5224\u65ad\u975e\u5171\u8bc6\u4fe1\u53f7\n3. 6:55-7:00 \u2014 \u6309\u683c\u5f0f\u5199\u51fa\u5b8c\u6574\u7b80\u62a5\n4. 7:00\u51c6\u65f6\u901a\u8fc7deliver\u53d1\u9001\u7ed9Kali\n\n\u4e00\u5206\u949f\u90fd\u4e0d\u8981\u63d0\u524d\u53d1\uff017:00\u518d\u53d1\u9001\u3002",
+      "skills": [
+        "xiaoma-daily-briefing"
+      ],
+      "skill": "xiaoma-daily-briefing",
+      "model": "deepseek-v4-flash",
+      "provider": "ollama-cloud",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "25 6 * * *",
+        "display": "25 6 * * *"
+      },
+      "schedule_display": "25 6 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 4
+      },
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-06-16T08:53:08.936379+08:00",
+      "paused_reason": null,
+      "created_at": "2026-06-11T01:36:04.327376+08:00",
+      "next_run_at": "2026-06-17T06:25:00+08:00",
+      "last_run_at": "2026-06-16T06:44:19.185684+08:00",
+      "last_status": "error",
+      "last_error": "RuntimeError: Response remained truncated after 3 continuation attempts",
+      "last_delivery_error": null,
+      "deliver": "telegram",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "8314311281",
+        "chat_name": "Kali",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "d1959db67879",
+      "name": "\ud83c\udf06 \u5c0f\u9a6c\u65e5\u62a5\uff08\u665a\uff09",
+      "prompt": "\u73b0\u572818:25\u4e86\uff01\u52a0\u8f7d xiaoma-daily-briefing \u6280\u80fd\uff0c\u6309\u4ee5\u4e0b\u65f6\u95f4\u8282\u594f\u6267\u884c\uff1a\n\n1. 18:25-18:30 \u2014 \u5feb\u901f\u626b\u63cf\u5168\u90e87\u4e2a\u4fe1\u606f\u6e90\uff0c\u6536\u96c6\u7d20\u6750\n2. 18:30-18:55 \u2014 \u505a\u7b14\u8bb0\u3001\u6df1\u5165\u601d\u8003\u3001\u8de8\u9886\u57df\u8fde\u63a5\u3001\u5224\u65ad\u975e\u5171\u8bc6\u4fe1\u53f7\n3. 18:55-19:00 \u2014 \u6309\u683c\u5f0f\u5199\u51fa\u5b8c\u6574\u7b80\u62a5\n4. 19:00\u51c6\u65f6\u901a\u8fc7deliver\u53d1\u9001\u7ed9Kali\n\n\u4e00\u5206\u949f\u90fd\u4e0d\u8981\u63d0\u524d\u53d1\uff0119:00\u518d\u53d1\u9001\u3002",
+      "skills": [
+        "xiaoma-daily-briefing"
+      ],
+      "skill": "xiaoma-daily-briefing",
+      "model": "deepseek-v4-flash",
+      "provider": "ollama-cloud",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "25 18 * * *",
+        "display": "25 18 * * *"
+      },
+      "schedule_display": "25 18 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 5
+      },
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-06-16T08:53:11.237024+08:00",
+      "paused_reason": null,
+      "created_at": "2026-06-11T01:36:14.885225+08:00",
+      "next_run_at": "2026-06-16T18:25:00+08:00",
+      "last_run_at": "2026-06-15T18:36:26.071789+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "telegram",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "8314311281",
+        "chat_name": "Kali",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "7c35e3b152bf",
+      "name": "\ud83d\udc34 \u5c0f\u9a6c\u8f6e\u8be2\u5b66\u5f1f\u6d88\u606f(\u667a\u80fd\u56de\u590d)",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "poll_xuedi_notify.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/2 * * * *",
+        "display": "*/2 * * * *"
+      },
+      "schedule_display": "*/2 * * * *",
+      "repeat": {
+        "times": null,
+        "completed": 1151
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-13T19:05:53.539204+08:00",
+      "next_run_at": "2026-06-16T19:56:00+08:00",
+      "last_run_at": "2026-06-16T19:54:20.098266+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "8314311281",
+        "chat_name": "Kali",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "web"
+      ],
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "de31a0c4a9b2",
+      "name": "\ud83d\udd0c \u8fde\u63a5\u6c60\u8d85\u65f6\u68c0\u6d4b\u5668",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "pool_timeout_detector.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 3,
+        "display": "every 3m"
+      },
+      "schedule_display": "every 3m",
+      "repeat": {
+        "times": null,
+        "completed": 529
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-13T23:16:23.897064+08:00",
+      "next_run_at": "2026-06-16T19:58:15.447559+08:00",
+      "last_run_at": "2026-06-16T19:55:15.447559+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "8314311281",
+        "chat_name": "Kali",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal"
+      ],
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "a32bc1af86ea",
+      "name": "\ud83d\udd04 \u98de\u4e66\u7fa4\u6d88\u606f\u8f6e\u8be2(10s)",
+      "prompt": "\u98de\u4e66\u7fa4\u6d88\u606f\u8f6e\u8be2\u515c\u5e95\uff08cron\u6bcf1\u5206\u949f\u8dd1\u4e00\u6b21 --once \u6a21\u5f0f\uff09",
+      "skills": [],
+      "skill": null,
+      "model": "deepseek-v4-flash",
+      "provider": "ollama-cloud",
+      "base_url": null,
+      "script": "feishu_poll_daemon.py --once",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/1 * * * *",
+        "display": "*/1 * * * *"
+      },
+      "schedule_display": "*/1 * * * *",
+      "repeat": {
+        "times": null,
+        "completed": 1590
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-15T16:46:49.518525+08:00",
+      "next_run_at": "2026-06-16T19:56:00+08:00",
+      "last_run_at": "2026-06-16T19:55:14.824097+08:00",
+      "last_status": "error",
+      "last_error": "Script not found: C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\feishu_poll_daemon.py --once",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "feishu",
+        "chat_id": "oc_1a238a6016460ec51c602048a88aca70",
+        "chat_name": "\u9a6c\u4e0a\u6210\u529f",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal"
+      ],
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "7cedf9c18724",
+      "name": "\u5854\u5947\u514b\u9a6c\u5171\u4eab\u4ed3\u5e93\u8f6e\u8be2",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "tachikoma_shared_poller.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 2,
+        "display": "every 2m"
+      },
+      "schedule_display": "every 2m",
+      "repeat": {
+        "times": null,
+        "completed": 414
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-15T22:53:28.139087+08:00",
+      "next_run_at": "2026-06-16T19:57:31.116023+08:00",
+      "last_run_at": "2026-06-16T19:55:31.116023+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "telegram",
+      "origin": {
+        "platform": "feishu",
+        "chat_id": "oc_1a238a6016460ec51c602048a88aca70",
+        "chat_name": "\u9a6c\u4e0a\u6210\u529f",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "f241789728fd",
+      "name": "\ud83d\udc34 hermes-shared \u81ea\u52a8\u540c\u6b65",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "sync_to_github.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 */2 * * *",
+        "display": "0 */2 * * *"
+      },
+      "schedule_display": "0 */2 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 4
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-16T10:38:19.627289+08:00",
+      "next_run_at": "2026-06-16T20:00:00+08:00",
+      "last_run_at": "2026-06-16T18:01:31.167005+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "8314311281",
+        "chat_name": "Kali",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "59f5254858ef",
+      "name": "\ud83d\udd04 GitHub\u5171\u4eab\u4ed3\u5e93\u81ea\u52a8\u540c\u6b65",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "github_shared_sync.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-06-16T11:43:37.275191+08:00",
+        "display": "once in 5m"
+      },
+      "schedule_display": "once in 5m",
+      "repeat": {
+        "times": 99999,
+        "completed": 1
+      },
+      "enabled": false,
+      "state": "completed",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-16T11:38:31.617119+08:00",
+      "next_run_at": null,
+      "last_run_at": "2026-06-16T11:46:19.515707+08:00",
+      "last_status": "error",
+      "last_error": "Script timed out after 120s: C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\github_shared_sync.py",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "8314311281",
+        "chat_name": "Kali",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    }
+  ],
+  "updated_at": "2026-06-16T19:55:31.119065+08:00"
+}

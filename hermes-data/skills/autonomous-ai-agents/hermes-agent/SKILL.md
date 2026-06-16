@@ -687,7 +687,35 @@ User docs: https://hermes-agent.nousresearch.com/docs/user-guide/features/curato
 
 ### Kanban (multi-agent work queue)
 
-Durable SQLite board for multi-profile / multi-worker collaboration.
+Durable SQLite board for multi-profile / multi-worker collaboration. [...existing kanban content...]
+
+### State Backup & Sync (Hermes State Persistence)
+
+Cross-directory real-time sync of Hermes state to a cloud-synced backup directory (Google Drive, Dropbox, etc.) using a watchdog-based live sync daemon.
+
+**Architecture:**
+```
+%LOCALAPPDATA%/hermes/     ──实时同步(毫秒级)──▶   Desktop/Working/Hermes/
+    ↑ watchdog 监听文件系统                           ↑ Google Drive 自动备份云端
+```
+
+**What gets synced:** `config.yaml`, `.env`, `auth.json`, `skills/` (full), `scripts/` (full), `memories/` (full), `cron/`, `weixin/`, `plugins/`, `SOUL.md`
+
+**What's excluded:** `logs/`, `state.db` (session DB), `cache/`, `sessions/`, `hermes-agent/` source code, `venv/`, `node_modules/`
+
+**Components:**
+1. **Live Sync Daemon** (`scripts/hermes_live_sync.py`) — Python `watchdog`-based real-time file watcher with 500ms debounce and MD5 content dedup
+2. **Startup Autostart** — `.cmd` in Windows Startup folder; checks PID file first to avoid duplicates
+3. **Crash Recovery Cron** (every 5min, no_agent=True) — checks daemon PID via tasklist; restarts if dead
+4. **GitHub Shared Repo Sync** (`scripts/github_shared_sync.py`, every 5min) — syncs sanitized config/skills/scripts to a cross-machine GitHub repo
+
+**Key Windows pitfalls:**
+- `os.kill(pid, 0)` crashes on git-bash Python → use `tasklist` instead
+- Chinese locale output is GBK-encoded → `.decode("gbk", errors="replace")`
+- PID files survive reboot → startup script handles orphan PIDs
+- `pip install watchdog` needed (not bundled)
+
+**Full detail:** `references/state-backup/github-push-protection-pitfalls.md` (GitHub push protection and recovery).
 Users drive it via `hermes kanban <verb>`; dispatcher-spawned workers
 see a focused `kanban_*` toolset gated by `HERMES_KANBAN_TASK`, and
 orchestrator profiles can opt into the broader `kanban` toolset. Normal
@@ -857,6 +885,46 @@ Common gateway problems:
 - **Windows cron no_agent encoding** — Chinese/emoji output from `no_agent=True` cron scripts appears garbled (mojibake). The cron system decodes stdout with cp936 (GBK). Set script encoding to `gbk` and avoid emoji (GBK doesn't support it). Full recipe: `skill_view(name="hermes-agent", file_path="references/cron-windows-encoding.md")`.
 
 **Windows-specific issues** (`Alt+Enter` newline, WinError 10106, UTF-8 BOM config, test suite, line endings): see the dedicated **Windows-Specific Quirks** section above.
+
+### Provider connectivity diagnostics
+
+When a provider isn't connecting, returning auth errors, or routing to the wrong endpoint, use this triangulation sequence:
+
+**1. Triangulate the config:**
+```bash
+grep -A5 "^model:" ~/AppData/Local/hermes/config.yaml
+```
+Check: `provider` (which provider Hermes uses), `base_url` (⚠️ THE MOST COMMON TRAP — if set, it overrides the built-in provider's default; should be `''` for built-in providers), and `model` (may need a prefix on OpenRouter like `z-ai/glm-5.1` vs bare name on ollama-cloud).
+
+**2. Check the API key:**
+```bash
+grep -i "API_KEY" ~/AppData/Local/hermes/.env | grep -v "^#"
+```
+Verify the right env var is set for your provider.
+
+**3. Test the API directly:**
+```bash
+curl -s --max-time 10 https://<expected-base-url>/v1/models -H "Authorization: Bearer <key>"
+```
+If curl succeeds but Hermes can't connect → the config's `base_url` is wrong/stale.
+
+**4. Check built-in provider defaults:**
+```bash
+grep -B2 -A5 '"<provider>":' ~/.hermes/hermes-agent/hermes_cli/auth.py
+```
+
+**5. Verify model cache:**
+```bash
+grep "<model>" ~/AppData/Local/hermes/provider_models_cache.json
+```
+
+**Common pitfalls:**
+- **Stale `model.base_url`** — If `base_url` is set to one provider's URL but `provider` is another, all API calls silently route through the wrong endpoint. Fix: `hermes config set model.base_url ""`
+- **Provider mismatch** — `glm-5.1` exists on both OpenRouter (as `z-ai/glm-5.1`) and ollama-cloud (as `glm-5.1`). Using the wrong provider silently fails.
+- **OpenRouter prefix vs bare name** — OpenRouter uses `vendor/model` format; ollama-cloud uses bare names.
+- **Disabling a platform** — Setting `discord: 'null'` in config.yaml is NOT enough. Remove credential lines from `.env` AND restart the gateway.
+
+**Full detail:** `references/config-diagnostics/feishu-platform-connection.md` and `references/config-diagnostics/ollama-provider-session-limits.md`.
 
 ### Auxiliary models not working
 If `auxiliary` tasks (vision, compression, session_search) fail silently, the `auto` provider can't find a backend. Either set `OPENROUTER_API_KEY` or `GOOGLE_API_KEY`, or explicitly configure each auxiliary task's provider:

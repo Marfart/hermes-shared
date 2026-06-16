@@ -8,7 +8,7 @@ The agent's name is 塔奇克马 (Tachikoma). Kali calls me 小马 for short. In
 §
 User pricing database workflow: ①按文件逐个分析，不按产品跨文件混导 ②每个文件有自己的价格层级名，保留原名不归一 ③检查Excel单元格格式确定取整还是留2位小数('0_'=整数,'0.00_'=2位) ④BL116/BL118用ARMxy列布局(Col7/8/9)，不是RTU的Col3-7 ⑤Y板在ARMxy文件是双列布局 ⑥同一文件可能含多个产品线区域
 §
-定价规则补充：有Samples（样品价）列的，小于10台按样品价算；没有样品价列的，按文档上最低价格层级（通常是<100pcs）算。IOy/ARMxy系列中"Online Store & Quotation"列即样品价（样品价列名因文件而异：有的叫"Samples"，有的叫"Online Store & Quotation"）
+定价规则补充：有Samples（样品价）列的，小于10台按样品价算；没有样品价列的，按文档上最低价格层级（通常是<100pcs）算。IOy/ARMxy系列中"Online Store & Quotation"列即样品价（样品价列名因文件而异：有的叫"Samples"，有的叫"Online Store & Quotation"）。Y板没有Sample价，Online Store列写"Refer to <100pcs"，用<100pcs价。Y03型号不存在（Y板完整列表：Y01/Y02/Y11/Y12/Y13/Y21/Y22/Y24/Y31/Y33/Y34/Y36/Y37/Y41/Y43/Y46/Y51/Y52/Y53/Y54/Y56/Y57/Y58/Y63/Y95/Y96）。BA系列走202605 IIoT Gateways文件Building HVAC区域。BL118B-SOM335-X4-Y02-Y31是模块化组合（主机+SOM+X板+Y板各单独计价再相加）。M160E在RTU&Mxxx文件，Sample=$157
 §
 所有临时脚本必须存到 C:\Users\Admin\AppData\Local\hermes\memories\脚本缓存\，按分类整理（如 admin助手/、音乐播放/、系统查询/ 等子文件夹）。禁止丢在桌面或用户目录。
 §
