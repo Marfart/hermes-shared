@@ -1,0 +1,564 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - paragraph [ref=e4]:
+        - link "富通天下" [ref=e5] [cursor=pointer]:
+          - /url: https://www.joinf.com
+          - img "富通天下" [ref=e6]
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "首页" [ref=e9] [cursor=pointer]:
+            - /url: https://www.joinf.com
+        - listitem [ref=e10]:
+          - link "产品服务" [ref=e11] [cursor=pointer]:
+            - /url: https://www.joinf.com/cloud-platform.html
+        - listitem [ref=e12]:
+          - link "客户分享" [ref=e13] [cursor=pointer]:
+            - /url: https://www.joinf.com/success-case.html
+        - listitem [ref=e14]:
+          - link "外贸课堂" [ref=e15] [cursor=pointer]:
+            - /url: https://www.joinf.com/trade-class.html
+        - listitem [ref=e16]:
+          - link "国际会展" [ref=e17] [cursor=pointer]:
+            - /url: https://www.joinf.com/globalExhibition.html
+        - listitem [ref=e18]:
+          - link "关于我们" [ref=e19] [cursor=pointer]:
+            - /url: "https://www.joinf.com/company-profile.html "
+        - listitem [ref=e20]:
+          - link "咨询反馈" [ref=e21] [cursor=pointer]:
+            - /url: https://www.joinf.com/consultationFeedback.html
+        - listitem [ref=e22]:
+          - img [ref=e23]
+          - link "400-881-6668" [ref=e25] [cursor=pointer]:
+            - /url: contact-us.html
+        - listitem [ref=e26]:
+          - link "登录" [ref=e27] [cursor=pointer]:
+            - /url: https://cloud.joinf.com
+  - generic [ref=e28]:
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - group "6 / 6" [ref=e32]:
+          - link "富通天下云平台 集成外贸私域CRM和ERP全部功能" [ref=e33] [cursor=pointer]:
+            - /url: javascript:void(0);
+            - generic [ref=e34]:
+              - generic [ref=e35]: 富通天下云平台
+              - generic [ref=e36]: 集成外贸私域CRM和ERP全部功能
+        - group "1 / 6" [ref=e37]:
+          - link "富通天下云平台 数字化私域营销与管理 打造私域流量 进化外贸管理 免费体验" [ref=e38] [cursor=pointer]:
+            - /url: javascript:void(0);
+            - generic [ref=e39]:
+              - generic [ref=e40]: 富通天下云平台
+              - generic [ref=e41]: 数字化私域营销与管理
+              - generic [ref=e42]: 打造私域流量 进化外贸管理
+              - button "免费体验" [ref=e44]
+        - group "2 / 6" [ref=e45]:
+          - link "富通天下开创性推出 外贸垂直领域 Al Agent开发平台 外贸进化的力量，上一场是互联网，这场更精彩! 免费体验" [ref=e46] [cursor=pointer]:
+            - /url: javascript:void(0);
+            - generic [ref=e47]:
+              - generic [ref=e48]: 富通天下开创性推出
+              - generic [ref=e49]: 外贸垂直领域 Al Agent开发平台
+              - generic [ref=e50]: 外贸进化的力量，上一场是互联网，这场更精彩!
+              - button "免费体验" [ref=e52]
+        - group "3 / 6" [ref=e53]:
+          - link "2026富通天下 & 米奥兰特联合招展 全球新兴市场系列专业展 5洲 11国 邀您共拓全球新兴市场商机 报名参展" [ref=e54] [cursor=pointer]:
+            - /url: javascript:void(0);
+            - generic [ref=e56]:
+              - generic [ref=e57]: 2026富通天下 & 米奥兰特联合招展
+              - generic [ref=e58]: 全球新兴市场系列专业展
+              - generic [ref=e59]:
+                - generic [ref=e60]: 5洲 11国
+                - text: 邀您共拓全球新兴市场商机
+              - button "报名参展" [ref=e62]
+        - group "4 / 6" [ref=e63]:
+          - link "更适合中国外贸企业的营销网站 外贸私域独立站 专业外贸建站 链接全球买家 立即体验" [ref=e64] [cursor=pointer]:
+            - /url: https://www.joinf.com/sitehd_index.html
+            - generic [ref=e65]:
+              - generic [ref=e66]: 更适合中国外贸企业的营销网站
+              - generic [ref=e67]: 外贸私域独立站
+              - generic [ref=e68]: 专业外贸建站 链接全球买家
+              - button "立即体验" [ref=e70]
+        - group "5 / 6" [ref=e71]:
+          - link "用富通天下 做天下生意 志在为中国480万外贸企业 一站式提供数字化私域营销和管理服务" [ref=e72] [cursor=pointer]:
+            - /url: javascript:void(0);
+            - generic [ref=e73]:
+              - generic [ref=e74]: 用富通天下 做天下生意
+              - generic [ref=e75]:
+                - text: 志在为中国480万外贸企业
+                - text: 一站式提供数字化私域营销和管理服务
+        - group "6 / 6" [ref=e76]:
+          - link "富通天下云平台 集成外贸私域CRM和ERP全部功能" [ref=e77] [cursor=pointer]:
+            - /url: javascript:void(0);
+            - generic [ref=e78]:
+              - generic [ref=e79]: 富通天下云平台
+              - generic [ref=e80]: 集成外贸私域CRM和ERP全部功能
+        - group "1 / 6" [ref=e81]:
+          - link "富通天下云平台 数字化私域营销与管理 打造私域流量 进化外贸管理 免费体验" [ref=e82] [cursor=pointer]:
+            - /url: javascript:void(0);
+            - generic [ref=e83]:
+              - generic [ref=e84]: 富通天下云平台
+              - generic [ref=e85]: 数字化私域营销与管理
+              - generic [ref=e86]: 打造私域流量 进化外贸管理
+              - button "免费体验" [ref=e88]
+      - button "Previous slide" [ref=e89] [cursor=pointer]: prev
+      - button "Next slide" [ref=e90] [cursor=pointer]: next
+      - generic [ref=e91]:
+        - button "Go to slide 1" [ref=e92] [cursor=pointer]
+        - button "Go to slide 2" [ref=e93] [cursor=pointer]
+        - button "Go to slide 3" [ref=e94] [cursor=pointer]
+        - button "Go to slide 4" [ref=e95] [cursor=pointer]
+        - button "Go to slide 5" [ref=e96] [cursor=pointer]
+        - button "Go to slide 6" [ref=e97] [cursor=pointer]
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - generic [ref=e100] [cursor=pointer]:
+          - generic "AiReach全面优化升级！" [ref=e102]
+          - generic [ref=e104]: 抓增量更盘存量
+          - generic [ref=e105]:
+            - button "点击查看" [ref=e106]: 点击查看
+            - generic [ref=e108]: 1202人查看
+        - generic [ref=e109] [cursor=pointer]:
+          - generic "独立站成询盘收割机" [ref=e111]
+          - generic [ref=e113]: 从“被动”到“主动”
+          - generic [ref=e114]:
+            - button "点击播放" [ref=e115]: 点击播放
+            - generic [ref=e117]: 1701人播放
+        - generic [ref=e118] [cursor=pointer]:
+          - generic "富通天下开创性推出外贸垂直领域AI Agent开发平台" [ref=e120]
+          - generic [ref=e121]: 技术推动贸易变革！
+          - generic [ref=e122]:
+            - button "点击查看" [ref=e123]: 点击查看
+            - generic [ref=e125]: 3398人查看
+        - generic [ref=e126] [cursor=pointer]:
+          - generic "单月询盘160多个，业绩连年保持增长" [ref=e128]
+          - generic [ref=e129]: 连年保持业绩持续增长的秘诀在哪？
+          - generic [ref=e130]:
+            - button "点击播放" [ref=e131]: 点击播放
+            - generic [ref=e133]: 10489人播放
+      - generic [ref=e134]: 用富通天下 做天下生意
+      - generic: 中国外贸企业发展的基础合作伙伴
+      - generic:
+        - generic:
+          - text: 富通天下
+          - text: "- 中国外贸管理软件 供应商"
+          - text: "- 中国外贸营销管理 SaaS服务商"
+          - text: "- 中国跨境贸易系统 服务商"
+          - text: "- 行业的先行者和领导者！"
+          - text: "- 2002年创立伊始，"
+          - text: "- 确立公司使命："
+          - text: "- 用富通天下，做天下生意！"
+    - generic:
+      - generic:
+        - generic:
+          - generic: 企业发展历史
+          - generic:
+            - generic: +
+        - generic:
+          - generic: 全国运营中心
+          - generic:
+            - generic: +
+        - generic:
+          - generic: 技术研发团队
+          - generic:
+            - generic: +
+        - generic:
+          - generic: 服务外贸企业数
+          - generic:
+            - generic: +
+    - generic [ref=e135]:
+      - generic: 换个方式做外贸
+      - generic: 中国480万外贸企业的云基础设施
+      - generic [ref=e137]:
+        - generic: 富通天下云平台愿景
+        - generic:
+          - text: 外贸企业无需再购买任何
+          - text: 七七八八的软件和服务器了，
+          - text: 只需开通云账号，
+          - text: 云平台就铺设到千家万户。
+          - text: 像水电一样，
+          - text: 一拧龙头/一按开关，
+          - text: 480万外贸企业集成获得
+          - text: 营销与管理的所有服务！
+        - generic:
+          - button "立即咨询"
+        - button "了解详情" [ref=e139] [cursor=pointer]
+    - generic [ref=e140]:
+      - generic: 富通天下云平台 外贸营销管理的革命性产品
+      - generic: 打造私域流量 进化外贸管理
+      - generic:
+        - generic:
+          - generic: 外贸私域独立站
+        - generic:
+          - generic: 布谷鸟智投
+        - generic:
+          - generic: WhatsApp营销
+        - generic:
+          - generic: 全球买家数据
+        - generic:
+          - generic: 外贸私域CRM
+        - generic:
+          - generic: 外贸ERP
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: 外贸私域独立站
+              - generic:
+                - generic:
+                  - generic: 创新打造引导式DIY魔法编辑器，做外贸B2B领域的“Shopify”
+                - generic:
+                  - generic: 集成所有数字化营销方式，引来源源不断的私域流量，精准跟进营销获客
+                - generic:
+                  - generic: 无缝对接云平台外贸私域CRM/ERP系统，数字化识别分析买家行为，追踪买家动态
+                - generic:
+                  - generic: 独立IP部署，极大提高网站性能和Google收录排名
+              - generic:
+                - button "立即咨询"
+                - button "了解详情"
+    - generic [ref=e144]:
+      - generic: 大数据聚合搜索 全球买家尽在其中
+      - generic:
+        - text: 3亿
+        - generic: +
+        - text: 商业数据 · 8亿
+        - generic: +
+        - text: 搜索数据 · 30亿
+        - generic: +
+        - text: 海关数据 · 30亿
+        - generic: +
+        - text: 社交数据
+      - generic:
+        - generic:
+          - generic: 商业数据
+          - generic: 海关数据
+          - generic: 全球搜索
+        - generic:
+          - generic:
+            - generic: 公司
+            - generic: 产品
+            - generic: 域名
+            - searchbox "请输入产品/公司简介/关键字/行业描述"
+            - button "搜索"
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic: Platek Srl
+              - generic:
+                - generic: "|"
+                - text: UNITED KINGDOM
+                - generic: "|"
+                - generic: 
+                - generic: platek.eu
+            - generic:
+              - generic:
+                - button "详情"
+          - generic:
+            - generic:
+              - generic:
+                - generic: Rebound Electronics Gmbh
+              - generic:
+                - generic: "|"
+                - text: GERMANY
+                - generic: "|"
+                - generic: 
+                - generic: reboundeu.com
+            - generic:
+              - generic:
+                - button "详情"
+          - generic:
+            - generic:
+              - generic:
+                - generic: Tss, Spol. S.R.O.
+              - generic:
+                - generic: "|"
+                - text: CZECHO
+                - generic: "|"
+                - generic: 
+                - generic: tsssro.cz
+            - generic:
+              - generic:
+                - button "详情"
+          - generic:
+            - generic:
+              - generic:
+                - generic: Segula Gmbh
+              - generic:
+                - generic: "|"
+                - text: GERMANY
+                - generic: "|"
+                - generic: 
+                - generic: segula.de
+            - generic:
+              - generic:
+                - button "详情"
+          - generic:
+            - generic:
+              - generic:
+                - generic: Wns Global Services
+              - generic:
+                - generic: "|"
+                - text: UNITED KINGDOM
+                - generic: "|"
+                - generic: 
+                - generic: wns.com
+            - generic:
+              - generic:
+                - button "详情"
+          - generic:
+            - generic:
+              - generic:
+                - generic: Vermes Microdispensing Gmbh
+              - generic:
+                - generic: "|"
+                - text: GERMANY
+                - generic: "|"
+                - generic: 
+                - generic: vermes.com
+            - generic:
+              - generic:
+                - button "详情"
+    - generic [ref=e145]:
+      - generic: 五大产品矩阵 构建跨境贸易生态新体系
+      - generic: 一站式提供外贸B2B、跨境B2C服务
+      - generic [ref=e146]:
+        - generic:
+          - generic:
+            - generic:
+              - generic: 富通天下云平台
+              - generic: 480万外贸企业数字化私域营销管理云平台，一站式解决外贸企业获客户、赢订单、管流程难题。
+              - link "了解更多":
+                - /url: https://www.joinf.com/cloud-platform.html
+                - text: 了解更多
+                - generic: 
+          - generic:
+            - generic:
+              - generic: 外贸私域独立站
+              - generic: 零门槛30分钟专业建站
+              - img
+            - text: 
+          - generic:
+            - generic:
+              - generic: 外贸管理软件
+              - generic: 高效管理外贸业务全流程
+              - img
+            - text: 
+          - generic:
+            - generic:
+              - generic: 芒果店长
+              - generic: 集成化跨境电商运营ERP
+              - img
+            - text: 
+          - generic:
+            - generic:
+              - generic: 外新人
+              - generic: 跨境电商在线教育平台
+              - img
+            - text: 
+    - generic [ref=e149]:
+      - generic: 全国密布运营中心 提供本地化服务
+      - generic:
+        - generic:
+          - generic:
+            - generic: "30"
+            - generic: +
+          - generic: 全国运营中心
+        - generic:
+          - generic:
+            - generic: 7x24h
+          - generic: 优质服务
+    - generic [ref=e150]:
+      - generic: 多项资质认证 实力备受认可
+      - generic:
+        - generic:
+          - generic: 国家高新技术企业
+        - generic:
+          - generic: 公安部安全等级认证
+        - generic:
+          - generic: 科技部技术创新基金项
+        - generic:
+          - generic: 计算机软件著作权
+        - generic:
+          - generic: CMMI3认证
+    - generic [ref=e151]:
+      - generic: “行家+专家”合作模式 强强联手服务外贸企业
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - group "5 / 5"
+                - group "1 / 5"
+                - group "2 / 5"
+                - group "3 / 5"
+                - group "4 / 5"
+                - group "5 / 5"
+                - group "1 / 5"
+    - generic [ref=e152]:
+      - generic: 精选案例
+      - generic: 超过60000+外贸企业选择富通天下
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: 石家庄好利服饰
+              - generic: 负债40万起家，他靠“半页纸管理”将外贸公司做到TOP
+          - generic:
+            - generic:
+              - generic: 星之瀚进出口（苏州）有限公司
+              - generic: 教育行业转行做外贸，他靠什么三年做到千万出口？
+        - generic:
+          - generic:
+            - generic:
+              - generic: 某大型工贸一体公司
+              - generic: 95%订单靠自主开发，客户转化率高达38%！这家公司是如何做到的？
+          - generic:
+            - generic:
+              - generic: 洛阳市华之杰办公家俱有限公司
+              - generic: 卷到飞起的外贸红海行业，他如何靠4招差异化打法突出重围？
+        - generic:
+          - generic:
+            - generic:
+              - generic: 广州纽威环境优化科技有限公司
+              - generic: 深耕拉美17年，他如何靠着4招从0做到2亿？
+          - generic:
+            - generic:
+              - generic: 九州羽翔（北京）贸易有限公司
+              - generic: 客户专访：2023外贸严峻挑战下的增长密码
+        - generic:
+          - generic:
+            - generic:
+              - generic: 大型上市公司国际贸易运营负责人
+              - generic: 三个手段，让我斩获300多个高价值客户（方法在最后）
+          - generic:
+            - generic:
+              - generic: 北京南天伟业商贸有限公司
+              - generic: 凭什么我比同行牛？大佬划出了两个重点
+      - generic:
+        - button "立即咨询"
+        - button "了解详情"
+    - generic [ref=e153]:
+      - generic: 新闻资讯
+      - generic [ref=e154]:
+        - link "36氪深度报道富通天下：24小时在线的Agent，正批量为外贸企业送来订单 06/08":
+          - /url: https://www.joinf.com/news-center/news-detail/1639-001.html
+          - generic:
+            - generic: 36氪深度报道富通天下：24小时在线的Agent，正批量为外贸企业送来订单
+            - generic: 06/08
+        - link "WhatsApp虚拟号重磅上线 ！ 04/30":
+          - /url: https://www.joinf.com/news-center/news-detail/1638-001.html
+          - generic:
+            - generic: WhatsApp虚拟号重磅上线 ！
+            - generic: 04/30
+        - link "云平台管理进化！以任务促执行，用目标定增长 03/09":
+          - /url: https://www.joinf.com/news-center/news-detail/1636-001.html
+          - generic:
+            - generic: 云平台管理进化！以任务促执行，用目标定增长
+            - generic: 03/09
+        - link "客户评分上新！量化评分、科学分级、精细管理 02/03":
+          - /url: https://www.joinf.com/news-center/news-detail/1635-001.html
+          - generic:
+            - generic: 客户评分上新！量化评分、科学分级、精细管理
+            - generic: 02/03
+    - generic [ref=e155]:
+      - generic [ref=e156]: 换个方式做外贸
+      - generic [ref=e157]: 开启数字化私域营销管理云时代
+      - generic:
+        - button "免费体验"
+  - contentinfo [ref=e158]:
+    - generic [ref=e159]:
+      - generic [ref=e160]:
+        - generic [ref=e161]: 全国服务热线
+        - generic [ref=e162]: 400-881-6668
+        - generic [ref=e163]: 富通天下总部
+        - generic [ref=e164]:
+          - text: 地址：宁波市高新区研发园1期2幢13层
+          - text: 电话：0574-87123199
+          - text: 传真：0574-83860692
+          - text: 邮编：315000
+          - text: 邮箱：
+          - link "marketing@joinf.com" [ref=e165] [cursor=pointer]:
+            - /url: mailto:marketing@joinf.com
+        - generic [ref=e166]:
+          - generic [ref=e167]:
+            - img "微信公众号二维码"
+            - generic [ref=e168]: 微信公众号
+          - generic [ref=e169]:
+            - img "富通天下云平台"
+            - generic [ref=e170]: 富通天下云平台
+          - generic [ref=e171]:
+            - img "专业版APP"
+            - generic [ref=e172]: 专业版APP
+      - generic [ref=e174]:
+        - generic [ref=e175]:
+          - generic [ref=e176]:
+            - generic [ref=e177]: 产品
+            - link "外贸私域营销" [ref=e178] [cursor=pointer]:
+              - /url: https://www.joinf.com/cloud-platform.html
+            - link "私域独立站" [ref=e179] [cursor=pointer]:
+              - /url: https://www.joinf.com/sitehd_index.html
+            - link "外贸私域CRM" [ref=e180] [cursor=pointer]:
+              - /url: https://www.joinf.com/cloud-crm.html
+            - link "外贸私域ERP" [ref=e181] [cursor=pointer]:
+              - /url: https://www.joinf.com/product-service.html
+            - link "AI Agent" [ref=e182] [cursor=pointer]:
+              - /url: https://www.joinf.com/aiAgent.html
+          - generic [ref=e183]:
+            - generic [ref=e184]: 我们
+            - link "公司介绍" [ref=e185] [cursor=pointer]:
+              - /url: https://www.joinf.com/company-profile.html
+            - link "联系我们" [ref=e186] [cursor=pointer]:
+              - /url: https://www.joinf.com/contact-us.html
+            - link "企业新闻" [ref=e187] [cursor=pointer]:
+              - /url: https://www.joinf.com/company-profile.html
+            - link "战略合作" [ref=e188] [cursor=pointer]:
+              - /url: https://www.joinf.com/company-profile.html
+          - generic [ref=e189]:
+            - generic [ref=e190]: 知识
+            - link "行业资讯" [ref=e191] [cursor=pointer]:
+              - /url: https://www.joinf.com/trade-class.html
+            - link "经验分享" [ref=e192] [cursor=pointer]:
+              - /url: https://www.joinf.com/success-case.html
+            - link "客户心得" [ref=e193] [cursor=pointer]:
+              - /url: https://www.joinf.com/success-case.html
+            - link "功能操作" [ref=e194] [cursor=pointer]:
+              - /url: https://www.joinf.com/trade-class.html
+        - generic [ref=e195]:
+          - img [ref=e196]
+          - img [ref=e199]
+          - img [ref=e202]
+          - img [ref=e206]
+          - img [ref=e209]
+    - generic [ref=e212]:
+      - text: 友情链接：
+      - link "外贸ERP" [ref=e213] [cursor=pointer]:
+        - /url: https://www.joinf.com/product-service.html
+      - link "外贸私域CRM" [ref=e214] [cursor=pointer]:
+        - /url: https://www.joinf.com/product-service.html
+      - link "外贸建站" [ref=e215] [cursor=pointer]:
+        - /url: https://www.joinf.com/sitehd_index.html
+      - link "外贸客户开发平台" [ref=e216] [cursor=pointer]:
+        - /url: https://www.joinf.com/cloud-platform.html
+      - link "外贸营销" [ref=e217] [cursor=pointer]:
+        - /url: https://www.joinf.com
+    - generic [ref=e218]:
+      - text: 宁波中茂网络科技有限公司 版权所有 ©2002-2026 All Right Reserved
+      - link "浙ICP备05006811号-1" [ref=e219] [cursor=pointer]:
+        - /url: "https://beian.miit.gov.cn "
+  - generic [ref=e221]:
+    - generic [ref=e222]:
+      - generic [ref=e223]:
+        - img
+      - generic [ref=e224]: 在线咨询
+    - generic [ref=e226] [cursor=pointer]:
+      - generic [ref=e227]:
+        - img
+      - generic [ref=e228]: 微信咨询
+    - generic [ref=e230] [cursor=pointer]:
+      - generic [ref=e231]:
+        - img
+      - generic [ref=e232]: 免费体验
+    - generic [ref=e234] [cursor=pointer]:
+      - generic [ref=e235]:
+        - img
+      - generic [ref=e236]: 联系电话
+  - text:                                  

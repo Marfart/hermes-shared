@@ -623,6 +623,36 @@ else:
 
 **适用：** 看门狗 Layer 0 用户状态检测、电脑小卫士、空闲提醒。
 
+### 模式BB：人性化随机延迟（Kali 2026-06-17 铁律）
+
+**问题：** 脚本中固定延迟（`time.sleep(3)`）太规律，浏览器自动化/WhatsApp 操作看起来像机器人行为。Kali 明确纠正："操作必须像人，不能像机器人"。
+
+**正确做法：** 所有自动化操作之间用随机、不规则的延迟：
+
+```python
+import random, time
+
+def human_delay(min_s: float = 2.0, max_s: float = 8.0) -> None:
+    """模拟人的操作间隔——随机、不规则。适用于浏览器点击/输入/导航间隔。"""
+    time.sleep(random.uniform(min_s, max_s))
+
+# ❌ 机器人写法：固定间隔
+time.sleep(3)  # 每次都3秒=太规律
+
+# ✅ 人性化写法：随机间隔
+human_delay()          # 2-8秒随机
+human_delay(1.0, 3.0)  # 快速操作1-3秒
+human_delay(5.0, 15.0) # WhatsApp批量发送5-15秒
+```
+
+**适用范围：**
+- 浏览器自动化（CDP/Playwright/Selenium）：点击→打字→导航之间
+- WhatsApp Web 操作：打开聊天→输入消息→发送之间
+- 任何涉及人机交互界面的脚本操作
+- **不适用：** 纯后台数据处理、API轮询（不需要人性化）
+
+**与防封号延迟配合：** WhatsApp批量发送已有2-5分钟防封延迟，单次操作内（如打开聊天→输入→发送）也要加秒级人性化延迟。两层不冲突。
+
 ### 模式AA：诊断工具替代策略 — 当 tasklist/wmic 在 git-bash 下超时时
 
 **问题：** 在 git-bash/MSYS ``terminal`` 环境里，``tasklist``、``wmic``、``powershell -Command "Get-Process"`` 等原生 Windows 工具经常**永远超时**（`subprocess.TimeoutExpired`），即使 timeout 设到 60 秒甚至 300 秒也返回不了。这不是脚本 bug，是 MSYS 的 fork/exec 层在传递复杂管道时卡死。

@@ -1,0 +1,56 @@
+- generic [active] [ref=e1]:
+  - paragraph [ref=e3]: 请在显示区域宽度不低于1280像素的环境下使用本系统。
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - link "用富通天下 做天下生意" [ref=e6] [cursor=pointer]:
+        - /url: http://www.joinf.com
+        - img [ref=e7]
+        - text: 用富通天下 做天下生意
+      - link "反馈联系" [ref=e8] [cursor=pointer]:
+        - /url: https://trade.joinf.com/suggestion/feedbackInfo
+        - text: 反馈联系
+      - link "平台简介" [ref=e10] [cursor=pointer]:
+        - /url: https://trade.joinf.com/system/productIntro
+        - text: 平台简介
+      - link "APP下载" [ref=e12] [cursor=pointer]:
+        - /url: javascript:void(0);
+        - text: APP下载
+      - link "客户端下载" [ref=e14] [cursor=pointer]:
+        - /url: javascript:void(0);
+        - text: 客户端下载
+    - generic [ref=e16]:
+      - link [ref=e17] [cursor=pointer]:
+        - /url: javascript:void(0);
+      - generic [ref=e20]:
+        - heading "用户登录" [level=2] [ref=e21]
+        - img [ref=e24] [cursor=pointer]
+        - generic [ref=e26]:
+          - textbox "用户名" [ref=e30]
+          - textbox "密码" [ref=e34]
+          - link "忘记密码？" [ref=e38] [cursor=pointer]:
+            - /url: https://trade.joinf.com/tradeB2B/forgetPassword?from=https://trade.joinf.com/
+          - link "安全登录" [ref=e41] [cursor=pointer]:
+            - /url: javascript:;
+          - paragraph [ref=e43]:
+            - text: 还没账号?
+            - link "点击注册" [ref=e44] [cursor=pointer]:
+              - /url: https://trade.joinf.com/tradeB2B/register?from=https://trade.joinf.com/
+            - link "找回账号" [ref=e45] [cursor=pointer]:
+              - /url: https://trade.joinf.com/tradeB2B/findLoginName
+    - paragraph [ref=e48]:
+      - text: 全国服务专线：400-881-6668 富通天下（
+      - link "www.joinf.com" [ref=e49] [cursor=pointer]:
+        - /url: http://www.joinf.com
+      - text: ）版权所有 ©2026 All Rights Reserved
+      - link "营业资质" [ref=e50] [cursor=pointer]:
+        - /url: javascript:;
+        - img [ref=e51]
+        - text: 营业资质
+  - generic [ref=e54]:
+    - generic [ref=e55]:
+      - generic [ref=e57]: 拖动下方拼图完成验证
+      - img "close" [ref=e59] [cursor=pointer]
+    - img [ref=e63]
+    - generic [ref=e68]:
+      - generic [ref=e70]: 安全验证
+      - img "refresh" [ref=e73] [cursor=pointer]

@@ -71,10 +71,47 @@ description: ARMxy 系列 ARM 嵌入式控制器产品知识 — BL301/BL302/BL3
 - 8K@60fps H.265解码
 - 最大16GB/128GB
 
-**BL460** — Pi CM5生态
-- 40-pin GPIO+WiringPi
-- 仅-20~85°C
-- 无NPU但生态庞大
+**BL460** — Pi CM5生态（CM5 = Compute Module 5, BCM2712）
+- 40-pin GPIO + WiringPi
+- 温度 -20~85°C（注意：非-40~85°C工业级）
+- 无NPU但Pi生态庞大
+- **CM5 SOM命名规则**: CM5+00/02(无线)+016/032/064(eMMC) — 例CM5104032=4GB RAM+32GB eMMC
+- **无SD卡槽**（16GB+ eMMC版本无SD卡位，仅Lite/0GB eMMC版有SD卡槽）
+
+### BL460主机价格
+
+| 型号 | ETH | USB | HDMI | X IO Board | Y Board | <100pcs | >=100pcs | Online Store |
+|------|-----|-----|------|-----------|---------|---------|----------|-------------|
+| BL460 | 1×千兆 | 2 | × | 1×6PIN | × | $47 | $43 | $51 |
+| BL460A | 1×千兆 | 2 | × | 1×20PIN | × | $50 | $46 | $55 |
+| BL460B | 1×千兆 | 2 | × | 1×20PIN | 2 | $53 | $49 | $57 |
+| BL460C | 1×千兆 | 2 | × | 1×10PIN | × | $48 | $43 | $52 |
+
+### BL460 SOM价格
+
+| 型号 | MCU | RAM | eMMC | <100pcs | >=100pcs | Online Store |
+|------|-----|-----|------|---------|----------|-------------|
+| CM5002016 | BCM2712 | 2GB | 16GB | $49 | $46 | $53 |
+| CM5102032 | BCM2712 | 2GB | 32GB | $57 | $54 | $60 |
+| CM5104032 | BCM2712 | 4GB | 32GB | $104 | $101 | $107 |
+| CM5104064 | BCM2712 | 4GB | 64GB | $114 | $111 | $117 |
+| CM5108064 | BCM2712 | 8GB | 64GB | $134 | $131 | $137 |
+| CM5116128 | BCM2712 | 16GB | 128GB | $214 | $211 | $217 |
+
+### BL460 X/Y板价格
+
+X板（同其他ARMxy系列，见X系列I/O板表）
+Y板（同其他ARMxy系列，见Y系列I/O板表）
+4G/WiFi模块（见bliiot-highperf-gateways技能的区域映射表）
+
+### 组合计价示例：BL460L-CM5104032-X20
+| 部件 | <100pcs价 |
+|------|-----------|
+| BL460 主机 | $47 |
+| CM5104032 SOM | $104 |
+| X20 (4×RS485) | $14 |
+| EC25-AUXGA 4G (拉美) | $25 |
+| **合计** | **$190** |
 
 ## 通用特性
 - 所有型号预装: BLIoTLink+BLRAT+QuickConfig
@@ -91,5 +128,8 @@ description: ARMxy 系列 ARM 嵌入式控制器产品知识 — BL301/BL302/BL3
 后缀W=WiFi, L=4G
 例: BL310-SOM312-X4 = 2网口+512MB+8GB+2RS485+2CAN
 
-## 源码路径
-`产品规格书/英文资料/ARM嵌入式控制器/` 每个型号独立目录
+## 定价数据源文件
+- ARMxy报价: `1.报价文件/2025/202512 ARMxy Series Embedded Computer Price List(1).xlsx`
+- **⚠️ 文件在2025目录，不是2026！**
+- **⚠️ xlsx格式**：必须用openpyxl读取，xlrd会报`AttributeError: 'ElementTree' object has no attribute 'getiterator'`
+- 每个型号有独立sheet（BL310/BL330/BL335/BL340/BL350/BL360/BL370/BL410/BL440/BL450/BL460）

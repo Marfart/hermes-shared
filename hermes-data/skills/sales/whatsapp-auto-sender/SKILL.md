@@ -260,6 +260,44 @@ python whatsapp_bot.py help       # 帮助
 3. **首次扫 QR 码** → session 自动保存到 Chrome user-data 目录
 4. 以后不再需要扫码
 
+## 行为铁律：像人一样操作（Kali 2026-06-17 纠正）
+
+**所有浏览器/WhatsApp 操作必须像人，不能像机器人！**
+
+1. **操作间加随机延迟（2-8秒）**：点击、打字、导航之间必须有不规则停顿，不能连续快速操作
+2. **脚本里也必须加 `random.sleep()`**：任何自动化脚本的动作间隔用 `random.uniform(2, 8)` 而非固定延迟
+3. **思考→操作有自然间隔**：读完消息后停一下再回复，像人在想一样
+4. **这是行为模式铁律，不只是提醒** — 脚本和直接操作都要遵守
+
+```python
+import random, time
+
+# ✅ 人性化延迟
+def human_delay(min_s=2, max_s=8):
+    """模拟人的操作间隔——随机、不规则"""
+    time.sleep(random.uniform(min_s, max_s))
+
+# ❌ 机器人延迟（固定间隔=容易被检测）
+time.sleep(3)  # 每次3秒=太规律了
+```
+
+**适用于：**
+- CDP/Playwright 浏览器操作（点击聊天、输入消息、导航）
+- WhatsApp 批量发送间隔（已有2-5分钟防封，但单次操作内也要随机）
+- 读取客户消息时的翻页/滚动操作
+
+## CDP 读取 WhatsApp 消息流程
+
+通过 Playwright MCP 浏览器读取 WhatsApp Web 上的客户聊天记录（2026-06-17 验证）：
+
+1. `mcp_playwright_browser_navigate` → `https://web.whatsapp.com/`
+2. `mcp_playwright_browser_snapshot` → 获取聊天列表（含联系人名、最后消息、时间）
+3. 点击目标聊天（`mcp_playwright_browser_click` → 聊天行 ref）
+4. `mcp_playwright_browser_snapshot(full=true)` → 获取聊天消息历史
+5. **每个操作间加 human_delay()！**
+
+**注意：** 2026年3月19日之前的消息WhatsApp Web不显示（手机端才可见）。
+
 ## Pitfalls
 
 - ⚠️ WhatsApp Web 要求 **真实浏览器窗口**（headless 模式不可用）

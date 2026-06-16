@@ -185,14 +185,14 @@
     "archived_at": null,
     "created_at": "2026-06-11T03:14:44.001337+00:00",
     "created_by": null,
-    "last_patched_at": null,
-    "last_used_at": "2026-06-16T00:56:02.298645+00:00",
-    "last_viewed_at": "2026-06-16T00:56:02.275727+00:00",
-    "patch_count": 0,
+    "last_patched_at": "2026-06-16T17:29:22.358482+00:00",
+    "last_used_at": "2026-06-16T17:28:27.616033+00:00",
+    "last_viewed_at": "2026-06-16T17:28:27.596028+00:00",
+    "patch_count": 2,
     "pinned": false,
     "state": "active",
-    "use_count": 3,
-    "view_count": 3
+    "use_count": 4,
+    "view_count": 4
   },
   "bliiot-b2b-directory-promotion": {
     "archived_at": null,
@@ -238,13 +238,13 @@
     "created_at": "2026-06-04T07:07:01.926456+00:00",
     "created_by": null,
     "last_patched_at": "2026-06-11T02:40:11.407740+00:00",
-    "last_used_at": "2026-06-11T02:39:11.818189+00:00",
-    "last_viewed_at": "2026-06-11T02:39:11.798879+00:00",
+    "last_used_at": "2026-06-16T17:45:44.824747+00:00",
+    "last_viewed_at": "2026-06-16T17:45:44.031191+00:00",
     "patch_count": 6,
     "pinned": false,
     "state": "active",
-    "use_count": 7,
-    "view_count": 7
+    "use_count": 8,
+    "view_count": 8
   },
   "bliiot-email-marketing": {
     "archived_at": null,
@@ -263,14 +263,14 @@
     "archived_at": null,
     "created_at": "2026-06-11T03:20:46.764464+00:00",
     "created_by": null,
-    "last_patched_at": "2026-06-16T12:12:18.160538+00:00",
-    "last_used_at": "2026-06-16T12:11:58.966754+00:00",
-    "last_viewed_at": "2026-06-16T12:11:58.943364+00:00",
-    "patch_count": 1,
+    "last_patched_at": "2026-06-16T17:29:58.468786+00:00",
+    "last_used_at": "2026-06-16T17:29:51.177418+00:00",
+    "last_viewed_at": "2026-06-16T17:29:51.160906+00:00",
+    "patch_count": 6,
     "pinned": false,
     "state": "active",
-    "use_count": 3,
-    "view_count": 3
+    "use_count": 5,
+    "view_count": 5
   },
   "bliiot-ioy-series": {
     "archived_at": null,
@@ -315,14 +315,14 @@
     "archived_at": null,
     "created_at": "2026-05-28T07:19:56.176345+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-06-16T11:51:16.979792+00:00",
-    "last_used_at": "2026-06-16T11:50:45.097455+00:00",
-    "last_viewed_at": "2026-06-16T11:50:45.076995+00:00",
-    "patch_count": 37,
+    "last_patched_at": "2026-06-16T17:10:30.474733+00:00",
+    "last_used_at": "2026-06-16T17:10:38.949525+00:00",
+    "last_viewed_at": "2026-06-16T17:10:38.933502+00:00",
+    "patch_count": 39,
     "pinned": false,
     "state": "active",
-    "use_count": 24,
-    "view_count": 24
+    "use_count": 26,
+    "view_count": 26
   },
   "bliiot-r40-router": {
     "archived_at": null,
@@ -844,6 +844,19 @@
     "use_count": 1,
     "view_count": 1
   },
+  "human-like-behavior": {
+    "archived_at": null,
+    "created_at": "2026-06-16T16:45:19.036189+00:00",
+    "created_by": null,
+    "last_patched_at": "2026-06-16T16:50:08.099274+00:00",
+    "last_used_at": "2026-06-16T17:47:53.295613+00:00",
+    "last_viewed_at": "2026-06-16T17:47:53.276751+00:00",
+    "patch_count": 1,
+    "pinned": false,
+    "state": "active",
+    "use_count": 4,
+    "view_count": 4
+  },
   "humanizer": {
     "archived_at": null,
     "created_at": "2026-06-02T09:55:04.226575+00:00",
@@ -1329,14 +1342,14 @@
     "archived_at": null,
     "created_at": "2026-06-02T13:41:19.140691+00:00",
     "created_by": null,
-    "last_patched_at": "2026-06-10T06:29:16.957720+00:00",
-    "last_used_at": "2026-06-10T06:28:42.673325+00:00",
-    "last_viewed_at": "2026-06-10T06:28:42.658984+00:00",
-    "patch_count": 31,
+    "last_patched_at": "2026-06-16T16:35:58.207028+00:00",
+    "last_used_at": "2026-06-16T16:35:23.363828+00:00",
+    "last_viewed_at": "2026-06-16T16:35:23.347253+00:00",
+    "patch_count": 32,
     "pinned": false,
     "state": "active",
-    "use_count": 30,
-    "view_count": 30
+    "use_count": 31,
+    "view_count": 31
   },
   "resilience-patterns": {
     "archived_at": null,
@@ -1641,14 +1654,14 @@
     "archived_at": null,
     "created_at": "2026-06-01T06:25:20.816720+00:00",
     "created_by": null,
-    "last_patched_at": "2026-06-16T15:56:54.852023+00:00",
-    "last_used_at": "2026-06-16T15:55:55.280356+00:00",
-    "last_viewed_at": "2026-06-16T15:55:55.264358+00:00",
-    "patch_count": 28,
+    "last_patched_at": "2026-06-16T16:35:47.638130+00:00",
+    "last_used_at": "2026-06-16T16:35:33.861628+00:00",
+    "last_viewed_at": "2026-06-16T16:35:33.845629+00:00",
+    "patch_count": 29,
     "pinned": false,
     "state": "active",
-    "use_count": 13,
-    "view_count": 13
+    "use_count": 14,
+    "view_count": 14
   },
   "windows-edr-evasion": {
     "archived_at": null,
@@ -1719,14 +1732,14 @@
     "archived_at": null,
     "created_at": "2026-05-26T10:37:10.982883+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-05-26T10:50:33.498065+00:00",
-    "last_used_at": "2026-06-16T11:58:45.516007+00:00",
-    "last_viewed_at": "2026-06-16T11:58:45.491477+00:00",
-    "patch_count": 1,
+    "last_patched_at": "2026-06-16T17:10:51.701912+00:00",
+    "last_used_at": "2026-06-16T17:10:43.564599+00:00",
+    "last_viewed_at": "2026-06-16T17:10:43.547051+00:00",
+    "patch_count": 2,
     "pinned": false,
     "state": "active",
-    "use_count": 8,
-    "view_count": 8
+    "use_count": 9,
+    "view_count": 9
   },
   "writing-plans": {
     "archived_at": null,
