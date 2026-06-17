@@ -611,3 +611,5 @@ Joinf CRM (trade.joinf.com) write API endpoints are UNKNOWN — all attempts to 
 6. 待探索：添加备注、跟进记录、修改客户、保存邮件草稿
 7. 探索方法论：HAR搜索→JS反查→Storage/Token→GraphQL→WebSocket→页面内部函数→Excel导入→邮箱协议
 8. 技能已创建：skills/sales/joinf-crm-api/SKILL.md
+§
+2026-06-17 会话被网关中断后恢复。之前Kali发送了GODMODE ENABLED确认请求，已确认。

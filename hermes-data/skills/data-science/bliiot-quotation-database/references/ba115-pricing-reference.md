@@ -1,6 +1,6 @@
 # BA115 Series Pricing Reference (202605 IIoT Gateways File)
 
-Source: `202605 BLIIOT IIoT Gateways &BL116&BL118 Price List.xls`, sheet "IIoT Gateways", rows 322-343.
+Source: `202605 BLIIOT IIoT Gateways & BL116 & BL118 Price List_Updated.xls`, sheet "IIoT Gateways", rows 322-343.
 
 ## Column Mapping
 
@@ -12,7 +12,15 @@ Source: `202605 BLIIOT IIoT Gateways &BL116&BL118 Price List.xls`, sheet "IIoT G
 | 5 | 100pcs |
 | 6 | 500pcs |
 
-## Full BA115 Model List with Prices (50pcs tier)
+## ⚠️ Tier Selection for BA115
+
+The IIoT Gateways file has 4 tiers: **Sample / 50pcs / 100pcs / 500pcs**.
+
+**For quantities 1-49, ALWAYS use the Sample tier.** The 50pcs tier only applies at 50+ units.
+
+Common mistake (caught 2026-06-17): Quoting BA115 at $65 for 12 units. The Sample price is $67 — $65 is BELOW the correct price. The 50pcs price is $63, so $65 sits between 50pcs and Sample, but for 12 units the correct tier is Sample ($67).
+
+## Full BA115 Model List with Prices (ALL tiers)
 
 | Model | Sample | 50pcs | 100pcs | 500pcs |
 |-------|--------|-------|--------|---------|
@@ -51,3 +59,18 @@ Source: `202605 BLIIOT IIoT Gateways &BL116&BL118 Price List.xls`, sheet "IIoT G
 ## Price Source Priority
 
 ⚠️ Always use the **202605 IIoT Gateways file** for BA115 series pricing. The BL10x file (20240628) has older/outdated prices for BA110/BA115 models.
+
+## Other Models Verified (2026-06-17)
+
+| Model | File | Sample Price | Notes |
+|-------|------|-------------|-------|
+| BL120 | IIoT Gateways | $49 | All 4 tiers identical |
+| BL120PM | IIoT Gateways | $49 | All 4 tiers identical |
+| BL121PO | IIoT Gateways | $57 | OPC UA + PLC protocols |
+| BL103 | IIoT Gateways | $57 | OPC UA gateway |
+| M160E | RTU & Router | N/A (use <50Pcs=$157) | Samples=N/A, no sample tier |
+| BL118B | BL118 sheet | $63 (Online Store) | Host only, no SOM |
+| SOM335 | BL118 sheet | ¥420 RMB | ⚠️ File shows $62/$66 but actual price is ¥420 RMB |
+| X4 | BL118 sheet | $9 (Online Store) | |
+| Y02 | BL118 sheet | $10 (<100pcs) | Online Store = "Refer to <100pcs" |
+| Y31 | BL118 sheet | $18 (<100pcs) | Online Store = "Refer to <100pcs" |

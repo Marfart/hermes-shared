@@ -1,166 +1,193 @@
 ---
 name: joinf-crm-api
-description: 富通天下(金蝶)CRM API操作指南 — 通过CDP控制已登录Chrome浏览器操作富通CRM，包括新增客户、修改客户资料、添加备注/跟进记录等。Playwright只作为触发器，正式写入优先用API。
+description: 富通天下(金蝶)CRM API操作指南 — 通过CDP控制已登录Chrome浏览器操作富通CRM，包括新增客户、修改客户资料、添加跟进记录等。Playwright只作为触发器，正式写入优先用API。
 ---
 
 # 富通天下(金蝶)CRM API 操作指南
 
-## 核心发现
+## 总原则
 
-### 已验证：新增客户（通过UI表单）
+1. **不要重新登录** — 复用当前已登录浏览器会话
+2. **不要长期靠 Playwright 点页面** — Playwright 只用于拿认证信息和抓模板
+3. **一旦模板抓到，后续一律改成直接 HTTP**
+4. **删除客户直接忽略** — 当前账号没有删除权限
 
-**认证方式**: 依赖Chrome已登录的session cookie，无需额外token
+## 已验证的真实接口
 
-**关键发现**: 直接POST/PUT API返回"系统繁忙"，必须通过UI表单的Vue组件保存
+| 功能 | Method | 路径 | 状态 |
+|------|--------|------|------|
+| 新增客户 | POST | `/rapi/d/customer` | ✅ 已验证 |
+| 更新客户资料 | PATCH | `/rapi/d/customer` | ✅ 已验证 |
+| 添加跟进记录 | POST | `/rapi/m/follow/add` | ✅ 已验证 |
+| 删除客户 | POST | `/rapi/d/customers/delete` | ❌ 权限不足 |
+| 保存邮件草稿 | — | — | ❓ 未探索 |
+| 独立备注接口 | — | — | ❓ 未确认 |
 
-**已验证字段值**:
-- `displayType`: "潜在工业客户" | "Key Accounts" | "Protected Prospects" | "成交工业客户" | "成交家用客户"
-- `displayRegion`格式: `中文 英文`（如 `印度  INDIA`）
-- `customerTypeId`: "236496"（潜在工业客户）
+## 认证信息
 
-## CDP连接注意事项
+需要以下3项，从已登录浏览器获取：
 
-### 超时问题解决
+| 字段 | 来源 | 当前值 |
+|------|------|--------|
+| `Cookie` | 浏览器 Cookie（关键是 `JOINF_SESSION`） | 从浏览器实时读取 |
+| `X-Cid` | `localStorage.joinf-compnayId` | `71376` |
+| `X-User` | `localStorage.joinf-XUser` | `183006` |
 
-CDP websocket连接可能超时，原因：
-1. 之前的连接没有正确关闭（Chrome只允许一个websocket连接per page）
-2. 页面正在加载/导航中
-3. recv timeout设置过短
-
-**正确连接顺序**:
-```
-1. curl http://127.0.0.1:9223/json → 获取页面ID
-2. curl http://127.0.0.1:9223/json/activate/{page_id} → 激活页面
-3. time.sleep(3~5) → 等待页面就绪
-4. websocket.create_connection(ws_url, timeout=60)
-5. ws.settimeout(15)
-6. 发送命令后等待response，如超时则重新连接
-```
-
-### 已知问题
-
-- `Page.navigate` 后页面可能处于加载状态，需要等待
-- 多个快速命令可能丢失response
-- 每次操作后建议关闭连接，下次重新连接
-
-## 操作方法
-
-### 1. 打开客户详情/新建页面
-
-```
-URL格式:
-- 新建: https://trade.joinf.com/tms/customer/customers?type=new&tab=0
-- 编辑: https://trade.joinf.com/tms/customer/customers?type=edit&id={customerId}&tab=0
-```
-
-### 2. 填写表单字段
-
-**文本字段**（name, shortName等）:
+**获取方式（CDP）**:
 ```python
-# 使用native setter + input事件触发Vue reactivity
-nativeSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value').set
-nativeSetter.call(input_el, 'value')
-input_el.dispatchEvent(new Event('input', {bubbles: true}))
-input_el.dispatchEvent(new Event('change', {bubbles: true}))
+# 从浏览器读取认证信息
+result = await page.evaluate("() => ({ cookie: document.cookie, xCid: localStorage.getItem('joinf-compnayId'), xUser: localStorage.getItem('joinf-XUser') })")
 ```
 
-**下拉选择字段**（displayType, displayRegion等）:
-```python
-# 方法1: 点击下拉 → 等待选项出现 → 点击目标选项
-input_el.click()
-time.sleep(1)
-items = document.querySelectorAll('.el-select-dropdown__item')
-# 找到目标并点击
+## 现成代码
 
-# 方法2: 使用Vue组件的handleOptionSelect（更可靠）
-selectComp = input_el.closest('.el-select').__vue__
-opts = selectComp.options || []
-target = opts.find(o => o.label === '目标值')
-selectComp.handleOptionSelect(target)
+API client 已封装好，直接用：
+
+```
+C:\Users\Admin\Documents\Codex\2026-06-17\codex-https-trade-joinf-com-api\outputs\joinf-api-client.mjs
 ```
 
-### 3. 保存
+支持的方法：
+- `client.createCustomer({ templatePayload, fields, contactFields, ... })`
+- `client.updateCustomer({ customerId, templatePayload, fields, ... })`
+- `client.addFollowRecord({ customerId, content, ... })`
+- `client.readCustomerDetail({ customerId })`
 
-**方法A**: 点击保存按钮
-```python
-buttons = document.querySelectorAll('button')
-saveBtn = [b for b in buttons if b.textContent.trim() == '保存'][0]
-saveBtn.click()
+## 新增客户
+
+### 接口
+```
+POST https://trade.joinf.com/rapi/d/customer
 ```
 
-**方法B**: 调用Vue组件save方法
-```python
-comp = document.querySelector('.customer_edit_add_vue').__vue__
-comp.save()
+### 关键参数
+
+**必须保留的字段值**:
+- `displayType.value = 236496`（潜在工业客户）
+- `markModel.companyId = 71376`
+- `markModel.operatorId = 183006`
+
+**需要替换的客户字段**:
+- `name` — 客户名称
+- `shortName` — 客户简称
+- `description` — 描述
+- `webSite` — 网站
+
+**需要替换的联系人字段**:
+- `contacts[0].models[].columnName === "name"` — 第一个联系人的名字
+
+### 标准流程
+
+1. 从浏览器获取认证信息（cookie, xCid, xUser）
+2. 获取 create 模板 payload（从已成功创建的请求中抓取）
+3. 基于模板替换 `name`, `shortName`, `description`, `webSite`
+4. 替换 `contacts[0]` 中的联系人 `name`
+5. 保留 `displayType = 236496`、`markModel.companyId = 71376`、`markModel.operatorId = 183006`
+6. 发送 POST `/rapi/d/customer`
+7. 返回的 `data` 就是新的 `customerId`
+8. 回列表页或读取接口确认客户已存在
+
+### 已验证的成功案例
+
+| 客户名 | customerId | 联系人 | 网站 |
+|--------|------------|--------|------|
+| Hermes Atlas 79139 | 238858457 | Noah Reed | https://example-479139.test |
+| Hermes Nova 40171 | 238858620 | Ethan Cole | https://example-740171.test |
+
+## 更新客户资料
+
+### 接口
+```
+PATCH https://trade.joinf.com/rapi/d/customer
 ```
 
-## 常用字段ID
+### ⚠️ 关键限制
 
-| 字段 | ID | 类型 |
-|------|-----|------|
-| 客户编码 | code | text (自动) |
-| 客户名称 | name | text (必填) |
-| 客户简称 | shortName | text |
-| 客户类型 | displayType | select (必填) |
-| 国家/地区 | displayRegion | select (必填) |
-| 时区 | timeZone | select |
-| 主要产品 | mainProduct | text |
-| 公司网站 | webSite | text |
-| 客户描述 | introduce | text |
-| 员工数 | employeesCount | text |
-| 成立时间 | establishTime | text |
-| 行业类型 | industryType | text |
-| 年营业额 | yearTurnover | text |
-| 公司简介 | introduce | textarea |
+**不能自己拼最小 patch body！**
 
-## 待探索接口（按优先级）
+错误做法（会返回"系统繁忙"）：
+```
+1. 从 GET /rapi/d/customers/:id/1 读取客户详情
+2. 自己平铺字段
+3. 自己拼一个最小 patch body
+4. 发 PATCH → 失败！
+```
 
-1. ✅ 新增客户 — 通过UI表单已实现
-2. ❌ 添加备注(introduce字段) — 待通过编辑表单测试
-3. ❌ 添加跟进记录 — 待探索follow/record相关API
-4. ❌ 修改客户资料 — 待通过编辑表单测试
-5. ❌ 保存邮件草稿 — 待探索mail/draft相关API
+正确做法：
+```
+1. 从真实编辑页保存时抓到完整 payload 模板
+2. 在模板上只替换目标字段
+3. 发 PATCH → 成功！
+```
 
-## 接口探索方法论
+### 标准流程
 
-当普通Network抓包不到API时，按以下顺序尝试：
+1. 从浏览器获取认证信息
+2. 获取 update 模板 payload（从真实编辑页保存动作中抓取）
+3. 基于模板只替换要修改的字段
+4. 发送 PATCH `/rapi/d/customer`
+5. 回读详情接口确认字段变化
+6. 用新 marker 再打一次确认可重复
 
-### 阶段1: HAR搜索
-1. 启用Network监听
-2. 用Playwright触发一次最小保存操作
-3. 等待8-15秒后停止监听
-4. 搜索payload/response中包含唯一测试字符串(HERMES_API_TEST_时间戳)的请求
+### 已验证的成功案例
 
-### 阶段2: 前端JS分析
-1. 导出所有加载的JS bundle
-2. 搜索关键词: save, update, add, create, customer, contact, follow, remark, api, gateway, graphql, rpc, service
-3. 提取API路径和方法名
+- **目标客户**: Test Customer XMA (customerId: 238855638)
+- **成功 marker**: `HERMES_API_TEST_20260617_090918`, `HERMES_API_TEST_20260617_090921`
+- **验证字段**: `description` 字段已成功修改并回读确认
 
-### 阶段3: Storage/Token解析
-1. 检查 localStorage, sessionStorage, cookies
-2. 提取: token, csrf/xsrf, authorization, tenantId, companyId, userId, employeeId
-3. 检查window全局变量
+## 添加跟进记录
 
-### 阶段4: GraphQL/Gateway/RPC
-1. 检查payload中的 operationName, method, action, service, variables
-2. 分析是否走统一网关
+### 接口
+```
+POST https://trade.joinf.com/rapi/m/follow/add
+```
 
-### 阶段5: WebSocket
-1. 监听WebSocket frame
-2. 在保存前后的message中搜索测试字符串
+### 参数
+```javascript
+{
+  id: "",
+  attachmentList: [],
+  businessStep: 0,
+  customerStep: 0,
+  completeNoRemind: 0,
+  models: [
+    { columnName: "dataName", value: customerId },
+    { columnName: "contactContent", value: "跟进内容" },
+    { columnName: "planningTime", value: "2026-06-17 08:54:42" },
+    { columnName: "feedbackOperator", value: "183006" },
+    // ... 其他固定字段
+  ]
+}
+```
 
-### 阶段6: 页面内部request函数
-1. 查找页面封装的axios/fetch/apiService
-2. 在浏览器上下文中直接调用页面自己的请求函数
+### 已验证
+- customerId: 238855638
+- 成功 marker: `HERMES_API_TEST_20260617_085237`, `HERMES_API_TEST_20260617_085414`, `HERMES_API_TEST_20260617_085442`
 
-### 阶段7: 备选方案
-- Excel导入/批量导入
-- 企业邮箱SMTP/IMAP/Exchange API
+## 删除客户
+
+**结论：当前账号没有删除权限，不要继续研究。**
+
+接口路径: `POST /rapi/d/customers/delete`
+请求体: `{ "ids": [customerId], "flag": -1, "delReason": "1" }`
+服务端返回: `{ "success": false, "errMsg": "没有[客户删除]的操作权限！" }`
+
+## 待探索（按优先级）
+
+1. ✅ 新增客户 — 已验证
+2. ✅ 更新客户资料 — 已验证
+3. ✅ 添加跟进记录 — 已验证
+4. ❌ 删除客户 — 权限不足，跳过
+5. ❓ 保存邮件草稿 — 未探索
+6. ❓ 独立备注接口 — 未确认（如果指 description 字段，用 updateCustomer 即可）
 
 ## 关键资源
 
+- **API client**: `outputs/joinf-api-client.mjs`
+- **测试文件**: `outputs/joinf-api-client.test.mjs`
+- **探索日志**: `work/api-exploration-log.md`
+- **机器可读 findings**: `work/api-findings.jsonl`
+- **前端 bundle**: `work/editAdd.js`, `work/app.bundle.js`
 - **测试客户**: Test Customer XMA (ID: 238855638)
 - **CDP端口**: 127.0.0.1:9223
 - **登录账号**: bliiot03
-- **前端框架**: Vue.js + Element UI
-- **表单组件类**: customer_edit_add_vue, contact_edit_add_vue

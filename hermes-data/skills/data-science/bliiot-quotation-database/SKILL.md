@@ -229,10 +229,15 @@ When determining which price to show for a given quantity:
 
 **RULE (user-given):** "如果有样品价，小于10台的按样品价算，没有就按照文档上的价格算"
 
+**CRITICAL — Tier thresholds are NOT just about <10.** The Sample tier applies for ANY quantity below the next tier's threshold. In the IIoT Gateways file, the tiers are Sample / 50pcs / 100pcs / 500pcs — so for 12 units (12 < 50), the Sample price must be used, NOT the 50pcs price. For 49 units, still use Sample. Only at 50+ units do you switch to 50pcs tier.
+
 | Scenario | Action |
 |----------|--------|
-| File HAS a Samples column AND qty < 10 | Use Samples price |
+| File HAS a Samples column AND qty < next_tier_threshold | Use Samples price |
 | File has NO Samples column | Use documented lowest tier (e.g. <100pcs) |
+| IIoT Gateways (Sample/50pcs/100pcs/500pcs), qty 1-49 | **Use Sample tier** — NOT 50pcs |
+| ARMxy/BL118 (<100pcs/>=100pcs/Online Store), qty 1-9 | Use Online Store (= Sample) tier |
+| RTU & Router (Samples/<50Pcs/>50Pcs/...), qty 1-49 | Use Samples tier (if not N/A) |
 
 ### Per-file application
 
@@ -488,6 +493,7 @@ for name, info in resp.get('files', {}).items():
 - ❌ **Not multiplying shipping by surcharge** — if prices are ×1.03, shipping is ALSO ×1.03. Total = (unit_price × qty × 1.03) + (shipping × 1.03).
 - ❌ **Mixing with-shipping and without-shipping on same line** — user wants two SEPARATE sections: "不含运费" block and "含运费" block.
 - ❌ **Adding extra columns when user says "只要型号和价格"** — just model name and final price, no breakdown columns.
+- ❌ **Using the wrong price tier for small orders (10-49 units)** — For the IIoT Gateways file (Sample/50pcs/100pcs/500pcs), quantities under 50 MUST use the Sample price, NOT the 50pcs price. A 12-unit order at 50pcs prices will be LOWER than the correct Sample price. Example: BA115 at 50pcs=$63 vs Sample=$67 — quoting $65 for 12 units is wrong (below the correct $67). Always check: if qty < next_tier_min, use Sample tier regardless of how "close" the qty is to the next tier.
 - ❌ **Y03 does not exist** — Y-board models are: Y01, Y02, Y11, Y12, Y13, Y21, Y22, Y24, Y31, Y33, Y34, Y36, Y37, Y41, Y43, Y46, Y51, Y52, Y53, Y54, Y56, Y57, Y58, Y63, Y95, Y96. If user asks for Y03, flag it immediately.
 - ❌ **SOM335 file price is wrong** — the 202605 BL118 price list shows SOM335 at $62 (Online Store) or $58 (<100pcs), but the **actual price is ¥420 RMB**. This is a known deviation — the file price does not reflect current SOM335 cost. Always use ¥420 RMB when quoting SOM335 and flag it separately from USD totals.
 - ❌ **Assuming one file host works** — free file hosts (tmpfiles.org, file.io, 0x0.st, transfer.sh, catbox.moe, pixeldrain) frequently fail simultaneously. Have GitHub Gist as a reliable fallback for text files.
