@@ -17,6 +17,26 @@ tags: [behavior, anti-bot, delay, randomization, core-rule]
 5. 整理出完整需求清单后再行动
 6. 绝不能只看最后一条"You are welcome"就觉得读完了
 
+### ⚠️ 工具选择铁则：WhatsApp 只能用 CDP，不能用 Playwright
+
+**❌ 绝对禁止用 Playwright MCP（`mcp_playwright_browser_*`）操作 WhatsApp Web**
+- Playwright 启动的是**全新浏览器实例**，跟本机已登录的 Chrome 完全隔离
+- WhatsApp 很容易检测到 Playwright 的自动化特征（不同的指纹、无登录态、需要重新扫码）
+- 每次都要重新登录 WhatsApp Web，极不方便
+- 容易被平台封号
+
+**✅ 必须用 Hermes 原生浏览器工具（`browser_navigate`、`browser_click`、`browser_snapshot`、`browser_scroll`、`browser_type`）通过 CDP 9223 端口**
+- 直接连接到本机已登录好 WhatsApp Web 的 Chrome
+- 共享本机浏览器的登录态、Cookie、指纹
+- WhatsApp 看到的是正常浏览器操作，不会被检测为自动化
+- 操作之间加随机延迟（2-8秒）模仿人类
+
+**Playwright 的适用场景（非 WhatsApp）：**
+- 需要独立浏览器环境的测试/调试
+- 需要截图/PDF生成的场景
+- 访问需要 JS 渲染但不想污染本机浏览器的页面
+- 日报图片爬取（og:image 提取）
+
 **所有操作——无论是直接操作浏览器/终端，还是脚本里的自动化行为——都必须模仿人类的节奏和随机性。**
 
 这不是可选建议，是强制行为准则。

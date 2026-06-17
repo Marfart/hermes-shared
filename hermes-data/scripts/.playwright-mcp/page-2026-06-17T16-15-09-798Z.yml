@@ -1,0 +1,1138 @@
+- generic [active] [ref=e16]:
+  - banner [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e20]:
+        - generic [ref=e23]:
+          - button "对话" [pressed] [ref=e24] [cursor=pointer]:
+            - generic [ref=e28]:
+              - img
+          - generic:
+            - status:
+              - generic: "1"
+        - generic [ref=e31]:
+          - button "动态" [ref=e32] [cursor=pointer]:
+            - generic [ref=e36]:
+              - img
+          - generic:
+            - status:
+              - generic: 动态更新
+        - button "频道" [ref=e40] [cursor=pointer]:
+          - generic [ref=e44]:
+            - img
+        - button "社群" [ref=e48] [cursor=pointer]:
+          - generic [ref=e52]:
+            - img
+      - generic [ref=e54]:
+        - button "影音内容" [ref=e58] [cursor=pointer]:
+          - generic [ref=e62]:
+            - img
+        - button "自己" [ref=e66] [cursor=pointer]:
+          - img [ref=e68]
+  - generic [ref=e69]:
+    - banner [ref=e70]:
+      - banner [ref=e71]:
+        - generic [ref=e72]:
+          - heading "WhatsApp" [level=2] [ref=e74]:
+            - generic "WhatsApp" [ref=e78]:
+              - img "wa-wordmark-refreshed"
+          - generic [ref=e80]:
+            - button "新聊天" [ref=e84] [cursor=pointer]:
+              - generic [ref=e88]:
+                - img
+            - button "菜单" [ref=e91] [cursor=pointer]:
+              - generic [ref=e95]:
+                - img
+    - generic [ref=e96]:
+      - generic [ref=e103]:
+        - generic [ref=e105]:
+          - img
+        - textbox "搜索或开始新聊天" [ref=e107]
+      - tablist "chat-list-filters" [ref=e108]:
+        - tab "所有" [ref=e110] [cursor=pointer]:
+          - generic [ref=e116]: 所有
+        - tab "未读 1" [ref=e118] [cursor=pointer]:
+          - generic [ref=e120]:
+            - generic [ref=e124]: 未读
+            - generic [ref=e126]: "1"
+        - tab "特别关注" [ref=e128] [cursor=pointer]:
+          - generic [ref=e134]: 特别关注
+        - tab "群组 1" [ref=e136] [cursor=pointer]:
+          - generic [ref=e138]:
+            - generic [ref=e142]: 群组
+            - generic [ref=e144]: "1"
+        - tab [ref=e147] [cursor=pointer]:
+          - generic [ref=e151]:
+            - img
+      - generic [ref=e154]:
+        - button "关闭" [ref=e157] [cursor=pointer]:
+          - generic [ref=e161]:
+            - img
+        - generic [ref=e162]:
+          - generic [ref=e163]:
+            - img
+          - generic [ref=e166]:
+            - text: 消息通知已关闭。
+            - button "开启" [ref=e167] [cursor=pointer]
+      - generic [ref=e168]:
+        - button "已归档" [ref=e169] [cursor=pointer]:
+          - generic [ref=e170]:
+            - generic [ref=e174]:
+              - img
+            - group [ref=e176]:
+              - generic [ref=e178]: 已归档
+            - generic "1条未读消息" [ref=e181]:
+              - generic [ref=e182]: "1"
+        - grid "聊天列表" [ref=e185]:
+          - row "Minsoo 星期一 Wish you a nice day! 已置顶的聊天" [ref=e186]:
+            - gridcell "Minsoo 星期一 Wish you a nice day! 已置顶的聊天" [ref=e187]:
+              - generic [ref=e189] [cursor=pointer]:
+                - generic [ref=e195]:
+                  - img
+                - generic [ref=e196]:
+                  - gridcell "Minsoo 星期一" [ref=e197]:
+                    - generic "Minsoo" [ref=e201]
+                    - generic [ref=e203]: 星期一
+                  - generic [ref=e204]:
+                    - generic "‪Wish you a nice day!‬" [ref=e206]:
+                      - generic [ref=e208]:
+                        - img
+                      - generic [ref=e209]: Wish you a nice day!
+                    - gridcell "已置顶的聊天" [ref=e210]:
+                      - generic "已置顶的聊天" [ref=e212]:
+                        - generic [ref=e213]:
+                          - img
+          - 'row "Project solution 2026年4月15日 你 : We apologize for the late reply. We will conduct a case-by-case analysis based on the problems you encounter at that time. If the issue is related to spare parts, we will replace the spare parts for you free of charge. If the problem cannot be solved by replacing spare parts, we will replace the entire unit for you. We will directly send a new machine within the one-year warranty period. We have an adequate stock of spare parts, please rest assured about this. As for the average response time, we can reply instantly during our company''s working hours (8:30 AM – 12:00 PM, 13:30 PM – 18:00 PM, China Standard Time). For off-duty hours, the average response time is within one hour (excluding normal sleeping hours). The failure rate is about 3%. Thank you, please feel free to let me know if you have any questions. 已置顶的聊天" [ref=e214]':
+            - 'gridcell "Project solution 2026年4月15日 你 : We apologize for the late reply. We will conduct a case-by-case analysis based on the problems you encounter at that time. If the issue is related to spare parts, we will replace the spare parts for you free of charge. If the problem cannot be solved by replacing spare parts, we will replace the entire unit for you. We will directly send a new machine within the one-year warranty period. We have an adequate stock of spare parts, please rest assured about this. As for the average response time, we can reply instantly during our company''s working hours (8:30 AM – 12:00 PM, 13:30 PM – 18:00 PM, China Standard Time). For off-duty hours, the average response time is within one hour (excluding normal sleeping hours). The failure rate is about 3%. Thank you, please feel free to let me know if you have any questions. 已置顶的聊天" [ref=e215]':
+              - generic [ref=e217] [cursor=pointer]:
+                - generic [ref=e223]:
+                  - img
+                - generic [ref=e224]:
+                  - gridcell "Project solution 2026年4月15日" [ref=e225]:
+                    - generic "Project solution" [ref=e227]
+                    - generic [ref=e229]: 2026年4月15日
+                  - generic [ref=e230]:
+                    - generic "‪We apologize for the late reply. We will conduct a case-by-case analysis based on the problems you encounter at that time. If the issue is related to spare parts, we will replace the spare parts for you free of charge. If the problem cannot be solved by replacing spare parts, we will replace the entire unit for you. We will directly send a new machine within the one-year warranty period. We have an adequate stock of spare parts, please rest assured about this. As for the average response time, we can reply instantly during our company's working hours (8:30 AM – 12:00 PM, 13:30 PM – 18:00 PM, China Standard Time). For off-duty hours, the average response time is within one hour (excluding normal sleeping hours). The failure rate is about 3%. Thank you, please feel free to let me know if you have any questions.‬" [ref=e232]:
+                      - generic [ref=e234]:
+                        - img
+                      - generic [ref=e237]: 你
+                      - generic [ref=e238]: ":"
+                      - generic [ref=e239]: We apologize for the late reply. We will conduct a case-by-case analysis based on the problems you encounter at that time. If the issue is related to spare parts, we will replace the spare parts for you free of charge. If the problem cannot be solved by replacing spare parts, we will replace the entire unit for you. We will directly send a new machine within the one-year warranty period. We have an adequate stock of spare parts, please rest assured about this. As for the average response time, we can reply instantly during our company's working hours (8:30 AM – 12:00 PM, 13:30 PM – 18:00 PM, China Standard Time). For off-duty hours, the average response time is within one hour (excluding normal sleeping hours). The failure rate is about 3%. Thank you, please feel free to let me know if you have any questions.
+                    - gridcell "已置顶的聊天" [ref=e240]:
+                      - generic "已置顶的聊天" [ref=e242]:
+                        - generic [ref=e243]:
+                          - img
+          - row "Arnold Chimambo 昨天 Hello, our boss would like to confirm some additional details with you. Apart from the oil temperature measurement triggering the alarm that you just mentioned, are there any other logical control mechanisms? For example, are there any other reasons that could trigger the alarm, not just oil temperature measurement? For instance, do you have door contacts or bolt sensors on site? Could the alarm be triggered by door-related events, such as unauthorized opening, not fully closed, or remaining open for an extended period of time? Or could the alarm be triggered by abnormalities with the bolt sensor, such as the door being closed but the bolt not properly locked, loose bolt, dislocated bolt, or other abnormal states? Are there any other reasons that could also trigger the alarm? We would like to confirm these details with you. Thank you very much." [ref=e244]:
+            - gridcell "Arnold Chimambo 昨天 Hello, our boss would like to confirm some additional details with you. Apart from the oil temperature measurement triggering the alarm that you just mentioned, are there any other logical control mechanisms? For example, are there any other reasons that could trigger the alarm, not just oil temperature measurement? For instance, do you have door contacts or bolt sensors on site? Could the alarm be triggered by door-related events, such as unauthorized opening, not fully closed, or remaining open for an extended period of time? Or could the alarm be triggered by abnormalities with the bolt sensor, such as the door being closed but the bolt not properly locked, loose bolt, dislocated bolt, or other abnormal states? Are there any other reasons that could also trigger the alarm? We would like to confirm these details with you. Thank you very much." [ref=e245]:
+              - generic [ref=e247] [cursor=pointer]:
+                - img [ref=e252]
+                - generic [ref=e253]:
+                  - gridcell "Arnold Chimambo 昨天" [ref=e254]:
+                    - generic "Arnold Chimambo" [ref=e258]
+                    - generic [ref=e260]: 昨天
+                  - generic [ref=e261]:
+                    - generic "‪Hello, our boss would like to confirm some additional details with you. Apart from the oil temperature measurement triggering the alarm that you just mentioned, are there any other logical control mechanisms? For example, are there any other reasons that could trigger the alarm, not just oil temperature measurement? For instance, do you have door contacts or bolt sensors on site? Could the alarm be triggered by door-related events, such as unauthorized opening, not fully closed, or remaining open for an extended period of time? Or could the alarm be triggered by abnormalities with the bolt sensor, such as the door being closed but the bolt not properly locked, loose bolt, dislocated bolt, or other abnormal states? Are there any other reasons that could also trigger the alarm? We would like to confirm these details with you. Thank you very much.‬" [ref=e263]:
+                      - generic [ref=e265]:
+                        - img
+                      - generic [ref=e266]: Hello, our boss would like to confirm some additional details with you. Apart from the oil temperature measurement triggering the alarm that you just mentioned, are there any other logical control mechanisms? For example, are there any other reasons that could trigger the alarm, not just oil temperature measurement? For instance, do you have door contacts or bolt sensors on site? Could the alarm be triggered by door-related events, such as unauthorized opening, not fully closed, or remaining open for an extended period of time? Or could the alarm be triggered by abnormalities with the bolt sensor, such as the door being closed but the bolt not properly locked, loose bolt, dislocated bolt, or other abnormal states? Are there any other reasons that could also trigger the alarm? We would like to confirm these details with you. Thank you very much.
+                    - gridcell
+          - row "LA 昨天 Thank you very much for your understanding. Batteries are not included in our standard factory shipments, and we always provide additional clarification to our customers regarding this matter. Thank you!" [ref=e267]:
+            - gridcell "LA 昨天 Thank you very much for your understanding. Batteries are not included in our standard factory shipments, and we always provide additional clarification to our customers regarding this matter. Thank you!" [ref=e268]:
+              - generic [ref=e270] [cursor=pointer]:
+                - generic [ref=e276]:
+                  - img
+                - generic [ref=e277]:
+                  - gridcell "LA 昨天" [ref=e278]:
+                    - generic "LA" [ref=e282]
+                    - generic [ref=e284]: 昨天
+                  - generic [ref=e285]:
+                    - generic "‪Thank you very much for your understanding. Batteries are not included in our standard factory shipments, and we always provide additional clarification to our customers regarding this matter. Thank you!‬" [ref=e287]:
+                      - generic [ref=e289]:
+                        - img
+                      - generic [ref=e290]: Thank you very much for your understanding. Batteries are not included in our standard factory shipments, and we always provide additional clarification to our customers regarding this matter. Thank you!
+                    - gridcell [ref=e291]:
+                      - button [ref=e293]:
+                        - generic [ref=e294]:
+                          - img
+          - row "Abdul Rahman Zafar 昨天 对以下消息留下了心情 👍 ： \" Thank you so much for your detailed clarification. I will convey this information to our technical department immediately upon my return to the office tomorrow.\"" [ref=e295]:
+            - gridcell "Abdul Rahman Zafar 昨天 对以下消息留下了心情 👍 ： \" Thank you so much for your detailed clarification. I will convey this information to our technical department immediately upon my return to the office tomorrow.\"" [ref=e296]:
+              - generic [ref=e298] [cursor=pointer]:
+                - img [ref=e303]
+                - generic [ref=e304]:
+                  - gridcell "Abdul Rahman Zafar 昨天" [ref=e305]:
+                    - generic "Abdul Rahman Zafar" [ref=e309]
+                    - generic [ref=e311]: 昨天
+                  - generic [ref=e312]:
+                    - generic "‪Thank you so much for your detailed clarification. I will convey this information to our technical department immediately upon my return to the office tomorrow.‬" [ref=e314]:
+                      - generic [ref=e315]:
+                        - text: 对以下消息留下了心情
+                        - img "👍" [ref=e316]
+                        - text: ：
+                      - text: "\""
+                      - generic [ref=e318]: Thank you so much for your detailed clarification. I will convey this information to our technical department immediately upon my return to the office tomorrow."
+                    - gridcell
+          - row "Subhodeep 昨天 Sure,that's no problem at all. The application process for customization projects does require some time. I will provide you with updates as soon as possible, and after our leadership team reviews and discusses your specific requirements, we will provide you with the corresponding quotation. Thank you so much." [ref=e319]:
+            - gridcell "Subhodeep 昨天 Sure,that's no problem at all. The application process for customization projects does require some time. I will provide you with updates as soon as possible, and after our leadership team reviews and discusses your specific requirements, we will provide you with the corresponding quotation. Thank you so much." [ref=e320]:
+              - generic [ref=e322] [cursor=pointer]:
+                - generic [ref=e328]:
+                  - img
+                - generic [ref=e329]:
+                  - gridcell "Subhodeep 昨天" [ref=e330]:
+                    - generic "Subhodeep" [ref=e334]
+                    - generic [ref=e336]: 昨天
+                  - generic [ref=e337]:
+                    - generic "‪Sure,that's no problem at all. The application process for customization projects does require some time. I will provide you with updates as soon as possible, and after our leadership team reviews and discusses your specific requirements, we will provide you with the corresponding quotation. Thank you so much.‬" [ref=e339]:
+                      - generic [ref=e341]:
+                        - img
+                      - generic [ref=e342]: Sure,that's no problem at all. The application process for customization projects does require some time. I will provide you with updates as soon as possible, and after our leadership team reviews and discusses your specific requirements, we will provide you with the corresponding quotation. Thank you so much.
+                    - gridcell
+          - 'row "2条未读消息 BL 120 BN 昨天 Miguel : 照片" [ref=e343]':
+            - 'gridcell "2条未读消息 BL 120 BN 昨天 Miguel : 照片" [ref=e344]':
+              - generic [ref=e346] [cursor=pointer]:
+                - generic [ref=e352]:
+                  - img
+                - generic [ref=e353]:
+                  - gridcell "2条未读消息 BL 120 BN 昨天" [ref=e354]:
+                    - generic [ref=e355]:
+                      - generic [ref=e356]: 2条未读消息
+                      - generic "BL 120 BN" [ref=e357]
+                    - generic [ref=e359]: 昨天
+                  - generic [ref=e360]:
+                    - generic "‪照片‬" [ref=e362]:
+                      - generic [ref=e365]: Miguel
+                      - generic [ref=e366]: ":"
+                      - generic [ref=e368]:
+                        - img
+                      - generic [ref=e369]: 照片
+                    - gridcell [ref=e370]:
+                      - generic [ref=e374]: "2"
+          - row "C 昨天 你对以下消息留下了心情 🙏 ： \" I will thanks !\"" [ref=e375]:
+            - gridcell "C 昨天 你对以下消息留下了心情 🙏 ： \" I will thanks !\"" [ref=e376]:
+              - generic [ref=e378] [cursor=pointer]:
+                - generic [ref=e384]:
+                  - img
+                - generic [ref=e385]:
+                  - gridcell "C 昨天" [ref=e386]:
+                    - generic "C" [ref=e390]
+                    - generic [ref=e392]: 昨天
+                  - generic [ref=e393]:
+                    - generic "‪I will thanks !‬" [ref=e395]:
+                      - generic [ref=e396]:
+                        - text: 你对以下消息留下了心情
+                        - img "🙏" [ref=e397]
+                        - text: ：
+                      - text: "\""
+                      - generic [ref=e399]: I will thanks !"
+                    - gridcell
+          - row "Вадим 昨天 你对以下消息留下了心情 🙏 ： \" Okay, thank you. I'm waiting for your response.\"" [ref=e400]:
+            - gridcell "Вадим 昨天 你对以下消息留下了心情 🙏 ： \" Okay, thank you. I'm waiting for your response.\"" [ref=e401]:
+              - generic [ref=e403] [cursor=pointer]:
+                - generic [ref=e409]:
+                  - img
+                - generic [ref=e410]:
+                  - gridcell "Вадим 昨天" [ref=e411]:
+                    - generic "Вадим" [ref=e415]
+                    - generic [ref=e417]: 昨天
+                  - generic [ref=e418]:
+                    - generic "‪Okay, thank you. I'm waiting for your response.‬" [ref=e420]:
+                      - generic [ref=e421]:
+                        - text: 你对以下消息留下了心情
+                        - img "🙏" [ref=e422]
+                        - text: ：
+                      - text: "\""
+                      - generic [ref=e424]: Okay, thank you. I'm waiting for your response."
+                    - gridcell
+          - row "Abhinav 昨天 These two product types are our entry-level offerings, and they have been selling very well." [ref=e425]:
+            - gridcell "Abhinav 昨天 These two product types are our entry-level offerings, and they have been selling very well." [ref=e426]:
+              - generic [ref=e428] [cursor=pointer]:
+                - img [ref=e433]
+                - generic [ref=e434]:
+                  - gridcell "Abhinav 昨天" [ref=e435]:
+                    - generic "Abhinav" [ref=e439]
+                    - generic [ref=e441]: 昨天
+                  - generic [ref=e442]:
+                    - generic "‪These two product types are our entry-level offerings, and they have been selling very well.‬" [ref=e444]:
+                      - generic [ref=e446]:
+                        - img
+                      - generic [ref=e447]: These two product types are our entry-level offerings, and they have been selling very well.
+                    - gridcell
+          - row "Thamara Banneheka 昨天 你对以下消息留下了心情 🙏 ： \" Thanks\"" [ref=e448]:
+            - gridcell "Thamara Banneheka 昨天 你对以下消息留下了心情 🙏 ： \" Thanks\"" [ref=e449]:
+              - generic [ref=e451] [cursor=pointer]:
+                - generic [ref=e457]:
+                  - img
+                - generic [ref=e458]:
+                  - gridcell "Thamara Banneheka 昨天" [ref=e459]:
+                    - generic "Thamara Banneheka" [ref=e463]
+                    - generic [ref=e465]: 昨天
+                  - generic [ref=e466]:
+                    - generic "‪Thanks‬" [ref=e468]:
+                      - generic [ref=e469]:
+                        - text: 你对以下消息留下了心情
+                        - img "🙏" [ref=e470]
+                        - text: ：
+                      - text: "\""
+                      - generic [ref=e472]: Thanks"
+                    - gridcell
+          - row "Zantar Abdurab Segeir 昨天 You're welcome!" [ref=e473]:
+            - gridcell "Zantar Abdurab Segeir 昨天 You're welcome!" [ref=e474]:
+              - generic [ref=e476] [cursor=pointer]:
+                - img [ref=e481]
+                - generic [ref=e482]:
+                  - gridcell "Zantar Abdurab Segeir 昨天" [ref=e483]:
+                    - generic "Zantar Abdurab Segeir" [ref=e487]
+                    - generic [ref=e489]: 昨天
+                  - generic [ref=e490]:
+                    - generic "‪You're welcome!‬" [ref=e492]:
+                      - generic [ref=e494]:
+                        - img
+                      - generic [ref=e495]: You're welcome!
+                    - gridcell
+          - row "Alvick 昨天 Thank you for your patience" [ref=e496]:
+            - gridcell "Alvick 昨天 Thank you for your patience" [ref=e497]:
+              - generic [ref=e499] [cursor=pointer]:
+                - generic [ref=e505]:
+                  - img
+                - generic [ref=e506]:
+                  - gridcell "Alvick 昨天" [ref=e507]:
+                    - generic "Alvick" [ref=e511]
+                    - generic [ref=e513]: 昨天
+                  - generic [ref=e514]:
+                    - generic "‪Thank you for your patience‬" [ref=e516]:
+                      - generic [ref=e518]:
+                        - img
+                      - generic [ref=e519]: Thank you for your patience
+                    - gridcell
+          - 'row "Areej Procurement 星期二 I’d like to clarify one point with you first: we can only obtain the DHL tracking number once the shipment is dispatched. Therefore, could you please advise your exact requirements so we can arrange accordingly?" [ref=e520]':
+            - 'gridcell "Areej Procurement 星期二 I’d like to clarify one point with you first: we can only obtain the DHL tracking number once the shipment is dispatched. Therefore, could you please advise your exact requirements so we can arrange accordingly?" [ref=e521]':
+              - generic [ref=e523] [cursor=pointer]:
+                - img [ref=e528]
+                - generic [ref=e529]:
+                  - gridcell "Areej Procurement 星期二" [ref=e530]:
+                    - generic "Areej Procurement" [ref=e534]
+                    - generic [ref=e536]: 星期二
+                  - generic [ref=e537]:
+                    - 'generic "‪I’d like to clarify one point with you first: we can only obtain the DHL tracking number once the shipment is dispatched. Therefore, could you please advise your exact requirements so we can arrange accordingly?‬" [ref=e539]':
+                      - generic [ref=e541]:
+                        - img
+                      - generic [ref=e542]: "I’d like to clarify one point with you first: we can only obtain the DHL tracking number once the shipment is dispatched. Therefore, could you please advise your exact requirements so we can arrange accordingly?"
+                    - gridcell
+          - row "Smart SAC 星期二 Could you please proceed with this as soon as possible? If you cannot provide the import license for customs clearance, the goods may eventually be abandoned by the customs. You can contact a local customs broker to help you resolve this issue. Thank you very much for your time, patience and efforts." [ref=e543]:
+            - gridcell "Smart SAC 星期二 Could you please proceed with this as soon as possible? If you cannot provide the import license for customs clearance, the goods may eventually be abandoned by the customs. You can contact a local customs broker to help you resolve this issue. Thank you very much for your time, patience and efforts." [ref=e544]:
+              - generic [ref=e546] [cursor=pointer]:
+                - img [ref=e551]
+                - generic [ref=e552]:
+                  - gridcell "Smart SAC 星期二" [ref=e553]:
+                    - generic "Smart SAC" [ref=e557]
+                    - generic [ref=e559]: 星期二
+                  - generic [ref=e560]:
+                    - generic "‪Could you please proceed with this as soon as possible? If you cannot provide the import license for customs clearance, the goods may eventually be abandoned by the customs. You can contact a local customs broker to help you resolve this issue. Thank you very much for your time, patience and efforts.‬" [ref=e562]:
+                      - generic [ref=e564]:
+                        - img
+                      - generic [ref=e565]: Could you please proceed with this as soon as possible? If you cannot provide the import license for customs clearance, the goods may eventually be abandoned by the customs. You can contact a local customs broker to help you resolve this issue. Thank you very much for your time, patience and efforts.
+                    - gridcell
+          - row "anubius696 星期二 对以下消息留下了心情 🙏 ： \" Лучше спросите послезавтра, отправка будет завтра.\"" [ref=e566]:
+            - gridcell "anubius696 星期二 对以下消息留下了心情 🙏 ： \" Лучше спросите послезавтра, отправка будет завтра.\"" [ref=e567]:
+              - generic [ref=e569] [cursor=pointer]:
+                - generic [ref=e575]:
+                  - img
+                - generic [ref=e576]:
+                  - gridcell "anubius696 星期二" [ref=e577]:
+                    - generic "anubius696" [ref=e581]
+                    - generic [ref=e583]: 星期二
+                  - generic [ref=e584]:
+                    - generic "‪Лучше спросите послезавтра, отправка будет завтра.‬" [ref=e586]:
+                      - generic [ref=e587]:
+                        - text: 对以下消息留下了心情
+                        - img "🙏" [ref=e588]
+                        - text: ：
+                      - text: "\""
+                      - generic [ref=e590]: Лучше спросите послезавтра, отправка будет завтра."
+                    - gridcell
+          - row "Miguel alvarez 星期二 gracias" [ref=e591]:
+            - gridcell "Miguel alvarez 星期二 gracias" [ref=e592]:
+              - generic [ref=e594] [cursor=pointer]:
+                - generic [ref=e600]:
+                  - img
+                - generic [ref=e601]:
+                  - gridcell "Miguel alvarez 星期二" [ref=e602]:
+                    - generic "Miguel alvarez" [ref=e606]
+                    - generic [ref=e608]: 星期二
+                  - generic [ref=e609]:
+                    - generic "‪gracias‬" [ref=e611]:
+                      - generic [ref=e612]: gracias
+                    - gridcell
+          - row "+86 188 9536 7568 星期二 你已关闭限时消息功能。点击可更改。" [ref=e613]:
+            - gridcell "+86 188 9536 7568 星期二 你已关闭限时消息功能。点击可更改。" [ref=e614]:
+              - generic [ref=e616] [cursor=pointer]:
+                - img [ref=e621]
+                - generic [ref=e622]:
+                  - gridcell "+86 188 9536 7568 星期二" [ref=e623]:
+                    - generic "+86 188 9536 7568" [ref=e627]
+                    - generic [ref=e629]: 星期二
+                  - generic [ref=e630]:
+                    - generic "‪你已关闭限时消息功能。点击可更改。‬" [ref=e632]:
+                      - generic [ref=e633]: 你已关闭限时消息功能。点击可更改。
+                    - gridcell
+          - row "Eli Cohen Kadosh 星期一 We are very pleased that you have received the goods. Thank you for your dedication and efforts. If you have any questions in the future, please feel free to contact me at any time." [ref=e634]:
+            - gridcell "Eli Cohen Kadosh 星期一 We are very pleased that you have received the goods. Thank you for your dedication and efforts. If you have any questions in the future, please feel free to contact me at any time." [ref=e635]:
+              - generic [ref=e637] [cursor=pointer]:
+                - img [ref=e642]
+                - generic [ref=e643]:
+                  - gridcell "Eli Cohen Kadosh 星期一" [ref=e644]:
+                    - generic "Eli Cohen Kadosh" [ref=e648]
+                    - generic [ref=e650]: 星期一
+                  - generic [ref=e651]:
+                    - generic "‪We are very pleased that you have received the goods. Thank you for your dedication and efforts. If you have any questions in the future, please feel free to contact me at any time.‬" [ref=e653]:
+                      - generic [ref=e655]:
+                        - img
+                      - generic [ref=e656]: We are very pleased that you have received the goods. Thank you for your dedication and efforts. If you have any questions in the future, please feel free to contact me at any time.
+                    - gridcell
+          - row "Víctor Camino 星期五 Thank you!" [ref=e657]:
+            - gridcell "Víctor Camino 星期五 Thank you!" [ref=e658]:
+              - generic [ref=e660] [cursor=pointer]:
+                - img [ref=e665]
+                - generic [ref=e666]:
+                  - gridcell "Víctor Camino 星期五" [ref=e667]:
+                    - generic "Víctor Camino" [ref=e671]
+                    - generic [ref=e673]: 星期五
+                  - generic [ref=e674]:
+                    - generic "‪Thank you!‬" [ref=e676]:
+                      - generic [ref=e678]:
+                        - img
+                      - generic [ref=e679]: Thank you!
+                    - gridcell
+          - row "Ali Jaber 星期五 Sorry for this, we currently do not have a definite timeline for the resolution. Our technical team is working on the issue, and I’m unable to provide you with an exact time frame for now." [ref=e680]:
+            - gridcell "Ali Jaber 星期五 Sorry for this, we currently do not have a definite timeline for the resolution. Our technical team is working on the issue, and I’m unable to provide you with an exact time frame for now." [ref=e681]:
+              - generic [ref=e683] [cursor=pointer]:
+                - img [ref=e688]
+                - generic [ref=e689]:
+                  - gridcell "Ali Jaber 星期五" [ref=e690]:
+                    - generic "Ali Jaber" [ref=e694]
+                    - generic [ref=e696]: 星期五
+                  - generic [ref=e697]:
+                    - generic "‪Sorry for this, we currently do not have a definite timeline for the resolution. Our technical team is working on the issue, and I’m unable to provide you with an exact time frame for now.‬" [ref=e699]:
+                      - generic [ref=e701]:
+                        - img
+                      - generic [ref=e702]: Sorry for this, we currently do not have a definite timeline for the resolution. Our technical team is working on the issue, and I’m unable to provide you with an exact time frame for now.
+                    - gridcell
+          - 'row "苟富贵 星期五 ~Winnie : @+8618825298154 潜台词不努力=没加班" [ref=e703]':
+            - 'gridcell "苟富贵 星期五 ~Winnie : @+8618825298154 潜台词不努力=没加班" [ref=e704]':
+              - generic [ref=e706] [cursor=pointer]:
+                - generic [ref=e712]:
+                  - img
+                - generic [ref=e713]:
+                  - gridcell "苟富贵 星期五" [ref=e714]:
+                    - generic "苟富贵" [ref=e716]
+                    - generic [ref=e718]: 星期五
+                  - generic [ref=e719]:
+                    - generic "‪@+8618825298154 潜台词不努力=没加班‬" [ref=e721]:
+                      - generic [ref=e724]: ~Winnie
+                      - generic [ref=e725]: ":"
+                      - generic [ref=e726]: "@+8618825298154 潜台词不努力=没加班"
+                    - gridcell
+          - row "BOUSARIA Brahim 2026年6月11日 Please view this 已加星标的聊天" [ref=e727]:
+            - gridcell "BOUSARIA Brahim 2026年6月11日 Please view this 已加星标的聊天" [ref=e728]:
+              - generic [ref=e730] [cursor=pointer]:
+                - img [ref=e735]
+                - generic [ref=e736]:
+                  - gridcell "BOUSARIA Brahim 2026年6月11日" [ref=e737]:
+                    - generic "BOUSARIA Brahim" [ref=e741]
+                    - generic [ref=e743]: 2026年6月11日
+                  - generic [ref=e744]:
+                    - generic "‪Please view this‬" [ref=e746]:
+                      - generic [ref=e748]:
+                        - img
+                      - generic [ref=e749]: Please view this
+                    - gridcell "已加星标的聊天":
+                      - generic:
+                        - generic "已加星标的聊天"
+          - row "+212660538757 2026年6月11日 BLIIOT BL118 Node-RED Edge Gateway Datasheet V1.0.pdf • 12页" [ref=e750]:
+            - gridcell "+212660538757 2026年6月11日 BLIIOT BL118 Node-RED Edge Gateway Datasheet V1.0.pdf • 12页" [ref=e751]:
+              - generic [ref=e753] [cursor=pointer]:
+                - generic [ref=e759]:
+                  - img
+                - generic [ref=e760]:
+                  - gridcell "+212660538757 2026年6月11日" [ref=e761]:
+                    - generic "+212660538757" [ref=e765]
+                    - generic [ref=e767]: 2026年6月11日
+                  - generic [ref=e768]:
+                    - generic "‪BLIIOT BL118 Node-RED Edge Gateway Datasheet V1.0.pdf • 12页‬" [ref=e770]:
+                      - generic [ref=e772]:
+                        - img
+                      - generic [ref=e774]:
+                        - img
+                      - generic [ref=e775]: BLIIOT BL118 Node-RED Edge Gateway Datasheet V1.0.pdf • 12页
+                    - gridcell
+          - 'row "BE102p 2026年6月9日 Mahde : Are this clear. Sir 已静音的聊天" [ref=e776]':
+            - 'gridcell "BE102p 2026年6月9日 Mahde : Are this clear. Sir 已静音的聊天" [ref=e777]':
+              - generic [ref=e779] [cursor=pointer]:
+                - generic [ref=e785]:
+                  - img
+                - generic [ref=e786]:
+                  - gridcell "BE102p 2026年6月9日" [ref=e787]:
+                    - generic "BE102p" [ref=e789]
+                    - generic [ref=e791]: 2026年6月9日
+                  - generic [ref=e792]:
+                    - generic "‪Are this clear. Sir‬" [ref=e794]:
+                      - generic [ref=e797]: Mahde
+                      - generic [ref=e798]: ":"
+                      - generic [ref=e799]: Are this clear. Sir
+                    - gridcell "已静音的聊天" [ref=e800]:
+                      - generic "已静音的聊天" [ref=e802]:
+                        - generic [ref=e803]:
+                          - img
+          - row "Mahde Hassan 2026年6月8日 I have just confirmed with our technical team that our gateway products do not support the timestamp function of the IEC 104 protocol at present." [ref=e804]:
+            - gridcell "Mahde Hassan 2026年6月8日 I have just confirmed with our technical team that our gateway products do not support the timestamp function of the IEC 104 protocol at present." [ref=e805]:
+              - generic [ref=e807] [cursor=pointer]:
+                - img [ref=e812]
+                - generic [ref=e813]:
+                  - gridcell "Mahde Hassan 2026年6月8日" [ref=e814]:
+                    - generic "Mahde Hassan" [ref=e818]
+                    - generic [ref=e820]: 2026年6月8日
+                  - generic [ref=e821]:
+                    - generic "‪I have just confirmed with our technical team that our gateway products do not support the timestamp function of the IEC 104 protocol at present.‬" [ref=e823]:
+                      - generic [ref=e825]:
+                        - img
+                      - generic [ref=e826]: I have just confirmed with our technical team that our gateway products do not support the timestamp function of the IEC 104 protocol at present.
+                    - gridcell
+          - row "Hussain Alsayoud 2026年6月8日 Thank you!" [ref=e827]:
+            - gridcell "Hussain Alsayoud 2026年6月8日 Thank you!" [ref=e828]:
+              - generic [ref=e830] [cursor=pointer]:
+                - img [ref=e835]
+                - generic [ref=e836]:
+                  - gridcell "Hussain Alsayoud 2026年6月8日" [ref=e837]:
+                    - generic "Hussain Alsayoud" [ref=e841]
+                    - generic [ref=e843]: 2026年6月8日
+                  - generic [ref=e844]:
+                    - generic "‪Thank you!‬" [ref=e846]:
+                      - generic [ref=e848]:
+                        - img
+                      - generic [ref=e849]: Thank you!
+                    - gridcell
+          - 'row "BL332Bl 2026年6月8日 王工 : Where did you purchase your device? Please provide the PI. The default system for the equipment upon leaving the factory is Ubuntu 20.04. Did you make any remarks when purchasing the equipment or did you contact the salesperson to make a note?" [ref=e850]':
+            - 'gridcell "BL332Bl 2026年6月8日 王工 : Where did you purchase your device? Please provide the PI. The default system for the equipment upon leaving the factory is Ubuntu 20.04. Did you make any remarks when purchasing the equipment or did you contact the salesperson to make a note?" [ref=e851]':
+              - generic [ref=e853] [cursor=pointer]:
+                - generic [ref=e859]:
+                  - img
+                - generic [ref=e860]:
+                  - gridcell "BL332Bl 2026年6月8日" [ref=e861]:
+                    - generic "BL332Bl" [ref=e863]
+                    - generic [ref=e865]: 2026年6月8日
+                  - generic [ref=e866]:
+                    - generic "‪Where did you purchase your device? Please provide the PI. The default system for the equipment upon leaving the factory is Ubuntu 20.04. Did you make any remarks when purchasing the equipment or did you contact the salesperson to make a note?‬" [ref=e868]:
+                      - generic [ref=e871]: 王工
+                      - generic [ref=e872]: ":"
+                      - generic [ref=e873]: Where did you purchase your device? Please provide the PI. The default system for the equipment upon leaving the factory is Ubuntu 20.04. Did you make any remarks when purchasing the equipment or did you contact the salesperson to make a note?
+                    - gridcell
+          - row "+263 71 936 3433 2026年6月4日 Thank you!" [ref=e874]:
+            - gridcell "+263 71 936 3433 2026年6月4日 Thank you!" [ref=e875]:
+              - generic [ref=e877] [cursor=pointer]:
+                - generic [ref=e883]:
+                  - img
+                - generic [ref=e884]:
+                  - gridcell "+263 71 936 3433 2026年6月4日" [ref=e885]:
+                    - generic "+263 71 936 3433" [ref=e889]
+                    - generic [ref=e891]: 2026年6月4日
+                  - generic [ref=e892]:
+                    - generic "‪Thank you!‬" [ref=e894]:
+                      - generic [ref=e896]:
+                        - img
+                      - generic [ref=e897]: Thank you!
+                    - gridcell
+          - row "Rafaqat Ali 2026年6月4日 Could you kindly advise if there is any new information?" [ref=e898]:
+            - gridcell "Rafaqat Ali 2026年6月4日 Could you kindly advise if there is any new information?" [ref=e899]:
+              - generic [ref=e901] [cursor=pointer]:
+                - img [ref=e906]
+                - generic [ref=e907]:
+                  - gridcell "Rafaqat Ali 2026年6月4日" [ref=e908]:
+                    - generic "Rafaqat Ali" [ref=e912]
+                    - generic [ref=e914]: 2026年6月4日
+                  - generic [ref=e915]:
+                    - generic "‪Could you kindly advise if there is any new information?‬" [ref=e917]:
+                      - generic [ref=e919]:
+                        - img
+                      - generic [ref=e920]: Could you kindly advise if there is any new information?
+                    - gridcell
+          - row "Francisco Ramos 2026年6月4日 Could you kindly advise if there is any new information?" [ref=e921]:
+            - gridcell "Francisco Ramos 2026年6月4日 Could you kindly advise if there is any new information?" [ref=e922]:
+              - generic [ref=e924] [cursor=pointer]:
+                - img [ref=e929]
+                - generic [ref=e930]:
+                  - gridcell "Francisco Ramos 2026年6月4日" [ref=e931]:
+                    - generic "Francisco Ramos" [ref=e935]
+                    - generic [ref=e937]: 2026年6月4日
+                  - generic [ref=e938]:
+                    - generic "‪Could you kindly advise if there is any new information?‬" [ref=e940]:
+                      - generic [ref=e942]:
+                        - img
+                      - generic [ref=e943]: Could you kindly advise if there is any new information?
+                    - gridcell
+          - row "Andrés Montoya 2026年6月4日 Could you kindly advise if there is any new information?" [ref=e944]:
+            - gridcell "Andrés Montoya 2026年6月4日 Could you kindly advise if there is any new information?" [ref=e945]:
+              - generic [ref=e947] [cursor=pointer]:
+                - img [ref=e952]
+                - generic [ref=e953]:
+                  - gridcell "Andrés Montoya 2026年6月4日" [ref=e954]:
+                    - generic "Andrés Montoya" [ref=e958]
+                    - generic [ref=e960]: 2026年6月4日
+                  - generic [ref=e961]:
+                    - generic "‪Could you kindly advise if there is any new information?‬" [ref=e963]:
+                      - generic [ref=e965]:
+                        - img
+                      - generic [ref=e966]: Could you kindly advise if there is any new information?
+                    - gridcell
+          - row "Nyein Chan Lu 2026年6月4日 Could you kindly advise if there is any new information?" [ref=e967]:
+            - gridcell "Nyein Chan Lu 2026年6月4日 Could you kindly advise if there is any new information?" [ref=e968]:
+              - generic [ref=e970] [cursor=pointer]:
+                - img [ref=e975]
+                - generic [ref=e976]:
+                  - gridcell "Nyein Chan Lu 2026年6月4日" [ref=e977]:
+                    - generic "Nyein Chan Lu" [ref=e981]
+                    - generic [ref=e983]: 2026年6月4日
+                  - generic [ref=e984]:
+                    - generic "‪Could you kindly advise if there is any new information?‬" [ref=e986]:
+                      - generic [ref=e988]:
+                        - img
+                      - generic [ref=e989]: Could you kindly advise if there is any new information?
+                    - gridcell
+          - 'row "kali 2026年6月2日 Hope you are having a wonderful day. Hello, this is Kali from BLIIOT. Our company focuses on industrial IoT connectivity products, especially gateways, edge controllers, and field data acquisition devices used in automation systems. It looks like your projects involve PLC/SCADA connectivity and industrial protocol conversion. Our industrial gateways and routers together with ARM edge controllers are often used in PLC, SCADA, and industrial communication projects. If you have a current requirement, I can suggest matching models. If helpful, here is our website: https://bliiot.com/ Let me know if you would like a short catalog." [ref=e990]':
+            - 'gridcell "kali 2026年6月2日 Hope you are having a wonderful day. Hello, this is Kali from BLIIOT. Our company focuses on industrial IoT connectivity products, especially gateways, edge controllers, and field data acquisition devices used in automation systems. It looks like your projects involve PLC/SCADA connectivity and industrial protocol conversion. Our industrial gateways and routers together with ARM edge controllers are often used in PLC, SCADA, and industrial communication projects. If you have a current requirement, I can suggest matching models. If helpful, here is our website: https://bliiot.com/ Let me know if you would like a short catalog." [ref=e991]':
+              - generic [ref=e993] [cursor=pointer]:
+                - img [ref=e998]
+                - generic [ref=e999]:
+                  - gridcell "kali 2026年6月2日" [ref=e1000]:
+                    - generic "kali" [ref=e1004]
+                    - generic [ref=e1006]: 2026年6月2日
+                  - generic [ref=e1007]:
+                    - 'generic "‪Hope you are having a wonderful day. Hello, this is Kali from BLIIOT. Our company focuses on industrial IoT connectivity products, especially gateways, edge controllers, and field data acquisition devices used in automation systems. It looks like your projects involve PLC/SCADA connectivity and industrial protocol conversion. Our industrial gateways and routers together with ARM edge controllers are often used in PLC, SCADA, and industrial communication projects. If you have a current requirement, I can suggest matching models. If helpful, here is our website: https://bliiot.com/ Let me know if you would like a short catalog.‬" [ref=e1009]':
+                      - generic [ref=e1010]: "Hope you are having a wonderful day. Hello, this is Kali from BLIIOT. Our company focuses on industrial IoT connectivity products, especially gateways, edge controllers, and field data acquisition devices used in automation systems. It looks like your projects involve PLC/SCADA connectivity and industrial protocol conversion. Our industrial gateways and routers together with ARM edge controllers are often used in PLC, SCADA, and industrial communication projects. If you have a current requirement, I can suggest matching models. If helpful, here is our website: https://bliiot.com/ Let me know if you would like a short catalog."
+                    - gridcell
+          - row "Peer IDE Security Engg 2026年5月26日 Wish you a nice day! May I ask if you have any updates?" [ref=e1011]:
+            - gridcell "Peer IDE Security Engg 2026年5月26日 Wish you a nice day! May I ask if you have any updates?" [ref=e1012]:
+              - generic [ref=e1014] [cursor=pointer]:
+                - img [ref=e1019]
+                - generic [ref=e1020]:
+                  - gridcell "Peer IDE Security Engg 2026年5月26日" [ref=e1021]:
+                    - generic "Peer IDE Security Engg" [ref=e1025]
+                    - generic [ref=e1027]: 2026年5月26日
+                  - generic [ref=e1028]:
+                    - generic "‪Wish you a nice day! May I ask if you have any updates?‬" [ref=e1030]:
+                      - generic [ref=e1032]:
+                        - img
+                      - generic [ref=e1033]: Wish you a nice day! May I ask if you have any updates?
+                    - gridcell
+          - row "Patricio González 2026年5月26日 Wish you a nice day! May I ask if you have any updates?" [ref=e1034]:
+            - gridcell "Patricio González 2026年5月26日 Wish you a nice day! May I ask if you have any updates?" [ref=e1035]:
+              - generic [ref=e1037] [cursor=pointer]:
+                - generic [ref=e1043]:
+                  - img
+                - generic [ref=e1044]:
+                  - gridcell "Patricio González 2026年5月26日" [ref=e1045]:
+                    - generic "Patricio González" [ref=e1049]
+                    - generic [ref=e1051]: 2026年5月26日
+                  - generic [ref=e1052]:
+                    - generic "‪Wish you a nice day! May I ask if you have any updates?‬" [ref=e1054]:
+                      - generic [ref=e1056]:
+                        - img
+                      - generic [ref=e1057]: Wish you a nice day! May I ask if you have any updates?
+                    - gridcell
+          - row "+971501047006 2026年5月26日 Wish you a nice day! May I ask if you have any updates?" [ref=e1058]:
+            - gridcell "+971501047006 2026年5月26日 Wish you a nice day! May I ask if you have any updates?" [ref=e1059]:
+              - generic [ref=e1061] [cursor=pointer]:
+                - generic [ref=e1067]:
+                  - img
+                - generic [ref=e1068]:
+                  - gridcell "+971501047006 2026年5月26日" [ref=e1069]:
+                    - generic "+971501047006" [ref=e1073]
+                    - generic [ref=e1075]: 2026年5月26日
+                  - generic [ref=e1076]:
+                    - generic "‪Wish you a nice day! May I ask if you have any updates?‬" [ref=e1078]:
+                      - generic [ref=e1080]:
+                        - img
+                      - generic [ref=e1081]: Wish you a nice day! May I ask if you have any updates?
+                    - gridcell
+          - row "Ion 2026年5月26日 Wish you a nice day! May I ask if you have any updates?" [ref=e1082]:
+            - gridcell "Ion 2026年5月26日 Wish you a nice day! May I ask if you have any updates?" [ref=e1083]:
+              - generic [ref=e1085] [cursor=pointer]:
+                - generic [ref=e1091]:
+                  - img
+                - generic [ref=e1092]:
+                  - gridcell "Ion 2026年5月26日" [ref=e1093]:
+                    - generic "Ion" [ref=e1097]
+                    - generic [ref=e1099]: 2026年5月26日
+                  - generic [ref=e1100]:
+                    - generic "‪Wish you a nice day! May I ask if you have any updates?‬" [ref=e1102]:
+                      - generic [ref=e1104]:
+                        - img
+                      - generic [ref=e1105]: Wish you a nice day! May I ask if you have any updates?
+                    - gridcell
+          - row "Sandra Ayu 2026年5月25日 Okay, thank you" [ref=e1106]:
+            - gridcell "Sandra Ayu 2026年5月25日 Okay, thank you" [ref=e1107]:
+              - generic [ref=e1109] [cursor=pointer]:
+                - generic [ref=e1115]:
+                  - img
+                - generic [ref=e1116]:
+                  - gridcell "Sandra Ayu 2026年5月25日" [ref=e1117]:
+                    - generic "Sandra Ayu" [ref=e1121]
+                    - generic [ref=e1123]: 2026年5月25日
+                  - generic [ref=e1124]:
+                    - generic "‪Okay, thank you‬" [ref=e1126]:
+                      - generic [ref=e1127]: Okay, thank you
+                    - gridcell
+          - row "Guillaume Jonville 2026年5月20日 你对以下消息留下了心情 🙏 ： \" Thank you my friend\"" [ref=e1128]:
+            - gridcell "Guillaume Jonville 2026年5月20日 你对以下消息留下了心情 🙏 ： \" Thank you my friend\"" [ref=e1129]:
+              - generic [ref=e1131] [cursor=pointer]:
+                - generic [ref=e1137]:
+                  - img
+                - generic [ref=e1138]:
+                  - gridcell "Guillaume Jonville 2026年5月20日" [ref=e1139]:
+                    - generic "Guillaume Jonville" [ref=e1143]
+                    - generic [ref=e1145]: 2026年5月20日
+                  - generic [ref=e1146]:
+                    - generic "‪Thank you my friend‬" [ref=e1148]:
+                      - generic [ref=e1149]:
+                        - text: 你对以下消息留下了心情
+                        - img "🙏" [ref=e1150]
+                        - text: ：
+                      - text: "\""
+                      - generic [ref=e1152]: Thank you my friend"
+                    - gridcell
+          - row "Wecon 2026年5月18日 看到了" [ref=e1153]:
+            - gridcell "Wecon 2026年5月18日 看到了" [ref=e1154]:
+              - generic [ref=e1156] [cursor=pointer]:
+                - img [ref=e1161]
+                - generic [ref=e1162]:
+                  - gridcell "Wecon 2026年5月18日" [ref=e1163]:
+                    - generic "Wecon" [ref=e1167]
+                    - generic [ref=e1169]: 2026年5月18日
+                  - generic [ref=e1170]:
+                    - generic "‪看到了‬" [ref=e1172]:
+                      - generic [ref=e1174]:
+                        - img
+                      - generic [ref=e1175]: 看到了
+                    - gridcell
+          - row "Bikramjit Singh 2026年5月15日 Please kindly check your goods and arrange tax payment. The local customs released the goods on the 10th, yet the tax hasn’t been paid on your end. They have reminded me about this issue. Thank you!" [ref=e1176]:
+            - gridcell "Bikramjit Singh 2026年5月15日 Please kindly check your goods and arrange tax payment. The local customs released the goods on the 10th, yet the tax hasn’t been paid on your end. They have reminded me about this issue. Thank you!" [ref=e1177]:
+              - generic [ref=e1179] [cursor=pointer]:
+                - generic [ref=e1185]:
+                  - img
+                - generic [ref=e1186]:
+                  - gridcell "Bikramjit Singh 2026年5月15日" [ref=e1187]:
+                    - generic "Bikramjit Singh" [ref=e1191]
+                    - generic [ref=e1193]: 2026年5月15日
+                  - generic [ref=e1194]:
+                    - generic "‪Please kindly check your goods and arrange tax payment. The local customs released the goods on the 10th, yet the tax hasn’t been paid on your end. They have reminded me about this issue. Thank you!‬" [ref=e1196]:
+                      - generic [ref=e1198]:
+                        - img
+                      - generic [ref=e1199]: Please kindly check your goods and arrange tax payment. The local customs released the goods on the 10th, yet the tax hasn’t been paid on your end. They have reminded me about this issue. Thank you!
+                    - gridcell
+          - 'row "BL340 2026年5月15日 ~Sir Israel : BLRAT activated, please is there any further configuration because we tried accessing it outside our network but it was not working.." [ref=e1200]':
+            - 'gridcell "BL340 2026年5月15日 ~Sir Israel : BLRAT activated, please is there any further configuration because we tried accessing it outside our network but it was not working.." [ref=e1201]':
+              - generic [ref=e1203] [cursor=pointer]:
+                - generic [ref=e1209]:
+                  - img
+                - generic [ref=e1210]:
+                  - gridcell "BL340 2026年5月15日" [ref=e1211]:
+                    - generic "BL340" [ref=e1213]
+                    - generic [ref=e1215]: 2026年5月15日
+                  - generic [ref=e1216]:
+                    - generic "‪BLRAT activated, please is there any further configuration because we tried accessing it outside our network but it was not working..‬" [ref=e1218]:
+                      - generic [ref=e1221]: ~Sir Israel
+                      - generic [ref=e1222]: ":"
+                      - generic [ref=e1224]:
+                        - img
+                      - generic [ref=e1225]: BLRAT activated, please is there any further configuration because we tried accessing it outside our network but it was not working..
+                    - gridcell
+          - row "Dudley May 2026年5月14日 I believe that if the pricing is competitive and the industrial performance is stable, there could be a strong commercial opportunity to introduce this type of solution into the Colombian market." [ref=e1226]:
+            - gridcell "Dudley May 2026年5月14日 I believe that if the pricing is competitive and the industrial performance is stable, there could be a strong commercial opportunity to introduce this type of solution into the Colombian market." [ref=e1227]:
+              - generic [ref=e1229] [cursor=pointer]:
+                - img [ref=e1234]
+                - generic [ref=e1235]:
+                  - gridcell "Dudley May 2026年5月14日" [ref=e1236]:
+                    - generic "Dudley May" [ref=e1240]
+                    - generic [ref=e1242]: 2026年5月14日
+                  - generic [ref=e1243]:
+                    - generic "‪I believe that if the pricing is competitive and the industrial performance is stable, there could be a strong commercial opportunity to introduce this type of solution into the Colombian market.‬" [ref=e1245]:
+                      - generic [ref=e1246]: I believe that if the pricing is competitive and the industrial performance is stable, there could be a strong commercial opportunity to introduce this type of solution into the Colombian market.
+                    - gridcell
+          - row "Eng 2026年5月14日 你对以下消息留下了心情 🙏 ： \" Thank you 👍 \"" [ref=e1247]:
+            - gridcell "Eng 2026年5月14日 你对以下消息留下了心情 🙏 ： \" Thank you 👍 \"" [ref=e1248]:
+              - generic [ref=e1250] [cursor=pointer]:
+                - img [ref=e1255]
+                - generic [ref=e1256]:
+                  - gridcell "Eng 2026年5月14日" [ref=e1257]:
+                    - generic "Eng" [ref=e1261]
+                    - generic [ref=e1263]: 2026年5月14日
+                  - generic [ref=e1264]:
+                    - generic "‪Thank you 👍‬" [ref=e1266]:
+                      - generic [ref=e1267]:
+                        - text: 你对以下消息留下了心情
+                        - img "🙏" [ref=e1268]
+                        - text: ：
+                      - text: "\""
+                      - generic [ref=e1270]:
+                        - text: Thank you
+                        - img "👍" [ref=e1271]
+                        - text: "\""
+                    - gridcell
+          - row "+16477727992 2026年5月13日 Hello?" [ref=e1272]:
+            - gridcell "+16477727992 2026年5月13日 Hello?" [ref=e1273]:
+              - generic [ref=e1275] [cursor=pointer]:
+                - img [ref=e1280]
+                - generic [ref=e1281]:
+                  - gridcell "+16477727992 2026年5月13日" [ref=e1282]:
+                    - generic "+16477727992" [ref=e1286]
+                    - generic [ref=e1288]: 2026年5月13日
+                  - generic [ref=e1289]:
+                    - generic "‪Hello?‬" [ref=e1291]:
+                      - generic [ref=e1293]:
+                        - img
+                      - generic [ref=e1294]: Hello?
+                    - gridcell
+          - row "+86 181 1115 6001 (自己) 2026年5月12日 照片" [ref=e1295]:
+            - gridcell "+86 181 1115 6001 (自己) 2026年5月12日 照片" [ref=e1296]:
+              - generic [ref=e1298] [cursor=pointer]:
+                - img [ref=e1303]
+                - generic [ref=e1304]:
+                  - gridcell "+86 181 1115 6001 (自己) 2026年5月12日" [ref=e1305]:
+                    - generic [ref=e1308]:
+                      - generic "+86 181 1115 6001" [ref=e1309]
+                      - generic [ref=e1310]: (自己)
+                    - generic [ref=e1312]: 2026年5月12日
+                  - generic [ref=e1313]:
+                    - generic "‪照片‬" [ref=e1315]:
+                      - generic [ref=e1317]:
+                        - img
+                      - generic [ref=e1319]:
+                        - img
+                      - generic [ref=e1320]: 照片
+                    - gridcell
+          - row "Saddem Mourad 2026年5月9日 Thank you for your understanding." [ref=e1321]:
+            - gridcell "Saddem Mourad 2026年5月9日 Thank you for your understanding." [ref=e1322]:
+              - generic [ref=e1324] [cursor=pointer]:
+                - img [ref=e1329]
+                - generic [ref=e1330]:
+                  - gridcell "Saddem Mourad 2026年5月9日" [ref=e1331]:
+                    - generic "Saddem Mourad" [ref=e1335]
+                    - generic [ref=e1337]: 2026年5月9日
+                  - generic [ref=e1338]:
+                    - generic "‪Thank you for your understanding.‬" [ref=e1340]:
+                      - generic [ref=e1342]:
+                        - img
+                      - generic [ref=e1343]: Thank you for your understanding.
+                    - gridcell
+          - row "Diego 2026年5月9日 Hello?" [ref=e1344]:
+            - gridcell "Diego 2026年5月9日 Hello?" [ref=e1345]:
+              - generic [ref=e1347] [cursor=pointer]:
+                - generic [ref=e1353]:
+                  - img
+                - generic [ref=e1354]:
+                  - gridcell "Diego 2026年5月9日" [ref=e1355]:
+                    - generic "Diego" [ref=e1359]
+                    - generic [ref=e1361]: 2026年5月9日
+                  - generic [ref=e1362]:
+                    - generic "‪Hello?‬" [ref=e1364]:
+                      - generic [ref=e1366]:
+                        - img
+                      - generic [ref=e1367]: Hello?
+                    - gridcell
+          - row "Full Frame 2026年5月9日 Hello?" [ref=e1368]:
+            - gridcell "Full Frame 2026年5月9日 Hello?" [ref=e1369]:
+              - generic [ref=e1371] [cursor=pointer]:
+                - img [ref=e1376]
+                - generic [ref=e1377]:
+                  - gridcell "Full Frame 2026年5月9日" [ref=e1378]:
+                    - generic "Full Frame" [ref=e1382]
+                    - generic [ref=e1384]: 2026年5月9日
+                  - generic [ref=e1385]:
+                    - generic "‪Hello?‬" [ref=e1387]:
+                      - generic [ref=e1389]:
+                        - img
+                      - generic [ref=e1390]: Hello?
+                    - gridcell
+          - row "SYED ALI 2026年5月9日 please feel free to let me know if you have any thoughts. Recently the market has been highly volatile, and the prices of certain SOM boards have risen considerably. We truly appreciate your understanding. If you think the price is on the high side, you may consider other models, as the price increase for some individual SOM boards is lower." [ref=e1391]:
+            - gridcell "SYED ALI 2026年5月9日 please feel free to let me know if you have any thoughts. Recently the market has been highly volatile, and the prices of certain SOM boards have risen considerably. We truly appreciate your understanding. If you think the price is on the high side, you may consider other models, as the price increase for some individual SOM boards is lower." [ref=e1392]:
+              - generic [ref=e1394] [cursor=pointer]:
+                - img [ref=e1399]
+                - generic [ref=e1400]:
+                  - gridcell "SYED ALI 2026年5月9日" [ref=e1401]:
+                    - generic "SYED ALI" [ref=e1405]
+                    - generic [ref=e1407]: 2026年5月9日
+                  - generic [ref=e1408]:
+                    - generic "‪please feel free to let me know if you have any thoughts. Recently the market has been highly volatile, and the prices of certain SOM boards have risen considerably. We truly appreciate your understanding. If you think the price is on the high side, you may consider other models, as the price increase for some individual SOM boards is lower.‬" [ref=e1410]:
+                      - generic [ref=e1412]:
+                        - img
+                      - generic [ref=e1413]: please feel free to let me know if you have any thoughts. Recently the market has been highly volatile, and the prices of certain SOM boards have risen considerably. We truly appreciate your understanding. If you think the price is on the high side, you may consider other models, as the price increase for some individual SOM boards is lower.
+                    - gridcell
+          - row "Enrique Madrigal 2026年5月9日 Thank you so much for your patience. Due to a sharp increase in the production cost of SOM452, the unit price has been adjusted to $781.53. If this price is not acceptable for you, you may consider our other alternative models. Thank you very much for your understanding." [ref=e1414]:
+            - gridcell "Enrique Madrigal 2026年5月9日 Thank you so much for your patience. Due to a sharp increase in the production cost of SOM452, the unit price has been adjusted to $781.53. If this price is not acceptable for you, you may consider our other alternative models. Thank you very much for your understanding." [ref=e1415]:
+              - generic [ref=e1417] [cursor=pointer]:
+                - img [ref=e1422]
+                - generic [ref=e1423]:
+                  - gridcell "Enrique Madrigal 2026年5月9日" [ref=e1424]:
+                    - generic "Enrique Madrigal" [ref=e1428]
+                    - generic [ref=e1430]: 2026年5月9日
+                  - generic [ref=e1431]:
+                    - generic "‪Thank you so much for your patience. Due to a sharp increase in the production cost of SOM452, the unit price has been adjusted to $781.53. If this price is not acceptable for you, you may consider our other alternative models. Thank you very much for your understanding.‬" [ref=e1433]:
+                      - generic [ref=e1435]:
+                        - img
+                      - generic [ref=e1436]: Thank you so much for your patience. Due to a sharp increase in the production cost of SOM452, the unit price has been adjusted to $781.53. If this price is not acceptable for you, you may consider our other alternative models. Thank you very much for your understanding.
+                    - gridcell
+          - row "Haythem Sassi 2026年5月9日 May I ask if you have any updates?" [ref=e1437]:
+            - gridcell "Haythem Sassi 2026年5月9日 May I ask if you have any updates?" [ref=e1438]:
+              - generic [ref=e1440] [cursor=pointer]:
+                - img [ref=e1445]
+                - generic [ref=e1446]:
+                  - gridcell "Haythem Sassi 2026年5月9日" [ref=e1447]:
+                    - generic "Haythem Sassi" [ref=e1451]
+                    - generic [ref=e1453]: 2026年5月9日
+                  - generic [ref=e1454]:
+                    - generic "‪May I ask if you have any updates?‬" [ref=e1456]:
+                      - generic [ref=e1458]:
+                        - img
+                      - generic [ref=e1459]: May I ask if you have any updates?
+                    - gridcell
+          - row "Тт 2026年5月9日 My colleague will be responsible for your order. Thank you very much！" [ref=e1460]:
+            - gridcell "Тт 2026年5月9日 My colleague will be responsible for your order. Thank you very much！" [ref=e1461]:
+              - generic [ref=e1463] [cursor=pointer]:
+                - generic [ref=e1469]:
+                  - img
+                - generic [ref=e1470]:
+                  - gridcell "Тт 2026年5月9日" [ref=e1471]:
+                    - generic "Тт" [ref=e1475]
+                    - generic [ref=e1477]: 2026年5月9日
+                  - generic [ref=e1478]:
+                    - generic "‪My colleague will be responsible for your order. Thank you very much！‬" [ref=e1480]:
+                      - generic [ref=e1482]:
+                        - img
+                      - generic [ref=e1483]: My colleague will be responsible for your order. Thank you very much！
+                    - gridcell
+          - 'row "Anubius696 x BLIIOT 2026年5月7日 anubius696 : 照片" [ref=e1484]':
+            - 'gridcell "Anubius696 x BLIIOT 2026年5月7日 anubius696 : 照片" [ref=e1485]':
+              - generic [ref=e1487] [cursor=pointer]:
+                - generic [ref=e1493]:
+                  - img
+                - generic [ref=e1494]:
+                  - gridcell "Anubius696 x BLIIOT 2026年5月7日" [ref=e1495]:
+                    - generic "Anubius696 x BLIIOT" [ref=e1497]
+                    - generic [ref=e1499]: 2026年5月7日
+                  - generic [ref=e1500]:
+                    - generic "‪照片‬" [ref=e1502]:
+                      - generic [ref=e1505]: anubius696
+                      - generic [ref=e1506]: ":"
+                      - generic [ref=e1508]:
+                        - img
+                      - generic [ref=e1509]: 照片
+                    - gridcell
+          - row "+86 177 2241 5158 2026年5月7日 Thxxx" [ref=e1510]:
+            - gridcell "+86 177 2241 5158 2026年5月7日 Thxxx" [ref=e1511]:
+              - generic [ref=e1513] [cursor=pointer]:
+                - img [ref=e1518]
+                - generic [ref=e1519]:
+                  - gridcell "+86 177 2241 5158 2026年5月7日" [ref=e1520]:
+                    - generic "+86 177 2241 5158" [ref=e1524]
+                    - generic [ref=e1526]: 2026年5月7日
+                  - generic [ref=e1527]:
+                    - generic "‪Thxxx‬" [ref=e1529]:
+                      - generic [ref=e1531]:
+                        - img
+                      - generic [ref=e1532]: Thxxx
+                    - gridcell
+          - row "+212 664-033276 2026年5月7日 Hope you’re doing well. Is there anything our products can assist with for your project?" [ref=e1533]:
+            - gridcell "+212 664-033276 2026年5月7日 Hope you’re doing well. Is there anything our products can assist with for your project?" [ref=e1534]:
+              - generic [ref=e1536] [cursor=pointer]:
+                - img [ref=e1541]
+                - generic [ref=e1542]:
+                  - gridcell "+212 664-033276 2026年5月7日" [ref=e1543]:
+                    - generic "+212 664-033276" [ref=e1547]
+                    - generic [ref=e1549]: 2026年5月7日
+                  - generic [ref=e1550]:
+                    - generic "‪Hope you’re doing well. Is there anything our products can assist with for your project?‬" [ref=e1552]:
+                      - generic [ref=e1554]:
+                        - img
+                      - generic [ref=e1555]: Hope you’re doing well. Is there anything our products can assist with for your project?
+                    - gridcell
+          - row "... 2026年5月7日 Or another platform?" [ref=e1556]:
+            - gridcell "... 2026年5月7日 Or another platform?" [ref=e1557]:
+              - generic [ref=e1559] [cursor=pointer]:
+                - generic [ref=e1565]:
+                  - img
+                - generic [ref=e1566]:
+                  - gridcell "... 2026年5月7日" [ref=e1567]:
+                    - generic "..." [ref=e1571]
+                    - generic [ref=e1573]: 2026年5月7日
+                  - generic [ref=e1574]:
+                    - generic "‪Or another platform?‬" [ref=e1576]:
+                      - generic [ref=e1578]:
+                        - img
+                      - generic [ref=e1579]: Or another platform?
+                    - gridcell
+          - row "Dunja 2026年5月7日 So would you still need me to send you the quotation, or does this model fail to meet your requirements?" [ref=e1580]:
+            - gridcell "Dunja 2026年5月7日 So would you still need me to send you the quotation, or does this model fail to meet your requirements?" [ref=e1581]:
+              - generic [ref=e1583] [cursor=pointer]:
+                - img [ref=e1588]
+                - generic [ref=e1589]:
+                  - gridcell "Dunja 2026年5月7日" [ref=e1590]:
+                    - generic "Dunja" [ref=e1594]
+                    - generic [ref=e1596]: 2026年5月7日
+                  - generic [ref=e1597]:
+                    - generic "‪So would you still need me to send you the quotation, or does this model fail to meet your requirements?‬" [ref=e1599]:
+                      - generic [ref=e1601]:
+                        - img
+                      - generic [ref=e1602]: So would you still need me to send you the quotation, or does this model fail to meet your requirements?
+                    - gridcell
+          - row "Harbin Sulbarán 2026年5月7日 May I ask if you are still interested in our product?" [ref=e1603]:
+            - gridcell "Harbin Sulbarán 2026年5月7日 May I ask if you are still interested in our product?" [ref=e1604]:
+              - generic [ref=e1606] [cursor=pointer]:
+                - generic [ref=e1612]:
+                  - img
+                - generic [ref=e1613]:
+                  - gridcell "Harbin Sulbarán 2026年5月7日" [ref=e1614]:
+                    - generic "Harbin Sulbarán" [ref=e1618]
+                    - generic [ref=e1620]: 2026年5月7日
+                  - generic [ref=e1621]:
+                    - generic "‪May I ask if you are still interested in our product?‬" [ref=e1623]:
+                      - generic [ref=e1625]:
+                        - img
+                      - generic [ref=e1626]: May I ask if you are still interested in our product?
+                    - gridcell
+          - row "Sa16 2026年5月7日 Yep, and the price has even gone up." [ref=e1627]:
+            - gridcell "Sa16 2026年5月7日 Yep, and the price has even gone up." [ref=e1628]:
+              - generic [ref=e1630] [cursor=pointer]:
+                - img [ref=e1635]
+                - generic [ref=e1636]:
+                  - gridcell "Sa16 2026年5月7日" [ref=e1637]:
+                    - generic "Sa16" [ref=e1641]
+                    - generic [ref=e1643]: 2026年5月7日
+                  - generic [ref=e1644]:
+                    - generic "‪Yep, and the price has even gone up.‬" [ref=e1646]:
+                      - generic [ref=e1648]:
+                        - img
+                      - generic [ref=e1649]: Yep, and the price has even gone up.
+                    - gridcell
+          - row "huy hoang 2026年5月7日 May I ask whether you are still interested in our product?" [ref=e1650]:
+            - gridcell "huy hoang 2026年5月7日 May I ask whether you are still interested in our product?" [ref=e1651]:
+              - generic [ref=e1653] [cursor=pointer]:
+                - generic [ref=e1659]:
+                  - img
+                - generic [ref=e1660]:
+                  - gridcell "huy hoang 2026年5月7日" [ref=e1661]:
+                    - generic "huy hoang" [ref=e1665]
+                    - generic [ref=e1667]: 2026年5月7日
+                  - generic [ref=e1668]:
+                    - generic "‪May I ask whether you are still interested in our product?‬" [ref=e1670]:
+                      - generic [ref=e1672]:
+                        - img
+                      - generic [ref=e1673]: May I ask whether you are still interested in our product?
+                    - gridcell
+          - row "Bader 2026年5月7日 Are you still interested in our product?" [ref=e1674]:
+            - gridcell "Bader 2026年5月7日 Are you still interested in our product?" [ref=e1675]:
+              - generic [ref=e1677] [cursor=pointer]:
+                - generic [ref=e1683]:
+                  - img
+                - generic [ref=e1684]:
+                  - gridcell "Bader 2026年5月7日" [ref=e1685]:
+                    - generic "Bader" [ref=e1689]
+                    - generic [ref=e1691]: 2026年5月7日
+                  - generic [ref=e1692]:
+                    - generic "‪Are you still interested in our product?‬" [ref=e1694]:
+                      - generic [ref=e1696]:
+                        - img
+                      - generic [ref=e1697]: Are you still interested in our product?
+                    - gridcell
+          - row "Pranit Patil 2026年5月7日 Sorry for the delay in replying" [ref=e1698]:
+            - gridcell "Pranit Patil 2026年5月7日 Sorry for the delay in replying" [ref=e1699]:
+              - generic [ref=e1701] [cursor=pointer]:
+                - img [ref=e1706]
+                - generic [ref=e1707]:
+                  - gridcell "Pranit Patil 2026年5月7日" [ref=e1708]:
+                    - generic "Pranit Patil" [ref=e1712]
+                    - generic [ref=e1714]: 2026年5月7日
+                  - generic [ref=e1715]:
+                    - generic "‪Sorry for the delay in replying‬" [ref=e1717]:
+                      - generic [ref=e1719]:
+                        - img
+                      - generic [ref=e1720]: Sorry for the delay in replying
+                    - gridcell
+          - row "Mojtaba Jahani 2026年5月7日 May I ask whether your customer is still interested in our product?" [ref=e1721]:
+            - gridcell "Mojtaba Jahani 2026年5月7日 May I ask whether your customer is still interested in our product?" [ref=e1722]:
+              - generic [ref=e1724] [cursor=pointer]:
+                - img [ref=e1729]
+                - generic [ref=e1730]:
+                  - gridcell "Mojtaba Jahani 2026年5月7日" [ref=e1731]:
+                    - generic "Mojtaba Jahani" [ref=e1735]
+                    - generic [ref=e1737]: 2026年5月7日
+                  - generic [ref=e1738]:
+                    - generic "‪May I ask whether your customer is still interested in our product?‬" [ref=e1740]:
+                      - generic [ref=e1742]:
+                        - img
+                      - generic [ref=e1743]: May I ask whether your customer is still interested in our product?
+                    - gridcell
+          - row "Saulo Madruga | ENGIPROT 2026年5月7日 May I ask if you are still interested in our product?" [ref=e1744]:
+            - gridcell "Saulo Madruga | ENGIPROT 2026年5月7日 May I ask if you are still interested in our product?" [ref=e1745]:
+              - generic [ref=e1747] [cursor=pointer]:
+                - img [ref=e1752]
+                - generic [ref=e1753]:
+                  - gridcell "Saulo Madruga | ENGIPROT 2026年5月7日" [ref=e1754]:
+                    - generic "Saulo Madruga | ENGIPROT" [ref=e1758]
+                    - generic [ref=e1760]: 2026年5月7日
+                  - generic [ref=e1761]:
+                    - generic "‪May I ask if you are still interested in our product?‬" [ref=e1763]:
+                      - generic [ref=e1765]:
+                        - img
+                      - generic [ref=e1766]: May I ask if you are still interested in our product?
+                    - gridcell
+          - row "NGUYEN DINH THANH 2026年5月7日 May I ask whether you have any questions or news?" [ref=e1767]:
+            - gridcell "NGUYEN DINH THANH 2026年5月7日 May I ask whether you have any questions or news?" [ref=e1768]:
+              - generic [ref=e1770] [cursor=pointer]:
+                - img [ref=e1775]
+                - generic [ref=e1776]:
+                  - gridcell "NGUYEN DINH THANH 2026年5月7日" [ref=e1777]:
+                    - generic "NGUYEN DINH THANH" [ref=e1781]
+                    - generic [ref=e1783]: 2026年5月7日
+                  - generic [ref=e1784]:
+                    - generic "‪May I ask whether you have any questions or news?‬" [ref=e1786]:
+                      - generic [ref=e1788]:
+                        - img
+                      - generic [ref=e1789]: May I ask whether you have any questions or news?
+                    - gridcell
+          - row "Md. Harun Rashid 2026年5月7日 Hello?" [ref=e1790]:
+            - gridcell "Md. Harun Rashid 2026年5月7日 Hello?" [ref=e1791]:
+              - generic [ref=e1793] [cursor=pointer]:
+                - generic [ref=e1799]:
+                  - img
+                - generic [ref=e1800]:
+                  - gridcell "Md. Harun Rashid 2026年5月7日" [ref=e1801]:
+                    - generic "Md. Harun Rashid" [ref=e1805]
+                    - generic [ref=e1807]: 2026年5月7日
+                  - generic [ref=e1808]:
+                    - generic "‪Hello?‬" [ref=e1810]:
+                      - generic [ref=e1812]:
+                        - img
+                      - generic [ref=e1813]: Hello?
+                    - gridcell
+        - generic [ref=e1816]:
+          - generic [ref=e1817]:
+            - img
+          - text: 你的私人消息已进行
+          - button "端到端加密" [ref=e1818] [cursor=pointer]
+  - generic [ref=e1820]:
+    - generic [ref=e1821]:
+      - generic [ref=e1823]:
+        - img
+      - generic [ref=e1824]:
+        - generic [ref=e1825]: 下载 Windows 版 WhatsApp
+        - generic [ref=e1826]: 获享额外功能，例如语音和视频通话、屏幕共享等。
+      - button "下载" [ref=e1827] [cursor=pointer]:
+        - generic [ref=e1833]: 下载
+    - generic [ref=e1834]:
+      - button "发送文档" [ref=e1838] [cursor=pointer]:
+        - generic [ref=e1839]:
+          - generic [ref=e1841]:
+            - img
+          - generic [ref=e1845]: 发送文档
+      - button "添加联系人" [ref=e1849] [cursor=pointer]:
+        - generic [ref=e1850]:
+          - generic [ref=e1852]:
+            - img
+          - generic [ref=e1856]: 添加联系人

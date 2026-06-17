@@ -15,7 +15,12 @@ metadata:
 
 ## Overview
 
-Email is the **safest outreach channel** — no ban risk, no rate-limiting from platforms, professional B2B standard. The Python SMTP engine connects through QQ Enterprise Mail (腾讯企业邮, `smtp.exmail.qq.com`) using `bl42@bliiot.com`.
+Email is the **safest outreach channel** — no ban risk, no rate-limiting from platforms, professional B2B standard. The Python SMTP engine supports **two QQ mail channels**:
+
+| Channel | SMTP Server | Port | Sender | Best For |
+|---------|------------|------|--------|----------|
+| **QQ Enterprise Mail** (腾讯企业邮) | `smtp.exmail.qq.com` | 465 SSL | `bl42@bliiot.com` | BLIIOT official email, professional B2B |
+| **Regular QQ Mail** (普通QQ邮箱) | `smtp.qq.com` | 465 SSL | `kali_foever@qq.com` | Personal outreach, quick testing |
 
 This is the **recommended channel** for markets where WhatsApp might get flagged. Use email when:
 - WhatsApp ban risk is a concern (Kali's explicit preference)
@@ -34,8 +39,11 @@ C:\Users\Admin\AppData\Local\hermes\memories\脚本缓存\产品推广\bliit_mai
 ```bash
 cd "C:\Users\Admin\AppData\Local\hermes\memories\脚本缓存\产品推广"
 
-# 1. Set QQ Enterprise Mail SMTP authorization code (first time only)
+# 1. Set SMTP authorization code (first time only)
+#    For QQ Enterprise Mail (bl42@bliiot.com):
 python bliit_mailer.py --set-password
+#    For regular QQ Mail (kali_foever@qq.com):
+python bliit_mailer.py --set-password --smtp-user kali_foever@qq.com --smtp-server smtp.qq.com
 
 # 2. Test that SMTP works
 python bliit_mailer.py --test
@@ -54,8 +62,8 @@ python bliit_mailer.py --send
 
 | Feature | Detail |
 |---------|--------|
-| **SMTP Channel** | QQ Enterprise Mail (smtp.exmail.qq.com:465 SSL) |
-| **Sender** | bl42@bliiot.com — BLIIOT official email |
+| **SMTP Channel** | QQ Enterprise Mail (smtp.exmail.qq.com:465 SSL) or Regular QQ Mail (smtp.qq.com:465 SSL) |
+| **Sender** | bl42@bliiot.com (enterprise) or kali_foever@qq.com (personal) |
 | **Templates** | 3 product-focused HTML templates (ARMxy, IoT Gateways, R40 Router) |
 | **Anti-SPAM** | 45-90s random delay between emails, 3-5min rest every 5 emails |
 | **Daily Cap** | 50 emails/day (configurable) |
@@ -109,7 +117,10 @@ python bliit_mailer.py --reset-log      # Reset sent history
 
 ## Pitfalls
 
-- ⚠️ **QQ Enterprise Mail requires an "authorization code" (授权码)**, not the login password. Generate it at: QQ邮箱 → 设置 → 账户 → POP3/SMTP服务 → 生成授权码
+- ⚠️ **QQ Mail requires an "authorization code" (授权码)**, not the login password. Generate it at:
+  - **QQ Enterprise Mail** (bl42@bliiot.com): 登录企业邮 → 设置 → 账户 → POP3/SMTP服务 → 生成授权码
+  - **Regular QQ Mail** (kali_foever@qq.com): 登录QQ邮箱 → 设置 → 账户 → POP3/SMTP服务 → 生成授权码
+  - ⚠️ **QQ邮箱的授权码获取位置：** 设置 → 账户 → 找到「POP3/SMTP服务」→ 点击「开启」→ 按提示发送短信验证 → 获取授权码。不是在「邮箱应用账号」那里。
 - ⚠️ First time setup requires interactive password entry via `--set-password`. Password stored in plaintext at `.smtp_password` in the script directory.
 - ⚠️ Daily cap is 50 — if you hit the limit, run again the next day
 - ⚠️ Some emails in the followup JSON are garbage (image filenames, garbled text) — the script auto-filters these

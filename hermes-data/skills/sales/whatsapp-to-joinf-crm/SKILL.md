@@ -1,6 +1,6 @@
 ---
 name: whatsapp-to-joinf-crm
-version: 1.1.0
+version: 1.2.0
 description: WhatsApp读消息 → 富通CRM查询/新增/跟进完整管道。从WhatsApp Web读取客户消息，提取联系人信息，在富通CRM中查询匹配，然后新增客户或添加跟进记录。
 tags: [whatsapp, joinf, crm, follow-up, customer]
 requires_skills: [human-like-behavior, sales/joinf-crm-api]
@@ -21,7 +21,7 @@ requires_skills: [human-like-behavior, sales/joinf-crm-api]
 6. **WhatsApp操作必须加载 human-like-behavior 技能** — 所有浏览器操作要有随机延迟，像人一样
 7. **读WhatsApp消息时必须像人一样** — 打开对话后先滚到顶部，从第一条开始逐条往下读，不能只看最后一条预览
 8. **一次只能看一个人的聊天** — 像人一样，看完一个客户的全部对话，处理完（查CRM+加跟进），再看下一个。不能一次性批量翻多个人的聊天
-8. **富通API操作加载 sales/joinf-crm-api 技能** — 使用API客户端
+9. **富通API操作加载 sales/joinf-crm-api 技能** — 使用API客户端
 
 ## 完整流程
 
@@ -35,18 +35,30 @@ requires_skills: [human-like-behavior, sales/joinf-crm-api]
 
 ### Step 1: 读WhatsApp消息
 
-加载 `human-like-behavior` 技能，通过Playwright连接CDP 9223端口：
+加载 `human-like-behavior` 技能，通过 **Hermes原生瀏覽器工具**（`browser_navigate`、`browser_click` 等）連接 **CDP 9223端口**（你本機已登錄好WhatsApp Web的Chrome）：
 
-1. 打开WhatsApp Web聊天列表
-2. 找到目标客户的聊天（按时间排序，看最新消息）
-3. 点击进入聊天
-4. 滚动到顶部，逐条读取完整对话
-5. 提取关键信息：
+1. 用 `browser_navigate` 打開 `https://web.whatsapp.com`（CDP會連接到已有登錄態的Chrome）
+2. 等待頁面加載，用 `browser_snapshot` 查看聊天列表
+3. 找到目標客戶的聊天（按時間排序，看最新消息）
+4. 用 `browser_click` 點擊進入聊天
+5. 用 `browser_scroll(direction='up')` 滾動到頂部，逐條讀取完整對話
+6. 提取關鍵信息：
    - **联系人姓名**（聊天标题）
    - **公司名**（从对话内容推断）
    - **邮箱**（如果对话中有）
    - **电话**（如果对话中有）
    - **今日跟进内容**（所有新消息的时间线）
+
+**⚠️ 重要：絕對不要用 Playwright MCP 工具（`mcp_playwright_browser_*`）！**
+- Playwright啟動的是全新瀏覽器實例，容易被WhatsApp檢測為自動化
+- 必須用 Hermes原生瀏覽器工具（`browser_navigate`、`browser_click`、`browser_snapshot`、`browser_scroll`、`browser_type`）
+- 這些工具通過CDP連接到你本機已登錄的Chrome，行為更自然
+
+**⚠️ 仿人操作：所有操作之間加隨機延遲**
+- 點擊聊天之間：`random.uniform(2, 8)` 秒
+- 滾動時慢慢滾，不要biu一下到底
+- 每操作10個動作休息15-45秒
+- 不要連續快速點擊
 
 ### Step 2: 查询CRM
 

@@ -653,3 +653,5 @@ CRM跟进铁则（WhatsApp→富通）：
 2. 新增客户必须有邮箱：WhatsApp对话中没邮箱→报告Kali让她去问，小马不能直接发消息
 3. 跟进记录语气：用Kali第一人称（"我"、"他"、"老板"），不用"我方"、"客户"等第三方视角
 4. 技能已创建：sales/whatsapp-to-joinf-crm
+§
+WhatsApp操作必須用 Hermes原生瀏覽器工具（browser_navigate/browser_click/browser_snapshot/browser_scroll）通過 CDP 9223端口 連接到本機已登錄的Chrome。絕對不能用 Playwright MCP（mcp_playwright_browser_*），因為Playwright啟動全新瀏覽器實例容易被WhatsApp檢測為自動化。操作之間加隨機延遲模仿人類。
