@@ -19,15 +19,21 @@
     "openai-codex": {
       "tokens": {
         "id_token": "***REDACTED***",
-        "access_token": "***REDACTED***",
-        "refresh_token": "***REDACTED***",
         "account_id": "***REDACTED***"
       },
       "last_refresh": "***REDACTED***",
-      "auth_mode": "***REDACTED***"
+      "auth_mode": "***REDACTED***",
+      "last_auth_error": {
+        "provider": "***REDACTED***",
+        "code": "***REDACTED***",
+        "message": "***REDACTED***",
+        "reason": "***REDACTED***",
+        "relogin_required": true,
+        "at": "***REDACTED***"
+      }
     }
   },
-  "active_provider": null,
+  "active_provider": "***REDACTED***",
   "updated_at": "***REDACTED***",
   "credential_pool": {
     "deepseek": [
@@ -48,26 +54,7 @@
         "secret_fingerprint": "***REDACTED***"
       }
     ],
-    "openai-codex": [
-      {
-        "id": "***REDACTED***",
-        "label": "***REDACTED***",
-        "auth_type": "***REDACTED***",
-        "priority": 0,
-        "source": "***REDACTED***",
-        "access_token": "***REDACTED***",
-        "refresh_token": "***REDACTED***",
-        "last_status": "***REDACTED***",
-        "last_status_at": 1781701295.5754228,
-        "last_error_code": null,
-        "last_error_reason": null,
-        "last_error_message": null,
-        "last_error_reset_at": null,
-        "base_url": "***REDACTED***",
-        "last_refresh": "***REDACTED***",
-        "request_count": 0
-      }
-    ],
+    "openai-codex": [],
     "ollama-cloud": [
       {
         "id": "***REDACTED***",

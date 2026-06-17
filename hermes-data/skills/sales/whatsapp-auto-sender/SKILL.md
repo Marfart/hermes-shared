@@ -298,6 +298,8 @@ time.sleep(3)  # 每次3秒=太规律了
 
 **注意：** 2026年3月19日之前的消息WhatsApp Web不显示（手机端才可见）。
 
+**详细参考：** `references/playwright-mcp-read-messages.md` — 包含完整的工作流、消息结构示例、关键发现（Playwright MCP 浏览器 ≠ CDP 端口浏览器，它们是独立的）。
+
 ## Pitfalls
 
 - ⚠️ WhatsApp Web 要求 **真实浏览器窗口**（headless 模式不可用）
