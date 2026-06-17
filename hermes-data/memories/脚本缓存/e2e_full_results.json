@@ -1,0 +1,17 @@
+{
+  "read": {
+    "name": "Test Customer XMA",
+    "desc": "HERMES_API_TEST_20260617_090921",
+    "shortName": "",
+    "webSite": "",
+    "displayType": {
+      "originalValue": "236496",
+      "value": "潜在工业客户"
+    }
+  },
+  "patch": "{\"success\":false,\"code\":0,\"errMsg\":\"系统繁忙，请稍后再试！\"}",
+  "restore": "{\"success\":false,\"code\":0,\"errMsg\":\"系统繁忙，请稍后再试！\"}",
+  "follow": "{\"success\":true,\"code\":0,\"data\":[70866373],\"errMsg\":null}",
+  "create": "{\"success\":false,\"code\":0,\"data\":null,\"errMsg\":\"系统繁忙，请稍后再试！\"}",
+  "timestamp": "2026-06-17T04:45:23.985Z"
+}

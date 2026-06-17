@@ -1,0 +1,21 @@
+{
+  "test_string": "HERMES_API_TEST_035944",
+  "timestamp": "2026-06-17T03:59:54.566486",
+  "requests_found": 2,
+  "requests": [
+    {
+      "url": "https://tracking.joinf.com/record/log",
+      "method": "POST",
+      "postData": "data_list=W3siZGlzdGluY3RfaWQiOiI3ODY3MTgiLCJsaWIiOnsiJGxpYiI6ImpzIiwiJGxpYl9tZXRob2QiOiJjb2RlIiwiJGxpYl92ZXJzaW9uIjoiMS4xNC4xNSJ9LCJwcm9wZXJ0aWVzIjp7IiRzY3JlZW5faGVpZ2h0IjoxMDgwLCIkc2NyZWVuX3dpZHRoIj",
+      "status": 200,
+      "hasTest": false
+    },
+    {
+      "url": "https://rumt-zh.com/speed?from=https%3A%2F%2Ftrade.joinf.com%2Ftms%2Fcustomer%2Fcustomers%3Ftype%3Dedit%26id%3D238855365%26tab%3D0&sampled=1&id=dWJXZT",
+      "method": "POST",
+      "postData": "{\"payload\":\"{\\\"duration\\\":{\\\"fetch\\\":[{\\\"url\\\":\\\"https://tracking.joinf.com/record/log\\\",\\\"isHttps\\\":true,\\\"method\\\":\\\"POST\\\",\\\"type\\\":\\\"fetch\\\",\\\"status\\\":200,\\\"duration\\\":113,\\\"nextHopProtocol\\\":\\\"\\",
+      "status": 204,
+      "hasTest": false
+    }
+  ]
+}

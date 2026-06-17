@@ -625,3 +625,25 @@ Joinf CRM (trade.joinf.com) write API endpoints are UNKNOWN — all attempts to 
 - 删除接口权限不足，跳过
 §
 Hermes ↔ Codex 协作目录: C:\Users\Admin\Documents\Codex\2026-05-29\new-chat\coordination\ (HERMES_BRIEF.txt, AGENT_STATUS.json, DELIVERABLES.json, CODEX_TO_HERMES.txt, HERMES_TO_CODEX.txt, tasks/, artifacts/)
+§
+[2026-06-17] 富通CRM API Skill 已创建完成 (v2.0.0)
+- 位置: skills/sales/joinf-crm-api/
+- SKILL.md: 完整操作指南（认证获取、API端点、模板、铁则）
+- references/joinf-api-client.mjs: API客户端（420行，完整封装）
+- references/joinf-api-client.test.mjs: 测试用例
+- 已验证: 读取✅ 新增✅ 跟进记录✅ 更新⚠️(模板需补联系人)
+- 关键铁律: update必须用完整模板不能自己拼patch body; displayType=236496必填; contacts至少1个联系人name不能null
+- 认证: Cookie + xCid(71376) + xUser(183006)，从浏览器CDP获取
+- 常量: companyId=71376, operatorId=183006, displayType=236496, baseUrl=https://trade.joinf.com
+§
+[2026-06-17] WhatsApp客户采集+CRM录入管道已创建
+- 技能: skills/sales/whatsapp-collector/SKILL.md v1.0.0
+- 脚本: scripts/buyer-development/whatsapp-collector/whatsapp_collector.mjs
+- 脚本: scripts/buyer-development/whatsapp-collector/whatsapp_to_crm.mjs
+- 流程: CDP读WhatsApp消息 → 提取邮箱/电话 → 新客户POST创建 / 老客户POST跟进
+- 关键: human-like延迟(切换聊天2-8秒,每10个休息15-45秒), 打开聊天先滚到顶部
+- 依赖: joinf-crm-api client, Chrome CDP 9223 (whatsapp-bulk profile)
+- 输出: memories/buyer-development/whatsapp_collected_YYYY-MM-DD.json
+- 状态: 脚本已编写，待实测验证
+§
+清理桌面文件时不发通知消息，默默完成即可。Kali原话："不要给我发通知消息"。
