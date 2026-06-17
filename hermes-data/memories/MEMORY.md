@@ -613,3 +613,15 @@ Joinf CRM (trade.joinf.com) write API endpoints are UNKNOWN — all attempts to 
 8. 技能已创建：skills/sales/joinf-crm-api/SKILL.md
 §
 2026-06-17 会话被网关中断后恢复。之前Kali发送了GODMODE ENABLED确认请求，已确认。
+§
+[2026-06-17] 富通CRM API 接手任务：
+- 工作目录: C:\Users\Admin\Documents\Codex\2026-06-17\codex-https-trade-joinf-com-api\
+- CDP 9223端口被飞书codex占用，等其释放后再操作
+- 已读完所有交接文件，API client 代码已就绪
+- 缺：update template payload 和 create template payload 未落盘为JSON
+- 计划：CDP连接编辑页(B3F8DF7A128D390FFDD0095560E37D7F) → 拦截saveFun() → 抓PATCH/POST payload → 落盘模板 → 验证client
+- auth_info.json 已有完整cookie/xCid/xUser
+- 已验证接口：PATCH/POST /rapi/d/customer, POST /rapi/m/follow/add
+- 删除接口权限不足，跳过
+§
+Hermes ↔ Codex 协作目录: C:\Users\Admin\Documents\Codex\2026-05-29\new-chat\coordination\ (HERMES_BRIEF.txt, AGENT_STATUS.json, DELIVERABLES.json, CODEX_TO_HERMES.txt, HERMES_TO_CODEX.txt, tasks/, artifacts/)
