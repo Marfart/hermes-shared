@@ -601,3 +601,13 @@ Joinf CRM (trade.joinf.com) write API endpoints are UNKNOWN — all attempts to 
 - CDP websocket超时问题待解决，可能需要用HTTP方式或pagesok替代
 - 进度日志位置: ~/Desktop/hermes_crm_api_exploration_log.md
 - 最终报告位置: ~/Desktop/富通接口探索报告.md
+§
+[2026-06-17] 富通CRM API探索经验总结：
+1. 新增客户可通过UI表单实现（直接POST/PUT API返回"系统繁忙"）
+2. CDP websocket连接要点：先activate页面→等3-5秒→再连接→settimeout(15)
+3. Vue表单字段填写：用native setter + dispatchEvent触发reactivity
+4. 保存方法：优先用Vue组件的save()方法，点击按钮可能不触发API
+5. 测试客户：Test Customer XMA (ID: 238855638)，2026-06-17 03:17创建
+6. 待探索：添加备注、跟进记录、修改客户、保存邮件草稿
+7. 探索方法论：HAR搜索→JS反查→Storage/Token→GraphQL→WebSocket→页面内部函数→Excel导入→邮箱协议
+8. 技能已创建：skills/sales/joinf-crm-api/SKILL.md
