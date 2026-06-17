@@ -229,8 +229,18 @@ The LLM model is the single intellectual capability provider. Model unavailabili
 
 | Role | Provider | Model | When to use |
 |------|----------|-------|-------------|
-| **Primary** | `openrouter` | `owl-alpha` | Default |
+| **Primary** | `ollama-cloud` | `deepseek-v4-flash` | Default (stable) |
 | **Fallback** | `ollama-cloud` | `glm-5.1` | Primary timeout/rate-limited |
+
+**⚠️ Model switching history — why models kept changing:**
+The config had `model.provider: ollama-cloud` + `model.model: owl-alpha` (OpenRouter model on Ollama Cloud provider = mismatch). Combined with the `model_fallback_monitor.py` script targeting `openrouter/owl-alpha` as primary, the effective model oscillated between openrouter/owl-alpha, ollama-cloud/glm-5.1, and deepseek-v4-flash whenever OpenRouter hit rate limits or timeouts.
+
+**Fix applied 2026-06-17:** `hermes config set model.name deepseek-v4-flash` with `model.provider: ollama-cloud`. The `model.name` field overrides `model.model` when set. The fallback monitor script was NOT in cron, so the oscillation was caused by OpenRouter's own instability + Hermes internal retry logic switching providers.
+
+**Lesson:** When the user reports "model keeps changing", check:
+1. `config.yaml` for `model.provider` + `model.model` + `model.name` — are they consistent?
+2. Any `model_fallback_monitor.py` or similar scripts in cron?
+3. OpenRouter rate limits (429) can trigger Hermes internal fallback even without a dedicated script
 
 **⚠️ `hermes config` has NO `get` subcommand.** Only `show/edit/set/path/env-path/check/migrate`. To read the current model, parse config.yaml directly:
 ```bash

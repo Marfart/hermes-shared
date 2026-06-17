@@ -453,3 +453,12 @@ Agent response structure:
 - **R34 resistor removal** (for eMMC partitioning via rpiboot on Windows) uses soldering iron or hot air gun. See `references/armxy-bl460-hardware-gotchas.md` for full details.
 - **RS485 auto direction control** is handled by hardware on ARMxy boards — no RTS toggling needed. See `references/armxy-bl460-hardware-gotchas.md`.
 - **BLIIOT does NOT use ESP32** in any current product line. All gateways use ARM MCU (300MHz) or Cortex-A7 (1.2GHz) processors. See `references/bliiot-processor-architecture.md` for the full processor map and why ESP32 is unsuitable for industrial gateway workloads.
+
+## Reference Files
+
+- **`references/armxy-bl460-hardware-gotchas.md`** — Hardware quirks for ARMxy BL460 series: R34 resistor removal for eMMC partitioning, RS485 auto direction control, and other board-level gotchas.
+- **`references/armxy-bl460-model-naming.md`** — BL460 series part number decoder (BL461L-CM5002016-X10 → CM5 + RAM + eMMC + I/O board).
+- **`references/bliiot-processor-architecture.md`** — Full processor map across all BLIIOT product lines, including why ESP32 is not used.
+- **`references/iec104-product-compatibility.md`** — IEC 60870-5-104 protocol support across BLIIOT products: which models support downlink/uplink, timestamp (CP56Time2a), and which don't.
+- **`references/r40-router-firewall-vpn-capabilities.md`** — R40 industrial cellular router firewall & VPN capabilities: DMZ, DoS protection, IP/MAC/domain filtering, port mapping, access control, IPsec/OpenVPN/L2TP VPN tunnels, and the 3-in-1 router+firewall+IO capability of certain R40 models.
+- **`references/lte-data-logger-analog-inputs.md`** — Product matching guide for LTE data logger + MQTT + RS485 + 0-10V/0-20mA analog inputs + counter inputs. Covers S475, S275, MxxxT, MxxxE comparison, the critical 0-10V limitation (S475/S275 don't support it), workaround options, and recommended customer response template.
