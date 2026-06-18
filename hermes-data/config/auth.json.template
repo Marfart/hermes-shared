@@ -8,7 +8,7 @@
       "api_base_url": "***REDACTED***",
       "scope": "***REDACTED***",
       "granted_scope": "***REDACTED***",
-      "token_type": "***REDACTED***",
+      "token_type": "Bearer",
       "access_token": "***REDACTED***",
       "refresh_token": "***REDACTED***",
       "obtained_at": "***REDACTED***",
@@ -22,7 +22,7 @@
         "account_id": "***REDACTED***"
       },
       "last_refresh": "***REDACTED***",
-      "auth_mode": "***REDACTED***",
+      "auth_mode": "chatgpt",
       "last_auth_error": {
         "provider": "***REDACTED***",
         "code": "***REDACTED***",
@@ -38,75 +38,75 @@
   "credential_pool": {
     "deepseek": [
       {
-        "id": "***REDACTED***",
-        "label": "***REDACTED***",
-        "auth_type": "***REDACTED***",
+        "id": "f3d7a2",
+        "label": "DEEPSEEK_API_KEY",
+        "auth_type": "api_key",
         "priority": 0,
-        "source": "***REDACTED***",
-        "last_status": "***REDACTED***",
+        "source": "env:DEEPSEEK_API_KEY",
+        "last_status": "ok",
         "last_status_at": null,
         "last_error_code": null,
         "last_error_reason": null,
         "last_error_message": null,
         "last_error_reset_at": null,
-        "base_url": "***REDACTED***",
+        "base_url": "https://api.deepseek.com",
         "request_count": 0,
-        "secret_fingerprint": "***REDACTED***"
+        "secret_fingerprint": "sha256:eb399b1751445035"
       }
     ],
     "openai-codex": [],
     "ollama-cloud": [
       {
-        "id": "***REDACTED***",
-        "label": "***REDACTED***",
-        "auth_type": "***REDACTED***",
+        "id": "a00be9",
+        "label": "OLLAMA_API_KEY",
+        "auth_type": "api_key",
         "priority": 0,
-        "source": "***REDACTED***",
-        "last_status": "***REDACTED***",
+        "source": "env:OLLAMA_API_KEY",
+        "last_status": "ok",
         "last_status_at": null,
         "last_error_code": null,
         "last_error_reason": null,
         "last_error_message": null,
         "last_error_reset_at": null,
-        "base_url": "***REDACTED***",
+        "base_url": "https://ollama.com/v1",
         "request_count": 0,
-        "secret_fingerprint": "***REDACTED***"
+        "secret_fingerprint": "sha256:eb703edc4f035107"
       }
     ],
     "copilot": [
       {
-        "id": "***REDACTED***",
-        "label": "***REDACTED***",
-        "auth_type": "***REDACTED***",
+        "id": "4e95f3",
+        "label": "GITHUB_TOKEN",
+        "auth_type": "api_key",
         "priority": 0,
-        "source": "***REDACTED***",
+        "source": "env:GITHUB_TOKEN",
         "last_status": null,
         "last_status_at": null,
         "last_error_code": null,
         "last_error_reason": null,
         "last_error_message": null,
         "last_error_reset_at": null,
-        "base_url": "***REDACTED***",
+        "base_url": "https://api.githubcopilot.com",
         "request_count": 0,
-        "secret_fingerprint": "***REDACTED***"
+        "secret_fingerprint": "sha256:116943eaf22343e5"
       }
     ],
     "openrouter": [
       {
-        "id": "***REDACTED***",
-        "label": "***REDACTED***",
-        "auth_type": "***REDACTED***",
+        "id": "5c429c",
+        "label": "OPENROUTER_API_KEY",
+        "auth_type": "api_key",
         "priority": 0,
-        "source": "***REDACTED***",
-        "last_status": "***REDACTED***",
+        "source": "env:OPENROUTER_API_KEY",
+        "last_status": "ok",
         "last_status_at": null,
         "last_error_code": null,
         "last_error_reason": null,
         "last_error_message": null,
         "last_error_reset_at": null,
-        "base_url": "***REDACTED***",
+        "base_url": "https://openrouter.ai/api/v1",
         "request_count": 0,
-        "secret_fingerprint": "***REDACTED***"
+        "secret_fingerprint": "sha256:b220aa3787207ff2"
       }
     ]
   }

@@ -185,7 +185,7 @@ const result = await client.readCustomerDetail({ customerId: 238855638 });
 // 联系人: name, email, phone, mobile, whatsApp...
 ```
 
-## 四、添加跟进记录
+### 四、添加跟进记录
 
 ```javascript
 const now = new Date();
@@ -198,6 +198,12 @@ const result = await client.addFollowRecord({
 });
 // result.json.data → follow ID
 ```
+
+### 跟进记录 API 陷阱
+
+> **⚠️ `displayValue` 不能为空！** 详见独立技能 `bliiot-crm-followup` 和其 `references/joinf-followup-payload.md`。
+> 
+> 富通CRM前端Vue组件依赖 `dataName.displayValue` 渲染跟进详情页，空字符串会导致记录显示在时间轴但点进去内容为空。所有6个同步脚本都在2026-06-18修复了此问题。
 
 ## 五、客户列表查询
 
