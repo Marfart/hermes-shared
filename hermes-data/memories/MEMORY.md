@@ -655,3 +655,20 @@ CRM跟进铁则（WhatsApp→富通）：
 4. 技能已创建：sales/whatsapp-to-joinf-crm
 §
 WhatsApp操作必須用 Hermes原生瀏覽器工具（browser_navigate/browser_click/browser_snapshot/browser_scroll）通過 CDP 9223端口 連接到本機已登錄的Chrome。絕對不能用 Playwright MCP（mcp_playwright_browser_*），因為Playwright啟動全新瀏覽器實例容易被WhatsApp檢測為自動化。操作之間加隨機延遲模仿人類。
+§
+BLIIOT CRM跟进系统已搭建完成（2026-06-18）：
+- 脚本在 %LOCALAPPDATA%/hermes/memories/脚本缓存/富通CRM/
+- 主程序 bliiot_crm.py（init/stats/excel/add/list/search）
+- 快捷工具 crm_quick.py（customer查客户+跟进 / add-by-name / search / stats / excel）
+- CDP同步 sync_all_pending.mjs（通过Chrome 9226端口同步到富通CRM）
+- 数据库 crm_followups.db，客户缓存 all_customers_raw.json
+- 报表输出 Desktop/Working/BLIIOT_富通CRM_客户数据全量报表.xlsx（5个Sheet）
+- 技能名：bliiot-crm-followup（sales/分类）
+
+CRM跟进铁则：
+- 客户名称查询用 crm_quick.py customer "名称"
+- 添加跟进用 bliiot_crm.py add <ID> "内容" --type X --sync 或 add-by-name
+- --sync 走CDP实时同步到富通（需要Chrome 9226端口已登录）
+- 后续发邮件/读WhatsApp后可自动调用跟进记录
+§
+CRM跟进管理系统在 %LOCALAPPDATA%/hermes/memories/脚本缓存/富通CRM/，含 bliiot_crm.py（主CLI）、crm_quick.py（快捷版）、sync_all_pending.mjs（CDP同步管道）、crm_followups.db（SQLite本地跟进库）。技能: bliiot-crm-followup。已经过全流程验证（1955条客户拉取+14条跟进双向同步+5个Sheet Excel报表）。同步通过CDP浏览器POST /rapi/m/follow/add，颜色映射：邮件=2B579A、报价=E67E22、WhatsApp=27AE60、电话=E74C3C。API size最大200（不是50）。Excel必须清洗非打印字符（sanitize函数）。
