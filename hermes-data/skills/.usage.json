@@ -224,14 +224,14 @@
     "archived_at": null,
     "created_at": "2026-06-18T07:56:32.591876+00:00",
     "created_by": null,
-    "last_patched_at": "2026-06-18T09:03:32.899203+00:00",
-    "last_used_at": "2026-06-18T09:02:27.891624+00:00",
-    "last_viewed_at": "2026-06-18T09:02:27.874488+00:00",
-    "patch_count": 7,
+    "last_patched_at": "2026-06-18T11:35:00.267200+00:00",
+    "last_used_at": "2026-06-18T11:42:44.426317+00:00",
+    "last_viewed_at": "2026-06-18T11:42:44.411318+00:00",
+    "patch_count": 8,
     "pinned": false,
     "state": "active",
-    "use_count": 4,
-    "view_count": 4
+    "use_count": 8,
+    "view_count": 8
   },
   "bliiot-customer-acquisition": {
     "archived_at": null,
@@ -251,26 +251,26 @@
     "created_at": "2026-06-04T07:07:01.926456+00:00",
     "created_by": null,
     "last_patched_at": "2026-06-16T18:21:26.065896+00:00",
-    "last_used_at": "2026-06-16T18:20:45.515801+00:00",
-    "last_viewed_at": "2026-06-16T18:20:45.498270+00:00",
+    "last_used_at": "2026-06-18T11:39:17.076594+00:00",
+    "last_viewed_at": "2026-06-18T11:39:17.059594+00:00",
     "patch_count": 12,
     "pinned": false,
     "state": "active",
-    "use_count": 13,
-    "view_count": 13
+    "use_count": 14,
+    "view_count": 14
   },
   "bliiot-email-marketing": {
     "archived_at": null,
     "created_at": "2026-06-03T09:04:10.862594+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-06-17T17:01:20.244222+00:00",
-    "last_used_at": "2026-06-17T17:00:20.381772+00:00",
-    "last_viewed_at": "2026-06-17T17:00:20.365774+00:00",
-    "patch_count": 2,
+    "last_patched_at": "2026-06-18T11:34:25.007360+00:00",
+    "last_used_at": "2026-06-18T11:42:43.399785+00:00",
+    "last_viewed_at": "2026-06-18T11:42:43.380786+00:00",
+    "patch_count": 5,
     "pinned": false,
     "state": "active",
-    "use_count": 4,
-    "view_count": 4
+    "use_count": 9,
+    "view_count": 9
   },
   "bliiot-highperf-gateways": {
     "archived_at": null,
@@ -388,6 +388,19 @@
     "state": "active",
     "use_count": 5,
     "view_count": 5
+  },
+  "blit-email-campaign": {
+    "archived_at": null,
+    "created_at": "2026-06-18T11:34:01.846483+00:00",
+    "created_by": null,
+    "last_patched_at": "2026-06-18T11:41:36.456629+00:00",
+    "last_used_at": "2026-06-18T11:41:12.396993+00:00",
+    "last_viewed_at": "2026-06-18T11:41:12.365474+00:00",
+    "patch_count": 3,
+    "pinned": false,
+    "state": "active",
+    "use_count": 3,
+    "view_count": 3
   },
   "blogwatcher": {
     "archived_at": null,
@@ -875,13 +888,13 @@
     "created_at": "2026-06-16T16:45:19.036189+00:00",
     "created_by": null,
     "last_patched_at": "2026-06-17T16:28:46.155930+00:00",
-    "last_used_at": "2026-06-17T16:28:24.150976+00:00",
-    "last_viewed_at": "2026-06-17T16:28:24.126776+00:00",
+    "last_used_at": "2026-06-18T11:42:35.111107+00:00",
+    "last_viewed_at": "2026-06-18T11:42:35.095098+00:00",
     "patch_count": 2,
     "pinned": false,
     "state": "active",
-    "use_count": 13,
-    "view_count": 13
+    "use_count": 14,
+    "view_count": 14
   },
   "humanizer": {
     "archived_at": null,
@@ -952,14 +965,14 @@
     "archived_at": null,
     "created_at": "2026-06-17T06:24:24.954717+00:00",
     "created_by": null,
-    "last_patched_at": "2026-06-18T08:48:34.510998+00:00",
-    "last_used_at": "2026-06-18T09:03:16.522902+00:00",
-    "last_viewed_at": "2026-06-18T09:03:16.505596+00:00",
-    "patch_count": 7,
+    "last_patched_at": "2026-06-18T11:41:51.787635+00:00",
+    "last_used_at": "2026-06-18T11:39:31.822328+00:00",
+    "last_viewed_at": "2026-06-18T11:39:31.803328+00:00",
+    "patch_count": 8,
     "pinned": false,
     "state": "active",
-    "use_count": 10,
-    "view_count": 10
+    "use_count": 11,
+    "view_count": 11
   },
   "jupyter-live-kernel": {
     "archived_at": null,
@@ -1408,13 +1421,13 @@
     "created_at": "2026-06-18T07:54:15.361768+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-06-18T07:54:15.381799+00:00",
-    "last_viewed_at": "2026-06-18T07:54:15.361768+00:00",
+    "last_used_at": "2026-06-18T11:40:17.567646+00:00",
+    "last_viewed_at": "2026-06-18T11:40:17.551455+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 1,
-    "view_count": 1
+    "use_count": 2,
+    "view_count": 2
   },
   "sales/whatsapp-to-joinf-crm": {
     "archived_at": null,
@@ -1473,13 +1486,13 @@
     "created_at": "2026-05-27T04:04:39.814136+00:00",
     "created_by": "agent",
     "last_patched_at": "2026-06-17T10:15:49.787165+00:00",
-    "last_used_at": "2026-06-17T17:00:22.375123+00:00",
-    "last_viewed_at": "2026-06-17T17:00:20.349773+00:00",
+    "last_used_at": "2026-06-18T10:42:36.435344+00:00",
+    "last_viewed_at": "2026-06-18T10:42:36.420351+00:00",
     "patch_count": 56,
     "pinned": false,
     "state": "active",
-    "use_count": 52,
-    "view_count": 52
+    "use_count": 53,
+    "view_count": 53
   },
   "serving-llms-vllm": {
     "archived_at": null,

@@ -1,133 +1,200 @@
 ---
 name: bliiot-email-marketing
-description: "BLIIOT Email营销 — 安全可靠的SMTP邮件推广，替代WhatsApp（防封号）。通过QQ企业邮发产品开发信，支持多模板+防SPAM延迟+发送队列+日志回查"
-version: 1.0.0
+description: "BLIIOT Email营销 — 安全可靠的SMTP邮件推广，替代WhatsApp（防封号）。通过QQ邮箱发产品开发信，支持CRM老客户召回+多模板+防SPAM延迟+发送队列+日志回查"
+version: 2.0.0
 author: Tachikoma
 platforms: [windows]
-trigger: "用户说Email可以/邮件营销/发邮件推广/安全渠道推广/不想被封号/WhatsApp怕封选邮件"
-metadata:
-  hermes:
-    tags: [email, marketing, smtp, outreach, sales, b2b]
-    related_skills: [whatsapp-auto-sender, bliiot-b2b-directory-promotion]
+trigger: "发邮件/邮件营销/发开发信/WhatsApp怕封/CRM老客户召回/旧客户跟进/邮件召回/quali 说Email可以/邮件推广/安全渠道推广/不想被封号"
+tags: [email, marketing, smtp, outreach, sales, b2b, crm-recall]
+related_skills: [whatsapp-auto-sender, bliiot-b2b-directory-promotion, bliiot-crm-followup]
 ---
 
 # BLIIOT Email Marketing Engine
 
 ## Overview
 
-Email is the **safest outreach channel** — no ban risk, no rate-limiting from platforms, professional B2B standard. The Python SMTP engine supports **two QQ mail channels**:
+Email is the **safest outreach channel** — no ban risk, professional B2B standard.
 
-| Channel | SMTP Server | Port | Sender | Best For |
-|---------|------------|------|--------|----------|
-| **QQ Enterprise Mail** (腾讯企业邮) | `smtp.exmail.qq.com` | 465 SSL | `bl42@bliiot.com` | BLIIOT official email, professional B2B |
-| **Regular QQ Mail** (普通QQ邮箱) | `smtp.qq.com` | 465 SSL | `kali_foever@qq.com` | Personal outreach, quick testing |
+### Current SMTP Configuration
 
-This is the **recommended channel** for markets where WhatsApp might get flagged. Use email when:
-- WhatsApp ban risk is a concern (Kali's explicit preference)
-- Targeting regions where email is the professional standard (Europe, Americas)
-- Need to reach contacts where only email is available
-- Want scalable outreach without daily send limits (within reason)
+| Item | Value |
+|------|-------|
+| **Channel** | ⭐ QQ个人邮箱（当前主力，2026-06-18启用） |
+| **SMTP** | `smtp.qq.com:465` SSL |
+| **Sender** | `kali_foever@qq.com` |
+| **Display Name** | `Kali \| BLIIOT Technology` |
+| **Auth** | 授权码已保存在 `.smtp_password` |
+| **Contact in body** | Email: `bl42@bliiot.com`, WhatsApp: `+86 17704014518` |
 
-## Script Location
+| Backup Channel | SMTP | Sender | Status |
+|----------------|------|--------|--------|
+| QQ Enterprise Mail | `smtp.exmail.qq.com:465` | `bl42@bliiot.com` | ⏳ 授权码待获取 |
 
-```
-C:\Users\Admin\AppData\Local\hermes\memories\脚本缓存\产品推广\bliit_mailer.py
-```
+### When to Use Email
 
-## Quick Start
+- ✅ WhatsApp ban risk is a concern (Kali's explicit preference — 安全第一)
+- ✅ CRM已有邮箱的老客户召回（2024年前客户有1600+有邮箱）
+- ✅ B2B professional standard in Europe, Americas, Oceania
+- ✅ Scalable daily up to 50/day with proper delays
+- ❌ NOT for urgent/time-sensitive commercial offers
+- ❌ NOT when you need real-time back-and-forth
+
+## Scripts
+
+| Script | Path | Purpose |
+|--------|------|---------|
+| `bliit_mailer.py` | `memories/脚本缓存/产品推广/bliit_mailer.py` | 主力邮件引擎（多模板HTML+文本） |
+| `send_selected5.py` | `memories/脚本缓存/产品推广/send_selected5.py` | **CRM老客户召回** — 选客户→发邮件→记跟进 |
+
+## Workflow A: CRM 老客户召回（本会话的实战方法）
+
+### Step 1: 从CRM选取目标客户
 
 ```bash
-cd "C:\Users\Admin\AppData\Local\hermes\memories\脚本缓存\产品推广"
+python -c "
+import json, random
+from datetime import datetime, timezone, timedelta
 
-# 1. Set SMTP authorization code (first time only)
-#    For QQ Enterprise Mail (bl42@bliiot.com):
+with open(r'CRM客户数据路径/all_customers_raw.json') as f:
+    customers = json.load(f)
+
+# 过滤：2024年前创建 + 有邮箱
+cutoff = int(datetime(2024,1,1,tzinfo=timezone(timedelta(hours=8))).timestamp() * 1000)
+old = [c for c in customers if c.get('displayCreateTime') and c['displayCreateTime'] < cutoff and c.get('contactEmail')]
+
+# 随机抽取N个
+selected = random.sample(old, 5)
+
+# 保存为JSON
+with open('产品推广/_selected5.json', 'w') as f:
+    json.dump(selected, f, ensure_ascii=False, indent=2)
+
+# 打印预览
+for c in selected:
+    print(f'{c.get(\"name\",\"\")} | {c.get(\"contactEmail\",\"\")} | {c.get(\"displayRegion\",\"\")}')
+"
+```
+
+### Step 2: 发送邮件（拟人模式）
+
+```bash
+cd memories/脚本缓存/产品推广
+python send_selected5.py
+```
+
+脚本自动：
+- 读取 `_selected5.json` 中的客户
+- 用QQ邮箱 `kali_foever@qq.com` 发送
+- **拟人延迟**: 每封之间 60-150s 随机间隔
+- 写入CRM跟进记录到本地SQLite
+
+### Step 3: 检查结果
+
+```bash
+# 查看CRM跟进记录（最近1小时内的邮件记录）
+python -c "
+import sqlite3
+conn = sqlite3.connect('crm_followups.db')
+rows = conn.execute('''SELECT id, customer_id, type, content, created_at
+    FROM followups WHERE source=\"email\"
+    AND created_at >= datetime(\"now\", \"-1 hour\")
+    ORDER BY id DESC''').fetchall()
+for r in rows:
+    print(f'  #{r[0]} | cust={r[1]} | [{r[2]}] | {r[3][:60]}... | {r[4]}')
+conn.close()
+"
+```
+
+## Workflow B: 批量模板邮件（bliit_mailer.py）
+
+```bash
+cd memories/脚本缓存/产品推广
+
+# 1. Set password
 python bliit_mailer.py --set-password
-#    For regular QQ Mail (kali_foever@qq.com):
-python bliit_mailer.py --set-password --smtp-user kali_foever@qq.com --smtp-server smtp.qq.com
 
-# 2. Test that SMTP works
-python bliit_mailer.py --test
-
-# 3. See all customer emails ready to send
-python bliit_mailer.py --list
-
-# 4. Preview who gets what (dry run)
+# 2. Preview
 python bliit_mailer.py --dry-run
 
-# 5. Send!
+# 3. Send
 python bliit_mailer.py --send
 ```
 
-## Features
+## 邮件模板
 
-| Feature | Detail |
-|---------|--------|
-| **SMTP Channel** | QQ Enterprise Mail (smtp.exmail.qq.com:465 SSL) or Regular QQ Mail (smtp.qq.com:465 SSL) |
-| **Sender** | bl42@bliiot.com (enterprise) or kali_foever@qq.com (personal) |
-| **Templates** | 3 product-focused HTML templates (ARMxy, IoT Gateways, R40 Router) |
-| **Anti-SPAM** | 45-90s random delay between emails, 3-5min rest every 5 emails |
-| **Daily Cap** | 50 emails/day (configurable) |
-| **Deduplication** | Auto-skips already-sent emails via .sent_log.json |
-| **Crash Recovery** | Log saved after each send — resume from where it left off |
-| **Data Source** | Auto-scans buyer-development `*followup*.json` files for emails |
+### CRM老客户召回模板（本会话实战验证）
 
-## Anti-SPAM Safety Measures
+**Subject**: `Following up | BLIIOT Industrial IoT Solutions`
 
-These are critical for deliverability — Gmail/Outlook will flag bulk sends without them:
-
-1. **Ramp-up**: Start with 10/day, increase gradually. Don't blast all 31 at once.
-2. **Delay**: Every email has 45-90s random gap between sends
-3. **Batch rest**: Every 5 emails = 3-5 minute pause
-4. **Random templates**: Each email picks a random product template (not all same)
-5. **HTML + Text**: Multipart MIME with both HTML and plaintext fallback
-6. **Unsubscribe**: Footer includes "Reply Unsubscribe to opt out"
-7. **Daily cap**: Hard limit of 50/day
-
-## Data Source
-
-Script auto-discovers customer emails from:
-
+**Body**:
 ```
-C:\Users\Admin\AppData\Local\hermes\memories\buyer-development\
-  *followup*.json
+Hi {first_name},
+
+Hope this email finds you well.
+
+I hope you don't mind me reaching out. I'm Kali from BLIIOT (www.bliiot.com)— we previously discussed our industrial IoT gateways and remote monitoring solutions, which are widely used in solar energy, building automation, transformer monitoring, and industrial control applications.
+
+I was wondering if you still remember us, and whether you're still interested in our products? Do you have any upcoming projects where our solutions might be a good fit?
+
+We've also released several new products recently. If you'd like to learn more, please feel free to reach out anytime.
+
+You can contact me directly at
+Email: bl42@bliiot.com
+WhatsApp: +86 17704014518.
+
+Looking forward to hearing from you.
+
+Best regards,
+Kali
+BLIIOT
 ```
 
-Current count: ~31 valid emails across 9 countries.
+**Design rationale**: This template is intentionally:
+- **Soft-touch**: "I hope you don't mind me reaching out" + "I was wondering if you still remember us" — not aggressive sales
+- **Non-spammy**: No bold, no large fonts, no multiple exclamation marks
+- **Personal**: Uses customer's first name, references past discussions
+- **Low-commitment CTA**: "If you'd like to learn more, feel free to reach out anytime" — no pressure
+- **Multiple contact options**: Both email and WhatsApp in the footer
 
-## Adding More Emails
+### 产品模板（bliit_mailer.py）
+- ARMxy嵌入式控制器
+- 工业物联网网关
+- R40工业路由器
+- 全产品综合
 
-To add more email targets:
-1. Get new customer data (Google Maps, JoinF, etc.)
-2. Enrich and build followup document (see `bliiot-customer-acquisition` pipeline)
-3. The mailer script auto-discovers new `*followup*.json` files
-4. Run `--list` to verify new emails appeared
-5. Run `--send` to send
+## Anti-SPAM Parameters
 
-## Manager Commands
+| Parameter | CRM召回模式 | 批量模板模式 |
+|-----------|------------|-------------|
+| Delay between emails | 60-150s | 45-90s |
+| Batch size before rest | 5 | 5 |
+| Rest duration | 10 min | 3-5 min |
+| Daily cap | 50 | 50 |
 
-```bash
-python bliit_mailer.py --set-password   # Set/update SMTP auth code
-python bliit_mailer.py --status         # Show stats + unsent list
-python bliit_mailer.py --list           # List all email targets
-python bliit_mailer.py --send           # Execute sending
-python bliit_mailer.py --dry-run        # Preview without sending
-python bliit_mailer.py --test           # Test to self
-python bliit_mailer.py --reset-log      # Reset sent history
+## CRM Integration
+
+After sending each email, a follow-up record is **automatically written** to the local CRM SQLite database:
+
 ```
+Table: followups
+Fields: customer_id, type='邮件', content='发送了跟进邮件给{name}({email})', 
+        operator='Kali Marfa', source='email', synced=1
+```
+
+No CDP needed for CRM write — it's a direct SQLite INSERT. Records marked `synced=1` won't be re-synced to JoinF (they're already there as a manual record).
 
 ## Pitfalls
 
-- ⚠️ **QQ Mail requires an "authorization code" (授权码)**, not the login password. Generate it at:
-  - **QQ Enterprise Mail** (bl42@bliiot.com): 登录企业邮 → 设置 → 账户 → POP3/SMTP服务 → 生成授权码
-  - **Regular QQ Mail** (kali_foever@qq.com): 登录QQ邮箱 → 设置 → 账户 → POP3/SMTP服务 → 生成授权码
-  - ⚠️ **QQ邮箱的授权码获取位置：** 设置 → 账户 → 找到「POP3/SMTP服务」→ 点击「开启」→ 按提示发送短信验证 → 获取授权码。不是在「邮箱应用账号」那里。
-- ⚠️ First time setup requires interactive password entry via `--set-password`. Password stored in plaintext at `.smtp_password` in the script directory.
-- ⚠️ Daily cap is 50 — if you hit the limit, run again the next day
-- ⚠️ Some emails in the followup JSON are garbage (image filenames, garbled text) — the script auto-filters these
-- ⚠️ Do NOT set delay to 0. That will trigger Gmail SPAM filters immediately
-- ⚠️ `.sent_log.json` tracks what's been sent — if you need to resend, run `--reset-log` first
+- ⚠️ **授权码 ≠ 登录密码**。QQ邮箱的授权码获取：登录QQ邮箱 → 设置 → 账户 → 「POP3/SMTP服务」→ 开启 → 短信验证 → 获取16位授权码
+- ⚠️ **Kali已配置好`kali_foever@qq.com`的授权码** `reoefbstemklbdcd`，保存在 `.smtp_password`
+- ⚠️ 本轮会话实战已发送5封CRM老客户邮件（Juan Carlos/Stephen Hudson/Richard Twite/Basem Mohamed/Alex Elliot），标记好已发送名单避免重复
+- ⚠️ 不要硬编码密码到Python脚本中。永远从 `.smtp_password` 文件读取
+- ⚠️ `.sent_log.json` 记录已发送历史。重置需 `--reset-log`
+- ⚠️ 选客户时要随机抽样，不要每次都选同样的客户
+- ⚠️ 2024年前客户有1600+有邮箱的，足够多发几轮
 
 ## See Also
 
-- `whatsapp-auto-sender` — WhatsApp channel (risk: ban)
-- `bliiot-b2b-directory-promotion` — Inbound B2B directory listings (risk: none)
+- `whatsapp-auto-sender` — WhatsApp channel（风险：封号）
+- `bliiot-crm-followup` — CRM跟进记录工具（邮件记录自动写入这里）
+- `bliiot-b2b-directory-promotion` — B2B目录推广（风险：无）

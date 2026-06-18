@@ -130,6 +130,33 @@ CRM 工具数据同步到 `Marfart/hermes-shared` 仓库时注意两个防线：
 | 国家地区统计 | 147个国家覆盖+跟进深度 |
 | 跟进记录明细 | 全部跟进记录（类型/内容/同步状态） |
 
+## 自动跟进记录（无需CDP的插入模式）
+
+某些场景不需要通过富通API同步，而是**直接写入本地SQLite**：
+
+- **邮件发送**（`send_selected5.py`）— 发完一封直接 `INSERT INTO followups (..., source='email', synced=1)`
+- **WhatsApp发送** — 同样可以直接写本地DB，标记 `synced=0` 等CDP就绪后批量同步
+- **内部备注** — 不需要进富通时间轴的记录
+
+这种模式的优点是**不需要CDP连接**（Python直连SQLite），缺点是记录不会实时出现在富通。需要时跑 `node sync_all_pending.mjs` 批量推送。
+
+```python
+# 示例：直接写跟进记录（无需CDP）
+import sqlite3, json
+from pathlib import Path
+
+db = Path.home() / 'AppData/Local/hermes/memories/脚本缓存/富通CRM/crm_followups.db'
+conn = sqlite3.connect(str(db))
+conn.execute("""INSERT INTO followups
+    (customer_id, customer_name, type, content, operator, source, synced)
+    VALUES (?, ?, ?, ?, 'Kali Marfa', 'email', 1)""",
+    (customer_id, customer_name, type_, content))
+conn.commit()
+conn.close()
+```
+
+关联技能：`bliiot-email-marketing` — CRM 老客户召回脚本 `send_crm_recall.py` 使用此模式。
+
 ## 关键铁则
 
 1. **先查后增** — 加跟进前用 `crm_quick.py customer` 确认客户存在

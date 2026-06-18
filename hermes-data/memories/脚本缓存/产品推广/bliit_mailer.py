@@ -42,14 +42,14 @@ CONFIG_FILE = SCRIPT_DIR / ".mailer_config.json"
 SENT_LOG = SCRIPT_DIR / ".sent_log.json"
 PASSWORD_FILE = SCRIPT_DIR / ".smtp_password"
 
-# QQ Enterprise Mail SMTP
-SMTP_HOST = "smtp.exmail.qq.com"
+# QQ个人邮箱 SMTP (原为企业邮箱, 2026-06-18 切换为个人邮箱)
+SMTP_HOST = "smtp.qq.com"
 SMTP_PORT_SSL = 465
 SMTP_PORT_TLS = 587
 
 # 发件人
-FROM_EMAIL = "bl42@bliiot.com"
-FROM_NAME = "BLIIOT Technology - Industrial IoT Solutions"
+FROM_EMAIL = "kali_foever@qq.com"
+FROM_NAME = "Kali | BLIIOT Technology"
 
 # 发送控制
 MIN_DELAY_SEC = 45    # 每封邮件最小间隔(秒)

@@ -126,3 +126,5 @@ Wants new skills saved to skill library and synced to GitHub shared repo (Marfar
 Detailed quality verifier — after I build a system (CRM sync/Excel), she actually opens every record to verify content renders correctly. Notices when records are "in timeline but blank inside". Values completeness and will chase down bugs she finds.
 §
 Kali often says "怎么样了" / "继续" / "有进展吗" mid-task — she wants a brief progress update, not a full explanation. Default: keep working and deliver a one-liner.
+§
+QQ邮箱 kali_foever@qq.com SMTP授权码已配置成功（2026-06-18）。SMTP服务器 smtp.qq.com:465，发件人名称 "Kali | BLIIOT Technology"。授权码已保存在 .smtp_password 文件。
