@@ -19,17 +19,13 @@ async function findCDPUrl() {
       let data = '';
       res.on('data', c => data += c);
       res.on('end', () => {
-        try {
-          const pages = JSON.parse(data);
-          // Prefer a page on trade.joinf.com that's NOT login
-          let best = pages.find(p => p.url.includes('trade.joinf.com') && !p.url.includes('/login'));
-          // Fallback: any page
-          if (!best) best = pages[0];
-          if (best) {
-            console.error(`📡 CDP page: ${best.id.substring(0,20)} | ${best.url.substring(0,80)}`);
-            resolve(best.webSocketDebuggerUrl);
-          } else reject(new Error('No CDP pages found'));
-        } catch(e) { reject(e); }
+        const pages = JSON.parse(data);
+        let best = pages.find(p => p.url.includes('trade.joinf.com') && !p.url.includes('/login'));
+        if (!best) best = pages.find(p => p.url.includes('cloud.joinf.com/login'));
+        if (!best) best = pages[0];
+        if (best) {
+          resolve({ wsUrl: best.webSocketDebuggerUrl, url: best.url });
+        } else reject(new Error('No pages'));
       });
     }).on('error', reject);
   });
@@ -40,10 +36,9 @@ const PAGE_URL = 'https://trade.joinf.com/tms/customer/customers?type=search&tab
 const COLOR_MAP = { '邮件': '2B579A', 'WhatsApp': '27AE60', '报价': 'E67E22', '电话': '8E44AD', '会议': '9B59B6' };
 const METHOD_MAP = { '邮件': '邮件', 'WhatsApp': 'WhatsApp', '电话': '电话', '会议': '会议' };
 
-async function connectCDP() {
-  const cdpUrl = await findCDPUrl();
+async function connectCDP(wsUrl) {
   return new Promise((resolve, reject) => {
-    const ws = new WebSocket(cdpUrl);
+    const ws = new WebSocket(wsUrl);
     ws.on('open', () => resolve(ws));
     ws.on('error', reject);
     setTimeout(() => reject(new Error('CDP connection timeout')), 10000);
@@ -97,7 +92,7 @@ async function syncOne(cdp, record) {
             cycleEndDay:"",cycleStartDay:"",cycleId:"",dataType:0,currentDoneFlag:0,
             models:[
               {columnDisplayName:"Customer Name",columnName:"dataName",dict:false,
-               displayOriginalValue:${customer_id},displayValue:${JSON.stringify(record.customer_name || '')},originalValue:"",value:${customer_id}},
+               displayOriginalValue:${customer_id},displayValue:"",originalValue:"",value:${customer_id}},
               {columnDisplayName:"Contact Name",columnName:"dataContactName",dict:false,
                displayOriginalValue:"",displayValue:"",originalValue:"",value:null},
               {columnDisplayName:"Content",columnName:"contactContent",dict:false,
@@ -142,9 +137,9 @@ async function main() {
   
   if (args.includes('--status')) {
     try {
-      const ws = await connectCDP();
+      const { wsUrl, url } = await findCDPUrl();
+      const ws = await connectCDP(wsUrl);
       const cdp = createCDPSender(ws);
-      const url = await cdp.eval('window.location.href');
       const loggedIn = url.includes('trade.joinf.com') && !url.includes('/login');
       console.log(JSON.stringify({
         cdp_connected: true,
@@ -158,53 +153,56 @@ async function main() {
     return;
   }
   
-  // Read records from stdin (one JSON per line)
-  let records = [];
+  // Read batch file
+  const batchIdx = args.indexOf('--batch');
+  if (batchIdx === -1) { console.error('Need --batch <file>'); process.exit(1); }
+  const batchFile = args[batchIdx + 1];
+  const records = JSON.parse(require('fs').readFileSync(batchFile, 'utf-8'));
   
-  if (args.includes('--batch')) {
-    const fs = require('fs');
-    const batchFile = args[args.indexOf('--batch') + 1];
-    const raw = fs.readFileSync(batchFile, 'utf-8');
-    records = JSON.parse(raw);
-  } else {
-    // Read stdin
-    const stdin = fs.readFileSync(0, 'utf-8').trim();
-    if (!stdin) {
-      console.error('❌ 请在stdin传入JSON数据');
-      process.exit(1);
-    }
-    // Try parsing as array or single object
-    try { records = JSON.parse(stdin); } catch(e) { records = [JSON.parse(stdin)]; }
-    if (!Array.isArray(records)) records = [records];
-  }
+  // Connect
+  const { wsUrl, url } = await findCDPUrl();
+  console.error(`📡 ${url.substring(0,80)}`);
   
-  if (records.length === 0) {
-    console.log(JSON.stringify({ status: 'no_data' }));
-    return;
-  }
-  
-  // Check CDP first
+  // Login if needed
   let ws, cdp;
   try {
-    ws = await connectCDP();
+    ws = await connectCDP(wsUrl);
     cdp = createCDPSender(ws);
   } catch(e) {
     console.log(JSON.stringify({ status: 'cdp_error', error: e.message }));
     process.exit(1);
   }
   
-  // Navigate to ensure session is fresh
-  await cdp.send('Page.navigate', { url: PAGE_URL });
-  await new Promise(r => setTimeout(r, 3000));
+  if (url.includes('/login')) {
+    console.error('🔑 Login required...');
+    await cdp.send('Page.navigate', { url: 'https://cloud.joinf.com/login?service=https%3A%2F%2Ftrade.joinf.com%2Ftms%2Fcustomer%2Fcustomers%3Ftab%3D0' });
+    await new Promise(r => setTimeout(r, 4000));
+    await cdp.eval("document.getElementById('loginID').value='bliiot03'");
+    await cdp.eval("document.getElementById('loginPassword').value='Kali1314520!'");
+    await cdp.eval("document.getElementById('loginBtn').click()");
+    await new Promise(r => setTimeout(r, 6000));
+    const newUrl = await cdp.eval('window.location.href');
+    console.error(`📍 ${(newUrl||'').substring(0,80)}`);
+  }
   
+  // Navigate to customers page (only if not already there)
+  const currentUrl = await cdp.eval('window.location.href');
+  if (!currentUrl || !currentUrl.includes('/customer') || currentUrl.includes('/login')) {
+    await cdp.send('Page.navigate', { url: PAGE_URL });
+    await new Promise(r => setTimeout(r, 3000));
+  }
+  
+  // Push records
   const results = [];
   for (const record of records) {
     const result = await syncOne(cdp, record);
     
     if (result.ok) {
       results.push({ id: record.id, status: 'ok' });
+      console.error(`✅ ${record.customer_name || record.customer_id}`);
     } else {
       results.push({ id: record.id, status: 'failed', error: result.msg || result.error });
+      console.error(`❌ ${record.customer_name || record.customer_id}: ${result.msg || result.error}`);
     }
     
     if (records.length > 1) await new Promise(r => setTimeout(r, 300));
@@ -212,7 +210,6 @@ async function main() {
   
   ws.close();
   
-  // Output JSON result
   console.log(JSON.stringify({
     status: 'complete',
     records: records.length,
