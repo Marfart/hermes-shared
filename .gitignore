@@ -8,9 +8,6 @@ auth.json
 # 缓存和数据库
 __pycache__/
 *.pyc
-*.db
-*.sqlite
-*.sqlite3
 state.db
 cache/
 *.lock
@@ -42,4 +39,7 @@ news_b64_*.json
 # WhatsApp/浏览器状态截图
 *.png
 *.jpg
-*.jpeg
+*.jpeg# CRM database (force tracked for BLIIOT followup tool)
+!*.db
+!*.sqlite
+!*.sqlite3

@@ -1,19 +1,5 @@
 [
   {
-    "id": 1,
-    "customer_id": 235327923,
-    "customer_name": "hsinsight",
-    "contact_name": "",
-    "type": "跟进",
-    "content": "测试跟进：初次联系客户，客户对BL460感兴趣，发了产品资料",
-    "operator": "Kali Marfa",
-    "status": "active",
-    "created_at": "2026-06-18 14:37:52",
-    "synced": 1,
-    "joinf_follow_id": null,
-    "source": "manual"
-  },
-  {
     "id": 5,
     "customer_id": 235327923,
     "customer_name": "hsinsight",

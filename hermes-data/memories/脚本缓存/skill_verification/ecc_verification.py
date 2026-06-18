@@ -112,7 +112,7 @@ class AgentShield:
     SECRET_PAT = {
         "api_key": re.compile(r"(api[_-]?key)\s*[:=]\s*['\"]?[a-zA-Z0-9]{20,}", re.I),
         "password": re.compile(r"(password|passwd)\s*[:=]\s*['\"]?[^\s'\"]{8,}", re.I),
-        "aws_key": re.compile(r"***AWS***[0-9A-Z]{16}"),
+        "aws_key": re.compile(r"AKIA[0-9A-Z]{16}"),
         "private_key": re.compile(r"-----BEGIN\s+(RSA\s+)?PRIVATE\s+KEY-----"),
     }
     SKIP = {"test", "example", "sample", ".env.example", "fixture", "node_modules", ".git"}

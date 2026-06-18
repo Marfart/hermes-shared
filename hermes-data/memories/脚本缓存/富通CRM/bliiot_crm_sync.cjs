@@ -86,7 +86,7 @@ async function syncRecord(send, record) {
             completeNoRemind: 0, cycleEndDay: "", cycleStartDay: "", cycleId: "",
             dataType: 0, currentDoneFlag: 0,
             models: [
-              { columnDisplayName: "Customer Name", columnName: "dataName", dict: false, displayOriginalValue: ${customer_id}, displayValue: "", originalValue: "", value: ${customer_id} },
+              { columnDisplayName: "Customer Name", columnName: "dataName", dict: false, displayOriginalValue: ${customer_id}, displayValue: ${JSON.stringify(record.customer_name || '')}, originalValue: "", value: ${customer_id} },
               { columnDisplayName: "Contact Name", columnName: "dataContactName", dict: false, displayOriginalValue: "", displayValue: "", originalValue: "", value: null },
               { columnDisplayName: "Content", columnName: "contactContent", dict: false, displayOriginalValue: "", displayValue: "", originalValue: "", value: ${JSON.stringify(fullContent)} },
               { columnDisplayName: "Attachment", columnName: "annex", dict: false, displayOriginalValue: "", displayValue: "", originalValue: "", value: null },

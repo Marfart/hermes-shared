@@ -74,7 +74,7 @@ async function syncOne(cdp, record) {
             cycleEndDay:"",cycleStartDay:"",cycleId:"",dataType:0,currentDoneFlag:0,
             models:[
               {columnDisplayName:"Customer Name",columnName:"dataName",dict:false,
-               displayOriginalValue:${customer_id},displayValue:"",originalValue:"",value:${customer_id}},
+               displayOriginalValue:${customer_id},displayValue:${JSON.stringify(record.customer_name || '')},originalValue:"",value:${customer_id}},
               {columnDisplayName:"Contact Name",columnName:"dataContactName",dict:false,
                displayOriginalValue:"",displayValue:"",originalValue:"",value:null},
               {columnDisplayName:"Content",columnName:"contactContent",dict:false,

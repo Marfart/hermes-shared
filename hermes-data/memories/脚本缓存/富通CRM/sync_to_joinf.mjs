@@ -50,7 +50,7 @@ function buildExpression(rec) {
             completeNoRemind: 0, cycleEndDay: "", cycleStartDay: "", cycleId: "",
             dataType: 0, currentDoneFlag: 0,
             models: [
-              { columnDisplayName: "Customer Name", columnName: "dataName", dict: false, displayOriginalValue: ${cid}, displayValue: "", originalValue: "", value: ${cid} },
+              { columnDisplayName: "Customer Name", columnName: "dataName", dict: false, displayOriginalValue: ${cid}, displayValue: ${JSON.stringify(rec.customer_name || '')}, originalValue: "", value: ${cid} },
               { columnDisplayName: "Contact Name", columnName: "dataContactName", dict: false, displayOriginalValue: "", displayValue: "", originalValue: "", value: null },
               { columnDisplayName: "Content", columnName: "contactContent", dict: false, displayOriginalValue: "", displayValue: "", originalValue: "", value: ${content} },
               { columnDisplayName: "Attachment", columnName: "annex", dict: false, displayOriginalValue: "", displayValue: "", originalValue: "", value: null },
