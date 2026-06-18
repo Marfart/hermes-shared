@@ -59,6 +59,12 @@ python crm_quick.py search "关键词"   # 搜索跟进记录
 ### 同步待处理记录到富通
 
 ```bash
+# 方法A：通过Hermes浏览器（推荐 — 无需CDP设置）
+# 确保 Hermes browser 已登录 trade.joinf.com
+# 在 browser_console 中执行 fetch POST /rapi/m/follow/add
+# 详见 references/hermes-browser-sync.md（含完整模板+双写确认步骤）
+
+# 方法B：通过CDP WebSocket（传统方式）
 # 先确保Chrome CDP 9226端口运行中，已登录trade.joinf.com
 cd %LOCALAPPDATA%/hermes/memories/脚本缓存/富通CRM
 node sync_all_pending.mjs
@@ -159,6 +165,8 @@ conn.close()
 
 ## 关键铁则
 
+0. **必须先加载本skill** — 任何CRM同步操作前，必须先 `skill_view('bliiot-crm-followup')`。不要手写fetch payload，不要凭记忆拼API参数。本skill有正确的displayValue格式、颜色映射、双写确认模式。用户明确纠正过这一点。
+
 1. **先查后增** — 加跟进前用 `crm_quick.py customer` 确认客户存在
 2. **同步前需开CDP** — Chrome `--remote-debugging-port=9226 --profile-directory=Profile 2`，已登录trade.joinf.com
 3. **双写确认** — 同步成功后 **必须同时**更新SQLite(`SYNCED=1`)和JSON(`pending_sync.json`)。只写JSON是半个同步 — sync_all_pending.mjs有SQLite写回逻辑，其他脚本不一定有
@@ -177,6 +185,8 @@ conn.close()
 | 返回"系统繁忙" | Cookie过期或未登录 | 重新登录富通 + 刷新页面 |
 | 跟进类型不显示 | `method.dict=true` 但值不对 | 确保值匹配富通字典表 |
 | 同步显示成功但SQLite没更新 | 脚本只写了JSON没写SQLite | 加 `UPDATE followups SET synced=1` 到DB |
+| CDP sync_all_pending.mjs 返回 `<!DOCTYPE` HTML | CDP Chrome在登录页，不在CRM页面，fetch返回登录页HTML | 先通过Hermes browser登录富通CRM，或用Hermes browser_console直接推 |
+| CDP WebSocket 403 Forbidden | Chrome缺少 `--remote-allow-origins=*` 参数 | 启动Chrome时加该参数，或改用Hermes browser_console方法 |
 
 ### 跨文件修复模式（displayValue）
 

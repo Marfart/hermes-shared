@@ -20,8 +20,9 @@ Automated email outreach pipeline for BLIIOT — filter JoinF (富通) CRM custo
 ## Key Files
 | File | Purpose |
 |------|---------|
-| `scripts/send_selected5.py` | Main campaign script — filter, random sample, send, log |
+| `scripts/send_selected5.py` | Main campaign script — filter, random sample, send, log, optional sync |
 | `scripts/blit_mailer.py` | SMTP mail engine (smtplib, retry, HTML/attachment support) |
+| `references/joinf-sync-via-browser.md` | JoinF CRM sync via Hermes browser_console technique |
 | *(external)* `memories/脚本缓存/富通CRM/bliiot_crm.py` | CRM tools — query customers, log follow-ups, sync to JoinF |
 
 ## Quick Start
@@ -106,10 +107,18 @@ def extract_email(customer):
     return None
 ```
 
+## ⚠️ Critical Pitfalls
+
+### 1. ALWAYS load `bliiot-crm-followup` skill before CRM sync
+Do NOT hand-craft fetch calls to JoinF API. The `bliiot-crm-followup` skill has the correct payload structure (displayValue for customer name, color mapping, planningTime format), the dual-write pattern (SQLite + pending_sync.json), and both sync methods (Hermes browser_console + CDP sync_all_pending.mjs). Loading it first is **mandatory** — the user explicitly corrected this.
+
+### 2. Dual-write after sync
+After pushing to JoinF CRM, update **BOTH** SQLite (`UPDATE followups SET synced=1`) AND `pending_sync.json`. One without the other is a half-sync.
+
 ## Key Rules
 1. **Human-like delays**: 60-150s random delay between sends — never burst
 2. **No duplicate sending**: Check `followups` table before re-sending to same email
-3. **CRM sync**: Every send → logged to SQLite; batch-sync to JoinF CRM after campaign
+3. **CRM sync is MANDATORY**: Every send → logged to SQLite → **must sync to JoinF CRM** (user explicitly requires this). Load `bliiot-crm-followup` skill and follow its sync instructions.
 4. **SMTP auth code**: Stored at `memories/脚本缓存/产品推广/.smtp_password`, never commit to git
 5. **QQ rate limits**: ~50 sends/day max for personal QQ; space campaigns accordingly
 6. **Timezone awareness**: Consider recipient's business hours when scheduling
@@ -153,6 +162,100 @@ sqlite3 "memories/脚本缓存/富通CRM/crm_followups.db" \
 
 # Sync to JoinF CRM
 python "memories/脚本缓存/富通CRM/bliiot_crm.py" --sync-followups
+```
+
+## Syncing to JoinF CRM (Mandatory After Sending)
+
+After sending emails, you **must** sync the follow-up records to JoinF CRM. The user explicitly requires this.
+
+### Method A: Via Hermes Browser (Recommended — No CDP Setup Needed)
+
+If Hermes browser is already logged into `trade.joinf.com` (e.g. from a previous `browser_navigate`), use `browser_console` to call the JoinF API directly:
+
+```javascript
+// Template — replace cid, name, content with actual values
+(async() => {
+  const records = [
+    {cid: 229629960, name: 'Customer Name', content: '[邮件] 发送跟进邮件给...'}
+  ];
+  let res = [];
+  for (let x of records) {
+    let p = await fetch('/rapi/m/follow/add', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        id: "", attachmentList: [], businessStep: 0, customerStep: 0,
+        completeNoRemind: 0, cycleEndDay: "", cycleStartDay: "", cycleId: "",
+        dataType: 0, currentDoneFlag: 0,
+        models: [
+          {columnDisplayName: "Customer Name", columnName: "dataName", dict: false,
+           displayOriginalValue: x.cid, displayValue: x.name, originalValue: "", value: x.cid},
+          {columnDisplayName: "Contact Name", columnName: "dataContactName", dict: false,
+           displayOriginalValue: "", displayValue: "", originalValue: "", value: null},
+          {columnDisplayName: "Content", columnName: "contactContent", dict: false,
+           displayOriginalValue: "", displayValue: "", originalValue: "", value: x.content},
+          {columnDisplayName: "Attachment", columnName: "annex", dict: false,
+           displayOriginalValue: "", displayValue: "", originalValue: "", value: null},
+          {columnDisplayName: "Color", columnName: "bgColor", dict: false,
+           displayOriginalValue: "", displayValue: "", originalValue: "", value: '"2B579A"'},
+          {columnDisplayName: "Follow Method", columnName: "method", dict: true,
+           displayOriginalValue: "", displayValue: "", originalValue: "", value: '"邮件"'},
+          {columnDisplayName: "Planning Time", columnName: "planningTime", dict: false,
+           displayOriginalValue: "", displayValue: "", originalValue: "", value: "2026-06-18 19:22:42"},
+          {columnDisplayName: "Step", columnName: "step", dict: true,
+           displayOriginalValue: "", displayValue: "", originalValue: "", value: null},
+          {columnDisplayName: "Next Remind Time", columnName: "nextRemindTime", dict: false,
+           displayOriginalValue: "", displayValue: "", originalValue: "", value: null},
+          {columnDisplayName: "Repeat Cycle", columnName: "repeatCycle", dict: false,
+           displayOriginalValue: "", displayValue: "", originalValue: "", value: null},
+          {columnDisplayName: "Relevant", columnName: "relevant", dict: false,
+           displayOriginalValue: "", displayValue: "", originalValue: "", value: null},
+          {columnDisplayName: "Operator", columnName: "operatorName", dict: false,
+           displayOriginalValue: "", displayValue: "", originalValue: "", value: null},
+          {columnDisplayName: "Feedback Operator", columnName: "feedbackOperator", dict: false,
+           displayOriginalValue: "", displayValue: "", originalValue: "", value: "183006"}
+        ],
+        relevantList: [{relevantId: "", relevant: ""}],
+        flowStep: "", forceRefresh: true, followType: "", followObject: ""
+      })
+    });
+    let j = await p.json();
+    res.push({name: x.name, ok: j.success, msg: j.errMsg || 'OK'});
+  }
+  return JSON.stringify(res);
+})()
+```
+
+**Advantages**: No CDP websocket needed, no `--remote-allow-origins` flag, no 403 issues. Just use the browser that's already authenticated.
+
+### Method B: Via CDP Websocket (Standalone)
+
+```bash
+# Start Chrome with CDP
+"/c/Program Files/Google/Chrome/Application/chrome.exe" \
+  --remote-debugging-port=9226 \
+  --remote-allow-origins=* \
+  --user-data-dir="C:/Users/Admin/AppData/Local/Google/Chrome/User Data/Profile 2"
+
+# Then run sync script
+cd "memories/脚本缓存/富通CRM"
+node sync_all_pending.mjs
+```
+
+### After Syncing
+
+Update the local SQLite database to mark records as synced:
+
+```bash
+cd "memories/脚本缓存/富通CRM"
+python -c "
+import sqlite3
+conn = sqlite3.connect('crm_followups.db')
+conn.execute('UPDATE followups SET synced=1 WHERE id IN (id1,id2,id3,id4,id5)')
+conn.commit()
+conn.close()
+print('Marked as synced')
+"
 ```
 
 ## Troubleshooting

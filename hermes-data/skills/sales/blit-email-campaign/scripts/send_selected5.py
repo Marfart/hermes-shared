@@ -1,6 +1,6 @@
 """
 BLIIOT Email Campaign — filter CRM customers by date, random sample, send via QQ SMTP, log follow-ups
-Usage: python send_selected5.py [--count 5] [--before 2024-01-01] [--country US]
+Usage: python send_selected5.py [--count 5] [--before 2024-01-01] [--country US] [--sync]
 """
 import sqlite3, random, time, logging, sys, os, json
 from datetime import datetime
@@ -8,9 +8,10 @@ from pathlib import Path
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
-DB_DIR = Path(__file__).resolve().parent.parent.parent.parent / "memories" / "脚本缓存" / "富通CRM"
-DB_PATH = DB_DIR / "crm_followups.db"
-SMTP_PW = DB_DIR / ".smtp_password"
+BASE_DIR = Path(os.environ.get("HERMES_HOME", Path.home() / "AppData" / "Local" / "hermes"))
+CRM_DIR = BASE_DIR / "memories" / "脚本缓存" / "富通CRM"
+DB_PATH = CRM_DIR / "crm_followups.db"
+SMTP_PW = BASE_DIR / "memories" / "脚本缓存" / "产品推广" / ".smtp_password"
 
 # ── Email template ──────────────────────────────────────────
 EMAIL_SUBJECT = "Partnership Inquiry - BLIIOT Technology"
@@ -70,7 +71,6 @@ def get_customers_before(conn, date_before="2024-01-01", limit=None, country=Non
     return customers
 
 def extract_email(customer):
-    """Extract email from customer record (contacts JSON or email column)."""
     if customer.get("email"):
         return customer["email"].strip()
     contacts_raw = customer.get("contacts", "[]")
@@ -84,69 +84,79 @@ def extract_email(customer):
             pass
     return None
 
-def add_followup(conn, customer_id, note, follow_type="email"):
+def add_followup(conn, customer_id, customer_name, note, follow_type="email"):
     cursor = conn.cursor()
     cursor.execute("""
-        INSERT INTO followups (customer_id, note, type, created_at, synced)
-        VALUES (?, ?, ?, ?, 0)
-    """, (customer_id, note, follow_type, datetime.now().isoformat()))
+        INSERT INTO followups (customer_id, customer_name, type, content, operator, source, synced, created_at)
+        VALUES (?, ?, ?, ?, 'Kali Marfa', 'email', 0, ?)
+    """, (customer_id, customer_name, follow_type, note, datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
     conn.commit()
     return cursor.lastrowid
 
-def run_campaign(num=5, date_before="2024-01-01", country=None):
-    # Dynamically import blit_mailer — it's in the same directory
-    sys.path.insert(0, str(DB_DIR))
+def run_campaign(num=5, date_before="2024-01-01", country=None, auto_sync=False):
+    sys.path.insert(0, str(CRM_DIR))
     from blit_mailer import send_email
 
     conn = sqlite3.connect(str(DB_PATH))
-    
+
     try:
         customers = get_customers_before(conn, date_before, limit=num, country=country)
         if not customers:
             logging.warning("No customers matched criteria.")
             return []
-        
+
         password = load_password()
         results = []
-        
+        sent_ids = []  # Track for sync
+
         for i, c in enumerate(customers):
             name = c.get("contactName") or c.get("name", "Customer")
             company = c.get("name", "your company")
             industry = c.get("industryDetail") or c.get("industry", "industrial automation")
             email = extract_email(c)
-            
+
             if not email:
                 logging.warning(f"✗ {name} ({company}) — no email found, skipping")
                 results.append({"name": name, "company": company, "email": None, "success": False, "reason": "no email"})
                 continue
-            
+
             body = EMAIL_BODY.format(name=name, company=company, industry=industry)
-            
+
             logging.info(f"[{i+1}/{len(customers)}] Sending to {name} <{email}> ({c.get('country', '?')})")
             success, message = send_email(email, EMAIL_SUBJECT, body, sender_pass=password)
-            
+
             if success:
-                add_followup(conn, c["id"], f"Sent email to {email}: {EMAIL_SUBJECT}", "email")
-                results.append({"name": name, "company": company, "email": email, "country": c.get("country"), "success": True})
-                logging.info(f"  ✅ Sent OK")
+                followup_id = add_followup(conn, c["id"], name, f"[邮件] 发送跟进邮件给{name}({email})", "邮件")
+                sent_ids.append({"cid": c["id"], "name": name, "content": f"[邮件] 发送跟进邮件给{name}({email})"})
+                results.append({"name": name, "company": company, "email": email, "country": c.get("country"), "success": True, "followup_id": followup_id})
+                logging.info(f"  ✅ Sent OK (followup #{followup_id})")
             else:
                 results.append({"name": name, "company": company, "email": email, "success": False, "reason": message})
                 logging.error(f"  ❌ Failed: {message}")
-            
-            # Human-like delay between sends (1-2.5 min)
+
             if i < len(customers) - 1:
                 delay = random.randint(60, 150)
                 logging.info(f"  ⏳ Waiting {delay}s before next send...")
                 time.sleep(delay)
-        
+
+        # Auto-sync to JoinF CRM if requested
+        if auto_sync and sent_ids:
+            logging.info(f"\n{'='*50}")
+            logging.info(f"Syncing {len(sent_ids)} records to JoinF CRM via Hermes browser...")
+            logging.info("To sync, run the browser_console expression with these records:")
+            for s in sent_ids:
+                logging.info(f"  - {s['name']} (cid={s['cid']})")
+            logging.info("\n⚠️ Auto-sync via browser_console requires the Hermes browser to be on trade.joinf.com.")
+            logging.info("Run the sync manually using the browser_console technique (see SKILL.md).")
+
         # Summary
         sent = sum(1 for r in results if r.get("success"))
         failed = sum(1 for r in results if not r.get("success"))
         logging.info(f"\n{'='*50}")
         logging.info(f"Campaign complete: {sent} sent, {failed} failed, {len(results)} total")
-        
-        return results
-    
+
+        return results, sent_ids
+
     finally:
         conn.close()
 
@@ -156,14 +166,18 @@ if __name__ == "__main__":
     parser.add_argument("--count", type=int, default=5, help="Number of customers to email")
     parser.add_argument("--before", default="2024-01-01", help="Filter: createDate < this date")
     parser.add_argument("--country", default=None, help="Filter: specific country code")
-    
+    parser.add_argument("--sync", action="store_true", help="Auto-generate sync payload after sending")
+
     args = parser.parse_args()
-    results = run_campaign(num=args.count, date_before=args.before, country=args.country)
-    
-    # Print summary table
+    results, sent_ids = run_campaign(num=args.count, date_before=args.before, country=args.country, auto_sync=args.sync)
+
     print(f"\n{'Name':<30} {'Email':<35} {'Country':<15} {'Status'}")
     print("-" * 95)
     for r in results:
         status = "✅" if r.get("success") else ("⏭️" if r.get("reason")=="no email" else "❌")
         email = r.get("email") or "(no email)"
         print(f"{r['name']:<30} {email:<35} {r.get('country','?'):<15} {status}")
+
+    if args.sync and sent_ids:
+        print(f"\n📋 Sync payload ready for {len(sent_ids)} records.")
+        print("Use browser_console with the JoinF sync expression (see SKILL.md).")

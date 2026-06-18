@@ -1,0 +1,152 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - img [ref=e5]
+    - generic [ref=e6]:
+      - list:
+        - listitem [ref=e7] [cursor=pointer]:
+          - link "外贸管理" [ref=e8]:
+            - /url: https://trade.joinf.com
+        - listitem [ref=e9] [cursor=pointer]:
+          - link "全球买家" [ref=e10]:
+            - /url: https://data.joinf.com?open=firstPage
+        - listitem [ref=e11] [cursor=pointer]:
+          - link "数据营销" [ref=e12]:
+            - /url: https://edmsys.joinf.com
+        - listitem [ref=e13] [cursor=pointer]:
+          - link "私域独立站" [ref=e14]:
+            - /url: https://sitehd.joinf.com
+        - listitem [ref=e15] [cursor=pointer]:
+          - link "广告营销" [ref=e16]:
+            - /url: https://adwords.joinf.com
+        - listitem [ref=e17] [cursor=pointer]:
+          - link "社媒营销" [ref=e18]:
+            - /url: https://sns.joinf.com
+        - listitem [ref=e19] [cursor=pointer]:
+          - link "经营看板" [ref=e20]:
+            - /url: https://stats.joinf.com/dashboard/10/reports/1967865884662165505
+        - listitem [ref=e21] [cursor=pointer]:
+          - link "AI Agent" [ref=e22]:
+            - /url: https://ai.joinf.com
+    - generic [ref=e23]:
+      - paragraph [ref=e24]:
+        - generic "AI助手" [ref=e25] [cursor=pointer]:
+          - img [ref=e26]
+          - generic "助手" [ref=e27]
+        - generic "客服" [ref=e28] [cursor=pointer]:
+          - img [ref=e29]
+          - generic "客服" [ref=e30]
+        - link "帮助" [ref=e31] [cursor=pointer]:
+          - /url: https://help.joinf.com/
+          - img [ref=e32]
+          - generic "帮助" [ref=e33]
+      - paragraph
+    - generic "消息" [ref=e35] [cursor=pointer]:
+      - generic [ref=e37]: "1"
+      - generic "消息" [ref=e38]
+    - generic "更多" [ref=e39]:
+      - generic [ref=e41] [cursor=pointer]:
+        - img [ref=e42]
+        - generic "更多" [ref=e43]
+    - generic [ref=e44]: "[object Object]"
+    - generic [ref=e45]:
+      - generic:
+        - img [ref=e46] [cursor=pointer]
+        - generic [ref=e47] [cursor=pointer]:
+          - paragraph [ref=e48]: 你好!
+          - paragraph [ref=e50]: Kali Marfa
+  - generic [ref=e52]:
+    - menubar [ref=e56]:
+      - menuitem "常用" [ref=e57] [cursor=pointer]:
+        - link "常用" [ref=e58]:
+          - /url: https://trade.joinf.com/tms/commonUse/index
+          - img [ref=e59]
+          - text: 常用
+      - menuitem "工作台" [ref=e61] [cursor=pointer]:
+        - link "工作台" [ref=e62]:
+          - /url: https://trade.joinf.com/tms/system/index
+          - img [ref=e63]
+          - text: 工作台
+      - menuitem "审批中心" [ref=e65] [cursor=pointer]:
+        - link "审批中心" [ref=e66]:
+          - /url: https://trade.joinf.com/tms/reviewCenter
+          - img [ref=e67]
+          - text: 审批中心
+      - menuitem "邮件" [ref=e69] [cursor=pointer]:
+        - link "邮件" [ref=e70]:
+          - /url: https://trade.joinf.com/tms/email/manageEmail
+          - img [ref=e71]
+          - text: 邮件
+          - img [ref=e73]
+      - menuitem "沟通" [ref=e75]:
+        - generic [ref=e76] [cursor=pointer]:
+          - link "沟通" [ref=e77]:
+            - /url: https://trade.joinf.com/tms/wa?tab=0
+            - generic [ref=e78]:
+              - img [ref=e79]
+              - text: 沟通
+          - img [ref=e82]
+      - menuitem "客户" [expanded] [ref=e85]:
+        - generic [ref=e86] [cursor=pointer]:
+          - link "客户" [ref=e87]:
+            - /url: https://trade.joinf.com/tms/customer/customers?tab=0
+            - generic [ref=e88]:
+              - img [ref=e89]
+              - text: 客户
+          - img [ref=e92]
+        - menu [ref=e95]:
+          - menuitem "客户" [ref=e96] [cursor=pointer]:
+            - link "客户" [ref=e97]:
+              - /url: https://trade.joinf.com/tms/customer/customers?tab=0
+              - text: 客户
+              - img [ref=e98]
+          - menuitem "公海" [ref=e100] [cursor=pointer]:
+            - link "公海" [ref=e101]:
+              - /url: https://trade.joinf.com/tms/customer/customers?tab=1
+              - text: 公海
+              - img [ref=e102]
+      - menuitem "协同" [ref=e104]:
+        - generic [ref=e105] [cursor=pointer]:
+          - link "协同" [ref=e106]:
+            - /url: https://trade.joinf.com/tms/customer/customers_follow?tab=0
+            - generic [ref=e107]:
+              - img [ref=e108]
+              - text: 协同
+          - img [ref=e111]
+      - menuitem "商机" [ref=e114]:
+        - generic [ref=e115] [cursor=pointer]:
+          - link "商机" [ref=e116]:
+            - /url: https://trade.joinf.com/tms/business/index?tab=1
+            - generic [ref=e117]:
+              - img [ref=e118]
+              - text: 商机
+          - img [ref=e121]
+      - menuitem "产品" [ref=e124] [cursor=pointer]:
+        - link "产品" [ref=e125]:
+          - /url: https://trade.joinf.com/bms/combine/list/16
+          - img [ref=e126]
+          - text: 产品
+      - menuitem "业务" [ref=e128]:
+        - generic [ref=e129] [cursor=pointer]:
+          - link "业务" [ref=e130]:
+            - /url: https://trade.joinf.com/bms/combine/list/17
+            - generic [ref=e131]:
+              - img [ref=e132]
+              - text: 业务
+          - img [ref=e135]
+      - menuitem "供应商" [ref=e138]:
+        - generic [ref=e139] [cursor=pointer]:
+          - link "供应商" [ref=e140]:
+            - /url: https://trade.joinf.com/tms/supplier/suppliers?tab=0
+            - generic [ref=e141]:
+              - img [ref=e142]
+              - text: 供应商
+          - img [ref=e145]
+      - menuitem "云盘" [ref=e148]:
+        - generic [ref=e149] [cursor=pointer]:
+          - link "云盘" [ref=e150]:
+            - /url: https://trade.joinf.com/tms/cloudDish/manage_cloud_dish?tab=0
+            - generic [ref=e151]:
+              - img [ref=e152]
+              - text: 云盘
+          - img [ref=e155]
+    - img [ref=e162]
