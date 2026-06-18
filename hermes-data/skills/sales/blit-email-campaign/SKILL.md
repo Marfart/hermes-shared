@@ -118,10 +118,32 @@ After pushing to JoinF CRM, update **BOTH** SQLite (`UPDATE followups SET synced
 ## Key Rules
 1. **Human-like delays**: 60-150s random delay between sends — never burst
 2. **No duplicate sending**: Check `followups` table before re-sending to same email
-3. **CRM sync is MANDATORY**: Every send → logged to SQLite → **must sync to JoinF CRM** (user explicitly requires this). Load `bliiot-crm-followup` skill and follow its sync instructions.
+3. **CRM sync is MANDATORY**: Every send → logged to SQLite → **must sync to JoinF CRM** (user explicitly requires this). See "Syncing to JoinF CRM" below.
 4. **SMTP auth code**: Stored at `memories/脚本缓存/产品推广/.smtp_password`, never commit to git
 5. **QQ rate limits**: ~50 sends/day max for personal QQ; space campaigns accordingly
 6. **Timezone awareness**: Consider recipient's business hours when scheduling
+
+## ⚠️ CRITICAL: Sync Verification Trap
+
+**Never trust API `success: true` alone.** Hermes browser sessions expire silently. When kicked back to `cloud.joinf.com/login`, fetch calls hit login page HTML which gets misparsed as `{success: true}`.
+
+**Before sync** — verify you're logged in:
+```javascript
+window.location.href
+// Must be "https://trade.joinf.com/tms/customer/customers?tab=0"
+```
+
+**After sync** — verify the record was written:
+```javascript
+let r = await fetch('/rapi/d/customers?num=0&paging=true&size=50&searchText=客户名称', {headers:{'Accept':'application/json'}});
+let j = await r.json();
+let v = j.data?.values;
+let t = v.find(x => x.id === 客户ID);
+// If displayLastFollowTime is unchanged (e.g. 1773365475000 = March 2026), sync FAILED
+console.log({lastFollow: t?.displayLastFollowTime, recentlyFollow: t?.recentlyFollowTime});
+```
+
+**bgColor/method values**: Must be plain strings like `"2B579A"`, NOT `'"2B579A"'` (extra quotes cause API to accept but not display the record).
 
 ## Full Pipeline (first-time setup)
 
@@ -170,9 +192,26 @@ After sending emails, you **must** sync the follow-up records to JoinF CRM. The 
 
 ### Method A: Via Hermes Browser (Recommended — No CDP Setup Needed)
 
-If Hermes browser is already logged into `trade.joinf.com` (e.g. from a previous `browser_navigate`), use `browser_console` to call the JoinF API directly:
+If Hermes browser is already logged into `trade.joinf.com` (e.g. from a previous `browser_navigate`), use `browser_console` to call the JoinF API directly.
 
+**⚠️ CRITICAL: Before pushing, verify you're actually logged in:**
 ```javascript
+window.location.href
+// Must return "https://trade.joinf.com/tms/customer/customers?tab=0"
+// If it returns "https://cloud.joinf.com/login", re-login first!
+```
+
+**⚠️ CRITICAL: After pushing, verify the record was actually written:**
+```javascript
+let r = await fetch('/rapi/d/customers?num=0&paging=true&size=50&searchText=客户名称', {headers:{'Accept':'application/json'}});
+let j = await r.json();
+let v = j.data?.values;
+let t = v.find(x => x.id === 客户ID);
+// If displayLastFollowTime is unchanged, sync FAILED silently
+console.log({lastFollow: t?.displayLastFollowTime, recentlyFollow: t?.recentlyFollowTime});
+```
+
+Template — replace cid, name, content with actual values:
 // Template — replace cid, name, content with actual values
 (async() => {
   const records = [

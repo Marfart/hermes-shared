@@ -672,3 +672,5 @@ CRM跟进铁则：
 - 后续发邮件/读WhatsApp后可自动调用跟进记录
 §
 CRM跟进管理系统在 %LOCALAPPDATA%/hermes/memories/脚本缓存/富通CRM/，含 bliiot_crm.py（主CLI）、crm_quick.py（快捷版）、sync_all_pending.mjs（CDP同步管道）、crm_followups.db（SQLite本地跟进库）。技能: bliiot-crm-followup。已经过全流程验证（1955条客户拉取+14条跟进双向同步+5个Sheet Excel报表）。同步通过CDP浏览器POST /rapi/m/follow/add，颜色映射：邮件=2B579A、报价=E67E22、WhatsApp=27AE60、电话=E74C3C。API size最大200（不是50）。Excel必须清洗非打印字符（sanitize函数）。
+§
+富通CRM操作铁则：能用CDP浏览器手动操作就别写API脚本。写fetch/POST自动脚本API返回success:true但数据可能不落库（2026-06-18血泪教训）。正确做法：CDP浏览器打开富通页面→搜客户→手动点添加跟进→填内容→保存→验证。API只用于读取数据（列表/详情），写入操作优先浏览器手动。绝对不能再自己写fetch payload做自动添加。

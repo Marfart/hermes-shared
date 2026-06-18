@@ -11,16 +11,39 @@
  */
 
 const WebSocket = require('ws');
+const http = require('http');
 
-const CDP_URL = 'ws://127.0.0.1:9226/devtools/page/7829F8F43F458721D9637BA8A9CBE8C8';
+async function findCDPUrl() {
+  return new Promise((resolve, reject) => {
+    http.get('http://127.0.0.1:9226/json', (res) => {
+      let data = '';
+      res.on('data', c => data += c);
+      res.on('end', () => {
+        try {
+          const pages = JSON.parse(data);
+          // Prefer a page on trade.joinf.com that's NOT login
+          let best = pages.find(p => p.url.includes('trade.joinf.com') && !p.url.includes('/login'));
+          // Fallback: any page
+          if (!best) best = pages[0];
+          if (best) {
+            console.error(`📡 CDP page: ${best.id.substring(0,20)} | ${best.url.substring(0,80)}`);
+            resolve(best.webSocketDebuggerUrl);
+          } else reject(new Error('No CDP pages found'));
+        } catch(e) { reject(e); }
+      });
+    }).on('error', reject);
+  });
+}
+
 const PAGE_URL = 'https://trade.joinf.com/tms/customer/customers?type=search&tab=0';
 
 const COLOR_MAP = { '邮件': '2B579A', 'WhatsApp': '27AE60', '报价': 'E67E22', '电话': '8E44AD', '会议': '9B59B6' };
 const METHOD_MAP = { '邮件': '邮件', 'WhatsApp': 'WhatsApp', '电话': '电话', '会议': '会议' };
 
-function connectCDP() {
+async function connectCDP() {
+  const cdpUrl = await findCDPUrl();
   return new Promise((resolve, reject) => {
-    const ws = new WebSocket(CDP_URL);
+    const ws = new WebSocket(cdpUrl);
     ws.on('open', () => resolve(ws));
     ws.on('error', reject);
     setTimeout(() => reject(new Error('CDP connection timeout')), 10000);

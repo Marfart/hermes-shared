@@ -165,7 +165,15 @@ conn.close()
 
 ## 关键铁则
 
-0. **必须先加载本skill** — 任何CRM同步操作前，必须先 `skill_view('bliiot-crm-followup')`。不要手写fetch payload，不要凭记忆拼API参数。本skill有正确的displayValue格式、颜色映射、双写确认模式。用户明确纠正过这一点。
+0. **必须先加载本skill，然后把引用文件中模板复制粘贴直接使用** — 任何CRM同步操作前，必须先 `skill_view('bliiot-crm-followup')`，再 `skill_view('bliiot-crm-followup', file_path='references/hermes-browser-sync.md')` 读取模板。**不要手写fetch payload，不要凭记忆拼API参数。**
+
+   **2026-06-18 两次纠正：**
+   - **下午** Kali纠正"为什么不按之前的skill来操作" — 没加载skill，自己写CDP脚本
+   - **晚上** Kali纠正"你不是有14.47现成的skill吗？为什么你总喜欢乱改" — 加载了skill但自己发明payload
+
+   **正确做法：** 复制 `references/hermes-browser-sync.md` 里的模板，只改 `records` 数组的数据。不要改动 `models[]` 结构、不要少字段、不要简写。
+
+本skill有正确的displayValue格式、颜色映射、双写确认模式、以及验证陷阱。
 
 1. **先查后增** — 加跟进前用 `crm_quick.py customer` 确认客户存在
 2. **同步前需开CDP** — Chrome `--remote-debugging-port=9226 --profile-directory=Profile 2`，已登录trade.joinf.com
@@ -187,6 +195,22 @@ conn.close()
 | 同步显示成功但SQLite没更新 | 脚本只写了JSON没写SQLite | 加 `UPDATE followups SET synced=1` 到DB |
 | CDP sync_all_pending.mjs 返回 `<!DOCTYPE` HTML | CDP Chrome在登录页，不在CRM页面，fetch返回登录页HTML | 先通过Hermes browser登录富通CRM，或用Hermes browser_console直接推 |
 | CDP WebSocket 403 Forbidden | Chrome缺少 `--remote-allow-origins=*` 参数 | 启动Chrome时加该参数，或改用Hermes browser_console方法 |
+| **API返回success:true但富通上看不到跟进记录** | **Hermes浏览器会话过期被踢回登录页，fetch打到登录页HTML上，HTML被误解析为JSON返回`success:true`** | **① 推送前必须验证：`browser_console` 执行 `window.location.href` 确认在 `trade.joinf.com` 域名下，不在 `cloud.joinf.com/login` ② 推送后必须验证：查客户 `displayLastFollowTime` 是否更新（Unix毫秒时间戳），没更新说明没写进去 ③ 不要相信API返回的`success:true`——登录页HTML的`<!DOCTYPE html>`被富通前端误解析为`{success:true}`** |
+| **`bgColor`/`method`值格式错误导致记录不显示** | 手写payload时用了 `'"2B579A"'`（多一层JSON序列化引号）而不是 `"2B579A"` | 必须用skill模板的格式：`value: "2B579A"`（纯字符串），不是 `value: '"2B579A"'`。API会返回success但不显示记录 |
+
+### 验证跟进是否真的写入了富通
+
+推送后不要只看API返回的`success: true`，必须查客户记录的`displayLastFollowTime`字段：
+
+```javascript
+// 在 browser_console 中执行
+let r = await fetch('/rapi/d/customers?num=0&paging=true&size=50&searchText=客户名称', {headers:{'Accept':'application/json'}});
+let j = await r.json();
+let v = j.data?.values;
+let t = v.find(x => x.id === 客户ID);
+// displayLastFollowTime 是Unix毫秒时间戳，如果没更新说明跟进没写进去
+console.log({lastFollow: t?.displayLastFollowTime, recentlyFollow: t?.recentlyFollowTime});
+```
 
 ### 跨文件修复模式（displayValue）
 
