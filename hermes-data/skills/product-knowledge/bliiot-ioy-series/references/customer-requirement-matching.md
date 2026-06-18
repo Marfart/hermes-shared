@@ -28,38 +28,53 @@
 
 ---
 
+## ⚠️ Core Workflow: How to Match Customer Requirements to Products
+
+When a customer sends a multi-I/O requirement, **never jump to one product first.** Follow this workflow:
+
+1. List ALL product lines that could handle the requirement (BL118B, IOy, MxxxT/MxxxE, S475, ARMxy)
+2. Check each one systematically — read the skill or datasheet, map each requirement
+3. Identify the gaps honestly — be explicit about what doesn't fit
+4. Present multiple options — the "best" depends on tradeoffs the customer may not have stated
+5. Only then recommend — flag any assumptions needing customer confirmation
+
+**Pitfall**: Starting with "BL118B is the best" before checking MxxxT/M350T or S475 misses alternatives. The user calls this out. Enumerate first.
+
 ## Case 2: All-in-One PLC/Module (Dominican Republic)
 
 **Customer request:** "I'm looking for an 'all-in-one' module or PLC with: 2-4 DI, 1-2 AI (4-20mA or 0-10V), 1-4 TC inputs, and encoder input (any pulse signal)"
 
-### Recommended Configuration
+### ⚠️ Key Constraint: BL118B Only Has 2 Y-Board Slots
 
-**BL118B-SOM334-X4-Y02-Y33-Y58-Y95 + 4G EC25-AUXGA (Latin America)**
+BL118B has exactly **2 Y-board slots**. You cannot fit 4 different I/O types (DI + AI + TC + pulse) on 2 boards. At least 2 functions must be handled via external Modbus RTU modules on the RS485 bus.
+
+### Recommended Configuration (2 Y-Boards + External Modbus Modules)
+
+**BL118B-SOM334-X4-Y58-Y95 + 4G EC25-AUXGA (Latin America)**
 
 | Component | Function | Price (<100pcs) |
 |-----------|----------|:---------------:|
 | BL118B Host | Dual-core CA7@1.2GHz, Node-RED+BLIoTLink | $58 |
 | SOM334 | 512MB RAM, 8GB eMMC | $30 |
 | X4 | 2×RS485 + 2×CAN | $8 |
-| Y02 | 4DI+4DO PNP | $10 |
-| Y33 | 4AI 0-5V/0-10V | $18 |
-| Y58 | 4TC (B/E/J/K/N/R/S/T) | $17 |
-| Y95 | 4 PWM output + 4 pulse counting | $23 |
+| **Y58** | **4TC (B/E/J/K/N/R/S/T)** — hardest to externalize | $17 |
+| **Y95** | **4 pulse counting** (1×700KHz + 3×1KHz) — hardest to externalize | $23 |
 | 4G EC25-AUXGA | Latin America 4G LTE bands | $25 |
-| **Total** | | **~$189** |
+| External Modbus 4DI module | via RS485 | ~$15 |
+| External Modbus 2AI module | via RS485 | ~$20 |
+| **Total** | | **~$196** |
 
 ### Requirement Match
 
-| Requirement | Component | Status |
-|------------|-----------|:------:|
-| 2-4 DI | Y02 (4DI+4DO) | ✅ |
-| 1-2 AI 4-20mA | Y31 (4AI, 0/4~20mA) — alternative to Y33 | ✅ |
-| 1-2 AI 0-10V | Y33 (4AI, 0-5V/0-10V) | ✅ |
-| 1-4 TC | Y58 (4TC, all types) | ✅ |
-| Encoder/pulse input | Y95 (4 pulse counting) | ⚠️ See note |
+| Requirement | How It's Handled | Status |
+|------------|-----------------|:------:|
+| 2-4 DI | External Modbus RTU 4DI module on RS485 | ✅ |
+| 1-2 AI 4-20mA or 0-10V | External Modbus RTU 2AI module on RS485 | ✅ |
+| 1-4 TC | Y58 (4TC, B/E/J/K/N/R/S/T) — direct slot | ✅ |
+| Encoder/pulse input | Y95 (4 pulse counting) — direct slot | ⚠️ See note |
 | 4G LTE | EC25-AUXGA | ✅ |
 | MQTT | BL118B built-in (Node-RED) | ✅ |
-| RS485 | X4 (2×RS485) | ✅ |
+| RS485 | X4 (2×RS485) for external modules | ✅ |
 
 ### ⚠️ Encoder Input Caveat
 
@@ -71,7 +86,28 @@ Y95 provides **pulse counting** (1 high-speed channel up to 700KHz + 3 low-speed
 
 ### Alternative: IOy Series (No 4G, Lower Cost)
 
-If 4G is not needed, use **BL190 + Y02 + Y33 + Y58 + Y95** instead:
-- BL190 (Modbus TCP Edge IO, 2×RJ45, 1×RS485, 3 Y-board slots)
+If 4G is not needed, use **BL190 + Y58 + Y95 + external Modbus DI/AI modules** instead:
+- BL190 (Modbus TCP Edge IO, 2×RJ45, 1×RS485, **3 Y-board slots** — more room than BL118B)
 - Same Y-board combination
 - No 4G, no Node-RED, lower cost (~$100 base)
+
+### Alternative: M160T + M350T Dual-Module Combo
+
+If the customer can accept two devices working together via Ethernet:
+
+| Device | I/O | Price |
+|--------|-----|:-----:|
+| **M160T** | 8DI (with pulse counting) + 8AI (0-10V/4-20mA) + 8DO | $128 |
+| **M350T** | 8TC (B/E/J/K/N/R/S/T) | ~$80 |
+| **Total** | Covers all 4 requirements | **~$208** |
+
+✅ Covers all 4 input types
+⚠️ Two separate devices, not truly "all-in-one"
+⚠️ No 4G (Ethernet only) — MxxxE series has 2×RJ45 but still no cellular
+
+### Honest Assessment
+
+**No single BLIIOT product covers DI + AI + TC + pulse in one box.** The closest approaches are:
+1. **BL118B + 2 Y-boards + external Modbus modules** (~$196) — best "single-box" solution
+2. **M160T + M350T** (~$208) — covers all I/O but needs two devices
+3. **BL190 + 2 Y-boards + external modules** (~$130) — cheapest, no 4G, 3 Y-board slots available

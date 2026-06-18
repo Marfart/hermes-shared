@@ -82,3 +82,4 @@ S系列全部（S270-S475）的AI只支持 **0-5V 和 0/4-20mA**，**不支持0-
 
 ## references
 - `references/s475-spec-details.md` — S475/S475E完整规格参数、AI量程陷阱、客户选型方案
+- `references/zodsat-project-details.md` — ZODSAT/SmartGrid Africa变压器防盗项目完整档案（定价、技术参数、客户联系方式、LoRaWAN距离注意⚠️）

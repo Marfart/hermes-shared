@@ -190,6 +190,7 @@ tags: [edge-io, ioy, modbus-tcp, opc-ua, mqtt, snmp, iec104, bacnet]
 **参考文件：**
 - `references/y-board-matrix.md` — Y板完整规格矩阵
 - `references/customer-requirement-matching.md` — 客户需求匹配实战案例（LTE数据采集器 + 多米尼加All-in-One PLC方案）
+- `references/mxxx-series-specs.md` — MxxxT/MxxxE以太网IO模块完整型号矩阵、规格、定价（客户需求交叉对比用）
 
 ---
 
