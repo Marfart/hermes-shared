@@ -209,6 +209,65 @@ const result = await client.addFollowRecord({
 > 
 > 富通CRM前端Vue组件依赖 `dataName.displayValue` 渲染跟进详情页，空字符串会导致记录显示在时间轴但点进去内容为空。所有6个同步脚本都在2026-06-18修复了此问题。
 
+> **⚠️ API写入不落库（2026-06-19 最终确认）！**
+> 
+> `POST /rapi/m/follow/add` 即使cookie完整、返回 `{"success":true,"data":[followID]}`，**`displayLastFollowTime` 不会变，跟进内容不落库**。
+> `createJoinfClient().addFollowRecord()` 底层同样是这个API，同样不落库。
+> 
+> **唯一可靠方式**：CDP浏览器UI操作（见下方完整流程）。
+> 
+> 判断是否真正落库：检查 `displayLastFollowTime` 是否更新，不能只看API返回的 `success:true`。
+
+### CDP浏览器UI操作完整流程（2026-06-19验证）
+
+**⚠️ 客户详情页URL已失效**：`/tms/customer/detail?id=xxx` 返回404（富通V4.41.0更新后URL结构变化）。
+
+**正确流程**：
+
+```
+1. CDP导航到客户列表页
+   Page.navigate → https://trade.joinf.com/tms/customer/customers?tab=0
+
+2. 点击左侧菜单"客户跟进"
+   找到 a.menu-link 文字为"客户跟进"的元素 → click()
+   URL变为: /tms/customer/customers_follow?tab=0
+
+3. 点击"新建跟进"按钮
+   BUTTON class="el-button searchbar-add-btn el-button--primary" 文字="新建跟进"
+   → 弹出新建跟进弹窗
+
+4. 填写客户名称（关键步骤！）
+   找到 input[placeholder*="客户代码"] → 输入客户名称或ID
+   ⚠️ 必须触发Vue的远程搜索：
+   - 先 focus 输入框
+   - 设置 value
+   - 触发 input 事件
+   - 等待2秒让下拉选项加载
+   - 从下拉列表中点击匹配的客户选项
+   ⚠️ 如果直接填值不点下拉选项，保存后跟进不会绑定到客户！
+
+5. 填写跟进内容
+   textarea.el-textarea__inner → 输入跟进内容
+
+6. 点击保存
+   BUTTON class="el-button--primary" 文字="保存"
+
+7. 验证
+   - 检查 displayLastFollowTime 是否更新
+   - 检查 followRecordInfo 是否有新记录
+```
+
+**弹窗中的关键字段**：
+- 客户名称：`input[placeholder*="客户代码"]` — 需要触发远程搜索下拉
+- 跟进内容：`textarea.el-textarea__inner`
+- 跟进时间：`input[placeholder*="跟进时间"]`
+- 跟进方式：下拉选择（邮件/WhatsApp/电话等）
+- 保存按钮：`button.el-button--primary` 文字="保存"
+
+**已知问题**：
+- 客户名称输入框直接填值（不触发Vue远程搜索下拉并选择）→ 保存成功但跟进不绑定到客户
+- 需要模拟完整的用户输入流程：focus → 输入 → 等待下拉 → 点击选项
+
 ## 五、客户列表查询
 
 ```
@@ -351,6 +410,20 @@ def ts_to_date(ts):
 ### displayType 必填
 
 新增/更新客户必须包含 `displayType: 236496`，否则返回"建档时客户类型不能为空"。
+
+### Windows git-bash 下 python3 是空壳
+
+**现象**: 在 git-bash / MSYS2 终端执行 `python3 script.py` 弹出 Windows Store 安装界面或无任何输出。
+
+**原因**: Windows 的 `App Execution Alias` 劫持了 `python3` 命令，指向 Windows Store 空壳。
+
+**方案**: 用 `python` 代替 `python3`（`python` → Hermes venv Python 3.11.15）。
+```bash
+# ✅ 正确
+python -c "import sqlite3; ..."
+# ❌ 错误（会弹Windows Store）
+python3 -c "import sqlite3; ..."
+```
 
 ## 文件结构
 

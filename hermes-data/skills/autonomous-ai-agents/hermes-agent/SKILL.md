@@ -821,6 +821,19 @@ Use the existing skip-pattern style (`sys.platform == "win32"` or
 `sys.platform.startswith("win")`) to stay consistent with the rest of the
 suite.
 
+### Gateway Restart
+
+**`hermes gateway restart` is blocked from inside the gateway process.** When the agent runs inside the gateway (e.g., Telegram/WeChat session), calling `hermes gateway restart` returns:
+```
+✗ Refusing to restart the gateway from inside the gateway process.
+This command was blocked to prevent restart loops.
+Use `hermes gateway restart` from a shell outside the running gateway.
+```
+This is a safety mechanism, not a bug. To restart the gateway:
+1. **Manual**: Kill `hermes.exe` from Windows Task Manager or `taskkill /F /IM hermes.exe` in cmd/PowerShell (NOT from the agent's terminal tool — that runs inside the gateway). Hermes auto-restarts via Task Scheduler keepalive.
+2. **Config changes** (like provider/model switches) take effect on the next gateway restart — notify the user to restart manually.
+3. The `/restart` slash command in chat has the same restriction.
+
 ### Path / Filesystem
 
 **Line endings.** Git may warn `LF will be replaced by CRLF the next time

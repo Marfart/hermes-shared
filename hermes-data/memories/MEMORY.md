@@ -584,14 +584,12 @@ Joinf CRM API已验证可用（2026-06-17）：通过CDP浏览器登录cloud.joi
 §
 Joinf CRM (trade.joinf.com) write API endpoints are UNKNOWN — all attempts to update customer data via API failed. PUT/POST /rapi/d/customers returns 200+"系统繁忙", /save /update /edit return 404. Customer name edits must be done through UI (click edit icon next to name in detail panel). Read API works perfectly: GET /rapi/d/customers?num=X&paging=true&size=50 returns full JSON objects with 75+ fields. Max safe page size=50 (size=200 returns empty data). Pending: customer id=238854934 needs name changed from "Вадим" to "Abhinav" (email=Abhinav.global22@gmail.com, not Russian).
 §
-[2026-06-17] 模型管理配置：
-- 主模型：openrouter/owl-alpha
-- 备用模型：ollama-cloud/glm-5.1
-- Fallback脚本：%LOCALAPPDATA%/hermes/scripts/model_fallback_monitor.py
-- Cron：job_id=59f5254858ef（每2分钟，no_agent=True，deliver=local）
-- hermes config 无 get 子命令，需直接读 config.yaml
-- 飞书无独立模型配置，跟主会话共用
-- 技能更新：self-maintenance SKILL.md 新增 Phase 7d，references/model-fallback-management.md
+[2026-06-18] 模型管理配置更新：
+- 主模型：openrouter/owl-alpha（Kali手动切换，已将所有平台默认设为该模型）
+- 所有 auxiliary providers（approval/compression/curator/kanban_decomposer/mcp/profile_describer/skills_hub/title_generation/triage_specifier/vision/web_extract）也全部设为 openrouter/owl-alpha
+- 之前备用模型 ollama-cloud/glm-5.1 已不再作为默认
+- Gateway重启方法：taskkill /F /IM hermes.exe（在Windows cmd/PowerShell执行，不能在agent terminal里执行，会被安全机制阻止）
+- hermes-agent Windows-Specific Quirks 章节已新增 Gateway Restart 说明
 §
 [2026-06-17] 富通CRM API探索任务启动
 - 目标：找出富通/金蝶后台真实API（添加备注、跟进记录、修改客户、保存草稿、新增客户）
@@ -674,3 +672,10 @@ CRM跟进铁则：
 CRM跟进管理系统在 %LOCALAPPDATA%/hermes/memories/脚本缓存/富通CRM/，含 bliiot_crm.py（主CLI）、crm_quick.py（快捷版）、sync_all_pending.mjs（CDP同步管道）、crm_followups.db（SQLite本地跟进库）。技能: bliiot-crm-followup。已经过全流程验证（1955条客户拉取+14条跟进双向同步+5个Sheet Excel报表）。同步通过CDP浏览器POST /rapi/m/follow/add，颜色映射：邮件=2B579A、报价=E67E22、WhatsApp=27AE60、电话=E74C3C。API size最大200（不是50）。Excel必须清洗非打印字符（sanitize函数）。
 §
 富通CRM操作铁则：能用CDP浏览器手动操作就别写API脚本。写fetch/POST自动脚本API返回success:true但数据可能不落库（2026-06-18血泪教训）。正确做法：CDP浏览器打开富通页面→搜客户→手动点添加跟进→填内容→保存→验证。API只用于读取数据（列表/详情），写入操作优先浏览器手动。绝对不能再自己写fetch payload做自动添加。
+§
+[2026-06-19] 富通CRM跟进录入三大发现：
+1. API POST /rapi/m/follow/add 返回success:true但不落库（已确认）
+2. CDP点击UI"新建跟进"按钮 → 弹窗 → 填内容 → 保存，UI上显示但displayLastFollowTime不更新、followRecordInfo为空——原因是客户名称输入框直接填value没触发Vue远程搜索下拉选择
+3. 正确做法：客户名称输入框必须 focus → 输入 → 等待下拉加载 → 从下拉列表点击匹配选项，否则跟进不绑定到客户
+4. 客户详情页URL /tms/customer/detail?id=xxx 已失效（富通V4.41.0更新后404），正确页面是 /tms/customer/customers_follow?tab=0
+5. 技能已更新：joinf-crm-api SKILL.md + bliiot-crm-followup references/hermes-browser-sync.md
