@@ -1,7 +1,7 @@
 ---
 name: bliiot-email-marketing
 description: "BLIIOT Email营销 — 安全可靠的SMTP邮件推广，替代WhatsApp（防封号）。通过QQ邮箱发产品开发信，支持CRM老客户召回+多模板+防SPAM延迟+发送队列+日志回查"
-version: 2.0.0
+version: 3.0.0
 author: Tachikoma
 platforms: [windows]
 trigger: "发邮件/邮件营销/发开发信/WhatsApp怕封/CRM老客户召回/旧客户跟进/邮件召回/quali 说Email可以/邮件推广/安全渠道推广/不想被封号"
@@ -183,15 +183,37 @@ Fields: customer_id, type='邮件', content='发送了跟进邮件给{name}({ema
 
 No CDP needed for CRM write — it's a direct SQLite INSERT. Records marked `synced=1` won't be re-synced to JoinF (they're already there as a manual record).
 
+## 关键铁律
+
+### 🔴 防重复发送（零容忍）
+
+多次因进程中断、stdout缓冲导致重复发送。必须严格遵守：
+
+1. **`.sent_log.json` 是唯一的去重依据** — 发送前检查，发送后立即写入，不可绕过
+2. **发一条保存一条** — 不能等全部发完再统一保存，进程随时可能中断
+3. **不能依赖子进程的stdout输出** — Windows git-bash下Python的`-u`和`reconfigure(line_buffering=True)`都无效。必须在`smtp.sendmail()`成功返回后立即写sent_log，不等print输出刷新
+4. **用`execute_code`内联执行脚本** — 不要用`terminal(background=True)`跑Python脚本，子进程stdout不可见且无法实时确认
+5. **Kali说"可以了"=立即停止** — 不要补发、不要追发漏掉的，她说停就停
+
+### 🔴 筛选条件
+
+- **只发2024年前的老客户**（`displayCreateTime < 2024-01-01`）
+- **有邮箱**（`contactEmail`非空）
+- **未发过邮件或WhatsApp**（排除`followups`表中已有`type='邮件'`或`type='WhatsApp'`的`customer_id`）
+- Kali明确纠正过：不能发2024年后的客户
+
+### 发后清理
+
+- 每次发送后检查CRM `followups`表，删除重复记录（同一`customer_id`同一天多条`type='邮件'`）
+- 清理方法：按`customer_id`分组，保留最大`id`，删除其余
+
 ## Pitfalls
 
 - ⚠️ **授权码 ≠ 登录密码**。QQ邮箱的授权码获取：登录QQ邮箱 → 设置 → 账户 → 「POP3/SMTP服务」→ 开启 → 短信验证 → 获取16位授权码
-- ⚠️ **Kali已配置好`kali_foever@qq.com`的授权码** `reoefbstemklbdcd`，保存在 `.smtp_password`
-- ⚠️ 本轮会话实战已发送5封CRM老客户邮件（Juan Carlos/Stephen Hudson/Richard Twite/Basem Mohamed/Alex Elliot），标记好已发送名单避免重复
+- ⚠️ **Kali已配置好`kali_foever@qq.com的授权码**，保存在 `.smtp_password`
 - ⚠️ 不要硬编码密码到Python脚本中。永远从 `.smtp_password` 文件读取
-- ⚠️ `.sent_log.json` 记录已发送历史。重置需 `--reset-log`
-- ⚠️ 选客户时要随机抽样，不要每次都选同样的客户
-- ⚠️ 2024年前客户有1600+有邮箱的，足够多发几轮
+- ⚠️ 选客户时要按地区分散抽样，不要集中同一国家
+- ⚠️ CRM写入时`customer_name`必须传真实名称，不能传空字符串
 
 ## See Also
 
