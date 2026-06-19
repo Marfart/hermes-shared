@@ -23,6 +23,7 @@ description: 富通天下(金蝶)CRM API操作指南 — 直接HTTP调用富通C
 | 读取客户详情 | GET | `/rapi/d/customers/{id}/1` | ✅ | 2026-06-17 |
 | 添加跟进记录 | POST | `/rapi/m/follow/add` | ✅ | 2026-06-17 |
 | 客户列表 | GET | `/rapi/d/customers?paging=true&size=200` | ✅ | 2026-06-17 ✅size=200实测 |
+| 公海客户列表 | GET | `/rapi/d/customers/public?paging=true&size=500` | ✅ | 2026-06-19 ✅66224条 |
 
 ## 跟进记录管理系统
 
@@ -395,6 +396,99 @@ def ts_to_date(ts):
 | `isAsterisk: 1` | ⭐ | `isAsterisk` |
 | `shareType: 0` | 私有 | `shareType` |
 
+## 七、公海客户全量爬取（66,224条）
+
+### 7.1 关键发现
+
+**公海客户API端点**：`/rapi/d/customers/public`
+
+| 参数 | 值 | 说明 |
+|------|-----|------|
+| `num` | 页码（从1开始） | 翻页用 |
+| `paging` | `true` | 必须 |
+| `size` | 最大500 | 推荐500减少请求次数 |
+| `sortColumn` | `lastTransferTime` | 按转入公海时间排序 |
+| `sortType` | `desc` | 降序 |
+
+**总记录**：66,224条，size=500时共133页
+
+**⚠️ 常见错误**：
+- `/rapi/d/customers?tab=1` → 返回的是"我的客户"（1957条），不是公海！
+- `/rapi/d/customers?tab=1&isCommonUse=true` → 同样是1957条
+- 必须用 `/rapi/d/customers/public` 端点
+
+### 7.2 CDP浏览器内fetch爬取（推荐）
+
+通过CDP WebSocket在浏览器上下文内执行fetch，自动携带Cookie和Session：
+
+```python
+import json, socket, base64, struct, time, os
+
+CDP_WS = "ws://127.0.0.1:9226/devtools/page/<target_id>"
+PAGE_SIZE = 500
+TOTAL_PAGES = 133
+
+# ... WebSocket连接代码 ...
+
+all_customers = []
+for page in range(1, TOTAL_PAGES + 1):
+    cmd = {
+        "id": page + 1000,
+        "method": "Runtime.evaluate",
+        "params": {
+            "expression": f"""
+                (async () => {{
+                    let r = await fetch('/rapi/d/customers/public?num={page}&paging=true&size={PAGE_SIZE}&sortColumn=lastTransferTime&sortType=desc');
+                    let j = await r.json();
+                    return JSON.stringify({{values: j.data?.values || []}});
+                }})()
+            """,
+            "awaitPromise": True,
+            "returnByValue": True
+        }
+    }
+    # ... 发送命令并接收响应 ...
+```
+
+**性能**：约1000条/秒，全部66,224条约需70秒
+
+### 7.3 公海客户字段
+
+公海客户数据包含67个字段，比"我的客户"多以下关键字段：
+
+| 字段名 | 中文名 | 说明 |
+|--------|--------|------|
+| `remainingTime` | 剩余时间 | 如"19天1小时" |
+| `lastTransferTime` | 转入公海时间 | 毫秒级timestamp |
+| `lastTransferInfo` | 转入公海信息 | |
+| `publicGroup` | 所属部门 | 如"外贸部" |
+| `toHighseasTime` | 预计转入公海 | |
+| `activity` | 最近活动 | 如"营销信：RE:xxx" |
+| `activityType` | 活动类型 | 如"edmemail" |
+| `businessType` | 业务类型 | 如"系统集成商" |
+| `grade` | 客户等级 | 如"潜在客户" |
+| `displayType` | 客户类型 | 如"潜在工业客户" |
+
+### 7.4 Excel报表生成
+
+66,224条数据生成多Sheet Excel报表：
+
+- **Sheet 1: Dashboard** — KPI概览 + Top20国家分布
+- **Sheet 2: 全部客户** — 66,224行 × 25个核心字段
+- **Sheet 3: 按业务员统计** — 12人，含客户数/邮箱/电话/订单/覆盖地区
+- **Sheet 4: 按国家地区统计** — 202个国家/地区
+- **Sheet 5: 按客户来源统计** — 240个来源
+- **Sheet 6: 按业务类型统计** — 8个类型
+
+**文件大小**：约9.4MB
+
+**样式规范**：
+- 表头：微软雅白字体，白色文字，深蓝背景(#1F4E79)
+- 数据行：微软雅黑字体，交替斑马纹
+- 冻结首行 + 自动筛选
+- 时间戳转换为 `YYYY-MM-DD HH:MM` 格式
+- 清洗非打印字符（openpyxl IllegalCharacterError）
+
 ## 已知问题与解决方案
 
 ### PATCH 更新失败：建档时联系人姓名不能为空
@@ -433,7 +527,9 @@ skills/sales/joinf-crm-api/
 ├── references/
 │   ├── joinf-api-client.mjs          ← API 客户端（420行，完整封装）
 │   ├── joinf-api-client.test.mjs     ← 测试用例
-│   └── batch-export-workflow.md      ← 批量导出工作流 + 字段速查表
+│   ├── batch-export-workflow.md      ← 批量导出工作流 + 字段速查表
+│   ├── displayvalue-bug.md           ← displayValue bug 文档
+│   └── crawl-highseas-public.md      ← 公海客户全量爬取（66,224条）
 │
 └── [跟进记录系统脚本] → 见独立技能 bliiot-crm-followup
 ```
