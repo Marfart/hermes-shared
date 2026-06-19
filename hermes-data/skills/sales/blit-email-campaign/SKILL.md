@@ -2,7 +2,7 @@
 name: blit-email-campaign
 category: sales
 description: "BLIIOT email outreach campaign — filter CRM customers, send personalized emails via QQ SMTP, log follow-ups to local SQLite, sync to JoinF CRM. Supports random sampling, country filtering, and date-based segmentation."
-version: 1.1.0
+version: 1.2.0
 author: Tachikoma
 ---
 
@@ -21,11 +21,33 @@ Automated email outreach pipeline for BLIIOT — filter JoinF (富通) CRM custo
 | File | Purpose |
 |------|---------|
 | `scripts/send_selected5.py` | Main campaign script — filter, random sample, send, log, optional sync |
+| `scripts/batch_email_v4.py` | 分批执行版 v4 — 从66K公海JSON筛选+随机化发送+每日状态跟踪 (2026-06-19) |
+| *(external)* `memories/脚本缓存/产品推广/.sent_log_v4.json` | v4发送去重日志 (合并旧.sent_log.json) |
+| *(external)* `memories/脚本缓存/产品推广/.daily_state_v4.json` | 每日发送状态 {date, count, sent_ids} |
+| *(external)* `~/Desktop/Working/富通CRM_公海客户_全量.json` | 66K公海客户全量数据 (2026-06-19爬取) |
 | `scripts/blit_mailer.py` | SMTP mail engine (smtplib, retry, HTML/attachment support) |
 | `references/joinf-sync-via-browser.md` | JoinF CRM sync via Hermes browser_console technique |
 | *(external)* `memories/脚本缓存/富通CRM/bliiot_crm.py` | CRM tools — query customers, log follow-ups, sync to JoinF |
 
 ## Quick Start
+
+### Method A: Full Auto (Recommended — 2026-06-19+)
+
+Uses the 66K公海客户 JSON + randomized templates + daily state tracking:
+
+```bash
+cd memories/脚本缓存/产品推广
+python batch_email_v4.py [batch_size]
+```
+
+- `batch_size` defaults to 5 (use 37 for large batches, 5 for cron)
+- Automatically filters: `displayCreateTime < 2024` + `contactEmail` not empty
+- Randomly shuffles targets each run (never same order)
+- Daily limit: 50 (tracked in `.daily_state_v4.json`, resets at midnight)
+- Anti-dup: `.sent_log_v4.json` (merges old `.sent_log.json` on load)
+
+### Method B: Legacy (SQLite-based)
+
 ```bash
 cd skills/sales/blit-email-campaign/scripts
 python send_selected5.py --count 5 --before 2024-01-01
@@ -115,13 +137,24 @@ Do NOT hand-craft fetch calls to JoinF API. The `bliiot-crm-followup` skill has 
 ### 2. Dual-write after sync
 After pushing to JoinF CRM, update **BOTH** SQLite (`UPDATE followups SET synced=1`) AND `pending_sync.json`. One without the other is a half-sync.
 
+### 3. NEVER kill a running email process and restart
+Killing `batch_email_v4.py` mid-run and restarting causes **duplicate sends** — the sent_log only saves after each send, and the new process reads the old log. If you must stop, let the current email finish, then stop. Do NOT restart the same script.
+
+### 4. Windows git-bash stdout buffering
+Python stdout is heavily buffered on Windows git-bash even with `-u` flag. Background process output may appear empty. Use `execute_code` for inline execution with real-time output, or check `.sent_log_v4.json` after completion to verify results.
+
+### 5. sent_log_v4.json merges old sent_log.json
+On load, `batch_email_v4.py` merges both `.sent_log_v4.json` and `.sent_log.json`. This ensures the 10 customers sent via the old script are never re-sent via the new one.
+
 ## Key Rules
-1. **Human-like delays**: 60-150s random delay between sends — never burst
-2. **No duplicate sending**: Check `followups` table before re-sending to same email
+1. **Human-like delays**: 60-180s random delay between sends — never burst
+2. **No duplicate sending**: `.sent_log_v4.json` is the sole source of truth. Check before send, save immediately after. Merges old `.sent_log.json` on load.
 3. **CRM sync is MANDATORY**: Every send → logged to SQLite → **must sync to JoinF CRM** (user explicitly requires this). See "Syncing to JoinF CRM" below.
 4. **SMTP auth code**: Stored at `memories/脚本缓存/产品推广/.smtp_password`, never commit to git
 5. **QQ rate limits**: ~50 sends/day max for personal QQ; space campaigns accordingly
 6. **Timezone awareness**: Consider recipient's business hours when scheduling
+7. **Randomize content**: 3 body templates × 4 subjects × 4 greetings = 48 combos. Never send identical emails.
+8. **Daily state tracking**: `.daily_state_v4.json` tracks `{date, count, sent_ids}`. Resets at midnight.
 
 ## ⚠️ CRITICAL: Sync Verification Trap
 
