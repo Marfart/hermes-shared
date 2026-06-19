@@ -108,13 +108,13 @@
     "created_at": "2026-06-06T20:43:46.542224+00:00",
     "created_by": "agent",
     "last_patched_at": "2026-06-11T18:03:17.719566+00:00",
-    "last_used_at": "2026-06-16T00:43:32.678667+00:00",
-    "last_viewed_at": "2026-06-16T00:43:32.661628+00:00",
+    "last_used_at": "2026-06-19T03:39:50.406844+00:00",
+    "last_viewed_at": "2026-06-19T03:39:50.389471+00:00",
     "patch_count": 41,
     "pinned": false,
     "state": "active",
-    "use_count": 23,
-    "view_count": 23
+    "use_count": 24,
+    "view_count": 24
   },
   "b2b-customer-scoring": {
     "archived_at": null,
@@ -458,14 +458,14 @@
     "archived_at": null,
     "created_at": "2026-06-02T09:55:02.689042+00:00",
     "created_by": null,
-    "last_patched_at": null,
-    "last_used_at": "2026-06-09T10:20:55.892116+00:00",
-    "last_viewed_at": "2026-06-09T10:20:55.873057+00:00",
-    "patch_count": 0,
+    "last_patched_at": "2026-06-19T03:41:26.989113+00:00",
+    "last_used_at": "2026-06-19T03:40:11.430122+00:00",
+    "last_viewed_at": "2026-06-19T03:40:11.413021+00:00",
+    "patch_count": 1,
     "pinned": false,
     "state": "active",
-    "use_count": 2,
-    "view_count": 2
+    "use_count": 3,
+    "view_count": 3
   },
   "claude-design": {
     "archived_at": null,
@@ -1655,13 +1655,13 @@
     "created_at": "2026-06-02T09:55:06.630691+00:00",
     "created_by": null,
     "last_patched_at": "2026-06-11T16:36:02.927953+00:00",
-    "last_used_at": "2026-06-11T16:35:42.531543+00:00",
-    "last_viewed_at": "2026-06-11T16:35:42.516291+00:00",
+    "last_used_at": "2026-06-19T03:39:37.728925+00:00",
+    "last_viewed_at": "2026-06-19T03:39:37.711416+00:00",
     "patch_count": 2,
     "pinned": false,
     "state": "active",
-    "use_count": 3,
-    "view_count": 3
+    "use_count": 4,
+    "view_count": 4
   },
   "systematic-debugging": {
     "archived_at": null,

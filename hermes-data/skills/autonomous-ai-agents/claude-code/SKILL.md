@@ -741,38 +741,80 @@ Codex CLI (OpenAI's autonomous coding agent) can be delegated to in the same pat
 ### Setup
 
 ```bash
-# Install (exact command varies by version — check docs)
-# npm install -g @openai/codex
-# export OPENAI_API_KEY=...
+# Install (check current version)
+npm install -g @openai/codex
+codex --version  # v0.136.0 current as of 2026-06
+
+# Auth: uses ~/.codex/auth.json (via Hermes-managed OAuth) or OPENAI_API_KEY
 ```
 
-### Three Modes
+### Codex CLI Correct Usage (Windows)
 
-#### Review Mode — Independent Diff Review
+**⚠️ Critical: Codex CLI argument syntax is different from Claude Code:**
+
+❌ **WRONG** — these flags do NOT exist in `codex`:
+- `--full-auto` (doesn't exist)
+- `-q` (quiet flag doesn't exist)
+- `--dangerously-skip-permissions` (doesn't exist)
+
+✅ **CORRECT** — use `codex exec` subcommand:
 ```bash
-git diff main...HEAD | codex review --pass-fail-gate
-```
-Pass/fail gate: returns PASS or FAIL based on code quality, security, and correctness. Use as a CI gate or pre-commit check.
+# Non-interactive one-shot task (preferred)
+codex exec "Your task description"
 
-#### Challenge Mode — Adversarial Testing
-```bash
-codex challenge --break target/file.py
-```
-Tries to break the code — like a red-team code review. Finds edge cases, race conditions, and logic errors a standard review might miss.
+# With full sandbox bypass (Windows)
+codex exec -s danger-full-access --dangerously-bypass-approvals-and-sandbox "Your task"
 
-#### Consult Mode — Ask Codex Anything
-```bash
-codex consult "What anti-patterns exist in this auth module?"
+# Resume a session
+codex exec resume
+
+# Review mode
+codex exec review
+
+# Output last message to file
+codex exec -o output.txt "Your task"
 ```
-Session continuity for follow-ups — can ask multiple questions about the same codebase. Use for deep architectural discussions and second opinions.
+
+### Codex Sandbox Fix (Windows — CRITICAL)
+
+**Symptom:** `exec error: windows sandbox: spawn setup refresh` — Codex cannot execute any shell commands or read files.
+
+**Root cause:** `~/.codex/config.toml` has `sandbox = "elevated"` which blocks PowerShell execution on Windows.
+
+**Fix (two-part):**
+
+**Step 1 — Change config.toml:**
+```toml
+[windows]
+sandbox = "unelevated"  # NOT "elevated", NOT "dangerously-full-access" (invalid value)
+```
+
+**Step 2 — Launch with bypass flags:**
+```bash
+codex exec -s danger-full-access --dangerously-bypass-approvals-and-sandbox "task"
+```
+
+**Verification:** After fix, `exec` commands should succeed with `succeeded in Xms:` output instead of `spawn setup refresh` errors.
 
 ### Integration with Claude Code
 
 Codex and Claude Code serve complementary purposes:
-- **Codex:** "200 IQ autistic developer" second opinion — aggressive, adversarial, finding what others miss
-- **Claude Code:** Broader task automation — features, PRs, refactoring
+- **Codex:** Fast autonomous coding agent — good for focused file manipulation and code generation
+- **Claude Code:** Broader task automation — features, PRs, refactoring, with richer interactive mode
 
-Use Codex when the user says: "codex review", "codex challenge", "ask codex", "second opinion", "consult codex", or "get another opinion" — delegate to Codex for the narrow review and send the result back to the user.
+### File-Based Coordination Protocol
+
+When Hermes and Codex run on separate machines, use a shared coordination directory:
+
+- `HERMES_TO_CODEX.txt` — Hermes writes task messages here
+- `CODEX_TO_HERMES.txt` — Codex writes replies here
+- `LATEST_TASK.txt` — Points to the current task JSON file
+- `tasks/task-NNN.json` — Full task specifications
+- `artifacts/` — Codex writes output files here
+- `AGENT_STATUS.json` — Codex reports its status here
+- `DELIVERABLES.json` — Codex reports completed deliverables here
+
+**Polling rule:** Codex's local watcher checks LATEST_TASK.txt every 10 minutes when idle. No need for Hermes to poll when there is no active task.
 
 ## Rules for Hermes Agents
 
