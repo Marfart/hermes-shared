@@ -129,8 +129,8 @@ def main():
         print(f"✅ 今日已达上限 {DAILY_LIMIT} 封，明天再发")
         return
     
-    # 随机延迟0-60分钟再开始（模拟真人不固定时间操作）
-    initial_delay = random.randint(0, 3600)
+    # 随机延迟0-10分钟再开始（模拟真人不固定时间操作，短延迟防cron超时）
+    initial_delay = random.randint(0, 600)
     if initial_delay > 0:
         m, s = divmod(initial_delay, 60)
         print(f"⏳ 随机延迟 {m}分{s}秒后开始发送（模拟真人操作时间）")
