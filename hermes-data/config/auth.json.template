@@ -8,7 +8,7 @@
       "api_base_url": "***REDACTED***",
       "scope": "***REDACTED***",
       "granted_scope": "***REDACTED***",
-      "token_type": "Bearer",
+      "token_type": "***REDACTED***",
       "access_token": "***REDACTED***",
       "refresh_token": "***REDACTED***",
       "obtained_at": "***REDACTED***",
@@ -22,7 +22,7 @@
         "account_id": "***REDACTED***"
       },
       "last_refresh": "***REDACTED***",
-      "auth_mode": "chatgpt",
+      "auth_mode": "***REDACTED***",
       "last_auth_error": {
         "provider": "***REDACTED***",
         "code": "***REDACTED***",
@@ -38,75 +38,75 @@
   "credential_pool": {
     "deepseek": [
       {
-        "id": "f3d7a2",
-        "label": "DEEPSEEK_API_KEY",
-        "auth_type": "api_key",
+        "id": "***REDACTED***",
+        "label": "***REDACTED***",
+        "auth_type": "***REDACTED***",
         "priority": 0,
-        "source": "env:DEEPSEEK_API_KEY",
-        "last_status": "ok",
+        "source": "***REDACTED***",
+        "last_status": "***REDACTED***",
         "last_status_at": null,
         "last_error_code": null,
         "last_error_reason": null,
         "last_error_message": null,
         "last_error_reset_at": null,
-        "base_url": "https://api.deepseek.com",
+        "base_url": "***REDACTED***",
         "request_count": 0,
-        "secret_fingerprint": "sha256:eb399b1751445035"
+        "secret_fingerprint": "***REDACTED***"
       }
     ],
     "openai-codex": [],
     "ollama-cloud": [
       {
-        "id": "a00be9",
-        "label": "OLLAMA_API_KEY",
-        "auth_type": "api_key",
+        "id": "***REDACTED***",
+        "label": "***REDACTED***",
+        "auth_type": "***REDACTED***",
         "priority": 0,
-        "source": "env:OLLAMA_API_KEY",
-        "last_status": "exhausted",
+        "source": "***REDACTED***",
+        "last_status": "***REDACTED***",
         "last_status_at": 1781803253.394412,
         "last_error_code": 429,
         "last_error_reason": null,
-        "last_error_message": "Error code: 429 - {'error': 'you (noobloy) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade or add extra usage: https://ollama.com/settings (ref: aed91d86-291a-481a-a675-5fa76ae4cf16)'}",
+        "last_error_message": "***REDACTED***",
         "last_error_reset_at": null,
-        "base_url": "https://ollama.com/v1",
+        "base_url": "***REDACTED***",
         "request_count": 0,
-        "secret_fingerprint": "sha256:eb703edc4f035107"
+        "secret_fingerprint": "***REDACTED***"
       }
     ],
     "copilot": [
       {
-        "id": "4e95f3",
-        "label": "GITHUB_TOKEN",
-        "auth_type": "api_key",
+        "id": "***REDACTED***",
+        "label": "***REDACTED***",
+        "auth_type": "***REDACTED***",
         "priority": 0,
-        "source": "env:GITHUB_TOKEN",
+        "source": "***REDACTED***",
         "last_status": null,
         "last_status_at": null,
         "last_error_code": null,
         "last_error_reason": null,
         "last_error_message": null,
         "last_error_reset_at": null,
-        "base_url": "https://api.githubcopilot.com",
+        "base_url": "***REDACTED***",
         "request_count": 0,
-        "secret_fingerprint": "sha256:116943eaf22343e5"
+        "secret_fingerprint": "***REDACTED***"
       }
     ],
     "openrouter": [
       {
-        "id": "5c429c",
-        "label": "OPENROUTER_API_KEY",
-        "auth_type": "api_key",
+        "id": "***REDACTED***",
+        "label": "***REDACTED***",
+        "auth_type": "***REDACTED***",
         "priority": 0,
-        "source": "env:OPENROUTER_API_KEY",
-        "last_status": "ok",
+        "source": "***REDACTED***",
+        "last_status": "***REDACTED***",
         "last_status_at": null,
         "last_error_code": null,
         "last_error_reason": null,
         "last_error_message": null,
         "last_error_reset_at": null,
-        "base_url": "https://openrouter.ai/api/v1",
+        "base_url": "***REDACTED***",
         "request_count": 0,
-        "secret_fingerprint": "sha256:b220aa3787207ff2"
+        "secret_fingerprint": "***REDACTED***"
       }
     ]
   }

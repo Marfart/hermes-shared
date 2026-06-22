@@ -1,0 +1,4 @@
+#!/bin/bash
+# python wrapper - redirects to pythonw to prevent console window popup
+# Place this in a directory that appears BEFORE the real python in PATH
+exec pythonw "$@"

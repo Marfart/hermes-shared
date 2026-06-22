@@ -552,14 +552,14 @@ Telegram bot 之间无法直接收到对方消息（安全策略），所以用 
 | ❌ `agent模式` cron自动回复 | 轮询→agent思考→自动回复 | Kali原话："你自动回复怎么行呢，要你自己去回复" |
 | ✅ `no_agent=True` + 写本地文件 | 轮询→写`xuedi_messages.txt`+删除已读→小马亲自回复 | 最简单，学弟的方案，Kali认可 |
 
-**铁律（2026-06-13 Kali 最终版 v2 — 文件变更通知模式）：**
+**铁律（2026-06-22 Kali 最终版 v3 — 静默轮询模式）：**
 
-1. **轮询只做搬运，不自动回复** — cron 每2分钟轮询中继，有消息写本地文件+删除已读，不调agent。Kali原话："不要用cron啊，你这自动回复怎么行呢，要你自己去回复"。又说："不需要走TG通知啊，你看看上面学弟的思路好一点"。
-2. **学弟方案更优：轮询→写本地文件→直接读** — 不绕TG通知。cron脚本静默运行（无消息=无输出=零打扰），有消息才写文件。
-3. **⚠️ 文件变更通知模式（最关键！2026-06-13 Kali 最终指示）** — Kali原话："就像之前和codex交流那样，写个脚本，如果文件改动了就通知你，脚本轮询文件，你得到通知了就去思考然后回复"。正确流程：
-   - no_agent cron 每2分钟：轮询中继 → 有消息写 `xuedi_messages.txt` + 删除已读 → 发TG通知到小马DM触发小马session
-   - 小马收到TG通知 → 读 `xuedi_messages.txt` → 思考 → curl POST回复学弟
-   - 这是跟 Codex 协作（`coordination/` 文件变更通知）一模一样的模式
+1. **轮询只做搬运，不通知不回复** — cron 每2分钟轮询中继，有消息写本地文件+删除已读，不调agent，**不发任何通知**。Kali原话（2026-06-22）："这个轮询更新别给我发消息了，你自己轮询就好，我来问你你再说"。
+2. **学弟方案：轮询→写本地文件→Kali问才汇报** — 不绕TG通知。cron脚本静默运行（无消息=无输出=零打扰），有消息才写文件。Kali来问时再汇报学弟说了什么、回了什么。
+3. **⚠️ 静默轮询模式（2026-06-22 Kali 最终指示）** — 正确流程：
+   - no_agent cron 每2分钟：轮询中继 → 有消息写 `xuedi_messages.txt` + 删除已读 → **结束，不发通知**
+   - Kali 来问 → 读 `xuedi_messages.txt` → 汇报学弟消息 → 思考 → curl POST回复学弟 → 告诉Kali回了什么
+   - ❌ 不能发TG通知 — Kali明确禁止："别给我发消息了"
    - ❌ 不能只靠"聊天时顺便查" — Kali原话："如果下次没有及时读到回复，我会来批评你的"
    - ❌ agent cron 自动回复 — Windows 上 `last_status: error` 不稳定，且Kali明确禁止
 4. **双方都必须配轮询** — Kali原话："你还要告诉他，要去轮询"。只配一边等于没配。
@@ -605,6 +605,7 @@ Telegram bot 之间无法直接收到对方消息（安全策略），所以用 
 - `references/weixin-disconnect-root-causes.md` — 断联根因清单 + 诊断步骤
 - `references/vortex-proxy-disconnect-pattern.md` — 2026-06-04 代理断流事件完整分析 + mode=direct配置陷阱诊断流程
 - `references/windows-process-pitfalls.md` — Windows 兼容性陷阱
+- `references/pythonw-windowless.md` — Windows Python 无控制台窗口模式（pythonw.exe 替换 python.exe 消除小黑窗）
 - `references/watchdog-v8-architecture-patterns.md` — httpx/APScheduler/FastAPI 模式在 v8 中的实现
 - `references/telegram-group-setup.md` — Telegram 群聊配置：Group Privacy 关闭 + 踢出重新拉入 + chat_id 获取
 - `references/gateway-full-stop-diagnosis.md` — Gateway 完全停止快速诊断流程（2026-06-15 实战案例）

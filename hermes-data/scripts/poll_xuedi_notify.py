@@ -1,32 +1,12 @@
 #!/usr/bin/env python3
-"""轮询中继→写文件→发TG通知触发小马。
-学弟有消息时，通知小马去处理。"""
+"""轮询中继→写文件，不发通知。
+学弟有消息时，只写本地文件，Kali来问我再汇报。"""
 import urllib.request, json, os, sys
 from datetime import datetime
 
 RELAY = "https://introduces-initiative-download-conventional.trycloudflare.com"
 MSG_FILE = os.path.join(os.environ.get("LOCALAPPDATA", ""), "hermes", "xuedi_messages.txt")
 STATE_FILE = os.path.join(os.environ.get("LOCALAPPDATA", ""), "hermes", "xuedi_poll_state.json")
-BOT_TOKEN = ""
-# 从.env文件读取token
-_env_path = os.path.join(os.environ.get("LOCALAPPDATA", ""), "hermes", ".env")
-try:
-    with open(_env_path, "r") as f:
-        for line in f:
-            if line.strip().startswith("TELEGRAM_BOT_TOKEN="):
-                BOT_TOKEN = line.strip().split("=", 1)[1]
-                break
-except:
-    pass
-KALI_CHAT = "8314311281"  # 小马DM，通知到这触发小马session
-
-# 读取上次时间戳
-last_ts = ""
-try:
-    with open(STATE_FILE, "r") as f:
-        last_ts = f.read().strip()
-except:
-    pass
 
 try:
     resp = urllib.request.urlopen(f"{RELAY}/poll/%E5%B0%8F%E9%A9%AC", timeout=10)
@@ -52,16 +32,7 @@ try:
         # 更新时间戳
         with open(STATE_FILE, "w") as f:
             f.write(now)
-        # 发TG通知触发小马
-        if BOT_TOKEN and now != last_ts:
-            notif = f"🐴 学弟有{count}条新消息，小马去处理！"
-            url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
-            payload = json.dumps({"chat_id": KALI_CHAT, "text": notif}).encode("utf-8")
-            req = urllib.request.Request(url, data=payload, headers={"Content-Type": "application/json"})
-            urllib.request.urlopen(req, timeout=10)
-            print(notif)
-        else:
-            print(f"学弟有{count}条新消息（已写入文件）")
+        print(f"学弟有{count}条新消息（已写入文件，不通知）")
     # count=0 静默
 except Exception as e:
     # 静默失败
