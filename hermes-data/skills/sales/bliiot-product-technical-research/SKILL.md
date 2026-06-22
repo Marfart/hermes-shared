@@ -439,9 +439,67 @@ Agent response structure:
 4. 🏆 Single best product: [BL116 if no local I/O needed, BL118 if local I/O needed]
 ```
 
+## Customer Requirement Matching Workflow
+
+When a customer provides a detailed technical specification (like an Online Monitoring System RFQ), follow this structured matching process:
+
+### Step 1: Parse Customer Requirements into Checklist
+
+Break the customer's spec into individual testable criteria:
+
+```
+Communication:    [GSM/GPRS] [RS485] [RS232] [Ethernet] [WiFi]
+Protocols:         [Modbus RTU] [Modbus TCP] [HTTP] [FTP] [MQTT]
+Data Access:      [Web portal] [Cloud dashboard] [SMS alerts]
+Integration:      [SCADA] [IoT platforms]
+Mechanical:      [IP65] [UV-stabilized] [Pole-mounted] [Grounding]
+Environment:        [Temp -20~70°C] [Humidity 0-100%]
+Compliance:       [CE] [RoHS] [FCC]
+Warranty:         [Sensor 2yr] [Logger 1yr]
+Documentation:    [Calibration certificate] [User manual]
+```
+
+### Step 2: Scan Full Product Library
+
+Use the indexed knowledge base (`english_datasheet_catalog.json`) to check every product line against each criterion. Never stop at the first match — customers want to know ALL options.
+
+### Step 3: Build a Match Matrix
+
+For each product, create a row with ✅/⚠️/❌ per criterion. Use this to rank products.
+
+### Step 4: Identify Gaps Honestly
+
+If no product meets a critical requirement (e.g. IP65), state it clearly:
+- "No product in our current catalog meets [requirement]. Recommended workaround: [custom enclosure / third-party IP65 box / engineering consultation]."
+
+### Step 5: Present Tiered Recommendations
+
+```
+🥇 Best Match: [Product] — [why]
+🥈 Alternative: [Product] — [trade-offs]
+🥉 Alternative: [Product] — [trade-offs]
+⚠️ Gap: [requirement] — no catalog product meets this. Suggest [workaround].
+```
+
+### Real-World Example: Online Monitoring System RFQ (2026-06-22)
+
+Customer needed: GSM/GPRS + RS485 + RS232 + Ethernet + WiFi + Modbus + Cloud + SCADA + IP65 + -20~70°C + 2yr warranty
+
+Results:
+- **R40B**: ✅ all comms/protocols, ✅ -20~65°C, ❌ IP30 (need external IP65 box)
+- **S275**: ✅ GSM/RS485/Modbus/SMS/Cloud, ⚠️ -10°C only, ❌ no Ethernet/WiFi
+- **S280**: ✅ GSM/4G/RS485/LoRa/Ethernet/Modbus TCP, ⚠️ -10°C only, ❌ no WiFi
+- **BL118+SOM336**: ✅ all comms, ✅ -20~70°C, ❌ IP30, highest cost
+- **Key finding**: NO catalog product has IP65 — must be addressed as custom engineering
+
 ## Pitfalls
 
 - **DOCX is the only searchable format** for protocol details. PDFs in the same folder are often image-based (product photos/layouts) and not text-searchable.
+- **Legacy .doc format** (not .docx): use `antiword` (available in hermes git-bingw64) to extract text. `python-docx` and `textract` fail on .doc format. `win32com` works but is slower.
+- **IP65 is a common customer requirement that NO BLIIOT product currently meets** — all gateway/RTU products are IP30. Always flag this gap and suggest external IP65 enclosure or custom engineering.
+- **S275 temperature range is -10~+70°C, NOT -20°C** — when customers need -20°C, S275 is disqualified unless they accept the narrower range.
+- **Warranty terms are rarely specified in datasheets** — the presence of a "Warranty Card" in the packing list does not mean 2-year coverage. Always confirm with sales/after-sales team before committing.
+- **Calibration certificates are not mentioned in most datasheets** — this is a documentation deliverable, not a product feature. Treat it as a separate commercial term.
 - **The word "timestamp" rarely appears explicitly** in BLIIOT specification sheets. It's an implicit feature of protocol implementations, not a separate bullet point. When asked about timestamp, explain it as part of the IEC 104 protocol standard.
 - **Product names in the indexed catalog may have OCR/parsing errors** (spaces between letters: "IEC104" vs "IEC 104"). Search both patterns.
 - **Two mirrored directory structures** exist: `产品规格书/英文资料/` and `英文资料/`. Always check both or search the one with more content.
@@ -461,4 +519,5 @@ Agent response structure:
 - **`references/bliiot-processor-architecture.md`** — Full processor map across all BLIIOT product lines, including why ESP32 is not used.
 - **`references/iec104-product-compatibility.md`** — IEC 60870-5-104 protocol support across BLIIOT products: which models support downlink/uplink, timestamp (CP56Time2a), and which don't.
 - **`references/r40-router-firewall-vpn-capabilities.md`** — R40 industrial cellular router firewall & VPN capabilities: DMZ, DoS protection, IP/MAC/domain filtering, port mapping, access control, IPsec/OpenVPN/L2TP VPN tunnels, and the 3-in-1 router+firewall+IO capability of certain R40 models.
+- **`references/legacy-doc-extraction.md`** — How to extract text from older `.doc` format manuals (S275, K9, K5S, S475). antiword works, python-docx/textract don't. Known-good files listed.
 - **`references/lte-data-logger-analog-inputs.md`** — Product matching guide for LTE data logger + MQTT + RS485 + 0-10V/0-20mA analog inputs + counter inputs. Covers S475, S275, MxxxT, MxxxE comparison, the critical 0-10V limitation (S475/S275 don't support it), workaround options, and recommended customer response template.
