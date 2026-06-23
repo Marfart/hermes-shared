@@ -186,13 +186,13 @@
     "created_at": "2026-06-11T03:14:44.001337+00:00",
     "created_by": null,
     "last_patched_at": "2026-06-16T17:29:22.358482+00:00",
-    "last_used_at": "2026-06-18T03:24:28.718565+00:00",
-    "last_viewed_at": "2026-06-18T03:24:28.698449+00:00",
+    "last_used_at": "2026-06-23T02:30:58.960078+00:00",
+    "last_viewed_at": "2026-06-23T02:30:58.941070+00:00",
     "patch_count": 2,
     "pinned": false,
     "state": "active",
-    "use_count": 5,
-    "view_count": 5
+    "use_count": 6,
+    "view_count": 6
   },
   "bliiot-b2b-directory-promotion": {
     "archived_at": null,
@@ -212,13 +212,26 @@
     "created_at": "2026-06-11T03:20:49.774854+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-06-17T03:07:30.743611+00:00",
-    "last_viewed_at": "2026-06-17T03:07:28.713705+00:00",
+    "last_used_at": "2026-06-23T02:31:49.828063+00:00",
+    "last_viewed_at": "2026-06-23T02:31:49.808056+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 3,
-    "view_count": 3
+    "use_count": 4,
+    "view_count": 4
+  },
+  "bliiot-bliotlink": {
+    "archived_at": null,
+    "created_at": "2026-06-23T02:30:59.967065+00:00",
+    "created_by": null,
+    "last_patched_at": null,
+    "last_used_at": "2026-06-23T02:30:59.983869+00:00",
+    "last_viewed_at": "2026-06-23T02:30:59.967065+00:00",
+    "patch_count": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 1,
+    "view_count": 1
   },
   "bliiot-crm-followup": {
     "archived_at": null,
@@ -277,13 +290,13 @@
     "created_at": "2026-06-11T03:20:46.764464+00:00",
     "created_by": null,
     "last_patched_at": "2026-06-18T03:34:26.262427+00:00",
-    "last_used_at": "2026-06-18T03:56:40.788450+00:00",
-    "last_viewed_at": "2026-06-18T03:56:40.771925+00:00",
+    "last_used_at": "2026-06-23T02:31:00.988349+00:00",
+    "last_viewed_at": "2026-06-23T02:31:00.970082+00:00",
     "patch_count": 7,
     "pinned": false,
     "state": "active",
-    "use_count": 11,
-    "view_count": 11
+    "use_count": 12,
+    "view_count": 12
   },
   "bliiot-ioy-series": {
     "archived_at": null,
@@ -381,13 +394,13 @@
     "created_at": "2026-06-11T03:20:49.791078+00:00",
     "created_by": null,
     "last_patched_at": "2026-06-18T03:57:56.024755+00:00",
-    "last_used_at": "2026-06-18T03:57:45.195279+00:00",
-    "last_viewed_at": "2026-06-18T03:57:45.178773+00:00",
+    "last_used_at": "2026-06-23T02:31:50.897735+00:00",
+    "last_viewed_at": "2026-06-23T02:31:50.859217+00:00",
     "patch_count": 7,
     "pinned": false,
     "state": "active",
-    "use_count": 5,
-    "view_count": 5
+    "use_count": 6,
+    "view_count": 6
   },
   "blit-email-campaign": {
     "archived_at": null,
