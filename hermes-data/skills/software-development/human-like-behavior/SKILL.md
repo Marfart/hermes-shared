@@ -152,6 +152,64 @@ const batchWithDelay = async (items, fn, batchSize = 5) => {
 - [ ] 浏览器操作像人在用吗？
 - [ ] 发消息节奏像人在打字吗？
 
+## 回复风格铁律（Kali多次强调）
+
+**直接给结论，不要冗长解释。** 读者已知上下文时一句话完事。
+
+❌ 禁止行为：
+- 解释为什么要这样做（"因为……所以……"）
+- 重复客户已知的信息
+- 工具调用失败时详细描述每一步尝试过程
+- "首先……其次……最后……"式列举
+
+✅ 正确行为：
+- 一句话结论
+- 可选方案用表格对比
+- 只说对客户有用的信息
+- 出错时一句话说明问题+解决方案
+
+**铁律来源：**
+- 客户说"以后这种可以选的就直接给我说可以！！我还以为不可以"
+- 客户说"直接给我说那些型号不需要价格"
+- 客户说"都给你说了全部权限，你办不成？" — 表明她期望我能解决而非解释为何做不到
+
+## CDP 连接本机Chrome的完整工作流（Windows）
+
+### 问题场景
+Hermes 浏览器工具 + Playwright MCP 都连不上本机已登录的 Chrome，因为 CDP 远程调试端口未开。
+
+### 解决步骤（5分钟）
+1. 关掉Chrome（任务管理器确认无chrome.exe）
+2. `Win+R` 输入并回车：
+```
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9223
+```
+或如果Chrome装在别处：
+```
+"C:\Users\AppData\Local\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9223
+```
+3. Chrome重启后打开 https://web.whatsapp.com
+4. 用手机WhatsApp扫码登录
+5. 告诉小马，通过 `browser_navigate` → `http://localhost:9223/json` 验证
+
+### 验证端口开了
+```bash
+netstat -ano | findstr :9223
+```
+应看到类似：`TCP 127.0.0.1:9223 0.0.0.0:0 LISTENING`
+或：`curl http://127.0.0.1:9223/json/version`
+
+### 常见失败模式（均已验证）
+- ❌ Hermes浏览器访问web.whatsapp.com → 超时（Vortex代理墙了WhatsApp）
+- ❌ Playwright MCP连接 → 超时（MCP配置问题）
+- ❌ CDP 9223端口 → 未开（需手动加启动参数）
+- ❌ 截图 → 黑色（页面没加载出来）
+- 只有开了CDP端口后，Hermes浏览器工具才能通过CDP连到本机Chrome的登录态
+
+### 特殊说明
+- Playwright MCP 的 `connect_over_cdp("http://127.0.0.1:9223")` 也可以连，但MCP本身有超时问题
+- 推荐用Hermes原生 `browser_navigate` 直接操作，不需要Playwright
+
 ## 来源
 
 Kali多次纠正：
@@ -159,3 +217,5 @@ Kali多次纠正：
 2. "像人一样，不只是一个提醒，是让你必须要去改进你的一个行为模式"
 3. "无论是你的脚本还是说你是怎么样操作的，你必须要像人一样"
 4. WhatsApp开发信脚本必须加随机延迟（2-5分钟间隔）防封号
+5. "直接给我说那些型号不需要价格"
+6. "以后这种可以选的就直接给我说可以！！我还以为不可以"

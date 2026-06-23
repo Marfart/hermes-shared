@@ -775,3 +775,5 @@ Ali的发电机控制器采集需求最终方案：R10A + GPS选件 ≈ $105
 Online Monitoring System RFQ — R10A也满足（比R40A便宜$30+）：
 - 4网口+双SIM卡+GPS可选+RS485
 - 比R40A便宜，可以报给Ali看哪个更适合
+§
+技术笔记：Kali电脑上有WhatsApp Desktop（WhatsApp.Root.exe PID 16340），但没法通过CDP读取内部数据。需要Kali改用Chrome+WhatsApp Web + 开启remote-debugging-port=9223才能让小马读取聊天记录。浏览器工具访问whatsapp.com一直超时（Vortex代理问题）。
