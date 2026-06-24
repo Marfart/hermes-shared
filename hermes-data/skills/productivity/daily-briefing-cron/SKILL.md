@@ -189,7 +189,7 @@ self.multi_cell(0, h, txt)  # Always w=0 after resetting x
 
 ### Wake-up Cron Pattern (Wake the Agent, Not the User)
 
-**Core architecture**: The cron job's ONLY job is to send a signal to the Telegram chat. The agent (小马) is **passive** — it cannot "see" cron output, cannot receive messages from other sessions, and cannot wake itself up. The user must interact with the chat for the agent session to activate.
+**Core architecture**: The wake-up cron's ONLY job is to send a signal to the messaging platform. The agent (小马) is **passive** — it cannot "see" cron output, cannot receive messages from other sessions, and cannot wake itself up. The user must interact with the chat for the agent session to activate.
 
 **The correct flow**:
 
@@ -201,7 +201,8 @@ cron (no_agent) → sends 🌅/🌆 to Telegram → user sees it → user replie
 - **Cron is NOT "the agent on the computer"** — cron launches an independent session with no memory of ongoing conversations. It cannot message the current agent session.
 - **The agent is passive** — only user messages wake it. No system notification, no Windows popup, no console output can wake it.
 - **The user's cost is ~0.5 seconds** — reply with one emoji/character to trigger the agent.
-- **The agent (当前会话的小马) does ALL the real work** — deep reading, note-taking, cross-domain thinking, and output generation. Cron agent mode briefings were deleted because they lack the conversation context and thinking quality of the main agent.
+- **The agent (当前会话的小马) does ALL the real work** — deep reading, note-taking, cross-domain thinking, and output generation.
+- **Exception**: For financial briefings, the cron itself can run in agent mode (`no_agent=false`) that generates and delivers the PDF directly. This is preferred when the user wants the briefing without user interaction.
 
 ### Wake-up script template (no_agent=True)
 
@@ -298,6 +299,44 @@ send_message(target="weixin", message="📄 小马财经日报...\n\nMEDIA:C:/Us
 ```
 
 The PDF arrives as a native file download on WeChat. When PDF generation is interrupted mid-session (e.g. user asks to re-issue a failed cron briefing), run the script instead of writing the content inline. Both scripts produce a 7-page document with all sections.
+
+## Agent-mode vs Script-mode Workflow Decision (2026-06-24)
+
+The financial briefing cron has two valid operating modes. Choose based on user request:
+
+### Agent Mode (current as of 2026-06-24)
+- `no_agent: false` — AI session runs the full briefing
+- AI does: web_search → browser data gathering → analysis → PDF generation → deliver
+- **When to use**: User explicitly asks to "restart" or "reboot" the briefing, wants fresh AI analysis
+- **Model**: `deepseek-v4-flash` via `ollama-cloud` (fast cold start)
+- **Deliver**: `telegram` (or `weixin` depending on user's preferred platform)
+- **Advantage**: Real-time analysis, contextual reasoning, can adapt to breaking news
+- **Disadvantage**: Consumes tokens, slightly slower than script
+
+### Script Mode (legacy)
+- `no_agent: true` + `script: financial_daily.py`
+- Fixed Python script generates PDF from hardcoded data sources
+- **When to use**: User wants zero-token automated delivery with predictable format
+- **Deliver**: `local` (saves to desktop, user picks up manually)
+- **Advantage**: Zero tokens, runs every time regardless of model availability
+- **Disadvantage**: Stale data, no analysis, no adaptation to market events
+
+### Switching from Script to Agent Mode
+```
+cronjob(action='update', job_id='01837ee19638',
+  no_agent=false,
+  model={'model': 'deepseek-v4-flash', 'provider': 'ollama-cloud'},
+  deliver='telegram',
+  prompt='Generate today\'s financial briefing PDF...')
+```
+
+### Switching from Agent to Script Mode
+```
+cronjob(action='update', job_id='01837ee19638',
+  no_agent=true,
+  script='financial_daily.py',
+  deliver='local')
+```
 
 ## Cron failure recovery workflow
 
