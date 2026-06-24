@@ -1,9 +1,9 @@
 {
-  "last_report_path": "C:\\Users\\Admin\\AppData\\Local\\hermes\\logs\\curator\\20260616-115603",
-  "last_run_at": "2026-06-16T11:56:03.131942+00:00",
-  "last_run_duration_seconds": 421.079915,
-  "last_run_summary": "auto: no changes; llm: All references verified. Here's the complete summary of this curator pass:\n\n---\n\n## Consolidation Summary\n\n### Clusters Processed\n\n**Cluster 1: ASCII Output (ascii-art + ascii-video)**\nBoth skills produce ASCII output. `ascii-video` is the …\narchived 5 skill(s):\n  • ascii-video → ascii-art\n  • hermes-config-diagnostics → hermes-agent\n  • hermes-state-backup → hermes-agent\n  • polymarket — pruned (stale)\n  • touchdesigner-mcp — pruned (stale)\nfull report: hermes curator status\nkeep an umbrella stable: hermes curator pin ascii-art",
+  "last_report_path": "C:\\Users\\Admin\\AppData\\Local\\hermes\\logs\\curator\\20260624-120727",
+  "last_run_at": "2026-06-24T12:07:27.214132+00:00",
+  "last_run_duration_seconds": 6611.46225,
+  "last_run_summary": "auto: no changes; llm: All 6 umbrella skills are in place with their SKILL.md and references directories. Let me now write the structured summary.\n\n---\n\n## Consolidation Summary\n\nI completed a comprehensive umbrella-ification pass on the skill collection. Here's …\narchived 15 skill(s):\n  • b2b-customer-scoring — pruned (stale)\n  • bliiot-b2b-directory-promotion — pruned (stale)\n  • bliiot-customer-acquisition — pruned (stale)\n  • bliiot-email-marketing — pruned (stale)\n  • bliiot-product-technical-research — pruned (stale)\n  • bliiot-quotation-database — pruned (stale)\n  • camera-reconnaissance — pruned (stale)\n  • desktop-watchdog — pruned (stale)\n  • proxy-api-diagnostics — pruned (stale)\n  • self-maintenance — pruned (stale)\n  … and 5 more\nfull report: hermes curator status",
   "last_run_summary_shown_at": null,
   "paused": false,
-  "run_count": 3
+  "run_count": 4
 }
