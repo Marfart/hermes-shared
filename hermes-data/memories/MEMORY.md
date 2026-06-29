@@ -782,3 +782,5 @@ Windows Chrome CDP端口开设铁律（2026-06-29实测）：
 1. 必须删除 User Data/SingletonLock + SingletonSocket + SingletonCookie（否则Chrome忽略--remote-debugging-port）
 2. 必须用 PowerShell Start-Process 启动（cmd.exe start 和 terminal & 都不能正确传递参数）
 3. Hermes browser_navigate 走 Browserbase 云服务器，页面不在用户屏幕上显示——需要用户扫码/看到内容时必须用本机Chrome CDP
+§
+WhatsApp CDP铁律v2（2026-06-29强化）：CDP 9223不通时，必须自动执行修复流程（kill Chrome→删除Singleton*→PowerShell restart），绝对不能转用Hermes云端浏览器让用户扫码——用户看不见云端页面！agent全权完成修复，不需要用户介入。Kali原话隐含的期望：遇到问题先修，别绕路。

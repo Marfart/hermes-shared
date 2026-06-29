@@ -1,0 +1,53 @@
+- generic [ref=e5]:
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - img
+    - generic [ref=e11]:
+      - img
+  - generic [ref=e12]:
+    - generic [ref=e15]:
+      - generic [ref=e17]:
+        - img
+      - generic [ref=e18]:
+        - generic [ref=e19]: 下载 Windows 版 WhatsApp
+        - generic [ref=e20]: 获享额外功能，例如语音和视频通话、屏幕共享等。
+      - button "下载" [ref=e22] [cursor=pointer]:
+        - generic [ref=e23]:
+          - generic [ref=e24]: 下载
+          - generic [ref=e26]:
+            - img
+    - generic [ref=e109]:
+      - generic [ref=e111]: 输入电话号码
+      - generic [ref=e113]: 选择国家/地区并输入你的电话号码。
+      - generic [ref=e114]:
+        - generic [ref=e115]:
+          - button "🇨🇳 中国" [ref=e523] [cursor=pointer]:
+            - generic [ref=e526]:
+              - generic [ref=e529]:
+                - img "🇨🇳" [ref=e530]
+                - text: 中国
+              - generic [ref=e531]:
+                - img
+          - generic [ref=e130]:
+            - generic [ref=e131]: "+86"
+            - textbox "输入电话号码以登录 WhatsApp" [ref=e132]: "+86"
+        - button "下一步" [ref=e135] [cursor=pointer]:
+          - generic [ref=e141]: 下一步
+      - button "使用二维码登录" [ref=e143] [cursor=pointer]:
+        - generic [ref=e144]:
+          - generic [ref=e145]: 使用二维码登录
+          - generic [ref=e147]:
+            - img
+    - generic [ref=e90]:
+      - generic [ref=e91]:
+        - generic [ref=e92]: 没有 WhatsApp 账户？
+        - button "开始使用" [ref=e94] [cursor=pointer]:
+          - generic [ref=e95]:
+            - generic [ref=e96]: 开始使用
+            - generic [ref=e98]:
+              - img
+      - generic [ref=e99]:
+        - generic [ref=e101]:
+          - img
+        - generic [ref=e102]: 你的私人消息已进行端到端加密
+      - button "条款和隐私政策" [ref=e103] [cursor=pointer]

@@ -1,0 +1,83 @@
+- generic [ref=e5]:
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - img
+    - generic [ref=e11]:
+      - img
+  - generic [ref=e12]:
+    - generic [ref=e15]:
+      - generic [ref=e17]:
+        - img
+      - generic [ref=e18]:
+        - generic [ref=e19]: 下载 Windows 版 WhatsApp
+        - generic [ref=e20]: 获享额外功能，例如语音和视频通话、屏幕共享等。
+      - button "下载" [ref=e22] [cursor=pointer]:
+        - generic [ref=e23]:
+          - generic [ref=e24]: 下载
+          - generic [ref=e26]:
+            - img
+    - generic [ref=e532]:
+      - generic [ref=e534]: 在手机上输入代码
+      - generic [ref=e536]:
+        - text: 正在关联 WhatsApp 账户
+        - strong [ref=e537]: +86 181 1115 6001
+        - text: （
+        - button "编辑" [ref=e538] [cursor=pointer]
+        - text: ）
+      - generic "在手机上输入验证码：" [ref=e540]:
+        - generic [ref=e542]:
+          - status
+      - list [ref=e544]:
+        - listitem [ref=e545]:
+          - generic [ref=e547]: "1"
+          - generic [ref=e548]:
+            - text: 在你的手机上打开
+            - strong [ref=e549]:
+              - text: WhatsApp
+              - generic [ref=e551]:
+                - img
+        - listitem [ref=e552]:
+          - generic [ref=e554]: "2"
+          - generic [ref=e555]:
+            - text: 在 Android 手机上，轻触
+            - strong [ref=e556]:
+              - text: “菜单”
+              - generic [ref=e558]:
+                - img
+            - text: · 在 iPhone 上，轻触
+            - strong [ref=e559]:
+              - text: “设置”
+              - generic [ref=e561]:
+                - img
+        - listitem [ref=e562]:
+          - generic [ref=e564]: "3"
+          - generic [ref=e565]:
+            - text: 依次轻触“
+            - strong [ref=e566]: 已关联的设备
+            - text: ”和“
+            - strong [ref=e567]: 关联设备
+            - text: ”
+        - listitem [ref=e568]:
+          - generic [ref=e570]: "4"
+          - generic [ref=e571]:
+            - text: 轻触“
+            - strong [ref=e572]: 改用电话号码关联
+            - text: ”，然后在你的手机上输入此验证码
+      - button "使用二维码登录" [ref=e575] [cursor=pointer]:
+        - generic [ref=e576]:
+          - generic [ref=e577]: 使用二维码登录
+          - generic [ref=e579]:
+            - img
+    - generic [ref=e90]:
+      - generic [ref=e91]:
+        - generic [ref=e92]: 没有 WhatsApp 账户？
+        - button "开始使用" [ref=e94] [cursor=pointer]:
+          - generic [ref=e95]:
+            - generic [ref=e96]: 开始使用
+            - generic [ref=e98]:
+              - img
+      - generic [ref=e99]:
+        - generic [ref=e101]:
+          - img
+        - generic [ref=e102]: 你的私人消息已进行端到端加密
+      - button "条款和隐私政策" [ref=e103] [cursor=pointer]

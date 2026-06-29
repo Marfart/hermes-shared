@@ -222,7 +222,61 @@ curl -s http://127.0.0.1:9223/json/version
 - ❌ `cmd.exe start "" "chrome.exe" --remote-debugging-port=9223` → 参数不传递
 - ❌ terminal background `&` → 被Hermes拦截报错
 - ❌ 截图 → 黑色（页面没加载出来）
+- ❌ CDP端口不通时放弃修复，转用Hermes浏览器+让用户扫云端二维码 → **零容忍！用户根本看不到云端页面**
 - ✅ PowerShell Start-Process + 删除SingletonLock → 端口必然监听
+- ✅ CDP不通时 → 自动执行修复流程（kill→delete Singleton→PowerShell restart）→ 不需要用户介入
+
+### ⚠️ 行为铁律：CDP 不通时必须自动修复，绝不能让用户扫云端二维码
+
+每次需要读WhatsApp/CDP操作前，按此顺序检查：
+1. `curl -s http://localhost:9223/json/version` → 有响应则CDP正常，直接用
+2. 无响应 → **立即自动执行上面的解决步骤**（kill Chrome + 删除Singleton + PowerShell重启）
+3. 重启后验证端口 → 通了再操作WhatsApp
+4. 整个过程**不需要用户介入**，agent全权完成
+
+**绝不做的行为：**
+- ❌ 看到CDP不通 → 转头用Hermes browser Navigate → "帮你截个图扫码吧"
+- ❌ 说"先这样不行，我再想别的办法"而不是直接修复
+- ❌ 让用户来解决Chrome启动问题
+
+### WhatsApp 登录方式选择
+
+WhatsApp Web 有两种登录方式：
+
+1. **QR 码登录**（默认方式）— 手机WhatsApp扫码
+2. **电话号码登录** — WhatsApp发6位验证码到手机
+
+**什么时候用电话号码登录：**
+- 二维码扫不进去（截图模糊、Playwright截图看不到二维码等）
+- 手机摄像头故障
+- 用户明确说"登不了了"
+
+**电话号码登录操作步骤（Playwright MCP 实测验证 2026-06-29）：**
+
+前提：Playwright MCP启动的是全新浏览器实例，无登录态，只能用电话号码登录。
+
+1. `mcp_playwright_browser_navigate("https://web.whatsapp.com")`
+2. 等待 8-10 秒让页面加载完整（QR码渲染需要时间）
+3. `mcp_playwright_browser_snapshot()` 确认页面有"使用电话号码登录"按钮
+4. `mcp_playwright_browser_click(element="使用电话号码登录按钮", target="<ref>")` — 切换到号码表单
+5. 国家默认是阿曼(+968)，需要选择正确国家：
+   - `mcp_playwright_browser_click(element="国家选择按钮", target="<按钮ref>")` 打开下拉列表
+   - 在搜索框输入国家名（如"中国"）：`mcp_playwright_browser_fill_form(fields=[{"name":"搜索国家","target":"<搜索框ref>","type":"textbox","value":"中国"}])`
+   - 等待2秒让筛选结果渲染
+   - `mcp_playwright_browser_click(element="中国选项", target="<列表ref>")`
+6. 输入电话号码（不含国家码）：`mcp_playwright_browser_type(element="电话号码输入框", target="<ref>", text="18111156001")`
+7. `mcp_playwright_browser_click(element="下一步按钮", target="<ref>")`
+8. 页面显示验证码分组（如 TZXH-FKRB），告知用户在手机上操作：
+   - 打开手机WhatsApp → Android: 菜单 / iPhone: 设置
+   - 已关联的设备 → 关联设备
+   - 点"改用电话号码关联" → 输入验证码
+9. 等待用户确认登录成功后继续操作
+
+**⚠️ 关键注意事项：**
+- Playwright MCP截图用户看不到 → 用 mcp_playwright_browser_take_screenshot 然后 MEDIA:path 发给用户
+- console 经常返回null → 不要依赖 evaluate 获取页面数据，用 snapshot + text 提取
+- 电话号码登录在 Playwright 中仍需用户在手机上操作验证码 → 不是全自动的
+- CDP本机Chrome方案 > Playwright方案（共享登录态、无需重登）
 
 ### 特殊说明
 - Playwright MCP 的 `connect_over_cdp("http://127.0.0.1:9223")` 也可以连，但MCP本身有超时问题

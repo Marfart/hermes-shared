@@ -54,6 +54,40 @@ browser_navigate("https://web.whatsapp.com")  # 此时走的是本机CDP 9223端
 ```
 如果本机Chrome已登录WhatsApp，直接跳转聊天列表不会显示QR码。
 
+## WhatsApp Web 电话号码登录（QR码不可用时的fallback）
+
+### 触发条件
+- 用户说"扫不了/登不了了/用电话号码"
+- Hermes浏览器截图无法显示二维码（cloud server渲染问题）
+
+### 操作流程（Playwright MCP）
+
+```javascript
+// 1. 导航到WhatsApp Web
+await page.goto('https://web.whatsapp.com')
+
+// 2. 等页面加载
+await page.waitForTimeout(8000)
+
+// 3. 点击"使用电话号码登录"
+await page.getByText('使用电话号码登录').click()
+
+// 4. 等表单加载
+await page.waitForTimeout(3000)
+
+// 5. 此时页面显示：国家旗帜下拉 + 号码输入框 + "下一步"按钮
+// 用户手动操作：选国家 → 输入号码 → 点下一步
+
+// 6. WhatsApp发验证码到手机App
+// 用户查看App通知 → 输入6位码 → 完成登录
+```
+
+### 2026-06-29 实例
+- Kali说"登不了了，用手机号码登录吧"
+- Playwright页面click "使用电话号码登录"成功，切换到号码表单
+- 需要Kali手动在国家下拉选+输入号码+点下一步
+- **后续需要确认Kali的WhatsApp号码国家（+86? +27? 其他?）**
+
 ## 铁律
 - WhatsApp操作必须用CDP连本机Chrome，不能用Playwright MCP
 - Hermes浏览器工具走Vortex代理，访问WhatsApp会超时

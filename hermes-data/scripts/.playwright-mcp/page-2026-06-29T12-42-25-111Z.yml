@@ -1,0 +1,90 @@
+- generic [ref=e4]:
+  - generic [ref=e151]:
+    - generic [ref=e153]:
+      - generic [ref=e155]:
+        - img
+      - textbox [active] [ref=e158]:
+        - paragraph [ref=e159]: 中国
+      - button "取消搜索" [ref=e466] [cursor=pointer]:
+        - generic [ref=e467]:
+          - img
+    - listbox [ref=e160]:
+      - generic [ref=e165]:
+        - listitem [ref=e468]:
+          - listitem "所选国家/地区：中国。点击即可选择其他国家/地区。" [ref=e469] [cursor=pointer]:
+            - button "🇨🇳 中国 +86" [ref=e470]:
+              - generic [ref=e471]:
+                - img "🇨🇳" [ref=e473]
+                - generic [ref=e479]: 中国
+                - generic [ref=e482]: "+86"
+        - listitem [ref=e483]:
+          - listitem "所选国家/地区：中国澳门特别行政区。点击即可选择其他国家/地区。" [ref=e484] [cursor=pointer]:
+            - button "🇲🇴 中国澳门特别行政区 中國澳門特別行政區 +853" [ref=e485]:
+              - generic [ref=e486]:
+                - img "🇲🇴" [ref=e488]
+                - generic [ref=e489]:
+                  - generic [ref=e494]: 中国澳门特别行政区
+                  - generic [ref=e499]: 中國澳門特別行政區
+                - generic [ref=e502]: "+853"
+        - listitem [ref=e503]:
+          - listitem "所选国家/地区：中国香港特别行政区。点击即可选择其他国家/地区。" [ref=e504] [cursor=pointer]:
+            - button "🇭🇰 中国香港特别行政区 中國香港特別行政區 +852" [ref=e505]:
+              - generic [ref=e506]:
+                - img "🇭🇰" [ref=e508]
+                - generic [ref=e509]:
+                  - generic [ref=e514]: 中国香港特别行政区
+                  - generic [ref=e519]: 中國香港特別行政區
+                - generic [ref=e522]: "+852"
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e9]:
+        - img
+      - generic [ref=e11]:
+        - img
+    - generic [ref=e12]:
+      - generic [ref=e15]:
+        - generic [ref=e17]:
+          - img
+        - generic [ref=e18]:
+          - generic [ref=e19]: 下载 Windows 版 WhatsApp
+          - generic [ref=e20]: 获享额外功能，例如语音和视频通话、屏幕共享等。
+        - button "下载" [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]:
+            - generic [ref=e24]: 下载
+            - generic [ref=e26]:
+              - img
+      - generic [ref=e109]:
+        - generic [ref=e111]: 输入电话号码
+        - generic [ref=e113]: 选择国家/地区并输入你的电话号码。
+        - generic [ref=e114]:
+          - generic [ref=e115]:
+            - button "🇴🇲 阿曼" [ref=e117] [cursor=pointer]:
+              - generic [ref=e120]:
+                - generic [ref=e123]:
+                  - img "🇴🇲" [ref=e124]
+                  - text: 阿曼
+                - generic [ref=e125]:
+                  - img
+            - generic [ref=e130]:
+              - generic [ref=e131]: "+968"
+              - textbox "输入电话号码以登录 WhatsApp" [ref=e132]: "+968"
+          - button "下一步" [ref=e135] [cursor=pointer]:
+            - generic [ref=e141]: 下一步
+        - button "使用二维码登录" [ref=e143] [cursor=pointer]:
+          - generic [ref=e144]:
+            - generic [ref=e145]: 使用二维码登录
+            - generic [ref=e147]:
+              - img
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - generic [ref=e92]: 没有 WhatsApp 账户？
+          - button "开始使用" [ref=e94] [cursor=pointer]:
+            - generic [ref=e95]:
+              - generic [ref=e96]: 开始使用
+              - generic [ref=e98]:
+                - img
+        - generic [ref=e99]:
+          - generic [ref=e101]:
+            - img
+          - generic [ref=e102]: 你的私人消息已进行端到端加密
+        - button "条款和隐私政策" [ref=e103] [cursor=pointer]
