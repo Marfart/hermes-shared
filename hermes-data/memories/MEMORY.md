@@ -777,3 +777,8 @@ Online Monitoring System RFQ — R10A也满足（比R40A便宜$30+）：
 - 比R40A便宜，可以报给Ali看哪个更适合
 §
 技术笔记：Kali电脑上有WhatsApp Desktop（WhatsApp.Root.exe PID 16340），但没法通过CDP读取内部数据。需要Kali改用Chrome+WhatsApp Web + 开启remote-debugging-port=9223才能让小马读取聊天记录。浏览器工具访问whatsapp.com一直超时（Vortex代理问题）。
+§
+Windows Chrome CDP端口开设铁律（2026-06-29实测）：
+1. 必须删除 User Data/SingletonLock + SingletonSocket + SingletonCookie（否则Chrome忽略--remote-debugging-port）
+2. 必须用 PowerShell Start-Process 启动（cmd.exe start 和 terminal & 都不能正确传递参数）
+3. Hermes browser_navigate 走 Browserbase 云服务器，页面不在用户屏幕上显示——需要用户扫码/看到内容时必须用本机Chrome CDP

@@ -175,36 +175,54 @@ const batchWithDelay = async (items, fn, batchSize = 5) => {
 
 ## CDP 连接本机Chrome的完整工作流（Windows）
 
+### ⚠️ 关键区别：用户需要"看到"页面时
+
+**Hermes的 `browser_navigate` 用的是 Browserbase 云服务器，不会出现在用户屏幕上！**
+
+当任务需要用户看到内容（扫码登录、视觉验证等）→ 必须用本机Chrome CDP。
+后台自动化脚本、爬虫、不需要用户肉眼看到的 → 可以用Hermes Browserbase。
+
 ### 问题场景
 Hermes 浏览器工具 + Playwright MCP 都连不上本机已登录的 Chrome，因为 CDP 远程调试端口未开。
 
-### 解决步骤（5分钟）
-1. 关掉Chrome（任务管理器确认无chrome.exe）
-2. `Win+R` 输入并回车：
-```
-"C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9223
-```
-或如果Chrome装在别处：
-```
-"C:\Users\AppData\Local\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9223
-```
-3. Chrome重启后打开 https://web.whatsapp.com
-4. 用手机WhatsApp扫码登录
-5. 告诉小马，通过 `browser_navigate` → `http://localhost:9223/json` 验证
+### 解决步骤（agent可自动执行）
 
-### 验证端口开了
 ```bash
-netstat -ano | findstr :9223
+# Step 1: 杀掉所有chrome进程
+taskkill //F //IM chrome.exe
+
+# Step 2: 删除Singleton锁（关键！否则Chrome忽略--remote-debugging-port）
+rm -f "/c/Users/Admin/AppData/Local/Google/Chrome/User Data/SingletonLock"
+rm -f "/c/Users/Admin/AppData/Local/Google/Chrome/User Data/SingletonSocket"
+rm -f "/c/Users/Admin/AppData/Local/Google/Chrome/User Data/SingletonCookie"
+
+# Step 3: 用PowerShell启动（cmd.exe start 和 terminal后台 & 都不能正确传递参数）
+powershell.exe -Command 'Start-Process "C:\Program Files\Google\Chrome\Application\chrome.exe" -ArgumentList "--remote-debugging-port=9223","--user-data-dir=C:\Users\Admin\AppData\Local\Google\Chrome\User Data","https://web.whatsapp.com"'
 ```
-应看到类似：`TCP 127.0.0.1:9223 0.0.0.0:0 LISTENING`
-或：`curl http://127.0.0.1:9223/json/version`
+
+### 验证
+```bash
+sleep 6
+netstat -ano | grep 9223
+# 或
+curl -s http://127.0.0.1:9223/json/version
+```
+
+### 启动失败排查
+| 症状 | 原因 | 解决 |
+|------|------|------|
+| curl exit code 7 | Chrome起的快但端口未开 | 等几秒重试 |
+| netstat无9223 | `cmd.exe start` 和 terminal `&` 不能传递--remote-debugging-port | 改用PowerShell Start-Process |
+| Chrome起来但无9223 | SingletonLock未删，profile被占 | 删除Singleton锁文件 |
 
 ### 常见失败模式（均已验证）
-- ❌ Hermes浏览器访问web.whatsapp.com → 超时（Vortex代理墙了WhatsApp）
-- ❌ Playwright MCP连接 → 超时（MCP配置问题）
-- ❌ CDP 9223端口 → 未开（需手动加启动参数）
+- ❌ Hermes browser_navigate 访问whatsapp.com → 超时（Vortex代理墙了WhatsApp）
+- ❌ Hermes browser_navigate 访问whatsapp.com → 页面在云端服务器，用户看不到！扫不了码
+- ❌ Playwright MCP连接 → 全新实例，需重新登WhatsApp
+- ❌ `cmd.exe start "" "chrome.exe" --remote-debugging-port=9223` → 参数不传递
+- ❌ terminal background `&` → 被Hermes拦截报错
 - ❌ 截图 → 黑色（页面没加载出来）
-- 只有开了CDP端口后，Hermes浏览器工具才能通过CDP连到本机Chrome的登录态
+- ✅ PowerShell Start-Process + 删除SingletonLock → 端口必然监听
 
 ### 特殊说明
 - Playwright MCP 的 `connect_over_cdp("http://127.0.0.1:9223")` 也可以连，但MCP本身有超时问题
