@@ -54,6 +54,7 @@ hermes config check
 - 主模型: ollama-cloud/deepseek-v4-flash
 - 回退: ollama-cloud/glm-5.1
 - 自动回退脚本: model_fallback_monitor.py
+- 提供商模型存活性验证: see `references/provider-model-verification.md`
 
 ### Phase 6: 网关进程健康 — 多层看门狗
 - Layer 1: Windows Task Scheduler (独立于Hermes)
