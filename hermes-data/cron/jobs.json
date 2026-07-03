@@ -106,15 +106,15 @@
       "schedule_display": "every 2m",
       "repeat": {
         "times": null,
-        "completed": 11813
+        "completed": 11853
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-29T09:19:50.549500+08:00",
-      "next_run_at": "2026-07-03T22:02:18.204910+08:00",
-      "last_run_at": "2026-07-03T22:00:18.204910+08:00",
+      "next_run_at": "2026-07-04T00:02:22.740630+08:00",
+      "last_run_at": "2026-07-04T00:00:22.740630+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -144,15 +144,15 @@
       "schedule_display": "every 5m",
       "repeat": {
         "times": null,
-        "completed": 5773
+        "completed": 5796
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-02T09:50:40.645932+08:00",
-      "next_run_at": "2026-07-03T22:02:17.916568+08:00",
-      "last_run_at": "2026-07-03T21:57:17.916568+08:00",
+      "next_run_at": "2026-07-04T00:00:27.116592+08:00",
+      "last_run_at": "2026-07-03T23:55:27.116592+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -182,15 +182,15 @@
       "schedule_display": "every 5m",
       "repeat": {
         "times": null,
-        "completed": 5444
+        "completed": 5464
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-02T22:55:22.564303+08:00",
-      "next_run_at": "2026-07-03T22:05:18.319908+08:00",
-      "last_run_at": "2026-07-03T22:00:18.319908+08:00",
+      "next_run_at": "2026-07-04T00:02:27.406851+08:00",
+      "last_run_at": "2026-07-03T23:57:27.406851+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -273,15 +273,15 @@
       "schedule_display": "every 2m",
       "repeat": {
         "times": null,
-        "completed": 10118
+        "completed": 10154
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-03T11:38:26.059951+08:00",
-      "next_run_at": "2026-07-03T22:01:18.738860+08:00",
-      "last_run_at": "2026-07-03T21:59:18.738860+08:00",
+      "next_run_at": "2026-07-04T00:01:27.174310+08:00",
+      "last_run_at": "2026-07-03T23:56:27.888850+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -311,15 +311,15 @@
       "schedule_display": "every 5m",
       "repeat": {
         "times": null,
-        "completed": 5183
+        "completed": 5203
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-03T18:04:12.550017+08:00",
-      "next_run_at": "2026-07-03T22:01:22.169912+08:00",
-      "last_run_at": "2026-07-03T21:56:22.169912+08:00",
+      "next_run_at": "2026-07-04T00:01:32.920448+08:00",
+      "last_run_at": "2026-07-03T23:56:32.920448+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -439,15 +439,15 @@
       "schedule_display": "*/2 * * * *",
       "repeat": {
         "times": null,
-        "completed": 8950
+        "completed": 9010
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-13T19:05:53.539204+08:00",
-      "next_run_at": "2026-07-03T22:02:00+08:00",
-      "last_run_at": "2026-07-03T22:00:18.817709+08:00",
+      "next_run_at": "2026-07-04T00:02:00+08:00",
+      "last_run_at": "2026-07-04T00:00:23.476636+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -485,15 +485,15 @@
       "schedule_display": "every 3m",
       "repeat": {
         "times": null,
-        "completed": 4503
+        "completed": 4533
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-13T23:16:23.897064+08:00",
-      "next_run_at": "2026-07-03T22:02:18.070372+08:00",
-      "last_run_at": "2026-07-03T21:59:18.070372+08:00",
+      "next_run_at": "2026-07-04T00:01:27.396129+08:00",
+      "last_run_at": "2026-07-03T23:58:27.396129+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -530,15 +530,15 @@
       "schedule_display": "*/1 * * * *",
       "repeat": {
         "times": null,
-        "completed": 17058
+        "completed": 17178
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-15T16:46:49.518525+08:00",
-      "next_run_at": "2026-07-03T22:01:00+08:00",
-      "last_run_at": "2026-07-03T22:00:17.961748+08:00",
+      "next_run_at": "2026-07-04T00:01:00+08:00",
+      "last_run_at": "2026-07-04T00:00:22.515574+08:00",
       "last_status": "error",
       "last_error": "Script not found: C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\feishu_poll_daemon.py --once",
       "last_delivery_error": null,
@@ -575,15 +575,15 @@
       "schedule_display": "every 2m",
       "repeat": {
         "times": null,
-        "completed": 5622
+        "completed": 5662
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-15T22:53:28.139087+08:00",
-      "next_run_at": "2026-07-03T22:02:21.059196+08:00",
-      "last_run_at": "2026-07-03T22:00:21.059196+08:00",
+      "next_run_at": "2026-07-04T00:02:25.604439+08:00",
+      "last_run_at": "2026-07-04T00:00:25.604439+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -618,17 +618,17 @@
       "schedule_display": "0 */2 * * *",
       "repeat": {
         "times": null,
-        "completed": 134
+        "completed": 135
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-16T10:38:19.627289+08:00",
-      "next_run_at": "2026-07-04T00:00:00+08:00",
-      "last_run_at": "2026-07-03T20:02:21.432739+08:00",
-      "last_status": "error",
-      "last_error": "Script timed out after 120s: C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\sync_to_github.py",
+      "next_run_at": "2026-07-04T02:00:00+08:00",
+      "last_run_at": "2026-07-03T22:02:04.542755+08:00",
+      "last_status": "ok",
+      "last_error": null,
       "last_delivery_error": null,
       "deliver": "local",
       "origin": {
@@ -730,5 +730,5 @@
       "profile": null
     }
   ],
-  "updated_at": "2026-07-03T22:00:21.060206+08:00"
+  "updated_at": "2026-07-04T00:00:25.605470+08:00"
 }
