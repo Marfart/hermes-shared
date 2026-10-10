@@ -1,9 +1,9 @@
 {
-  "last_report_path": "C:\\Users\\Admin\\AppData\\Local\\hermes\\logs\\curator\\20260702-083234",
-  "last_run_at": "2026-07-02T08:32:34.666646+00:00",
-  "last_run_duration_seconds": 43.174174,
-  "last_run_summary": "auto: no changes; llm: API call failed after 3 retries: HTTP 404: No endpoints found for owl-alpha.",
-  "last_run_summary_shown_at": null,
+  "last_report_path": "C:\\Users\\Admin\\AppData\\Local\\hermes\\logs\\curator\\20260710-091407",
+  "last_run_at": "2026-07-10T09:14:07.571664+00:00",
+  "last_run_duration_seconds": 74.684545,
+  "last_run_summary": "auto: 10 marked stale; llm: API call failed after 3 retries: Connection error.",
+  "last_run_summary_shown_at": "2026-07-10T09:14:07.571664+00:00",
   "paused": false,
-  "run_count": 5
+  "run_count": 6
 }

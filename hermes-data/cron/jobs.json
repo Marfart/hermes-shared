@@ -2,8 +2,8 @@
   "jobs": [
     {
       "id": "d9cdda215253",
-      "name": "\u6bcf\u65e5\u81ea\u66f4\u65b0",
-      "prompt": "\u68c0\u67e5Hermes Agent\u65b0\u7248\u672c",
+      "name": "每日自更新",
+      "prompt": "检查Hermes Agent新版本",
       "skills": [],
       "skill": null,
       "model": null,
@@ -20,15 +20,15 @@
       "schedule_display": "0 12 * * *",
       "repeat": {
         "times": null,
-        "completed": 33
+        "completed": 38
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-27T09:32:53.780748+08:00",
-      "next_run_at": "2026-07-06T12:00:00+08:00",
-      "last_run_at": "2026-07-05T12:00:30.447113+08:00",
+      "next_run_at": "2026-10-11T12:00:00+08:00",
+      "last_run_at": "2026-10-10T15:41:35.101448+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -41,12 +41,20 @@
       },
       "enabled_toolsets": null,
       "workdir": null,
-      "profile": null
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-07-13T12:00:00+08:00",
+        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
+        "lateness_seconds": 7702886.6,
+        "kind": "catch_up"
+      },
+      "fire_claim": null,
+      "failure_streak": 0
     },
     {
       "id": "01837ee19638",
-      "name": "\u6bcf\u65e5\u8d22\u7ecf\u7b80\u62a5+\u57fa\u91d1\u63a8\u8350+\u8d22\u7ecf\u95ee\u7b54",
-      "prompt": "\u751f\u6210\u4eca\u65e5\u5c0f\u9a6c\u8d22\u7ecf\u65e5\u62a5PDF\uff0c\u6d41\u7a0b\uff1a\n\n1. \u7528 web_search \u641c\u7d22\u4eca\u65e5A\u80a1\u5e02\u573a\u5927\u76d8\u6570\u636e\uff08\u4e0a\u8bc1\u6307\u6570\u3001\u6df1\u8bc1\u6210\u6307\u3001\u521b\u4e1a\u677f\u6307\u7684\u6da8\u8dcc\u5e45\uff09\n2. \u641c\u7d22\u4eca\u65e5\u8d22\u7ecf\u70ed\u70b9\u65b0\u95fb\uff08\u677f\u5757\u6da8\u8dcc\u3001\u653f\u7b56\u6d88\u606f\u3001\u91cd\u8981\u4e8b\u4ef6\uff09\n3. \u641c\u7d22\u7f8e\u80a1/\u6e2f\u80a1/\u539f\u6cb9/\u5916\u6c47\u6700\u65b0\u884c\u60c5\n4. \u641c\u7d22\u57fa\u91d1\u63a8\u8350\u4fe1\u606f\uff08\u70ed\u95e8\u677f\u5757\u57fa\u91d1\u3001\u8fd1\u671f\u8868\u73b0\u597d\u7684\u57fa\u91d1\uff09\n5. \u7528\u4ee5\u4e0a\u6570\u636e\uff0c\u4ee5 fpdf \u751f\u6210\u4e00\u4efd6-8\u9875\u7684PDF\u8d22\u7ecf\u65e5\u62a5\uff0c\u4fdd\u5b58\u5230\u684c\u9762 C:\\Users\\Admin\\Desktop\\XiaoMa_Financial_Daily_20260624.pdf\n\nPDF\u683c\u5f0f\u8981\u6c42\uff1a\n- \u5c01\u9762\uff1aXiaoMa Financial Daily + \u65e5\u671f + Issue\u7f16\u53f7\n- \u7b2c1\u9875\uff1a\u5168\u7403\u5e02\u573a\u6982\u89c8\uff08A\u80a1+\u7f8e\u80a1+\u6e2f\u80a1+\u539f\u6cb9+\u5916\u6c47\uff09\n- \u7b2c2\u9875\uff1a\u70ed\u70b9\u8981\u95fb+\u677f\u5757\u5206\u6790\n- \u7b2c3\u9875\uff1a\u7b56\u7565\u5206\u6790+\u5e02\u573a\u7814\u5224\n- \u7b2c4\u9875\uff1a\u57fa\u91d1\u63a8\u8350\uff083-5\u652f\uff0c\u542b\u5206\u6790\u903b\u8f91\uff09\n- \u7b2c5-6\u9875\uff1a\u6295\u8d44\u8bfe\u5802\uff085\u9053\u8d22\u7ecf\u9898+\u8be6\u7ec6\u89e3\u7b54\uff09\n- \u6700\u540e\u4e00\u9875\uff1a\u4eca\u65e5\u603b\u7ed3\n\n\u98ce\u683c\uff1a\u4e13\u4e1a\u4f46\u4e0d\u67af\u71e5\uff0c\u6709\u5206\u6790\u6709\u5224\u65ad\u6709\u5efa\u8bae\uff0c\u4e0d\u8981\u5355\u7eaf\u7f57\u5217\u6570\u636e\u3002\u4e2d\u6587\u8f93\u51fa\u3002",
+      "name": "每日财经简报+基金推荐+财经问答",
+      "prompt": "生成今日小马财经日报PDF，流程：\n\n1. 用 web_search 搜索今日A股市场大盘数据（上证指数、深证成指、创业板指的涨跌幅）\n2. 搜索今日财经热点新闻（板块涨跌、政策消息、重要事件）\n3. 搜索美股/港股/原油/外汇最新行情\n4. 搜索基金推荐信息（热门板块基金、近期表现好的基金）\n5. 用以上数据，以 fpdf 生成一份6-8页的PDF财经日报，保存到桌面 C:\\Users\\Admin\\Desktop\\XiaoMa_Financial_Daily_20260624.pdf\n\nPDF格式要求：\n- 封面：XiaoMa Financial Daily + 日期 + Issue编号\n- 第1页：全球市场概览（A股+美股+港股+原油+外汇）\n- 第2页：热点要闻+板块分析\n- 第3页：策略分析+市场研判\n- 第4页：基金推荐（3-5支，含分析逻辑）\n- 第5-6页：投资课堂（5道财经题+详细解答）\n- 最后一页：今日总结\n\n风格：专业但不枯燥，有分析有判断有建议，不要单纯罗列数据。中文输出。",
       "skills": [],
       "skill": null,
       "model": "deepseek-v4-flash",
@@ -63,15 +71,15 @@
       "schedule_display": "30 8 * * 1-5",
       "repeat": {
         "times": null,
-        "completed": 26
+        "completed": 32
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-28T12:26:06.717897+08:00",
-      "next_run_at": "2026-07-06T08:30:00+08:00",
-      "last_run_at": "2026-07-03T08:37:01.235785+08:00",
+      "next_run_at": "2026-10-12T08:30:00+08:00",
+      "last_run_at": "2026-07-13T08:33:56.099481+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -84,11 +92,21 @@
       },
       "enabled_toolsets": null,
       "workdir": null,
-      "profile": null
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-07-14T08:30:00+08:00",
+        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
+        "lateness_seconds": 7629086.6,
+        "kind": "catch_up"
+      },
+      "fire_claim": {
+        "at": "2026-10-10T15:41:28.049069+08:00",
+        "by": "PS2022MIXSNJQO:6820:8253dddbae9c4a04a111273f4dc40089"
+      }
     },
     {
       "id": "6882df9f6b5c",
-      "name": "\u7535\u8111\u5c0f\u536b\u58eb",
+      "name": "电脑小卫士",
       "prompt": "",
       "skills": [],
       "skill": null,
@@ -106,15 +124,15 @@
       "schedule_display": "every 2m",
       "repeat": {
         "times": null,
-        "completed": 12986
+        "completed": 13912
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-29T09:19:50.549500+08:00",
-      "next_run_at": "2026-07-06T08:00:31.320113+08:00",
-      "last_run_at": "2026-07-06T07:58:31.320113+08:00",
+      "next_run_at": "2026-10-10T15:43:27.637082+08:00",
+      "last_run_at": "2026-07-13T10:42:22.421822+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -122,12 +140,22 @@
       "origin": null,
       "enabled_toolsets": null,
       "workdir": null,
-      "profile": null
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-07-13T10:44:22.421822+08:00",
+        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
+        "lateness_seconds": 7707424.1,
+        "kind": "catch_up"
+      },
+      "fire_claim": {
+        "at": "2026-10-10T15:41:33.724395+08:00",
+        "by": "PS2022MIXSNJQO:6820:fc8755f607ee437d9bf5e5f8c184e2cf"
+      }
     },
     {
       "id": "ce10fb0eacee",
-      "name": "buyer-development \u6587\u4ef6\u770b\u95e8\u72d7",
-      "prompt": "Buyer development file watcher \u2014 silent watchdog that reports changes.",
+      "name": "buyer-development 文件看门狗",
+      "prompt": "Buyer development file watcher — silent watchdog that reports changes.",
       "skills": [],
       "skill": null,
       "model": null,
@@ -144,15 +172,15 @@
       "schedule_display": "every 5m",
       "repeat": {
         "times": null,
-        "completed": 6449
+        "completed": 6942
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-02T09:50:40.645932+08:00",
-      "next_run_at": "2026-07-06T08:05:31.478906+08:00",
-      "last_run_at": "2026-07-06T08:00:31.478906+08:00",
+      "next_run_at": "2026-10-10T15:46:27.674649+08:00",
+      "last_run_at": "2026-07-13T10:42:26.943731+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -160,12 +188,22 @@
       "origin": null,
       "enabled_toolsets": null,
       "workdir": null,
-      "profile": null
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-07-13T10:47:26.943731+08:00",
+        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
+        "lateness_seconds": 7707239.6,
+        "kind": "catch_up"
+      },
+      "fire_claim": {
+        "at": "2026-10-10T15:41:34.757293+08:00",
+        "by": "PS2022MIXSNJQO:6820:bddaf45066cf4383beb6aa8fc8a02558"
+      }
     },
     {
       "id": "0d232901ed33",
-      "name": "\u5b9e\u65f6\u540c\u6b65\u5b88\u62a4\u68c0\u67e5",
-      "prompt": "\u68c0\u67e5 hermes_live_sync \u5b88\u62a4\u8fdb\u7a0b\u662f\u5426\u6d3b\u7740\uff0c\u4e0d\u5728\u5c31\u91cd\u542f",
+      "name": "实时同步守护检查",
+      "prompt": "检查 hermes_live_sync 守护进程是否活着，不在就重启",
       "skills": [],
       "skill": null,
       "model": null,
@@ -182,15 +220,15 @@
       "schedule_display": "every 5m",
       "repeat": {
         "times": null,
-        "completed": 6037
+        "completed": 6507
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-02T22:55:22.564303+08:00",
-      "next_run_at": "2026-07-06T08:03:31.478629+08:00",
-      "last_run_at": "2026-07-06T07:58:31.478629+08:00",
+      "next_run_at": "2026-10-10T15:46:27.715277+08:00",
+      "last_run_at": "2026-07-13T10:44:00.672042+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -205,12 +243,22 @@
         "terminal"
       ],
       "workdir": null,
-      "profile": null
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-07-13T10:49:00.672042+08:00",
+        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
+        "lateness_seconds": 7707145.9,
+        "kind": "catch_up"
+      },
+      "fire_claim": {
+        "at": "2026-10-10T15:41:34.286813+08:00",
+        "by": "PS2022MIXSNJQO:6820:7f538b774a33408c8c22710e0f503dc4"
+      }
     },
     {
       "id": "366f34e9bf5e",
-      "name": "Wiki \u5b9a\u671f Lint \u7ef4\u62a4",
-      "prompt": "Wiki Lint\u68c0\u67e5",
+      "name": "Wiki 定期 Lint 维护",
+      "prompt": "Wiki Lint检查",
       "skills": [],
       "skill": null,
       "model": null,
@@ -227,15 +275,15 @@
       "schedule_display": "0 6 * * 1",
       "repeat": {
         "times": null,
-        "completed": 2
+        "completed": 3
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-02T23:19:19.250122+08:00",
-      "next_run_at": "2026-07-13T06:00:00+08:00",
-      "last_run_at": "2026-07-06T06:00:42.045292+08:00",
+      "next_run_at": "2026-10-12T06:00:00+08:00",
+      "last_run_at": "2026-10-10T15:41:34.197807+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -251,11 +299,19 @@
         "file"
       ],
       "workdir": null,
-      "profile": null
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-07-20T06:00:00+08:00",
+        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
+        "lateness_seconds": 7119686.6,
+        "kind": "catch_up"
+      },
+      "fire_claim": null,
+      "failure_streak": 0
     },
     {
       "id": "af5f3c06d347",
-      "name": "\ud83d\udd0d \u667a\u80fd\u770b\u95e8\u72d7 v10",
+      "name": "🔍 智能看门狗 v10",
       "prompt": "",
       "skills": [],
       "skill": null,
@@ -273,15 +329,15 @@
       "schedule_display": "every 2m",
       "repeat": {
         "times": null,
-        "completed": 11184
+        "completed": 12034
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-03T11:38:26.059951+08:00",
-      "next_run_at": "2026-07-06T08:00:32.082221+08:00",
-      "last_run_at": "2026-07-06T07:58:32.082221+08:00",
+      "next_run_at": "2026-10-10T15:43:27.833423+08:00",
+      "last_run_at": "2026-07-13T10:42:21.484885+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -289,12 +345,22 @@
       "origin": null,
       "enabled_toolsets": null,
       "workdir": null,
-      "profile": null
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-07-13T10:44:21.484885+08:00",
+        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
+        "lateness_seconds": 7707425.1,
+        "kind": "catch_up"
+      },
+      "fire_claim": {
+        "at": "2026-10-10T15:41:28.223938+08:00",
+        "by": "PS2022MIXSNJQO:6820:ad3c5d853d6e4fe98213e452c5beaf99"
+      }
     },
     {
       "id": "b78688dcb23f",
-      "name": "\u8fdb\u7a0b\u7a7a\u95f2\u6740\u624b (idle-killer)",
-      "prompt": "\u8fd0\u884c\u8fdb\u7a0b\u7a7a\u95f2\u6740\u624b\u811a\u672c\uff0c\u6740\u63892\u5c0f\u65f6\u5185\u65e0\u4efb\u4f55\u6d3b\u52a8\u7684\u8fdb\u7a0b",
+      "name": "进程空闲杀手 (idle-killer)",
+      "prompt": "运行进程空闲杀手脚本，杀掉2小时内无任何活动的进程",
       "skills": [],
       "skill": null,
       "model": null,
@@ -311,15 +377,15 @@
       "schedule_display": "every 5m",
       "repeat": {
         "times": null,
-        "completed": 5765
+        "completed": 6225
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-03T18:04:12.550017+08:00",
-      "next_run_at": "2026-07-06T08:04:38.550105+08:00",
-      "last_run_at": "2026-07-06T07:59:38.550105+08:00",
+      "next_run_at": "2026-10-10T15:46:27.902823+08:00",
+      "last_run_at": "2026-07-13T10:44:03.940626+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -327,12 +393,22 @@
       "origin": null,
       "enabled_toolsets": null,
       "workdir": null,
-      "profile": null
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-07-13T10:49:03.940626+08:00",
+        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
+        "lateness_seconds": 7707142.6,
+        "kind": "catch_up"
+      },
+      "fire_claim": {
+        "at": "2026-10-10T15:41:38.840843+08:00",
+        "by": "PS2022MIXSNJQO:6820:4c1ed6bf40544c8babb6201dd34e8290"
+      }
     },
     {
       "id": "1927098909e2",
-      "name": "\ud83c\udf05 \u5c0f\u9a6c\u65e5\u62a5\uff08\u65e9\uff09",
-      "prompt": "\u73b0\u57286:25\u4e86\uff01\u52a0\u8f7d xiaoma-daily-briefing \u6280\u80fd\uff0c\u6309\u4ee5\u4e0b\u65f6\u95f4\u8282\u594f\u6267\u884c\uff1a\n\n1. 6:25-6:30 \u2014 \u5feb\u901f\u626b\u63cf\u5168\u90e87\u4e2a\u4fe1\u606f\u6e90\uff0c\u6536\u96c6\u7d20\u6750\n2. 6:30-6:55 \u2014 \u505a\u7b14\u8bb0\u3001\u6df1\u5165\u601d\u8003\u3001\u8de8\u9886\u57df\u8fde\u63a5\u3001\u5224\u65ad\u975e\u5171\u8bc6\u4fe1\u53f7\n3. 6:55-7:00 \u2014 \u6309\u683c\u5f0f\u5199\u51fa\u5b8c\u6574\u7b80\u62a5\n4. 7:00\u51c6\u65f6\u901a\u8fc7deliver\u53d1\u9001\u7ed9Kali\n\n\u4e00\u5206\u949f\u90fd\u4e0d\u8981\u63d0\u524d\u53d1\uff017:00\u518d\u53d1\u9001\u3002",
+      "name": "🌅 小马日报（早）",
+      "prompt": "现在6:25了！加载 xiaoma-daily-briefing 技能，按以下时间节奏执行：\n\n1. 6:25-6:30 — 快速扫描全部7个信息源，收集素材\n2. 6:30-6:55 — 做笔记、深入思考、跨领域连接、判断非共识信号\n3. 6:55-7:00 — 按格式写出完整简报\n4. 7:00准时通过deliver发送给Kali\n\n一分钟都不要提前发！7:00再发送。",
       "skills": [
         "xiaoma-daily-briefing"
       ],
@@ -376,8 +452,8 @@
     },
     {
       "id": "d1959db67879",
-      "name": "\ud83c\udf06 \u5c0f\u9a6c\u65e5\u62a5\uff08\u665a\uff09",
-      "prompt": "\u73b0\u572818:25\u4e86\uff01\u52a0\u8f7d xiaoma-daily-briefing \u6280\u80fd\uff0c\u6309\u4ee5\u4e0b\u65f6\u95f4\u8282\u594f\u6267\u884c\uff1a\n\n1. 18:25-18:30 \u2014 \u5feb\u901f\u626b\u63cf\u5168\u90e87\u4e2a\u4fe1\u606f\u6e90\uff0c\u6536\u96c6\u7d20\u6750\n2. 18:30-18:55 \u2014 \u505a\u7b14\u8bb0\u3001\u6df1\u5165\u601d\u8003\u3001\u8de8\u9886\u57df\u8fde\u63a5\u3001\u5224\u65ad\u975e\u5171\u8bc6\u4fe1\u53f7\n3. 18:55-19:00 \u2014 \u6309\u683c\u5f0f\u5199\u51fa\u5b8c\u6574\u7b80\u62a5\n4. 19:00\u51c6\u65f6\u901a\u8fc7deliver\u53d1\u9001\u7ed9Kali\n\n\u4e00\u5206\u949f\u90fd\u4e0d\u8981\u63d0\u524d\u53d1\uff0119:00\u518d\u53d1\u9001\u3002",
+      "name": "🌆 小马日报（晚）",
+      "prompt": "现在18:25了！加载 xiaoma-daily-briefing 技能，按以下时间节奏执行：\n\n1. 18:25-18:30 — 快速扫描全部7个信息源，收集素材\n2. 18:30-18:55 — 做笔记、深入思考、跨领域连接、判断非共识信号\n3. 18:55-19:00 — 按格式写出完整简报\n4. 19:00准时通过deliver发送给Kali\n\n一分钟都不要提前发！19:00再发送。",
       "skills": [
         "xiaoma-daily-briefing"
       ],
@@ -421,7 +497,7 @@
     },
     {
       "id": "7c35e3b152bf",
-      "name": "\ud83d\udc34 \u5c0f\u9a6c\u8f6e\u8be2\u5b66\u5f1f\u6d88\u606f(\u667a\u80fd\u56de\u590d)",
+      "name": "🐴 小马轮询学弟消息(智能回复)",
       "prompt": "",
       "skills": [],
       "skill": null,
@@ -439,15 +515,15 @@
       "schedule_display": "*/2 * * * *",
       "repeat": {
         "times": null,
-        "completed": 10690
+        "completed": 12043
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-13T19:05:53.539204+08:00",
-      "next_run_at": "2026-07-06T08:02:00+08:00",
-      "last_run_at": "2026-07-06T08:00:32.070550+08:00",
+      "next_run_at": "2026-10-10T15:42:00+08:00",
+      "last_run_at": "2026-07-13T10:44:00.229648+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -463,11 +539,21 @@
         "web"
       ],
       "workdir": null,
-      "profile": null
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-07-13T10:46:00+08:00",
+        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
+        "lateness_seconds": 7707326.6,
+        "kind": "catch_up"
+      },
+      "fire_claim": {
+        "at": "2026-10-10T15:41:35.427444+08:00",
+        "by": "PS2022MIXSNJQO:6820:c04fd431166741ae9796c0c45f54f07f"
+      }
     },
     {
       "id": "de31a0c4a9b2",
-      "name": "\ud83d\udd0c \u8fde\u63a5\u6c60\u8d85\u65f6\u68c0\u6d4b\u5668",
+      "name": "🔌 连接池超时检测器",
       "prompt": "",
       "skills": [],
       "skill": null,
@@ -485,15 +571,15 @@
       "schedule_display": "every 3m",
       "repeat": {
         "times": null,
-        "completed": 5385
+        "completed": 6076
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-13T23:16:23.897064+08:00",
-      "next_run_at": "2026-07-06T08:02:31.377894+08:00",
-      "last_run_at": "2026-07-06T07:59:31.377894+08:00",
+      "next_run_at": "2026-10-10T15:44:28.254785+08:00",
+      "last_run_at": "2026-07-13T10:44:00.292020+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -508,12 +594,22 @@
         "terminal"
       ],
       "workdir": null,
-      "profile": null
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-07-13T10:47:00.292020+08:00",
+        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
+        "lateness_seconds": 7707266.3,
+        "kind": "catch_up"
+      },
+      "fire_claim": {
+        "at": "2026-10-10T15:41:34.858180+08:00",
+        "by": "PS2022MIXSNJQO:6820:1bdaf96fd4bd4de3942b7f8f7bff25a2"
+      }
     },
     {
       "id": "a32bc1af86ea",
-      "name": "\ud83d\udd04 \u98de\u4e66\u7fa4\u6d88\u606f\u8f6e\u8be2(10s)",
-      "prompt": "\u98de\u4e66\u7fa4\u6d88\u606f\u8f6e\u8be2\u515c\u5e95\uff08cron\u6bcf1\u5206\u949f\u8dd1\u4e00\u6b21 --once \u6a21\u5f0f\uff09",
+      "name": "🔄 飞书群消息轮询(10s)",
+      "prompt": "飞书群消息轮询兜底（cron每1分钟跑一次 --once 模式）",
       "skills": [],
       "skill": null,
       "model": "deepseek-v4-flash",
@@ -530,15 +626,15 @@
       "schedule_display": "*/1 * * * *",
       "repeat": {
         "times": null,
-        "completed": 20527
+        "completed": 23200
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-15T16:46:49.518525+08:00",
-      "next_run_at": "2026-07-06T08:01:00+08:00",
-      "last_run_at": "2026-07-06T08:00:31.248874+08:00",
+      "next_run_at": "2026-10-10T15:42:00+08:00",
+      "last_run_at": "2026-07-13T10:43:38.609245+08:00",
       "last_status": "error",
       "last_error": "Script not found: C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\feishu_poll_daemon.py --once",
       "last_delivery_error": null,
@@ -546,18 +642,28 @@
       "origin": {
         "platform": "feishu",
         "chat_id": "oc_1a238a6016460ec51c602048a88aca70",
-        "chat_name": "\u9a6c\u4e0a\u6210\u529f",
+        "chat_name": "马上成功",
         "thread_id": null
       },
       "enabled_toolsets": [
         "terminal"
       ],
       "workdir": null,
-      "profile": null
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-07-13T10:44:00+08:00",
+        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
+        "lateness_seconds": 7707446.6,
+        "kind": "catch_up"
+      },
+      "fire_claim": {
+        "at": "2026-10-10T15:41:33.599886+08:00",
+        "by": "PS2022MIXSNJQO:6820:8fc2add2a1e9435f9d822ee2ce78a479"
+      }
     },
     {
       "id": "7cedf9c18724",
-      "name": "\u5854\u5947\u514b\u9a6c\u5171\u4eab\u4ed3\u5e93\u8f6e\u8be2",
+      "name": "塔奇克马共享仓库轮询",
       "prompt": "",
       "skills": [],
       "skill": null,
@@ -575,32 +681,42 @@
       "schedule_display": "every 2m",
       "repeat": {
         "times": null,
-        "completed": 6786
+        "completed": 7691
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-15T22:53:28.139087+08:00",
-      "next_run_at": "2026-07-06T08:02:33.645260+08:00",
-      "last_run_at": "2026-07-06T08:00:33.645260+08:00",
-      "last_status": "ok",
-      "last_error": null,
+      "next_run_at": "2026-10-10T15:43:28.359633+08:00",
+      "last_run_at": "2026-07-13T10:44:05.207022+08:00",
+      "last_status": "error",
+      "last_error": "Script exited with code 4294967295",
       "last_delivery_error": null,
       "deliver": "local",
       "origin": {
         "platform": "feishu",
         "chat_id": "oc_1a238a6016460ec51c602048a88aca70",
-        "chat_name": "\u9a6c\u4e0a\u6210\u529f",
+        "chat_name": "马上成功",
         "thread_id": null
       },
       "enabled_toolsets": null,
       "workdir": null,
-      "profile": null
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-07-13T10:46:05.207022+08:00",
+        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
+        "lateness_seconds": 7707321.4,
+        "kind": "catch_up"
+      },
+      "fire_claim": {
+        "at": "2026-10-10T15:41:28.917677+08:00",
+        "by": "PS2022MIXSNJQO:6820:6fe9783fe4254f45bf089ad8d68597c3"
+      }
     },
     {
       "id": "f241789728fd",
-      "name": "\ud83d\udc34 hermes-shared \u81ea\u52a8\u540c\u6b65",
+      "name": "🐴 hermes-shared 自动同步",
       "prompt": "",
       "skills": [],
       "skill": null,
@@ -618,60 +734,17 @@
       "schedule_display": "0 */2 * * *",
       "repeat": {
         "times": null,
-        "completed": 162
+        "completed": 183
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-16T10:38:19.627289+08:00",
-      "next_run_at": "2026-07-06T10:00:00+08:00",
-      "last_run_at": "2026-07-06T06:02:25.115388+08:00",
-      "last_status": "ok",
-      "last_error": null,
-      "last_delivery_error": null,
-      "deliver": "local",
-      "origin": {
-        "platform": "telegram",
-        "chat_id": "8314311281",
-        "chat_name": "Kali",
-        "thread_id": null
-      },
-      "enabled_toolsets": null,
-      "workdir": null,
-      "profile": null
-    },
-    {
-      "id": "59f5254858ef",
-      "name": "\ud83d\udd04 GitHub\u5171\u4eab\u4ed3\u5e93\u81ea\u52a8\u540c\u6b65",
-      "prompt": "",
-      "skills": [],
-      "skill": null,
-      "model": null,
-      "provider": null,
-      "base_url": null,
-      "script": "github_shared_sync.py",
-      "no_agent": true,
-      "context_from": null,
-      "schedule": {
-        "kind": "once",
-        "run_at": "2026-06-16T11:43:37.275191+08:00",
-        "display": "once in 5m"
-      },
-      "schedule_display": "once in 5m",
-      "repeat": {
-        "times": 99999,
-        "completed": 1
-      },
-      "enabled": false,
-      "state": "completed",
-      "paused_at": null,
-      "paused_reason": null,
-      "created_at": "2026-06-16T11:38:31.617119+08:00",
-      "next_run_at": null,
-      "last_run_at": "2026-06-16T11:46:19.515707+08:00",
+      "next_run_at": "2026-10-10T16:00:00+08:00",
+      "last_run_at": "2026-07-13T10:02:51.802770+08:00",
       "last_status": "error",
-      "last_error": "Script timed out after 120s: C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\github_shared_sync.py",
+      "last_error": "Script timed out after 120s: C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\sync_to_github.py",
       "last_delivery_error": null,
       "deliver": "local",
       "origin": {
@@ -682,12 +755,22 @@
       },
       "enabled_toolsets": null,
       "workdir": null,
-      "profile": null
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-07-13T12:00:00+08:00",
+        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
+        "lateness_seconds": 7702886.6,
+        "kind": "catch_up"
+      },
+      "fire_claim": {
+        "at": "2026-10-10T15:41:29.036846+08:00",
+        "by": "PS2022MIXSNJQO:6820:d046e6fafd874ac29a34fce10f2f0ee5"
+      }
     },
     {
       "id": "c83927322a86",
-      "name": "\ud83d\udce7 \u6bcf\u65e5\u62df\u4eba\u90ae\u4ef6\u53d1\u9001v4\uff08\u968f\u673a\u65f6\u95f4\uff09",
-      "prompt": "\u6267\u884cQQ\u90ae\u7bb1\u62df\u4eba\u90ae\u4ef6\u53d1\u9001\u4efb\u52a1\uff1a\n\n1. \u5148\u68c0\u67e5\u4eca\u5929\u7684\u53d1\u9001\u72b6\u6001\u6587\u4ef6\uff1aC:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\\u811a\u672c\u7f13\u5b58\\\u4ea7\u54c1\u63a8\u5e7f\\.daily_state_v4.json\n2. \u5982\u679c\u4eca\u5929\u5df2\u53d1\u6ee150\u5c01\uff0c\u76f4\u63a5\u6c47\u62a5\"\u4eca\u65e5\u5df2\u53d1\u6ee150\u5c01\"\u5e76\u9000\u51fa\n3. \u5982\u679c\u4eca\u5929\u8fd8\u6ca1\u53d1\u6ee1\uff0c\u8fd0\u884c\u811a\u672c\uff1apython \"C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\\u811a\u672c\u7f13\u5b58\\\u4ea7\u54c1\u63a8\u5e7f\\daily_email_v4.py\"\n4. \u811a\u672c\u4f1a\u81ea\u52a8\u53d1\u9001\u5269\u4f59\u914d\u989d\uff08\u6700\u591a50\u5c01/\u5929\uff09\uff0c\u968f\u673a\u5ef6\u8fdf60-180\u79d2\u95f4\u9694\uff0c\u81ea\u52a8\u53bb\u91cd\n5. \u5b8c\u6210\u540e\u6c47\u62a5\uff1a\u672c\u6279\u6210\u529f/\u5931\u8d25\u6570\u3001\u4eca\u65e5\u7d2f\u8ba1\u6570\u3001\u5386\u53f2\u7d2f\u8ba1\u6570\n\n\u6ce8\u610f\uff1a\u7edd\u5bf9\u4e0d\u80fd\u91cd\u590d\u53d1\u9001\uff01\u53d1\u4e00\u6761\u4fdd\u5b58\u4e00\u6761\u3002",
+      "name": "📧 每日拟人邮件发送v4（随机时间）",
+      "prompt": "执行QQ邮箱拟人邮件发送任务：\n\n1. 先检查今天的发送状态文件：C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\脚本缓存\\产品推广\\.daily_state_v4.json\n2. 如果今天已发满50封，直接汇报\"今日已发满50封\"并退出\n3. 如果今天还没发满，运行脚本：python \"C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\脚本缓存\\产品推广\\daily_email_v4.py\"\n4. 脚本会自动发送剩余配额（最多50封/天），随机延迟60-180秒间隔，自动去重\n5. 完成后汇报：本批成功/失败数、今日累计数、历史累计数\n\n注意：绝对不能重复发送！发一条保存一条。",
       "skills": [],
       "skill": null,
       "model": null,
@@ -704,15 +787,15 @@
       "schedule_display": "0 9 * * *",
       "repeat": {
         "times": null,
-        "completed": 12
+        "completed": 18
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-19T20:17:51.731658+08:00",
-      "next_run_at": "2026-07-06T09:00:00+08:00",
-      "last_run_at": "2026-07-05T09:02:37.545865+08:00",
+      "next_run_at": "2026-10-11T09:00:00+08:00",
+      "last_run_at": "2026-07-13T09:02:57.215744+08:00",
       "last_status": "error",
       "last_error": "Script timed out after 120s: C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\daily_email_v4.py",
       "last_delivery_error": null,
@@ -720,15 +803,25 @@
       "origin": {
         "platform": "feishu",
         "chat_id": "oc_1a238a6016460ec51c602048a88aca70",
-        "chat_name": "\u9a6c\u4e0a\u6210\u529f",
+        "chat_name": "马上成功",
         "thread_id": null
       },
       "enabled_toolsets": [
         "terminal"
       ],
       "workdir": null,
-      "profile": null
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-07-14T09:00:00+08:00",
+        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
+        "lateness_seconds": 7627286.6,
+        "kind": "catch_up"
+      },
+      "fire_claim": {
+        "at": "2026-10-10T15:41:29.153700+08:00",
+        "by": "PS2022MIXSNJQO:6820:bde0f7cb96da4192b18f70ac260f5b1b"
+      }
     }
   ],
-  "updated_at": "2026-07-06T08:00:33.647261+08:00"
+  "updated_at": "2026-10-10T15:41:38.847998+08:00"
 }
