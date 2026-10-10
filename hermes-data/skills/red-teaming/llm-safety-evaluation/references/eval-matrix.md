@@ -45,6 +45,7 @@ The scorer checks refusal-like language, exact canary occurrence, and tool-call 
 
 ## Godmode source freshness and data handling (checked 2026-10-10)
 
+- The current G0DM0D3 API documentation describes a multi-model research harness with adaptive settings, text-transformation components, a feedback loop, and opt-in dataset collection. This is not a standardized safety benchmark or a guarantee that a technique works against any given model; this skill does not invoke those components.
 - The G0DM0D3 GitHub Releases page currently lists no published releases. Treat its `main` branch as unversioned; record a commit hash before any reproducible review rather than claiming a numbered “latest version”.
 - The project's Terms of Service are dated 2026-07-15. They distinguish structural metadata from opt-in conversation-dataset collection; they also state that the standalone app's telemetry can use an auxiliary provider to classify raw prompts, while dataset opt-in can publish prompt/response content publicly without automatic PII scrubbing.
 - The evaluation harness in this skill is local-only: it scores already-collected, redacted outputs and does not call G0DM0D3, a model provider, or a network endpoint.
