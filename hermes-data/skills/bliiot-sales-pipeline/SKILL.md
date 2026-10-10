@@ -65,6 +65,8 @@ Selenium + WhatsApp Web，自动读Excel客户列表，批量发送个性化开�
 通过QQ邮箱SMTP发送产品推广邮件，替代WhatsApp（防封号）。
 - 详见 `references/email-marketing.md`
 - 支持HTML邮件、附件、追踪
+- Hermes自带MCP、插件、Cron和`--format stream-json`等编排能力，但不是完整的营销群发平台
+- 推荐分工：Hermes负责客户筛选、去重查询、个性化草稿和发送队列；现有`bliit_mailer.py`负责SMTP发送、限速、去重日志与结果记录
 
 ## 阶段 4: CRM 跟进
 
