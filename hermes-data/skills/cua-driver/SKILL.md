@@ -169,6 +169,10 @@ snapshots exactly what was asked for. Enumerate candidates via
 `list_windows` or read the `windows` array `launch_app` already
 returns.
 
+## Discover the exact existing target before typing
+
+When the user names an already-open app or chat, enumerate running apps and top-level windows, then snapshot the exact matching window before input. A running-app entry is not proof that a visible chat window exists; app catalogs can include processes with no open window. If no matching visible window is found, do not launch a substitute, choose a similar app, or type into another chat—report that the target was not found and ask the user to open or identify it. This prevents messages and attachments from going to the wrong conversation.
+
 ## Behavior matrix
 
 Two orthogonal axes shape what the agent can do.
