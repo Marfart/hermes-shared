@@ -790,3 +790,7 @@ Owl Alpha (openrouter/owl-alpha) retired ~late Jun 2026 — was OpenRouter's own
 Codex/ChatGPT GUI control on Windows: The CUA tool listed a running ChatGPT.exe but no visible ChatGPT window; focus_app returned “No on-screen window found for app 'ChatGPT'.” The PATH cua-driver 0.21.0 and installed C:/Users/Admin/AppData/Local/Programs/Cua/cua-driver/bin/cua-driver.exe v0.5.0 both reported daemon protocol incompatibility (daemon metadata request failed: Unknown method: metadata) when using CLI launch_app, so don't claim GUI launch or message delivery succeeded. User may explicitly authorize retrying a previously blocked GUI action; only report success after confirming the exact Codex/Kali chat and sent message.
 §
 富通CRM公海全量客户报表当前路径：C:\Users\Admin\hermes-shared\hermes-data\富通CRM_公海客户_全量报表.xlsx；主数据sheet“全部客户”，66,224条数据，含客户ID/客户编号/客户名称/联系人/邮箱/国家地区/业务类型/来源/创建时间/最后跟进/网站/最近活动等字段。Windows终端默认Python 3.14.7缺openpyxl；该机器Hermes虚拟环境解释器 C:\Users\Admin\AppData\Local\hermes\hermes-agent\venv\Scripts\python.exe 有openpyxl 3.1.5，可用于运行xlsx skill脚本。
+§
+@KaliFilm_bot 是Kali的独立看电影机器人，不是当前Hermes Telegram机器人。排查或恢复时不要把当前Hermes网关状态当作该机器人的状态。
+§
+Kali expects Telegram bot identities to be distinguished carefully. Before claiming a bot is hers/ours or restored, verify the exact bot and actual reply delivery; a connected gateway or “Sending response” log alone is not proof.

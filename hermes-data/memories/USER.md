@@ -130,3 +130,5 @@ Kali often says "怎么样了" / "继续" / "有进展吗" mid-task — she want
 QQ邮箱 kali_foever@qq.com SMTP授权码已配置成功（2026-06-18）。SMTP服务器 smtp.qq.com:465，发件人名称 "Kali | BLIIOT Technology"。授权码已保存在 .smtp_password 文件。
 §
 客户Ali今日问了三款产品：R10A、S475、R40B。Ali的需求趋势：从"4口以太网+SIM+GPS"逐步简化为"RS485输入+4G上传+GPS定位+小尺寸"。S475是最匹配的但觉得贵，R10A功能满足价格也便宜。Ali的沟通风格：不喜欢啰嗦，直接给结论、给型号就行，不要列一堆表格。
+§
+Kali希望其明确提出的规范、流程和格式要求在所有相关任务中完整、一致地遵守，不要擅自缩小适用范围；任务专属规范在相关任务中适用，不应机械套用到无关任务。

@@ -48,6 +48,8 @@ Supporting assets: `scripts/gh-env.sh` + `scripts/git-credential-token.py`
   `gh pr view --comments` — decisions live in threads, not titles.
 - Sweep for duplicates before creating anything:
   `gh pr list --search` / `gh issue list --search`.
+- When exploring repositories for a user's use case, verify the repository identity, platform support, setup prerequisites, maintenance signals, license, and permission/security model before recommending it; match the recommendation to the user's actual OS and intended scope.
+- Label recommendations as candidates unless you actually installed and exercised them. Do not imply a project controls the user's bot or machine until its deployment and end-to-end behavior are verified.
 
 ## Verification
 
