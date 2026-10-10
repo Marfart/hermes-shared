@@ -71,7 +71,7 @@
       "schedule_display": "30 8 * * 1-5",
       "repeat": {
         "times": null,
-        "completed": 32
+        "completed": 33
       },
       "enabled": true,
       "state": "scheduled",
@@ -79,9 +79,9 @@
       "paused_reason": null,
       "created_at": "2026-05-28T12:26:06.717897+08:00",
       "next_run_at": "2026-10-12T08:30:00+08:00",
-      "last_run_at": "2026-07-13T08:33:56.099481+08:00",
-      "last_status": "ok",
-      "last_error": null,
+      "last_run_at": "2026-10-10T15:44:05.261992+08:00",
+      "last_status": "error",
+      "last_error": "RuntimeError: HTTP 410: deepseek-v4-flash:0731 was retired at 2026-09-25 00:00:00 -0700 PDT (ref: 6b232410-b1df-48db-9df9-18748ec4b67a)",
       "last_delivery_error": null,
       "deliver": "telegram",
       "origin": {
@@ -99,9 +99,11 @@
         "lateness_seconds": 7629086.6,
         "kind": "catch_up"
       },
-      "fire_claim": {
-        "at": "2026-10-10T15:41:28.049069+08:00",
-        "by": "PS2022MIXSNJQO:6820:8253dddbae9c4a04a111273f4dc40089"
+      "fire_claim": null,
+      "failure_streak": 1,
+      "last_failure": {
+        "at": "2026-10-10T15:44:05.261992+08:00",
+        "detail": "RuntimeError: HTTP 410: deepseek-v4-flash:0731 was retired at 2026-09-25 00:00:00 -0700 PDT (ref: 6b232410-b1df-48db-9df9-18748ec4b67a)"
       }
     },
     {
@@ -124,15 +126,15 @@
       "schedule_display": "every 2m",
       "repeat": {
         "times": null,
-        "completed": 13912
+        "completed": 13919
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-29T09:19:50.549500+08:00",
-      "next_run_at": "2026-10-10T15:43:27.637082+08:00",
-      "last_run_at": "2026-07-13T10:42:22.421822+08:00",
+      "next_run_at": "2026-10-10T16:02:47.434195+08:00",
+      "last_run_at": "2026-10-10T16:00:47.434195+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -142,15 +144,13 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-07-13T10:44:22.421822+08:00",
-        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
-        "lateness_seconds": 7707424.1,
-        "kind": "catch_up"
+        "scheduled_at": "2026-10-10T15:59:47.888261+08:00",
+        "dispatched_at": "2026-10-10T16:00:46.405196+08:00",
+        "lateness_seconds": 58.5,
+        "kind": "on_time"
       },
-      "fire_claim": {
-        "at": "2026-10-10T15:41:33.724395+08:00",
-        "by": "PS2022MIXSNJQO:6820:fc8755f607ee437d9bf5e5f8c184e2cf"
-      }
+      "fire_claim": null,
+      "failure_streak": 0
     },
     {
       "id": "ce10fb0eacee",
@@ -172,15 +172,15 @@
       "schedule_display": "every 5m",
       "repeat": {
         "times": null,
-        "completed": 6942
+        "completed": 6946
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-02T09:50:40.645932+08:00",
-      "next_run_at": "2026-10-10T15:46:27.674649+08:00",
-      "last_run_at": "2026-07-13T10:42:26.943731+08:00",
+      "next_run_at": "2026-10-10T16:04:47.525050+08:00",
+      "last_run_at": "2026-10-10T15:59:47.525050+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -190,15 +190,13 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-07-13T10:47:26.943731+08:00",
-        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
-        "lateness_seconds": 7707239.6,
-        "kind": "catch_up"
+        "scheduled_at": "2026-10-10T15:58:50.154363+08:00",
+        "dispatched_at": "2026-10-10T15:59:46.414933+08:00",
+        "lateness_seconds": 56.3,
+        "kind": "on_time"
       },
-      "fire_claim": {
-        "at": "2026-10-10T15:41:34.757293+08:00",
-        "by": "PS2022MIXSNJQO:6820:bddaf45066cf4383beb6aa8fc8a02558"
-      }
+      "fire_claim": null,
+      "failure_streak": 0
     },
     {
       "id": "0d232901ed33",
@@ -220,15 +218,15 @@
       "schedule_display": "every 5m",
       "repeat": {
         "times": null,
-        "completed": 6507
+        "completed": 6511
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-02T22:55:22.564303+08:00",
-      "next_run_at": "2026-10-10T15:46:27.715277+08:00",
-      "last_run_at": "2026-07-13T10:44:00.672042+08:00",
+      "next_run_at": "2026-10-10T16:04:47.873125+08:00",
+      "last_run_at": "2026-10-10T15:59:47.873125+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -245,15 +243,13 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-07-13T10:49:00.672042+08:00",
-        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
-        "lateness_seconds": 7707145.9,
-        "kind": "catch_up"
+        "scheduled_at": "2026-10-10T15:58:50.235314+08:00",
+        "dispatched_at": "2026-10-10T15:59:46.414933+08:00",
+        "lateness_seconds": 56.2,
+        "kind": "on_time"
       },
-      "fire_claim": {
-        "at": "2026-10-10T15:41:34.286813+08:00",
-        "by": "PS2022MIXSNJQO:6820:7f538b774a33408c8c22710e0f503dc4"
-      }
+      "fire_claim": null,
+      "failure_streak": 0
     },
     {
       "id": "366f34e9bf5e",
@@ -329,15 +325,15 @@
       "schedule_display": "every 2m",
       "repeat": {
         "times": null,
-        "completed": 12034
+        "completed": 12040
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-03T11:38:26.059951+08:00",
-      "next_run_at": "2026-10-10T15:43:27.833423+08:00",
-      "last_run_at": "2026-07-13T10:42:21.484885+08:00",
+      "next_run_at": "2026-10-10T16:02:46.713743+08:00",
+      "last_run_at": "2026-10-10T15:57:52.627749+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -347,15 +343,16 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-07-13T10:44:21.484885+08:00",
-        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
-        "lateness_seconds": 7707425.1,
-        "kind": "catch_up"
+        "scheduled_at": "2026-10-10T15:59:52.627749+08:00",
+        "dispatched_at": "2026-10-10T16:00:46.405196+08:00",
+        "lateness_seconds": 53.8,
+        "kind": "on_time"
       },
       "fire_claim": {
-        "at": "2026-10-10T15:41:28.223938+08:00",
-        "by": "PS2022MIXSNJQO:6820:ad3c5d853d6e4fe98213e452c5beaf99"
-      }
+        "at": "2026-10-10T16:00:46.870375+08:00",
+        "by": "PS2022MIXSNJQO:32040:642b125e1c8447f29360637916f06476"
+      },
+      "failure_streak": 0
     },
     {
       "id": "b78688dcb23f",
@@ -377,15 +374,15 @@
       "schedule_display": "every 5m",
       "repeat": {
         "times": null,
-        "completed": 6225
+        "completed": 6229
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-03T18:04:12.550017+08:00",
-      "next_run_at": "2026-10-10T15:46:27.902823+08:00",
-      "last_run_at": "2026-07-13T10:44:03.940626+08:00",
+      "next_run_at": "2026-10-10T16:04:48.362295+08:00",
+      "last_run_at": "2026-10-10T15:59:48.362295+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -395,15 +392,13 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-07-13T10:49:03.940626+08:00",
-        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
-        "lateness_seconds": 7707142.6,
-        "kind": "catch_up"
+        "scheduled_at": "2026-10-10T15:58:50.355941+08:00",
+        "dispatched_at": "2026-10-10T15:59:46.414933+08:00",
+        "lateness_seconds": 56.1,
+        "kind": "on_time"
       },
-      "fire_claim": {
-        "at": "2026-10-10T15:41:38.840843+08:00",
-        "by": "PS2022MIXSNJQO:6820:4c1ed6bf40544c8babb6201dd34e8290"
-      }
+      "fire_claim": null,
+      "failure_streak": 0
     },
     {
       "id": "1927098909e2",
@@ -515,15 +510,15 @@
       "schedule_display": "*/2 * * * *",
       "repeat": {
         "times": null,
-        "completed": 12043
+        "completed": 12053
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-13T19:05:53.539204+08:00",
-      "next_run_at": "2026-10-10T15:42:00+08:00",
-      "last_run_at": "2026-07-13T10:44:00.229648+08:00",
+      "next_run_at": "2026-10-10T16:02:00+08:00",
+      "last_run_at": "2026-10-10T16:00:48.256575+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -541,15 +536,13 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-07-13T10:46:00+08:00",
-        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
-        "lateness_seconds": 7707326.6,
-        "kind": "catch_up"
+        "scheduled_at": "2026-10-10T16:00:00+08:00",
+        "dispatched_at": "2026-10-10T16:00:46.405196+08:00",
+        "lateness_seconds": 46.4,
+        "kind": "on_time"
       },
-      "fire_claim": {
-        "at": "2026-10-10T15:41:35.427444+08:00",
-        "by": "PS2022MIXSNJQO:6820:c04fd431166741ae9796c0c45f54f07f"
-      }
+      "fire_claim": null,
+      "failure_streak": 0
     },
     {
       "id": "de31a0c4a9b2",
@@ -571,15 +564,15 @@
       "schedule_display": "every 3m",
       "repeat": {
         "times": null,
-        "completed": 6076
+        "completed": 6081
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-13T23:16:23.897064+08:00",
-      "next_run_at": "2026-10-10T15:44:28.254785+08:00",
-      "last_run_at": "2026-07-13T10:44:00.292020+08:00",
+      "next_run_at": "2026-10-10T16:00:48.034641+08:00",
+      "last_run_at": "2026-10-10T15:57:48.034641+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -596,15 +589,13 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-07-13T10:47:00.292020+08:00",
-        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
-        "lateness_seconds": 7707266.3,
-        "kind": "catch_up"
+        "scheduled_at": "2026-10-10T15:56:49.981367+08:00",
+        "dispatched_at": "2026-10-10T15:57:46.480283+08:00",
+        "lateness_seconds": 56.5,
+        "kind": "on_time"
       },
-      "fire_claim": {
-        "at": "2026-10-10T15:41:34.858180+08:00",
-        "by": "PS2022MIXSNJQO:6820:1bdaf96fd4bd4de3942b7f8f7bff25a2"
-      }
+      "fire_claim": null,
+      "failure_streak": 0
     },
     {
       "id": "a32bc1af86ea",
@@ -626,17 +617,17 @@
       "schedule_display": "*/1 * * * *",
       "repeat": {
         "times": null,
-        "completed": 23200
+        "completed": 23217
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-15T16:46:49.518525+08:00",
-      "next_run_at": "2026-10-10T15:42:00+08:00",
-      "last_run_at": "2026-07-13T10:43:38.609245+08:00",
+      "next_run_at": "2026-10-10T16:01:00+08:00",
+      "last_run_at": "2026-10-10T16:00:47.538535+08:00",
       "last_status": "error",
-      "last_error": "Script not found: C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\feishu_poll_daemon.py --once",
+      "last_error": "Script not found: C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\feishu_poll_daemon.py --once. Cron scripts are looked up only in this profile's folder (C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts); if the job was copied from another profile, copy the script there too, or edit the job with `hermes cron edit`.",
       "last_delivery_error": null,
       "deliver": "local",
       "origin": {
@@ -651,14 +642,16 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-07-13T10:44:00+08:00",
-        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
-        "lateness_seconds": 7707446.6,
-        "kind": "catch_up"
+        "scheduled_at": "2026-10-10T16:00:00+08:00",
+        "dispatched_at": "2026-10-10T16:00:46.405196+08:00",
+        "lateness_seconds": 46.4,
+        "kind": "on_time"
       },
-      "fire_claim": {
-        "at": "2026-10-10T15:41:33.599886+08:00",
-        "by": "PS2022MIXSNJQO:6820:8fc2add2a1e9435f9d822ee2ce78a479"
+      "fire_claim": null,
+      "failure_streak": 17,
+      "last_failure": {
+        "at": "2026-10-10T16:00:47.538535+08:00",
+        "detail": "Script not found: C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\feishu_poll_daemon.py --once. Cron scripts are looked up only in this profile's folder (C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts); if the job was copied from another profile, copy the script there too, or edit the job with `hermes cron edit`."
       }
     },
     {
@@ -681,17 +674,17 @@
       "schedule_display": "every 2m",
       "repeat": {
         "times": null,
-        "completed": 7691
+        "completed": 7697
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-15T22:53:28.139087+08:00",
-      "next_run_at": "2026-10-10T15:43:28.359633+08:00",
-      "last_run_at": "2026-07-13T10:44:05.207022+08:00",
-      "last_status": "error",
-      "last_error": "Script exited with code 4294967295",
+      "next_run_at": "2026-10-10T16:00:49.975115+08:00",
+      "last_run_at": "2026-10-10T15:58:49.975115+08:00",
+      "last_status": "ok",
+      "last_error": null,
       "last_delivery_error": null,
       "deliver": "local",
       "origin": {
@@ -704,15 +697,13 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-07-13T10:46:05.207022+08:00",
-        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
-        "lateness_seconds": 7707321.4,
-        "kind": "catch_up"
+        "scheduled_at": "2026-10-10T15:57:51.307061+08:00",
+        "dispatched_at": "2026-10-10T15:58:46.405290+08:00",
+        "lateness_seconds": 55.1,
+        "kind": "on_time"
       },
-      "fire_claim": {
-        "at": "2026-10-10T15:41:28.917677+08:00",
-        "by": "PS2022MIXSNJQO:6820:6fe9783fe4254f45bf089ad8d68597c3"
-      }
+      "fire_claim": null,
+      "failure_streak": 0
     },
     {
       "id": "f241789728fd",
@@ -734,17 +725,17 @@
       "schedule_display": "0 */2 * * *",
       "repeat": {
         "times": null,
-        "completed": 183
+        "completed": 184
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-16T10:38:19.627289+08:00",
-      "next_run_at": "2026-10-10T16:00:00+08:00",
-      "last_run_at": "2026-07-13T10:02:51.802770+08:00",
-      "last_status": "error",
-      "last_error": "Script timed out after 120s: C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\sync_to_github.py",
+      "next_run_at": "2026-10-10T18:00:00+08:00",
+      "last_run_at": "2026-10-10T15:49:17.859895+08:00",
+      "last_status": "ok",
+      "last_error": null,
       "last_delivery_error": null,
       "deliver": "local",
       "origin": {
@@ -757,15 +748,16 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-07-13T12:00:00+08:00",
-        "dispatched_at": "2026-10-10T15:41:26.565088+08:00",
-        "lateness_seconds": 7702886.6,
-        "kind": "catch_up"
+        "scheduled_at": "2026-10-10T16:00:00+08:00",
+        "dispatched_at": "2026-10-10T16:00:46.405196+08:00",
+        "lateness_seconds": 46.4,
+        "kind": "on_time"
       },
       "fire_claim": {
-        "at": "2026-10-10T15:41:29.036846+08:00",
-        "by": "PS2022MIXSNJQO:6820:d046e6fafd874ac29a34fce10f2f0ee5"
-      }
+        "at": "2026-10-10T16:00:47.063135+08:00",
+        "by": "PS2022MIXSNJQO:32040:228ce28de57647d288396936afb0cccb"
+      },
+      "failure_streak": 0
     },
     {
       "id": "c83927322a86",
@@ -787,7 +779,7 @@
       "schedule_display": "0 9 * * *",
       "repeat": {
         "times": null,
-        "completed": 18
+        "completed": 19
       },
       "enabled": true,
       "state": "scheduled",
@@ -795,9 +787,9 @@
       "paused_reason": null,
       "created_at": "2026-06-19T20:17:51.731658+08:00",
       "next_run_at": "2026-10-11T09:00:00+08:00",
-      "last_run_at": "2026-07-13T09:02:57.215744+08:00",
+      "last_run_at": "2026-10-10T15:47:45.592270+08:00",
       "last_status": "error",
-      "last_error": "Script timed out after 120s: C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\daily_email_v4.py",
+      "last_error": "Script exited with code 1\nstderr:\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import os, runpy, site, sys;site.addsitedir('C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\installs\\\\902a4fe5d10abbac\\\\environments\\\\ca5586633dc94af1af66305279c8236a\\\\venv\\\\Lib\\\\site-packages');script = sys.argv[1];sys.argv = [script] + sys.argv[2:];sys.path.insert(0, os.path.dirname(os.path.abspath(script)));runpy.run_path(script, run_name='__main__')\n                                                                                                                                                                                                                                                                                                                       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 294, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\daily_email_v4.py\", line 214, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\daily_email_v4.py\", line 141, in main\n    data = json.loads(DATA_FILE.read_text('utf-8'))\n                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\tools\\python-3.14.7+202****0901-win32-x64\\Lib\\pathlib\\__init__.py\", line 787, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\tools\\python-3.14.7+202****0901-win32-x64\\Lib\\pathlib\\__init__.py\", line 771, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\Desktop\\\\Working\\\\富通CRM_公海客户_全量.json'\nstdout:\n============================================================\nBLIIOT 拟人邮件发送 v4.1 | 2026-10-10 15:41\n============================================================\n今日已发: 0/50 | 剩余: 50\n⏳ 随机延迟 6分10秒后开始发送（模拟真人操作时间）\n📂 加载客户数据...",
       "last_delivery_error": null,
       "deliver": "local",
       "origin": {
@@ -817,11 +809,13 @@
         "lateness_seconds": 7627286.6,
         "kind": "catch_up"
       },
-      "fire_claim": {
-        "at": "2026-10-10T15:41:29.153700+08:00",
-        "by": "PS2022MIXSNJQO:6820:bde0f7cb96da4192b18f70ac260f5b1b"
+      "fire_claim": null,
+      "failure_streak": 1,
+      "last_failure": {
+        "at": "2026-10-10T15:47:45.592270+08:00",
+        "detail": "Script exited with code 1\nstderr:\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import os, runpy, site, sys;site.addsitedir('C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\installs\\\\902a4fe5d10abbac\\\\environments\\\\ca5586633dc94af1af66305279c8236a\\\\venv\\\\Lib\\\\site-packages');script = sys.argv[1];sys.argv = [script] + sys.argv[2:];sys.path.insert(0, os.path.dirname(os.path.abspath(script)));runpy.run_path(script, run_name='__main__')\n                                                                                                                                                                                                                                                                                                                       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 294, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\daily_email_v4.py\", line 214, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\daily_email_v4.py\", line 141, in main\n    data = json.loads(DATA_FILE.read_text('utf-8'))\n                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\tools\\python-3.14.7+202****0901-win32-x64\\Lib\\pathlib\\__init__.py\", line 787, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\tools\\python-3.14.7+202****0901-win32-x64\\Lib\\pathlib\\__init__.py\", line 771, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\Desktop\\\\Working\\\\富通CRM_公海客户_全量.json'\nstdout:\n============================================================\nBLIIOT 拟人邮件发送 v4.1 | 2026-10-10 15:41\n============================================================\n今日已发: 0/50 | 剩余: 50\n⏳ 随机延迟 6分10秒后开始发送（模拟真人操作时间）\n📂 加载客户数据..."
       }
     }
   ],
-  "updated_at": "2026-10-10T15:41:38.847998+08:00"
+  "updated_at": "2026-10-10T16:00:48.261643+08:00"
 }

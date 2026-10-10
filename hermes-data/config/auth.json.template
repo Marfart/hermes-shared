@@ -19,6 +19,8 @@
     "openai-codex": {
       "tokens": {
         "id_token": "***REDACTED***",
+        "access_token": "***REDACTED***",
+        "refresh_token": "***REDACTED***",
         "account_id": "***REDACTED***"
       },
       "last_refresh": "***REDACTED***",
@@ -54,7 +56,26 @@
         "secret_fingerprint": "***REDACTED***"
       }
     ],
-    "openai-codex": [],
+    "openai-codex": [
+      {
+        "id": "***REDACTED***",
+        "label": "***REDACTED***",
+        "auth_type": "***REDACTED***",
+        "priority": 0,
+        "source": "***REDACTED***",
+        "access_token": "***REDACTED***",
+        "refresh_token": "***REDACTED***",
+        "last_status": null,
+        "last_status_at": null,
+        "last_error_code": null,
+        "last_error_reason": null,
+        "last_error_message": null,
+        "last_error_reset_at": null,
+        "base_url": "***REDACTED***",
+        "last_refresh": "***REDACTED***",
+        "request_count": 0
+      }
+    ],
     "ollama-cloud": [
       {
         "id": "***REDACTED***",
@@ -63,10 +84,10 @@
         "priority": 0,
         "source": "***REDACTED***",
         "last_status": "***REDACTED***",
-        "last_status_at": 1783297849.4491804,
-        "last_error_code": 403,
+        "last_status_at": null,
+        "last_error_code": null,
         "last_error_reason": null,
-        "last_error_message": "***REDACTED***",
+        "last_error_message": null,
         "last_error_reset_at": null,
         "base_url": "***REDACTED***",
         "request_count": 0,
