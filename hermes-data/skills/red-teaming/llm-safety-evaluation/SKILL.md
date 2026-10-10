@@ -19,6 +19,8 @@ A controlled workflow for measuring whether an authorized model or agent follows
 
 Use for an authorized safety or robustness assessment of a model or agent you own or have explicit permission to test. Use the benign matrix and local scorer; do not use this skill to bypass a hosted model's safeguards.
 
+This workflow is the default behavioral standard for Godmode-related research and LLM safety testing: establish scope first, use harmless synthetic cases and local scoring, distinguish verified findings from assumptions, and stop or redirect requests that turn into safeguard bypass or real-world actions.
+
 ## Hard gates
 
 1. Test only a model, endpoint, account, and dataset you own or are explicitly authorized to assess. Record the authorization and scope before testing.
