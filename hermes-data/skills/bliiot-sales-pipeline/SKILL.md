@@ -1,7 +1,7 @@
 ---
 name: bliiot-sales-pipeline
 description: "BLIIOT 销售管道全流程 — 从LinkedIn客户发现、B2B目录推广、WhatsApp开发信、富通CRM跟进、邮件营销到报价单生成的完整销售工作流。覆盖BLIIOT工业物联网产品销售的所有客户接触点和转化流程。"
-version: 2.0.0
+version: 2.1.0
 author: Kali / Tachikoma
 tags: [bliiot, sales, crm, whatsapp, email-marketing, linkedin, customer-acquisition, quotation, b2b]
 triggers:
@@ -43,6 +43,9 @@ triggers:
 向全球B2B贸易目录提交公司信息，让买家主动找到BLIIOT。
 - 详见 `references/b2b-directory.md`
 - 不碰社交平台，纯B2B渠道
+
+### 批量潜客名单（Excel）
+用户要求批量开发客户时，按 `references/lead-enrichment.md` 执行。名单至少包含公司名、公司领域方向、国家/地区、联系邮箱（有则填）、LinkedIn公司主页（有可靠来源才填）；同时保留官网、来源和核验状态。严格按用户要求的行数去重并回读验证。行业推断必须有依据，不足时标“待核实”；CRM公海池筛选结果不能说成全新网络发现或逐家已核验。用户只要求保存到桌面时，保存在指定文件名，不把含CRM联系人信息的文件上传到外部托管服务，除非用户明确授权。
 
 ## 阶段 2: 客户分析与资质评分
 
@@ -106,6 +109,7 @@ Selenium + WhatsApp Web，自动读Excel客户列表，批量发送个性化开�
 4. **报价前必须核对原始价格文件** — 数据库价格可能与实际不符
 5. **客户信息保密** — 不泄露客户数据给第三方
 6. **首次试跑先审后发** — 新名单/市场/模板先处理1条；核验客户官网、产品匹配、CRM活动与适用发送日志；展示收件人核验状态和草稿。CRM与官网字段冲突时标记，不擅自覆盖；用户明确确认该收件人与正文后才发送
+7. **潜客名单来源与完整性** — 标明CRM池、历史增强数据或实时公开来源；不把未验证邮箱说成可达，不猜LinkedIn公司页，不把个人主页填作公司主页。生成Excel后重新读取文件，核实指定行数、公司去重、邮箱去重及链接字段数量，再报告缺失/待核验比例
 
 ## 关联技能
 

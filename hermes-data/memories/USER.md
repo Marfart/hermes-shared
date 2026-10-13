@@ -8,7 +8,7 @@ Music playback: 网易云音乐 desktop client only. Use `orpheus://song?id=X` (
 §
 财经日报偏好：叫"小马财经日报" (XiaoMa Financial Daily)，发PDF文件（通过MEDIA:发桌面PDF），不要发长文字消息。数据要交叉分析+逻辑推演+风险提示，不能直接罗列数据。cron模型已改为DeepSeek-V4-Flash防止超时。
 §
-Kali prefers 小马财经日报 delivered as PDF file via WeChat (MEDIA:path), not long text messages. Report title is "XiaoMa Financial Daily", numbered by issue. Must include analysis (not just data), 5-6 quiz questions per PDF, and strategy recommendation over single fund pick.
+Kali prefers 小马财经日报 delivered as a PDF via WeChat (MEDIA:path), not long text messages. Report title is “XiaoMa Financial Daily,” numbered by issue. Include analysis rather than raw data and a strategy recommendation rather than a single fund pick. Do not include a finance quiz, investment-class questions, or answers unless Kali explicitly asks for them.
 §
 Kali uses Hermes↔Codex 文件交接协议: 我只回复"任务已写入"一句，不贴 JSON 到 Telegram。所有交接走 coordination/ 目录文件。
 §
