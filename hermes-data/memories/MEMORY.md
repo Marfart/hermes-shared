@@ -794,3 +794,5 @@ Codex/ChatGPT GUI control on Windows: The CUA tool listed a running ChatGPT.exe 
 @KaliFilm_bot 是Kali的独立看电影机器人，不是当前Hermes Telegram机器人。排查或恢复时不要把当前Hermes网关状态当作该机器人的状态。
 §
 Kali expects Telegram bot identities to be distinguished carefully. Before claiming a bot is hers/ours or restored, verify the exact bot and actual reply delivery; a connected gateway or “Sending response” log alone is not proof.
+§
+公开 Notion 页面/仓库可直接读取，不需要工作区 OAuth；不要把公开页面访问与 Notion MCP 私有工作区授权混为一谈。处理 Notion 内容时先检查公开访问，只有需要受限工作区/API 功能时才走 OAuth。

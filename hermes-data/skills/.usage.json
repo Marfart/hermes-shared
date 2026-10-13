@@ -389,14 +389,14 @@
     "first_seen_at": null,
     "last_patched_at": "2026-10-10T09:32:40.228676+00:00",
     "last_reused_patch_generation": 1,
-    "last_used_at": "2026-10-13T11:40:32.724494+00:00",
-    "last_viewed_at": "2026-10-13T11:40:32.704184+00:00",
+    "last_used_at": "2026-10-13T12:18:13.295719+00:00",
+    "last_viewed_at": "2026-10-13T12:18:13.273621+00:00",
     "patch_count": 1,
     "patch_generation": 1,
     "pinned": false,
     "state": "active",
-    "use_count": 4,
-    "view_count": 4
+    "use_count": 6,
+    "view_count": 6
   },
   "cua-driver-rs": {
     "archived_at": null,
@@ -404,14 +404,14 @@
     "created_by": null,
     "last_patched_at": "2026-06-08T02:59:19.847800+00:00",
     "last_reused_patch_generation": 0,
-    "last_used_at": "2026-10-13T11:44:21.851103+00:00",
-    "last_viewed_at": "2026-10-13T11:44:21.825128+00:00",
+    "last_used_at": "2026-10-13T12:16:54.046154+00:00",
+    "last_viewed_at": "2026-10-13T12:16:54.024465+00:00",
     "patch_count": 5,
     "patch_generation": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 15,
-    "view_count": 15
+    "use_count": 16,
+    "view_count": 16
   },
   "daily-briefing-cron": {
     "archived_at": "2026-10-10T09:33:46.295484+00:00",
@@ -559,14 +559,14 @@
     "first_seen_at": null,
     "last_patched_at": null,
     "last_reused_patch_generation": 0,
-    "last_used_at": "2026-10-13T11:27:53.539433+00:00",
-    "last_viewed_at": "2026-10-13T11:27:53.516285+00:00",
+    "last_used_at": "2026-10-13T12:16:05.935275+00:00",
+    "last_viewed_at": "2026-10-13T12:16:05.918496+00:00",
     "patch_count": 0,
     "patch_generation": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 1,
-    "view_count": 1
+    "use_count": 2,
+    "view_count": 2
   },
   "evaluating-llms-harness": {
     "archived_at": null,
@@ -1576,14 +1576,14 @@
     "created_by": null,
     "last_patched_at": "2026-06-18T15:14:33.009410+00:00",
     "last_reused_patch_generation": 0,
-    "last_used_at": "2026-10-13T11:53:40.022608+00:00",
-    "last_viewed_at": "2026-10-13T11:53:40.008736+00:00",
+    "last_used_at": "2026-10-13T12:18:14.290171+00:00",
+    "last_viewed_at": "2026-10-13T12:18:14.268433+00:00",
     "patch_count": 1,
     "patch_generation": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 2,
-    "view_count": 2
+    "use_count": 3,
+    "view_count": 3
   },
   "small-horse-daily-builder": {
     "archived_at": null,
@@ -1861,14 +1861,14 @@
     "first_seen_at": "2026-10-10T09:34:06.199299+00:00",
     "last_patched_at": null,
     "last_reused_patch_generation": 0,
-    "last_used_at": "2026-10-13T11:27:54.569335+00:00",
-    "last_viewed_at": "2026-10-13T11:27:54.548257+00:00",
+    "last_used_at": "2026-10-13T12:16:06.957438+00:00",
+    "last_viewed_at": "2026-10-13T12:16:06.935007+00:00",
     "patch_count": 0,
     "patch_generation": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 3,
-    "view_count": 3
+    "use_count": 4,
+    "view_count": 4
   },
   "xurl": {
     "archived_at": null,
