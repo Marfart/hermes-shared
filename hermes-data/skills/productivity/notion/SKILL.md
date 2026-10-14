@@ -113,7 +113,7 @@ ntn api v1/blocks/{page_id}/children
 
 For configuration pages that define an external schema or template, read the complete ordered block tree rather than relying on a summary or rendered Markdown. Follow `has_more`/`next_cursor` until exhausted; preserve block order; join each block's rich-text `plain_text` fragments in sequence; retain code-block contents and newlines exactly. When a value is split across named fragments (for example, CSS parts), concatenate only in the explicitly documented order and preserve each fragment's text verbatim. Do not HTML-unescape or otherwise normalize text unless the source itself encodes it and the target format requires that transformation; validate the reconstructed value before using it.
 
-When a Notion value will be written into another system, treat the external system's safety gate as a hard prerequisite: complete and verify the required backup first, and stop all downstream writes if that gate fails. Keep source extraction read-only until the exact payload is reconstructed and checked; never replace a missing source template with an approximation.
+When a Notion value will be written into another system, treat that system's safety gate as a hard prerequisite: verify the required backup before any downstream write, and stop if the gate fails. Keep source extraction read-only until the exact payload is reconstructed; never approximate a missing template. For a local Anki bridge, follow [`references/anki-bridge-safety.md`](references/anki-bridge-safety.md), including its app-startup sync gate.
 
 ### Create page from Markdown
 ```bash

@@ -225,6 +225,11 @@ shortcut to use.
    visible.
 4. **The user can be on the same machine.** They might be typing in
    another window. Don't grab focus. Don't pop modals to the front.
+5. **Check startup side effects before relaunching.** If an app may
+   automatically sync, publish, send, or mutate data on open/close, verify
+   the relevant setting before launching it. If you cannot verify the setting,
+   do not restart the app merely to restore access; use a read-only probe or
+   ask the user.
 
 ## Drag & drop
 
