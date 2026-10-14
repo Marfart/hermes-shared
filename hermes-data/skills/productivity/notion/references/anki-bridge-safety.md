@@ -8,7 +8,7 @@ Use when initializing or synchronizing a Notion database/template with a local A
 
 - Record which Anki model, card template, and deck names are authorized. Distinguish structural setup from note/card creation.
 - Keep Notion source rows read-only unless the user explicitly authorizes the relevant write scope. A PENDING queue alone is not permission; when an established bridge is explicitly invoked, follow only the actions in that bridge's written scope.
-- Do not write directly to Anki's SQLite collection, restore a backup, trigger AnkiWeb sync, or substitute a single-deck `.apkg` for a full `.colpkg` backup.
+- Do not write directly to Anki's SQLite collection, restore a backup, or substitute a single-deck `.apkg` for a full `.colpkg` backup. Generic/setup tasks must not trigger AnkiWeb sync; the established `anki-notion-sync` explicit on-demand trigger is the sole exception and must follow that skill's guarded conflict-detection workflow.
 - Preserve protected notes and review history; capture their IDs and a before-state fingerprint for later comparison.
 - Ask before changing app preferences, plugin metadata/source, security settings, or software versions.
 
@@ -59,7 +59,7 @@ with ZipFile(p) as z:
 2. If absent and compatibility checks pass, create only the authorized model and template through the supported local AnkiConnect action. Read back and compare every field and template byte-for-byte before creating decks.
 3. Create only the authorized missing decks; leave existing decks and their settings untouched. Read back deck names and IDs. Do not create notes/cards as a side effect.
 4. Re-read protected note metadata and compare ID, model, card IDs, tags, and hashes of field values with the pre-write snapshot. Compare the Notion row fingerprint and status counts. Report created versus reused objects separately.
-5. For an initialization-only task, stop after this phase. Do not start imports, Reviews synchronization, scheduled jobs, or AnkiWeb sync. For the established Windows IELTS bridge, follow `anki-notion-sync` when its explicit trigger is invoked; it remains on-demand and never creates a scheduled job or triggers AnkiWeb sync.
+5. For an initialization-only task, stop after this phase. Do not start imports, Reviews synchronization, scheduled jobs, or AnkiWeb sync. For the established Windows IELTS bridge, follow `anki-notion-sync` when its explicit trigger is invoked; it remains on-demand, performs at most one guarded AnkiWeb sync after local writes/status readback, and never creates a scheduled job.
 
 ## 6. Report with precise evidence
 

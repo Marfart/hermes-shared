@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Safe, on-demand Notion ↔ Anki bridge for the authorized IELTS control page.
+"""Safe, on-demand Notion ↔ Anki bridge with guarded AnkiWeb sync.
 
-No scheduler, AnkiWeb sync, collection DB writes, deletions, or note recreation.
+No scheduler, unattended sync-direction choice, collection DB writes, deletions, or note recreation.
 """
 from __future__ import annotations
 
@@ -40,6 +40,7 @@ EXPECTED_HASHES = {
 EXPECTED_BACKUP_SHA256 = "97839b5604d0a9affaca1a15396eeb30a9ca0f8942780125f21343648058cf8e"
 TARGET_DECKS = {"IELTS::2026-10-13::Priority", "IELTS::2026-10-13::Review"}
 API_URL = "http://127.0.0.1:8765"
+API_RPC_URL = API_URL + "/api/v1"
 NOTION_BASE = "https://api.notion.com/v1"
 NOTION_VERSION = "2025-09-03"
 
@@ -52,6 +53,11 @@ BACKUP_PATH = pathlib.Path.home() / "Documents" / "AnkiBackups" / "Anki_collecti
 
 class SyncFailure(RuntimeError):
     pass
+
+class AnkiRPCFailure(SyncFailure):
+    def __init__(self, code: str = "api_error") -> None:
+        self.code = code
+        super().__init__("AnkiConnect RPC operation failed.")
 
 class RestrictedUnpickler(pickle.Unpickler):
     def find_class(self, module: str, name: str) -> Any:
@@ -90,6 +96,27 @@ def anki(action: str, params: dict[str, Any] | None = None) -> dict[str, Any]:
     if not isinstance(data, dict) or data.get("error") is not None:
         raise SyncFailure(f"AnkiConnect rejected {action} (API error).")
     return data
+
+def anki_rpc(method: str, params: dict[str, Any] | None = None) -> dict[str, Any]:
+    request_id = str(uuid.uuid4())
+    payload = {"jsonrpc": "2.0", "id": request_id, "method": method, "params": params or {}}
+    request = urllib.request.Request(API_RPC_URL, json.dumps(payload).encode("utf-8"), {"Content-Type": "application/json"})
+    try:
+        with urllib.request.urlopen(request, timeout=10) as response:
+            data = json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        raise AnkiRPCFailure(f"http_{exc.code}") from None
+    except Exception as exc:
+        raise AnkiRPCFailure(type(exc).__name__) from None
+    if not isinstance(data, dict) or data.get("id") != request_id:
+        raise AnkiRPCFailure("invalid_rpc_reply")
+    error = data.get("error")
+    if error is not None:
+        code = error.get("code") if isinstance(error, dict) else None
+        raise AnkiRPCFailure(str(code or "rpc_error"))
+    if "result" not in data or not isinstance(data["result"], dict):
+        raise AnkiRPCFailure("invalid_rpc_result")
+    return data["result"]
 
 def load_notion_token() -> str:
     token = os.environ.get("NOTION_API_KEY", "").strip()
@@ -767,12 +794,74 @@ def sync_reviews(notion: NotionClient, conn: sqlite3.Connection, counts: dict[st
             safe_log("review_error", card_id=str(card_id), reason=type(exc).__name__)
             continue
 
-def sync_log(notion: NotionClient, run_id: str, started: str, counts: dict[str, int]) -> bool:
+def sync_ankiweb(counts: dict[str, Any], timeout_seconds: int = 240) -> bool:
+    """Run Anki's collection/media sync and stop if Anki asks the user to choose a full-sync direction."""
+    counts["cloud_sync_status"] = "RUNNING"
+    counts["cloud_sync_error_code"] = ""
+    counts["cloud_sync_collection_complete"] = False
+    counts["cloud_sync_media_complete"] = False
+    try:
+        # Call the operation directly so its own state exposes waitingForUser; wrapping it in api.execute would hide the nested sync state.
+        submitted = anki_rpc("collection.sync", {"includeMedia": True})
+        operation_id = submitted.get("operationId")
+        if not operation_id:
+            raise AnkiRPCFailure("missing_operation_id")
+        safe_log("ankiweb_sync_started")
+        deadline = time.monotonic() + timeout_seconds
+        while time.monotonic() < deadline:
+            operation = anki_rpc("operations.get", {"operationId": operation_id})
+            state = operation.get("state")
+            if state == "waitingForUser":
+                # The collection sync is paused before transfer; leave the choice dialog untouched for the user.
+                counts["cloud_sync_status"] = "CONFLICT"
+                counts["cloud_sync_error_code"] = "full_sync_requires_user_choice"
+                safe_log("ankiweb_sync_stopped", reason="full_sync_requires_user_choice")
+                return False
+            if state == "succeeded":
+                result = operation.get("result") or {}
+                collection_ok = result.get("collectionComplete") is True
+                media_ok = result.get("mediaComplete") is True
+                counts["cloud_sync_collection_complete"] = collection_ok
+                counts["cloud_sync_media_complete"] = media_ok
+                if collection_ok and media_ok:
+                    counts["cloud_sync_status"] = "SUCCESS"
+                    safe_log("ankiweb_sync_complete", collection_complete=True, media_complete=True)
+                    return True
+                counts["cloud_sync_status"] = "ERROR"
+                counts["cloud_sync_error_code"] = "incomplete_sync_result"
+                safe_log("ankiweb_sync_error", reason="incomplete_sync_result")
+                return False
+            if state in ("failed", "cancelled"):
+                err = operation.get("error") or {}
+                code = str(err.get("code") or state)
+                counts["cloud_sync_status"] = "ERROR" if state == "failed" else "CANCELLED"
+                counts["cloud_sync_error_code"] = code[:80]
+                safe_log("ankiweb_sync_error", reason=counts["cloud_sync_status"], error_code=counts["cloud_sync_error_code"])
+                return False
+            time.sleep(0.75)
+        # Bound the call; do not leave a potentially blocked sync operation running indefinitely.
+        try:
+            anki_rpc("operations.cancel", {"operationId": operation_id})
+        except AnkiRPCFailure:
+            pass
+        counts["cloud_sync_status"] = "TIMEOUT"
+        counts["cloud_sync_error_code"] = "operation_timeout"
+        safe_log("ankiweb_sync_error", reason="operation_timeout")
+        return False
+    except AnkiRPCFailure as exc:
+        counts["cloud_sync_status"] = "ERROR"
+        counts["cloud_sync_error_code"] = exc.code[:80]
+        safe_log("ankiweb_sync_error", reason="rpc_failure", error_code=counts["cloud_sync_error_code"])
+        return False
+
+def sync_log(notion: NotionClient, run_id: str, started: str, counts: dict[str, Any]) -> bool:
     schema = notion.schema(LOG_DS)
     database_id = (schema.get("parent") or {}).get("database_id")
     if not database_id:
         return False
+    cloud_status = counts.get("cloud_sync_status", "NOT_RUN")
     notes = (f"Cards: created={counts['created']}, updated={counts['updated']}, skipped={counts['skipped']}, conflicts={counts['conflicts']}, errors={counts['errors']}. "
+             f"AnkiWeb: status={cloud_status}, collection_complete={counts.get('cloud_sync_collection_complete', False)}, media_complete={counts.get('cloud_sync_media_complete', False)}, error_code={counts.get('cloud_sync_error_code', '')}. "
              f"Reviews: created={counts['review_created']}, updated={counts['review_updated']}, conflicts={counts['review_conflicts']}, errors={counts['review_errors']}; seen={counts['reviews_seen']}.")
     props = {
         "Name": {"title": [{"type": "text", "text": {"content": f"Anki sync {started}"}}]},
@@ -782,7 +871,7 @@ def sync_log(notion: NotionClient, run_id: str, started: str, counts: dict[str, 
         "Created": {"number": counts["created"]},
         "Updated": {"number": counts["updated"]},
         "Skipped": {"number": counts["skipped"]},
-        "Failed": {"number": counts["errors"] + counts["conflicts"] + counts["review_errors"] + counts["review_conflicts"]},
+        "Failed": {"number": counts["errors"] + counts["conflicts"] + counts["review_errors"] + counts["review_conflicts"] + (1 if cloud_status not in ("SUCCESS", "NOT_RUN") else 0)},
         "RecordsSeen": {"number": counts["records_seen"]},
         "Notes": exact_rich_text_value(notes),
     }
@@ -809,7 +898,8 @@ def main() -> int:
     logging.basicConfig(filename=LOG_PATH, level=logging.INFO, format="%(message)s", encoding="utf-8")
     run_id = str(uuid.uuid4())
     started = utc_now()
-    counts = {k: 0 for k in ("records_seen", "created", "updated", "skipped", "errors", "conflicts", "review_created", "review_updated", "review_errors", "review_conflicts", "reviews_seen")}
+    counts: dict[str, Any] = {k: 0 for k in ("records_seen", "created", "updated", "skipped", "errors", "conflicts", "review_created", "review_updated", "review_errors", "review_conflicts", "reviews_seen")}
+    counts.update({"cloud_sync_status": "NOT_RUN", "cloud_sync_error_code": "", "cloud_sync_collection_complete": False, "cloud_sync_media_complete": False})
     token = load_notion_token()
     notion = NotionClient(token)
     # Verify only the existing scoped objects; never create a database.
@@ -884,8 +974,13 @@ def main() -> int:
                         ok = False
                     counts["errors"] += 1
                     safe_log("card_error", note_key=record.get("note_key", ""), reason=type(exc).__name__, notion_write_ok=ok)
-        if not args.cards_only:
-            sync_reviews(notion, conn, counts)
+        if args.reviews_only:
+            if not args.cards_only:
+                sync_reviews(notion, conn, counts)
+        else:
+            cloud_ok = sync_ankiweb(counts)
+            if cloud_ok and not args.cards_only:
+                sync_reviews(notion, conn, counts)
         try:
             log_ok = sync_log(notion, run_id, started, counts)
         except Exception as exc:
@@ -895,9 +990,10 @@ def main() -> int:
         summary = {"run_id": run_id, "started_at_utc": started, "finished_at_utc": finished, "counts": counts, "sync_log_verified": log_ok, "mode": "reviews-only" if args.reviews_only else ("first-safe-test" if args.first_safe_test else "bidirectional")}
         conn.execute("UPDATE runs SET finished_at=?,summary_json=? WHERE run_id=?", (finished, json.dumps(summary, ensure_ascii=False), run_id))
         conn.commit()
-        safe_log("run_complete", run_id=run_id, created=counts["created"], updated=counts["updated"], skipped=counts["skipped"], errors=counts["errors"], conflicts=counts["conflicts"], review_created=counts["review_created"], review_updated=counts["review_updated"], sync_log_verified=log_ok)
+        safe_log("run_complete", run_id=run_id, created=counts["created"], updated=counts["updated"], skipped=counts["skipped"], errors=counts["errors"], conflicts=counts["conflicts"], cloud_sync_status=counts["cloud_sync_status"], cloud_sync_error_code=counts["cloud_sync_error_code"], review_created=counts["review_created"], review_updated=counts["review_updated"], sync_log_verified=log_ok)
         print(json.dumps(summary, ensure_ascii=False))
-        return 0 if log_ok and counts["errors"] == 0 and counts["review_errors"] == 0 else 2
+        cloud_ok = counts["cloud_sync_status"] in ("SUCCESS", "NOT_RUN")
+        return 0 if log_ok and cloud_ok and counts["errors"] == 0 and counts["review_errors"] == 0 else 2
     finally:
         try:
             if conn.in_transaction:

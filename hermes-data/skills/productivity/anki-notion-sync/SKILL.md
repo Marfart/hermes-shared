@@ -28,8 +28,10 @@ python "C:/Users/Admin/AppData/Local/hermes/scripts/anki_notion_sync.py"
 ## 行为与边界
 - 只按需触发；不创建 cron、计划任务或后台常驻同步。
 - 只访问授权中控页的模板和既有 Cards、Reviews、Sync Log 数据源；不创建数据库。
-- 仅使用 `127.0.0.1:8765` 的 AnkiConnect；每次确认资料库为「账户 1」、API v6、`autoSync=false`、`customSyncUrl` 为空、模型模板和目标牌组存在且匹配。
-- 不调用 AnkiWeb 同步，不改 Anki 偏好或学习排程，不直接写 collection 数据库，不删除或重建笔记。
+- 仅使用本机 `127.0.0.1:8765` 的既有 AnkiConnect；确认资料库为「账户 1」、`autoSync=false`、`customSyncUrl` 为空、模型模板和目标牌组匹配。保持 `autoSync=false`，不触发后台/定时同步。
+- 默认流程在 Notion→Anki 状态回写后，通过同一 AnkiConnect 的 JSON-RPC `/api/v1` `collection.sync` 同步集合和媒体，轮询 `operations.get`。只在 RPC `error` 为空、operation=`succeeded` 且 `collectionComplete=true`、`mediaComplete=true` 时记为 AnkiWeb SUCCESS；单纯请求被接受不算完成。
+- 若 operation=`waitingForUser`（全量 Upload/Download/冲突选择），立即停止后续处理与 Reviews 回传；不选方向、不关闭该对话框，让用户自行决定。超时才请求取消并记 TIMEOUT，不继续 Reviews。
+- 不直接写 collection 数据库，不删除或重建笔记，不修改 Anki 学习排程。
 - 以 NoteKey 去重、按 Revision 更新。仅本地状态库已将 NoteKey 绑定到原 NoteID 且 Anki 回读身份匹配时才更新；身份不确定则标 CONFLICT，不覆盖旧笔记。
 - 每条卡片经 Anki 回读验证后才写 Notion SYNCED；错误/冲突写入对应状态与说明。Reviews 按 CardID upsert，不追加重复快照。
 - SQLite `BEGIN IMMEDIATE` 串行化并发调用；日志不得包含 Token、完整词条或请求体。
@@ -38,7 +40,7 @@ python "C:/Users/Admin/AppData/Local/hermes/scripts/anki_notion_sync.py"
 - API、模板、偏好、资料库或备份安全门失败时停止写入并如实报告；不要重启 Anki、改插件或改配置绕过。
 
 ## 执行、重试与验收
-1. 首次先运行 `python "C:/Users/Admin/AppData/Local/hermes/scripts/anki_notion_sync.py" --first-safe-test`；只有这条记录完成 Anki 回读和 Notion `SYNCED` 回读后，才运行默认命令处理其余安全记录，不再重复申请已给出的授权。
+1. 本环境已完成初次导入；每次用户说“同步 Anki”时直接运行默认命令一次，流程为 Notion Cards→Anki 写入/回读→Notion 状态回写→AnkiConnect AnkiWeb 集合/媒体同步→成功后 Reviews 回传。只有全新安装或用户明确要求安全首条测试时才用 `--first-safe-test`。
 2. 遇到 Notion/Anki 网络错误，先做只读状态核验；只读 GET 可有限退避重试。对 `addNote`、Notion PATCH/POST 等写操作，超时后先按 NoteKey、CardID 或 RunID 回读，绝不盲目重发。
 3. 每条卡片/复习记录独立捕获错误并继续安全记录；非零退出时读脱敏日志和 Notion 实际状态，区分最终错误与已由重跑修复的瞬时读回问题。
 4. 报告前独立核对 Cards 状态数、Anki 模型字段数与 NoteKey 唯一性、Reviews CardID 唯一性及覆盖率、Sync Log 回读、`autoSync=false`，并抽查卡片正反面非空及 `involve` 原笔记未变。仅凭命令退出码或工具调用已发出，不算端到端验收。
