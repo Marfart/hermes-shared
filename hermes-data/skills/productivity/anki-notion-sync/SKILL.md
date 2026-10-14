@@ -29,8 +29,10 @@ python "C:/Users/Admin/AppData/Local/hermes/scripts/anki_notion_sync.py"
 - 只按需触发；不创建 cron、计划任务或后台常驻同步。
 - 只访问授权中控页的模板和既有 Cards、Reviews、Sync Log 数据源；不创建数据库。
 - 仅使用本机 `127.0.0.1:8765` 的既有 AnkiConnect；确认资料库为「账户 1」、`autoSync=false`、`customSyncUrl` 为空、模型模板和目标牌组匹配。保持 `autoSync=false`，不触发后台/定时同步。
-- 默认流程在 Notion→Anki 状态回写后，通过同一 AnkiConnect 的 JSON-RPC `/api/v1` `collection.sync` 同步集合和媒体，轮询 `operations.get`。只在 RPC `error` 为空、operation=`succeeded` 且 `collectionComplete=true`、`mediaComplete=true` 时记为 AnkiWeb SUCCESS；单纯请求被接受不算完成。
-- 若 operation=`waitingForUser`（全量 Upload/Download/冲突选择），立即停止后续处理与 Reviews 回传；不选方向、不关闭该对话框，让用户自行决定。超时才请求取消并记 TIMEOUT，不继续 Reviews。
+- 默认流程在 Notion→Anki 状态回写后，通过同一 AnkiConnect 的 JSON-RPC `/api/v1` 直接调用 `collection.sync`，再轮询该 operation 的 `operations.get`；不要用 `api.execute` 包装它，因为包装会隐藏内部 sync 的 `waitingForUser` 状态。只在顶层 RPC `error` 为空、operation=`succeeded` 且 `collectionComplete=true`、`mediaComplete=true` 时记为 AnkiWeb SUCCESS；请求被接受不等于同步完成。
+- 每次默认触发只执行一次云同步；即使没有待处理卡片，也要同步一次以发现手机端新复习数据，并且只在成功后回传 Reviews，不要同一轮重复触发云同步。
+- 若 operation=`waitingForUser`（全量 Upload/Download/冲突选择），立即停止后续处理与 Reviews 回传；不选择方向、不关闭对话框。不要对这个状态调用 `operations.cancel`：它只调用 `abort_sync`，不会关闭方向选择对话框，可能留下仍可触发的 UI 回调；保持等待并报告用户处理。运行中超时才请求取消并记 TIMEOUT，不继续 Reviews。
+- 报告 AnkiConnect 已完成 Windows 客户端与 AnkiWeb 的集合/媒体同步，不要据此声称手机 App 已拉取；手机端是否完成需单独验证。把云端选择冲突与 Notion Cards 的既存 CONFLICT 分开报告。
 - 不直接写 collection 数据库，不删除或重建笔记，不修改 Anki 学习排程。
 - 以 NoteKey 去重、按 Revision 更新。仅本地状态库已将 NoteKey 绑定到原 NoteID 且 Anki 回读身份匹配时才更新；身份不确定则标 CONFLICT，不覆盖旧笔记。
 - 每条卡片经 Anki 回读验证后才写 Notion SYNCED；错误/冲突写入对应状态与说明。Reviews 按 CardID upsert，不追加重复快照。
