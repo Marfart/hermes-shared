@@ -30,7 +30,10 @@ Talk to Notion two ways. Same integration token works for both — pick by what'
    ```
    NOTION_API_KEY=ntn_your_key_here
    ```
-4. **Share target pages/databases with the integration** in Notion: page menu `...` → `Connect to` → your integration name. Without this, the API returns 404 for that page even though it exists.
+4. **Grant page-scoped access only.** In the target page, use `...` → `Connections` / `Connect to` → select the integration; verify the connection's `Content access` list names only the intended page. Do not grant a workspace-wide scope when a dedicated control page is sufficient. Without page access, the API may return 404 for a known page.
+5. **Never request or accept an API token in chat.** If the user wants to provide it, use a local masked prompt (for example, a PowerShell WinForms `TextBox.UseSystemPasswordChar = $true`) that writes directly to Hermes' local `.env`, preserves unrelated entries, and never echoes/logs the secret. A completed API-key field or environment variable is not proof of a valid connection.
+6. **Verify authentication with a read-only `GET /v1/users/me`**, printing only pass/fail and sanitized status. Then test page access using the page ID or search. A zero-result search means only that no matching object is visible to this integration; it does **not** prove the page is absent when page access has not been granted. Confirm the connection's Content access state before concluding.
+7. If a token was exposed in a transcript, screenshot, or tool result, refresh/revoke it before storing or using a replacement. Do not repeat the secret in reports.
 
 ### 2. Install `ntn` (preferred path on macOS / Linux)
 
