@@ -50,6 +50,7 @@ Supporting assets: `scripts/gh-env.sh` + `scripts/git-credential-token.py`
   `gh pr list --search` / `gh issue list --search`.
 - When exploring repositories for a user's use case, verify the repository identity, platform support, setup prerequisites, maintenance signals, license, and permission/security model before recommending it; match the recommendation to the user's actual OS and intended scope.
 - Label recommendations as candidates unless you actually installed and exercised them. Do not imply a project controls the user's bot or machine until its deployment and end-to-end behavior are verified.
+- Before committing in a mixed-use or shared repository, inspect the worktree and stage only explicit intended paths; avoid repository-root `git add -A`. Verify the cached path list and abort if it contains anything outside the task allowlist. After push, compare the remote branch OID with local `HEAD` before claiming synchronization succeeded.
 
 ## Verification
 

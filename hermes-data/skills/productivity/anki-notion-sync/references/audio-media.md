@@ -20,9 +20,9 @@
    ```
 
    Windows 上 Piper 若遇到非 ASCII 路径问题，将运行时、模型、配置、输入和输出临时复制到 Hermes 的 ASCII 临时目录执行；验证后再复制到持久任务目录并比较 SHA-256。不要把临时目录中的文件名直接写入 Anki。
-5. **先存媒体，再改笔记。** 对每个经过验证的 MP3 调用 AnkiConnect `storeMediaFile`；随后 `retrieveMediaFile` 读回并解码，确认返回文件字节数与 SHA-256 完全一致。只有媒体读回通过后，才将 Anki `Audio` 更新为 `[sound:filename.mp3]`。通过 `updateNoteFields` 只写该字段，参数形状为 `{"note":{"id":NOTE_ID,"fields":{"Audio":"[sound:filename.mp3]"}}}`；回读所有字段与 `note_snapshot`，确认 NoteID、CardIDs、排程和 review fingerprint 与写入前一致。不要直接写 collection SQLite。
+5. **先存媒体，再改笔记。** 对每个经过验证的 MP3 调用 AnkiConnect `storeMediaFile`；随后 `retrieveMediaFile` 读回并解码，确认返回文件字节数与 SHA-256 完全一致。只有媒体读回通过后，才将 Anki `Audio` 更新为 `[sound:filename.mp3]`。通过 `updateNoteFields` 只写该字段，参数形状为 `{"note":{"id":NOTE_ID,"fields":{"Audio":"[sound:filename.mp3]"}}}`；回读所有字段与 `note_snapshot`，确认 NoteID、CardIDs、排程和 review fingerprint 与写入前一致。不要直接写 collection SQLite。批量修复只改 Audio 字段、不重建笔记或修改 NoteType/模板；模板优先播放 Audio 中已验证的真实 `[sound:...]`，仅在 Audio 为空/缺失时回退到 `{{tts en_GB:English}}`。
 6. **回写 Notion 与本地同步状态。** 更新该页 `PayloadJSON` 内的 `Audio` 引用和 Revision；只改获授权的属性，保留其余字段。PATCH 后 GET 同一页面验证 Audio、NoteKey、Revision、NoteID、CardIDs。按现有 SQLite `BEGIN IMMEDIATE` 事务维护 NoteKey→NoteID/CardIDs、payload hash 和 revision；不要在状态库映射尚未确认时声称下一次同步不会覆空。若写操作结果不明，先读回精确目标，禁止盲目重发。
-7. **分阶段云同步和批量。** 三张/用户指定试点均通过文件、Anki 媒体读回、笔记和 Notion 回读后，才进入批量阶段；保持 `CONFLICT` 行排除。每个媒体文件记录独立结果。按现有 `sync_ankiweb` 流程调用 `collection.sync`（`includeMedia=true`），直接轮询 operation；只在 RPC 无错误且 state=`succeeded`、`collectionComplete=true`、`mediaComplete=true` 时报告 Anki 桌面端与 AnkiWeb 集合/媒体同步成功。若 `waitingForUser`，停止并交给用户选择，不取消/替用户选方向。桌面端同步成功不证明 AnkiDroid 已下载；没有真实监听时标为“文件级通过，设备播放待验收”。
+7. **分阶段云同步和批量。** 默认先用授权试点验证；但若 Kali 明确授权对指定整批直接修复，且备份、NoteKey/NoteID 映射与只读预检通过，不再额外要求真实试点审批，直接逐条处理全部安全匹配目标；保持 `CONFLICT` 行排除。每个媒体文件记录独立结果。按现有 `sync_ankiweb` 流程调用 `collection.sync`（`includeMedia=true`），直接轮询 operation；只在 RPC 无错误且 state=`succeeded`、`collectionComplete=true`、`mediaComplete=true` 时报告 Anki 桌面端与 AnkiWeb 集合/媒体同步成功。若 `waitingForUser`，停止并交给用户选择，不取消/替用户选方向。桌面端同步成功不证明 AnkiDroid 已下载；没有真实监听时标为“文件级通过，设备播放待验收”。
 
 ## 审计记录最少字段
 
