@@ -2,12 +2,12 @@
 
 ## When to Use
 
-Use when initializing or synchronizing a Notion database/template with a local Anki collection. Follow the sequence below; this reference does not grant permission to import cards, sync, or alter Anki preferences.
+Use when initializing or synchronizing a Notion database/template with a local Anki collection. Follow the sequence below; this reference does not itself grant permission to import cards, sync, or alter Anki preferences. For the established Windows IELTS Notion ↔ Anki bridge, use the `anki-notion-sync` skill for its explicit trigger, import/update workflow, retry handling, and end-to-end audit; this reference supplies the shared safety and backup gates.
 
 ## 1. Freeze scope and invariants
 
 - Record which Anki model, card template, and deck names are authorized. Distinguish structural setup from note/card creation.
-- Keep Notion source rows read-only unless the user separately authorizes a specific write. A PENDING queue is not permission to import it.
+- Keep Notion source rows read-only unless the user explicitly authorizes the relevant write scope. A PENDING queue alone is not permission; when an established bridge is explicitly invoked, follow only the actions in that bridge's written scope.
 - Do not write directly to Anki's SQLite collection, restore a backup, trigger AnkiWeb sync, or substitute a single-deck `.apkg` for a full `.colpkg` backup.
 - Preserve protected notes and review history; capture their IDs and a before-state fingerprint for later comparison.
 - Ask before changing app preferences, plugin metadata/source, security settings, or software versions.
@@ -40,7 +40,7 @@ with ZipFile(p) as z:
 1. Use the page-scoped integration only. Read the complete ordered template block tree, following every `has_more`/`next_cursor`; concatenate each rich-text block's `plain_text` fragments in order.
 2. Preserve code-block content verbatim. Combine split CSS or other fragments only in the source's documented order. Record lengths and hashes of the exact fields, Front, Back, and CSS payloads; never approximate a missing template.
 3. Query Cards with the data-source endpoint. For HTTP pagination, send `page_size` and `start_cursor` in the POST JSON body, not as URL query parameters. Continue through all pages.
-4. Before any structural write, fingerprint each row by stable page ID, NoteKey, and status. Confirm the expected row count/status distribution. Re-read and compare after initialization; do not import or update queue rows unless separately authorized.
+4. Before any structural write, fingerprint each row by stable page ID, NoteKey, and status. Confirm the expected row count/status distribution. Re-read and compare after initialization; do not import or update queue rows unless covered by the user's explicit scope or the established bridge's explicit trigger.
 
 ## 4. Check the desktop/API state without causing sync
 
@@ -59,7 +59,7 @@ with ZipFile(p) as z:
 2. If absent and compatibility checks pass, create only the authorized model and template through the supported local AnkiConnect action. Read back and compare every field and template byte-for-byte before creating decks.
 3. Create only the authorized missing decks; leave existing decks and their settings untouched. Read back deck names and IDs. Do not create notes/cards as a side effect.
 4. Re-read protected note metadata and compare ID, model, card IDs, tags, and hashes of field values with the pre-write snapshot. Compare the Notion row fingerprint and status counts. Report created versus reused objects separately.
-5. Stop after this phase. Do not start imports, Reviews synchronization, scheduled jobs, or AnkiWeb sync unless separately authorized.
+5. For an initialization-only task, stop after this phase. Do not start imports, Reviews synchronization, scheduled jobs, or AnkiWeb sync. For the established Windows IELTS bridge, follow `anki-notion-sync` when its explicit trigger is invoked; it remains on-demand and never creates a scheduled job or triggers AnkiWeb sync.
 
 ## 6. Report with precise evidence
 
