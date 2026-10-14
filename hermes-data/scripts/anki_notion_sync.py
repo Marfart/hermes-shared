@@ -6,16 +6,21 @@ No scheduler, unattended sync-direction choice, collection DB writes, deletions,
 from __future__ import annotations
 
 import argparse
+import array
+import base64
 import datetime as dt
 import hashlib
 import io
 import json
 import logging
+import math
 import os
 import pathlib
 import pickle
 import re
 import sqlite3
+import subprocess
+import shutil
 import sys
 import time
 import urllib.error
@@ -37,7 +42,7 @@ EXPECTED_HASHES = {
     "back": "677cf05d9ea6bca09271fa6d6291406c9716b9b20d2f3c6d86d602a7f25917e2",
     "css": "14c4294ab4d81e9d7c3a86c53bafb0d3d2c2b421d016d121ba5cdb39a7dda4ae",
 }
-EXPECTED_BACKUP_SHA256 = "97839b5604d0a9affaca1a15396eeb30a9ca0f8942780125f21343648058cf8e"
+EXPECTED_BACKUP_SHA256 = "1a8f6d39c9f73d2243b5885004f0b85dc8bb07ab7f243c3bb8423a46769feb1c"
 TARGET_DECKS = {"IELTS::2026-10-13::Priority", "IELTS::2026-10-13::Review"}
 API_URL = "http://127.0.0.1:8765"
 API_RPC_URL = API_URL + "/api/v1"
@@ -48,8 +53,12 @@ HOME = pathlib.Path(os.environ.get("LOCALAPPDATA", pathlib.Path.home())) / "herm
 CACHE = HOME / "memories" / "脚本缓存" / "anki-notion-sync"
 STATE_PATH = CACHE / "sync_state.sqlite3"
 LOG_PATH = CACHE / "sync.log"
+AUDIO_ROOT = HOME / "memories" / "脚本缓存" / "anki-audio-repair"
+PIPER_MODEL = AUDIO_ROOT / "models" / "en_GB-cori-high.onnx"
+PIPER_MODEL_CONFIG = pathlib.Path(str(PIPER_MODEL) + ".json")
+PIPER_RUNTIME = AUDIO_ROOT / "piper_cli" / "runtime" / "piper"
 PREFS_PATH = pathlib.Path(os.environ.get("APPDATA", "")) / "Anki2" / "prefs21.db"
-BACKUP_PATH = pathlib.Path.home() / "Documents" / "AnkiBackups" / "Anki_collection_2026-10-14_10-43-22.colpkg"
+BACKUP_PATH = pathlib.Path.home() / "Documents" / "AnkiBackups" / "Anki_collection_2026-10-14_before_audio_repair.colpkg"
 
 class SyncFailure(RuntimeError):
     pass
@@ -70,6 +79,118 @@ def safe_log(event: str, **fields: Any) -> None:
     # Never log request bodies, field payloads, environment values, or exceptions' raw messages.
     record = {"time": utc_now(), "event": event, **fields}
     logging.info(json.dumps(record, ensure_ascii=False, separators=(",", ":")))
+
+_PIPER_ASCII_RUNTIME: tuple[pathlib.Path, pathlib.Path, pathlib.Path, pathlib.Path] | None = None
+
+def _piper_ascii_runtime() -> tuple[pathlib.Path, pathlib.Path, pathlib.Path, pathlib.Path]:
+    global _PIPER_ASCII_RUNTIME
+    if _PIPER_ASCII_RUNTIME is not None:
+        return _PIPER_ASCII_RUNTIME
+    scratch = pathlib.Path(os.environ.get("TMPDIR") or (HOME / "cache" / "scratch")) / "anki_piper_runtime"
+    runtime = scratch / "runtime"
+    model = scratch / PIPER_MODEL.name
+    config = pathlib.Path(str(model) + ".json")
+    if not (runtime / "piper.exe").is_file() or not (runtime / "espeak-ng-data").is_dir() or not model.is_file() or not config.is_file():
+        if scratch.exists():
+            shutil.rmtree(scratch)
+        scratch.mkdir(parents=True, exist_ok=True)
+        if not PIPER_MODEL.is_file() or not PIPER_MODEL_CONFIG.is_file() or not (PIPER_RUNTIME / "piper.exe").is_file():
+            raise SyncFailure("Local Piper en_GB-cori-high runtime/model is unavailable; new note was not created.")
+        shutil.copytree(PIPER_RUNTIME, runtime)
+        shutil.copy2(PIPER_MODEL, model)
+        shutil.copy2(PIPER_MODEL_CONFIG, config)
+    _PIPER_ASCII_RUNTIME = (runtime / "piper.exe", runtime / "espeak-ng-data", model, config)
+    return _PIPER_ASCII_RUNTIME
+
+def _validate_generated_mp3(path: pathlib.Path, speech_text: str) -> dict[str, Any]:
+    ffmpeg, ffprobe = shutil.which("ffmpeg"), shutil.which("ffprobe")
+    if not ffmpeg or not ffprobe or not path.is_file() or path.stat().st_size < 1000:
+        raise SyncFailure("Generated IELTS audio is missing or FFmpeg/FFprobe is unavailable.")
+    probe = subprocess.run([ffprobe, "-v", "error", "-show_entries", "format=duration,format_name,size:stream=codec_name,sample_rate,channels", "-of", "json", str(path)], capture_output=True, text=True, timeout=45)
+    if probe.returncode:
+        raise SyncFailure("FFprobe rejected the generated IELTS MP3.")
+    try:
+        meta = json.loads(probe.stdout)
+        stream = (meta.get("streams") or [])[0]
+        duration = float((meta.get("format") or {}).get("duration") or 0)
+    except Exception:
+        raise SyncFailure("FFprobe returned incomplete IELTS MP3 metadata.") from None
+    words = len(re.findall(r"[A-Za-z0-9]+(?:['’][A-Za-z0-9]+)*", speech_text))
+    if stream.get("codec_name") != "mp3" or not 0.2 < duration < min(90.0, max(6.0, words * 2.5 + 2.0)):
+        raise SyncFailure("Generated IELTS audio codec or duration is invalid.")
+    decoded = subprocess.run([ffmpeg, "-v", "error", "-i", str(path), "-f", "null", "-"], capture_output=True, timeout=90)
+    pcm = subprocess.run([ffmpeg, "-v", "error", "-i", str(path), "-f", "s16le", "-ac", "1", "-ar", "16000", "-"], capture_output=True, timeout=90)
+    if decoded.returncode or pcm.returncode or not pcm.stdout or len(pcm.stdout) % 2:
+        raise SyncFailure("Generated IELTS MP3 failed full decode.")
+    samples = array.array("h")
+    samples.frombytes(pcm.stdout)
+    if sys.byteorder != "little":
+        samples.byteswap()
+    rms = math.sqrt(sum(int(x) * int(x) for x in samples) / max(1, len(samples)))
+    peak = max((abs(int(x)) for x in samples), default=0)
+    nonzero = sum(x != 0 for x in samples) / max(1, len(samples))
+    if rms < 150 or peak < 500 or nonzero < 0.01:
+        raise SyncFailure("Generated IELTS MP3 is silent or below the voice threshold.")
+    return {"duration": round(duration, 5), "sha256": hashlib.sha256(path.read_bytes()).hexdigest(), "bytes": path.stat().st_size, "rms": round(rms, 2)}
+
+def piper_audio_for_new_note(english: str, note_key: str) -> tuple[str, dict[str, Any]]:
+    speech_text = " ".join(str(english).split())
+    if not speech_text or re.search(r"</?[A-Za-z][^>]*>", speech_text):
+        raise SyncFailure("English field is empty or contains markup; refusing ambiguous Piper input.")
+    piper, espeak_data, model, config = _piper_ascii_runtime()
+    model_sha = hashlib.sha256(PIPER_MODEL.read_bytes()).hexdigest()
+    safe_key = re.sub(r"[^A-Za-z0-9_-]+", "_", note_key).strip("_") or "note"
+    english_sha = hashlib.sha256(str(english).encode("utf-8")).hexdigest()[:10]
+    stem = f"ielts_piper_en_gb_{safe_key}_{english_sha}_{model_sha[:8]}"
+    scratch = pathlib.Path(os.environ.get("TMPDIR") or (HOME / "cache" / "scratch")) / "anki_piper_runtime"
+    nonce = uuid.uuid4().hex[:8]
+    wav = scratch / f"{stem}_{nonce}.wav"
+    output = scratch / f"{stem}_{nonce}.mp3"
+    try:
+        generated = subprocess.run([str(piper), "-m", str(model), "-c", str(config), "-f", str(wav), "--espeak_data", str(espeak_data), "-q"], input=(speech_text + "\n").encode("utf-8"), capture_output=True, timeout=120)
+        if generated.returncode or not wav.is_file() or wav.stat().st_size == 0:
+            raise SyncFailure("Piper failed to synthesize the new IELTS headword.")
+        ffmpeg = shutil.which("ffmpeg")
+        if not ffmpeg:
+            raise SyncFailure("FFmpeg is unavailable; new IELTS note was not created.")
+        converted = subprocess.run([ffmpeg, "-y", "-nostdin", "-v", "error", "-i", str(wav), "-map", "0:a:0", "-vn", "-ac", "1", "-ar", "44100", "-c:a", "libmp3lame", "-b:a", "128k", str(output)], capture_output=True, timeout=90)
+        if converted.returncode:
+            raise SyncFailure("FFmpeg could not encode the new IELTS audio as MP3.")
+        metrics = _validate_generated_mp3(output, speech_text)
+        stage = AUDIO_ROOT / "staging"
+        stage.mkdir(parents=True, exist_ok=True)
+        filename = stem + ".mp3"
+        final = stage / filename
+        shutil.copy2(output, final)
+        existing = anki("retrieveMediaFile", {"filename": filename}).get("result")
+        if isinstance(existing, str) and existing:
+            old_bytes = base64.b64decode(existing, validate=True)
+            if hashlib.sha256(old_bytes).hexdigest() != metrics["sha256"]:
+                filename = f"{stem}_{metrics['sha256'][:10]}.mp3"
+                final = stage / filename
+                shutil.copy2(output, final)
+                existing = anki("retrieveMediaFile", {"filename": filename}).get("result")
+                if isinstance(existing, str) and existing and hashlib.sha256(base64.b64decode(existing, validate=True)).hexdigest() != metrics["sha256"]:
+                    filename = f"{stem}_{metrics['sha256'][:10]}_{uuid.uuid4().hex[:8]}.mp3"
+                    final = stage / filename
+                    shutil.copy2(output, final)
+                    existing = None
+        if existing is None or existing is False or existing == "":
+            stored = anki("storeMediaFile", {"filename": filename, "data": base64.b64encode(final.read_bytes()).decode("ascii")}).get("result")
+            if stored != filename:
+                raise SyncFailure("AnkiConnect did not confirm storing the new IELTS MP3.")
+        readback = anki("retrieveMediaFile", {"filename": filename}).get("result")
+        if not isinstance(readback, str):
+            raise SyncFailure("AnkiConnect could not retrieve the stored IELTS MP3.")
+        media = base64.b64decode(readback, validate=True)
+        if len(media) != metrics["bytes"] or hashlib.sha256(media).hexdigest() != metrics["sha256"]:
+            raise SyncFailure("AnkiConnect media readback did not match the generated IELTS MP3.")
+        metrics.update({"filename": filename, "voice_model": "en_GB-cori-high", "voice_model_sha256": model_sha, "engine": "Piper CLI 2023.11.14-2", "is_human_recording": False, "media_readback_sha256": hashlib.sha256(media).hexdigest()})
+        safe_log("ielts_audio_generated", note_key=note_key, filename=filename, sha256=metrics["sha256"], duration=metrics["duration"])
+        return f"[sound:{filename}]", metrics
+    finally:
+        wav.unlink(missing_ok=True)
+        output.unlink(missing_ok=True)
 
 def read_prefs() -> dict[str, Any]:
     if not PREFS_PATH.is_file():
@@ -427,6 +548,11 @@ def safe_error_text(error: Exception) -> str:
 
 def update_card_page(notion: NotionClient, record: dict[str, Any], status: str, note_id: int | None = None, card_ids: list[int] | None = None, model: str | None = None, error: str = "") -> bool:
     properties: dict[str, Any] = {"Status": {"select": {"name": status}}, "Error": exact_rich_text_value(error)}
+    payload_changed = record.get("_audio_payload_changed") is True
+    if payload_changed:
+        payload_text = "json:" + json.dumps(record["payload"], ensure_ascii=False, separators=(",", ":"))
+        properties["PayloadJSON"] = exact_rich_text_value(payload_text)
+        properties["Revision"] = {"number": int(record["revision"])}
     if note_id is not None:
         properties["NoteID"] = exact_rich_text_value(str(note_id))
     if card_ids is not None:
@@ -435,16 +561,28 @@ def update_card_page(notion: NotionClient, record: dict[str, Any], status: str, 
         properties["Model"] = exact_rich_text_value(model)
     if status == "SYNCED":
         properties["SyncedAt"] = exact_rich_text_value(utc_now())
+
+    def audio_payload_matches(page: dict[str, Any]) -> bool:
+        if not payload_changed:
+            return True
+        raw = str(page_value(page, "PayloadJSON") or "").strip()
+        if raw.startswith("json:"):
+            raw = raw[5:].lstrip()
+        try:
+            return json.loads(raw) == record["payload"] and int(page_value(page, "Revision")) == int(record["revision"])
+        except Exception:
+            return False
+
     try:
         notion.patch_page(record["page_id"], properties)
     except SyncFailure:
         # A write response can be ambiguous; read the exact page once, never blindly repeat.
         page = notion.get_page(record["page_id"])
-        if page_value(page, "Status") == status and (note_id is None or str(page_value(page, "NoteID")) == str(note_id)) and page_value(page, "Error") == error:
+        if page_value(page, "Status") == status and (note_id is None or str(page_value(page, "NoteID")) == str(note_id)) and page_value(page, "Error") == error and audio_payload_matches(page):
             return True
         return False
     page = notion.get_page(record["page_id"])
-    ok = page_value(page, "Status") == status and page_value(page, "Error") == error
+    ok = page_value(page, "Status") == status and page_value(page, "Error") == error and audio_payload_matches(page)
     if note_id is not None:
         ok = ok and str(page_value(page, "NoteID")) == str(note_id)
     if card_ids is not None:
@@ -534,7 +672,7 @@ def process_record(notion: NotionClient, conn: sqlite3.Connection, record: dict[
                 return "CONFLICT"
             before_fingerprint = review_fingerprint(before)
             try:
-                anki("updateNoteFields", {"note": note_id, "fields": fields})
+                anki("updateNoteFields", {"note": {"id": note_id, "fields": fields}})
             except SyncFailure as exc:
                 after = note_snapshot(note_id)
                 if note_fields(after["note"]) != fields:
@@ -594,6 +732,23 @@ def process_record(notion: NotionClient, conn: sqlite3.Connection, record: dict[
         counts["conflicts" if status == "CONFLICT" else "errors"] += 1
         safe_log("card_validation_rejected", note_key=key, reason_type=status, notion_write_ok=ok)
         return status
+    if not fields.get("Audio", "").strip():
+        try:
+            audio_ref, audio_metrics = piper_audio_for_new_note(fields["English"], key)
+        except Exception as exc:
+            message = "Automatic Piper audio generation failed; no new Anki note was created. " + safe_error_text(exc)
+            ok = update_card_page(notion, record, "ERROR", error=message)
+            counts["errors"] += 1
+            safe_log("card_error", note_key=key, reason="automatic_audio_generation_failed", notion_write_ok=ok)
+            return "ERROR"
+        fields["Audio"] = audio_ref
+        record["payload"] = dict(record["payload"])
+        record["payload"]["Audio"] = audio_ref
+        revision += 1
+        record["revision"] = revision
+        record["_audio_payload_changed"] = True
+        digest = payload_hash(fields)
+        safe_log("audio_ready_new_note", note_key=key, filename=audio_metrics["filename"], sha256=audio_metrics["sha256"], duration=audio_metrics["duration"])
     try:
         created_id = anki("addNote", {"note": note}).get("result")
     except SyncFailure as exc:

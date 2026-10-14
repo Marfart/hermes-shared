@@ -1,0 +1,75 @@
+{
+  "run_id": "b6487b90-566c-48e6-9811-155b0e1dc8fe",
+  "started_at_utc": "2026-10-14T13:19:33Z",
+  "asset_audit_source": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\脚本缓存\\anki-audio-repair\\batch_audio_repair_audit_attempt1.json",
+  "asset_audit_sha256": "45cdae873f0e0d4ffa61ce7efec3d26e1582866e17de556cd48c85ebab488d94",
+  "backup_sha256_verified": "1a8f6d39c9f73d2243b5885004f0b85dc8bb07ab7f243c3bb8423a46769feb1c",
+  "scope": {
+    "rows": 100,
+    "synced_targets": 99,
+    "conflict_excluded": "involve"
+  },
+  "items": [
+    {
+      "NoteKey": "ielts-20261013-02",
+      "English": "include",
+      "NoteID": 1791966055531,
+      "CardIDs": [
+        1791966055533
+      ],
+      "filename": "ielts_piper_en_gb_ielts-20261013-02_c0cbff04cc_470b4dd6.mp3",
+      "generated_mp3": true,
+      "source_kind": "Local Piper TTS; not a human recording",
+      "voice_model": "en_GB-cori-high",
+      "duration_seconds": 0.931429,
+      "bytes": 15925,
+      "sha256": "59c86e8609e83f6dcd5ffbc965b99ccbd028c64f6bb61b55df92fae8ffeb606b",
+      "ffprobe_ok": true,
+      "full_decode_ok": true,
+      "non_silent_rms_s16": 6802.1,
+      "anki_media_retrieve_sha256": "59c86e8609e83f6dcd5ffbc965b99ccbd028c64f6bb61b55df92fae8ffeb606b",
+      "anki_audio_field_readback": "verified",
+      "NoteID_preserved": true,
+      "CardIDs_preserved": true,
+      "schedule_and_review_preserved": true,
+      "notion_audio_already_present": true,
+      "Notion_Audio_readback": "verified",
+      "Revision_after": 2,
+      "Status_after": "SYNCED",
+      "local_state_mapping": "verified/updated",
+      "result": "SUCCESS"
+    },
+    {
+      "NoteKey": "ielts-20261013-03",
+      "English": "approximately",
+      "NoteID": 1791966097713,
+      "CardIDs": [
+        1791966097713
+      ],
+      "filename": "ielts_piper_en_gb_ielts-20261013-03_5f79c870f2_470b4dd6.mp3",
+      "generated_mp3": true,
+      "source_kind": "Local Piper TTS; not a human recording",
+      "voice_model": "en_GB-cori-high",
+      "duration_seconds": 1.302948,
+      "bytes": 21776,
+      "sha256": "0d5cf17fc2692b717b837062219915b7b332dc90fad4a6cc8a02efc402af8581",
+      "ffprobe_ok": true,
+      "full_decode_ok": true,
+      "non_silent_rms_s16": 3762.71,
+      "result": "SAFETY_STOP",
+      "failure_reason": "Anki Audio already has a different value for ielts-20261013-03; refusing overwrite"
+    }
+  ],
+  "cloud_sync": {
+    "status": "NOT_RUN",
+    "collectionComplete": false,
+    "mediaComplete": false
+  },
+  "state_lock_acquired": true,
+  "stale_run_records_preserved": [
+    {
+      "run_id": "ccc35a03-17a7-458b-a3d4-c59f93004c8a",
+      "started_at": "2026-10-14T08:27:51Z"
+    }
+  ]
+}

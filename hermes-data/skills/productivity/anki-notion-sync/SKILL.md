@@ -1,7 +1,7 @@
 ---
 name: anki-notion-sync
 description: "Use when Kali says ‘同步 Anki’. Run the bridge."
-version: 1.0.0
+version: 1.2.0
 platforms: [windows]
 author: Hermes Agent
 license: MIT
@@ -50,6 +50,20 @@ python "C:/Users/Admin/AppData/Local/hermes/scripts/anki_notion_sync.py"
 6. Reviews 按 CardID 更新并回读身份和复习统计；`FetchedAtUTC` 是易变字段，不作为内容一致性的唯一判据。读回后写入的状态应以稳定字段（CardID、NoteID、NoteKey、复习统计、牌组和卡片状态）核验。
 
 以后 Kali 说“同步 Anki”时运行默认命令。
+
+## 音频字段修复
+
+当用户要求修复 IELTS 卡片音频或自动为新卡片处理音频时，先按 `references/audio-media.md` 逐卡验证来源、MP3 文件、Anki 媒体与同步结果。`{{tts en_GB:English}}` 模板不等于已存在的媒体文件；音频字段必须指向真实存在并验证过的 `[sound:filename.mp3]`。
+
+- 真人录音优先使用可复用的 Wiktionary/Wikimedia Commons 文件；必须读取实际文件页面/API 元数据与实际下载的文件，记录准确来源、语言/口音、作者、许可、源文件哈希。不得按词拼文件 URL，也不得在未确认许可时复用。
+- 没有可靠且许可清楚的真人录音时，使用本地 `en_GB-cori-high` Piper TTS；明确标注 TTS，不冒充真人。禁止未经授权录音或擅自调用收费语音 API。
+- 每个文件须通过存在/大小、FFprobe、完整解码、合理时长和非静音检查；发音文本必须对应 Anki `English` 原值。保存 provenance、生成器/模型版本、时长、SHA-256 和检查结果。
+- 通过 AnkiConnect `storeMediaFile` 保存后，必须用 `retrieveMediaFile` 回读并比较哈希，之后才更新 Anki `Audio` 字段。此插件的 `updateNoteFields` 参数必须包装为 `{"note":{"id":NOTE_ID,"fields":{"Audio":"[sound:FILE.mp3]"}}}`；不要把 `fields` 放在 `note` 外面。
+- 更新仅限 `Audio`；回读确认其他字段、NoteID、CardID、排程与复习历史均未改变。同步 Notion `PayloadJSON.Audio` 和 Revision，并更新本地状态库的对应映射/哈希，避免下一轮同步把音频清空。写入过程按现有事务与超时后回读规则操作，禁止盲目重试。
+- 测试卡通过后才批量处理身份明确的卡；按需执行 AnkiWeb 同步，并仅在 operation 成功且 `collectionComplete=true`、`mediaComplete=true` 时报告桌面端/云端媒体同步成功。该状态不证明 AnkiDroid 已下载或能播放；无法实际监听时只报告文件级验证，并让用户在 AnkiDroid 验收。
+- 不创建 cron、计划任务或轮询。新增 IELTS 卡自动音频已接入 `anki_notion_sync.py`：仅在唯一 NoteKey/重复检查和 `canAddNoteWithErrorDetail` 通过后，对 Audio 为空的新卡用本地 Piper `en_GB-cori-high` 合成、FFprobe/完整解码/非静音检查、`storeMediaFile` 与 `retrieveMediaFile` 哈希回读；随后把真实 `[sound:...]` 加入新笔记、PayloadJSON 与 Revision，并在 Notion 回读确认。已有 Audio 保留，CONFLICT/重复项在生成前跳过。该新卡分支已完成生成器与 Notion Revision 写入逻辑的隔离冒烟测试；没有为测试创建卡片。
+
+具体命令与验收顺序见 `references/audio-media.md`。
 
 ## 本地文件与凭证
 - 脚本：`%LOCALAPPDATA%/hermes/scripts/anki_notion_sync.py`

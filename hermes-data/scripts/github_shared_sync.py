@@ -201,19 +201,27 @@ def _redact_dict(d: dict) -> dict:
 
 def git_commit_and_push() -> bool:
     """检查变更 → commit → push"""
-    # git add
-    code, out = run_git("add", "-A")
+    # Stage only shared-data/config/chat-log paths; never sweep unrelated repo-root state.
+    code, out = run_git("add", "-A", "--", "hermes-data", "config", "聊天记录.md")
     if code != 0:
         log.error(f"git add 失败: {out}")
         return False
 
-    # 检查是否有变更
-    code, out = run_git("status", "--porcelain")
-    if not out.strip():
-        log.debug("无变更需要提交")
+    # Abort if the index contains anything outside the shared-sync allowlist.
+    code, out = run_git("diff", "--cached", "--name-only")
+    if code != 0:
+        log.error(f"读取暂存区失败: {out}")
+        return False
+    staged_paths = [line.strip() for line in out.splitlines() if line.strip()]
+    unexpected = [p for p in staged_paths if not (p.startswith("hermes-data/") or p.startswith("config/") or p == "聊天记录.md")]
+    if unexpected:
+        log.error("发现非同步目标暂存文件；停止提交和推送，保持暂存状态不变")
+        return False
+    if not staged_paths:
+        log.debug("无共享同步变更需要提交")
         return True
 
-    changed = len(out.strip().split("\n"))
+    changed = len(staged_paths)
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     msg = f"🔄 自动同步 hermes-data ({changed} files) [{timestamp}]"
 
