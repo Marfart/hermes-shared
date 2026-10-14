@@ -69,7 +69,11 @@ Windows users: skip step 2 entirely until native `ntn` ships — Path B works fi
 
 ## API Basics
 
-`Notion-Version: 2025-09-03` is required on all HTTP requests. `ntn` handles this for you. In this version, what users call "databases" are called **data sources** in the API.
+`Notion-Version: 2025-09-03` is required on all HTTP requests. In this version, what users call "databases" are called **data sources** in the API.
+
+### Existing-database audit and scoped write handshake
+
+For a request to inspect an existing Notion workflow and verify write access, follow this order: read all direct page blocks and relevant child pages; discover each child database's database ID and data-source ID; read complete property schemas; inspect relevant existing rows and diagnostics before writing; then, only when explicitly authorized and a safe existing log schema is available, create one clearly marked test row, read it back, update that same row, and read it back again. Never infer write access from credentials, page reads, or schema visibility alone; report it as verified only after the scoped create/update round trips succeed. Never use formal content rows for a permission probe. Detailed procedure: [`references/database-audit-and-write-handshake.md`](references/database-audit-and-write-handshake.md).
 
 ## Path A — `ntn` CLI (preferred, macOS / Linux)
 
@@ -106,6 +110,10 @@ ntn api v1/pages/{page_id}/markdown
 ```bash
 ntn api v1/blocks/{page_id}/children
 ```
+
+For configuration pages that define an external schema or template, read the complete ordered block tree rather than relying on a summary or rendered Markdown. Follow `has_more`/`next_cursor` until exhausted; preserve block order; join each block's rich-text `plain_text` fragments in sequence; retain code-block contents and newlines exactly. When a value is split across named fragments (for example, CSS parts), concatenate only in the explicitly documented order and preserve each fragment's text verbatim. Do not HTML-unescape or otherwise normalize text unless the source itself encodes it and the target format requires that transformation; validate the reconstructed value before using it.
+
+When a Notion value will be written into another system, treat the external system's safety gate as a hard prerequisite: complete and verify the required backup first, and stop all downstream writes if that gate fails. Keep source extraction read-only until the exact payload is reconstructed and checked; never replace a missing source template with an approximation.
 
 ### Create page from Markdown
 ```bash
