@@ -73,7 +73,8 @@
         "last_error_reset_at": null,
         "base_url": "***REDACTED***",
         "last_refresh": "***REDACTED***",
-        "request_count": 0
+        "request_count": 0,
+        "status_cleared_at": null
       }
     ],
     "ollama-cloud": [
