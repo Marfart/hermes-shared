@@ -20,15 +20,15 @@
       "schedule_display": "0 12 * * *",
       "repeat": {
         "times": null,
-        "completed": 48
+        "completed": 49
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-27T09:32:53.780748+08:00",
-      "next_run_at": "2026-10-21T12:00:00+08:00",
-      "last_run_at": "2026-10-20T12:00:58.089865+08:00",
+      "next_run_at": "2026-10-22T12:00:00+08:00",
+      "last_run_at": "2026-10-21T12:00:57.208214+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -43,9 +43,9 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-10-20T12:00:00+08:00",
-        "dispatched_at": "2026-10-20T12:00:56.597968+08:00",
-        "lateness_seconds": 56.6,
+        "scheduled_at": "2026-10-21T12:00:00+08:00",
+        "dispatched_at": "2026-10-21T12:00:55.947661+08:00",
+        "lateness_seconds": 55.9,
         "kind": "on_time"
       },
       "fire_claim": null,
@@ -126,15 +126,15 @@
       "schedule_display": "every 2m",
       "repeat": {
         "times": null,
-        "completed": 18732
+        "completed": 18772
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-29T09:19:50.549500+08:00",
-      "next_run_at": "2026-10-21T10:01:56.658316+08:00",
-      "last_run_at": "2026-10-21T09:59:56.658316+08:00",
+      "next_run_at": "2026-10-21T12:01:56.633850+08:00",
+      "last_run_at": "2026-10-21T11:59:56.633850+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -144,9 +144,9 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-10-21T09:58:59.717561+08:00",
-        "dispatched_at": "2026-10-21T09:59:55.949069+08:00",
-        "lateness_seconds": 56.2,
+        "scheduled_at": "2026-10-21T11:58:57.417961+08:00",
+        "dispatched_at": "2026-10-21T11:59:55.959699+08:00",
+        "lateness_seconds": 58.5,
         "kind": "on_time"
       },
       "fire_claim": null,
@@ -172,15 +172,15 @@
       "schedule_display": "every 5m",
       "repeat": {
         "times": null,
-        "completed": 9354
+        "completed": 9374
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-02T09:50:40.645932+08:00",
-      "next_run_at": "2026-10-21T10:01:59.748299+08:00",
-      "last_run_at": "2026-10-21T09:56:59.748299+08:00",
+      "next_run_at": "2026-10-21T12:01:57.596501+08:00",
+      "last_run_at": "2026-10-21T11:56:57.596501+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -190,8 +190,8 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-10-21T09:55:59.914426+08:00",
-        "dispatched_at": "2026-10-21T09:56:58.640134+08:00",
+        "scheduled_at": "2026-10-21T11:55:57.360121+08:00",
+        "dispatched_at": "2026-10-21T11:56:56.022208+08:00",
         "lateness_seconds": 58.7,
         "kind": "on_time"
       },
@@ -218,15 +218,15 @@
       "schedule_display": "every 5m",
       "repeat": {
         "times": null,
-        "completed": 8918
+        "completed": 8938
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-02T22:55:22.564303+08:00",
-      "next_run_at": "2026-10-21T10:01:59.971285+08:00",
-      "last_run_at": "2026-10-21T09:56:59.971285+08:00",
+      "next_run_at": "2026-10-21T12:01:57.469064+08:00",
+      "last_run_at": "2026-10-21T11:56:57.469064+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -243,9 +243,9 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-10-21T09:55:59.989395+08:00",
-        "dispatched_at": "2026-10-21T09:56:58.640134+08:00",
-        "lateness_seconds": 58.7,
+        "scheduled_at": "2026-10-21T11:55:57.569472+08:00",
+        "dispatched_at": "2026-10-21T11:56:56.022208+08:00",
+        "lateness_seconds": 58.5,
         "kind": "on_time"
       },
       "fire_claim": null,
@@ -325,15 +325,15 @@
       "schedule_display": "every 2m",
       "repeat": {
         "times": null,
-        "completed": 16853
+        "completed": 16893
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-03T11:38:26.059951+08:00",
-      "next_run_at": "2026-10-21T10:01:57.750594+08:00",
-      "last_run_at": "2026-10-21T09:59:57.750594+08:00",
+      "next_run_at": "2026-10-21T12:01:57.476127+08:00",
+      "last_run_at": "2026-10-21T11:59:57.476127+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -343,9 +343,9 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-10-21T09:59:01.420235+08:00",
-        "dispatched_at": "2026-10-21T09:59:55.949069+08:00",
-        "lateness_seconds": 54.5,
+        "scheduled_at": "2026-10-21T11:58:58.752855+08:00",
+        "dispatched_at": "2026-10-21T11:59:55.959699+08:00",
+        "lateness_seconds": 57.2,
         "kind": "on_time"
       },
       "fire_claim": null,
@@ -375,15 +375,15 @@
       "schedule_display": "every 5m",
       "repeat": {
         "times": null,
-        "completed": 8636
+        "completed": 8656
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-03T18:04:12.550017+08:00",
-      "next_run_at": "2026-10-21T10:02:05.839267+08:00",
-      "last_run_at": "2026-10-21T09:57:05.839267+08:00",
+      "next_run_at": "2026-10-21T12:02:04.678990+08:00",
+      "last_run_at": "2026-10-21T11:57:04.678990+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -393,9 +393,9 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-10-21T09:56:05.940837+08:00",
-        "dispatched_at": "2026-10-21T09:56:58.640134+08:00",
-        "lateness_seconds": 52.7,
+        "scheduled_at": "2026-10-21T11:56:05.017910+08:00",
+        "dispatched_at": "2026-10-21T11:56:56.022208+08:00",
+        "lateness_seconds": 51.0,
         "kind": "on_time"
       },
       "fire_claim": null,
@@ -515,15 +515,15 @@
       "schedule_display": "*/2 * * * *",
       "repeat": {
         "times": null,
-        "completed": 19270
+        "completed": 19330
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-13T19:05:53.539204+08:00",
-      "next_run_at": "2026-10-21T10:02:00+08:00",
-      "last_run_at": "2026-10-21T10:00:56.713978+08:00",
+      "next_run_at": "2026-10-21T12:02:00+08:00",
+      "last_run_at": "2026-10-21T12:00:56.845505+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -541,9 +541,9 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-10-21T10:00:00+08:00",
-        "dispatched_at": "2026-10-21T10:00:55.953598+08:00",
-        "lateness_seconds": 56.0,
+        "scheduled_at": "2026-10-21T12:00:00+08:00",
+        "dispatched_at": "2026-10-21T12:00:55.947661+08:00",
+        "lateness_seconds": 55.9,
         "kind": "on_time"
       },
       "fire_claim": null,
@@ -573,15 +573,15 @@
       "schedule_display": "every 3m",
       "repeat": {
         "times": null,
-        "completed": 9695
+        "completed": 9725
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-13T23:16:23.897064+08:00",
-      "next_run_at": "2026-10-21T10:01:56.682467+08:00",
-      "last_run_at": "2026-10-21T09:58:56.682467+08:00",
+      "next_run_at": "2026-10-21T12:01:56.738024+08:00",
+      "last_run_at": "2026-10-21T11:58:56.738024+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -598,9 +598,9 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-10-21T09:57:59.510730+08:00",
-        "dispatched_at": "2026-10-21T09:58:55.967931+08:00",
-        "lateness_seconds": 56.5,
+        "scheduled_at": "2026-10-21T11:57:56.767134+08:00",
+        "dispatched_at": "2026-10-21T11:58:55.948477+08:00",
+        "lateness_seconds": 59.2,
         "kind": "on_time"
       },
       "fire_claim": null,
@@ -626,15 +626,15 @@
       "schedule_display": "*/1 * * * *",
       "repeat": {
         "times": null,
-        "completed": 37308
+        "completed": 37427
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-15T16:46:49.518525+08:00",
-      "next_run_at": "2026-10-21T10:01:00+08:00",
-      "last_run_at": "2026-10-21T10:00:56.560259+08:00",
+      "next_run_at": "2026-10-21T12:01:00+08:00",
+      "last_run_at": "2026-10-21T12:00:56.623587+08:00",
       "last_status": "error",
       "last_error": "Script not found: C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\feishu_poll_daemon.py --once. Cron scripts are looked up only in this profile's folder (C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts); if the job was copied from another profile, copy the script there too, or edit the job with `hermes cron edit`.",
       "last_delivery_error": null,
@@ -651,15 +651,15 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-10-21T10:00:00+08:00",
-        "dispatched_at": "2026-10-21T10:00:55.953598+08:00",
-        "lateness_seconds": 56.0,
+        "scheduled_at": "2026-10-21T12:00:00+08:00",
+        "dispatched_at": "2026-10-21T12:00:55.947661+08:00",
+        "lateness_seconds": 55.9,
         "kind": "on_time"
       },
       "fire_claim": null,
-      "failure_streak": 14108,
+      "failure_streak": 14227,
       "last_failure": {
-        "at": "2026-10-21T10:00:56.560259+08:00",
+        "at": "2026-10-21T12:00:56.623587+08:00",
         "detail": "Script not found: C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\feishu_poll_daemon.py --once. Cron scripts are looked up only in this profile's folder (C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts); if the job was copied from another profile, copy the script there too, or edit the job with `hermes cron edit`."
       }
     },
@@ -683,15 +683,15 @@
       "schedule_display": "every 2m",
       "repeat": {
         "times": null,
-        "completed": 12504
+        "completed": 12544
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-15T22:53:28.139087+08:00",
-      "next_run_at": "2026-10-21T10:01:59.100351+08:00",
-      "last_run_at": "2026-10-21T09:59:59.100351+08:00",
+      "next_run_at": "2026-10-21T12:01:58.566342+08:00",
+      "last_run_at": "2026-10-21T11:59:58.566342+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -706,9 +706,9 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-10-21T09:59:02.910200+08:00",
-        "dispatched_at": "2026-10-21T09:59:55.949069+08:00",
-        "lateness_seconds": 53.0,
+        "scheduled_at": "2026-10-21T11:59:01.235926+08:00",
+        "dispatched_at": "2026-10-21T11:59:55.959699+08:00",
+        "lateness_seconds": 54.7,
         "kind": "on_time"
       },
       "fire_claim": null,
@@ -738,15 +738,15 @@
       "schedule_display": "0 */2 * * *",
       "repeat": {
         "times": null,
-        "completed": 307
+        "completed": 308
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-16T10:38:19.627289+08:00",
-      "next_run_at": "2026-10-21T12:00:00+08:00",
-      "last_run_at": "2026-10-21T08:01:15.773751+08:00",
+      "next_run_at": "2026-10-21T14:00:00+08:00",
+      "last_run_at": "2026-10-21T10:01:19.276353+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -761,14 +761,14 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-10-21T10:00:00+08:00",
-        "dispatched_at": "2026-10-21T10:00:55.953598+08:00",
-        "lateness_seconds": 56.0,
+        "scheduled_at": "2026-10-21T12:00:00+08:00",
+        "dispatched_at": "2026-10-21T12:00:55.947661+08:00",
+        "lateness_seconds": 55.9,
         "kind": "on_time"
       },
       "fire_claim": {
-        "at": "2026-10-21T10:00:56.287821+08:00",
-        "by": "PS2022MIXSNJQO:17300:bc846d4de3ed4133afdd66921d061ffc"
+        "at": "2026-10-21T12:00:56.385307+08:00",
+        "by": "PS2022MIXSNJQO:17300:7b518b36a72c4cfa8f3323c98dfbe778"
       },
       "failure_streak": 0
     },
@@ -831,12 +831,12 @@
     },
     {
       "id": "cc55482d3664",
-      "name": "BLIIOT GitHub项目深度学习（每小时汇报，8轮）",
-      "prompt": "Kali 已明确要求：从 GitHub 深入学习与 BLIIOT 工业物联网产品开发和客户开发有关的开源项目，并每小时报告做了什么。本任务限 8 次每小时运行，持续累积，最终形成可核验成果。每次运行都必须实际推进，不能只写计划或复述历史。\n\n每次执行：\n1) 读取当前工作目录下 study_log.md（如果存在）和上一轮报告；记录本轮日期、开始时间和完成时间（使用本机时间）。\n2) 从公开 GitHub 项目中选一个尚未深入研究的方向，轮换覆盖：IoT平台/协议集成、边缘网关架构、Node-RED/边缘流程、LoRaWAN、工业协议/数据管道、CRM/销售自动化/客户线索管理。候选包括 ThingsBoard、Node-RED、EdgeX Foundry、ChirpStack、DGIOT、n8n、Twenty CRM、ERPNext 等；不要仅凭 README/星数推荐。\n3) 核实仓库身份、许可证、支持平台、最近维护和安全/权限模型；阅读至少 3 个核心源码/测试/配置文件，说明 WHY 的设计取舍，并引用具体文件路径与行/代码符号。\n4) 对选中项目运行一项可行的原生测试或最小隔离实验；在 C:/Users/Admin/Desktop/Working/GitHub_Overnight_Study/ 克隆只读上游源码，在本工作目录保存原创验证脚本/实验，不修改上游文件。不安装系统服务、不更改 Hermes/公司系统配置、不访问或写入 Joinf CRM、不读写客户个人数据、不发邮件/WhatsApp、不在真实环境部署。需要额外依赖时只用项目隔离虚拟环境，无法安全安装则明确改做源码级实验，不谎称安装/运行。\n5) 将本轮详报写为本工作目录 hourly_01.md … hourly_08.md，并追加更新 study_log.md；同步追加到 Obsidian Vault 的 01-学习笔记/BLIIOT业务/（文件名 BLIIOT_GitHub_夜间项目深度学习_2026-10-20.md；目录不存在时先确认路径再创建）。文档含仓库、许可证/维护证据、逐文件阅读、WHY 设计、运行命令与真实结果、与 BLIIOT 产品/客户开发的适配及边界、未验证项、下一轮目标。每轮只记录本轮真实完成内容。\n6) 本次最终回复就是发给 Kali 的每小时简报：用简体中文，列出本轮实际读了哪些源文件、做了什么实验及真实结果、和产品/客户开发的关联、阻塞/下一步；区分事实与推断，不报虚构的精确耗时。第 8 轮追加全夜总结：覆盖项目、验证成果、可复用资产、候选建议及哪些项目真正安装/运行过。每轮按顺序编号，不声称一整小时都在执行代码；简报是每小时检查点。\n\n若 GitHub/网络失败，改用已克隆源码和本地实验继续；不能用缓存星数冒充最新状态。若本轮没有实质成果，直说原因并继续修复。若某个候选许可证不清或项目维护很差，记录为淘汰，不做未经证实的推荐。",
+      "name": "BLIIOT客户开发GitHub深度学习（每小时汇报，8轮）",
+      "prompt": "方向纠正：Kali 明确说明“开发客户”=客户开发/获客，不是开发设备、网关、嵌入式机器或产品固件。此前 Node-RED/运行时研究属于误解，不算本任务有效成果；从本轮开始严格聚焦 B2B 客户开发、线索研究、CRM、客户画像、邮件营销与销售流程自动化。不要再研究硬件、IoT网关固件或设备开发。\n\nKali 已授权进行一晚 GitHub 深度学习并每小时汇报；总计 8 次小时检查点，继续沿用本任务的连续上下文。每次运行必须实际推进、报告真实操作与结果，不得只写计划。\n\n研究重点按小时轮换：\n1) 公开公司网站/行业目录的客户线索收集与来源溯源（不用 LinkedIn 自动化，不绕登录/验证码）；\n2) 网站内容抽取、行业/业务画像、公开联系方式提取与证据引用；\n3) B2B 去重、评分、产品匹配、CRM 数据模型与导入/导出；\n4) 开源 CRM（如 Twenty CRM、EspoCRM、ERPNext CRM）架构、数据权限、活动记录、API/导入；\n5) 工作流自动化（如 n8n）用于线索到 CRM 的安全编排；\n6) 邮件营销工具（如 Mautic/listmonk）的同意/退订、抑制名单、发送频率和审计；\n7) 线索质量与数据验证、证据化个性化、避免臆造客户需求；\n8) 整合为适合 BLIIOT 的客户开发工具链与可复用原型。\n\n每个项目先用 GitHub 原始仓库核验身份、许可证、平台支持、维护活跃度和安全/权限模型；至少阅读 3 个核心源文件/测试/配置，提炼 WHY 设计决策，不能只看 README 和 stars。对每个选择尽量跑一项项目测试或隔离实验；在 C:/Users/Admin/Desktop/Working/GitHub_Overnight_Study/ 只克隆公开源码，在 C:/Users/Admin/AppData/Local/hermes/memories/脚本缓存/github_overnight_study/ 写原创验证脚本/结果。避免安装系统服务或改变 Hermes/公司配置；可用项目隔离环境，不改上游文件。\n\n安全与公司边界：只研究公开信息和公开仓库；不读取/上传客户个人数据，不连接或写入 Joinf/真实 CRM，不向客户发送邮件、WhatsApp 或其他消息，不做 LinkedIn 自动化，不处理登录态/验证码，不把未证实的需求写成事实。研究对象要围绕 BLIIOT 目标客户（工业自动化集成商、能源/太阳能、工业设备服务商等）与现有安全获客偏好（Email优先、B2B渠道、名单去重、先核验客户官网和适配依据）。\n\n每轮结束时：将真实完成情况保存为 hourly_01.md 至 hourly_08.md，并追加 study_log.md；同时将纠正说明和客户开发方向的成果追加到 Obsidian `01-学习笔记/BLIIOT业务/BLIIOT_GitHub_夜间项目深度学习_2026-10-20.md`。明确记载 Node-RED 是之前误解范围的启动工作，不作为客户开发成果。报告需含：时段、仓库与许可证/维护依据、至少3个源文件及 WHY、实际测试命令/结果、客户开发场景适用/不适用、风险与未验证项、下一小时目标。不得虚报耗时、星数、测试或完成状态。\n\n每小时最终回复用简体中文，直接说这一轮做了什么、真实结果、对获客有何帮助及下一步。第8轮做总整理：按线索来源→公开网站研究→证据化画像/评分→去重→CRM→合规邮件/跟进，给出可用项目与淘汰项目、许可证/维护/安全结论、哪些实际安装运行、原创验证成果和适用边界。每轮没有实质成果就说明原因并继续修复。",
       "skills": [
         "github",
-        "bliiot-product-knowledge",
         "bliiot-sales-pipeline",
+        "bliiot-product-knowledge",
         "python-script-craftsmanship"
       ],
       "skill": "github",
@@ -901,7 +901,74 @@
         "kind": "on_time"
       },
       "fire_claim": null
+    },
+    {
+      "id": "8ab175e22cad",
+      "name": "BLIIOT客户开发GitHub深度学习（每小时汇报，8轮）",
+      "prompt": "Kali 明确纠正：这里的“开发客户”是获客/客户开发，不是开发设备、网关、嵌入式机器或产品固件。严格只研究 GitHub 上与 BLIIOT B2B 获客、潜客研究、CRM、销售流程、邮件营销/自动化有关的项目；不要再把工业机器/IoT运行时开发当作研究目标。此前 Node-RED 是范围误解，不计作本任务成果。\n\n连续进行 8 轮每小时学习与汇报。每轮都必须实际做研究并报告真实完成内容，不可只给计划。研究线索收集、公开公司官网画像、行业/业务证据抽取、联系方式核验、名单去重与评分、产品适配依据、开源 CRM、工作流自动化、邮件营销同意/退订/抑制名单/发送审计。项目候选包括 Twenty CRM、EspoCRM、ERPNext CRM、n8n、Mautic、listmonk、Crawlee/Crawl4AI 等；从 GitHub 搜索发现并独立核验，不要预先假定它们适合。\n\n研究 BLIIOT 目标客户场景：工业自动化集成商、能源/太阳能企业、工业设备服务商等；遵守用户现有偏好：Email优先，B2B目录/公开公司官网研究，避免LinkedIn自动化与WhatsApp批量外联。只做公开信息和仓库研究。\n\n每个项目检查原始仓库、许可证、近期维护、权限/数据流/安全边界；至少读 3 个核心源码、测试或配置文件，解释 WHY 而不止罗列功能。尽量运行项目测试或隔离实验，记录真实命令和输出。源码仅克隆到 C:/Users/Admin/Desktop/Working/GitHub_Overnight_Study/；实验、小时报告与累计日志写到 C:/Users/Admin/AppData/Local/hermes/memories/脚本缓存/github_overnight_study/。每轮保存 hourly_01.md 至 hourly_08.md 对应报告并追加 study_log.md；把方向纠正和客户开发成果追加到 Obsidian 笔记 `C:/Users/Admin/Documents/Obsidian Vault/01-学习笔记/BLIIOT业务/BLIIOT_GitHub_夜间项目深度学习_2026-10-20.md`。将此前 Node-RED 工作明确标为误解方向、排除在获客成果之外。\n\n禁止访问/写入 Joinf 或其他真实 CRM，禁止读取、复制或上传任何客户个人数据；禁止发送邮件、WhatsApp 或其他消息；禁止连接公司设备、真实部署、读写 Hermes/公司配置、安装系统服务；不自动化 LinkedIn、不绕过登录或验证码。只在隔离目录运行公开项目代码。公开客户联系方式也不可用于真实触达。\n\n每轮报告包括：研究时段；项目名、原始仓库和许可证/维护证据；至少3个实际阅读文件及 WHY；实际测试/实验命令和结果；对客户开发流程具体有什么帮助/不适用；风险与未验证项；下一轮目标。最终第8轮总结端到端客户开发链路（公开线索→证据化画像与评分→去重→CRM→合规邮件跟进），比较保留和淘汰项目、许可/维护/权限风险、实测结果与可复用成果。使用简体中文；不虚报耗时、执行结果、客户信息或邮件可达性。",
+      "skills": [
+        "github",
+        "bliiot-sales-pipeline",
+        "bliiot-product-knowledge",
+        "python-script-craftsmanship"
+      ],
+      "skill": "github",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": [
+        "self"
+      ],
+      "schedule": {
+        "kind": "interval",
+        "minutes": 60,
+        "display": "every 60m"
+      },
+      "schedule_display": "every 60m",
+      "repeat": {
+        "times": 8,
+        "completed": 1
+      },
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-10-21T11:40:12.969202+08:00",
+      "paused_reason": null,
+      "created_at": "2026-10-21T11:38:35.486502+08:00",
+      "next_run_at": "2026-10-21T12:39:03.822850+08:00",
+      "last_run_at": "2026-10-21T11:39:03.822850+08:00",
+      "last_status": "error",
+      "last_error": "RuntimeError: HTTP 404: No endpoints found for owl-alpha.",
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "last_failure": {
+        "at": "2026-10-21T11:39:03.822850+08:00",
+        "detail": "RuntimeError: HTTP 404: No endpoints found for owl-alpha."
+      },
+      "failure_streak": 1,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "8314311281",
+        "chat_name": "Kali",
+        "thread_id": null,
+        "user_id": "8314311281",
+        "scope_id": null
+      },
+      "enabled_toolsets": [
+        "web",
+        "terminal",
+        "file",
+        "search",
+        "github"
+      ],
+      "workdir": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\脚本缓存\\github_overnight_study",
+      "fire_claim": null
     }
   ],
-  "updated_at": "2026-10-21T10:00:56.716575+08:00"
+  "updated_at": "2026-10-21T12:00:57.211033+08:00"
 }
