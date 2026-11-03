@@ -126,15 +126,15 @@
       "schedule_display": "every 2m",
       "repeat": {
         "times": null,
-        "completed": 20346
+        "completed": 20372
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-29T09:19:50.549500+08:00",
-      "next_run_at": "2026-11-03T08:43:47.934610+08:00",
-      "last_run_at": "2026-11-03T08:41:47.934610+08:00",
+      "next_run_at": "2026-11-03T10:01:20.589101+08:00",
+      "last_run_at": "2026-11-03T09:59:20.589101+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -144,9 +144,9 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-11-03T08:40:43.586957+08:00",
-        "dispatched_at": "2026-11-03T08:41:18.614475+08:00",
-        "lateness_seconds": 35.0,
+        "scheduled_at": "2026-11-03T09:58:19.835829+08:00",
+        "dispatched_at": "2026-11-03T09:59:19.031822+08:00",
+        "lateness_seconds": 59.2,
         "kind": "on_time"
       },
       "fire_claim": null,
@@ -176,15 +176,15 @@
       "schedule_display": "every 5m",
       "repeat": {
         "times": null,
-        "completed": 10165
+        "completed": 10178
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-02T09:50:40.645932+08:00",
-      "next_run_at": "2026-11-03T08:46:57.596905+08:00",
-      "last_run_at": "2026-11-03T08:41:57.596905+08:00",
+      "next_run_at": "2026-11-03T10:04:20.907600+08:00",
+      "last_run_at": "2026-11-03T09:59:20.907600+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -194,9 +194,9 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-11-03T08:40:25.830136+08:00",
-        "dispatched_at": "2026-11-03T08:41:18.614475+08:00",
-        "lateness_seconds": 52.8,
+        "scheduled_at": "2026-11-03T09:58:20.605274+08:00",
+        "dispatched_at": "2026-11-03T09:59:19.031822+08:00",
+        "lateness_seconds": 58.4,
         "kind": "on_time"
       },
       "fire_claim": null,
@@ -222,15 +222,15 @@
       "schedule_display": "every 5m",
       "repeat": {
         "times": null,
-        "completed": 9729
+        "completed": 9742
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-02T22:55:22.564303+08:00",
-      "next_run_at": "2026-11-03T08:46:59.085218+08:00",
-      "last_run_at": "2026-11-03T08:41:59.085218+08:00",
+      "next_run_at": "2026-11-03T10:04:20.990075+08:00",
+      "last_run_at": "2026-11-03T09:59:20.990075+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -247,9 +247,9 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-11-03T08:40:24.348917+08:00",
-        "dispatched_at": "2026-11-03T08:41:18.614475+08:00",
-        "lateness_seconds": 54.3,
+        "scheduled_at": "2026-11-03T09:58:20.260860+08:00",
+        "dispatched_at": "2026-11-03T09:59:19.031822+08:00",
+        "lateness_seconds": 58.8,
         "kind": "on_time"
       },
       "fire_claim": null,
@@ -329,15 +329,15 @@
       "schedule_display": "every 2m",
       "repeat": {
         "times": null,
-        "completed": 18459
+        "completed": 18485
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-03T11:38:26.059951+08:00",
-      "next_run_at": "2026-11-03T08:42:43.347149+08:00",
-      "last_run_at": "2026-11-03T08:40:43.347149+08:00",
+      "next_run_at": "2026-11-03T10:00:24.469375+08:00",
+      "last_run_at": "2026-11-03T09:58:24.469375+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -347,9 +347,9 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-11-03T08:37:43.033159+08:00",
-        "dispatched_at": "2026-11-03T08:38:18.794149+08:00",
-        "lateness_seconds": 35.8,
+        "scheduled_at": "2026-11-03T09:57:27.523385+08:00",
+        "dispatched_at": "2026-11-03T09:58:19.033136+08:00",
+        "lateness_seconds": 51.5,
         "kind": "on_time"
       },
       "fire_claim": null,
@@ -379,15 +379,15 @@
       "schedule_display": "every 5m",
       "repeat": {
         "times": null,
-        "completed": 9446
+        "completed": 9459
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-03T18:04:12.550017+08:00",
-      "next_run_at": "2026-11-03T08:46:59.250688+08:00",
-      "last_run_at": "2026-11-03T08:41:59.250688+08:00",
+      "next_run_at": "2026-11-03T10:04:21.226613+08:00",
+      "last_run_at": "2026-11-03T09:59:21.226613+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -397,9 +397,9 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-11-03T08:40:25.343299+08:00",
-        "dispatched_at": "2026-11-03T08:41:18.614475+08:00",
-        "lateness_seconds": 53.3,
+        "scheduled_at": "2026-11-03T09:58:20.552410+08:00",
+        "dispatched_at": "2026-11-03T09:59:19.031822+08:00",
+        "lateness_seconds": 58.5,
         "kind": "on_time"
       },
       "fire_claim": null,
@@ -519,15 +519,15 @@
       "schedule_display": "*/2 * * * *",
       "repeat": {
         "times": null,
-        "completed": 21687
+        "completed": 21726
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-13T19:05:53.539204+08:00",
-      "next_run_at": "2026-11-03T08:44:00+08:00",
-      "last_run_at": "2026-11-03T08:42:33.978093+08:00",
+      "next_run_at": "2026-11-03T10:02:00+08:00",
+      "last_run_at": "2026-11-03T10:00:23.542454+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -545,9 +545,9 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-11-03T08:42:00+08:00",
-        "dispatched_at": "2026-11-03T08:42:18.778538+08:00",
-        "lateness_seconds": 18.8,
+        "scheduled_at": "2026-11-03T10:00:00+08:00",
+        "dispatched_at": "2026-11-03T10:00:19.029962+08:00",
+        "lateness_seconds": 19.0,
         "kind": "on_time"
       },
       "fire_claim": null,
@@ -577,15 +577,15 @@
       "schedule_display": "every 3m",
       "repeat": {
         "times": null,
-        "completed": 10907
+        "completed": 10927
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-13T23:16:23.897064+08:00",
-      "next_run_at": "2026-11-03T08:43:55.195955+08:00",
-      "last_run_at": "2026-11-03T08:40:55.195955+08:00",
+      "next_run_at": "2026-11-03T10:03:22.401836+08:00",
+      "last_run_at": "2026-11-03T10:00:22.401836+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -602,9 +602,9 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-11-03T08:38:24.824155+08:00",
-        "dispatched_at": "2026-11-03T08:39:35.653935+08:00",
-        "lateness_seconds": 70.8,
+        "scheduled_at": "2026-11-03T09:59:19.991357+08:00",
+        "dispatched_at": "2026-11-03T10:00:19.029962+08:00",
+        "lateness_seconds": 59.0,
         "kind": "on_time"
       },
       "fire_claim": null,
@@ -634,15 +634,15 @@
       "schedule_display": "*/1 * * * *",
       "repeat": {
         "times": null,
-        "completed": 42123
+        "completed": 42201
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-15T16:46:49.518525+08:00",
-      "next_run_at": "2026-11-03T08:43:00+08:00",
-      "last_run_at": "2026-11-03T08:42:21.917912+08:00",
+      "next_run_at": "2026-11-03T10:01:00+08:00",
+      "last_run_at": "2026-11-03T10:00:21.583691+08:00",
       "last_status": "error",
       "last_error": "Script not found: C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\feishu_poll_daemon.py --once. Cron scripts are looked up only in this profile's folder (C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts); if the job was copied from another profile, copy the script there too, or edit the job with `hermes cron edit`.",
       "last_delivery_error": null,
@@ -659,15 +659,15 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-11-03T08:42:00+08:00",
-        "dispatched_at": "2026-11-03T08:42:18.778538+08:00",
-        "lateness_seconds": 18.8,
+        "scheduled_at": "2026-11-03T10:00:00+08:00",
+        "dispatched_at": "2026-11-03T10:00:19.029962+08:00",
+        "lateness_seconds": 19.0,
         "kind": "on_time"
       },
       "fire_claim": null,
-      "failure_streak": 18923,
+      "failure_streak": 19001,
       "last_failure": {
-        "at": "2026-11-03T08:42:21.917912+08:00",
+        "at": "2026-11-03T10:00:21.583691+08:00",
         "detail": "Script not found: C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\feishu_poll_daemon.py --once. Cron scripts are looked up only in this profile's folder (C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts); if the job was copied from another profile, copy the script there too, or edit the job with `hermes cron edit`."
       }
     },
@@ -691,15 +691,15 @@
       "schedule_display": "every 2m",
       "repeat": {
         "times": null,
-        "completed": 14111
+        "completed": 14138
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-15T22:53:28.139087+08:00",
-      "next_run_at": "2026-11-03T08:43:18.931789+08:00",
-      "last_run_at": "2026-11-03T08:35:52.910758+08:00",
+      "next_run_at": "2026-11-03T10:02:34.687554+08:00",
+      "last_run_at": "2026-11-03T10:00:34.687554+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -714,24 +714,16 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-11-03T08:40:28.277081+08:00",
-        "dispatched_at": "2026-11-03T08:41:18.614475+08:00",
-        "lateness_seconds": 50.3,
+        "scheduled_at": "2026-11-03T09:59:24.913314+08:00",
+        "dispatched_at": "2026-11-03T10:00:19.029962+08:00",
+        "lateness_seconds": 54.1,
         "kind": "on_time"
       },
-      "fire_claim": {
-        "at": "2026-11-03T08:42:42.107397+08:00",
-        "by": "PS2022MIXSNJQO:17184:007a726308ea49beafa8f06563a56e40"
-      },
+      "fire_claim": null,
       "failure_streak": 0,
       "last_failure": {
         "at": "2026-11-02T10:46:20.279106+08:00",
         "detail": "Script exited with code 15"
-      },
-      "pending_slot": {
-        "scheduled_at": "2026-11-03T08:40:28.277081+08:00",
-        "at": "2026-11-03T08:41:18.614475+08:00",
-        "by": "PS2022MIXSNJQO:17184"
       }
     },
     {
@@ -754,15 +746,15 @@
       "schedule_display": "0 */2 * * *",
       "repeat": {
         "times": null,
-        "completed": 356
+        "completed": 357
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-16T10:38:19.627289+08:00",
-      "next_run_at": "2026-11-03T10:00:00+08:00",
-      "last_run_at": "2026-11-02T18:00:43.917182+08:00",
+      "next_run_at": "2026-11-03T12:00:00+08:00",
+      "last_run_at": "2026-11-03T08:43:48.556212+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -777,14 +769,14 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-11-02T20:00:00+08:00",
-        "dispatched_at": "2026-11-03T08:35:18.584443+08:00",
-        "lateness_seconds": 45318.6,
-        "kind": "catch_up"
+        "scheduled_at": "2026-11-03T10:00:00+08:00",
+        "dispatched_at": "2026-11-03T10:00:19.029962+08:00",
+        "lateness_seconds": 19.0,
+        "kind": "on_time"
       },
       "fire_claim": {
-        "at": "2026-11-03T08:42:42.224607+08:00",
-        "by": "PS2022MIXSNJQO:17184:7f4ac5a0869340af98e7b50a279d2d9e"
+        "at": "2026-11-03T10:00:20.776992+08:00",
+        "by": "PS2022MIXSNJQO:17184:958c987845ae4ec0977b80d828c0a03f"
       },
       "failure_streak": 0
     },
@@ -808,17 +800,17 @@
       "schedule_display": "0 9 * * *",
       "repeat": {
         "times": null,
-        "completed": 36
+        "completed": 37
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-19T20:17:51.731658+08:00",
-      "next_run_at": "2026-11-03T09:00:00+08:00",
-      "last_run_at": "2026-11-02T09:06:45.778657+08:00",
+      "next_run_at": "2026-11-04T09:00:00+08:00",
+      "last_run_at": "2026-11-03T10:00:01.567261+08:00",
       "last_status": "error",
-      "last_error": "Script exited with code 1\nstderr:\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import os, runpy, site, sys;site.addsitedir('C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\installs\\\\902a4fe5d10abbac\\\\environments\\\\9c06ac7c16584d92b7d28132dc51cd4b\\\\venv\\\\Lib\\\\site-packages');script = sys.argv[1];sys.argv = [script] + sys.argv[2:];sys.path.insert(0, os.path.dirname(os.path.abspath(script)));runpy.run_path(script, run_name='__main__')\n                                                                                                                                                                                                                                                                                                                       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 294, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\daily_email_v4.py\", line 214, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\daily_email_v4.py\", line 141, in main\n    data = json.loads(DATA_FILE.read_text('utf-8'))\n                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\tools\\python-3.14.7+202****0901-win32-x64\\Lib\\pathlib\\__init__.py\", line 787, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\tools\\python-3.14.7+202****0901-win32-x64\\Lib\\pathlib\\__init__.py\", line 771, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\Desktop\\\\Working\\\\富通CRM_公海客户_全量.json'\nstdout:\n============================================================\nBLIIOT 拟人邮件发送 v4.1 | 2026-11-02 08:39\n============================================================\n今日已发: 0/50 | 剩余: 50\n⏳ 随机延迟 27分36秒后开始发送（模拟真人操作时间）\n📂 加载客户数据...",
+      "last_error": "Script exited with code 1\nstderr:\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import os, runpy, site, sys;site.addsitedir('C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\installs\\\\902a4fe5d10abbac\\\\environments\\\\9c06ac7c16584d92b7d28132dc51cd4b\\\\venv\\\\Lib\\\\site-packages');script = sys.argv[1];sys.argv = [script] + sys.argv[2:];sys.path.insert(0, os.path.dirname(os.path.abspath(script)));runpy.run_path(script, run_name='__main__')\n                                                                                                                                                                                                                                                                                                                       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 294, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\daily_email_v4.py\", line 214, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\daily_email_v4.py\", line 141, in main\n    data = json.loads(DATA_FILE.read_text('utf-8'))\n                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\tools\\python-3.14.7+202****0901-win32-x64\\Lib\\pathlib\\__init__.py\", line 787, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\tools\\python-3.14.7+202****0901-win32-x64\\Lib\\pathlib\\__init__.py\", line 771, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\Desktop\\\\Working\\\\富通CRM_公海客户_全量.json'\nstdout:\n============================================================\nBLIIOT 拟人邮件发送 v4.1 | 2026-11-03 09:00\n============================================================\n今日已发: 0/50 | 剩余: 50\n⏳ 随机延迟 59分40秒后开始发送（模拟真人操作时间）\n📂 加载客户数据...",
       "last_delivery_error": null,
       "deliver": "local",
       "origin": {
@@ -833,16 +825,16 @@
       "workdir": null,
       "profile": null,
       "last_dispatch": {
-        "scheduled_at": "2026-11-02T09:00:00+08:00",
-        "dispatched_at": "2026-11-02T09:00:17.213792+08:00",
-        "lateness_seconds": 17.2,
+        "scheduled_at": "2026-11-03T09:00:00+08:00",
+        "dispatched_at": "2026-11-03T09:00:18.545981+08:00",
+        "lateness_seconds": 18.5,
         "kind": "on_time"
       },
       "fire_claim": null,
-      "failure_streak": 18,
+      "failure_streak": 19,
       "last_failure": {
-        "at": "2026-11-02T09:06:45.778657+08:00",
-        "detail": "Script exited with code 1\nstderr:\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import os, runpy, site, sys;site.addsitedir('C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\installs\\\\902a4fe5d10abbac\\\\environments\\\\9c06ac7c16584d92b7d28132dc51cd4b\\\\venv\\\\Lib\\\\site-packages');script = sys.argv[1];sys.argv = [script] + sys.argv[2:];sys.path.insert(0, os.path.dirname(os.path.abspath(script)));runpy.run_path(script, run_name='__main__')\n                                                                                                                                                                                                                                                                                                                       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 294, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\daily_email_v4.py\", line 214, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\daily_email_v4.py\", line 141, in main\n    data = json.loads(DATA_FILE.read_text('utf-8'))\n                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\tools\\python-3.14.7+202****0901-win32-x64\\Lib\\pathlib\\__init__.py\", line 787, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\tools\\python-3.14.7+202****0901-win32-x64\\Lib\\pathlib\\__init__.py\", line 771, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\Desktop\\\\Working\\\\富通CRM_公海客户_全量.json'\nstdout:\n============================================================\nBLIIOT 拟人邮件发送 v4.1 | 2026-11-02 08:39\n============================================================\n今日已发: 0/50 | 剩余: 50\n⏳ 随机延迟 27分36秒后开始发送（模拟真人操作时间）\n📂 加载客户数据..."
+        "at": "2026-11-03T10:00:01.567261+08:00",
+        "detail": "Script exited with code 1\nstderr:\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import os, runpy, site, sys;site.addsitedir('C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\installs\\\\902a4fe5d10abbac\\\\environments\\\\9c06ac7c16584d92b7d28132dc51cd4b\\\\venv\\\\Lib\\\\site-packages');script = sys.argv[1];sys.argv = [script] + sys.argv[2:];sys.path.insert(0, os.path.dirname(os.path.abspath(script)));runpy.run_path(script, run_name='__main__')\n                                                                                                                                                                                                                                                                                                                       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 294, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\daily_email_v4.py\", line 214, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\daily_email_v4.py\", line 141, in main\n    data = json.loads(DATA_FILE.read_text('utf-8'))\n                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\tools\\python-3.14.7+202****0901-win32-x64\\Lib\\pathlib\\__init__.py\", line 787, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\tools\\python-3.14.7+202****0901-win32-x64\\Lib\\pathlib\\__init__.py\", line 771, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\Desktop\\\\Working\\\\富通CRM_公海客户_全量.json'\nstdout:\n============================================================\nBLIIOT 拟人邮件发送 v4.1 | 2026-11-03 09:00\n============================================================\n今日已发: 0/50 | 剩余: 50\n⏳ 随机延迟 59分40秒后开始发送（模拟真人操作时间）\n📂 加载客户数据..."
       }
     },
     {
@@ -986,5 +978,5 @@
       "fire_claim": null
     }
   ],
-  "updated_at": "2026-11-03T08:42:42.228366+08:00"
+  "updated_at": "2026-11-03T10:00:34.689972+08:00"
 }
