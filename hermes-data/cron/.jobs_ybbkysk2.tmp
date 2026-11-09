@@ -1,0 +1,997 @@
+{
+  "jobs": [
+    {
+      "id": "d9cdda215253",
+      "name": "每日自更新",
+      "prompt": "检查Hermes Agent新版本",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "self_update_checker.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 12 * * *",
+        "display": "0 12 * * *"
+      },
+      "schedule_display": "0 12 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 63
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-27T09:32:53.780748+08:00",
+      "next_run_at": "2026-11-09T12:00:00+08:00",
+      "last_run_at": "2026-11-09T08:38:12.840724+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "weixin",
+        "chat_id": "o9cq8070r0xMj4UVxbbaTsB-MBlk@im.wechat",
+        "chat_name": null,
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-11-07T12:00:00+08:00",
+        "dispatched_at": "2026-11-09T08:37:11.784683+08:00",
+        "lateness_seconds": 160631.8,
+        "kind": "catch_up"
+      },
+      "fire_claim": null,
+      "failure_streak": 0,
+      "last_failure": {
+        "at": "2026-11-05T12:00:39.492591+08:00",
+        "detail": "Script exited with code 15"
+      }
+    },
+    {
+      "id": "01837ee19638",
+      "name": "每日财经简报+基金推荐",
+      "prompt": "生成今日小马财经日报PDF，流程：\n\n1. 用 web_search 搜索今日A股市场大盘数据（上证指数、深证成指、创业板指的涨跌幅）\n2. 搜索今日财经热点新闻（板块涨跌、政策消息、重要事件）\n3. 搜索美股/港股/原油/外汇最新行情\n4. 搜索基金推荐信息（热门板块基金、近期表现好的基金）\n5. 用以上数据，以 fpdf 生成一份6-8页的PDF财经日报，保存到桌面 C:\\\\Users\\\\Admin\\\\Desktop\\\\XiaoMa_Financial_Daily_20260624.pdf\n\nPDF格式要求：\n- 封面：XiaoMa Financial Daily + 日期 + Issue编号\n- 第1页：全球市场概览（A股+美股+港股+原油+外汇）\n- 第2页：热点要闻+板块分析\n- 第3页：策略分析+市场研判\n- 第4页：基金推荐（3-5支，含分析逻辑）\n- 最后一页：今日总结\n\n不要生成财经问答、投资课堂、测验题或题目答案；删除原先第5-6页“投资课堂”部分。\n\n风格：专业但不枯燥，有分析有判断有建议，不要单纯罗列数据。中文输出。",
+      "skills": [],
+      "skill": null,
+      "model": "deepseek-v4-flash",
+      "provider": "ollama-cloud",
+      "base_url": null,
+      "script": "financial_daily.py",
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 8 * * 1-5",
+        "display": "30 8 * * 1-5"
+      },
+      "schedule_display": "30 8 * * 1-5",
+      "repeat": {
+        "times": null,
+        "completed": 37
+      },
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-10-16T07:53:16.511283+08:00",
+      "paused_reason": null,
+      "created_at": "2026-05-28T12:26:06.717897+08:00",
+      "next_run_at": "2026-10-16T08:30:00+08:00",
+      "last_run_at": "2026-10-15T08:30:56.226576+08:00",
+      "last_status": "error",
+      "last_error": "RuntimeError: HTTP 410: deepseek-v4-flash:0731 was retired on September 25, 2026. Try gemma4:31b-cloud, which is in the Free plan. (ref: 70fa8d90-b5b4-4951-9e26-c18da013efc3)",
+      "last_delivery_error": null,
+      "deliver": "telegram",
+      "origin": {
+        "platform": "weixin",
+        "chat_id": "o9cq8070r0xMj4UVxbbaTsB-MBlk@im.wechat",
+        "chat_name": null,
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-10-15T08:30:00+08:00",
+        "dispatched_at": "2026-10-15T08:30:12.001559+08:00",
+        "lateness_seconds": 12.0,
+        "kind": "on_time"
+      },
+      "fire_claim": null,
+      "failure_streak": 5,
+      "last_failure": {
+        "at": "2026-10-15T08:30:56.226576+08:00",
+        "detail": "RuntimeError: HTTP 410: deepseek-v4-flash:0731 was retired on September 25, 2026. Try gemma4:31b-cloud, which is in the Free plan. (ref: 70fa8d90-b5b4-4951-9e26-c18da013efc3)"
+      }
+    },
+    {
+      "id": "6882df9f6b5c",
+      "name": "电脑小卫士",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "guard_monitor.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 2,
+        "display": "every 2m"
+      },
+      "schedule_display": "every 2m",
+      "repeat": {
+        "times": null,
+        "completed": 20999
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-29T09:19:50.549500+08:00",
+      "next_run_at": "2026-11-09T10:48:13.823738+08:00",
+      "last_run_at": "2026-11-09T10:44:13.130198+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-11-09T10:46:13.130198+08:00",
+        "dispatched_at": "2026-11-09T10:46:13.658834+08:00",
+        "lateness_seconds": 0.5,
+        "kind": "on_time"
+      },
+      "fire_claim": {
+        "at": "2026-11-09T10:46:13.872141+08:00",
+        "by": "PS2022MIXSNJQO:16488:76bc67232acb4febbd1cd4106e66ee7b"
+      },
+      "failure_streak": 0,
+      "last_failure": {
+        "at": "2026-11-06T11:23:33.936779+08:00",
+        "detail": "Script exited with code 3221225794"
+      }
+    },
+    {
+      "id": "ce10fb0eacee",
+      "name": "buyer-development 文件看门狗",
+      "prompt": "Buyer development file watcher — silent watchdog that reports changes.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "buyer-development-watcher/watch_files.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 5,
+        "display": "every 5m"
+      },
+      "schedule_display": "every 5m",
+      "repeat": {
+        "times": null,
+        "completed": 10493
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-02T09:50:40.645932+08:00",
+      "next_run_at": "2026-11-09T10:48:15.085051+08:00",
+      "last_run_at": "2026-11-09T10:43:15.085051+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-11-09T10:42:13.570294+08:00",
+        "dispatched_at": "2026-11-09T10:43:11.667292+08:00",
+        "lateness_seconds": 58.1,
+        "kind": "on_time"
+      },
+      "fire_claim": null,
+      "failure_streak": 0
+    },
+    {
+      "id": "0d232901ed33",
+      "name": "实时同步守护检查",
+      "prompt": "检查 hermes_live_sync 守护进程是否活着，不在就重启",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "check_live_sync_alive.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 5,
+        "display": "every 5m"
+      },
+      "schedule_display": "every 5m",
+      "repeat": {
+        "times": null,
+        "completed": 10057
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-02T22:55:22.564303+08:00",
+      "next_run_at": "2026-11-09T10:48:14.478770+08:00",
+      "last_run_at": "2026-11-09T10:43:14.478770+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "weixin",
+        "chat_id": "o9cq8070r0xMj4UVxbbaTsB-MBlk@im.wechat",
+        "chat_name": null,
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal"
+      ],
+      "workdir": null,
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-11-09T10:42:13.178438+08:00",
+        "dispatched_at": "2026-11-09T10:43:11.667292+08:00",
+        "lateness_seconds": 58.5,
+        "kind": "on_time"
+      },
+      "fire_claim": null,
+      "failure_streak": 0
+    },
+    {
+      "id": "366f34e9bf5e",
+      "name": "Wiki 定期 Lint 维护",
+      "prompt": "Wiki Lint检查",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "wiki_lint.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 6 * * 1",
+        "display": "0 6 * * 1"
+      },
+      "schedule_display": "0 6 * * 1",
+      "repeat": {
+        "times": null,
+        "completed": 8
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-02T23:19:19.250122+08:00",
+      "next_run_at": "2026-11-16T06:00:00+08:00",
+      "last_run_at": "2026-11-09T08:37:32.392979+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "weixin",
+        "chat_id": "o9cq8070r0xMj4UVxbbaTsB-MBlk@im.wechat",
+        "chat_name": null,
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": null,
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-11-09T06:00:00+08:00",
+        "dispatched_at": "2026-11-09T08:37:11.784683+08:00",
+        "lateness_seconds": 9431.8,
+        "kind": "catch_up"
+      },
+      "fire_claim": null,
+      "failure_streak": 0
+    },
+    {
+      "id": "af5f3c06d347",
+      "name": "🔍 智能看门狗 v10",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "smart_watchdog_v10.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 2,
+        "display": "every 2m"
+      },
+      "schedule_display": "every 2m",
+      "repeat": {
+        "times": null,
+        "completed": 19111
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-03T11:38:26.059951+08:00",
+      "next_run_at": "2026-11-09T10:47:18.676685+08:00",
+      "last_run_at": "2026-11-09T10:45:18.676685+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-11-09T10:44:23.200212+08:00",
+        "dispatched_at": "2026-11-09T10:45:13.662323+08:00",
+        "lateness_seconds": 50.5,
+        "kind": "on_time"
+      },
+      "fire_claim": null,
+      "failure_streak": 0,
+      "last_failure": {
+        "at": "2026-11-05T12:00:39.410386+08:00",
+        "detail": "Script exited with code 15"
+      }
+    },
+    {
+      "id": "b78688dcb23f",
+      "name": "进程空闲杀手 (idle-killer)",
+      "prompt": "运行进程空闲杀手脚本，杀掉2小时内无任何活动的进程",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "idle_killer.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 5,
+        "display": "every 5m"
+      },
+      "schedule_display": "every 5m",
+      "repeat": {
+        "times": null,
+        "completed": 9774
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-03T18:04:12.550017+08:00",
+      "next_run_at": "2026-11-09T10:48:15.399731+08:00",
+      "last_run_at": "2026-11-09T10:43:15.399731+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-11-09T10:42:14.157093+08:00",
+        "dispatched_at": "2026-11-09T10:43:11.667292+08:00",
+        "lateness_seconds": 57.5,
+        "kind": "on_time"
+      },
+      "fire_claim": null,
+      "failure_streak": 0,
+      "last_failure": {
+        "at": "2026-10-14T20:53:19.544998+08:00",
+        "detail": "Script exited with code 15"
+      }
+    },
+    {
+      "id": "1927098909e2",
+      "name": "🌅 小马日报（早）",
+      "prompt": "现在6:25了！加载 xiaoma-daily-briefing 技能，按以下时间节奏执行：\n\n1. 6:25-6:30 — 快速扫描全部7个信息源，收集素材\n2. 6:30-6:55 — 做笔记、深入思考、跨领域连接、判断非共识信号\n3. 6:55-7:00 — 按格式写出完整简报\n4. 7:00准时通过deliver发送给Kali\n\n一分钟都不要提前发！7:00再发送。",
+      "skills": [
+        "xiaoma-daily-briefing"
+      ],
+      "skill": "xiaoma-daily-briefing",
+      "model": "deepseek-v4-flash",
+      "provider": "ollama-cloud",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "25 6 * * *",
+        "display": "25 6 * * *"
+      },
+      "schedule_display": "25 6 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 4
+      },
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-06-16T08:53:08.936379+08:00",
+      "paused_reason": null,
+      "created_at": "2026-06-11T01:36:04.327376+08:00",
+      "next_run_at": "2026-06-17T06:25:00+08:00",
+      "last_run_at": "2026-06-16T06:44:19.185684+08:00",
+      "last_status": "error",
+      "last_error": "RuntimeError: Response remained truncated after 3 continuation attempts",
+      "last_delivery_error": null,
+      "deliver": "telegram",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "8314311281",
+        "chat_name": "Kali",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "d1959db67879",
+      "name": "🌆 小马日报（晚）",
+      "prompt": "现在18:25了！加载 xiaoma-daily-briefing 技能，按以下时间节奏执行：\n\n1. 18:25-18:30 — 快速扫描全部7个信息源，收集素材\n2. 18:30-18:55 — 做笔记、深入思考、跨领域连接、判断非共识信号\n3. 18:55-19:00 — 按格式写出完整简报\n4. 19:00准时通过deliver发送给Kali\n\n一分钟都不要提前发！19:00再发送。",
+      "skills": [
+        "xiaoma-daily-briefing"
+      ],
+      "skill": "xiaoma-daily-briefing",
+      "model": "deepseek-v4-flash",
+      "provider": "ollama-cloud",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "25 18 * * *",
+        "display": "25 18 * * *"
+      },
+      "schedule_display": "25 18 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 5
+      },
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-06-16T08:53:11.237024+08:00",
+      "paused_reason": null,
+      "created_at": "2026-06-11T01:36:14.885225+08:00",
+      "next_run_at": "2026-06-16T18:25:00+08:00",
+      "last_run_at": "2026-06-15T18:36:26.071789+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "telegram",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "8314311281",
+        "chat_name": "Kali",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "7c35e3b152bf",
+      "name": "🐴 小马轮询学弟消息(智能回复)",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "poll_xuedi_notify.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/2 * * * *",
+        "display": "*/2 * * * *"
+      },
+      "schedule_display": "*/2 * * * *",
+      "repeat": {
+        "times": null,
+        "completed": 22663
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-13T19:05:53.539204+08:00",
+      "next_run_at": "2026-11-09T10:48:00+08:00",
+      "last_run_at": "2026-11-09T10:44:14.998380+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "8314311281",
+        "chat_name": "Kali",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "web"
+      ],
+      "workdir": null,
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-11-09T10:46:00+08:00",
+        "dispatched_at": "2026-11-09T10:46:13.658834+08:00",
+        "lateness_seconds": 13.7,
+        "kind": "on_time"
+      },
+      "fire_claim": {
+        "at": "2026-11-09T10:46:13.974339+08:00",
+        "by": "PS2022MIXSNJQO:16488:78dc57d6f27d4f4aaacd786e4f6b6d49"
+      },
+      "failure_streak": 0,
+      "last_failure": {
+        "at": "2026-11-05T17:06:54.938958+08:00",
+        "detail": "Script exited with code 15"
+      }
+    },
+    {
+      "id": "de31a0c4a9b2",
+      "name": "🔌 连接池超时检测器",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "pool_timeout_detector.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 3,
+        "display": "every 3m"
+      },
+      "schedule_display": "every 3m",
+      "repeat": {
+        "times": null,
+        "completed": 11398
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-13T23:16:23.897064+08:00",
+      "next_run_at": "2026-11-09T10:49:14.357782+08:00",
+      "last_run_at": "2026-11-09T10:42:15.838593+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "8314311281",
+        "chat_name": "Kali",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal"
+      ],
+      "workdir": null,
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-11-09T10:45:15.838593+08:00",
+        "dispatched_at": "2026-11-09T10:46:13.658834+08:00",
+        "lateness_seconds": 57.8,
+        "kind": "on_time"
+      },
+      "fire_claim": {
+        "at": "2026-11-09T10:46:14.357782+08:00",
+        "by": "PS2022MIXSNJQO:16488:1a7ad390b0634e7d9ec62f883fca83cc"
+      },
+      "failure_streak": 0,
+      "last_failure": {
+        "at": "2026-11-05T12:00:39.377464+08:00",
+        "detail": "Script exited with code 15"
+      }
+    },
+    {
+      "id": "a32bc1af86ea",
+      "name": "🔄 飞书群消息轮询(10s)",
+      "prompt": "飞书群消息轮询兜底（cron每1分钟跑一次 --once 模式）",
+      "skills": [],
+      "skill": null,
+      "model": "deepseek-v4-flash",
+      "provider": "ollama-cloud",
+      "base_url": null,
+      "script": "feishu_poll_daemon.py --once",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/1 * * * *",
+        "display": "*/1 * * * *"
+      },
+      "schedule_display": "*/1 * * * *",
+      "repeat": {
+        "times": null,
+        "completed": 44073
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-15T16:46:49.518525+08:00",
+      "next_run_at": "2026-11-09T10:47:00+08:00",
+      "last_run_at": "2026-11-09T10:45:14.192339+08:00",
+      "last_status": "error",
+      "last_error": "Script not found: C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\feishu_poll_daemon.py --once. Cron scripts are looked up only in this profile's folder (C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts); if the job was copied from another profile, copy the script there too, or edit the job with `hermes cron edit`.",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "feishu",
+        "chat_id": "oc_1a238a6016460ec51c602048a88aca70",
+        "chat_name": "马上成功",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal"
+      ],
+      "workdir": null,
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-11-09T10:46:00+08:00",
+        "dispatched_at": "2026-11-09T10:46:13.658834+08:00",
+        "lateness_seconds": 13.7,
+        "kind": "on_time"
+      },
+      "fire_claim": null,
+      "failure_streak": 20873,
+      "last_failure": {
+        "at": "2026-11-09T10:45:14.192339+08:00",
+        "detail": "Script not found: C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\feishu_poll_daemon.py --once. Cron scripts are looked up only in this profile's folder (C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts); if the job was copied from another profile, copy the script there too, or edit the job with `hermes cron edit`."
+      },
+      "pending_slot": {
+        "scheduled_at": "2026-11-09T10:46:00+08:00",
+        "at": "2026-11-09T10:46:13.658834+08:00",
+        "by": "PS2022MIXSNJQO:16488"
+      }
+    },
+    {
+      "id": "7cedf9c18724",
+      "name": "塔奇克马共享仓库轮询",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "tachikoma_shared_poller.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 2,
+        "display": "every 2m"
+      },
+      "schedule_display": "every 2m",
+      "repeat": {
+        "times": null,
+        "completed": 14755
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-15T22:53:28.139087+08:00",
+      "next_run_at": "2026-11-09T10:46:14.339693+08:00",
+      "last_run_at": "2026-11-09T10:44:14.339693+08:00",
+      "last_status": "error",
+      "last_error": "Script exited with code 1\nstderr:\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import os, runpy, site, sys;site.addsitedir('C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\installs\\\\902a4fe5d10abbac\\\\environments\\\\9c06ac7c16584d92b7d28132dc51cd4b\\\\venv\\\\Lib\\\\site-packages');script = sys.argv[1];sys.argv = [script] + sys.argv[2:];sys.path.insert(0, os.path.dirname(os.path.abspath(script)));runpy.run_path(script, run_name='__main__')\n                                                                                                                                                                                                                                                                                                                       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 294, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\tachikoma_shared_poller.py\", line 243, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\tachikoma_shared_poller.py\", line 115, in main\n    previous_state = json.loads(STATE_FILE.read_text(encoding=\"utf-8\"))\n                                ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\tools\\python-3.14.7+202****0901-win32-x64\\Lib\\pathlib\\__init__.py\", line 788, in read_text\n    return f.read()\n           ~~~~~~^^\nMemoryError",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "feishu",
+        "chat_id": "oc_1a238a6016460ec51c602048a88aca70",
+        "chat_name": "马上成功",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-11-09T10:43:22.964200+08:00",
+        "dispatched_at": "2026-11-09T10:44:11.651716+08:00",
+        "lateness_seconds": 48.7,
+        "kind": "on_time"
+      },
+      "fire_claim": null,
+      "failure_streak": 1,
+      "last_failure": {
+        "at": "2026-11-09T10:44:14.339693+08:00",
+        "detail": "Script exited with code 1\nstderr:\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import os, runpy, site, sys;site.addsitedir('C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\installs\\\\902a4fe5d10abbac\\\\environments\\\\9c06ac7c16584d92b7d28132dc51cd4b\\\\venv\\\\Lib\\\\site-packages');script = sys.argv[1];sys.argv = [script] + sys.argv[2:];sys.path.insert(0, os.path.dirname(os.path.abspath(script)));runpy.run_path(script, run_name='__main__')\n                                                                                                                                                                                                                                                                                                                       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 294, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\tachikoma_shared_poller.py\", line 243, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\tachikoma_shared_poller.py\", line 115, in main\n    previous_state = json.loads(STATE_FILE.read_text(encoding=\"utf-8\"))\n                                ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\tools\\python-3.14.7+202****0901-win32-x64\\Lib\\pathlib\\__init__.py\", line 788, in read_text\n    return f.read()\n           ~~~~~~^^\nMemoryError"
+      }
+    },
+    {
+      "id": "f241789728fd",
+      "name": "🐴 hermes-shared 自动同步",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "sync_to_github.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 */2 * * *",
+        "display": "0 */2 * * *"
+      },
+      "schedule_display": "0 */2 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 378
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-16T10:38:19.627289+08:00",
+      "next_run_at": "2026-11-09T12:00:00+08:00",
+      "last_run_at": "2026-11-09T10:02:01.395631+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "8314311281",
+        "chat_name": "Kali",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-11-09T10:00:00+08:00",
+        "dispatched_at": "2026-11-09T10:00:11.641999+08:00",
+        "lateness_seconds": 11.6,
+        "kind": "on_time"
+      },
+      "fire_claim": null,
+      "failure_streak": 0
+    },
+    {
+      "id": "c83927322a86",
+      "name": "📧 每日拟人邮件发送v4（随机时间）",
+      "prompt": "执行QQ邮箱拟人邮件发送任务：\n\n1. 先检查今天的发送状态文件：C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\脚本缓存\\产品推广\\.daily_state_v4.json\n2. 如果今天已发满50封，直接汇报\"今日已发满50封\"并退出\n3. 如果今天还没发满，运行脚本：python \"C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\脚本缓存\\产品推广\\daily_email_v4.py\"\n4. 脚本会自动发送剩余配额（最多50封/天），随机延迟60-180秒间隔，自动去重\n5. 完成后汇报：本批成功/失败数、今日累计数、历史累计数\n\n注意：绝对不能重复发送！发一条保存一条。",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "daily_email_v4.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "display": "0 9 * * *"
+      },
+      "schedule_display": "0 9 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 42
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-19T20:17:51.731658+08:00",
+      "next_run_at": "2026-11-10T09:00:00+08:00",
+      "last_run_at": "2026-11-09T09:57:04.668067+08:00",
+      "last_status": "error",
+      "last_error": "Script exited with code 1\nstderr:\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import os, runpy, site, sys;site.addsitedir('C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\installs\\\\902a4fe5d10abbac\\\\environments\\\\9c06ac7c16584d92b7d28132dc51cd4b\\\\venv\\\\Lib\\\\site-packages');script = sys.argv[1];sys.argv = [script] + sys.argv[2:];sys.path.insert(0, os.path.dirname(os.path.abspath(script)));runpy.run_path(script, run_name='__main__')\n                                                                                                                                                                                                                                                                                                                       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 294, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\daily_email_v4.py\", line 214, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\daily_email_v4.py\", line 141, in main\n    data = json.loads(DATA_FILE.read_text('utf-8'))\n                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\tools\\python-3.14.7+202****0901-win32-x64\\Lib\\pathlib\\__init__.py\", line 787, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\tools\\python-3.14.7+202****0901-win32-x64\\Lib\\pathlib\\__init__.py\", line 771, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\Desktop\\\\Working\\\\富通CRM_公海客户_全量.json'\nstdout:\n============================================================\nBLIIOT 拟人邮件发送 v4.1 | 2026-11-09 09:00\n============================================================\n今日已发: 0/50 | 剩余: 50\n⏳ 随机延迟 56分50秒后开始发送（模拟真人操作时间）\n📂 加载客户数据...",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "feishu",
+        "chat_id": "oc_1a238a6016460ec51c602048a88aca70",
+        "chat_name": "马上成功",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal"
+      ],
+      "workdir": null,
+      "profile": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-11-09T09:00:00+08:00",
+        "dispatched_at": "2026-11-09T09:00:11.642258+08:00",
+        "lateness_seconds": 11.6,
+        "kind": "on_time"
+      },
+      "fire_claim": null,
+      "failure_streak": 24,
+      "last_failure": {
+        "at": "2026-11-09T09:57:04.668067+08:00",
+        "detail": "Script exited with code 1\nstderr:\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import os, runpy, site, sys;site.addsitedir('C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\hermes\\\\installs\\\\902a4fe5d10abbac\\\\environments\\\\9c06ac7c16584d92b7d28132dc51cd4b\\\\venv\\\\Lib\\\\site-packages');script = sys.argv[1];sys.argv = [script] + sys.argv[2:];sys.path.insert(0, os.path.dirname(os.path.abspath(script)));runpy.run_path(script, run_name='__main__')\n                                                                                                                                                                                                                                                                                                                       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 294, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\daily_email_v4.py\", line 214, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\scripts\\daily_email_v4.py\", line 141, in main\n    data = json.loads(DATA_FILE.read_text('utf-8'))\n                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\tools\\python-3.14.7+202****0901-win32-x64\\Lib\\pathlib\\__init__.py\", line 787, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Admin\\AppData\\Local\\hermes\\tools\\python-3.14.7+202****0901-win32-x64\\Lib\\pathlib\\__init__.py\", line 771, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\Desktop\\\\Working\\\\富通CRM_公海客户_全量.json'\nstdout:\n============================================================\nBLIIOT 拟人邮件发送 v4.1 | 2026-11-09 09:00\n============================================================\n今日已发: 0/50 | 剩余: 50\n⏳ 随机延迟 56分50秒后开始发送（模拟真人操作时间）\n📂 加载客户数据..."
+      }
+    },
+    {
+      "id": "cc55482d3664",
+      "name": "BLIIOT客户开发GitHub深度学习（每小时汇报，8轮）",
+      "prompt": "方向纠正：Kali 明确说明“开发客户”=客户开发/获客，不是开发设备、网关、嵌入式机器或产品固件。此前 Node-RED/运行时研究属于误解，不算本任务有效成果；从本轮开始严格聚焦 B2B 客户开发、线索研究、CRM、客户画像、邮件营销与销售流程自动化。不要再研究硬件、IoT网关固件或设备开发。\n\nKali 已授权进行一晚 GitHub 深度学习并每小时汇报；总计 8 次小时检查点，继续沿用本任务的连续上下文。每次运行必须实际推进、报告真实操作与结果，不得只写计划。\n\n研究重点按小时轮换：\n1) 公开公司网站/行业目录的客户线索收集与来源溯源（不用 LinkedIn 自动化，不绕登录/验证码）；\n2) 网站内容抽取、行业/业务画像、公开联系方式提取与证据引用；\n3) B2B 去重、评分、产品匹配、CRM 数据模型与导入/导出；\n4) 开源 CRM（如 Twenty CRM、EspoCRM、ERPNext CRM）架构、数据权限、活动记录、API/导入；\n5) 工作流自动化（如 n8n）用于线索到 CRM 的安全编排；\n6) 邮件营销工具（如 Mautic/listmonk）的同意/退订、抑制名单、发送频率和审计；\n7) 线索质量与数据验证、证据化个性化、避免臆造客户需求；\n8) 整合为适合 BLIIOT 的客户开发工具链与可复用原型。\n\n每个项目先用 GitHub 原始仓库核验身份、许可证、平台支持、维护活跃度和安全/权限模型；至少阅读 3 个核心源文件/测试/配置，提炼 WHY 设计决策，不能只看 README 和 stars。对每个选择尽量跑一项项目测试或隔离实验；在 C:/Users/Admin/Desktop/Working/GitHub_Overnight_Study/ 只克隆公开源码，在 C:/Users/Admin/AppData/Local/hermes/memories/脚本缓存/github_overnight_study/ 写原创验证脚本/结果。避免安装系统服务或改变 Hermes/公司配置；可用项目隔离环境，不改上游文件。\n\n安全与公司边界：只研究公开信息和公开仓库；不读取/上传客户个人数据，不连接或写入 Joinf/真实 CRM，不向客户发送邮件、WhatsApp 或其他消息，不做 LinkedIn 自动化，不处理登录态/验证码，不把未证实的需求写成事实。研究对象要围绕 BLIIOT 目标客户（工业自动化集成商、能源/太阳能、工业设备服务商等）与现有安全获客偏好（Email优先、B2B渠道、名单去重、先核验客户官网和适配依据）。\n\n每轮结束时：将真实完成情况保存为 hourly_01.md 至 hourly_08.md，并追加 study_log.md；同时将纠正说明和客户开发方向的成果追加到 Obsidian `01-学习笔记/BLIIOT业务/BLIIOT_GitHub_夜间项目深度学习_2026-10-20.md`。明确记载 Node-RED 是之前误解范围的启动工作，不作为客户开发成果。报告需含：时段、仓库与许可证/维护依据、至少3个源文件及 WHY、实际测试命令/结果、客户开发场景适用/不适用、风险与未验证项、下一小时目标。不得虚报耗时、星数、测试或完成状态。\n\n每小时最终回复用简体中文，直接说这一轮做了什么、真实结果、对获客有何帮助及下一步。第8轮做总整理：按线索来源→公开网站研究→证据化画像/评分→去重→CRM→合规邮件/跟进，给出可用项目与淘汰项目、许可证/维护/安全结论、哪些实际安装运行、原创验证成果和适用边界。每轮没有实质成果就说明原因并继续修复。",
+      "skills": [
+        "github",
+        "bliiot-sales-pipeline",
+        "bliiot-product-knowledge",
+        "python-script-craftsmanship"
+      ],
+      "skill": "github",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": [
+        "self"
+      ],
+      "schedule": {
+        "kind": "interval",
+        "minutes": 60,
+        "display": "every 60m"
+      },
+      "schedule_display": "every 60m",
+      "repeat": {
+        "times": 8,
+        "completed": 8
+      },
+      "enabled": false,
+      "state": "completed",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-10-20T23:59:54.284061+08:00",
+      "next_run_at": null,
+      "last_run_at": "2026-10-21T08:07:11.186540+08:00",
+      "last_status": "error",
+      "last_error": "RuntimeError: HTTP 404: No endpoints found for owl-alpha.",
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "last_failure": {
+        "at": "2026-10-21T08:07:11.186540+08:00",
+        "detail": "RuntimeError: HTTP 404: No endpoints found for owl-alpha."
+      },
+      "failure_streak": 8,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "8314311281",
+        "chat_name": "Kali",
+        "thread_id": null,
+        "user_id": "8314311281",
+        "scope_id": null
+      },
+      "enabled_toolsets": [
+        "web",
+        "terminal",
+        "file",
+        "search",
+        "github"
+      ],
+      "workdir": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\脚本缓存\\github_overnight_study",
+      "last_dispatch": {
+        "scheduled_at": "2026-10-21T08:06:12.432160+08:00",
+        "dispatched_at": "2026-10-21T08:06:58.640464+08:00",
+        "lateness_seconds": 46.2,
+        "kind": "on_time"
+      },
+      "fire_claim": null
+    },
+    {
+      "id": "8ab175e22cad",
+      "name": "BLIIOT客户开发GitHub深度学习（每小时汇报，8轮）",
+      "prompt": "Kali 明确纠正：这里的“开发客户”是获客/客户开发，不是开发设备、网关、嵌入式机器或产品固件。严格只研究 GitHub 上与 BLIIOT B2B 获客、潜客研究、CRM、销售流程、邮件营销/自动化有关的项目；不要再把工业机器/IoT运行时开发当作研究目标。此前 Node-RED 是范围误解，不计作本任务成果。\n\n连续进行 8 轮每小时学习与汇报。每轮都必须实际做研究并报告真实完成内容，不可只给计划。研究线索收集、公开公司官网画像、行业/业务证据抽取、联系方式核验、名单去重与评分、产品适配依据、开源 CRM、工作流自动化、邮件营销同意/退订/抑制名单/发送审计。项目候选包括 Twenty CRM、EspoCRM、ERPNext CRM、n8n、Mautic、listmonk、Crawlee/Crawl4AI 等；从 GitHub 搜索发现并独立核验，不要预先假定它们适合。\n\n研究 BLIIOT 目标客户场景：工业自动化集成商、能源/太阳能企业、工业设备服务商等；遵守用户现有偏好：Email优先，B2B目录/公开公司官网研究，避免LinkedIn自动化与WhatsApp批量外联。只做公开信息和仓库研究。\n\n每个项目检查原始仓库、许可证、近期维护、权限/数据流/安全边界；至少读 3 个核心源码、测试或配置文件，解释 WHY 而不止罗列功能。尽量运行项目测试或隔离实验，记录真实命令和输出。源码仅克隆到 C:/Users/Admin/Desktop/Working/GitHub_Overnight_Study/；实验、小时报告与累计日志写到 C:/Users/Admin/AppData/Local/hermes/memories/脚本缓存/github_overnight_study/。每轮保存 hourly_01.md 至 hourly_08.md 对应报告并追加 study_log.md；把方向纠正和客户开发成果追加到 Obsidian 笔记 `C:/Users/Admin/Documents/Obsidian Vault/01-学习笔记/BLIIOT业务/BLIIOT_GitHub_夜间项目深度学习_2026-10-20.md`。将此前 Node-RED 工作明确标为误解方向、排除在获客成果之外。\n\n禁止访问/写入 Joinf 或其他真实 CRM，禁止读取、复制或上传任何客户个人数据；禁止发送邮件、WhatsApp 或其他消息；禁止连接公司设备、真实部署、读写 Hermes/公司配置、安装系统服务；不自动化 LinkedIn、不绕过登录或验证码。只在隔离目录运行公开项目代码。公开客户联系方式也不可用于真实触达。\n\n每轮报告包括：研究时段；项目名、原始仓库和许可证/维护证据；至少3个实际阅读文件及 WHY；实际测试/实验命令和结果；对客户开发流程具体有什么帮助/不适用；风险与未验证项；下一轮目标。最终第8轮总结端到端客户开发链路（公开线索→证据化画像与评分→去重→CRM→合规邮件跟进），比较保留和淘汰项目、许可/维护/权限风险、实测结果与可复用成果。使用简体中文；不虚报耗时、执行结果、客户信息或邮件可达性。",
+      "skills": [
+        "github",
+        "bliiot-sales-pipeline",
+        "bliiot-product-knowledge",
+        "python-script-craftsmanship"
+      ],
+      "skill": "github",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": [
+        "self"
+      ],
+      "schedule": {
+        "kind": "interval",
+        "minutes": 60,
+        "display": "every 60m"
+      },
+      "schedule_display": "every 60m",
+      "repeat": {
+        "times": 8,
+        "completed": 1
+      },
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-10-21T11:40:12.969202+08:00",
+      "paused_reason": null,
+      "created_at": "2026-10-21T11:38:35.486502+08:00",
+      "next_run_at": "2026-10-21T12:39:03.822850+08:00",
+      "last_run_at": "2026-10-21T11:39:03.822850+08:00",
+      "last_status": "error",
+      "last_error": "RuntimeError: HTTP 404: No endpoints found for owl-alpha.",
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "last_failure": {
+        "at": "2026-10-21T11:39:03.822850+08:00",
+        "detail": "RuntimeError: HTTP 404: No endpoints found for owl-alpha."
+      },
+      "failure_streak": 1,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "8314311281",
+        "chat_name": "Kali",
+        "thread_id": null,
+        "user_id": "8314311281",
+        "scope_id": null
+      },
+      "enabled_toolsets": [
+        "web",
+        "terminal",
+        "file",
+        "search",
+        "github"
+      ],
+      "workdir": "C:\\Users\\Admin\\AppData\\Local\\hermes\\memories\\脚本缓存\\github_overnight_study",
+      "fire_claim": null
+    }
+  ],
+  "updated_at": "2026-11-09T10:46:14.366668+08:00"
+}
