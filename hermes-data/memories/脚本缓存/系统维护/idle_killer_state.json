@@ -4,1215 +4,1867 @@
     "idle": 115
   },
   "4_system": {
-    "ts": 1794995906,
+    "ts": 1795048846,
     "idle": 0
   },
   "188_secure system": {
     "ts": 1780886916,
     "idle": 115
   },
-  "228_registry": {
-    "ts": 1794800167,
-    "idle": 115
-  },
-  "3188_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "764_smss.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "860_csrss.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "1068_wininit.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "1080_csrss.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "1148_winlogon.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "1316_services.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "1324_lsaiso.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "1344_lsass.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "1488_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "1516_wudfhost.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "1556_fontdrvhost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "1564_fontdrvhost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "1652_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "1788_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "1852_dwm.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "1956_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "1984_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
   "1276_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "1292_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "1408_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "744_intelcphdcpsvc.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "1356_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "1216_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "1868_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "2104_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "2212_intelcphecisvc.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "2236_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "2252_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "2496_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "2540_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "2548_svchost.exe": {
-    "ts": 1794995906,
+    "ts": 1795048846,
     "idle": 0
   },
   "2556_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "2692_memory compression": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "2752_svchost.exe": {
-    "ts": 1794995906,
+    "ts": 1795048846,
     "idle": 0
   },
   "2772_svchost.exe": {
-    "ts": 1794995906,
+    "ts": 1795048846,
     "idle": 0
-  },
-  "2820_igfxcuiservice.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "2888_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "2896_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "3060_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "3092_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "3148_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "3216_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "3428_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "3436_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "3496_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "3572_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "3588_spoolsv.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "3604_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "3768_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "3848_audiodg.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "3876_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "4000_listary.service.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "4044_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "1828_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "4160_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "4272_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "4576_clash-verge-service.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "4584_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "4596_imgviewersvr.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "4604_lisfservice.exe": {
-    "ts": 1794969990,
-    "idle": 115
   },
   "4612_svchost.exe": {
-    "ts": 1794995906,
+    "ts": 1795048846,
     "idle": 0
-  },
-  "4620_alibabaprotect.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "4628_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "4640_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "4648_oneapp.igcc.winservice.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "4664_jhi_service.exe": {
-    "ts": 1794969990,
-    "idle": 115
   },
   "4672_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "4680_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "4688_svchost.exe": {
-    "ts": 1794995906,
+    "ts": 1795048846,
     "idle": 0
   },
   "4696_svchost.exe": {
-    "ts": 1794995906,
+    "ts": 1795048846,
     "idle": 0
-  },
-  "4724_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "4716_upservice.exe": {
-    "ts": 1794969990,
-    "idle": 115
   },
   "4740_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "4748_seeklocal.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "4756_wmiregistrationservice.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "4772_wslservice.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "4824_mpdefendercoreservice.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "4840_msmpeng.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "4856_todesk.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "5064_logi_lamparray_service.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "5324_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "5520_dashost.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "5664_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "5796_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "6044_locator.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "7068_dashost.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "3328_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "8108_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "2480_mspcmanagerservice.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "7344_codex-windows-sandbox-service.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "7692_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "7840_sihost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "8176_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "8208_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "8264_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "8488_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "8924_taskhostw.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "9052_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "8692_explorer.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "5040_lenovointernetsoftwareframework.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "9600_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "9800_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "10120_aggregatorhost.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "8696_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "4560_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "10248_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "10932_widgets.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "11072_runtimebroker.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "11080_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "10912_widgetservice.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "5844_ctfmon.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "13684_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "14084_chsime.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "14264_metasequoiaimeserver.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "8472_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "9284_defenderaiplatformhost.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "14972_nissrv.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "17700_searchindexer.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "16980_cua-driver.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "16976_conhost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "14464_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "16480_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "16580_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "16088_python.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "16576_conhost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "17604_securityhealthsystray.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "12444_securityhealthservice.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "15748_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "22048_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "22100_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "22448_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "22456_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "22480_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "21992_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "23180_svchost.exe": {
-    "ts": 1794995906,
+    "ts": 1795048846,
     "idle": 0
   },
   "23468_svchost.exe": {
-    "ts": 1794995906,
+    "ts": 1795048846,
     "idle": 0
   },
-  "23068_svchost.exe": {
-    "ts": 1794995906,
+  "19348_conhost.exe": {
+    "ts": 1795048846,
     "idle": 0
   },
-  "1156_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "23344_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "7256_verge-mihomo.exe": {
-    "ts": 1794969990,
-    "idle": 115
-  },
-  "24012_conhost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "20440_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "19652_python.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "25876_conhost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "24752_python.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "24740_conhost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "25940_python.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "24656_python.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "17416_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "23324_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "27564_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "34204_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "30012_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "20560_mousocoreworker.exe": {
-    "ts": 1794970710,
-    "idle": 115
-  },
-  "34928_wps.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "31400_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "12652_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "7520_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "33828_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "11200_msedge.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "30828_msedge.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "34376_msedge.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "25880_msedge.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "7896_elevation_service.exe": {
-    "ts": 1794973589,
-    "idle": 115
-  },
-  "30140_msedge.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "34092_msedge.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "30464_msedge.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "32360_msedge.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "15868_msedge.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "28252_msedge.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "10512_runtimebroker.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "30760_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "19900_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "37944_msedge.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "42056_msedge.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "26152_msedge.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "15016_wps.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "41256_weixin.exe": {
-    "ts": 1794995906,
+  "232_registry": {
+    "ts": 1795048846,
     "idle": 5
   },
-  "7240_wxwork.exe": {
-    "ts": 1794995906,
-    "idle": 10
-  },
-  "8232_searchprotocolhost.exe": {
-    "ts": 1794990509,
-    "idle": 115
-  },
-  "19776_searchfilterhost.exe": {
-    "ts": 1794990509,
-    "idle": 115
-  },
-  "9128_searchfilterhost.exe": {
-    "ts": 1794990509,
-    "idle": 115
-  },
-  "25376_chrome.exe": {
-    "ts": 1794995906,
+  "760_smss.exe": {
+    "ts": 1795048846,
     "idle": 0
   },
-  "42852_searchfilterhost.exe": {
-    "ts": 1794991589,
-    "idle": 115
-  },
-  "23276_searchfilterhost.exe": {
-    "ts": 1794993389,
-    "idle": 115
-  },
-  "35444_textinputhost.exe": {
-    "ts": 1794995906,
-    "idle": 115
-  },
-  "9292_upsecurityinput.exe": {
-    "ts": 1794995906,
-    "idle": 115
-  },
-  "41476_startmenuexperiencehost.exe": {
-    "ts": 1794995906,
-    "idle": 115
-  },
-  "4472_searchhost.exe": {
-    "ts": 1794995906,
-    "idle": 115
-  },
-  "7860_msedgewebview2.exe": {
-    "ts": 1794995906,
-    "idle": 115
-  },
-  "33900_msedgewebview2.exe": {
-    "ts": 1794995906,
-    "idle": 115
-  },
-  "12544_msedgewebview2.exe": {
-    "ts": 1794995906,
-    "idle": 115
-  },
-  "13880_msedgewebview2.exe": {
-    "ts": 1794995906,
-    "idle": 115
-  },
-  "40668_msedgewebview2.exe": {
-    "ts": 1794995906,
-    "idle": 115
-  },
-  "39140_msedgewebview2.exe": {
-    "ts": 1794995906,
-    "idle": 115
-  },
-  "11148_msedgewebview2.exe": {
-    "ts": 1794995906,
-    "idle": 115
-  },
-  "15672_monotificationux.exe": {
-    "ts": 1794995906,
-    "idle": 110
-  },
-  "5768_svchost.exe": {
-    "ts": 1794995906,
+  "976_csrss.exe": {
+    "ts": 1795048846,
     "idle": 0
   },
-  "8428_promecefpluginhost.exe": {
-    "ts": 1794995906,
-    "idle": 100
-  },
-  "1176_todesk.exe": {
-    "ts": 1794995906,
-    "idle": 100
-  },
-  "21044_wechatappex.exe": {
-    "ts": 1794995906,
-    "idle": 100
-  },
-  "35152_wechatappex.exe": {
-    "ts": 1794995906,
-    "idle": 100
-  },
-  "23856_wechatappex.exe": {
-    "ts": 1794995906,
-    "idle": 100
-  },
-  "12284_weixin.exe": {
-    "ts": 1794995906,
-    "idle": 100
-  },
-  "29192_wechatappex.exe": {
-    "ts": 1794995906,
-    "idle": 100
-  },
-  "8060_wechatappex.exe": {
-    "ts": 1794995906,
-    "idle": 100
-  },
-  "23496_wechatappex.exe": {
-    "ts": 1794995906,
-    "idle": 100
-  },
-  "29896_wechatappex.exe": {
-    "ts": 1794995906,
-    "idle": 100
-  },
-  "30904_weixin.exe": {
-    "ts": 1794995906,
-    "idle": 100
-  },
-  "6636_weixin.exe": {
-    "ts": 1794995906,
-    "idle": 100
-  },
-  "17576_weixin.exe": {
-    "ts": 1794995906,
-    "idle": 100
-  },
-  "19500_wechatappex.exe": {
-    "ts": 1794995906,
-    "idle": 100
-  },
-  "16024_shellhost.exe": {
-    "ts": 1794995906,
-    "idle": 100
-  },
-  "33036_alibabaprotectui.exe": {
-    "ts": 1794995906,
-    "idle": 100
-  },
-  "14640_shellexperiencehost.exe": {
-    "ts": 1794995906,
-    "idle": 95
-  },
-  "41340_runtimebroker.exe": {
-    "ts": 1794995906,
+  "1052_wininit.exe": {
+    "ts": 1795048846,
     "idle": 0
   },
-  "11008_wxworkweb.exe": {
-    "ts": 1794995906,
-    "idle": 75
-  },
-  "37424_wemailnode.exe": {
-    "ts": 1794995906,
-    "idle": 75
-  },
-  "38384_wxworkweb.exe": {
-    "ts": 1794995906,
-    "idle": 75
-  },
-  "22748_wxworkweb.exe": {
-    "ts": 1794995906,
-    "idle": 75
-  },
-  "14980_wxworkweb.exe": {
-    "ts": 1794995906,
-    "idle": 75
-  },
-  "31328_wxworkweb.exe": {
-    "ts": 1794995906,
-    "idle": 75
-  },
-  "20176_wxworkweb.exe": {
-    "ts": 1794995906,
-    "idle": 75
-  },
-  "34096_flutterplugins.exe": {
-    "ts": 1794995906,
-    "idle": 75
-  },
-  "4192_wemail.exe": {
-    "ts": 1794995906,
-    "idle": 75
-  },
-  "4140_crashpad_handler.exe": {
-    "ts": 1794995906,
-    "idle": 75
-  },
-  "13828_wxworkweb.exe": {
-    "ts": 1794995906,
-    "idle": 75
-  },
-  "24248_wxdrive.exe": {
-    "ts": 1794995906,
-    "idle": 75
-  },
-  "8288_wps.exe": {
-    "ts": 1794995906,
+  "1060_csrss.exe": {
+    "ts": 1795048846,
     "idle": 0
   },
-  "42172_wps.exe": {
-    "ts": 1794995906,
+  "1124_winlogon.exe": {
+    "ts": 1795048846,
     "idle": 0
   },
-  "35740_tsvncache.exe": {
-    "ts": 1794995906,
-    "idle": 75
-  },
-  "17352_wps.exe": {
-    "ts": 1794995906,
+  "1304_services.exe": {
+    "ts": 1795048846,
     "idle": 0
   },
-  "37632_searchfilterhost.exe": {
-    "ts": 1794995906,
-    "idle": 70
-  },
-  "34536_wpspdf.exe": {
-    "ts": 1794995906,
-    "idle": 70
-  },
-  "42684_promecefpluginhost.exe": {
-    "ts": 1794995906,
-    "idle": 70
-  },
-  "18588_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "30552_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "27104_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "19932_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "9120_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "24044_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "14460_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "2816_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "36176_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "23132_wxworkweb.exe": {
-    "ts": 1794995906,
-    "idle": 65
-  },
-  "15264_cmd.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "27148_conhost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "9672_extension-host.exe": {
-    "ts": 1794995906,
-    "idle": 60
-  },
-  "16492_wpscloudsvr.exe": {
-    "ts": 1794995906,
-    "idle": 55
-  },
-  "17896_wechatappex.exe": {
-    "ts": 1794995906,
-    "idle": 55
-  },
-  "5920_wechatappex.exe": {
-    "ts": 1794995906,
-    "idle": 55
-  },
-  "25772_wechatappex.exe": {
-    "ts": 1794995906,
-    "idle": 55
-  },
-  "42344_wechatappex.exe": {
-    "ts": 1794995906,
-    "idle": 55
-  },
-  "40660_dllhost.exe": {
-    "ts": 1794995906,
-    "idle": 55
-  },
-  "17740_backgroundtaskhost.exe": {
-    "ts": 1794995906,
-    "idle": 55
-  },
-  "4572_runtimebroker.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "18640_backgroundtaskhost.exe": {
-    "ts": 1794995906,
-    "idle": 55
-  },
-  "12824_et.exe": {
-    "ts": 1794995906,
-    "idle": 50
-  },
-  "15892_aliworkbench.exe": {
-    "ts": 1794995906,
-    "idle": 50
-  },
-  "28712_alirender.exe": {
-    "ts": 1794995906,
-    "idle": 50
-  },
-  "34176_alirender.exe": {
-    "ts": 1794995906,
-    "idle": 50
-  },
-  "16004_alirender.exe": {
-    "ts": 1794995906,
-    "idle": 50
-  },
-  "16112_alirender.exe": {
-    "ts": 1794995906,
-    "idle": 50
-  },
-  "1572_wmiprvse.exe": {
-    "ts": 1794995906,
-    "idle": 50
-  },
-  "37656_alirender.exe": {
-    "ts": 1794995906,
-    "idle": 50
-  },
-  "8524_wmiprvse.exe": {
-    "ts": 1794995906,
-    "idle": 50
-  },
-  "28576_alirender.exe": {
-    "ts": 1794995906,
-    "idle": 50
-  },
-  "26968_alirender.exe": {
-    "ts": 1794995906,
-    "idle": 50
-  },
-  "3540_alirender.exe": {
-    "ts": 1794995906,
-    "idle": 50
-  },
-  "30860_alirender.exe": {
-    "ts": 1794995906,
-    "idle": 50
-  },
-  "35968_alirender.exe": {
-    "ts": 1794995906,
-    "idle": 50
-  },
-  "24596_alirender.exe": {
-    "ts": 1794995906,
-    "idle": 50
-  },
-  "6020_searchfilterhost.exe": {
-    "ts": 1794995906,
-    "idle": 45
-  },
-  "31288_notepad.exe": {
-    "ts": 1794995906,
-    "idle": 45
-  },
-  "4512_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "27356_sharesender.exe": {
-    "ts": 1794995906,
-    "idle": 30
-  },
-  "9068_wechatappex.exe": {
-    "ts": 1794995906,
-    "idle": 25
-  },
-  "2852_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "35596_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "13172_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "22072_chrome.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "34900_wwbizsrv.exe": {
-    "ts": 1794995906,
-    "idle": 15
-  },
-  "31056_svchost.exe": {
-    "ts": 1794995906,
-    "idle": 0
-  },
-  "11112_wxworkweb.exe": {
-    "ts": 1794995906,
+  "1312_lsaiso.exe": {
+    "ts": 1795048846,
     "idle": 5
   },
-  "13548_wmiapsrv.exe": {
-    "ts": 1794995906,
+  "1332_lsass.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "1472_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "1492_wudfhost.exe": {
+    "ts": 1795048846,
     "idle": 5
   },
-  "23944_python.exe": {
-    "ts": 1794995906,
+  "1540_fontdrvhost.exe": {
+    "ts": 1795048846,
     "idle": 0
   },
-  "36488_conhost.exe": {
-    "ts": 1794995906,
+  "1548_fontdrvhost.exe": {
+    "ts": 1795048846,
     "idle": 0
   },
-  "27856_tasklist.exe": {
-    "ts": 1794995906,
+  "1644_svchost.exe": {
+    "ts": 1795048846,
     "idle": 0
   },
-  "10448_conhost.exe": {
-    "ts": 1794995906,
+  "1768_svchost.exe": {
+    "ts": 1795048846,
     "idle": 0
   },
-  "30452_python.exe": {
-    "ts": 1794995906,
+  "1828_dwm.exe": {
+    "ts": 1795048846,
     "idle": 0
   },
-  "15896_conhost.exe": {
-    "ts": 1794995906,
+  "1968_svchost.exe": {
+    "ts": 1795048846,
     "idle": 0
   },
-  "22208_python.exe": {
-    "ts": 1794995906,
+  "1976_svchost.exe": {
+    "ts": 1795048846,
     "idle": 0
   },
-  "36560_conhost.exe": {
-    "ts": 1794995906,
+  "2000_svchost.exe": {
+    "ts": 1795048846,
     "idle": 0
   },
-  "23604_wmiprvse.exe": {
-    "ts": 1794995906,
+  "1228_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "1272_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "1300_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "1348_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "1908_intelcphdcpsvc.exe": {
+    "ts": 1795048846,
     "idle": 5
   },
-  "25336_python.exe": {
-    "ts": 1794995906,
+  "1152_svchost.exe": {
+    "ts": 1795048846,
     "idle": 0
   },
-  "38708_conhost.exe": {
-    "ts": 1794995906,
+  "964_svchost.exe": {
+    "ts": 1795048846,
     "idle": 0
   },
-  "41560_python.exe": {
-    "ts": 1794995906,
+  "2148_svchost.exe": {
+    "ts": 1795048846,
     "idle": 0
   },
-  "23720_conhost.exe": {
-    "ts": 1794995906,
+  "2260_svchost.exe": {
+    "ts": 1795048846,
     "idle": 0
   },
-  "24136_tasklist.exe": {
-    "ts": 1794995906,
+  "2268_intelcphecisvc.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "2276_svchost.exe": {
+    "ts": 1795048846,
     "idle": 0
+  },
+  "2520_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "2572_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "2564_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "2704_memory compression": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "2756_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "2832_igfxcuiservice.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "2904_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "2916_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "3048_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "3100_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "3164_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "3184_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "3224_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "3364_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "3452_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "3460_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "3528_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "3536_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "3700_spoolsv.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "3784_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "3860_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "3868_audiodg.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "4076_listary.service.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "4084_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "4136_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "4212_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "4340_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "4576_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "4584_clash-verge-service.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "4592_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "4604_imgviewersvr.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "4624_oneapp.igcc.winservice.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "4640_lisfservice.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "4632_alibabaprotect.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "4648_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "4664_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "4680_seeklocal.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "4704_wslservice.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "4712_upservice.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "4724_wmiregistrationservice.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "4732_mpdefendercoreservice.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "4748_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "4756_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "4768_jhi_service.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "4780_wwbizsrv.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "4820_todesk.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "4848_msmpeng.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "4860_kis_service.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "5056_logi_lamparray_service.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "5296_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "5556_dashost.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "5660_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "5784_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "5984_locator.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "7144_dashost.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "6220_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "8116_wmiapsrv.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "8080_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "8104_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "7376_mspcmanagerservice.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "7436_codex-windows-sandbox-service.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "7876_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "7720_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "8144_sihost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "3512_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "7624_igfxem.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "8216_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "8288_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "8392_taskhostw.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "8412_upsecurityinput.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "8444_metasequoiaimewatchdog.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "8476_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "8968_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "9144_explorer.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "8200_shellhost.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "9480_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "9580_crossdeviceresume.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "9668_lenovointernetsoftwareframework.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "9724_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "9920_aggregatorhost.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "10036_searchindexer.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "10084_crossdeviceservice.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "10100_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "10116_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "10688_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "10852_runtimebroker.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "10920_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "11036_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "11232_searchhost.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "11240_startmenuexperiencehost.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "11472_widgets.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "11600_runtimebroker.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "11616_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "11760_widgetservice.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "11908_shellexperiencehost.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "12560_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "12752_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "13028_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "13052_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "13108_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "13200_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "13436_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "13752_defenderaiplatformhost.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "13844_defendersessionhelper.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "14092_nissrv.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "14272_ctfmon.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "13608_metasequoiaimeserver.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "4480_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "3276_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "4440_chsime.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "14116_ngciso.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "12540_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "13212_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "11436_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "11416_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "2548_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "1884_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "14360_todesk.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "14420_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "14688_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "14812_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "14700_textinputhost.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "15408_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "15700_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "15752_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "15836_cua-driver.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "15844_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "16240_smartscreen.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "16280_securityhealthsystray.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "16300_securityhealthservice.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "16352_ravcpl64.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "14964_wxwork.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "5884_crashpad_handler.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "6868_python.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "6972_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "4220_trademessenger2.0.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "16172_trademessenger2.0.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "16096_trademessenger2.0.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "15980_trademessenger2.0.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "16496_backgroundtaskhost.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "16516_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "17224_doubao.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "17244_doubao.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "16820_doubao.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "3624_doubao.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "16856_doubao.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "14260_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "17164_doubao.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "17152_doubao.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "17416_doubao.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "17428_doubao.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "17436_doubao.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "17472_doubao.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "17744_aha_doctor.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "18688_trademessenger2.0.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "19012_elevation_service.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "20032_trademessenger2.0.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "20276_doubao.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "19464_runtimebroker.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "9120_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "20112_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "18132_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "16104_msedge.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "4224_msedge.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "18180_msedge.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "2308_msedge.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "19128_msedge.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "20124_msedge.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "11336_msedge.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "19972_msedge.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "20016_msedge.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "18536_msedge.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "20544_taskhostw.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "21548_msedge.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "22000_bingsvc.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "21300_doubao.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "22484_dynamicdependencylifetimemanagershadow.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "21436_pushnotificationslongrunningtask.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "20856_msedge.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "11768_youdaodict.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "8908_youdaodicthelper.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "21228_youdaodicthelper.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "21048_youdaodicthelper.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "21460_youdaodicthelper.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "21916_youdaoeh.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "9600_youdaodesktophelper.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "21196_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "19300_youdaoedit.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "6992_youdaodicthelper.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "12568_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "18380_youdaodicthelper.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "20560_youdaodicthelper.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "5180_youdaodicthelper.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "19632_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "18520_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "2320_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "22440_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "20912_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "22300_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "21988_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "20980_listary.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "22200_listaryhookhost32.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "6760_listaryhookhost64.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "11344_cmd.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "20784_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "2792_node.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "21628_uvx.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "16600_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "17236_uvx.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "17028_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "18368_uv.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "18840_uv.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "19748_msedge.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "20832_runtimebroker.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "22604_cmd.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "22612_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "22660_node.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "22896_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "7392_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "22848_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "22816_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "1020_wmiprvse.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "6936_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "7640_cc-switch.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "4364_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "5072_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "9256_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "9348_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "19892_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "23264_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "4288_monotificationux.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "10196_mcp-server-git.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "5504_mcp-server-fetch.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "22700_python.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "6116_python.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "5484_python.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "5468_python.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "11568_cmd.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "12496_node.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "12508_cmd.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "10876_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "12616_node.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "9688_cmd.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "10880_node.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "1324_grammarly.desktop.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "14892_cmd.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "3132_node.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "15380_uvx.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "21760_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "22988_uv.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "10372_superhuman.webui.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "6076_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "18168_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "2080_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "4444_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "7844_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "23324_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "12720_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "23408_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "23464_mcp-server-time.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "23452_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "21912_python.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "19900_python.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "19504_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "2388_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "15536_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "23036_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "20148_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "20316_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "23804_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "23964_whatsapp.root.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "24036_m365copilot_autostarter.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "24128_runtimebroker.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "24272_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "24304_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "24492_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "24500_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "24564_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "24812_chatgpt.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "24832_chatgpt.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "24860_chatgpt.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "25168_chatgpt.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "25180_chatgpt.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "25288_chatgpt.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "9528_ms-teams.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "25420_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "25484_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "19668_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "22716_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "25640_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "25756_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "26168_ccxprocess.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "26192_node.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "26200_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "26464_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "26516_adobeipcbroker.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "26596_adobe crash processor.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "13728_chatgpt.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "25536_chatgpt.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "21680_codex.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "12212_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "7452_chatgpt.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "27528_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "5132_chatgpt.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "10340_codex-computer-use-swift.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "8168_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "21260_node.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "21044_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "21448_chatgpt.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "27488_chatgpt.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "8596_chatgpt.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "21556_alibabaprotectui.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "28168_codex.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "28096_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "9744_node.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "6612_node_repl.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "28076_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "14284_node_repl.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "12576_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "28068_cmd.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "28196_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "23948_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "28872_node.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "28940_node_repl.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "29144_chatgpt.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "1396_tsvncache.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "10156_backgroundtaskhost.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "4968_chrome.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "26344_chrome.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "14444_chrome.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "24876_chrome.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "28884_chrome.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "21280_chrome.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "29300_cmd.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "27812_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "25948_extension-host.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "27344_git.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "10936_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "6288_git.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "28112_chrome.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "28240_chrome.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "6656_mspcmanagercore.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "30652_weixin.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "30692_crashpad_handler.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "30796_wechatappex.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "30980_backgroundtaskhost.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "30884_wechatappex.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "6984_wechatappex.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "26608_searchprotocolhost.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "2300_weixin.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "30768_wechatappex.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "20868_weixin.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "9312_weixin.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "21880_weixin.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "31040_wechatappex.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "31248_wechatappex.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "30604_searchfilterhost.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "30324_wechatappex.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "29904_wechatappex.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "1572_searchfilterhost.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "15964_searchfilterhost.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "29996_searchfilterhost.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "22288_wxworkweb.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "30420_wemailnode_x64.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "27776_wechatappex.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "11860_wxworkweb.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "13924_msedge.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "27848_wxworkweb.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "26208_wxworkweb.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "31780_wxworkweb.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "31812_wecom-agent.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "31880_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "31992_wemail.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "32168_flutterplugins.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "32588_crashpad_handler.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "31936_wxdrive_x64.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "32520_wxworkweb.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "32440_wxworkweb.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "33736_clash-verge.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "26292_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "32788_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "33004_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "33012_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "33068_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "33196_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "34688_verge-mihomo.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "30876_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "35836_chrome.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "35136_youdaoocr.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "35500_chrome.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "35804_runtimebroker.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "21428_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "30624_msedgewebview2.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "16716_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "34020_git.exe": {
+    "ts": 1795048846,
+    "idle": 5
+  },
+  "34804_svchost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "28144_chrome.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "12092_chrome.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "30128_chrome.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "33380_chrome.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "31080_chrome.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "9324_chrome.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "9332_chrome.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "2752_chrome.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "8896_runtimebroker.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "3584_python.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "34848_python.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "34252_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "14084_python.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "33520_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "35616_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "29100_python.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "1696_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "29424_python.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "27356_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "24020_python.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "31660_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "3108_python.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "7848_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "34516_python.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "9700_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "29592_chrome.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "7872_tasklist.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "33752_conhost.exe": {
+    "ts": 1795048846,
+    "idle": 0
+  },
+  "24840_wmiprvse.exe": {
+    "ts": 1795048846,
+    "idle": 5
   }
 }
